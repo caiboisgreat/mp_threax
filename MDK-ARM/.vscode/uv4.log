@@ -1,0 +1,30 @@
+*** Using Compiler 'V6.24', folder: 'D:\Program Files\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'mp_threadx'
+../Middlewares/micropython/py_port/py_init.c(6): warning: In file included from...../Middlewares/micropython\py/compile.h(31): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/py_port/py_init.c(11): warning: In file included from...../Middlewares/micropython\py/mphal.h(36): warning: In file included from...../Middlewares/micropython/py_port\mphalport.h(4): warning: unused parameter 'c' [-Wunused-parameter]
+    4 | static inline void mp_hal_set_interrupt_char(char c) {
+      |                                                   ^
+../Middlewares/micropython/py_port/py_init.c(135): warning: unused parameter 'filename' [-Wunused-parameter]
+  135 | mp_lexer_t *mp_lexer_new_from_file(qstr filename) {
+      |                                         ^
+../Middlewares/micropython/py_port/py_init.c(139): warning: unused parameter 'path' [-Wunused-parameter]
+  139 | mp_import_stat_t mp_import_stat(const char *path) {
+      |                                             ^
+../Middlewares/micropython/py_port/py_init.c(143): warning: unused parameter 'val' [-Wunused-parameter]
+  143 | void nlr_jump_fail(void *val) {
+      |                          ^
+../Middlewares/micropython/py_port/py_init.c(149): warning: unused parameter 'msg' [-Wunused-parameter]
+  149 | void MP_NORETURN __fatal_error(const char *msg) {
+      |                                            ^
+../Middlewares/micropython/py_port/py_init.c(165): warning: unused parameter 'func' [-Wunused-parameter]
+  165 | void MP_WEAK __assert_func(const char *file, int line, const char *func, const char *expr) {
+      |                                                                    ^
+7 warnings generated.
+compiling py_init.c...
+linking...
+Program Size: Code=121870 RO-data=46178 RW-data=16 ZI-data=42152  
+FromELF: creating hex file...
+"mp_threadx\mp_threadx.axf" - 0 Error(s), 7 Warning(s).
+Build Time Elapsed:  00:00:01
