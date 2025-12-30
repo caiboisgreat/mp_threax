@@ -22,10 +22,10 @@
 #include "usart.h"
 #include "gpio.h"
 
+/* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <string.h>
 /* USER CODE END Includes */
-/* Private includes ----------------------------------------------------------*/
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
@@ -131,17 +131,14 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  // Pyboard v1.1 (STM32F405RG) typical clocking: HSE=12MHz -> SYSCLK=168MHz.
-  // PLL: VCO_IN = 12/12 = 1MHz (valid), VCO_OUT = 1MHz * 336 = 336MHz,
-  // SYSCLK = 336/2 = 168MHz, USB = 336/7 = 48MHz.
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLM = 12;
-  RCC_OscInitStruct.PLL.PLLN = 336;
+  RCC_OscInitStruct.PLL.PLLM = 6;
+  RCC_OscInitStruct.PLL.PLLN = 168;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
-  RCC_OscInitStruct.PLL.PLLQ = 7;
+  RCC_OscInitStruct.PLL.PLLQ = 4;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -215,7 +212,7 @@ void Error_Handler(void)
 
   // Blink red LED so a hard error is visible even without UART.
   for (;;) {
-    HAL_GPIO_TogglePin(red_led_GPIO_Port, red_led_Pin);
+    HAL_GPIO_TogglePin(blue_led_GPIO_Port, blue_led_Pin);
     for (volatile uint32_t i = 0; i < 500000; ++i) {
       __NOP();
     }
@@ -223,8 +220,7 @@ void Error_Handler(void)
 
   /* USER CODE END Error_Handler_Debug */
 }
-
-#ifdef  USE_FULL_ASSERT
+#ifdef USE_FULL_ASSERT
 /**
   * @brief  Reports the name of the source file and the source line number
   *         where the assert_param error has occurred.

@@ -91,9 +91,6 @@ UINT App_ThreadX_Init(VOID *memory_ptr)
    }
   /* USER CODE END App_ThreadX_Init */
 
-    char msg[]="thread created....\r\n";
-    HAL_UART_Transmit(&huart2,(uint8_t*)msg,strlen(msg),200);
-  
   return ret;
 }
 
@@ -121,32 +118,24 @@ void thread_led_entry(ULONG thread_input)
   UNUSED(thread_input);
 	while(1)
 	{	
-		HAL_GPIO_WritePin(red_led_GPIO_Port,red_led_Pin,GPIO_PIN_SET);
-    HAL_GPIO_WritePin(green_led_GPIO_Port,green_led_Pin,GPIO_PIN_RESET);
     HAL_GPIO_WritePin(yello_led_GPIO_Port,yello_led_Pin,GPIO_PIN_RESET);
     HAL_GPIO_WritePin(blue_led_GPIO_Port,blue_led_Pin,GPIO_PIN_RESET);
         
-		tx_thread_sleep(500);
+		tx_thread_sleep(100);
         
-		HAL_GPIO_WritePin(red_led_GPIO_Port,red_led_Pin,GPIO_PIN_RESET);
-    HAL_GPIO_WritePin(green_led_GPIO_Port,green_led_Pin,GPIO_PIN_SET);
     HAL_GPIO_WritePin(yello_led_GPIO_Port,yello_led_Pin,GPIO_PIN_RESET);
     HAL_GPIO_WritePin(blue_led_GPIO_Port,blue_led_Pin,GPIO_PIN_RESET);
         
-		tx_thread_sleep(500);
+		tx_thread_sleep(100);
         
-		HAL_GPIO_WritePin(red_led_GPIO_Port,red_led_Pin,GPIO_PIN_RESET);
-    HAL_GPIO_WritePin(green_led_GPIO_Port,green_led_Pin,GPIO_PIN_RESET);
     HAL_GPIO_WritePin(yello_led_GPIO_Port,yello_led_Pin,GPIO_PIN_SET);
     HAL_GPIO_WritePin(blue_led_GPIO_Port,blue_led_Pin,GPIO_PIN_RESET);	
         
-    tx_thread_sleep(500);
+    tx_thread_sleep(100);
         
-		HAL_GPIO_WritePin(red_led_GPIO_Port,red_led_Pin,GPIO_PIN_RESET);
-    HAL_GPIO_WritePin(green_led_GPIO_Port,green_led_Pin,GPIO_PIN_RESET);
     HAL_GPIO_WritePin(yello_led_GPIO_Port,yello_led_Pin,GPIO_PIN_RESET);
     HAL_GPIO_WritePin(blue_led_GPIO_Port,blue_led_Pin,GPIO_PIN_SET); 
-    tx_thread_sleep(500);   
+    tx_thread_sleep(100);   
 	}
 }
 

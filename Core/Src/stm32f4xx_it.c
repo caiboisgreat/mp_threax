@@ -149,7 +149,11 @@ void HardFault_Handler(void)
   fault_uart2_puts("HardFault\r\n");
   fault_dump_registers("HardFault");
   /* USER CODE END HardFault_IRQn 0 */
-  fault_blink_forever(red_led_GPIO_Port, red_led_Pin);
+  while (1)
+  {
+    /* USER CODE BEGIN W1_HardFault_IRQn 0 */
+    /* USER CODE END W1_HardFault_IRQn 0 */
+  }
 }
 
 /**
@@ -164,7 +168,11 @@ void MemManage_Handler(void)
   fault_dump_registers("MemManage");
 
   /* USER CODE END MemoryManagement_IRQn 0 */
-  fault_blink_forever(yello_led_GPIO_Port, yello_led_Pin);
+  while (1)
+  {
+    /* USER CODE BEGIN W1_MemoryManagement_IRQn 0 */
+    /* USER CODE END W1_MemoryManagement_IRQn 0 */
+  }
 }
 
 /**
@@ -179,7 +187,11 @@ void BusFault_Handler(void)
   fault_dump_registers("BusFault");
 
   /* USER CODE END BusFault_IRQn 0 */
-  fault_blink_forever(blue_led_GPIO_Port, blue_led_Pin);
+  while (1)
+  {
+    /* USER CODE BEGIN W1_BusFault_IRQn 0 */
+    /* USER CODE END W1_BusFault_IRQn 0 */
+  }
 }
 
 /**
@@ -194,7 +206,11 @@ void UsageFault_Handler(void)
   fault_dump_registers("UsageFault");
 
   /* USER CODE END UsageFault_IRQn 0 */
-  fault_blink_forever(green_led_GPIO_Port, green_led_Pin);
+  while (1)
+  {
+    /* USER CODE BEGIN W1_UsageFault_IRQn 0 */
+    /* USER CODE END W1_UsageFault_IRQn 0 */
+  }
 }
 
 /**

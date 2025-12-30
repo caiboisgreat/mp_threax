@@ -45,22 +45,23 @@ void MX_GPIO_Init(void)
   GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, red_led_Pin|green_led_Pin|yello_led_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(yello_led_GPIO_Port, yello_led_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(blue_led_GPIO_Port, blue_led_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : red_led_Pin green_led_Pin yello_led_Pin */
-  GPIO_InitStruct.Pin = red_led_Pin|green_led_Pin|yello_led_Pin;
+  /*Configure GPIO pin : yello_led_Pin */
+  GPIO_InitStruct.Pin = yello_led_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+  HAL_GPIO_Init(yello_led_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : blue_led_Pin */
   GPIO_InitStruct.Pin = blue_led_Pin;
