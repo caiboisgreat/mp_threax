@@ -19,6 +19,8 @@
 #define MICROPY_MODULE_FROZEN_MPY         (1)
 #define MICROPY_ENABLE_EXTERNAL_IMPORT    (1)
 
+#define MICROPY_PY_GC                     (1)
+
 #define MICROPY_ALLOC_PATH_MAX            (256)
 
 // Use the minimum headroom in the chunk allocator for parse nodes.
