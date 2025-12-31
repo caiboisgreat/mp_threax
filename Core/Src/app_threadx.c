@@ -142,7 +142,8 @@ void thread_led_entry(ULONG thread_input)
 void thread_micropy_entry(ULONG thread_input)
 {
     UNUSED(thread_input);
-    micro_python_init();
+  void *stack_top = (void *)((uint8_t *)(void *)micropy_stack + (uint32_t)sizeof(micropy_stack));
+  micro_python_init(stack_top, (uint32_t)sizeof(micropy_stack));
       for (;;) {
         tx_thread_sleep(1000);
     }

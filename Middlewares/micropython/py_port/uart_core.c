@@ -4,6 +4,14 @@
 #include <unistd.h>
 #endif
 
+#include <string.h>
+
+#if MICROPY_MIN_USE_STM32_MCU
+#include "stm32f4xx_hal.h"
+#include "usart.h"
+extern UART_HandleTypeDef huart2;
+#endif
+
 /*
  * Core UART functions to implement for a port
  */
@@ -24,10 +32,32 @@ int mp_hal_stdin_rx_chr(void) {
     int r = read(STDIN_FILENO, &c, 1);
     (void)r;
     #elif MICROPY_MIN_USE_STM32_MCU
-    // wait for RXNE
-    while ((USART2_REPL->SR & (1 << 5)) == 0) {
+    // Prefer HAL-based RX to play nicely with Cube/HAL init and potential ISR state.
+    // This blocks until a byte arrives.
+    if (HAL_UART_Receive(&huart2, &c, 1, HAL_MAX_DELAY) != HAL_OK) {
+        // If RX errors happen, clear common flags and retry.
+        __HAL_UART_CLEAR_OREFLAG(&huart2);
+        __HAL_UART_CLEAR_NEFLAG(&huart2);
+        __HAL_UART_CLEAR_FEFLAG(&huart2);
+        __HAL_UART_CLEAR_PEFLAG(&huart2);
+        (void)HAL_UART_Receive(&huart2, &c, 1, HAL_MAX_DELAY);
     }
-    c = (unsigned char)USART2_REPL->DR;
+
+    // Normalise line endings for MicroPython's readline(): it treats '\r' as
+    // the end-of-line character (see shared/readline/readline.c).
+    // - If the terminal sends CRLF, swallow the LF and return '\r'.
+    // - If the terminal sends LF only, map it to '\r'.
+    if (c == '\r') {
+        // Best-effort consume a following '\n' if it is already pending.
+        if (__HAL_UART_GET_FLAG(&huart2, UART_FLAG_RXNE)) {
+            unsigned char c2;
+            (void)HAL_UART_Receive(&huart2, &c2, 1, 0);
+        }
+        return '\r';
+    }
+    if (c == '\n') {
+        return '\r';
+    }
     #endif
     return c;
 }
@@ -42,14 +72,19 @@ mp_uint_t mp_hal_stdout_tx_strn(const char *str, mp_uint_t len) {
         ret = 0;
     }
     #elif MICROPY_MIN_USE_STM32_MCU
-    while (len--) {
-        // wait for TXE
-        while ((USART2_REPL->SR & (1 << 7)) == 0) {
-        }
-        USART2_REPL->DR = (uint32_t)(uint8_t)(*str++);
+    // HAL-based TX: uses the configured baud rate and state machine.
+    // Use a bounded timeout proportional to length.
+    uint32_t timeout = 200 + (uint32_t)len;
+    if (HAL_UART_Transmit(&huart2, (uint8_t *)(void *)str, (uint16_t)len, timeout) != HAL_OK) {
+        ret = 0;
     }
     #endif
     return ret;
+}
+
+// Send zero-terminated string
+void mp_hal_stdout_tx_str(const char *str) {
+    mp_hal_stdout_tx_strn(str, (mp_uint_t)strlen(str));
 }
 
 // Cooked output: translate \n to \r\n.

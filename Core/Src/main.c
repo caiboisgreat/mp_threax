@@ -91,12 +91,6 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
-  // Early boot banner to confirm UART works before ThreadX starts.
-  {
-    const char msg[] = "boot: before ThreadX\r\n";
-    HAL_UART_Transmit(&huart2, (uint8_t *)msg, strlen(msg), 200);
-  }
-
   /* USER CODE END 2 */
 
   MX_ThreadX_Init();

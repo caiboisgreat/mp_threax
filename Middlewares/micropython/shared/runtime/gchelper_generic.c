@@ -101,33 +101,30 @@ static void gc_helper_get_regs(gc_helper_regs_t arr) {
 // Fallback implementation, prefer gchelper_thumb1.s or gchelper_thumb2.s
 
 static void gc_helper_get_regs(gc_helper_regs_t arr) {
-    #ifdef __clang__
-    #pragma clang diagnostic push
-    #pragma clang diagnostic ignored "-Wuninitialized"
-    #endif
-    register long r4 asm ("r4");
-    register long r5 asm ("r5");
-    register long r6 asm ("r6");
-    register long r7 asm ("r7");
-    register long r8 asm ("r8");
-    register long r9 asm ("r9");
-    register long r10 asm ("r10");
-    register long r11 asm ("r11");
-    register long r12 asm ("r12");
-    register long r13 asm ("r13");
-    arr[0] = r4;
-    arr[1] = r5;
-    arr[2] = r6;
-    arr[3] = r7;
-    arr[4] = r8;
-    arr[5] = r9;
-    arr[6] = r10;
-    arr[7] = r11;
-    arr[8] = r12;
-    arr[9] = r13;
-    #ifdef __clang__
-    #pragma clang diagnostic pop
-    #endif
+    // Avoid GNU C "register ... asm("rX")" extension: Keil/ARMClang builds
+    // typically compile in strict C mode and reject that syntax.
+    // Instead, capture callee-saved registers directly into arr.
+    // Layout matches gchelper.h for ARM: r4-r11, r12, sp.
+    __asm volatile (
+        "str r4, [%0, #0]   \n"
+        "str r5, [%0, #4]   \n"
+        "str r6, [%0, #8]   \n"
+        "str r7, [%0, #12]  \n"
+        "mov r1, r8         \n"
+        "str r1, [%0, #16]  \n"
+        "mov r1, r9         \n"
+        "str r1, [%0, #20]  \n"
+        "mov r1, r10        \n"
+        "str r1, [%0, #24]  \n"
+        "mov r1, r11        \n"
+        "str r1, [%0, #28]  \n"
+        "str r12, [%0, #32] \n"
+        "mov r1, sp         \n"
+        "str r1, [%0, #36]  \n"
+        :
+        : "r" (arr)
+        : "r1", "memory"
+    );
 }
 
 #elif defined(__aarch64__)

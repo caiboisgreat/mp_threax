@@ -12,5 +12,6 @@
   "C_Cpp.default.intelliSenseMode": "gcc-arm",
   "C_Cpp.default.cStandard": "c11",
   "C_Cpp.default.cppStandard": "c++17",
-  "C_Cpp.default.configurationProvider": "cl.keil-assistant"
+  "C_Cpp.default.configurationProvider": "cl.keil-assistant",
+  "cmake.sourceDirectory": "E:/Work/code/study/mp_threadx/Drivers/CMSIS/NN"
 }

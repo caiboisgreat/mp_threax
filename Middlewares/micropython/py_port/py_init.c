@@ -1,14 +1,19 @@
 #include <stdint.h>
 #include <stdio.h>
+#include <stdbool.h>
 #include <string.h>
 
 #include "py/builtin.h"
 #include "py/compile.h"
+#include "py/nlr.h"
 #include "py/runtime.h"
 #include "py/repl.h"
 #include "py/gc.h"
 #include "py/mperrno.h"
 #include "py/mphal.h"
+#include "py/stackctrl.h"
+#include "py/mpstate.h"
+#include "shared/runtime/gchelper.h"
 #include "shared/runtime/pyexec.h"
 
 // Minimal frozen-module stubs for bare-metal builds that don't generate
@@ -20,80 +25,34 @@ const char mp_frozen_names[] = "";
 const mp_frozen_module_t *const mp_frozen_mpy_content[] = { NULL };
 #endif
 
-#if MICROPY_ENABLE_COMPILER
-void do_str(const char *src, mp_parse_input_kind_t input_kind) {
-    nlr_buf_t nlr;
-    if (nlr_push(&nlr) == 0) {
-        mp_lexer_t *lex = mp_lexer_new_from_str_len(MP_QSTR__lt_stdin_gt_, src, strlen(src), 0);
-        // Use the runtime helper so globals/locals are set correctly.
-        // This also enables proper REPL semantics for MP_PARSE_SINGLE_INPUT
-        // (e.g. printing expression results via __repl_print__).
-        mp_parse_compile_execute(lex, input_kind, mp_globals_get(), mp_locals_get());
-        nlr_pop();
-    } else {
-        // uncaught exception
-        mp_obj_print_exception(&mp_plat_print, (mp_obj_t)nlr.ret_val);
-    }
-}
-#endif
+// Note: This project uses the upstream MicroPython REPL implementation from
+// shared/runtime/pyexec.c (added to the Keil project).
+// A local minimal REPL existed previously for bring-up, but is now disabled to
+// avoid duplicate symbols and to get full REPL behavior (expression printing,
+// multiline, history, etc).
 
-// If the upstream shared/runtime/pyexec.c is not compiled into this project,
-// provide a very small friendly-REPL implementation.
-// It supports single-line input and executes each line.
-int pyexec_friendly_repl(void) {
-    #if !MICROPY_ENABLE_COMPILER
-    return 0;
-    #else
-    for (;;) {
-        mp_hal_stdout_tx_strn(">>> ", 4);
-
-        char line[256];
-        size_t len = 0;
-
-        for (;;) {
-            int c = mp_hal_stdin_rx_chr();
-            if (c == '\r' || c == '\n') {
-                mp_hal_stdout_tx_strn("\r\n", 2);
-                break;
-            }
-
-            // Ctrl-D on empty line exits the REPL.
-            if (c == 4 && len == 0) {
-                return 0;
-            }
-
-            // Basic backspace handling.
-            if ((c == 8 || c == 127) && len > 0) {
-                len--;
-                mp_hal_stdout_tx_strn("\b \b", 3);
-                continue;
-            }
-
-            if (c >= 32 && c < 127) {
-                if (len < sizeof(line) - 1) {
-                    line[len++] = (char)c;
-                    mp_hal_stdout_tx_strn((const char *)&line[len - 1], 1);
-                }
-            }
-        }
-
-        line[len] = '\0';
-        if (len) {
-            do_str(line, MP_PARSE_SINGLE_INPUT);
-        }
-    }
-    #endif
-}
-
-static char *stack_top;
 #if MICROPY_ENABLE_GC
 static char heap[MICROPY_HEAP_SIZE];
 #endif
 
 //int main(int argc, char **argv) {
-int micro_python_init(void) {
-    int stack_dummy;
-    stack_top = (char *)&stack_dummy;
+int micro_python_init(void *stack_top, uint32_t stack_len_bytes) {
+    // IMPORTANT (ThreadX): mp_stack_set_top() must be the *true* top of the
+    // current thread's C stack.  If it's set to a local variable then the GC
+    // will scan only a tiny slice of stack and may miss roots, causing
+    // use-after-free/corruption that can manifest as nlr_top becoming NULL.
+    if (stack_top != NULL) {
+        mp_stack_set_top(stack_top);
+        #if MICROPY_STACK_CHECK
+        if (stack_len_bytes > 1024u) {
+            // Leave some headroom for interrupts/port code.
+            mp_stack_set_limit((mp_uint_t)(stack_len_bytes - 512u));
+        }
+        #endif
+    } else {
+        volatile int stack_dummy;
+        mp_stack_set_top((void *)&stack_dummy);
+    }
 
     #if MICROPY_ENABLE_GC
     gc_init(heap, heap + sizeof(heap));
@@ -101,15 +60,41 @@ int micro_python_init(void) {
     mp_init();
     #if MICROPY_ENABLE_COMPILER
     #if MICROPY_REPL_EVENT_DRIVEN
+    // Top-level exception handler: protects the event-driven REPL processing.
+    // Without this, any exception raised during input/editing (eg history alloc)
+    // will call nlr_jump_fail because there is no active nlr handler.
     pyexec_event_repl_init();
     for (;;) {
-        int c = mp_hal_stdin_rx_chr();
-        if (pyexec_event_repl_process_char(c)) {
+        nlr_buf_t nlr;
+        if (nlr_push(&nlr) == 0) {
+            for (;;) {
+                int c = mp_hal_stdin_rx_chr();
+                if (pyexec_event_repl_process_char(c)) {
+                    break;
+                }
+            }
+            nlr_pop();
             break;
+        } else {
+            mp_obj_print_exception(&mp_plat_print, MP_OBJ_FROM_PTR(nlr.ret_val));
         }
     }
     #else
-    pyexec_friendly_repl();
+    // Top-level exception handler: protects friendly REPL + readline.
+    // Friendly REPL calls into readline, which can allocate (line editing/history)
+    // and therefore can raise MemoryError. Catch here so we don't hit nlr_jump_fail.
+    for (;;) {
+        nlr_buf_t nlr;
+        if (nlr_push(&nlr) == 0) {
+            int ret = pyexec_friendly_repl();
+            nlr_pop();
+            if (ret & PYEXEC_FORCED_EXIT) {
+                break;
+            }
+        } else {
+            mp_obj_print_exception(&mp_plat_print, MP_OBJ_FROM_PTR(nlr.ret_val));
+        }
+    }
     #endif
     // do_str("print('hello world!', list(x+1 for x in range(10)), end='eol\\n')", MP_PARSE_SINGLE_INPUT);
     // do_str("for i in range(10):\r\n  print(i)", MP_PARSE_FILE_INPUT);
@@ -122,13 +107,10 @@ int micro_python_init(void) {
 
 #if MICROPY_ENABLE_GC
 void gc_collect(void) {
-    // WARNING: This gc_collect implementation doesn't try to get root
-    // pointers from CPU registers, and thus may function incorrectly.
-    void *dummy;
     gc_collect_start();
-    gc_collect_root(&dummy, ((mp_uint_t)stack_top - (mp_uint_t)&dummy) / sizeof(mp_uint_t));
+    // Collect roots from CPU registers and the C stack.
+    gc_helper_collect_regs_and_stack();
     gc_collect_end();
-    gc_dump_info(&mp_plat_print);
 }
 #endif
 
@@ -140,13 +122,79 @@ mp_import_stat_t mp_import_stat(const char *path) {
     return MP_IMPORT_STAT_NO_EXIST;
 }
 
+mp_obj_t mp_builtin_open(size_t n_args, const mp_obj_t *args, mp_map_t *kwargs) {
+    (void)n_args;
+    (void)args;
+    (void)kwargs;
+    // Filesystem/VFS not ported yet in this project.
+    mp_raise_OSError(MP_ENODEV);
+}
+
+MP_DEFINE_CONST_FUN_OBJ_KW(mp_builtin_open_obj, 1, mp_builtin_open);
+
 void nlr_jump_fail(void *val) {
+    (void)val;
+    #if MICROPY_MIN_USE_STM32_MCU
+    // Best-effort panic message over USART2 (polling, no HAL), then spin.
+    typedef struct {
+        volatile uint32_t SR;
+        volatile uint32_t DR;
+    } periph_uart_t;
+    #define USART2_DBG ((periph_uart_t *)0x40004400)
+    // Print a minimal diagnostic: nlr_top should never be NULL if an exception
+    // unwinds within an active nlr_push scope.
+    uint32_t ipsr = 0;
+    uint32_t msp = 0;
+    uint32_t psp = 0;
+    uint32_t sp = 0;
+    __asm volatile ("mrs %0, ipsr" : "=r"(ipsr));
+    __asm volatile ("mrs %0, msp" : "=r"(msp));
+    __asm volatile ("mrs %0, psp" : "=r"(psp));
+    __asm volatile ("mov %0, sp" : "=r"(sp));
+
+    mp_printf(&mp_plat_print,
+        "\r\nFATAL: nlr_jump_fail val=%p nlr_top=%p nlr_top@%p IPSR=%lu SP=%p MSP=%p PSP=%p\r\n",
+        val, MP_STATE_THREAD(nlr_top), &MP_STATE_THREAD(nlr_top),
+        (unsigned long)ipsr, (void *)sp, (void *)msp, (void *)psp);
+    const char *s = "";
+    while (*s) {
+        while ((USART2_DBG->SR & (1u << 7)) == 0u) {
+        }
+        USART2_DBG->DR = (uint32_t)(uint8_t)(*s++);
+    }
+    #endif
     while (1) {
         ;
     }
 }
 
 void MP_NORETURN __fatal_error(const char *msg) {
+    #if MICROPY_MIN_USE_STM32_MCU
+    typedef struct {
+        volatile uint32_t SR;
+        volatile uint32_t DR;
+    } periph_uart_t;
+    #define USART2_DBG ((periph_uart_t *)0x40004400)
+    const char *p = "\r\nFATAL: __fatal_error ";
+    while (*p) {
+        while ((USART2_DBG->SR & (1u << 7)) == 0u) {
+        }
+        USART2_DBG->DR = (uint32_t)(uint8_t)(*p++);
+    }
+    if (msg) {
+        while (*msg) {
+            while ((USART2_DBG->SR & (1u << 7)) == 0u) {
+            }
+            USART2_DBG->DR = (uint32_t)(uint8_t)(*msg++);
+        }
+    }
+    const char *nl = "\r\n";
+    while (*nl) {
+        while ((USART2_DBG->SR & (1u << 7)) == 0u) {
+        }
+        USART2_DBG->DR = (uint32_t)(uint8_t)(*nl++);
+    }
+    #endif
     while (1) {
         ;
     }

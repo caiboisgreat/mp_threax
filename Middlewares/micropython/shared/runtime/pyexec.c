@@ -42,6 +42,7 @@
 #include "shared/readline/readline.h"
 #include "shared/runtime/pyexec.h"
 #include "genhdr/mpversion.h"
+#include "py/mpstate.h"
 
 pyexec_mode_kind_t pyexec_mode_kind = PYEXEC_MODE_FRIENDLY_REPL;
 
@@ -76,6 +77,9 @@ static int parse_compile_execute(const void *source, mp_parse_input_kind_t input
     nlr_buf_t nlr;
     nlr.ret_val = NULL;
     if (nlr_push(&nlr) == 0) {
+        // Stage marker: entered try-block.
+        //mp_hal_stdout_tx_str("\r\n[repl] nlr_ok\r\n");
+        //mp_printf(&mp_plat_print, "[repl] nlr_top=%p &nlr=%p\r\n", MP_STATE_THREAD(nlr_top), &nlr);
         mp_obj_t module_fun;
         #if MICROPY_MODULE_FROZEN_MPY
         if (exec_flags & EXEC_FLAG_SOURCE_IS_RAW_CODE) {
@@ -102,7 +106,11 @@ static int parse_compile_execute(const void *source, mp_parse_input_kind_t input
             }
             // source is a lexer, parse and compile the script
             qstr source_name = lex->source_name;
+
+            //mp_hal_stdout_tx_str("[repl] parse\r\n");
             mp_parse_tree_t parse_tree = mp_parse(lex, input_kind);
+
+            //mp_hal_stdout_tx_str("[repl] compile\r\n");
             module_fun = mp_compile(&parse_tree, source_name, exec_flags & EXEC_FLAG_IS_REPL);
             #else
             mp_raise_msg(&mp_type_RuntimeError, MP_ERROR_TEXT("script compilation not supported"));
@@ -116,7 +124,10 @@ static int parse_compile_execute(const void *source, mp_parse_input_kind_t input
         #if MICROPY_REPL_INFO
         start = mp_hal_ticks_ms();
         #endif
+        //mp_hal_stdout_tx_str("[repl] exec\r\n");
+        //mp_printf(&mp_plat_print, "[repl] before_call nlr_top=%p &nlr=%p\r\n", MP_STATE_THREAD(nlr_top), &nlr);
         mp_call_function_0(module_fun);
+        //mp_hal_stdout_tx_str("[repl] exec_done\r\n");
         mp_hal_set_interrupt_char(-1); // disable interrupt
         mp_handle_pending(true); // handle any pending exceptions (and any callbacks)
         nlr_pop();

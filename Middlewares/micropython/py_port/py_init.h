@@ -17,7 +17,7 @@ extern "C" {
 
 /* USER CODE END Private defines */
 
-int micro_python_init(void);
+int micro_python_init(void *stack_top, uint32_t stack_len_bytes);
 
 /* USER CODE BEGIN Prototypes */
 

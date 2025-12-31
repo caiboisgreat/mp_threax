@@ -791,6 +791,31 @@
               <FileType>5</FileType>
               <FilePath>..\Middlewares\micropython\py_port\py_init.h</FilePath>
             </File>
+            <File>
+              <FileName>mp_hal_rtos.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\mp_hal_rtos.c</FilePath>
+            </File>
+            <File>
+              <FileName>mpconfigport.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\mpconfigport.h</FilePath>
+            </File>
+            <File>
+              <FileName>mphalport.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\mphalport.h</FilePath>
+            </File>
+            <File>
+              <FileName>qstrdefsport.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\qstrdefsport.h</FilePath>
+            </File>
+            <File>
+              <FileName>unistd.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\unistd.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1180,6 +1205,31 @@
               <FileName>root_pointers.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\Middlewares\micropython\genhdr\root_pointers.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>MicroPython/shared</GroupName>
+          <Files>
+            <File>
+              <FileName>pyexec.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\shared\runtime\pyexec.c</FilePath>
+            </File>
+            <File>
+              <FileName>sys_stdio_mphal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\shared\runtime\sys_stdio_mphal.c</FilePath>
+            </File>
+            <File>
+              <FileName>gchelper_generic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\shared\runtime\gchelper_generic.c</FilePath>
+            </File>
+            <File>
+              <FileName>readline.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\shared\readline\readline.c</FilePath>
             </File>
           </Files>
         </Group>
