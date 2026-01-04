@@ -16,11 +16,15 @@ MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_json, mp_module_json);
 
 MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_os, mp_module_os);
 
+MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_platform, mp_module_platform);
+
 MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_random, mp_module_random);
 
 MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_re, mp_module_re);
 
 MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_select, mp_module_select);
+
+MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_socket, mp_module_socket);
 
 MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_struct, mp_module_struct);
 
@@ -40,9 +44,13 @@ MP_REGISTER_MODULE(MP_QSTR_framebuf, mp_module_framebuf);
 
 MP_REGISTER_MODULE(MP_QSTR_gc, mp_module_gc);
 
+MP_REGISTER_MODULE(MP_QSTR_marshal, mp_module_marshal);
+
 MP_REGISTER_MODULE(MP_QSTR_math, mp_module_math);
 
 MP_REGISTER_MODULE(MP_QSTR_micropython, mp_module_micropython);
+
+MP_REGISTER_MODULE(MP_QSTR_network, mp_module_network);
 
 MP_REGISTER_MODULE(MP_QSTR_sys, mp_module_sys);
 

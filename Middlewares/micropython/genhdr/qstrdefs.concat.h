@@ -82,6 +82,12 @@ Q(pystack exhausted)
 // *FORMAT-OFF*
 
 
+Q(AF_INET)
+
+Q(AF_INET6)
+
+Q(AP_IF)
+
 Q(ARRAY)
 
 Q(AUTO)
@@ -368,6 +374,26 @@ Q(RuntimeError)
 
 Q(SHORT)
 
+Q(SOCK_DGRAM)
+
+Q(SOCK_RAW)
+
+Q(SOCK_STREAM)
+
+Q(SOL_SOCKET)
+
+Q(SO_BROADCAST)
+
+Q(SO_KEEPALIVE)
+
+Q(SO_RCVTIMEO)
+
+Q(SO_REUSEADDR)
+
+Q(SO_SNDTIMEO)
+
+Q(STA_IF)
+
 Q(StopAsyncIteration)
 
 Q(StopAsyncIteration)
@@ -491,6 +517,8 @@ Q(__contains__)
 Q(__contains__)
 
 Q(__contains__)
+
+Q(__del__)
 
 Q(__del__)
 
@@ -625,6 +653,14 @@ Q(__mod__)
 Q(__module__)
 
 Q(__mul__)
+
+Q(__name__)
+
+Q(__name__)
+
+Q(__name__)
+
+Q(__name__)
 
 Q(__name__)
 
@@ -844,9 +880,13 @@ Q(_lt_setcomp_gt_)
 
 Q(_lt_stdin_gt_)
 
+Q(_lt_stdin_gt_)
+
 Q(_lt_string_gt_)
 
 Q(_machine)
+
+Q(_mpy)
 
 Q(_percent__hash_o)
 
@@ -865,6 +905,8 @@ Q(a2b_base64)
 Q(abs)
 
 Q(abs_tol)
+
+Q(accept)
 
 Q(acos)
 
@@ -917,6 +959,8 @@ Q(bin)
 Q(binascii)
 
 Q(binascii)
+
+Q(bind)
 
 Q(blit)
 
@@ -986,6 +1030,8 @@ Q(close)
 
 Q(close)
 
+Q(close)
+
 Q(closure)
 
 Q(cmath)
@@ -1007,6 +1053,8 @@ Q(compile)
 Q(complex)
 
 Q(complex)
+
+Q(connect)
 
 Q(const)
 
@@ -1035,6 +1083,8 @@ Q(count)
 Q(count)
 
 Q(count)
+
+Q(country)
 
 Q(crc32)
 
@@ -1091,6 +1141,8 @@ Q(doc)
 Q(done)
 
 Q(dump)
+
+Q(dumps)
 
 Q(dumps)
 
@@ -1546,6 +1598,12 @@ Q(function)
 
 Q(function)
 
+Q(function)
+
+Q(function)
+
+Q(function)
+
 Q(gamma)
 
 Q(gc)
@@ -1557,6 +1615,8 @@ Q(generator)
 Q(generator)
 
 Q(get)
+
+Q(getaddrinfo)
 
 Q(getattr)
 
@@ -1601,6 +1661,8 @@ Q(hex)
 Q(hexlify)
 
 Q(hline)
+
+Q(hostname)
 
 Q(id)
 
@@ -1718,11 +1780,15 @@ Q(len)
 
 Q(lgamma)
 
+Q(libc_ver)
+
 Q(line)
 
 Q(list)
 
 Q(list)
+
+Q(listen)
 
 Q(little)
 
@@ -1731,6 +1797,8 @@ Q(little)
 Q(little)
 
 Q(load)
+
+Q(loads)
 
 Q(loads)
 
@@ -1750,9 +1818,15 @@ Q(lower)
 
 Q(lstrip)
 
+Q(makefile)
+
 Q(map)
 
 Q(map)
+
+Q(marshal)
+
+Q(marshal)
 
 Q(match)
 
@@ -1810,6 +1884,10 @@ Q(namedtuple)
 
 Q(nan)
 
+Q(network)
+
+Q(network)
+
 Q(newline)
 
 Q(next)
@@ -1853,6 +1931,12 @@ Q(pi)
 Q(pi)
 
 Q(pixel)
+
+Q(platform)
+
+Q(platform)
+
+Q(platform)
 
 Q(polar)
 
@@ -1898,6 +1982,8 @@ Q(ps2)
 
 Q(push)
 
+Q(python_compiler)
+
 Q(qstr_info)
 
 Q(radians)
@@ -1932,7 +2018,7 @@ Q(read)
 
 Q(read)
 
-Q(readinto)
+Q(read)
 
 Q(readinto)
 
@@ -1941,6 +2027,12 @@ Q(readinto)
 Q(readinto)
 
 Q(readinto)
+
+Q(readinto)
+
+Q(readinto)
+
+Q(readline)
 
 Q(readline)
 
@@ -1957,6 +2049,10 @@ Q(real)
 Q(rect)
 
 Q(rect)
+
+Q(recv)
+
+Q(recvfrom)
 
 Q(register)
 
@@ -1988,6 +2084,8 @@ Q(rindex)
 
 Q(round)
 
+Q(route)
+
 Q(rpartition)
 
 Q(rsplit)
@@ -2016,6 +2114,12 @@ Q(send)
 
 Q(send)
 
+Q(send)
+
+Q(sendall)
+
+Q(sendto)
+
 Q(sep)
 
 Q(separators)
@@ -2026,9 +2130,15 @@ Q(set)
 
 Q(setattr)
 
+Q(setblocking)
+
 Q(setdefault)
 
+Q(setsockopt)
+
 Q(setter)
+
+Q(settimeout)
 
 Q(sha256)
 
@@ -2053,6 +2163,14 @@ Q(sleep_us)
 Q(slice)
 
 Q(slice)
+
+Q(socket)
+
+Q(socket)
+
+Q(socket)
+
+Q(socket)
 
 Q(sort)
 
@@ -2237,6 +2355,12 @@ Q(write)
 Q(write)
 
 Q(write)
+
+Q(write)
+
+Q(zip)
+
+Q(zip)
 
 Q(zip)
 

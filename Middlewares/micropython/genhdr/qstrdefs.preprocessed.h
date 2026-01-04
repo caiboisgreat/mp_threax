@@ -423,54 +423,6 @@
 # 27 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_INCLUDED_PY_MPCONFIG_H 
 
-
-
-
-#define MICROPY_VERSION_MAJOR 1
-#define MICROPY_VERSION_MINOR 27
-#define MICROPY_VERSION_MICRO 0
-#define MICROPY_VERSION_PRERELEASE 1
-
-
-
-
-#define MICROPY_MAKE_VERSION(major,minor,patch) (major << 16 | minor << 8 | patch)
-#define MICROPY_VERSION MICROPY_MAKE_VERSION(MICROPY_VERSION_MAJOR, MICROPY_VERSION_MINOR, MICROPY_VERSION_MICRO)
-
-
-
-
-#define MICROPY_VERSION_STRING_BASE MP_STRINGIFY(MICROPY_VERSION_MAJOR) "." MP_STRINGIFY(MICROPY_VERSION_MINOR) "." MP_STRINGIFY(MICROPY_VERSION_MICRO)
-
-
-
-
-#define MICROPY_VERSION_STRING MICROPY_VERSION_STRING_BASE "-preview"
-
-
-
-
-
-
-
-#define MICROPY_PREVIEW_VERSION_2 (0)
-# 76 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
-#define MICROPY_CONFIG_ROM_LEVEL_MINIMUM (0)
-
-#define MICROPY_CONFIG_ROM_LEVEL_CORE_FEATURES (10)
-
-#define MICROPY_CONFIG_ROM_LEVEL_BASIC_FEATURES (20)
-
-#define MICROPY_CONFIG_ROM_LEVEL_EXTRA_FEATURES (30)
-
-#define MICROPY_CONFIG_ROM_LEVEL_FULL_FEATURES (40)
-
-#define MICROPY_CONFIG_ROM_LEVEL_EVERYTHING (50)
-
-
-
-
-# 1 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h" 1
 # 1 "D:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdint.h" 1 3
 # 11 "D:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdint.h" 3
 #define __stdint_h 
@@ -712,7 +664,128 @@ typedef unsigned long long uintmax_t;
 # 297 "D:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdint.h" 3
 #undef __INT64
 #undef __LONGLONG
-# 2 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h" 2
+# 30 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h" 2
+
+
+
+
+# 1 "D:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\limits.h" 1 3
+# 12 "D:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\limits.h" 3
+#define __limits_h 
+#define __ARMCLIB_VERSION 6240002
+
+#define CHAR_BIT 8
+
+#define SCHAR_MIN (-128)
+
+#define SCHAR_MAX 127
+
+#define UCHAR_MAX 255
+
+
+
+
+
+
+
+#define CHAR_MIN 0
+
+#define CHAR_MAX 255
+# 43 "D:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\limits.h" 3
+#define MB_LEN_MAX 6
+
+
+
+
+#define SHRT_MIN (-0x8000)
+
+#define SHRT_MAX 0x7fff
+
+#define USHRT_MAX 65535
+
+#define INT_MIN (~0x7fffffff)
+
+#define INT_MAX 0x7fffffff
+
+#define UINT_MAX 0xffffffffU
+
+
+
+
+#define LONG_MIN (~0x7fffffffL)
+
+
+
+
+
+#define LONG_MAX 0x7fffffffL
+
+
+
+
+
+#define ULONG_MAX 0xffffffffUL
+
+
+
+#define LLONG_MIN (~0x7fffffffffffffffLL)
+
+#define LLONG_MAX 0x7fffffffffffffffLL
+
+#define ULLONG_MAX 0xffffffffffffffffULL
+# 35 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h" 2
+
+
+
+
+
+
+#define MICROPY_VERSION_MAJOR 1
+#define MICROPY_VERSION_MINOR 28
+#define MICROPY_VERSION_MICRO 0
+#define MICROPY_VERSION_PRERELEASE 1
+
+
+
+
+#define MICROPY_MAKE_VERSION(major,minor,patch) (major << 16 | minor << 8 | patch)
+#define MICROPY_VERSION MICROPY_MAKE_VERSION(MICROPY_VERSION_MAJOR, MICROPY_VERSION_MINOR, MICROPY_VERSION_MICRO)
+
+
+
+
+#define MICROPY_VERSION_STRING_BASE MP_STRINGIFY(MICROPY_VERSION_MAJOR) "." MP_STRINGIFY(MICROPY_VERSION_MINOR) "." MP_STRINGIFY(MICROPY_VERSION_MICRO)
+
+
+
+
+#define MICROPY_VERSION_STRING MICROPY_VERSION_STRING_BASE "-preview"
+
+
+
+
+
+
+
+#define MICROPY_PREVIEW_VERSION_2 (0)
+# 85 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+#define MICROPY_CONFIG_ROM_LEVEL_MINIMUM (0)
+
+#define MICROPY_CONFIG_ROM_LEVEL_CORE_FEATURES (10)
+
+#define MICROPY_CONFIG_ROM_LEVEL_BASIC_FEATURES (20)
+
+#define MICROPY_CONFIG_ROM_LEVEL_EXTRA_FEATURES (30)
+
+#define MICROPY_CONFIG_ROM_LEVEL_FULL_FEATURES (40)
+
+#define MICROPY_CONFIG_ROM_LEVEL_EVERYTHING (50)
+
+
+
+
+# 1 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h" 1
+
 
 
 
@@ -726,9 +799,24 @@ typedef unsigned long long uintmax_t;
 #define MICROPY_ENABLE_COMPILER (1)
 
 
+#define MICROPY_PERSISTENT_CODE_LOAD (1)
+
+
+
+
+
+
+#define MICROPY_PY_THREAD (0)
+#define MICROPY_PY_THREAD_GIL (0)
+
+
 #define MICROPY_FLOAT_IMPL (MICROPY_FLOAT_IMPL_FLOAT)
 #define MICROPY_PY_BUILTINS_FLOAT (1)
 #define MICROPY_PY_BUILTINS_COMPLEX (1)
+
+
+
+#define MICROPY_LONGINT_IMPL (MICROPY_LONGINT_IMPL_MPZ)
 
 
 
@@ -738,10 +826,22 @@ typedef unsigned long long uintmax_t;
 #define MICROPY_VFS_LFS2 (0)
 
 
-#define MICROPY_PY_NETWORK (0)
+
+
+#define MICROPY_PY_NETWORK (1)
+
+
+
+#define MICROPY_PORT_NETWORK_INTERFACES 
 #define MICROPY_PY_LWIP (0)
-#define MICROPY_PY_SOCKET (0)
+#define MICROPY_PY_SOCKET (1)
+
 #define MICROPY_PY_USSL (0)
+
+
+
+
+#define MICROPY_PY_NETWORK_HOSTNAME_DEFAULT "micropython"
 
 
 
@@ -750,6 +850,7 @@ typedef unsigned long long uintmax_t;
 
 
 #define MICROPY_ENABLE_COMPILER (1)
+
 
 
 
@@ -772,6 +873,10 @@ typedef unsigned long long uintmax_t;
 #define MICROPY_PY_SYS_ARGV (1)
 
 
+
+#define MICROPY_PY_BUILTINS_CODE (MICROPY_PY_BUILTINS_CODE_BASIC)
+
+
 #define MICROPY_PY_MATH (1)
 #define MICROPY_PY_CMATH (1)
 #define MICROPY_PY_OS (1)
@@ -785,12 +890,13 @@ typedef unsigned long long uintmax_t;
 #define MICROPY_PY_HEAPQ (1)
 #define MICROPY_PY_HASHLIB (1)
 #define MICROPY_PY_CRYPTOLIB (0)
+#define MICROPY_PY_MARSHAL (1)
 #define MICROPY_PY_ZLIB (1)
 #define MICROPY_PY_ASYNCIO (1)
 
 
 
-#define MICROPY_PY_PLATFORM (0)
+#define MICROPY_PY_PLATFORM (1)
 
 
 
@@ -799,41 +905,48 @@ typedef uintptr_t mp_uint_t;
 typedef long mp_off_t;
 
 
-# 1 "D:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\alloca.h" 1 3
-# 11 "D:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\alloca.h" 3
-#define __alloca_h 
-#define __ARMCLIB_VERSION 6240002
 
 
-#define __ALLOCA_DECLS 
-# 27 "D:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\alloca.h" 3
-    typedef unsigned int size_t;
-# 38 "D:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\alloca.h" 3
-#undef NULL
-#define NULL 0
 
-#define alloca(n) (__builtin_alloca(n))
-# 89 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h" 2
 
-#define MICROPY_HW_BOARD_NAME "minimal"
-#define MICROPY_HW_MCU_NAME "unknown-cpu"
-# 104 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+#define MP_SSIZE_MAX (0x7fffffff)
+
+
+
+
+
+
+
+
+#define alloca __builtin_alloca
+
+
+
+
+#define MICROPY_HW_BOARD_NAME "PYBASE"
+#define MICROPY_HW_MCU_NAME "STM32F405RG6"
+# 153 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_MIN_USE_CORTEX_CPU (0)
 
 
 
 
 #define MICROPY_MIN_USE_STM32_MCU (1)
-#define MICROPY_HEAP_SIZE (65536)
+#define MICROPY_HEAP_SIZE (32768)
 
 
 #define MP_STATE_PORT MP_STATE_VM
 
 #define MP_ENDIANNESS_LITTLE (1)
-#define MICROPY_NLR_SETJMP (1)
+
+
+
+#define MICROPY_NLR_SETJMP (0)
+
+#define MICROPY_GCREGS_SETJMP (0)
 #define MP_UNREACHABLE for (;;);
 #define MICROPY_USE_INTERNAL_ERRNO (1)
-# 92 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h" 2
+# 101 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h" 2
 
 
 
@@ -847,7 +960,7 @@ typedef long mp_off_t;
 #define MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_EXTRA_FEATURES (MICROPY_CONFIG_ROM_LEVEL >= MICROPY_CONFIG_ROM_LEVEL_EXTRA_FEATURES)
 #define MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_FULL_FEATURES (MICROPY_CONFIG_ROM_LEVEL >= MICROPY_CONFIG_ROM_LEVEL_FULL_FEATURES)
 #define MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_EVERYTHING (MICROPY_CONFIG_ROM_LEVEL >= MICROPY_CONFIG_ROM_LEVEL_EVERYTHING)
-# 117 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 126 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_OBJ_REPR_A (0)
 
 
@@ -856,9 +969,9 @@ typedef long mp_off_t;
 
 
 #define MICROPY_OBJ_REPR_B (1)
-# 137 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 146 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_OBJ_REPR_C (2)
-# 151 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 160 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_OBJ_REPR_D (3)
 
 
@@ -870,14 +983,32 @@ typedef long mp_off_t;
 
 
 #define MICROPY_OBJ_IMMEDIATE_OBJS (MICROPY_OBJ_REPR != MICROPY_OBJ_REPR_D)
+# 182 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+#define MP_INT_TYPE_INTPTR (0)
+#define MP_INT_TYPE_INT64 (1)
+#define MP_INT_TYPE_OTHER (2)
 
 
 
 
 
+#define MP_INT_TYPE (MP_INT_TYPE_INTPTR)
 
 
 
+
+typedef intptr_t mp_int_t;
+typedef uintptr_t mp_uint_t;
+#define MP_INT_MAX INTPTR_MAX
+#define MP_INT_MIN INTPTR_MIN
+#define MP_UINT_MAX INTPTR_UMAX
+# 213 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+#define INT_FMT "%d"
+#define UINT_FMT "%u"
+#define HEX_FMT "%x"
+# 234 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+#define SIZE_FMT "%u"
+# 251 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_BYTES_PER_GC_BLOCK (4 * MP_BYTES_PER_OBJ_WORD)
 
 
@@ -893,7 +1024,7 @@ typedef long mp_off_t;
 
 
 #define MICROPY_GC_STACK_ENTRY_TYPE size_t
-# 194 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 275 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_GC_CONSERVATIVE_CLEAR (MICROPY_ENABLE_GC)
 
 
@@ -944,14 +1075,14 @@ typedef long mp_off_t;
 
 
 #define MICROPY_ALLOC_PARSE_INTERN_STRING_LEN (10)
-# 254 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 335 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_ALLOC_SCOPE_ID_INIT (4)
 
 
 
 
 #define MICROPY_ALLOC_SCOPE_ID_INC (6)
-# 270 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 351 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_MODULE_DICT_SIZE (1)
 
 
@@ -977,7 +1108,7 @@ typedef long mp_off_t;
 
 
 #define MICROPY_QSTR_BYTES_IN_HASH (2)
-# 305 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 386 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_STACKLESS (0)
 
 
@@ -986,8 +1117,8 @@ typedef long mp_off_t;
 
 
 #define MICROPY_STACKLESS_STRICT (0)
-# 330 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
-#define MICROPY_PERSISTENT_CODE_LOAD (0)
+# 416 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+#define MICROPY_PERSISTENT_CODE_LOAD_NATIVE (MICROPY_EMIT_MACHINE_CODE)
 
 
 
@@ -1010,7 +1141,7 @@ typedef long mp_off_t;
 
 
 
-#define MICROPY_PERSISTENT_CODE (MICROPY_PERSISTENT_CODE_LOAD || MICROPY_PERSISTENT_CODE_SAVE || MICROPY_MODULE_FROZEN_MPY)
+#define MICROPY_PERSISTENT_CODE (MICROPY_PERSISTENT_CODE_LOAD || MICROPY_PERSISTENT_CODE_LOAD_NATIVE || MICROPY_PERSISTENT_CODE_SAVE || MICROPY_MODULE_FROZEN_MPY)
 
 
 
@@ -1088,6 +1219,11 @@ typedef long mp_off_t;
 
 
 
+#define MICROPY_EMIT_RV32_ZCMP (0)
+
+
+
+
 #define MICROPY_EMIT_INLINE_RV32 (0)
 
 
@@ -1109,7 +1245,11 @@ typedef long mp_off_t;
 
 
 #define MICROPY_EMIT_MACHINE_CODE (MICROPY_EMIT_NATIVE || MICROPY_EMIT_INLINE_ASM)
-# 464 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+
+
+
+#define MICROPY_ENABLE_NATIVE_CODE (MICROPY_EMIT_NATIVE || MICROPY_PERSISTENT_CODE_LOAD_NATIVE)
+# 559 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_DYNAMIC_COMPILER (0)
 
 
@@ -1212,7 +1352,7 @@ typedef long mp_off_t;
 
 
 #define MICROPY_DEBUG_VALGRIND (0)
-# 577 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 672 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_OPT_COMPUTED_GOTO (0)
 
 
@@ -1255,7 +1395,7 @@ typedef long mp_off_t;
 
 
 #define MICROPY_NLR_THUMB_USE_LONG_JUMP (0)
-# 630 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 725 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_READER_POSIX (0)
 
 
@@ -1289,7 +1429,7 @@ typedef long mp_off_t;
 
 
 #define MICROPY_SCHED_HOOK_SCHEDULED 
-# 672 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 767 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_GC_SPLIT_HEAP (0)
 
 
@@ -1348,7 +1488,7 @@ typedef long mp_off_t;
 
 
 #define MICROPY_ENABLE_EMERGENCY_EXCEPTION_BUF (0)
-# 739 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 834 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_KBD_EXCEPTION (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_EXTRA_FEATURES)
 
 
@@ -1356,7 +1496,7 @@ typedef long mp_off_t;
 
 
 #define MICROPY_ASYNC_KBD_INTR (0)
-# 755 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 850 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_REPL_INFO (0)
 
 
@@ -1404,10 +1544,7 @@ typedef long mp_off_t;
 #define MICROPY_LONGINT_IMPL_NONE (0)
 #define MICROPY_LONGINT_IMPL_LONGLONG (1)
 #define MICROPY_LONGINT_IMPL_MPZ (2)
-
-
-#define MICROPY_LONGINT_IMPL (MICROPY_LONGINT_IMPL_NONE)
-# 814 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 909 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_ENABLE_SOURCE_LINE (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_EXTRA_FEATURES)
 
 
@@ -1464,7 +1601,7 @@ typedef long mp_off_t;
 #define MICROPY_FLOAT_CONST(x) x##F
 #define MICROPY_FLOAT_C_FUN(fun) fun##f
 typedef float mp_float_t;
-# 890 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 985 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_FLOAT_FORMAT_IMPL_BASIC (0)
 #define MICROPY_FLOAT_FORMAT_IMPL_APPROX (1)
 #define MICROPY_FLOAT_FORMAT_IMPL_EXACT (2)
@@ -1472,7 +1609,7 @@ typedef float mp_float_t;
 
 
 #define MICROPY_FLOAT_FORMAT_IMPL (MICROPY_FLOAT_FORMAT_IMPL_APPROX)
-# 907 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 1002 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_FLOAT_USE_NATIVE_FLT16 (1)
 
 
@@ -1507,7 +1644,7 @@ typedef float mp_float_t;
 
 #define MICROPY_EPOCH_IS_2000 (1)
 #define MICROPY_EPOCH_IS_1970 (0)
-# 962 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 1057 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_TIME_SUPPORT_Y1969_AND_BEFORE (0)
 
 
@@ -1572,7 +1709,7 @@ typedef long long mp_timestamp_t;
 
 
 #define MICROPY_MODULE_BUILTIN_INIT (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_EXTRA_FEATURES)
-# 1039 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 1134 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_MODULE_BUILTIN_SUBPACKAGES (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_EVERYTHING)
 
 
@@ -1590,7 +1727,7 @@ typedef long long mp_timestamp_t;
 
 
 #define MICROPY_MODULE_FROZEN_STR (0)
-# 1065 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 1160 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_MODULE_FROZEN (MICROPY_MODULE_FROZEN_STR || MICROPY_MODULE_FROZEN_MPY)
 
 
@@ -1606,7 +1743,7 @@ typedef long long mp_timestamp_t;
 
 
 #define MICROPY_BUILTIN_METHOD_CHECK_SELF_ARG (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_CORE_FEATURES)
-# 1089 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 1184 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_USE_INTERNAL_PRINTF (1)
 
 
@@ -1622,6 +1759,16 @@ typedef long long mp_timestamp_t;
 
 
 
+#define MICROPY_PYEXEC_ENABLE_VM_ABORT (0)
+
+
+
+
+#define MICROPY_PYEXEC_ENABLE_EXIT_CODE_HANDLING (0)
+
+
+
+
 #define MICROPY_ENABLE_SCHEDULER (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_EXTRA_FEATURES)
 
 
@@ -1633,7 +1780,7 @@ typedef long long mp_timestamp_t;
 
 
 #define MICROPY_SCHEDULER_DEPTH (4)
-# 1124 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 1229 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_VFS_WRITABLE (1)
 
 
@@ -1650,9 +1797,9 @@ typedef long long mp_timestamp_t;
 
 
 #define MICROPY_VFS_POSIX_WRITABLE (1)
-# 1159 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 1264 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_VFS_ROM (0)
-# 1169 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 1274 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_MULTIPLE_INHERITANCE (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_CORE_FEATURES)
 
 
@@ -1768,7 +1915,7 @@ typedef long long mp_timestamp_t;
 #define MICROPY_PY_BUILTINS_CODE_BASIC (2)
 #define MICROPY_PY_BUILTINS_CODE_FULL (3)
 
-#define MICROPY_PY_BUILTINS_CODE (MICROPY_PY_SYS_SETTRACE ? MICROPY_PY_BUILTINS_CODE_FULL : (MICROPY_PY_FUNCTION_ATTRS_CODE ? MICROPY_PY_BUILTINS_CODE_BASIC : (MICROPY_PY_BUILTINS_COMPILE ? MICROPY_PY_BUILTINS_CODE_MINIMUM : MICROPY_PY_BUILTINS_CODE_NONE)))
+
 
 
 
@@ -1998,12 +2145,7 @@ typedef long long mp_timestamp_t;
 
 
 #define MICROPY_PY_COLLECTIONS_NAMEDTUPLE__ASDICT (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_EVERYTHING)
-
-
-
-
-#define MICROPY_PY_MARSHAL (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_EVERYTHING)
-# 1528 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 1633 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_PY_MATH_CONSTANTS (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_EXTRA_FEATURES)
 
 
@@ -2046,7 +2188,7 @@ typedef long long mp_timestamp_t;
 
 
 #define MICROPY_PY_MATH_GAMMA_FIX_NEGINF (0)
-# 1579 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 1684 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_PY_MICROPYTHON (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_CORE_FEATURES)
 
 
@@ -2090,14 +2232,14 @@ typedef long long mp_timestamp_t;
 
 
 #define MICROPY_PY_STRUCT_UNSAFE_TYPECODES (1)
-# 1631 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 1736 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_PY_SYS_PATH_ARGV_DEFAULTS (MICROPY_PY_SYS)
 
 
 
 
 #define MICROPY_PY_SYS_MAXSIZE (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_EXTRA_FEATURES)
-# 1647 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 1752 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_PY_SYS_EXC_INFO (0)
 
 
@@ -2111,9 +2253,9 @@ typedef long long mp_timestamp_t;
 
 
 #define MICROPY_PY_SYS_INTERN (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_EVERYTHING)
-# 1669 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 1774 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_PY_SYS_ATEXIT (0)
-# 1691 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 1796 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_PY_SYS_PS1_PS2 (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_EXTRA_FEATURES)
 
 
@@ -2157,7 +2299,7 @@ typedef long long mp_timestamp_t;
 
 
 #define MICROPY_PY_ERRNO_ERRORCODE (1)
-# 1743 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 1848 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_PY_SELECT_POSIX_OPTIMISATIONS (0)
 
 
@@ -2166,40 +2308,25 @@ typedef long long mp_timestamp_t;
 
 
 #define MICROPY_PY_SELECT_SELECT (1)
-# 1760 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 1865 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_PY_TIME_GMTIME_LOCALTIME_MKTIME (0)
 
 
 
 
 #define MICROPY_PY_TIME_TIME_TIME_NS (0)
-# 1775 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 1880 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_PY_TIME_TICKS_PERIOD (MP_SMALL_INT_POSITIVE_MASK + 1)
-
-
-
-
-#define MICROPY_PY_THREAD (0)
-
-
-
-
-
-#define MICROPY_PY_THREAD_GIL (MICROPY_PY_THREAD)
-
-
-
-
-
+# 1897 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_PY_THREAD_GIL_VM_DIVISOR (32)
 
 
 
 
 #define MICROPY_PY_THREAD_RECURSIVE_MUTEX (MICROPY_PY_THREAD && !MICROPY_PY_THREAD_GIL)
-# 1807 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 1912 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_PY_ASYNCIO_TASK_QUEUE_PUSH_CALLBACK (0)
-# 1817 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 1922 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_PY_UCTYPES_NATIVE_C_TYPES (1)
 
 
@@ -2248,7 +2375,7 @@ typedef long long mp_timestamp_t;
 
 
 #define MICROPY_PY_RE_SUB (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_EXTRA_FEATURES)
-# 1876 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 1981 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_PY_HASHLIB_MD5 (MICROPY_PY_SSL)
 
 
@@ -2403,7 +2530,7 @@ typedef long long mp_timestamp_t;
 
 
 #define MICROPY_PY_ONEWIRE (0)
-# 2042 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 2147 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_PORT_BUILTINS 
 
 
@@ -2459,7 +2586,7 @@ typedef long long mp_timestamp_t;
 
 
 #define MICROPY_WRAP_MP_SCHED_VM_ABORT(f) f
-# 2107 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 2212 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_OBJ_BASE_ALIGNMENT 
 
 
@@ -2497,25 +2624,19 @@ typedef long long mp_timestamp_t;
 
 
 #define MP_ENDIANNESS_BIG (!MP_ENDIANNESS_LITTLE)
-# 2173 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 2278 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_MAKE_POINTER_CALLABLE(p) (p)
-# 2206 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 2311 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_PERSISTENT_CODE_TRACK_FUN_DATA (0)
 #define MICROPY_PERSISTENT_CODE_TRACK_BSS_RODATA (0)
-# 2217 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 2322 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MP_PLAT_ALLOC_EXEC(min_size,ptr,size) do { *ptr = m_new(byte, min_size); *size = min_size; } while (0)
 #define MP_PLAT_FREE_EXEC(ptr,size) m_del(byte, ptr, size)
-# 2233 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 2338 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MP_PLAT_PRINT_STRN(str,len) mp_hal_stdout_tx_strn_cooked(str, len)
 
 
 
-#define MP_SSIZE_MAX SSIZE_MAX
-# 2255 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
-#define UINT_FMT "%u"
-#define INT_FMT "%d"
-#define HEX_FMT "%x"
-#define SIZE_FMT "%u"
 
 
 
@@ -2551,13 +2672,13 @@ typedef long long mp_timestamp_t;
 
 
 #define MP_UNLIKELY(x) __builtin_expect((x), 0)
-# 2309 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 2392 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MP_FALLTHROUGH 
 
 
 
 
-#define MP_HTOBE16(x) ((uint16_t)((((x) & 0xff) << 8) | (((x) >> 8) & 0xff)))
+#define MP_HTOBE16(x) MP_BSWAP16(x)
 #define MP_BE16TOH(x) MP_HTOBE16(x)
 
 
@@ -2567,12 +2688,12 @@ typedef long long mp_timestamp_t;
 
 
 
-#define MP_HTOBE32(x) ((uint32_t)((((x) & 0xff) << 24) | (((x) & 0xff00) << 8) | (((x) >> 8) & 0xff00) | (((x) >> 24) & 0xff)))
+#define MP_HTOBE32(x) MP_BSWAP32(x)
 #define MP_BE32TOH(x) MP_HTOBE32(x)
-# 2339 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 2422 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #undef MP_WARN_CAT
 #define MP_WARN_CAT(x) (NULL)
-# 2358 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
+# 2441 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_USE_GCC_MUL_OVERFLOW_INTRINSIC (0)
 # 30 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\genhdr\\qstrdefs.concat.quoted.h" 2
 
@@ -2615,6 +2736,12 @@ Q(utf-8)
 
 Q(.frozen)
 # 85 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\genhdr\\qstrdefs.concat.quoted.h"
+Q(AF_INET)
+
+Q(AF_INET6)
+
+Q(AP_IF)
+
 Q(ARRAY)
 
 Q(AUTO)
@@ -2901,6 +3028,26 @@ Q(RuntimeError)
 
 Q(SHORT)
 
+Q(SOCK_DGRAM)
+
+Q(SOCK_RAW)
+
+Q(SOCK_STREAM)
+
+Q(SOL_SOCKET)
+
+Q(SO_BROADCAST)
+
+Q(SO_KEEPALIVE)
+
+Q(SO_RCVTIMEO)
+
+Q(SO_REUSEADDR)
+
+Q(SO_SNDTIMEO)
+
+Q(STA_IF)
+
 Q(StopAsyncIteration)
 
 Q(StopAsyncIteration)
@@ -3024,6 +3171,8 @@ Q(__contains__)
 Q(__contains__)
 
 Q(__contains__)
+
+Q(__del__)
 
 Q(__del__)
 
@@ -3158,6 +3307,14 @@ Q(__mod__)
 Q(__module__)
 
 Q(__mul__)
+
+Q(__name__)
+
+Q(__name__)
+
+Q(__name__)
+
+Q(__name__)
 
 Q(__name__)
 
@@ -3377,9 +3534,13 @@ Q(_lt_setcomp_gt_)
 
 Q(_lt_stdin_gt_)
 
+Q(_lt_stdin_gt_)
+
 Q(_lt_string_gt_)
 
 Q(_machine)
+
+Q(_mpy)
 
 Q(_percent__hash_o)
 
@@ -3398,6 +3559,8 @@ Q(a2b_base64)
 Q(abs)
 
 Q(abs_tol)
+
+Q(accept)
 
 Q(acos)
 
@@ -3450,6 +3613,8 @@ Q(bin)
 Q(binascii)
 
 Q(binascii)
+
+Q(bind)
 
 Q(blit)
 
@@ -3519,6 +3684,8 @@ Q(close)
 
 Q(close)
 
+Q(close)
+
 Q(closure)
 
 Q(cmath)
@@ -3540,6 +3707,8 @@ Q(compile)
 Q(complex)
 
 Q(complex)
+
+Q(connect)
 
 Q(const)
 
@@ -3568,6 +3737,8 @@ Q(count)
 Q(count)
 
 Q(count)
+
+Q(country)
 
 Q(crc32)
 
@@ -3624,6 +3795,8 @@ Q(doc)
 Q(done)
 
 Q(dump)
+
+Q(dumps)
 
 Q(dumps)
 
@@ -4079,6 +4252,12 @@ Q(function)
 
 Q(function)
 
+Q(function)
+
+Q(function)
+
+Q(function)
+
 Q(gamma)
 
 Q(gc)
@@ -4090,6 +4269,8 @@ Q(generator)
 Q(generator)
 
 Q(get)
+
+Q(getaddrinfo)
 
 Q(getattr)
 
@@ -4134,6 +4315,8 @@ Q(hex)
 Q(hexlify)
 
 Q(hline)
+
+Q(hostname)
 
 Q(id)
 
@@ -4251,11 +4434,15 @@ Q(len)
 
 Q(lgamma)
 
+Q(libc_ver)
+
 Q(line)
 
 Q(list)
 
 Q(list)
+
+Q(listen)
 
 Q(little)
 
@@ -4264,6 +4451,8 @@ Q(little)
 Q(little)
 
 Q(load)
+
+Q(loads)
 
 Q(loads)
 
@@ -4283,9 +4472,15 @@ Q(lower)
 
 Q(lstrip)
 
+Q(makefile)
+
 Q(map)
 
 Q(map)
+
+Q(marshal)
+
+Q(marshal)
 
 Q(match)
 
@@ -4343,6 +4538,10 @@ Q(namedtuple)
 
 Q(nan)
 
+Q(network)
+
+Q(network)
+
 Q(newline)
 
 Q(next)
@@ -4386,6 +4585,12 @@ Q(pi)
 Q(pi)
 
 Q(pixel)
+
+Q(platform)
+
+Q(platform)
+
+Q(platform)
 
 Q(polar)
 
@@ -4431,6 +4636,8 @@ Q(ps2)
 
 Q(push)
 
+Q(python_compiler)
+
 Q(qstr_info)
 
 Q(radians)
@@ -4465,7 +4672,7 @@ Q(read)
 
 Q(read)
 
-Q(readinto)
+Q(read)
 
 Q(readinto)
 
@@ -4474,6 +4681,12 @@ Q(readinto)
 Q(readinto)
 
 Q(readinto)
+
+Q(readinto)
+
+Q(readinto)
+
+Q(readline)
 
 Q(readline)
 
@@ -4490,6 +4703,10 @@ Q(real)
 Q(rect)
 
 Q(rect)
+
+Q(recv)
+
+Q(recvfrom)
 
 Q(register)
 
@@ -4521,6 +4738,8 @@ Q(rindex)
 
 Q(round)
 
+Q(route)
+
 Q(rpartition)
 
 Q(rsplit)
@@ -4549,6 +4768,12 @@ Q(send)
 
 Q(send)
 
+Q(send)
+
+Q(sendall)
+
+Q(sendto)
+
 Q(sep)
 
 Q(separators)
@@ -4559,9 +4784,15 @@ Q(set)
 
 Q(setattr)
 
+Q(setblocking)
+
 Q(setdefault)
 
+Q(setsockopt)
+
 Q(setter)
+
+Q(settimeout)
 
 Q(sha256)
 
@@ -4586,6 +4817,14 @@ Q(sleep_us)
 Q(slice)
 
 Q(slice)
+
+Q(socket)
+
+Q(socket)
+
+Q(socket)
+
+Q(socket)
 
 Q(sort)
 
@@ -4770,6 +5009,12 @@ Q(write)
 Q(write)
 
 Q(write)
+
+Q(write)
+
+Q(zip)
+
+Q(zip)
 
 Q(zip)
 

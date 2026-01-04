@@ -1027,6 +1027,11 @@
               <FilePath>..\Middlewares\micropython\extmod\modsocket.c</FilePath>
             </File>
             <File>
+              <FileName>netutils.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\shared\netutils\netutils.c</FilePath>
+            </File>
+            <File>
               <FileName>modtime.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Middlewares\micropython\extmod\modtime.c</FilePath>

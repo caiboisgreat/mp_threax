@@ -36,6 +36,10 @@ extern const struct _mp_obj_module_t mp_module_os;
 #undef MODULE_DEF_OS
 #define MODULE_DEF_OS { MP_ROM_QSTR(MP_QSTR_os), MP_ROM_PTR(&mp_module_os) },
 
+extern const struct _mp_obj_module_t mp_module_platform;
+#undef MODULE_DEF_PLATFORM
+#define MODULE_DEF_PLATFORM { MP_ROM_QSTR(MP_QSTR_platform), MP_ROM_PTR(&mp_module_platform) },
+
 extern const struct _mp_obj_module_t mp_module_random;
 #undef MODULE_DEF_RANDOM
 #define MODULE_DEF_RANDOM { MP_ROM_QSTR(MP_QSTR_random), MP_ROM_PTR(&mp_module_random) },
@@ -47,6 +51,10 @@ extern const struct _mp_obj_module_t mp_module_re;
 extern const struct _mp_obj_module_t mp_module_select;
 #undef MODULE_DEF_SELECT
 #define MODULE_DEF_SELECT { MP_ROM_QSTR(MP_QSTR_select), MP_ROM_PTR(&mp_module_select) },
+
+extern const struct _mp_obj_module_t mp_module_socket;
+#undef MODULE_DEF_SOCKET
+#define MODULE_DEF_SOCKET { MP_ROM_QSTR(MP_QSTR_socket), MP_ROM_PTR(&mp_module_socket) },
 
 extern const struct _mp_obj_module_t mp_module_struct;
 #undef MODULE_DEF_STRUCT
@@ -84,6 +92,10 @@ extern const struct _mp_obj_module_t mp_module_gc;
 #undef MODULE_DEF_GC
 #define MODULE_DEF_GC { MP_ROM_QSTR(MP_QSTR_gc), MP_ROM_PTR(&mp_module_gc) },
 
+extern const struct _mp_obj_module_t mp_module_marshal;
+#undef MODULE_DEF_MARSHAL
+#define MODULE_DEF_MARSHAL { MP_ROM_QSTR(MP_QSTR_marshal), MP_ROM_PTR(&mp_module_marshal) },
+
 extern const struct _mp_obj_module_t mp_module_math;
 #undef MODULE_DEF_MATH
 #define MODULE_DEF_MATH { MP_ROM_QSTR(MP_QSTR_math), MP_ROM_PTR(&mp_module_math) },
@@ -91,6 +103,10 @@ extern const struct _mp_obj_module_t mp_module_math;
 extern const struct _mp_obj_module_t mp_module_micropython;
 #undef MODULE_DEF_MICROPYTHON
 #define MODULE_DEF_MICROPYTHON { MP_ROM_QSTR(MP_QSTR_micropython), MP_ROM_PTR(&mp_module_micropython) },
+
+extern const struct _mp_obj_module_t mp_module_network;
+#undef MODULE_DEF_NETWORK
+#define MODULE_DEF_NETWORK { MP_ROM_QSTR(MP_QSTR_network), MP_ROM_PTR(&mp_module_network) },
 
 extern const struct _mp_obj_module_t mp_module_sys;
 #undef MODULE_DEF_SYS
@@ -107,15 +123,17 @@ extern const struct _mp_obj_module_t mp_module_uctypes;
     MODULE_DEF_DEFLATE \
     MODULE_DEF_FRAMEBUF \
     MODULE_DEF_GC \
+    MODULE_DEF_MARSHAL \
     MODULE_DEF_MATH \
     MODULE_DEF_MICROPYTHON \
+    MODULE_DEF_NETWORK \
     MODULE_DEF_SYS \
     MODULE_DEF_UCTYPES \
     MODULE_DEF__ASYNCIO \
     MODULE_DEF___MAIN__ \
 // MICROPY_REGISTERED_MODULES
 
-#define MICROPY_HAVE_REGISTERED_EXTENSIBLE_MODULES  14
+#define MICROPY_HAVE_REGISTERED_EXTENSIBLE_MODULES  16
 
 #define MICROPY_REGISTERED_EXTENSIBLE_MODULES \
     MODULE_DEF_ARRAY \
@@ -127,9 +145,11 @@ extern const struct _mp_obj_module_t mp_module_uctypes;
     MODULE_DEF_IO \
     MODULE_DEF_JSON \
     MODULE_DEF_OS \
+    MODULE_DEF_PLATFORM \
     MODULE_DEF_RANDOM \
     MODULE_DEF_RE \
     MODULE_DEF_SELECT \
+    MODULE_DEF_SOCKET \
     MODULE_DEF_STRUCT \
     MODULE_DEF_TIME \
 // MICROPY_REGISTERED_EXTENSIBLE_MODULES

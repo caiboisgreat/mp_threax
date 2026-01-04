@@ -13,15 +13,19 @@
 #include "py/mphal.h"
 #include "py/stackctrl.h"
 #include "py/mpstate.h"
+#include "py/emitglue.h"
 #include "shared/runtime/gchelper.h"
 #include "shared/runtime/pyexec.h"
 
-// Minimal frozen-module stubs for bare-metal builds that don't generate
-// frozen content tables.
-// These are required when MICROPY_MODULE_FROZEN is enabled by the core config.
+// Frozen modules are required for stdlib modules when MICROPY_VFS=0.
+// The generated file defines:
+// - mp_qstr_frozen_const_pool
+// - mp_frozen_names
+// - mp_frozen_mpy_content
+#if MICROPY_MODULE_FROZEN_MPY && !defined(NO_QSTR)
+#include "frozen_mpy.c"
+#else
 const char mp_frozen_names[] = "";
-#if MICROPY_MODULE_FROZEN_MPY
-#include "py/emitglue.h"
 const mp_frozen_module_t *const mp_frozen_mpy_content[] = { NULL };
 #endif
 

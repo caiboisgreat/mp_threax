@@ -1,1 +1,6 @@
 Q(function)
+Q(__name__)
+Q(marshal)
+Q(dumps)
+Q(loads)
+Q(marshal)
