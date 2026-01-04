@@ -103,30 +103,6 @@ const qstr_len_t mp_qstr_const_lengths_static[] = {
     #endif
 };
 
-#if defined(__CC_ARM)
-static const char *const mp_qstr_const_pool_static_qstrs[] = {
-    #ifndef NO_QSTR
-#define QDEF0(id, hash, len, str) str,
-#define QDEF1(id, hash, len, str)
-    #include "genhdr/qstrdefs.generated.h"
-#undef QDEF0
-#undef QDEF1
-    #endif
-};
-
-const qstr_pool_t mp_qstr_const_pool_static = {
-    NULL,               // no previous pool
-    0,                  // no previous pool
-    false,              // is_sorted
-    MICROPY_ALLOC_QSTR_ENTRIES_INIT,
-    MP_QSTRnumber_of_static,
-    #if MICROPY_QSTR_BYTES_IN_HASH
-    (qstr_hash_t *)mp_qstr_const_hashes_static,
-    #endif
-    (qstr_len_t *)mp_qstr_const_lengths_static,
-    (const char **)mp_qstr_const_pool_static_qstrs,
-};
-#else
 const qstr_pool_t mp_qstr_const_pool_static = {
     NULL,               // no previous pool
     0,                  // no previous pool
@@ -147,7 +123,6 @@ const qstr_pool_t mp_qstr_const_pool_static = {
         #endif
     },
 };
-#endif
 
 // The next pool is the remainder of the qstrs defined in the firmware. This
 // is sorted.
@@ -173,30 +148,6 @@ const qstr_len_t mp_qstr_const_lengths[] = {
     #endif
 };
 
-#if defined(__CC_ARM)
-static const char *const mp_qstr_const_pool_qstrs[] = {
-    #ifndef NO_QSTR
-#define QDEF0(id, hash, len, str)
-#define QDEF1(id, hash, len, str) str,
-    #include "genhdr/qstrdefs.generated.h"
-#undef QDEF0
-#undef QDEF1
-    #endif
-};
-
-const qstr_pool_t mp_qstr_const_pool = {
-    &mp_qstr_const_pool_static,
-    MP_QSTRnumber_of_static,
-    true,               // is_sorted
-    MICROPY_ALLOC_QSTR_ENTRIES_INIT,
-    MP_QSTRnumber_of - MP_QSTRnumber_of_static,
-    #if MICROPY_QSTR_BYTES_IN_HASH
-    (qstr_hash_t *)mp_qstr_const_hashes,
-    #endif
-    (qstr_len_t *)mp_qstr_const_lengths,
-    (const char **)mp_qstr_const_pool_qstrs,
-};
-#else
 const qstr_pool_t mp_qstr_const_pool = {
     &mp_qstr_const_pool_static,
     MP_QSTRnumber_of_static,
@@ -217,7 +168,6 @@ const qstr_pool_t mp_qstr_const_pool = {
         #endif
     },
 };
-#endif
 
 // If frozen code is enabled, then there is an additional, sorted, ROM pool
 // containing additional qstrs required by the frozen code.
@@ -282,9 +232,6 @@ static qstr qstr_add(mp_uint_t len, const char *q_ptr) {
             QSTR_EXIT();
             m_malloc_fail(new_alloc);
         }
-        #if defined(__CC_ARM)
-        pool->qstrs = (const char **)(pool + 1);
-        #endif
         #if MICROPY_QSTR_BYTES_IN_HASH
         pool->hashes = (qstr_hash_t *)(pool->qstrs + new_alloc);
         pool->lengths = (qstr_len_t *)(pool->hashes + new_alloc);
@@ -295,10 +242,6 @@ static qstr qstr_add(mp_uint_t len, const char *q_ptr) {
         pool->total_prev_len = MP_STATE_VM(last_pool)->total_prev_len + MP_STATE_VM(last_pool)->len;
         pool->alloc = new_alloc;
         pool->len = 0;
-        #if !defined(__CC_ARM)
-        // pool->qstrs is a flexible array member in this case, and is implicitly located
-        // just after the struct in the allocated block.
-        #endif
         MP_STATE_VM(last_pool) = pool;
         DEBUG_printf("QSTR: allocate new pool of size %d\n", MP_STATE_VM(last_pool)->alloc);
     }

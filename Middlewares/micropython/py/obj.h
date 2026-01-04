@@ -713,14 +713,7 @@ struct _mp_obj_type_t {
     // A dict mapping qstrs to objects local methods/constants/etc.
     uint8_t slot_index_locals_dict;
 
-    #if defined(__CC_ARM)
-    // ArmCC (Keil v5) rejects initialisers for flexible array members.
-    // Use a fixed-size slots table so const type definitions compile.
-    // MP_DEFINE_CONST_OBJ_TYPE_NARGS_* supports up to 12 slots.
-    const void *slots[12];
-    #else
     const void *slots[];
-    #endif
 };
 
 // Non-variable sized versions of mp_obj_type_t to be used as a member
@@ -767,7 +760,7 @@ typedef struct _mp_obj_full_type_t {
     uint8_t slot_index_locals_dict;
 
     // Explicitly add 12 slots.
-    const void *slots[12];
+    const void *slots[11];
 } mp_obj_full_type_t;
 
 #define _MP_OBJ_TYPE_SLOT_TYPE_make_new (mp_make_new_fun_t)

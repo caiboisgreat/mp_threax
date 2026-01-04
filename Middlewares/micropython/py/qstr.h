@@ -88,14 +88,7 @@ typedef struct _qstr_pool_t {
     qstr_hash_t *hashes;
     #endif
     qstr_len_t *lengths;
-    #if defined(__CC_ARM)
-    // ArmCC (Keil v5) rejects initialisers for flexible array members.
-    // Use an explicit pointer; dynamically allocated pools will store the
-    // backing arrays in the same allocation and point qstrs at them.
-    const char **qstrs;
-    #else
     const char *qstrs[];
-    #endif
 } qstr_pool_t;
 
 #define QSTR_TOTAL() (MP_STATE_VM(last_pool)->total_prev_len + MP_STATE_VM(last_pool)->len)

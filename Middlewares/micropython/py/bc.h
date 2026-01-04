@@ -220,6 +220,7 @@ typedef struct _mp_compiled_module_t {
     bool has_native;
     size_t n_qstr;
     size_t n_obj;
+    size_t arch_flags;
     #endif
 } mp_compiled_module_t;
 
@@ -249,7 +250,7 @@ typedef struct _mp_code_state_t {
     struct _mp_obj_frame_t *frame;
     #endif
     // Variable-length
-    mp_obj_t state[];
+    mp_obj_t state[0];
     // Variable-length, never accessed by name, only as (void*)(state + n_state)
     // mp_exc_stack_t exc_state[0];
 } mp_code_state_t;
@@ -262,7 +263,7 @@ typedef struct _mp_code_state_native_t {
     uint16_t n_state;
     uint16_t exc_sp_idx;
     mp_obj_dict_t *old_globals;
-    mp_obj_t state[];
+    mp_obj_t state[0];
 } mp_code_state_native_t;
 
 // Allocator may return NULL, in which case data is not stored (can be used to compute size).

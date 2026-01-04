@@ -136,7 +136,7 @@ qstr mp_obj_fun_get_name(mp_const_obj_t fun_in) {
     const mp_obj_fun_bc_t *fun = MP_OBJ_TO_PTR(fun_in);
     const byte *bc = fun->bytecode;
 
-    #if MICROPY_EMIT_NATIVE
+    #if MICROPY_ENABLE_NATIVE_CODE
     if (fun->base.type == &mp_type_fun_native || fun->base.type == &mp_type_native_gen_wrap) {
         bc = mp_obj_fun_native_get_prelude_ptr(fun);
     }
@@ -230,7 +230,7 @@ mp_code_state_t *mp_obj_fun_bc_prepare_codestate(mp_obj_t self_in, size_t n_args
 
     mp_code_state_t *code_state;
     #if MICROPY_ENABLE_PYSTACK
-    code_state = mp_pystack_alloc(offsetof(mp_code_state_t, state) + state_size);
+    code_state = mp_pystack_alloc(sizeof(mp_code_state_t) + state_size);
     #else
     // If we use m_new_obj_var(), then on no memory, MemoryError will be
     // raised. But this is not correct exception for a function call,
@@ -443,7 +443,7 @@ mp_obj_t mp_obj_new_fun_bc(const mp_obj_t *def_args, const byte *code, const mp_
 /******************************************************************************/
 /* native functions                                                           */
 
-#if MICROPY_EMIT_NATIVE
+#if MICROPY_ENABLE_NATIVE_CODE
 
 static mp_obj_t fun_native_call(mp_obj_t self_in, size_t n_args, size_t n_kw, const mp_obj_t *args) {
     mp_cstack_check();
@@ -472,12 +472,8 @@ MP_DEFINE_CONST_OBJ_TYPE(
     call, fun_native_call
     );
 
-#endif // MICROPY_EMIT_NATIVE
-
 /******************************************************************************/
 /* viper functions                                                           */
-
-#if MICROPY_EMIT_NATIVE
 
 static mp_obj_t fun_viper_call(mp_obj_t self_in, size_t n_args, size_t n_kw, const mp_obj_t *args) {
     mp_cstack_check();
@@ -493,7 +489,7 @@ MP_DEFINE_CONST_OBJ_TYPE(
     call, fun_viper_call
     );
 
-#endif // MICROPY_EMIT_NATIVE
+#endif // MICROPY_ENABLE_NATIVE_CODE
 
 /******************************************************************************/
 /* inline assembler functions                                                 */

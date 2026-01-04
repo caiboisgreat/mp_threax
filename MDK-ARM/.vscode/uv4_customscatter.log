@@ -1,0 +1,4 @@
+*** Using Compiler 'V6.24', folder: 'D:\Program Files\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'mp_threadx'
+Note: source file '../AZURE_RTOS/App/app_azure_rtos.c' - object file renamed from 'mp_threadx\app_azure_rtos.o' to 'mp_threadx\app_azure_rtos_1.o'."mp_threadx\mp_threadx.axf" - 0 Error(s), 0 Warning(s).
+Build Time Elapsed:  00:00:01

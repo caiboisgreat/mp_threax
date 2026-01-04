@@ -30,5 +30,4 @@
 mp_dynamic_compiler_t mp_dynamic_compiler = {0};
 #endif
 
-__attribute__((section(".bss.mp_state_ctx"))) mp_state_ctx_t mp_state_ctx;
-
+mp_state_ctx_t mp_state_ctx;

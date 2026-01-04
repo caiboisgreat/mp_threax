@@ -1,0 +1,7 @@
+Q(function)
+Q(append)
+Q(appendleft)
+Q(extend)
+Q(pop)
+Q(popleft)
+Q(deque)

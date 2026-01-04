@@ -268,7 +268,7 @@ static void instance_print(const mp_print_t *print, mp_obj_t self_in, mp_print_k
             if (kind != PRINT_STR) {
                 mp_print_str(print, qstr_str(self->base.type->name));
             }
-            mp_obj_print_helper(print, self->subobj[0], (mp_print_kind_t)(kind | PRINT_EXC_SUBCLASS));
+            mp_obj_print_helper(print, self->subobj[0], kind | PRINT_EXC_SUBCLASS);
         } else {
             mp_obj_print_helper(print, self->subobj[0], kind);
         }

@@ -206,7 +206,6 @@ static void mp_setup_code_state_helper(mp_code_state_t *code_state, size_t n_arg
             const uint8_t *arg_names = code_state->ip;
             arg_names = mp_decode_uint_skip(arg_names);
 
-            bool found = false;
             for (size_t j = 0; j < n_pos_args + n_kwonly_args; j++) {
                 qstr arg_qstr = mp_decode_uint(&arg_names);
                 #if MICROPY_EMIT_BYTECODE_USES_QSTR_TABLE
@@ -214,16 +213,13 @@ static void mp_setup_code_state_helper(mp_code_state_t *code_state, size_t n_arg
                 #endif
                 if (wanted_arg_name == MP_OBJ_NEW_QSTR(arg_qstr)) {
                     if (code_state_state[n_state - 1 - j] != MP_OBJ_NULL) {
+                    error_multiple:
                         mp_raise_msg_varg(&mp_type_TypeError,
                             MP_ERROR_TEXT("function got multiple values for argument '%q'"), MP_OBJ_QSTR_VALUE(wanted_arg_name));
                     }
                     code_state_state[n_state - 1 - j] = kwargs[2 * i + 1];
-                    found = true;
-                    break;
+                    goto continue2;
                 }
-            }
-            if (found) {
-                continue;
             }
             // Didn't find name match with positional args
             if ((scope_flags & MP_SCOPE_FLAG_VARKEYWORDS) == 0) {
@@ -238,9 +234,9 @@ static void mp_setup_code_state_helper(mp_code_state_t *code_state, size_t n_arg
             if (elem->value == MP_OBJ_NULL) {
                 elem->value = kwargs[2 * i + 1];
             } else {
-                mp_raise_msg_varg(&mp_type_TypeError,
-                    MP_ERROR_TEXT("function got multiple values for argument '%q'"), MP_OBJ_QSTR_VALUE(wanted_arg_name));
+                goto error_multiple;
             }
+        continue2:;
         }
 
         DEBUG_printf("Args with kws flattened: ");
@@ -336,7 +332,7 @@ void mp_setup_code_state(mp_code_state_t *code_state, size_t n_args, size_t n_kw
     mp_setup_code_state_helper(code_state, n_args, n_kw, args);
 }
 
-#if MICROPY_EMIT_NATIVE
+#if MICROPY_ENABLE_NATIVE_CODE
 // On entry code_state should be allocated somewhere (stack/heap) and
 // contain the following valid entries:
 //    - code_state->fun_bc should contain a pointer to the function object

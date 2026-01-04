@@ -63,6 +63,10 @@ typedef struct _bytecode_prelude_t {
     uint code_info_size;
 } bytecode_prelude_t;
 
+#if MICROPY_EMIT_RV32
+#include "py/asmrv32.h"
+#endif
+
 #endif // MICROPY_PERSISTENT_CODE_LOAD || MICROPY_PERSISTENT_CODE_SAVE
 
 #if MICROPY_PERSISTENT_CODE_LOAD
@@ -72,7 +76,7 @@ typedef struct _bytecode_prelude_t {
 static int read_byte(mp_reader_t *reader);
 static size_t read_uint(mp_reader_t *reader);
 
-#if MICROPY_EMIT_MACHINE_CODE
+#if MICROPY_EMIT_INLINE_ASM || MICROPY_ENABLE_NATIVE_CODE
 
 #if MICROPY_PERSISTENT_CODE_TRACK_FUN_DATA || MICROPY_PERSISTENT_CODE_TRACK_BSS_RODATA
 
@@ -218,7 +222,7 @@ static mp_obj_t mp_obj_new_str_static(const mp_obj_type_t *type, const byte *dat
 
 static mp_obj_t load_obj(mp_reader_t *reader) {
     byte obj_type = read_byte(reader);
-    #if MICROPY_EMIT_MACHINE_CODE
+    #if MICROPY_EMIT_INLINE_ASM || MICROPY_ENABLE_NATIVE_CODE
     if (obj_type == MP_PERSISTENT_OBJ_FUN_TABLE) {
         return MP_OBJ_FROM_PTR(&mp_fun_table);
     } else
@@ -291,14 +295,14 @@ static mp_raw_code_t *load_raw_code(mp_reader_t *reader, mp_module_context_t *co
     bool has_children = !!(kind_len & 4);
     size_t fun_data_len = kind_len >> 3;
 
-    #if !MICROPY_EMIT_MACHINE_CODE
+    #if !(MICROPY_EMIT_INLINE_ASM || MICROPY_ENABLE_NATIVE_CODE)
     if (kind != MP_CODE_BYTECODE) {
         mp_raise_ValueError(MP_ERROR_TEXT("incompatible .mpy file"));
     }
     #endif
 
     uint8_t *fun_data = NULL;
-    #if MICROPY_EMIT_MACHINE_CODE
+    #if MICROPY_EMIT_INLINE_ASM || MICROPY_ENABLE_NATIVE_CODE
     size_t prelude_offset = 0;
     mp_uint_t native_scope_flags = 0;
     mp_uint_t native_n_pos_args = 0;
@@ -318,7 +322,7 @@ static mp_raw_code_t *load_raw_code(mp_reader_t *reader, mp_module_context_t *co
             read_bytes(reader, fun_data, fun_data_len);
         }
 
-    #if MICROPY_EMIT_MACHINE_CODE
+    #if MICROPY_EMIT_INLINE_ASM || MICROPY_ENABLE_NATIVE_CODE
     } else {
         // Allocate memory for native data and load it
         size_t fun_alloc;
@@ -345,7 +349,7 @@ static mp_raw_code_t *load_raw_code(mp_reader_t *reader, mp_module_context_t *co
     size_t n_children = 0;
     mp_raw_code_t **children = NULL;
 
-    #if MICROPY_EMIT_MACHINE_CODE
+    #if MICROPY_EMIT_INLINE_ASM || MICROPY_ENABLE_NATIVE_CODE
     // Load optional BSS/rodata for viper.
     uint8_t *rodata = NULL;
     uint8_t *bss = NULL;
@@ -400,7 +404,7 @@ static mp_raw_code_t *load_raw_code(mp_reader_t *reader, mp_module_context_t *co
             #endif
             scope_flags);
 
-    #if MICROPY_EMIT_MACHINE_CODE
+    #if MICROPY_EMIT_INLINE_ASM || MICROPY_ENABLE_NATIVE_CODE
     } else {
         const uint8_t *prelude_ptr = NULL;
         #if MICROPY_EMIT_NATIVE_PRELUDE_SEPARATE_FROM_MACHINE_CODE
@@ -471,7 +475,7 @@ void mp_raw_code_load(mp_reader_t *reader, mp_compiled_module_t *cm) {
         || header[3] > MP_SMALL_INT_BITS) {
         mp_raise_ValueError(MP_ERROR_TEXT("incompatible .mpy file"));
     }
-    if (MPY_FEATURE_DECODE_ARCH(header[2]) != MP_NATIVE_ARCH_NONE) {
+    if (arch != MP_NATIVE_ARCH_NONE) {
         if (!MPY_FEATURE_ARCH_TEST(arch)) {
             if (MPY_FEATURE_ARCH_TEST(MP_NATIVE_ARCH_NONE)) {
                 // On supported ports this can be resolved by enabling feature, eg
@@ -480,6 +484,23 @@ void mp_raw_code_load(mp_reader_t *reader, mp_compiled_module_t *cm) {
             } else {
                 mp_raise_ValueError(MP_ERROR_TEXT("incompatible .mpy arch"));
             }
+        }
+    }
+
+    size_t arch_flags = 0;
+    if (MPY_FEATURE_ARCH_FLAGS_TEST(header[2])) {
+        #if MICROPY_EMIT_RV32
+        arch_flags = read_uint(reader);
+
+        if (MPY_FEATURE_ARCH_TEST(MP_NATIVE_ARCH_RV32IMC)) {
+            if ((arch_flags & (size_t)asm_rv32_allowed_extensions()) != arch_flags) {
+                mp_raise_ValueError(MP_ERROR_TEXT("incompatible .mpy file"));
+            }
+        } else
+        #endif
+        {
+            (void)arch_flags;
+            mp_raise_ValueError(MP_ERROR_TEXT("incompatible .mpy file"));
         }
     }
 
@@ -504,6 +525,7 @@ void mp_raw_code_load(mp_reader_t *reader, mp_compiled_module_t *cm) {
     cm->has_native = MPY_FEATURE_DECODE_ARCH(header[2]) != MP_NATIVE_ARCH_NONE;
     cm->n_qstr = n_qstr;
     cm->n_obj = n_obj;
+    cm->arch_flags = arch_flags;
     #endif
 
     // Deregister exception handler and close the reader.
@@ -672,7 +694,7 @@ void mp_raw_code_save(mp_compiled_module_t *cm, mp_print_t *print) {
     byte header[4] = {
         'M',
         MPY_VERSION,
-        cm->has_native ? MPY_FEATURE_ENCODE_SUB_VERSION(MPY_SUB_VERSION) | MPY_FEATURE_ENCODE_ARCH(MPY_FEATURE_ARCH_DYNAMIC) : 0,
+        (cm->arch_flags != 0 ? MPY_FEATURE_ARCH_FLAGS : 0) | (cm->has_native ? MPY_FEATURE_ENCODE_SUB_VERSION(MPY_SUB_VERSION) | MPY_FEATURE_ENCODE_ARCH(MPY_FEATURE_ARCH_DYNAMIC) : 0),
         #if MICROPY_DYNAMIC_COMPILER
         mp_dynamic_compiler.small_int_bits,
         #else
@@ -680,6 +702,10 @@ void mp_raw_code_save(mp_compiled_module_t *cm, mp_print_t *print) {
         #endif
     };
     mp_print_bytes(print, header, sizeof(header));
+
+    if (cm->arch_flags) {
+        mp_print_uint(print, cm->arch_flags);
+    }
 
     // Number of entries in constant table.
     mp_print_uint(print, cm->n_qstr);

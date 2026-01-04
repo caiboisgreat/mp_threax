@@ -761,13 +761,11 @@ void mp_emit_bc_store_comp(emit_t *emit, scope_kind_t kind, mp_uint_t collection
 }
 
 void mp_emit_bc_unpack_sequence(emit_t *emit, mp_uint_t n_args) {
-    int stack_adj = (int)n_args - 1;
-    emit_write_bytecode_byte_uint(emit, stack_adj, MP_BC_UNPACK_SEQUENCE, n_args);
+    emit_write_bytecode_byte_uint(emit, -1 + n_args, MP_BC_UNPACK_SEQUENCE, n_args);
 }
 
 void mp_emit_bc_unpack_ex(emit_t *emit, mp_uint_t n_left, mp_uint_t n_right) {
-    int stack_adj = (int)n_left + (int)n_right;
-    emit_write_bytecode_byte_uint(emit, stack_adj, MP_BC_UNPACK_EX, n_left | (n_right << 8));
+    emit_write_bytecode_byte_uint(emit, -1 + n_left + n_right + 1, MP_BC_UNPACK_EX, n_left | (n_right << 8));
 }
 
 void mp_emit_bc_make_function(emit_t *emit, scope_t *scope, mp_uint_t n_pos_defaults, mp_uint_t n_kw_defaults) {

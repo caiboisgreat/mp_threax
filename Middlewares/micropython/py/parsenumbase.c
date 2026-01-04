@@ -37,8 +37,7 @@ size_t mp_parse_num_base(const char *str, size_t len, int *base) {
     if (len <= 1) {
         goto no_prefix;
     }
-    unichar c;
-    c = *(p++);
+    unichar c = *(p++);
     if (c == '0') {
         c = *(p++) | 32;
         int b = *base;

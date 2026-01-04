@@ -1,22 +1,4 @@
 *** Using Compiler 'V6.24', folder: 'D:\Program Files\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'mp_threadx'
-Note: source file '../AZURE_RTOS/App/app_azure_rtos.c' - object file renamed from 'mp_threadx\app_azure_rtos.o' to 'mp_threadx\app_azure_rtos_1.o'.compiling app_threadx.c...
-../Middlewares/micropython/py_port/py_init.c(7): warning: In file included from...../Middlewares/micropython\py/compile.h(31): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
-   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
-      |                                                           ^
-../Middlewares/micropython/py_port/py_init.c(117): warning: unused parameter 'filename' [-Wunused-parameter]
-  117 | mp_lexer_t *mp_lexer_new_from_file(qstr filename) {
-      |                                         ^
-../Middlewares/micropython/py_port/py_init.c(121): warning: unused parameter 'path' [-Wunused-parameter]
-  121 | mp_import_stat_t mp_import_stat(const char *path) {
-      |                                             ^
-../Middlewares/micropython/py_port/py_init.c(213): warning: unused parameter 'func' [-Wunused-parameter]
-  213 | void MP_WEAK __assert_func(const char *file, int line, const char *func, const char *expr) {
-      |                                                                    ^
-4 warnings generated.
-compiling py_init.c...
-linking...
-Program Size: Code=237152 RO-data=31948 RW-data=32 ZI-data=73152  
-FromELF: creating hex file...
-"mp_threadx\mp_threadx.axf" - 0 Error(s), 4 Warning(s).
-Build Time Elapsed:  00:00:02
+"mp_threadx\mp_threadx.axf" - 0 Error(s), 0 Warning(s).
+Build Time Elapsed:  00:00:01

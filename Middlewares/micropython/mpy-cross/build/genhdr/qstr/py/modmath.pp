@@ -1,0 +1,28679 @@
+#line 1 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "E:\\Work\\code\\opensource\\micropython\\py/builtin.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\assert.h"
+
+
+
+
+
+
+
+
+
+#line 11 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\assert.h"
+
+#line 1 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+
+
+#pragma once
+
+#line 1 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+
+
+
+
+#pragma once
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 32 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+#line 34 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+#line 35 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+    
+#line 39 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+
+
+
+    
+    
+
+#line 49 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+        
+
+
+            
+        #line 54 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+    #line 55 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+#line 56 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+#line 1 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma once
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 151 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+#line 155 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 185 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+#line 188 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+#line 190 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+#line 196 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+#line 200 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+#line 207 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+
+
+
+
+
+#line 219 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+
+
+#line 228 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+#line 229 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma region Input Buffer SAL 1 compatibility macros
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma endregion Input Buffer SAL 1 compatibility macros
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1555 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1586 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1611 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1624 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1663 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1775 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1878 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 2047 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 2149 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 2366 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+#line 2367 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 2595 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+#line 2634 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 2868 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+
+
+
+#line 2878 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+    
+    
+
+
+#line 2886 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+#line 2887 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+#line 2894 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+#line 2895 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+#line 2902 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+#line 2903 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+
+
+
+
+
+#line 2915 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 2949 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\concurrencysal.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma once
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 292 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\concurrencysal.h"
+
+
+
+#line 296 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\concurrencysal.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 389 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\concurrencysal.h"
+
+
+
+
+
+#line 395 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\concurrencysal.h"
+#line 2975 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\sal.h"
+#line 58 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+#line 1 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+
+
+
+
+
+
+
+
+
+
+#pragma once
+
+
+
+#pragma pack(push, 8)
+
+
+
+    
+
+
+        
+    #line 24 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+#line 25 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+
+
+
+
+    
+
+
+        
+    #line 34 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+#line 35 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+
+
+
+    
+#line 40 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+
+
+
+
+    
+#line 46 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+
+#pragma warning(push)
+#pragma warning(disable:   4514 4820 )
+
+
+
+
+
+
+
+#line 57 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+
+
+    
+    
+        typedef unsigned __int64  uintptr_t;
+    
+
+#line 65 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+#line 66 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+
+
+    
+    
+
+
+        typedef char* va_list;
+    #line 74 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+#line 75 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+
+
+
+
+    
+#line 81 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+
+
+
+
+
+#line 87 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+
+
+
+#line 91 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+    
+    
+#line 94 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+
+
+
+
+
+
+
+
+
+
+
+#line 106 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+
+
+
+
+
+
+
+#line 114 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+
+
+
+
+
+
+
+
+
+
+
+#line 126 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+
+
+
+
+
+#line 132 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+
+
+
+
+
+
+
+
+
+
+#line 143 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+
+
+
+
+
+
+
+
+
+
+#line 154 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+
+    void __cdecl __va_start(va_list* , ...);
+
+    
+    
+
+
+
+    
+
+#line 165 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 202 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+
+    
+
+#line 206 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vadefs.h"
+
+#pragma warning(pop) 
+#pragma pack(pop)
+#line 59 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+#pragma warning(push)
+#pragma warning(disable:   4514 4820 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 77 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+
+
+
+
+
+
+#line 87 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+    
+
+
+    
+
+
+#line 95 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+__pragma(pack(push, 8))
+
+
+
+
+    
+
+
+        
+    #line 106 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+#line 107 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+#line 126 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+#line 128 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+        
+    #line 130 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+#line 131 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+    
+
+#line 136 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+        
+    #line 138 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+#line 139 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+
+
+#line 145 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+    
+    
+#line 148 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+
+    
+#line 154 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+
+
+
+
+
+
+
+#line 165 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+    
+#line 167 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+
+    
+#line 173 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+    
+
+
+
+      
+    #line 181 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+#line 182 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+
+
+
+    typedef unsigned __int64 size_t;
+    typedef __int64          ptrdiff_t;
+    typedef __int64          intptr_t;
+
+
+
+
+#line 196 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+#line 200 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+#line 204 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+    typedef _Bool __vcrt_bool;
+#line 206 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+    
+#line 211 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+    
+#line 215 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+    
+#line 219 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+    
+    typedef unsigned short wchar_t;
+#line 225 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+    
+
+
+        
+    #line 232 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+#line 233 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+    
+
+
+#line 239 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+#line 243 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+
+
+
+
+
+
+
+    
+#line 255 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+#line 259 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+
+
+
+
+
+    
+#line 269 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+    
+
+#line 274 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+        
+    #line 276 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+#line 277 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+    
+
+#line 282 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+        
+    #line 284 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+#line 285 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+    
+
+#line 290 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+        
+    #line 292 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+#line 293 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+    
+
+#line 298 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+        
+    #line 300 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+#line 301 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+
+
+#line 307 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+#line 311 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+#line 315 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+    
+        
+    
+
+
+
+#line 325 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+#line 326 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+#line 330 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+    
+#line 332 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+
+
+
+
+
+
+    
+
+
+        
+    #line 346 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+#line 347 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+
+
+
+
+    
+#line 356 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+
+
+
+#line 363 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+    
+        
+    
+
+
+
+
+
+#line 374 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+#line 375 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+
+#line 379 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+    
+        
+    
+
+
+#line 387 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+#line 388 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+    void __cdecl __security_init_cookie(void);
+
+    
+
+
+#line 396 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+
+#line 399 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+        void __cdecl __security_check_cookie(  uintptr_t _StackCookie);
+        __declspec(noreturn) void __cdecl __report_gsfailure(  uintptr_t _StackCookie);
+    #line 402 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+#line 403 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+extern uintptr_t __security_cookie;
+
+
+    
+    
+    
+#line 411 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+
+__pragma(pack(pop))
+
+#pragma warning(pop) 
+
+#line 417 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\vcruntime.h"
+#line 11 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    #line 38 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 39 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+    
+#line 43 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+    
+        
+    
+
+#line 50 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 51 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+        
+    #line 73 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 74 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+    
+#line 79 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+#line 95 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+        
+    #line 111 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 112 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+    
+
+
+        
+    #line 119 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 120 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+#pragma warning(push)
+#pragma warning(disable: 4324  4514 4574 4710 4793 4820 4995 4996 28719 28726 28727 )
+
+
+__pragma(pack(push, 8))
+
+
+
+
+
+
+
+    
+
+#line 136 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+#line 138 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+        
+    #line 140 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 141 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+    
+#line 147 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+    
+
+#line 152 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+#line 154 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+        
+    #line 156 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 157 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+#line 161 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+    
+#line 163 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+    
+
+
+#line 169 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+#line 175 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+    
+#line 177 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+    
+#line 184 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+#line 188 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+    
+#line 190 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+
+
+
+
+    
+#line 201 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+        
+    #line 219 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 220 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+#line 224 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+    
+#line 226 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+#line 230 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+    
+#line 232 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+#line 236 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+    
+#line 238 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+    
+
+
+        
+    #line 245 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 246 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 270 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+#line 274 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+    typedef _Bool __crt_bool;
+#line 276 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+
+
+            
+        #line 296 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+    #line 297 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 298 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+#line 320 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+        
+    #line 322 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 323 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+#line 327 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+    
+#line 331 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+ 
+
+
+
+
+
+
+  
+
+#line 343 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+   
+  #line 345 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+ #line 346 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 347 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+ 
+
+#line 352 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+   
+ #line 354 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 355 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ void __cdecl _invalid_parameter_noinfo(void);
+ __declspec(noreturn) void __cdecl _invalid_parameter_noinfo_noreturn(void);
+
+__declspec(noreturn)
+ void __cdecl _invoke_watson(
+      wchar_t const* _Expression,
+      wchar_t const* _FunctionName,
+      wchar_t const* _FileName,
+            unsigned int _LineNo,
+            uintptr_t _Reserved);
+
+
+    
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    #line 401 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 402 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+#line 419 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+#line 423 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+    
+        
+    
+
+
+
+#line 432 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 433 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+        
+    #line 451 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 452 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+    
+
+
+        
+    #line 459 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 460 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+#line 464 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 478 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 494 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+    
+#line 501 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+#line 505 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+    
+
+#line 510 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 511 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+    
+
+
+        
+
+
+            
+        #line 521 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+    #line 522 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 523 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+#line 527 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+#line 533 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+    
+
+
+        
+
+
+
+    #line 543 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 544 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+    
+        
+    
+
+
+
+#line 553 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+    
+        
+        
+        
+    
+
+
+
+#line 563 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+    
+        
+              
+        
+
+#line 570 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+    
+
+
+
+#line 575 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+    
+        
+    
+
+
+
+#line 583 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+    
+        
+    
+
+
+
+#line 591 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 592 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+    
+#line 596 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+
+
+
+typedef int                           errno_t;
+typedef unsigned short                wint_t;
+typedef unsigned short                wctype_t;
+typedef long                          __time32_t;
+typedef __int64                       __time64_t;
+
+typedef struct __crt_locale_data_public
+{
+      unsigned short const* _locale_pctype;
+      int _locale_mb_cur_max;
+               unsigned int _locale_lc_codepage;
+} __crt_locale_data_public;
+
+typedef struct __crt_locale_pointers
+{
+    struct __crt_locale_data*    locinfo;
+    struct __crt_multibyte_data* mbcinfo;
+} __crt_locale_pointers;
+
+typedef __crt_locale_pointers* _locale_t;
+
+typedef struct _Mbstatet
+{ 
+    unsigned long _Wchar;
+    unsigned short _Byte, _State;
+} _Mbstatet;
+
+typedef _Mbstatet mbstate_t;
+
+
+
+#line 636 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+#line 660 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+        
+    #line 662 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 663 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+#line 668 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+#line 673 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+    
+#line 675 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+#line 679 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+    
+
+
+        typedef __time64_t time_t;
+    #line 686 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 687 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+    
+#line 692 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+    typedef size_t rsize_t;
+#line 696 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 851 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    #line 866 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 867 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1918 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+        
+        
+        
+        
+
+        
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+
+            
+
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+
+            
+
+
+
+            
+
+
+
+            
+
+
+            
+
+
+
+            
+
+
+
+
+            
+
+            
+
+
+
+
+            
+
+            
+
+
+
+
+            
+
+            
+
+
+
+
+            
+
+            
+
+
+
+
+            
+
+            
+
+
+
+
+            
+
+            
+
+
+
+
+            
+
+            
+
+
+
+
+            
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 2108 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+    #line 2109 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+#line 2110 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt.h"
+
+__pragma(pack(pop))
+
+
+#pragma warning(pop) 
+#line 13 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\assert.h"
+
+#pragma warning(push)
+#pragma warning(disable: 4324  4514 4574 4710 4793 4820 4995 4996 28719 28726 28727 )
+
+__pragma(pack(push, 8))
+
+
+
+
+
+#line 24 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\assert.h"
+
+
+
+
+
+
+
+
+
+     void __cdecl _wassert(
+          wchar_t const* _Message,
+          wchar_t const* _File,
+            unsigned       _Line
+        );
+
+    
+
+
+
+
+#line 45 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\assert.h"
+
+
+
+__pragma(pack(pop))
+
+#pragma warning(pop) 
+#line 30 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+#line 1 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\stdint.h"
+
+
+
+
+
+
+
+#pragma once
+
+
+
+
+
+
+#pragma warning(push)
+#pragma warning(disable:   4514 4820 )
+
+typedef signed char        int8_t;
+typedef short              int16_t;
+typedef int                int32_t;
+typedef long long          int64_t;
+typedef unsigned char      uint8_t;
+typedef unsigned short     uint16_t;
+typedef unsigned int       uint32_t;
+typedef unsigned long long uint64_t;
+
+typedef signed char        int_least8_t;
+typedef short              int_least16_t;
+typedef int                int_least32_t;
+typedef long long          int_least64_t;
+typedef unsigned char      uint_least8_t;
+typedef unsigned short     uint_least16_t;
+typedef unsigned int       uint_least32_t;
+typedef unsigned long long uint_least64_t;
+
+typedef signed char        int_fast8_t;
+typedef int                int_fast16_t;
+typedef int                int_fast32_t;
+typedef long long          int_fast64_t;
+typedef unsigned char      uint_fast8_t;
+typedef unsigned int       uint_fast16_t;
+typedef unsigned int       uint_fast32_t;
+typedef unsigned long long uint_fast64_t;
+
+typedef long long          intmax_t;
+typedef unsigned long long uintmax_t;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+
+
+#line 97 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\stdint.h"
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+#line 112 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\stdint.h"
+#line 113 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\stdint.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma warning(pop) 
+
+#line 139 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\stdint.h"
+#line 30 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 34 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+#line 1 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\limits.h"
+
+
+
+
+
+
+
+#pragma once
+
+
+
+
+#pragma warning(push)
+#pragma warning(disable:   4514 4820 )
+
+__pragma(pack(push, 8))
+
+
+
+
+
+
+
+    
+    
+
+
+
+#line 30 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\limits.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+#line 73 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\limits.h"
+
+__pragma(pack(pop))
+
+#pragma warning(pop) 
+#line 35 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+#line 36 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 64 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 70 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "E:\\Work\\code\\opensource\\micropython\\mpy-cross\\mpconfigport.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 39 "E:\\Work\\code\\opensource\\micropython\\mpy-cross\\mpconfigport.h"
+#line 40 "E:\\Work\\code\\opensource\\micropython\\mpy-cross\\mpconfigport.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 69 "E:\\Work\\code\\opensource\\micropython\\mpy-cross\\mpconfigport.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 87 "E:\\Work\\code\\opensource\\micropython\\mpy-cross\\mpconfigport.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 105 "E:\\Work\\code\\opensource\\micropython\\mpy-cross\\mpconfigport.h"
+typedef long mp_off_t;
+#line 107 "E:\\Work\\code\\opensource\\micropython\\mpy-cross\\mpconfigport.h"
+
+
+
+
+
+
+#line 114 "E:\\Work\\code\\opensource\\micropython\\mpy-cross\\mpconfigport.h"
+#line 1 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\malloc.h"
+
+
+
+
+
+
+
+#pragma once
+
+
+
+
+#line 1 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_malloc.h"
+
+
+
+
+
+
+
+
+#pragma once
+
+
+
+#pragma warning(push)
+#pragma warning(disable: 4324  4514 4574 4710 4793 4820 4995 4996 28719 28726 28727 )
+
+
+__pragma(pack(push, 8))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 56 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_malloc.h"
+
+     
+ __declspec(allocator) __declspec(restrict)
+void* __cdecl _calloc_base(
+      size_t _Count,
+      size_t _Size
+    );
+
+     
+  __declspec(allocator) __declspec(restrict) 
+void* __cdecl calloc(
+       size_t _Count,
+       size_t _Size
+    );
+
+ 
+ int __cdecl _callnewh(
+      size_t _Size
+    );
+
+     
+ __declspec(allocator) 
+void* __cdecl _expand(
+                void*  _Block,
+       size_t _Size
+    );
+
+
+void __cdecl _free_base(
+        void* _Block
+    );
+
+ 
+void __cdecl free(
+        void* _Block
+    );
+
+     
+ __declspec(allocator) __declspec(restrict)
+void* __cdecl _malloc_base(
+      size_t _Size
+    );
+
+     
+ __declspec(allocator)  __declspec(restrict) 
+void* __cdecl malloc(
+       size_t _Size
+    );
+
+ 
+
+size_t __cdecl _msize_base(
+      void* _Block
+    ) ;
+
+ 
+ 
+size_t __cdecl _msize(
+      void* _Block
+    );
+
+       
+ __declspec(allocator) __declspec(restrict)
+void* __cdecl _realloc_base(
+         void*  _Block,
+                                 size_t _Size
+    );
+
+       
+ __declspec(allocator) __declspec(restrict) 
+void* __cdecl realloc(
+        void*  _Block,
+              size_t _Size
+    );
+
+       
+ __declspec(allocator) __declspec(restrict)
+void* __cdecl _recalloc_base(
+        void*  _Block,
+                                size_t _Count,
+                                size_t _Size
+    );
+
+       
+ __declspec(allocator) __declspec(restrict)
+void* __cdecl _recalloc(
+        void*  _Block,
+              size_t _Count,
+              size_t _Size
+    );
+
+
+void __cdecl _aligned_free(
+        void* _Block
+    );
+
+     
+ __declspec(allocator) __declspec(restrict)
+void* __cdecl _aligned_malloc(
+       size_t _Size,
+                         size_t _Alignment
+    );
+
+     
+ __declspec(allocator) __declspec(restrict)
+void* __cdecl _aligned_offset_malloc(
+       size_t _Size,
+                         size_t _Alignment,
+                         size_t _Offset
+    );
+
+ 
+
+size_t __cdecl _aligned_msize(
+      void*  _Block,
+               size_t _Alignment,
+               size_t _Offset
+    );
+
+       
+ __declspec(allocator) __declspec(restrict)
+void* __cdecl _aligned_offset_realloc(
+        void*  _Block,
+              size_t _Size,
+                                size_t _Alignment,
+                                size_t _Offset
+    );
+
+       
+ __declspec(allocator) __declspec(restrict)
+void* __cdecl _aligned_offset_recalloc(
+        void*  _Block,
+              size_t _Count,
+              size_t _Size,
+                                size_t _Alignment,
+                                size_t _Offset
+    );
+
+       
+ __declspec(allocator) __declspec(restrict)
+void* __cdecl _aligned_realloc(
+        void*  _Block,
+              size_t _Size,
+                                size_t _Alignment
+    );
+
+       
+ __declspec(allocator) __declspec(restrict)
+void* __cdecl _aligned_recalloc(
+        void*  _Block,
+              size_t _Count,
+              size_t _Size,
+                                size_t _Alignment
+    );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 229 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_malloc.h"
+
+
+
+__pragma(pack(pop))
+
+#pragma warning(pop) 
+#line 14 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\malloc.h"
+
+#pragma warning(push)
+#pragma warning(disable: 4324  4514 4574 4710 4793 4820 4995 4996 28719 28726 28727 )
+
+
+__pragma(pack(push, 8))
+
+
+
+
+
+    
+
+
+#line 29 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\malloc.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef struct _heapinfo
+{
+    int* _pentry;
+    size_t _size;
+    int _useflag;
+} _HEAPINFO;
+
+
+
+
+
+
+   
+void* __cdecl _alloca(  size_t _Size);
+
+
+
+
+
+     intptr_t __cdecl _get_heap_handle(void);
+
+     
+     int __cdecl _heapmin(void);
+
+    
+         int __cdecl _heapwalk(  _HEAPINFO* _EntryInfo);
+    #line 69 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\malloc.h"
+
+    
+           int __cdecl _heapchk(void);
+    #line 73 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\malloc.h"
+
+     int __cdecl _resetstkoflw(void);
+
+    
+    
+    
+
+    
+        
+    
+
+#line 85 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\malloc.h"
+
+    typedef char __static_assert_t[(sizeof(unsigned int) <= 16) != 0];
+
+
+    #pragma warning(push)
+    #pragma warning(disable: 6540) 
+                                   
+
+    __inline void* _MarkAllocaS(   void* _Ptr, unsigned int _Marker)
+    {
+        if (_Ptr)
+        {
+            *((unsigned int*)_Ptr) = _Marker;
+            _Ptr = (char*)_Ptr + 16;
+        }
+        return _Ptr;
+    }
+
+    __inline size_t _MallocaComputeSize(size_t _Size)
+    {
+        size_t _MarkedSize = _Size + 16;
+        return _MarkedSize > _Size ? _MarkedSize : 0;
+    }
+
+    #pragma warning(pop)
+
+#line 112 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\malloc.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+#line 139 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\malloc.h"
+
+
+
+
+#line 144 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\malloc.h"
+#line 145 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\malloc.h"
+
+    
+
+    #pragma warning(push)
+    #pragma warning(disable: 6014) 
+    __inline void __cdecl _freea(    void* _Memory)
+    {
+        unsigned int _Marker;
+        if (_Memory)
+        {
+            _Memory = (char*)_Memory - 16;
+            _Marker = *(unsigned int*)_Memory;
+            if (_Marker == 0xDDDD)
+            {
+                free(_Memory);
+            }
+            
+
+
+
+
+
+        }
+    }
+    #pragma warning(pop)
+
+#line 172 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\malloc.h"
+
+
+
+
+    
+#line 178 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\malloc.h"
+
+
+
+__pragma(pack(pop))
+
+#pragma warning(pop) 
+#line 185 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\malloc.h"
+#line 115 "E:\\Work\\code\\opensource\\micropython\\mpy-cross\\mpconfigport.h"
+
+
+#line 118 "E:\\Work\\code\\opensource\\micropython\\mpy-cross\\mpconfigport.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 136 "E:\\Work\\code\\opensource\\micropython\\mpy-cross\\mpconfigport.h"
+
+
+
+
+
+
+
+
+
+
+
+typedef __int64 ssize_t;
+
+
+
+#line 152 "E:\\Work\\code\\opensource\\micropython\\mpy-cross\\mpconfigport.h"
+typedef mp_off_t off_t;
+
+#line 155 "E:\\Work\\code\\opensource\\micropython\\mpy-cross\\mpconfigport.h"
+
+extern const struct _mp_print_t mp_stdout_print;
+#line 101 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+#line 102 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 107 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 165 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+#line 172 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 190 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+#line 192 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+#line 193 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+typedef intptr_t mp_int_t;
+typedef uintptr_t mp_uint_t;
+
+
+
+
+
+
+
+
+
+#line 207 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+#line 217 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 221 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 227 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+#line 228 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+#line 236 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+#line 238 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 242 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+#line 243 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+#line 253 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 258 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+#line 267 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+#line 277 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 283 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+#line 291 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 296 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 301 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 306 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 311 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 316 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 321 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 326 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 332 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 337 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 342 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+#line 353 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 358 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 364 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+#line 371 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 377 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 381 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+#line 382 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 388 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+#line 395 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+#line 405 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 430 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 436 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+#line 444 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 464 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+#line 474 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 494 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 509 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 514 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 546 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+#line 557 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+#line 568 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 573 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 616 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 621 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+#line 628 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 633 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 638 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 643 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 648 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 653 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+#line 665 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 671 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+#line 680 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 685 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 691 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 697 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+#line 706 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+#line 713 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+#line 723 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 728 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 734 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 739 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 744 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 750 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+#line 760 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 765 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 771 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 776 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 781 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 787 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 792 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+#line 805 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+#line 812 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 817 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 822 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 827 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 833 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 838 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 843 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 848 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+#line 855 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+#line 863 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 868 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 873 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 878 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 896 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 936 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 941 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 957 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+typedef double mp_float_t;
+
+
+#line 964 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 968 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 984 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+#line 986 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+#line 988 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+#line 989 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+#line 997 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+#line 998 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 1004 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1021 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+#line 1032 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1050 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+#line 1051 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1056 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+#line 1068 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+#line 1069 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+typedef long long mp_timestamp_t;
+
+
+
+
+#line 1079 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1084 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 1090 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1095 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+#line 1106 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+#line 1113 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1127 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1132 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 1138 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1143 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1148 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1153 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1158 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+#line 1167 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1172 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+#line 1182 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1187 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1192 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1197 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1202 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1207 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1212 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1217 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1222 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1227 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1232 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1237 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1242 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1247 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1252 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1257 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+#line 1267 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1272 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1277 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+#line 1285 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+#line 1292 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+#line 1299 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1304 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+#line 1314 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+#line 1323 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1328 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1333 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+#line 1343 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1348 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1353 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1358 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1363 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1368 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1373 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+#line 1382 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1387 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1392 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1397 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1402 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1407 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 1413 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1418 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1423 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1428 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 1434 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+#line 1442 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1447 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1452 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+#line 1461 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 1467 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+#line 1474 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1479 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1484 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 1490 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1495 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1500 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1505 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1510 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 1516 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1521 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1526 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1531 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 1537 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1542 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1547 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1552 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1557 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1562 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1575 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1591 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1596 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1601 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1606 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1611 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1616 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1631 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1636 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1641 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1646 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1651 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1656 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 1662 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1667 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+#line 1677 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+#line 1687 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+#line 1697 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1702 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1707 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1712 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+#line 1719 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+#line 1729 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1734 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1739 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 1745 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+#line 1752 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1757 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1762 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1767 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+#line 1776 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+#line 1784 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1789 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1794 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1799 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1804 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 1810 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1815 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 1821 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1826 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1831 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1836 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1841 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+#line 1848 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1853 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1858 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1863 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+#line 1873 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1878 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 1884 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 1890 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1895 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 1901 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 1905 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 1909 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 1915 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1920 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1925 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 1929 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1934 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 1938 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 1942 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 1946 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 1950 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 1954 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 1958 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 1962 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 1966 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 1970 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 1974 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 1978 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 1982 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 1986 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 1991 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 1995 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 1999 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2004 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 2008 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2013 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 2017 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2022 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2027 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2032 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2037 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2042 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2047 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 2051 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2056 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2061 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 2065 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2070 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 2076 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2081 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2086 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 2090 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2095 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2100 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2105 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2110 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 2114 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 2118 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 2122 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2127 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2132 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+#line 2140 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 2146 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+#line 2158 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 2162 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 2166 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 2170 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 2174 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 2178 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 2182 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 2186 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 2190 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 2194 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+#line 2205 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+#line 2211 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+#line 2213 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+#line 2214 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+#line 2222 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+#line 2223 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2228 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2233 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 2265 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 2301 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+#line 2305 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+#line 2306 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+#line 2316 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+#line 2326 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 2344 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2349 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 2375 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+#line 2377 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+#line 2378 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+#line 2383 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+#line 2385 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+#line 2394 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+#line 2395 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+#line 2404 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+#line 2405 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+#line 2413 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+#line 2416 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 2430 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+#line 2432 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+#line 2434 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+#line 2435 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+
+#line 2437 "E:\\Work\\code\\opensource\\micropython\\py/mpconfig.h"
+#line 32 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+#line 1 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\stdbool.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 20 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\stdbool.h"
+
+#line 22 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\stdbool.h"
+#line 36 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+#line 1 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\stddef.h"
+
+
+
+
+
+
+
+#pragma once
+
+
+
+
+
+#pragma warning(push)
+#pragma warning(disable: 4324  4514 4574 4710 4793 4820 4995 4996 28719 28726 28727 )
+
+
+__pragma(pack(push, 8))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     int* __cdecl _errno(void);
+    
+
+     errno_t __cdecl _set_errno(  int _Value);
+     errno_t __cdecl _get_errno(  int* _Value);
+
+#line 42 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\stddef.h"
+
+
+
+
+    
+
+
+        
+    #line 51 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\stddef.h"
+
+
+#line 54 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\stddef.h"
+
+ extern unsigned long  __cdecl __threadid(void);
+
+ extern uintptr_t __cdecl __threadhandle(void);
+
+
+
+__pragma(pack(pop))
+
+#pragma warning(pop) 
+#line 65 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\stddef.h"
+#line 38 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+#line 41 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+#line 43 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+typedef unsigned char byte;
+typedef unsigned int uint;
+
+
+
+#line 50 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+
+#line 54 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+
+
+
+
+#line 61 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+#line 64 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+
+
+
+
+
+
+#line 73 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+#line 75 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+#line 77 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 91 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 114 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+
+
+#line 119 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+void *m_malloc(size_t num_bytes);
+void *m_malloc_maybe(size_t num_bytes);
+void *m_malloc_with_finaliser(size_t num_bytes);
+void *m_malloc0(size_t num_bytes);
+
+
+
+
+#line 130 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+void *m_realloc(void *ptr, size_t new_num_bytes);
+void *m_realloc_maybe(void *ptr, size_t new_num_bytes, _Bool allow_move);
+void m_free(void *ptr);
+#line 134 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+__declspec(noreturn) void m_malloc_fail(size_t num_bytes);
+
+
+
+
+
+
+#line 142 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+
+
+
+#line 148 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef uint32_t unichar;
+
+
+
+
+#line 167 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+unichar utf8_get_char(const byte *s);
+const byte *utf8_next_char(const byte *s);
+size_t utf8_charlen(const byte *str, size_t len);
+
+
+
+
+
+
+
+
+
+
+
+#line 184 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+_Bool unichar_isspace(unichar c);
+_Bool unichar_isalpha(unichar c);
+_Bool unichar_isprint(unichar c);
+_Bool unichar_isdigit(unichar c);
+_Bool unichar_isxdigit(unichar c);
+_Bool unichar_isident(unichar c);
+_Bool unichar_isalnum(unichar c);
+_Bool unichar_isupper(unichar c);
+_Bool unichar_islower(unichar c);
+unichar unichar_tolower(unichar c);
+unichar unichar_toupper(unichar c);
+mp_uint_t unichar_xdigit_value(unichar c);
+
+
+
+
+
+typedef struct _vstr_t {
+    size_t alloc;
+    size_t len;
+    char *buf;
+    _Bool fixed_buf;
+} vstr_t;
+
+
+
+
+void vstr_init(vstr_t *vstr, size_t alloc);
+void vstr_init_len(vstr_t *vstr, size_t len);
+void vstr_init_fixed_buf(vstr_t *vstr, size_t alloc, char *buf);
+struct _mp_print_t;
+void vstr_init_print(vstr_t *vstr, size_t alloc, struct _mp_print_t *print);
+void vstr_clear(vstr_t *vstr);
+vstr_t *vstr_new(size_t alloc);
+void vstr_free(vstr_t *vstr);
+static __inline void vstr_reset(vstr_t *vstr) {
+    vstr->len = 0;
+}
+static __inline char *vstr_str(vstr_t *vstr) {
+    return vstr->buf;
+}
+static __inline size_t vstr_len(vstr_t *vstr) {
+    return vstr->len;
+}
+void vstr_hint_size(vstr_t *vstr, size_t size);
+char *vstr_extend(vstr_t *vstr, size_t size);
+char *vstr_add_len(vstr_t *vstr, size_t len);
+char *vstr_null_terminated_str(vstr_t *vstr);
+void vstr_add_byte(vstr_t *vstr, byte v);
+void vstr_add_char(vstr_t *vstr, unichar chr);
+void vstr_add_str(vstr_t *vstr, const char *str);
+void vstr_add_strn(vstr_t *vstr, const char *str, size_t len);
+void vstr_ins_byte(vstr_t *vstr, size_t byte_pos, byte b);
+void vstr_ins_char(vstr_t *vstr, size_t char_pos, unichar chr);
+void vstr_cut_head_bytes(vstr_t *vstr, size_t bytes_to_cut);
+void vstr_cut_tail_bytes(vstr_t *vstr, size_t bytes_to_cut);
+void vstr_cut_out_bytes(vstr_t *vstr, size_t byte_pos, size_t bytes_to_cut);
+void vstr_printf(vstr_t *vstr, const char *fmt, ...);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int DEBUG_printf(const char *fmt, ...);
+
+extern mp_uint_t mp_verbose_flag;
+
+
+
+
+
+
+
+
+
+typedef uint64_t mp_float_uint_t;
+
+
+
+
+
+#line 280 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+
+typedef union _mp_float_union_t {
+    mp_float_t f;
+    
+    struct {
+        mp_float_uint_t frc : (52);
+        mp_float_uint_t exp : (11);
+        mp_float_uint_t sgn : 1;
+    } p;
+    
+
+
+
+
+
+#line 298 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+    mp_float_uint_t i;
+} mp_float_union_t;
+
+
+
+
+
+
+
+
+
+
+
+
+#line 313 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+typedef mp_float_t mp_large_float_t;
+typedef mp_float_uint_t mp_large_float_uint_t;
+
+#line 319 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+#line 321 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 370 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+
+typedef const char *mp_rom_error_text_t;
+
+
+#line 377 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+
+
+
+
+
+#line 1 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin.h"
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma once
+
+
+
+
+
+
+
+
+#pragma warning(push)
+#pragma warning(disable:   4514 4820 )
+
+#line 1 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin0.inl.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma once
+
+
+
+
+
+#pragma warning(push)
+#pragma warning(disable:   4514 4820 )
+
+
+
+#pragma warning(disable: 28251)
+
+
+
+#line 30 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin0.inl.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 64 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin0.inl.h"
+
+
+#line 67 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin0.inl.h"
+
+
+
+
+
+
+#line 74 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin0.inl.h"
+
+
+
+
+#line 79 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin0.inl.h"
+
+
+
+
+#line 84 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin0.inl.h"
+
+
+
+
+#line 89 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin0.inl.h"
+
+
+
+
+
+
+#line 96 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin0.inl.h"
+
+
+
+
+#line 101 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin0.inl.h"
+
+
+
+
+#line 106 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin0.inl.h"
+
+
+
+
+#line 111 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin0.inl.h"
+
+
+
+
+#line 116 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin0.inl.h"
+
+
+
+
+#line 121 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin0.inl.h"
+
+
+
+
+#line 126 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin0.inl.h"
+
+
+
+
+#line 131 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin0.inl.h"
+
+
+
+
+
+
+
+
+
+unsigned char _BitScanForward(unsigned long * _Index, unsigned long _Mask);
+unsigned char _BitScanForward64(unsigned long * _Index, unsigned __int64 _Mask);
+
+unsigned char _BitScanReverse(unsigned long * _Index, unsigned long _Mask);
+unsigned char _BitScanReverse64(unsigned long * _Index, unsigned __int64 _Mask);
+
+unsigned char _bittest(long const *, long);
+
+
+
+
+long _InterlockedAnd(long volatile * _Value, long _Mask);
+short _InterlockedAnd16(short volatile * _Value, short _Mask);
+
+
+
+__int64 _InterlockedAnd64(__int64 volatile * _Value, __int64 _Mask);
+__int64 _interlockedand64(__int64 volatile * _Value, __int64 _Mask);
+
+
+
+char _InterlockedAnd8(char volatile * _Value, char _Mask);
+
+
+
+
+
+
+long  _InterlockedCompareExchange(long volatile * _Destination, long _Exchange, long _Comparand);
+
+short _InterlockedCompareExchange16(short volatile * _Destination, short _Exchange, short _Comparand);
+
+
+
+__int64 _InterlockedCompareExchange64(__int64 volatile * _Destination, __int64 _Exchange, __int64 _Comparand);
+
+
+
+char _InterlockedCompareExchange8(char volatile * _Destination, char _Exchange, char _Comparand);
+
+
+
+
+
+
+unsigned char _InterlockedCompareExchange128(__int64 volatile * _Destination, __int64 _ExchangeHigh, __int64 _ExchangeLow, __int64 * _ComparandResult);
+
+
+
+long  _InterlockedDecrement(long volatile * _Addend);
+
+short _InterlockedDecrement16(short volatile * _Addend);
+__int64 _InterlockedDecrement64(__int64 volatile * _Addend);
+__int64 _interlockeddecrement64(__int64 volatile * _Addend);
+long  _InterlockedExchange(long volatile * _Target, long _Value);
+
+short _InterlockedExchange16(short volatile * _Target, short _Value);
+
+
+
+__int64 _InterlockedExchange64(__int64 volatile * _Target, __int64 _Value);
+__int64 _interlockedexchange64(__int64 volatile * _Target, __int64 _Value);
+
+
+
+char _InterlockedExchange8(char volatile * _Target, char _Value);
+
+
+
+long  _InterlockedExchangeAdd(long volatile * _Addend, long _Value);
+short _InterlockedExchangeAdd16(short volatile * _Addend, short _Value);
+
+
+
+__int64 _InterlockedExchangeAdd64(__int64 volatile * _Addend, __int64 _Value);
+__int64 _interlockedexchangeadd64(__int64 volatile * _Addend, __int64 _Value);
+
+
+
+char _InterlockedExchangeAdd8(char volatile * _Addend, char _Value);
+
+
+
+
+
+
+
+
+
+long  _InterlockedIncrement(long volatile * _Addend);
+
+short _InterlockedIncrement16(short volatile * _Addend);
+__int64 _InterlockedIncrement64(__int64 volatile * _Addend);
+__int64 _interlockedincrement64(__int64 volatile * _Addend);
+
+long _InterlockedOr(long volatile * _Value, long _Mask);
+short _InterlockedOr16(short volatile * _Value, short _Mask);
+
+
+
+__int64 _InterlockedOr64(__int64 volatile * _Value, __int64 _Mask);
+__int64 _interlockedor64(__int64 volatile * _Value, __int64 _Mask);
+
+
+
+char _InterlockedOr8(char volatile * _Value, char _Mask);
+
+
+
+
+
+
+long _InterlockedXor(long volatile * _Value, long _Mask);
+short _InterlockedXor16(short volatile * _Value, short _Mask);
+
+
+
+__int64 _InterlockedXor64(__int64 volatile * _Value, __int64 _Mask);
+__int64 _interlockedxor64(__int64 volatile * _Value, __int64 _Mask);
+
+
+
+char _InterlockedXor8(char volatile * _Value, char _Mask);
+
+
+
+
+
+
+void _ReadWriteBarrier(void);
+__int16 __iso_volatile_load16(const volatile __int16 *);
+__int32 __iso_volatile_load32(const volatile __int32 *);
+__int64 __iso_volatile_load64(const volatile __int64 *);
+__int8 __iso_volatile_load8(const volatile __int8 *);
+void __iso_volatile_store16(volatile __int16 *, __int16);
+void __iso_volatile_store32(volatile __int32 *, __int32);
+void __iso_volatile_store64(volatile __int64 *, __int64);
+void __iso_volatile_store8(volatile __int8 *, __int8);
+
+
+void _mm_pause(void);
+unsigned int __lzcnt(unsigned int);
+unsigned short __lzcnt16(unsigned short);
+unsigned __int64 __lzcnt64(unsigned __int64);
+unsigned int __popcnt(unsigned int);
+unsigned short __popcnt16(unsigned short);
+unsigned __int64 __popcnt64(unsigned __int64);
+unsigned int __cdecl _rotl(  unsigned int _Value,   int _Shift);
+unsigned short __cdecl _rotl16(unsigned short _Value, unsigned char _Shift);
+unsigned __int64 __cdecl _rotl64(  unsigned __int64 _Value,   int _Shift);
+unsigned char __cdecl _rotl8(unsigned char _Value, unsigned char _Shift);
+unsigned int __cdecl _rotr(  unsigned int _Value,   int _Shift);
+unsigned short __cdecl _rotr16(unsigned short _Value, unsigned char _Shift);
+unsigned __int64 __cdecl _rotr64(  unsigned __int64 _Value,   int _Shift);
+unsigned char __cdecl _rotr8(unsigned char _Value, unsigned char _Shift);
+unsigned __int64 __shiftleft128(unsigned __int64 _LowPart, unsigned __int64 _HighPart, unsigned char _Shift);
+unsigned __int64 __shiftright128(unsigned __int64 _LowPart, unsigned __int64 _HighPart, unsigned char _Shift);
+
+unsigned int _tzcnt_u32(unsigned int);
+unsigned __int64 _tzcnt_u64(unsigned __int64);
+#line 301 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin0.inl.h"
+unsigned __int64 _umul128(unsigned __int64 _Multiplier, unsigned __int64 _Multiplicand, unsigned __int64 * _HighProduct);
+unsigned __int64 __umulh(unsigned __int64, unsigned __int64);
+
+unsigned __int64 __cdecl _udiv128(unsigned __int64 _HighDividend, unsigned __int64 _LowDividend, unsigned __int64 _Divisor, unsigned __int64* _Remainder);
+unsigned char __cdecl _addcarry_u64(unsigned char, unsigned __int64, unsigned __int64, unsigned __int64 *);
+unsigned char __cdecl _subborrow_u64(unsigned char, unsigned __int64, unsigned __int64, unsigned __int64 *);
+double __ceil(double);
+float __ceilf(float);
+double __floor(double);
+float __floorf(float);
+double __round(double);
+float __roundf(float);
+double __trunc(double);
+float __truncf(float);
+double __copysign(double, double);
+float __copysignf(float, float);
+unsigned __signbitvalue(double);
+unsigned __signbitvaluef(float);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 339 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin0.inl.h"
+
+
+
+
+
+
+
+
+
+#line 349 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin0.inl.h"
+#pragma warning(pop) 
+#line 351 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin0.inl.h"
+#line 26 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin.h"
+#line 1 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\setjmp.h"
+
+
+
+
+
+
+
+#pragma once
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma warning(push)
+#pragma warning(disable:   4514 4820 )
+
+__pragma(pack(push, 8))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 50 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\setjmp.h"
+
+    typedef struct __declspec(align(16)) _SETJMP_FLOAT128
+    {
+        unsigned __int64 Part[2];
+    } SETJMP_FLOAT128;
+
+    
+    typedef SETJMP_FLOAT128 _JBTYPE;
+
+    typedef struct _JUMP_BUFFER
+    {
+        unsigned __int64 Frame;
+        unsigned __int64 Rbx;
+        unsigned __int64 Rsp;
+        unsigned __int64 Rbp;
+        unsigned __int64 Rsi;
+        unsigned __int64 Rdi;
+        unsigned __int64 R12;
+        unsigned __int64 R13;
+        unsigned __int64 R14;
+        unsigned __int64 R15;
+        unsigned __int64 Rip;
+        unsigned long MxCsr;
+        unsigned short FpCsr;
+        unsigned short Spare;
+
+        SETJMP_FLOAT128 Xmm6;
+        SETJMP_FLOAT128 Xmm7;
+        SETJMP_FLOAT128 Xmm8;
+        SETJMP_FLOAT128 Xmm9;
+        SETJMP_FLOAT128 Xmm10;
+        SETJMP_FLOAT128 Xmm11;
+        SETJMP_FLOAT128 Xmm12;
+        SETJMP_FLOAT128 Xmm13;
+        SETJMP_FLOAT128 Xmm14;
+        SETJMP_FLOAT128 Xmm15;
+    } _JUMP_BUFFER;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 142 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\setjmp.h"
+
+
+
+
+
+    
+    typedef _JBTYPE jmp_buf[16];
+#line 150 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\setjmp.h"
+
+
+
+
+    
+#line 156 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\setjmp.h"
+
+
+
+
+int __cdecl _setjmp(
+      jmp_buf _Buf
+    );
+
+
+
+
+
+
+
+    __declspec(noreturn) void __cdecl longjmp(
+          jmp_buf _Buf,
+          int     _Value
+        );
+#line 175 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\setjmp.h"
+
+
+__pragma(pack(pop))
+
+#pragma warning(pop) 
+#line 27 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin.h"
+
+
+
+#line 31 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin.h"
+
+
+
+    
+        #line 1 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+
+
+
+
+
+
+#pragma once
+
+
+
+#line 17 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+#line 21 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+
+
+#line 29 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+#line 1 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\wmmintrin.h"
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma once
+
+
+
+#line 18 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\wmmintrin.h"
+
+
+
+#line 22 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\wmmintrin.h"
+
+
+
+
+
+
+
+#line 30 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\wmmintrin.h"
+
+#line 1 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\nmmintrin.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma once
+
+
+
+#line 19 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\nmmintrin.h"
+
+
+
+#line 23 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\nmmintrin.h"
+
+
+
+
+
+
+
+#line 31 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\nmmintrin.h"
+
+#line 1 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\smmintrin.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma once
+
+
+
+#line 19 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\smmintrin.h"
+
+
+
+#line 23 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\smmintrin.h"
+
+
+
+
+
+
+
+#line 31 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\smmintrin.h"
+
+#line 1 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\tmmintrin.h"
+
+
+
+
+
+
+#pragma once
+
+
+
+#line 12 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\tmmintrin.h"
+
+
+
+#line 16 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\tmmintrin.h"
+
+
+
+
+
+
+
+#line 24 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\tmmintrin.h"
+
+#line 1 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\pmmintrin.h"
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma once
+
+
+
+#line 18 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\pmmintrin.h"
+
+
+
+#line 22 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\pmmintrin.h"
+
+
+
+
+
+
+
+#line 30 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\pmmintrin.h"
+
+
+
+
+#line 1 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\emmintrin.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma once
+
+
+
+#line 22 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\emmintrin.h"
+
+
+
+#line 26 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\emmintrin.h"
+
+
+
+
+
+
+
+#line 34 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\emmintrin.h"
+
+
+
+
+#line 1 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmmintrin.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma once
+
+
+
+#line 29 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmmintrin.h"
+
+
+
+#line 33 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmmintrin.h"
+
+
+
+
+
+
+
+#line 41 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmmintrin.h"
+
+
+
+
+
+#line 1 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\mmintrin.h"
+
+
+
+
+
+
+
+
+
+
+#pragma once
+
+
+
+
+
+
+#line 19 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\mmintrin.h"
+
+
+
+#line 23 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\mmintrin.h"
+
+
+
+#line 27 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\mmintrin.h"
+
+
+
+
+
+#line 33 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\mmintrin.h"
+
+typedef union __declspec(intrin_type) __declspec(align(8)) __m64
+{
+    unsigned __int64    m64_u64;
+    float               m64_f32[2];
+    __int8              m64_i8[8];
+    __int16             m64_i16[4];
+    __int32             m64_i32[2];
+    __int64             m64_i64;
+    unsigned __int8     m64_u8[8];
+    unsigned __int16    m64_u16[4];
+    unsigned __int32    m64_u32[2];
+} __m64;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 184 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\mmintrin.h"
+
+
+
+#line 188 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\mmintrin.h"
+
+#line 190 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\mmintrin.h"
+#line 191 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\mmintrin.h"
+#line 192 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\mmintrin.h"
+#line 47 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmmintrin.h"
+#line 48 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmmintrin.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef union __declspec(intrin_type) __declspec(align(16)) __m128 {
+     float               m128_f32[4];
+     unsigned __int64    m128_u64[2];
+     __int8              m128_i8[16];
+     __int16             m128_i16[8];
+     __int32             m128_i32[4];
+     __int64             m128_i64[2];
+     unsigned __int8     m128_u8[16];
+     unsigned __int16    m128_u16[8];
+     unsigned __int32    m128_u32[4];
+ } __m128;
+
+
+
+
+#line 81 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmmintrin.h"
+#line 82 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmmintrin.h"
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 133 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmmintrin.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+#line 196 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmmintrin.h"
+
+
+
+
+#pragma warning(push)
+#pragma warning(disable: 28251)
+
+
+
+
+
+extern __m128 _mm_add_ss(__m128 _A, __m128 _B);
+extern __m128 _mm_add_ps(__m128 _A, __m128 _B);
+extern __m128 _mm_sub_ss(__m128 _A, __m128 _B);
+extern __m128 _mm_sub_ps(__m128 _A, __m128 _B);
+extern __m128 _mm_mul_ss(__m128 _A, __m128 _B);
+extern __m128 _mm_mul_ps(__m128 _A, __m128 _B);
+extern __m128 _mm_div_ss(__m128 _A, __m128 _B);
+extern __m128 _mm_div_ps(__m128 _A, __m128 _B);
+extern __m128 _mm_sqrt_ss(__m128 _A);
+extern __m128 _mm_sqrt_ps(__m128 _A);
+extern __m128 _mm_rcp_ss(__m128 _A);
+extern __m128 _mm_rcp_ps(__m128 _A);
+extern __m128 _mm_rsqrt_ss(__m128 _A);
+extern __m128 _mm_rsqrt_ps(__m128 _A);
+extern __m128 _mm_min_ss(__m128 _A, __m128 _B);
+extern __m128 _mm_min_ps(__m128 _A, __m128 _B);
+extern __m128 _mm_max_ss(__m128 _A, __m128 _B);
+extern __m128 _mm_max_ps(__m128 _A, __m128 _B);
+
+
+
+
+
+extern __m128 _mm_and_ps(__m128 _A, __m128 _B);
+extern __m128 _mm_andnot_ps(__m128 _A, __m128 _B);
+extern __m128 _mm_or_ps(__m128 _A, __m128 _B);
+extern __m128 _mm_xor_ps(__m128 _A, __m128 _B);
+
+
+
+
+
+extern __m128 _mm_cmpeq_ss(__m128 _A, __m128 _B);
+extern __m128 _mm_cmpeq_ps(__m128 _A, __m128 _B);
+extern __m128 _mm_cmplt_ss(__m128 _A, __m128 _B);
+extern __m128 _mm_cmplt_ps(__m128 _A, __m128 _B);
+extern __m128 _mm_cmple_ss(__m128 _A, __m128 _B);
+extern __m128 _mm_cmple_ps(__m128 _A, __m128 _B);
+extern __m128 _mm_cmpgt_ss(__m128 _A, __m128 _B);
+extern __m128 _mm_cmpgt_ps(__m128 _A, __m128 _B);
+extern __m128 _mm_cmpge_ss(__m128 _A, __m128 _B);
+extern __m128 _mm_cmpge_ps(__m128 _A, __m128 _B);
+extern __m128 _mm_cmpneq_ss(__m128 _A, __m128 _B);
+extern __m128 _mm_cmpneq_ps(__m128 _A, __m128 _B);
+extern __m128 _mm_cmpnlt_ss(__m128 _A, __m128 _B);
+extern __m128 _mm_cmpnlt_ps(__m128 _A, __m128 _B);
+extern __m128 _mm_cmpnle_ss(__m128 _A, __m128 _B);
+extern __m128 _mm_cmpnle_ps(__m128 _A, __m128 _B);
+extern __m128 _mm_cmpngt_ss(__m128 _A, __m128 _B);
+extern __m128 _mm_cmpngt_ps(__m128 _A, __m128 _B);
+extern __m128 _mm_cmpnge_ss(__m128 _A, __m128 _B);
+extern __m128 _mm_cmpnge_ps(__m128 _A, __m128 _B);
+extern __m128 _mm_cmpord_ss(__m128 _A, __m128 _B);
+extern __m128 _mm_cmpord_ps(__m128 _A, __m128 _B);
+extern __m128 _mm_cmpunord_ss(__m128 _A, __m128 _B);
+extern __m128 _mm_cmpunord_ps(__m128 _A, __m128 _B);
+extern int _mm_comieq_ss(__m128 _A, __m128 _B);
+extern int _mm_comilt_ss(__m128 _A, __m128 _B);
+extern int _mm_comile_ss(__m128 _A, __m128 _B);
+extern int _mm_comigt_ss(__m128 _A, __m128 _B);
+extern int _mm_comige_ss(__m128 _A, __m128 _B);
+extern int _mm_comineq_ss(__m128 _A, __m128 _B);
+extern int _mm_ucomieq_ss(__m128 _A, __m128 _B);
+extern int _mm_ucomilt_ss(__m128 _A, __m128 _B);
+extern int _mm_ucomile_ss(__m128 _A, __m128 _B);
+extern int _mm_ucomigt_ss(__m128 _A, __m128 _B);
+extern int _mm_ucomige_ss(__m128 _A, __m128 _B);
+extern int _mm_ucomineq_ss(__m128 _A, __m128 _B);
+
+
+
+
+
+extern int _mm_cvt_ss2si(__m128 _A);
+extern int _mm_cvtt_ss2si(__m128 _A);
+extern __m128 _mm_cvt_si2ss(__m128, int);
+extern float _mm_cvtss_f32(__m128 _A);
+
+
+
+
+
+
+
+
+#line 293 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmmintrin.h"
+
+
+
+
+
+extern __int64 _mm_cvtss_si64(__m128 _A);
+extern __int64 _mm_cvttss_si64(__m128 _A);
+extern __m128  _mm_cvtsi64_ss(__m128 _A, __int64 _B);
+#line 302 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmmintrin.h"
+
+
+
+
+
+extern __m128 _mm_shuffle_ps(__m128 _A, __m128 _B, unsigned int _Imm8);
+extern __m128 _mm_unpackhi_ps(__m128 _A, __m128 _B);
+extern __m128 _mm_unpacklo_ps(__m128 _A, __m128 _B);
+extern __m128 _mm_loadh_pi(__m128, __m64 const*);
+extern __m128 _mm_movehl_ps(__m128, __m128);
+extern __m128 _mm_movelh_ps(__m128, __m128);
+extern void _mm_storeh_pi(__m64 *, __m128);
+extern __m128 _mm_loadl_pi(__m128, __m64 const*);
+extern void _mm_storel_pi(__m64 *, __m128);
+extern int _mm_movemask_ps(__m128 _A);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 337 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmmintrin.h"
+
+
+
+
+
+extern __m128 _mm_set_ss(float _A);
+extern __m128 _mm_set_ps1(float _A);
+extern __m128 _mm_set_ps(float _A, float _B, float _C, float _D);
+extern __m128 _mm_setr_ps(float _A, float _B, float _C, float _D);
+extern __m128 _mm_setzero_ps(void);
+extern __m128 _mm_load_ss(float const*_A);
+extern __m128 _mm_load_ps1(float const*_A);
+extern __m128 _mm_load_ps(float const*_A);
+extern __m128 _mm_loadr_ps(float const*_A);
+extern __m128 _mm_loadu_ps(float const*_A);
+extern void _mm_store_ss(float *_V, __m128 _A);
+extern void _mm_store_ps1(float *_V, __m128 _A);
+extern void _mm_store_ps(float *_V, __m128 _A);
+extern void _mm_storer_ps(float *_V, __m128 _A);
+extern void _mm_storeu_ps(float *_V, __m128 _A);
+extern void _mm_prefetch(char const*_A, int _Sel);
+
+extern void _m_prefetchit0(const void *);
+extern void _m_prefetchit1(const void *);
+#line 362 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmmintrin.h"
+
+
+#line 365 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmmintrin.h"
+extern void _mm_stream_ps(float *, __m128);
+extern __m128 _mm_move_ss(__m128 _A, __m128 _B);
+
+extern void _mm_sfence(void);
+extern unsigned int _mm_getcsr(void);
+extern void _mm_setcsr(unsigned int);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 396 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmmintrin.h"
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 524 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmmintrin.h"
+
+#pragma warning(pop) 
+
+
+
+#line 530 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmmintrin.h"
+
+#line 532 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmmintrin.h"
+#line 533 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmmintrin.h"
+#line 534 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\xmmintrin.h"
+#line 39 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\emmintrin.h"
+
+typedef union __declspec(intrin_type) __declspec(align(16)) __m128i {
+    __int8              m128i_i8[16];
+    __int16             m128i_i16[8];
+    __int32             m128i_i32[4];
+    __int64             m128i_i64[2];
+    unsigned __int8     m128i_u8[16];
+    unsigned __int16    m128i_u16[8];
+    unsigned __int32    m128i_u32[4];
+    unsigned __int64    m128i_u64[2];
+} __m128i;
+
+typedef struct __declspec(intrin_type) __declspec(align(16)) __m128d {
+    double              m128d_f64[2];
+} __m128d;
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+#line 68 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\emmintrin.h"
+
+
+
+
+#pragma warning(push)
+#pragma warning(disable: 28251)
+
+
+
+
+
+extern __m128d _mm_add_sd(__m128d _A, __m128d _B);
+extern __m128d _mm_add_pd(__m128d _A, __m128d _B);
+extern __m128d _mm_sub_sd(__m128d _A, __m128d _B);
+extern __m128d _mm_sub_pd(__m128d _A, __m128d _B);
+extern __m128d _mm_mul_sd(__m128d _A, __m128d _B);
+extern __m128d _mm_mul_pd(__m128d _A, __m128d _B);
+extern __m128d _mm_sqrt_sd(__m128d _A, __m128d _B);
+extern __m128d _mm_sqrt_pd(__m128d _A);
+extern __m128d _mm_div_sd(__m128d _A, __m128d _B);
+extern __m128d _mm_div_pd(__m128d _A, __m128d _B);
+extern __m128d _mm_min_sd(__m128d _A, __m128d _B);
+extern __m128d _mm_min_pd(__m128d _A, __m128d _B);
+extern __m128d _mm_max_sd(__m128d _A, __m128d _B);
+extern __m128d _mm_max_pd(__m128d _A, __m128d _B);
+
+
+
+
+
+extern __m128d _mm_and_pd(__m128d _A, __m128d _B);
+extern __m128d _mm_andnot_pd(__m128d _A, __m128d _B);
+extern __m128d _mm_or_pd(__m128d _A, __m128d _B);
+extern __m128d _mm_xor_pd(__m128d _A, __m128d _B);
+
+
+
+
+
+extern __m128d _mm_cmpeq_sd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmpeq_pd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmplt_sd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmplt_pd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmple_sd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmple_pd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmpgt_sd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmpgt_pd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmpge_sd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmpge_pd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmpneq_sd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmpneq_pd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmpnlt_sd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmpnlt_pd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmpnle_sd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmpnle_pd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmpngt_sd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmpngt_pd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmpnge_sd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmpnge_pd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmpord_pd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmpord_sd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmpunord_pd(__m128d _A, __m128d _B);
+extern __m128d _mm_cmpunord_sd(__m128d _A, __m128d _B);
+extern int _mm_comieq_sd(__m128d _A, __m128d _B);
+extern int _mm_comilt_sd(__m128d _A, __m128d _B);
+extern int _mm_comile_sd(__m128d _A, __m128d _B);
+extern int _mm_comigt_sd(__m128d _A, __m128d _B);
+extern int _mm_comige_sd(__m128d _A, __m128d _B);
+extern int _mm_comineq_sd(__m128d _A, __m128d _B);
+extern int _mm_ucomieq_sd(__m128d _A, __m128d _B);
+extern int _mm_ucomilt_sd(__m128d _A, __m128d _B);
+extern int _mm_ucomile_sd(__m128d _A, __m128d _B);
+extern int _mm_ucomigt_sd(__m128d _A, __m128d _B);
+extern int _mm_ucomige_sd(__m128d _A, __m128d _B);
+extern int _mm_ucomineq_sd(__m128d _A, __m128d _B);
+
+
+
+
+
+extern __m128d _mm_cvtepi32_pd(__m128i _A);
+extern __m128i _mm_cvtpd_epi32(__m128d _A);
+extern __m128i _mm_cvttpd_epi32(__m128d _A);
+extern __m128 _mm_cvtepi32_ps(__m128i _A);
+extern __m128i _mm_cvtps_epi32(__m128 _A);
+extern __m128i _mm_cvttps_epi32(__m128 _A);
+extern __m128 _mm_cvtpd_ps(__m128d _A);
+extern __m128d _mm_cvtps_pd(__m128 _A);
+extern __m128 _mm_cvtsd_ss(__m128 _A, __m128d _B);
+extern __m128d _mm_cvtss_sd(__m128d _A, __m128 _B);
+
+extern int _mm_cvtsd_si32(__m128d _A);
+extern int _mm_cvttsd_si32(__m128d _A);
+extern __m128d _mm_cvtsi32_sd(__m128d _A, int _B);
+
+
+
+
+
+#line 168 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\emmintrin.h"
+
+
+
+
+
+extern __m128d _mm_unpackhi_pd(__m128d _A, __m128d _B);
+extern __m128d _mm_unpacklo_pd(__m128d _A, __m128d _B);
+extern int _mm_movemask_pd(__m128d _A);
+extern __m128d _mm_shuffle_pd(__m128d _A, __m128d _B, int _I);
+
+
+
+
+
+extern __m128d _mm_load_pd(double const*_Dp);
+extern __m128d _mm_load1_pd(double const*_Dp);
+extern __m128d _mm_loadr_pd(double const*_Dp);
+extern __m128d _mm_loadu_pd(double const*_Dp);
+extern __m128d _mm_load_sd(double const*_Dp);
+extern __m128d _mm_loadh_pd(__m128d _A, double const*_Dp);
+extern __m128d _mm_loadl_pd(__m128d _A, double const*_Dp);
+
+
+
+
+
+extern __m128d _mm_set_sd(double _W);
+extern __m128d _mm_set1_pd(double _A);
+extern __m128d _mm_set_pd(double _Z, double _Y);
+extern __m128d _mm_setr_pd(double _Y, double _Z);
+extern __m128d _mm_setzero_pd(void);
+extern __m128d _mm_move_sd(__m128d _A, __m128d _B);
+
+
+
+
+
+extern void _mm_store_sd(double *_Dp, __m128d _A);
+extern void _mm_store1_pd(double *_Dp, __m128d _A);
+extern void _mm_store_pd(double *_Dp, __m128d _A);
+extern void _mm_storeu_pd(double *_Dp, __m128d _A);
+extern void _mm_storer_pd(double *_Dp, __m128d _A);
+extern void _mm_storeh_pd(double *_Dp, __m128d _A);
+extern void _mm_storel_pd(double *_Dp, __m128d _A);
+
+
+
+
+
+
+
+
+
+
+extern __m128i _mm_add_epi8(__m128i _A, __m128i _B);
+extern __m128i _mm_add_epi16(__m128i _A, __m128i _B);
+extern __m128i _mm_add_epi32(__m128i _A, __m128i _B);
+
+
+#line 228 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\emmintrin.h"
+extern __m128i _mm_add_epi64(__m128i _A, __m128i _B);
+extern __m128i _mm_adds_epi8(__m128i _A, __m128i _B);
+extern __m128i _mm_adds_epi16(__m128i _A, __m128i _B);
+extern __m128i _mm_adds_epu8(__m128i _A, __m128i _B);
+extern __m128i _mm_adds_epu16(__m128i _A, __m128i _B);
+extern __m128i _mm_avg_epu8(__m128i _A, __m128i _B);
+extern __m128i _mm_avg_epu16(__m128i _A, __m128i _B);
+extern __m128i _mm_madd_epi16(__m128i _A, __m128i _B);
+extern __m128i _mm_max_epi16(__m128i _A, __m128i _B);
+extern __m128i _mm_max_epu8(__m128i _A, __m128i _B);
+extern __m128i _mm_min_epi16(__m128i _A, __m128i _B);
+extern __m128i _mm_min_epu8(__m128i _A, __m128i _B);
+extern __m128i _mm_mulhi_epi16(__m128i _A, __m128i _B);
+extern __m128i _mm_mulhi_epu16(__m128i _A, __m128i _B);
+extern __m128i _mm_mullo_epi16(__m128i _A, __m128i _B);
+
+
+#line 246 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\emmintrin.h"
+extern __m128i _mm_mul_epu32(__m128i _A, __m128i _B);
+extern __m128i _mm_sad_epu8(__m128i _A, __m128i _B);
+extern __m128i _mm_sub_epi8(__m128i _A, __m128i _B);
+extern __m128i _mm_sub_epi16(__m128i _A, __m128i _B);
+extern __m128i _mm_sub_epi32(__m128i _A, __m128i _B);
+
+
+#line 254 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\emmintrin.h"
+extern __m128i _mm_sub_epi64(__m128i _A, __m128i _B);
+extern __m128i _mm_subs_epi8(__m128i _A, __m128i _B);
+extern __m128i _mm_subs_epi16(__m128i _A, __m128i _B);
+extern __m128i _mm_subs_epu8(__m128i _A, __m128i _B);
+extern __m128i _mm_subs_epu16(__m128i _A, __m128i _B);
+
+
+
+
+
+extern __m128i _mm_and_si128(__m128i _A, __m128i _B);
+extern __m128i _mm_andnot_si128(__m128i _A, __m128i _B);
+extern __m128i _mm_or_si128(__m128i _A, __m128i _B);
+extern __m128i _mm_xor_si128(__m128i _A, __m128i _B);
+
+
+
+
+
+extern __m128i _mm_slli_si128(__m128i _A, int _Imm);
+
+extern __m128i _mm_slli_epi16(__m128i _A, int _Count);
+extern __m128i _mm_sll_epi16(__m128i _A, __m128i _Count);
+extern __m128i _mm_slli_epi32(__m128i _A, int _Count);
+extern __m128i _mm_sll_epi32(__m128i _A, __m128i _Count);
+extern __m128i _mm_slli_epi64(__m128i _A, int _Count);
+extern __m128i _mm_sll_epi64(__m128i _A, __m128i _Count);
+extern __m128i _mm_srai_epi16(__m128i _A, int _Count);
+extern __m128i _mm_sra_epi16(__m128i _A, __m128i _Count);
+extern __m128i _mm_srai_epi32(__m128i _A, int _Count);
+extern __m128i _mm_sra_epi32(__m128i _A, __m128i _Count);
+extern __m128i _mm_srli_si128(__m128i _A, int _Imm);
+
+extern __m128i _mm_srli_epi16(__m128i _A, int _Count);
+extern __m128i _mm_srl_epi16(__m128i _A, __m128i _Count);
+extern __m128i _mm_srli_epi32(__m128i _A, int _Count);
+extern __m128i _mm_srl_epi32(__m128i _A, __m128i _Count);
+extern __m128i _mm_srli_epi64(__m128i _A, int _Count);
+extern __m128i _mm_srl_epi64(__m128i _A, __m128i _Count);
+
+
+
+
+
+extern __m128i _mm_cmpeq_epi8(__m128i _A, __m128i _B);
+extern __m128i _mm_cmpeq_epi16(__m128i _A, __m128i _B);
+extern __m128i _mm_cmpeq_epi32(__m128i _A, __m128i _B);
+extern __m128i _mm_cmpgt_epi8(__m128i _A, __m128i _B);
+extern __m128i _mm_cmpgt_epi16(__m128i _A, __m128i _B);
+extern __m128i _mm_cmpgt_epi32(__m128i _A, __m128i _B);
+extern __m128i _mm_cmplt_epi8(__m128i _A, __m128i _B);
+extern __m128i _mm_cmplt_epi16(__m128i _A, __m128i _B);
+extern __m128i _mm_cmplt_epi32(__m128i _A, __m128i _B);
+
+
+
+
+
+extern __m128i _mm_cvtsi32_si128(int _A);
+extern int _mm_cvtsi128_si32(__m128i _A);
+
+
+
+
+
+extern __m128i _mm_packs_epi16(__m128i _A, __m128i _B);
+extern __m128i _mm_packs_epi32(__m128i _A, __m128i _B);
+extern __m128i _mm_packus_epi16(__m128i _A, __m128i _B);
+extern int _mm_extract_epi16(__m128i _A, int _Imm);
+extern __m128i _mm_insert_epi16(__m128i _A, int _B, int _Imm);
+extern int _mm_movemask_epi8(__m128i _A);
+extern __m128i _mm_shuffle_epi32(__m128i _A, int _Imm);
+extern __m128i _mm_shufflehi_epi16(__m128i _A, int _Imm);
+extern __m128i _mm_shufflelo_epi16(__m128i _A, int _Imm);
+extern __m128i _mm_unpackhi_epi8(__m128i _A, __m128i _B);
+extern __m128i _mm_unpackhi_epi16(__m128i _A, __m128i _B);
+extern __m128i _mm_unpackhi_epi32(__m128i _A, __m128i _B);
+extern __m128i _mm_unpackhi_epi64(__m128i _A, __m128i _B);
+extern __m128i _mm_unpacklo_epi8(__m128i _A, __m128i _B);
+extern __m128i _mm_unpacklo_epi16(__m128i _A, __m128i _B);
+extern __m128i _mm_unpacklo_epi32(__m128i _A, __m128i _B);
+extern __m128i _mm_unpacklo_epi64(__m128i _A, __m128i _B);
+
+
+
+
+
+extern __m128i _mm_load_si128(__m128i const*_P);
+extern __m128i _mm_loadu_si128(__m128i const*_P);
+extern __m128i _mm_loadl_epi64(__m128i const*_P);
+
+
+
+
+
+
+
+#line 352 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\emmintrin.h"
+extern __m128i _mm_set_epi64x(__int64 _I1,__int64 _I0);
+extern __m128i _mm_set_epi32(int _I3, int _I2, int _I1, int _I0);
+extern __m128i _mm_set_epi16(short _W7, short _W6, short _W5, short _W4,
+                             short _W3, short _W2, short _W1, short _W0);
+extern __m128i _mm_set_epi8(char _B15, char _B14, char _B13, char _B12,
+                            char _B11, char _B10, char _B9, char _B8,
+                            char _B7, char _B6, char _B5, char _B4,
+                            char _B3, char _B2, char _B1, char _B0);
+
+
+#line 363 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\emmintrin.h"
+extern __m128i _mm_set1_epi64x(__int64 i);
+extern __m128i _mm_set1_epi32(int _I);
+extern __m128i _mm_set1_epi16(short _W);
+extern __m128i _mm_set1_epi8(char _B);
+extern __m128i _mm_setl_epi64(__m128i _Q);
+
+
+#line 371 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\emmintrin.h"
+extern __m128i _mm_setr_epi32(int _I0, int _I1, int _I2, int _I3);
+extern __m128i _mm_setr_epi16(short _W0, short _W1, short _W2, short _W3,
+                              short _W4, short _W5, short _W6, short _W7);
+extern __m128i _mm_setr_epi8(char _B15, char _B14, char _B13, char _B12,
+                             char _B11, char _B10, char _B9, char _B8,
+                             char _B7, char _B6, char _B5, char _B4,
+                             char _B3, char _B2, char _B1, char _B0);
+extern __m128i _mm_setzero_si128(void);
+
+
+
+
+
+extern void _mm_store_si128(__m128i *_P, __m128i _B);
+extern void _mm_storeu_si128(__m128i *_P, __m128i _B);
+extern void _mm_storel_epi64(__m128i *_P, __m128i _Q);
+extern void _mm_maskmoveu_si128(__m128i _D, __m128i _N, char *_P);
+
+
+
+
+
+extern __m128i _mm_move_epi64(__m128i _Q);
+
+
+
+#line 398 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\emmintrin.h"
+
+
+
+
+
+extern void _mm_stream_pd(double *_Dp, __m128d _A);
+extern void _mm_stream_si128(__m128i *_P, __m128i _A);
+extern void _mm_clflush(void const*_P);
+extern void _mm_lfence(void);
+extern void _mm_mfence(void);
+extern void _mm_stream_si32(int *_P, int _I);
+extern void _mm_pause(void);
+
+
+
+
+
+extern double _mm_cvtsd_f64(__m128d _A);
+
+
+
+
+
+
+
+extern __m128  _mm_castpd_ps(__m128d);
+extern __m128i _mm_castpd_si128(__m128d);
+extern __m128d _mm_castps_pd(__m128);
+extern __m128i _mm_castps_si128(__m128);
+extern __m128  _mm_castsi128_ps(__m128i);
+extern __m128d _mm_castsi128_pd(__m128i);
+
+
+
+
+
+
+extern __int64 _mm_cvtsd_si64(__m128d);
+extern __int64 _mm_cvttsd_si64(__m128d);
+extern __m128d _mm_cvtsi64_sd(__m128d, __int64);
+extern __m128i _mm_cvtsi64_si128(__int64);
+extern __int64 _mm_cvtsi128_si64(__m128i);
+
+
+#line 443 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\emmintrin.h"
+
+#pragma warning(pop) 
+
+
+
+#line 449 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\emmintrin.h"
+
+#line 451 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\emmintrin.h"
+#line 452 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\emmintrin.h"
+#line 453 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\emmintrin.h"
+#line 35 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\pmmintrin.h"
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+#line 61 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\pmmintrin.h"
+
+
+
+
+
+extern __m128 _mm_addsub_ps(__m128 , __m128 );
+extern __m128 _mm_hadd_ps(__m128 , __m128 );
+extern __m128 _mm_hsub_ps(__m128 , __m128 );
+extern __m128 _mm_movehdup_ps(__m128 );
+extern __m128 _mm_moveldup_ps(__m128 );
+
+
+
+
+
+extern __m128d _mm_addsub_pd(__m128d , __m128d );
+extern __m128d _mm_hadd_pd(__m128d , __m128d );
+extern __m128d _mm_hsub_pd(__m128d , __m128d );
+extern __m128d _mm_loaddup_pd(double const * );
+extern __m128d _mm_movedup_pd(__m128d );
+
+
+
+
+extern __m128i _mm_lddqu_si128(__m128i const * );
+
+
+
+
+
+
+
+extern void _mm_monitor(void const * , unsigned , unsigned );
+
+
+
+
+extern void _mm_mwait(unsigned , unsigned );
+
+
+
+#line 103 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\pmmintrin.h"
+
+#line 105 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\pmmintrin.h"
+#line 106 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\pmmintrin.h"
+#line 107 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\pmmintrin.h"
+#line 26 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\tmmintrin.h"
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+
+    extern __m128i _mm_hadd_epi16 (__m128i, __m128i);
+    extern __m128i _mm_hadd_epi32 (__m128i, __m128i);
+    extern __m128i _mm_hadds_epi16 (__m128i, __m128i);
+
+
+
+
+
+#line 54 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\tmmintrin.h"
+
+    
+    
+    
+    
+    
+    
+    
+
+    extern __m128i _mm_hsub_epi16 (__m128i, __m128i);
+    extern __m128i _mm_hsub_epi32 (__m128i, __m128i);
+    extern __m128i _mm_hsubs_epi16 (__m128i, __m128i);
+
+
+
+
+
+#line 72 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\tmmintrin.h"
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    extern __m128i _mm_maddubs_epi16 (__m128i, __m128i);
+
+
+
+#line 87 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\tmmintrin.h"
+
+    
+    
+
+    extern __m128i _mm_mulhrs_epi16 (__m128i, __m128i);
+
+
+
+#line 96 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\tmmintrin.h"
+
+    
+    
+
+    extern __m128i _mm_shuffle_epi8 (__m128i, __m128i);
+
+
+
+#line 105 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\tmmintrin.h"
+
+    
+    
+
+    extern __m128i _mm_sign_epi8 (__m128i, __m128i);
+    extern __m128i _mm_sign_epi16 (__m128i, __m128i);
+    extern __m128i _mm_sign_epi32 (__m128i, __m128i);
+
+
+
+
+
+#line 118 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\tmmintrin.h"
+
+    
+    
+
+    extern __m128i _mm_alignr_epi8 (__m128i, __m128i, int);
+
+
+
+#line 127 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\tmmintrin.h"
+
+    
+    
+
+    extern __m128i _mm_abs_epi8 (__m128i);
+    extern __m128i _mm_abs_epi16 (__m128i);
+    extern __m128i _mm_abs_epi32 (__m128i);
+
+
+
+
+
+#line 140 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\tmmintrin.h"
+
+
+
+
+
+#line 146 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\tmmintrin.h"
+#line 147 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\tmmintrin.h"
+#line 148 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\tmmintrin.h"
+#line 33 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\smmintrin.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 85 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\smmintrin.h"
+
+        
+        
+
+        extern __m128i _mm_blend_epi16 (__m128i, __m128i, const int );
+        extern __m128i _mm_blendv_epi8 (__m128i, __m128i, __m128i mask);
+
+        
+        
+
+        extern __m128  _mm_blend_ps (__m128, __m128, const int );
+        extern __m128  _mm_blendv_ps(__m128, __m128, __m128 );
+
+        
+        
+
+        extern __m128d _mm_blend_pd (__m128d, __m128d, const int );
+        extern __m128d _mm_blendv_pd(__m128d, __m128d, __m128d );
+
+        
+        
+
+        extern __m128  _mm_dp_ps(__m128, __m128, const int );
+        extern __m128d _mm_dp_pd(__m128d, __m128d, const int );
+
+        
+        
+
+        extern __m128i _mm_cmpeq_epi64(__m128i, __m128i);
+
+        
+
+        extern __m128i _mm_min_epi8 (__m128i, __m128i);
+        extern __m128i _mm_max_epi8 (__m128i, __m128i);
+
+        extern __m128i _mm_min_epu16(__m128i, __m128i);
+        extern __m128i _mm_max_epu16(__m128i, __m128i);
+
+        extern __m128i _mm_min_epi32(__m128i, __m128i);
+        extern __m128i _mm_max_epi32(__m128i, __m128i);
+        extern __m128i _mm_min_epu32(__m128i, __m128i);
+        extern __m128i _mm_max_epu32(__m128i, __m128i);
+
+        
+        
+
+        extern __m128i _mm_mullo_epi32(__m128i, __m128i);
+
+        
+        
+
+        extern __m128i _mm_mul_epi32(__m128i, __m128i);
+
+        
+        
+
+        extern int _mm_testz_si128(__m128i , __m128i );
+
+        
+        
+
+        extern int _mm_testc_si128(__m128i , __m128i );
+
+        
+        
+        
+
+        extern int _mm_testnzc_si128(__m128i , __m128i );
+
+        
+        
+        
+        
+        
+
+        extern __m128 _mm_insert_ps(__m128 , __m128 , const int );
+
+        
+
+
+
+
+        
+        
+
+        extern int _mm_extract_ps(__m128 , const int );
+
+        
+        
+
+
+
+
+        
+        
+
+
+
+
+
+        
+        
+
+        extern __m128i _mm_insert_epi8 (__m128i , int , const int );
+        extern __m128i _mm_insert_epi32(__m128i , int , const int );
+
+
+        extern __m128i _mm_insert_epi64(__m128i , __int64 , const int );
+#line 194 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\smmintrin.h"
+        
+        
+
+        extern int   _mm_extract_epi8 (__m128i , const int );
+        extern int   _mm_extract_epi32(__m128i , const int );
+
+
+        extern __int64 _mm_extract_epi64(__m128i , const int );
+#line 203 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\smmintrin.h"
+
+        
+        
+
+        extern __m128i _mm_minpos_epu16(__m128i);
+
+        
+
+        extern __m128d _mm_round_pd(__m128d , int );
+        extern __m128d _mm_round_sd(__m128d , __m128d , int );
+
+        
+
+        extern __m128  _mm_round_ps(__m128  , int );
+        extern __m128  _mm_round_ss(__m128 , __m128  , int );
+
+        
+
+        extern __m128i _mm_cvtepi8_epi32 (__m128i);
+        extern __m128i _mm_cvtepi16_epi32(__m128i);
+        extern __m128i _mm_cvtepi8_epi64 (__m128i);
+        extern __m128i _mm_cvtepi32_epi64(__m128i);
+        extern __m128i _mm_cvtepi16_epi64(__m128i);
+        extern __m128i _mm_cvtepi8_epi16 (__m128i);
+
+        
+
+        extern __m128i _mm_cvtepu8_epi32 (__m128i);
+        extern __m128i _mm_cvtepu16_epi32(__m128i);
+        extern __m128i _mm_cvtepu8_epi64 (__m128i);
+        extern __m128i _mm_cvtepu32_epi64(__m128i);
+        extern __m128i _mm_cvtepu16_epi64(__m128i);
+        extern __m128i _mm_cvtepu8_epi16 (__m128i);
+
+
+        
+        
+
+        extern __m128i _mm_packus_epi32(__m128i, __m128i);
+
+        
+        
+        
+
+        extern __m128i _mm_mpsadbw_epu8(__m128i , __m128i , const int );
+
+        
+
+
+
+
+
+#line 256 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\smmintrin.h"
+        extern __m128i _mm_stream_load_si128(const __m128i*);
+#line 258 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\smmintrin.h"
+
+
+
+#line 262 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\smmintrin.h"
+
+#line 264 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\smmintrin.h"
+#line 265 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\smmintrin.h"
+#line 266 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\smmintrin.h"
+#line 33 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\nmmintrin.h"
+
+
+
+
+#line 38 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\nmmintrin.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    extern __m128i _mm_cmpistrm (__m128i , __m128i , const int );
+    extern int     _mm_cmpistri (__m128i , __m128i , const int );
+
+    extern __m128i _mm_cmpestrm (__m128i , int , __m128i , int , const int );
+    extern int     _mm_cmpestri (__m128i , int , __m128i , int , const int );
+
+
+
+
+
+    extern int     _mm_cmpistrz (__m128i , __m128i , const int );
+    extern int     _mm_cmpistrc (__m128i , __m128i , const int );
+    extern int     _mm_cmpistrs (__m128i , __m128i , const int );
+    extern int     _mm_cmpistro (__m128i , __m128i , const int );
+    extern int     _mm_cmpistra (__m128i , __m128i , const int );
+
+    extern int     _mm_cmpestrz (__m128i , int , __m128i , int , const int );
+    extern int     _mm_cmpestrc (__m128i , int , __m128i , int , const int );
+    extern int     _mm_cmpestrs (__m128i , int , __m128i , int , const int );
+    extern int     _mm_cmpestro (__m128i , int , __m128i , int , const int );
+    extern int     _mm_cmpestra (__m128i , int , __m128i , int , const int );
+
+
+
+
+
+
+    extern __m128i _mm_cmpgt_epi64(__m128i , __m128i );
+
+
+
+
+
+    extern int _mm_popcnt_u32(unsigned int );
+
+
+    extern __int64 _mm_popcnt_u64(unsigned __int64 );
+#line 121 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\nmmintrin.h"
+
+
+
+
+
+    extern unsigned int _mm_crc32_u8 (unsigned int , unsigned char );
+    extern unsigned int _mm_crc32_u16(unsigned int , unsigned short );
+    extern unsigned int _mm_crc32_u32(unsigned int , unsigned int );
+
+
+    extern unsigned __int64 _mm_crc32_u64(unsigned __int64 , unsigned __int64 );
+#line 133 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\nmmintrin.h"
+
+
+
+#line 137 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\nmmintrin.h"
+
+#line 139 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\nmmintrin.h"
+#line 140 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\nmmintrin.h"
+#line 141 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\nmmintrin.h"
+#line 32 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\wmmintrin.h"
+
+
+
+
+#line 37 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\wmmintrin.h"
+
+
+
+
+
+extern __m128i _mm_aesdec_si128(__m128i , __m128i );
+
+
+
+
+
+extern __m128i _mm_aesdeclast_si128(__m128i , __m128i );
+
+
+
+
+
+extern __m128i _mm_aesenc_si128(__m128i , __m128i );
+
+
+
+
+
+extern __m128i _mm_aesenclast_si128(__m128i , __m128i );
+
+
+
+
+
+extern __m128i _mm_aesimc_si128(__m128i );
+
+
+
+
+
+
+extern __m128i _mm_aeskeygenassist_si128(__m128i , const int );
+
+
+
+
+
+
+
+extern __m128i _mm_clmulepi64_si128(__m128i , __m128i ,
+                                            const int );
+
+
+
+
+#line 88 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\wmmintrin.h"
+
+#line 90 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\wmmintrin.h"
+#line 91 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\wmmintrin.h"
+#line 92 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\wmmintrin.h"
+#line 31 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+
+
+
+typedef union __declspec(intrin_type) __declspec(align(32)) __m256 {
+    float m256_f32[8];
+} __m256;
+
+typedef struct __declspec(intrin_type) __declspec(align(32)) __m256d {
+    double m256d_f64[4];
+} __m256d;
+
+typedef union  __declspec(intrin_type) __declspec(align(32)) __m256i {
+    __int8              m256i_i8[32];
+    __int16             m256i_i16[16];
+    __int32             m256i_i32[8];
+    __int64             m256i_i64[4];
+    unsigned __int8     m256i_u8[32];
+    unsigned __int16    m256i_u16[16];
+    unsigned __int32    m256i_u32[8];
+    unsigned __int64    m256i_u64[4];
+} __m256i;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern unsigned long long __isa_inverted;
+extern unsigned __avx10_version;
+
+
+
+__inline _Bool __check_isa_support(unsigned __x, unsigned __v)
+#line 112 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+{ return ((__x & __isa_inverted) == 0) && ((unsigned char)__avx10_version >= __v); }
+
+
+
+
+
+
+__inline _Bool
+#line 121 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+__check_isa_avx10_512(unsigned __v) { return (__avx10_version >= (__v | 0x00040000)); }
+
+
+
+extern unsigned __arch_inverted(void);
+extern unsigned __arch_avx10ver(void);
+
+
+
+__inline _Bool __check_arch_support(unsigned __x, unsigned __v)
+#line 132 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+{ return ((__x & __arch_inverted()) == 0) && (__arch_avx10ver() >= __v); }
+
+
+
+
+
+#line 139 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+__inline unsigned _get_vlen(void)
+#line 145 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+{
+    unsigned arch_inverted = __arch_inverted();
+    if ((arch_inverted & 0x00000004) == 0)
+        return 512;
+    else if ((arch_inverted & 0x00000002) == 0)
+        return 256;
+    else if ((arch_inverted & 0x00000001) == 0)
+        return 128;
+    else
+        return 0;
+}
+#line 157 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_add_pd(__m256d, __m256d);
+
+
+
+
+
+
+
+
+
+extern __m256 __cdecl _mm256_add_ps(__m256, __m256);
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_addsub_pd(__m256d, __m256d);
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m256 __cdecl _mm256_addsub_ps(__m256, __m256);
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_and_pd(__m256d, __m256d);
+
+
+
+
+
+
+
+
+extern __m256 __cdecl _mm256_and_ps(__m256, __m256);
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_andnot_pd(__m256d, __m256d);
+
+
+
+
+
+
+
+
+extern __m256 __cdecl _mm256_andnot_ps(__m256, __m256);
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_blend_pd(__m256d, __m256d, const int);
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m256 __cdecl _mm256_blend_ps(__m256, __m256, const int);
+
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_blendv_pd(__m256d, __m256d, __m256d);
+
+
+
+
+
+
+
+
+
+extern __m256 __cdecl _mm256_blendv_ps(__m256, __m256, __m256);
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_div_pd(__m256d, __m256d);
+
+
+
+
+
+
+
+
+extern __m256 __cdecl _mm256_div_ps(__m256, __m256);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m256 __cdecl _mm256_dp_ps(__m256, __m256, const int);
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_hadd_pd(__m256d, __m256d);
+
+
+
+
+
+
+
+
+extern __m256 __cdecl _mm256_hadd_ps(__m256, __m256);
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_hsub_pd(__m256d, __m256d);
+
+
+
+
+
+
+
+
+extern __m256 __cdecl _mm256_hsub_ps(__m256, __m256);
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_max_pd(__m256d, __m256d);
+
+
+
+
+
+
+
+
+extern __m256 __cdecl _mm256_max_ps(__m256, __m256);
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_min_pd(__m256d, __m256d);
+
+
+
+
+
+
+
+
+extern __m256 __cdecl _mm256_min_ps(__m256, __m256);
+
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_mul_pd(__m256d, __m256d);
+
+
+
+
+
+
+
+
+
+extern __m256 __cdecl _mm256_mul_ps(__m256, __m256);
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_or_pd(__m256d, __m256d);
+
+
+
+
+
+
+
+
+extern __m256 __cdecl _mm256_or_ps(__m256, __m256);
+
+
+
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_shuffle_pd(__m256d, __m256d, const int);
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m256 __cdecl _mm256_shuffle_ps(__m256, __m256, const int);
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_sub_pd(__m256d, __m256d);
+
+
+
+
+
+
+
+
+
+extern __m256 __cdecl _mm256_sub_ps(__m256, __m256);
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_xor_pd(__m256d, __m256d);
+
+
+
+
+
+
+
+
+extern __m256 __cdecl _mm256_xor_ps(__m256, __m256);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m128d __cdecl _mm_cmp_pd(__m128d, __m128d, const int);
+extern __m256d __cdecl _mm256_cmp_pd(__m256d, __m256d, const int);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m128 __cdecl _mm_cmp_ps(__m128, __m128, const int);
+extern __m256 __cdecl _mm256_cmp_ps(__m256, __m256, const int);
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m128d __cdecl _mm_cmp_sd(__m128d, __m128d, const int);
+
+
+
+
+
+extern int __cdecl _mm_comi_sd(__m128d, __m128d, const int);
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m128 __cdecl _mm_cmp_ss(__m128, __m128, const int);
+
+
+
+
+
+extern int __cdecl _mm_comi_ss(__m128, __m128, const int);
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_cvtepi32_pd(__m128i);
+
+
+
+
+
+
+
+
+extern __m256  __cdecl _mm256_cvtepi32_ps(__m256i);
+
+
+
+
+
+
+
+
+
+extern __m128  __cdecl _mm256_cvtpd_ps(__m256d);
+
+
+
+
+
+
+
+
+extern __m256i __cdecl _mm256_cvtps_epi32(__m256);
+
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_cvtps_pd(__m128);
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m128i __cdecl _mm256_cvttpd_epi32(__m256d);
+
+
+
+
+
+
+
+
+extern __m128i __cdecl _mm256_cvtpd_epi32(__m256d);
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m256i __cdecl _mm256_cvttps_epi32(__m256);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 676 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+
+
+
+extern __m128  __cdecl _mm256_extractf128_ps(__m256, const int);
+extern __m128d __cdecl _mm256_extractf128_pd(__m256d, const int);
+extern __m128i __cdecl _mm256_extractf128_si256(__m256i, const int);
+
+
+
+
+
+
+extern void __cdecl _mm256_zeroall(void);
+
+
+
+
+
+
+
+extern void __cdecl _mm256_zeroupper(void);
+
+
+
+
+
+
+
+
+
+extern __m256  __cdecl _mm256_permutevar_ps(__m256, __m256i);
+extern __m128  __cdecl _mm_permutevar_ps(__m128, __m128i);
+
+
+
+
+
+
+
+
+
+extern __m256  __cdecl _mm256_permute_ps(__m256, int);
+extern __m128  __cdecl _mm_permute_ps(__m128, int);
+
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_permutevar_pd(__m256d, __m256i);
+extern __m128d __cdecl _mm_permutevar_pd(__m128d, __m128i);
+
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_permute_pd(__m256d, int);
+extern __m128d __cdecl _mm_permute_pd(__m128d, int);
+
+
+
+
+
+
+
+
+extern __m256  __cdecl _mm256_permute2f128_ps(__m256, __m256, int);
+extern __m256d __cdecl _mm256_permute2f128_pd(__m256d, __m256d, int);
+extern __m256i __cdecl _mm256_permute2f128_si256(__m256i, __m256i, int);
+
+
+
+
+
+
+
+
+extern __m256  __cdecl _mm256_broadcast_ss(float const *);
+extern __m128  __cdecl _mm_broadcast_ss(float const *);
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_broadcast_sd(double const *);
+
+
+
+
+
+
+
+extern __m256  __cdecl _mm256_broadcast_ps(__m128 const *);
+extern __m256d __cdecl _mm256_broadcast_pd(__m128d const *);
+
+
+
+
+
+
+
+
+
+extern __m256  __cdecl _mm256_insertf128_ps(__m256, __m128, int);
+extern __m256d __cdecl _mm256_insertf128_pd(__m256d, __m128d, int);
+extern __m256i __cdecl _mm256_insertf128_si256(__m256i, __m128i, int);
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_load_pd(double const *);
+extern void    __cdecl _mm256_store_pd(double *, __m256d);
+
+
+
+
+
+
+
+
+extern __m256  __cdecl _mm256_load_ps(float const *);
+extern void    __cdecl _mm256_store_ps(float *, __m256);
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_loadu_pd(double const *);
+extern void    __cdecl _mm256_storeu_pd(double *, __m256d);
+
+
+
+
+
+
+
+
+extern __m256  __cdecl _mm256_loadu_ps(float const *);
+extern void    __cdecl _mm256_storeu_ps(float *, __m256);
+
+
+
+
+
+
+
+
+extern __m256i __cdecl _mm256_load_si256(__m256i const *);
+extern void    __cdecl _mm256_store_si256(__m256i *, __m256i);
+
+
+
+
+
+
+
+
+extern __m256i __cdecl _mm256_loadu_si256(__m256i const *);
+extern void    __cdecl _mm256_storeu_si256(__m256i *, __m256i);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_maskload_pd(double const *, __m256i);
+extern void    __cdecl _mm256_maskstore_pd(double *, __m256i, __m256d);
+extern __m128d __cdecl _mm_maskload_pd(double const *, __m128i);
+extern void    __cdecl _mm_maskstore_pd(double *, __m128i, __m128d);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m256  __cdecl _mm256_maskload_ps(float const *, __m256i);
+extern void    __cdecl _mm256_maskstore_ps(float *, __m256i, __m256);
+extern __m128  __cdecl _mm_maskload_ps(float const *, __m128i);
+extern void    __cdecl _mm_maskstore_ps(float *, __m128i, __m128);
+
+
+
+
+
+
+
+extern __m256  __cdecl _mm256_movehdup_ps(__m256);
+
+
+
+
+
+
+
+extern __m256  __cdecl _mm256_moveldup_ps(__m256);
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_movedup_pd(__m256d);
+
+
+
+
+
+
+
+
+
+extern __m256i __cdecl _mm256_lddqu_si256(__m256i const *);
+
+
+
+
+
+
+
+extern void    __cdecl _mm256_stream_si256(__m256i *, __m256i);
+
+
+
+
+
+
+
+
+extern void    __cdecl _mm256_stream_pd(double *, __m256d);
+
+
+
+
+
+
+
+
+extern void    __cdecl _mm256_stream_ps(float *, __m256);
+
+
+
+
+
+
+
+
+
+extern __m256  __cdecl _mm256_rcp_ps(__m256);
+
+
+
+
+
+
+
+
+
+
+extern __m256  __cdecl _mm256_rsqrt_ps(__m256);
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_sqrt_pd(__m256d);
+
+
+
+
+
+
+
+
+extern __m256  __cdecl _mm256_sqrt_ps(__m256);
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_round_pd(__m256d, int);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m256  __cdecl _mm256_round_ps(__m256, int);
+
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_unpackhi_pd(__m256d, __m256d);
+
+
+
+
+
+
+
+extern __m256  __cdecl _mm256_unpackhi_ps(__m256, __m256);
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_unpacklo_pd(__m256d, __m256d);
+
+
+
+
+
+
+
+extern __m256  __cdecl _mm256_unpacklo_ps(__m256, __m256);
+
+
+
+
+
+
+
+
+
+extern int     __cdecl _mm256_testz_si256(__m256i, __m256i);
+
+
+
+extern int     __cdecl _mm256_testc_si256(__m256i, __m256i);
+
+
+
+extern int     __cdecl _mm256_testnzc_si256(__m256i, __m256i);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern int     __cdecl _mm256_testz_pd(__m256d, __m256d);
+extern int     __cdecl _mm256_testc_pd(__m256d, __m256d);
+extern int     __cdecl _mm256_testnzc_pd(__m256d, __m256d);
+extern int     __cdecl _mm_testz_pd(__m128d, __m128d);
+extern int     __cdecl _mm_testc_pd(__m128d, __m128d);
+extern int     __cdecl _mm_testnzc_pd(__m128d, __m128d);
+
+
+
+
+
+
+
+
+
+
+
+
+extern int     __cdecl _mm256_testz_ps(__m256, __m256);
+extern int     __cdecl _mm256_testc_ps(__m256, __m256);
+extern int     __cdecl _mm256_testnzc_ps(__m256, __m256);
+extern int     __cdecl _mm_testz_ps(__m128, __m128);
+extern int     __cdecl _mm_testc_ps(__m128, __m128);
+extern int     __cdecl _mm_testnzc_ps(__m128, __m128);
+
+
+
+
+
+
+
+
+extern int     __cdecl _mm256_movemask_pd(__m256d);
+
+
+
+
+
+
+
+
+extern int     __cdecl _mm256_movemask_ps(__m256);
+
+
+
+
+extern __m256d __cdecl _mm256_setzero_pd(void);
+extern __m256  __cdecl _mm256_setzero_ps(void);
+extern __m256i __cdecl _mm256_setzero_si256(void);
+
+
+
+
+extern __m256d __cdecl _mm256_set_pd(double, double, double, double);
+extern __m256  __cdecl _mm256_set_ps(float, float, float, float,
+                                            float, float, float, float);
+extern __m256i __cdecl _mm256_set_epi8(char, char, char, char,
+                                              char, char, char, char,
+                                              char, char, char, char,
+                                              char, char, char, char,
+                                              char, char, char, char,
+                                              char, char, char, char,
+                                              char, char, char, char,
+                                              char, char, char, char);
+extern __m256i __cdecl _mm256_set_epi16(short, short, short, short,
+                                               short, short, short, short,
+                                               short, short, short, short,
+                                               short, short, short, short);
+extern __m256i __cdecl _mm256_set_epi32(int, int, int, int,
+                                               int, int, int, int);
+extern __m256i __cdecl _mm256_set_epi64x(__int64, __int64,
+                                                __int64, __int64);
+
+
+
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_setr_pd(double, double, double, double);
+extern __m256  __cdecl _mm256_setr_ps(float, float, float, float,
+                                             float, float, float, float);
+extern __m256i __cdecl _mm256_setr_epi8(char, char, char, char,
+                                               char, char, char, char,
+                                               char, char, char, char,
+                                               char, char, char, char,
+                                               char, char, char, char,
+                                               char, char, char, char,
+                                               char, char, char, char,
+                                               char, char, char, char);
+extern __m256i __cdecl _mm256_setr_epi16(short, short, short, short,
+                                                short, short, short, short,
+                                                short, short, short, short,
+                                                short, short, short, short);
+extern __m256i __cdecl _mm256_setr_epi32(int, int, int, int,
+                                                int, int, int, int);
+extern __m256i __cdecl _mm256_setr_epi64x(__int64, __int64,
+                                                 __int64, __int64);
+
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_set1_pd(double);
+extern __m256  __cdecl _mm256_set1_ps(float);
+extern __m256i __cdecl _mm256_set1_epi8(char);
+extern __m256i __cdecl _mm256_set1_epi16(short);
+extern __m256i __cdecl _mm256_set1_epi32(int);
+extern __m256i __cdecl _mm256_set1_epi64x(long long);
+
+
+
+
+
+
+
+extern __m256  __cdecl _mm256_castpd_ps(__m256d);
+extern __m256d __cdecl _mm256_castps_pd(__m256);
+extern __m256i __cdecl _mm256_castps_si256(__m256);
+extern __m256i __cdecl _mm256_castpd_si256(__m256d);
+extern __m256  __cdecl _mm256_castsi256_ps(__m256i);
+extern __m256d __cdecl _mm256_castsi256_pd(__m256i);
+extern __m128  __cdecl _mm256_castps256_ps128(__m256);
+extern __m128d __cdecl _mm256_castpd256_pd128(__m256d);
+extern __m128i __cdecl _mm256_castsi256_si128(__m256i);
+extern __m256  __cdecl _mm256_castps128_ps256(__m128);
+extern __m256d __cdecl _mm256_castpd128_pd256(__m128d);
+extern __m256i __cdecl _mm256_castsi128_si256(__m128i);
+
+
+
+
+
+
+extern __m128  __cdecl _mm_cvtph_ps(__m128i);
+extern __m256  __cdecl _mm256_cvtph_ps(__m128i);
+extern __m128i __cdecl _mm_cvtps_ph(__m128 , const int );
+extern __m128i __cdecl _mm256_cvtps_ph(__m256, int);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern unsigned __int64 __cdecl _xgetbv(unsigned int);
+
+
+extern void __cdecl _xsetbv(unsigned int, unsigned __int64);
+
+
+
+
+
+
+extern void __cdecl _xsave(void *, unsigned __int64);
+
+extern void __cdecl _xsave64(void *, unsigned __int64);
+#line 1324 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+
+extern void __cdecl _xsaveopt(void *, unsigned __int64);
+
+extern void __cdecl _xsaveopt64(void *, unsigned __int64);
+#line 1334 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+extern void __cdecl _xsavec(void *, unsigned __int64);
+
+extern void __cdecl _xsavec64(void *, unsigned __int64);
+#line 1343 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+
+extern void __cdecl _xrstor(void const *, unsigned __int64);
+
+extern void __cdecl _xrstor64(void const *, unsigned __int64);
+#line 1353 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+
+extern void __cdecl _xsaves(void *, unsigned __int64);
+
+extern void __cdecl _xsaves64(void *, unsigned __int64);
+#line 1363 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+
+extern void __cdecl _xrstors(void const *, unsigned __int64);
+
+extern void __cdecl _xrstors64(void const *, unsigned __int64);
+#line 1373 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+extern void __cdecl _fxsave(void *);
+
+extern void __cdecl _fxsave64(void *);
+#line 1382 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+extern void __cdecl _fxrstor(void const *);
+
+extern void __cdecl _fxrstor64(void const *);
+#line 1391 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+
+
+extern int __cdecl _rdrand16_step(unsigned short *);
+extern int __cdecl _rdrand32_step(unsigned int *);
+
+extern int __cdecl _rdrand64_step(unsigned __int64 *);
+#line 1403 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+extern unsigned int     __cdecl _readfsbase_u32(void);
+extern unsigned int     __cdecl _readgsbase_u32(void);
+extern unsigned __int64 __cdecl _readfsbase_u64(void);
+extern unsigned __int64 __cdecl _readgsbase_u64(void);
+
+
+
+
+extern void __cdecl _writefsbase_u32(unsigned int);
+extern void __cdecl _writegsbase_u32(unsigned int);
+extern void __cdecl _writefsbase_u64(unsigned __int64);
+extern void __cdecl _writegsbase_u64(unsigned __int64);
+#line 1421 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+extern __m128  __cdecl _mm_fmadd_ps(__m128, __m128, __m128);
+extern __m128d __cdecl _mm_fmadd_pd(__m128d, __m128d, __m128d);
+extern __m128  __cdecl _mm_fmadd_ss(__m128, __m128, __m128);
+extern __m128d __cdecl _mm_fmadd_sd(__m128d, __m128d, __m128d);
+extern __m128  __cdecl _mm_fmsub_ps(__m128, __m128, __m128);
+extern __m128d __cdecl _mm_fmsub_pd(__m128d, __m128d, __m128d);
+extern __m128  __cdecl _mm_fmsub_ss(__m128, __m128, __m128);
+extern __m128d __cdecl _mm_fmsub_sd(__m128d, __m128d, __m128d);
+extern __m128  __cdecl _mm_fnmadd_ps(__m128, __m128, __m128);
+extern __m128d __cdecl _mm_fnmadd_pd(__m128d, __m128d, __m128d);
+extern __m128  __cdecl _mm_fnmadd_ss(__m128, __m128, __m128);
+extern __m128d __cdecl _mm_fnmadd_sd(__m128d, __m128d, __m128d);
+extern __m128  __cdecl _mm_fnmsub_ps(__m128, __m128, __m128);
+extern __m128d __cdecl _mm_fnmsub_pd(__m128d, __m128d, __m128d);
+extern __m128  __cdecl _mm_fnmsub_ss(__m128, __m128, __m128);
+extern __m128d __cdecl _mm_fnmsub_sd(__m128d, __m128d, __m128d);
+
+extern __m256  __cdecl _mm256_fmadd_ps(__m256, __m256, __m256);
+extern __m256d __cdecl _mm256_fmadd_pd(__m256d, __m256d, __m256d);
+extern __m256  __cdecl _mm256_fmsub_ps(__m256, __m256, __m256);
+extern __m256d __cdecl _mm256_fmsub_pd(__m256d, __m256d, __m256d);
+extern __m256  __cdecl _mm256_fnmadd_ps(__m256, __m256, __m256);
+extern __m256d __cdecl _mm256_fnmadd_pd(__m256d, __m256d, __m256d);
+extern __m256  __cdecl _mm256_fnmsub_ps(__m256, __m256, __m256);
+extern __m256d __cdecl _mm256_fnmsub_pd(__m256d, __m256d, __m256d);
+
+
+
+
+
+extern __m128  __cdecl _mm_fmaddsub_ps(__m128, __m128, __m128);
+extern __m128d __cdecl _mm_fmaddsub_pd(__m128d, __m128d, __m128d);
+extern __m128  __cdecl _mm_fmsubadd_ps(__m128, __m128, __m128);
+extern __m128d __cdecl _mm_fmsubadd_pd(__m128d, __m128d, __m128d);
+
+extern __m256  __cdecl _mm256_fmaddsub_ps(__m256, __m256, __m256);
+extern __m256d __cdecl _mm256_fmaddsub_pd(__m256d, __m256d, __m256d);
+extern __m256  __cdecl _mm256_fmsubadd_ps(__m256, __m256, __m256);
+extern __m256d __cdecl _mm256_fmsubadd_pd(__m256d, __m256d, __m256d);
+
+
+
+
+extern float  __cdecl __fmadd_ss(float, float, float);
+extern double __cdecl __fmadd_sd(double, double, double);
+extern float  __cdecl __fmsub_ss(float, float, float);
+extern double __cdecl __fmsub_sd(double, double, double);
+extern float  __cdecl __fnmadd_ss(float, float, float);
+extern double __cdecl __fnmadd_sd(double, double, double);
+extern float  __cdecl __fnmsub_ss(float, float, float);
+extern double __cdecl __fnmsub_sd(double, double, double);
+
+
+
+
+extern __m256i __cdecl _mm256_cmpeq_epi8(__m256i, __m256i);
+extern __m256i __cdecl _mm256_cmpeq_epi16(__m256i, __m256i);
+extern __m256i __cdecl _mm256_cmpeq_epi32(__m256i, __m256i);
+extern __m256i __cdecl _mm256_cmpeq_epi64(__m256i, __m256i);
+
+extern __m256i __cdecl _mm256_cmpgt_epi8(__m256i, __m256i);
+extern __m256i __cdecl _mm256_cmpgt_epi16(__m256i, __m256i);
+extern __m256i __cdecl _mm256_cmpgt_epi32(__m256i, __m256i);
+extern __m256i __cdecl _mm256_cmpgt_epi64(__m256i, __m256i);
+
+
+
+
+
+extern __m256i __cdecl _mm256_max_epi8(__m256i, __m256i);
+extern __m256i __cdecl _mm256_max_epi16(__m256i, __m256i);
+extern __m256i __cdecl _mm256_max_epi32(__m256i, __m256i);
+extern __m256i __cdecl _mm256_max_epu8(__m256i, __m256i);
+extern __m256i __cdecl _mm256_max_epu16(__m256i, __m256i);
+extern __m256i __cdecl _mm256_max_epu32(__m256i, __m256i);
+
+extern __m256i __cdecl _mm256_min_epi8(__m256i, __m256i);
+extern __m256i __cdecl _mm256_min_epi16(__m256i, __m256i);
+extern __m256i __cdecl _mm256_min_epi32(__m256i, __m256i);
+extern __m256i __cdecl _mm256_min_epu8(__m256i, __m256i);
+extern __m256i __cdecl _mm256_min_epu16(__m256i, __m256i);
+extern __m256i __cdecl _mm256_min_epu32(__m256i, __m256i);
+
+
+
+
+
+extern __m256i __cdecl _mm256_and_si256(__m256i, __m256i);
+extern __m256i __cdecl _mm256_andnot_si256(__m256i, __m256i);
+extern __m256i __cdecl _mm256_or_si256(__m256i, __m256i);
+extern __m256i __cdecl _mm256_xor_si256(__m256i, __m256i);
+
+
+
+
+
+extern __m256i __cdecl _mm256_abs_epi8(__m256i);
+extern __m256i __cdecl _mm256_abs_epi16(__m256i);
+extern __m256i __cdecl _mm256_abs_epi32(__m256i);
+
+extern __m256i __cdecl _mm256_add_epi8(__m256i, __m256i);
+extern __m256i __cdecl _mm256_add_epi16(__m256i, __m256i);
+extern __m256i __cdecl _mm256_add_epi32(__m256i, __m256i);
+extern __m256i __cdecl _mm256_add_epi64(__m256i, __m256i);
+
+extern __m256i __cdecl _mm256_adds_epi8(__m256i, __m256i);
+extern __m256i __cdecl _mm256_adds_epi16(__m256i, __m256i);
+extern __m256i __cdecl _mm256_adds_epu8(__m256i, __m256i);
+extern __m256i __cdecl _mm256_adds_epu16(__m256i, __m256i);
+
+extern __m256i __cdecl _mm256_sub_epi8(__m256i, __m256i);
+extern __m256i __cdecl _mm256_sub_epi16(__m256i, __m256i);
+extern __m256i __cdecl _mm256_sub_epi32(__m256i, __m256i);
+extern __m256i __cdecl _mm256_sub_epi64(__m256i, __m256i);
+
+extern __m256i __cdecl _mm256_subs_epi8(__m256i, __m256i);
+extern __m256i __cdecl _mm256_subs_epi16(__m256i, __m256i);
+extern __m256i __cdecl _mm256_subs_epu8(__m256i, __m256i);
+extern __m256i __cdecl _mm256_subs_epu16(__m256i, __m256i);
+
+extern __m256i __cdecl _mm256_avg_epu8(__m256i, __m256i);
+extern __m256i __cdecl _mm256_avg_epu16(__m256i, __m256i);
+
+extern __m256i __cdecl _mm256_hadd_epi16(__m256i, __m256i);
+extern __m256i __cdecl _mm256_hadd_epi32(__m256i, __m256i);
+extern __m256i __cdecl _mm256_hadds_epi16(__m256i, __m256i);
+
+extern __m256i __cdecl _mm256_hsub_epi16(__m256i, __m256i);
+extern __m256i __cdecl _mm256_hsub_epi32(__m256i, __m256i);
+extern __m256i __cdecl _mm256_hsubs_epi16(__m256i, __m256i);
+
+extern __m256i __cdecl _mm256_madd_epi16(__m256i, __m256i);
+extern __m256i __cdecl _mm256_maddubs_epi16(__m256i, __m256i);
+
+extern __m256i __cdecl _mm256_mulhi_epi16(__m256i, __m256i);
+extern __m256i __cdecl _mm256_mulhi_epu16(__m256i, __m256i);
+
+extern __m256i __cdecl _mm256_mullo_epi16(__m256i, __m256i);
+extern __m256i __cdecl _mm256_mullo_epi32(__m256i, __m256i);
+
+extern __m256i __cdecl _mm256_mul_epu32(__m256i, __m256i);
+extern __m256i __cdecl _mm256_mul_epi32(__m256i, __m256i);
+
+extern __m256i __cdecl _mm256_sign_epi8(__m256i, __m256i);
+extern __m256i __cdecl _mm256_sign_epi16(__m256i, __m256i);
+extern __m256i __cdecl _mm256_sign_epi32(__m256i, __m256i);
+
+extern __m256i __cdecl _mm256_mulhrs_epi16(__m256i, __m256i);
+
+extern __m256i __cdecl _mm256_sad_epu8(__m256i, __m256i);
+extern __m256i __cdecl _mm256_mpsadbw_epu8(__m256i, __m256i, const int);
+
+
+
+
+
+extern __m256i __cdecl _mm256_slli_si256(__m256i, const int);
+
+extern __m256i __cdecl _mm256_srli_si256(__m256i, const int);
+
+
+extern __m256i __cdecl _mm256_sll_epi16(__m256i, __m128i);
+extern __m256i __cdecl _mm256_sll_epi32(__m256i, __m128i);
+extern __m256i __cdecl _mm256_sll_epi64(__m256i, __m128i);
+
+extern __m256i __cdecl _mm256_slli_epi16(__m256i, int);
+extern __m256i __cdecl _mm256_slli_epi32(__m256i, int);
+extern __m256i __cdecl _mm256_slli_epi64(__m256i, int);
+
+extern __m256i __cdecl _mm256_sllv_epi32(__m256i, __m256i);
+extern __m256i __cdecl _mm256_sllv_epi64(__m256i, __m256i);
+
+extern __m128i __cdecl _mm_sllv_epi32(__m128i, __m128i);
+extern __m128i __cdecl _mm_sllv_epi64(__m128i, __m128i);
+
+extern __m256i __cdecl _mm256_sra_epi16(__m256i, __m128i);
+extern __m256i __cdecl _mm256_sra_epi32(__m256i, __m128i);
+
+extern __m256i __cdecl _mm256_srai_epi16(__m256i, int);
+extern __m256i __cdecl _mm256_srai_epi32(__m256i, int);
+
+extern __m256i __cdecl _mm256_srav_epi32(__m256i, __m256i);
+
+extern __m128i __cdecl _mm_srav_epi32(__m128i, __m128i);
+
+extern __m256i __cdecl _mm256_srl_epi16(__m256i, __m128i);
+extern __m256i __cdecl _mm256_srl_epi32(__m256i, __m128i);
+extern __m256i __cdecl _mm256_srl_epi64(__m256i, __m128i);
+
+extern __m256i __cdecl _mm256_srli_epi16(__m256i, int);
+extern __m256i __cdecl _mm256_srli_epi32(__m256i, int);
+extern __m256i __cdecl _mm256_srli_epi64(__m256i, int);
+
+extern __m256i __cdecl _mm256_srlv_epi32(__m256i, __m256i);
+extern __m256i __cdecl _mm256_srlv_epi64(__m256i, __m256i);
+
+extern __m128i __cdecl _mm_srlv_epi32(__m128i, __m128i);
+extern __m128i __cdecl _mm_srlv_epi64(__m128i, __m128i);
+
+
+
+
+
+extern __m128i __cdecl _mm_blend_epi32(__m128i, __m128i, const int);
+
+extern __m256i __cdecl _mm256_blend_epi32(__m256i,__m256i, const int);
+
+extern __m256i __cdecl _mm256_alignr_epi8(__m256i, __m256i, const int);
+
+extern __m256i __cdecl _mm256_blendv_epi8(__m256i, __m256i, __m256i);
+extern __m256i __cdecl _mm256_blend_epi16(__m256i, __m256i, const int);
+
+extern __m256i __cdecl _mm256_packs_epi16(__m256i, __m256i);
+extern __m256i __cdecl _mm256_packs_epi32(__m256i, __m256i);
+extern __m256i __cdecl _mm256_packus_epi16(__m256i, __m256i);
+extern __m256i __cdecl _mm256_packus_epi32(__m256i, __m256i);
+
+extern __m256i __cdecl _mm256_unpackhi_epi8(__m256i, __m256i);
+extern __m256i __cdecl _mm256_unpackhi_epi16(__m256i, __m256i);
+extern __m256i __cdecl _mm256_unpackhi_epi32(__m256i, __m256i);
+extern __m256i __cdecl _mm256_unpackhi_epi64(__m256i, __m256i);
+
+extern __m256i __cdecl _mm256_unpacklo_epi8(__m256i, __m256i);
+extern __m256i __cdecl _mm256_unpacklo_epi16(__m256i, __m256i);
+extern __m256i __cdecl _mm256_unpacklo_epi32(__m256i, __m256i);
+extern __m256i __cdecl _mm256_unpacklo_epi64(__m256i, __m256i);
+
+extern __m256i __cdecl _mm256_shuffle_epi8(__m256i, __m256i);
+extern __m256i __cdecl _mm256_shuffle_epi32(__m256i, const int);
+
+extern __m256i __cdecl _mm256_shufflehi_epi16(__m256i, const int);
+extern __m256i __cdecl _mm256_shufflelo_epi16(__m256i, const int);
+
+extern __m128i __cdecl _mm256_extracti128_si256(__m256i, const int);
+extern __m256i __cdecl _mm256_inserti128_si256(__m256i, __m128i, const int);
+
+
+
+
+
+extern __m128  __cdecl _mm_broadcastss_ps(__m128);
+extern __m128d __cdecl _mm_broadcastsd_pd(__m128d);
+
+extern __m128i __cdecl _mm_broadcastb_epi8(__m128i);
+extern __m128i __cdecl _mm_broadcastw_epi16(__m128i);
+extern __m128i __cdecl _mm_broadcastd_epi32(__m128i);
+extern __m128i __cdecl _mm_broadcastq_epi64(__m128i);
+
+extern __m256  __cdecl _mm256_broadcastss_ps(__m128);
+extern __m256d __cdecl _mm256_broadcastsd_pd(__m128d);
+
+extern __m256i __cdecl _mm256_broadcastb_epi8(__m128i);
+extern __m256i __cdecl _mm256_broadcastw_epi16(__m128i);
+extern __m256i __cdecl _mm256_broadcastd_epi32(__m128i);
+extern __m256i __cdecl _mm256_broadcastq_epi64(__m128i);
+
+extern __m256i __cdecl _mm256_broadcastsi128_si256(__m128i);
+
+
+
+
+
+
+extern __m256i __cdecl _mm256_cvtepi8_epi16(__m128i);
+extern __m256i __cdecl _mm256_cvtepi8_epi32(__m128i);
+extern __m256i __cdecl _mm256_cvtepi8_epi64(__m128i);
+extern __m256i __cdecl _mm256_cvtepi16_epi32(__m128i);
+extern __m256i __cdecl _mm256_cvtepi16_epi64(__m128i);
+extern __m256i __cdecl _mm256_cvtepi32_epi64(__m128i);
+
+extern __m256i __cdecl _mm256_cvtepu8_epi16(__m128i);
+extern __m256i __cdecl _mm256_cvtepu8_epi32(__m128i);
+extern __m256i __cdecl _mm256_cvtepu8_epi64(__m128i);
+extern __m256i __cdecl _mm256_cvtepu16_epi32(__m128i);
+extern __m256i __cdecl _mm256_cvtepu16_epi64(__m128i);
+extern __m256i __cdecl _mm256_cvtepu32_epi64(__m128i);
+
+
+
+
+
+
+extern int __cdecl _mm256_movemask_epi8(__m256i);
+
+
+
+
+
+extern __m128i __cdecl _mm_maskload_epi32(int const * ,
+                                          __m128i     );
+extern __m128i __cdecl _mm_maskload_epi64(__int64 const * ,
+                                          __m128i         );
+
+extern void __cdecl _mm_maskstore_epi32(int *   ,
+                                        __m128i ,
+                                        __m128i );
+extern void __cdecl _mm_maskstore_epi64(__int64 * ,
+                                        __m128i   ,
+                                        __m128i   );
+
+extern __m256i __cdecl _mm256_maskload_epi32(int const * ,
+                                             __m256i     );
+extern __m256i __cdecl _mm256_maskload_epi64(__int64 const * ,
+                                             __m256i         );
+
+extern void __cdecl _mm256_maskstore_epi32(int *   ,
+                                           __m256i ,
+                                           __m256i );
+extern void __cdecl _mm256_maskstore_epi64(__int64 * ,
+                                           __m256i   ,
+                                           __m256i   );
+
+
+
+
+
+extern __m256i __cdecl _mm256_permutevar8x32_epi32(__m256i, __m256i);
+extern __m256  __cdecl _mm256_permutevar8x32_ps(__m256, __m256i);
+
+extern __m256i __cdecl _mm256_permute4x64_epi64(__m256i, const int);
+extern __m256d __cdecl _mm256_permute4x64_pd(__m256d, const int);
+
+extern __m256i __cdecl _mm256_permute2x128_si256(__m256i, __m256i, const int);
+
+
+
+
+
+extern __m256i  __cdecl _mm256_stream_load_si256(__m256i const *);
+
+
+
+
+
+
+extern __m256d __cdecl _mm256_mask_i32gather_pd(__m256d        ,
+                                                double const * ,
+                                                __m128i        ,
+                                                __m256d        ,
+                                                const int      );
+extern __m256  __cdecl _mm256_mask_i32gather_ps(__m256         ,
+                                                float const *  ,
+                                                __m256i        ,
+                                                __m256         ,
+                                                const int      );
+extern __m256d __cdecl _mm256_mask_i64gather_pd(__m256d        ,
+                                                double const * ,
+                                                __m256i        ,
+                                                __m256d        ,
+                                                const int      );
+extern __m128  __cdecl _mm256_mask_i64gather_ps(__m128         ,
+                                                float const *  ,
+                                                __m256i        ,
+                                                __m128         ,
+                                                const int      );
+
+extern __m128d __cdecl _mm_mask_i32gather_pd(__m128d        ,
+                                             double const * ,
+                                             __m128i        ,
+                                             __m128d        ,
+                                             const int      );
+extern __m128  __cdecl _mm_mask_i32gather_ps(__m128         ,
+                                             float const *  ,
+                                             __m128i        ,
+                                             __m128         ,
+                                             const int      );
+extern __m128d __cdecl _mm_mask_i64gather_pd(__m128d        ,
+                                             double const * ,
+                                             __m128i        ,
+                                             __m128d        ,
+                                             const int      );
+extern __m128  __cdecl _mm_mask_i64gather_ps(__m128         ,
+                                             float const *  ,
+                                             __m128i        ,
+                                             __m128         ,
+                                             const int      );
+
+
+extern __m256i __cdecl _mm256_mask_i32gather_epi32(__m256i     ,
+                                                   int const * ,
+                                                   __m256i     ,
+                                                   __m256i     ,
+                                                   const int   );
+extern __m256i __cdecl _mm256_mask_i32gather_epi64(__m256i     ,
+                                                   __int64 const * ,
+                                                   __m128i     ,
+                                                   __m256i     ,
+                                                   const int   );
+extern __m128i __cdecl _mm256_mask_i64gather_epi32(__m128i     ,
+                                                   int     const * ,
+                                                   __m256i     ,
+                                                   __m128i     ,
+                                                   const int   );
+extern __m256i __cdecl _mm256_mask_i64gather_epi64(__m256i     ,
+                                                   __int64 const * ,
+                                                   __m256i     ,
+                                                   __m256i     ,
+                                                   const int   );
+
+extern __m128i __cdecl _mm_mask_i32gather_epi32(__m128i         ,
+                                                int const *     ,
+                                                __m128i         ,
+                                                __m128i         ,
+                                                const int       );
+extern __m128i __cdecl _mm_mask_i32gather_epi64(__m128i         ,
+                                                __int64 const * ,
+                                                __m128i         ,
+                                                __m128i         ,
+                                                const int       );
+extern __m128i __cdecl _mm_mask_i64gather_epi32(__m128i         ,
+                                                int     const * ,
+                                                __m128i         ,
+                                                __m128i         ,
+                                                const int       );
+extern __m128i __cdecl _mm_mask_i64gather_epi64(__m128i         ,
+                                                __int64 const * ,
+                                                __m128i         ,
+                                                __m128i         ,
+                                                const int       );
+
+
+
+
+
+extern __m256d __cdecl _mm256_i32gather_pd(double const * ,
+                                           __m128i        ,
+                                           const int      );
+extern __m256  __cdecl _mm256_i32gather_ps(float  const * ,
+                                           __m256i        ,
+                                           const int      );
+extern __m256d __cdecl _mm256_i64gather_pd(double const * ,
+                                           __m256i        ,
+                                           const int      );
+extern __m128  __cdecl _mm256_i64gather_ps(float  const * ,
+                                           __m256i        ,
+                                           const int      );
+
+extern __m128d __cdecl _mm_i32gather_pd(double const * ,
+                                        __m128i        ,
+                                        const int      );
+extern __m128  __cdecl _mm_i32gather_ps(float  const * ,
+                                        __m128i        ,
+                                        const int      );
+extern __m128d __cdecl _mm_i64gather_pd(double const * ,
+                                        __m128i        ,
+                                        const int      );
+extern __m128  __cdecl _mm_i64gather_ps(float  const * ,
+                                        __m128i        ,
+                                        const int      );
+
+extern __m256i __cdecl _mm256_i32gather_epi32(int const *     ,
+                                              __m256i         ,
+                                              const int       );
+extern __m256i __cdecl _mm256_i32gather_epi64(__int64 const * ,
+                                              __m128i         ,
+                                              const int       );
+extern __m128i __cdecl _mm256_i64gather_epi32(int const *     ,
+                                              __m256i         ,
+                                              const int       );
+extern __m256i __cdecl _mm256_i64gather_epi64(__int64 const * ,
+                                              __m256i         ,
+                                              const int       );
+
+extern __m128i __cdecl _mm_i32gather_epi32(int const *     ,
+                                           __m128i         ,
+                                           const int       );
+extern __m128i __cdecl _mm_i32gather_epi64(__int64 const * ,
+                                           __m128i         ,
+                                           const int       );
+extern __m128i __cdecl _mm_i64gather_epi32(int     const * ,
+                                           __m128i         ,
+                                           const int       );
+extern __m128i __cdecl _mm_i64gather_epi64(__int64 const * ,
+                                           __m128i         ,
+                                           const int       );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern unsigned int     _bextr_u32(unsigned int ,
+                                   unsigned int ,
+                                   unsigned int );
+extern unsigned int     _bextr2_u32(unsigned int ,
+                                    unsigned int );
+extern unsigned int     _blsi_u32(unsigned int);
+extern unsigned int     _blsmsk_u32(unsigned int);
+extern unsigned int     _blsr_u32(unsigned int);
+extern unsigned int     _bzhi_u32(unsigned int ,
+                                  unsigned int );
+extern unsigned int     _mulx_u32(unsigned int ,
+                                  unsigned int ,
+                                  unsigned int * );
+extern unsigned int     _pdep_u32(unsigned int ,
+                                  unsigned int );
+extern unsigned int     _pext_u32(unsigned int ,
+                                  unsigned int );
+extern unsigned int     _rorx_u32(unsigned int ,
+                                  const unsigned int );
+extern int              _sarx_i32(int ,
+                                  unsigned int );
+extern unsigned int     _shlx_u32(unsigned int ,
+                                  unsigned int );
+extern unsigned int     _shrx_u32(unsigned int ,
+                                          unsigned int );
+
+
+extern unsigned __int64 _bextr_u64(unsigned __int64 ,
+                                   unsigned int ,
+                                   unsigned int );
+extern unsigned __int64 _bextr2_u64(unsigned __int64 ,
+                                    unsigned __int64 );
+extern unsigned __int64 _blsi_u64(unsigned __int64);
+extern unsigned __int64 _blsmsk_u64(unsigned __int64);
+extern unsigned __int64 _blsr_u64(unsigned __int64);
+extern unsigned __int64 _bzhi_u64(unsigned __int64 ,
+                                  unsigned int );
+extern unsigned __int64 _mulx_u64(unsigned __int64 ,
+                                  unsigned __int64 ,
+                                  unsigned __int64 * );
+extern unsigned __int64 _pdep_u64(unsigned __int64 ,
+                                  unsigned __int64 );
+extern unsigned __int64 _pext_u64(unsigned __int64 ,
+                                  unsigned __int64 );
+extern unsigned __int64 _rorx_u64(unsigned __int64 ,
+                                  const unsigned int );
+extern __int64          _sarx_i64(__int64 ,
+                                  unsigned int );
+extern unsigned __int64 _shlx_u64(unsigned __int64 ,
+                                  unsigned int );
+extern unsigned __int64 _shrx_u64(unsigned __int64 ,
+                                          unsigned int );
+#line 1969 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+
+
+
+extern unsigned int     _lzcnt_u32(unsigned int);
+
+extern unsigned __int64 _lzcnt_u64(unsigned __int64);
+#line 1981 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+
+
+
+extern unsigned __int16 _tzcnt_u16(unsigned __int16);
+extern unsigned int     _tzcnt_u32(unsigned int);
+
+extern unsigned __int64 _tzcnt_u64(unsigned __int64);
+#line 1994 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+
+extern void __cdecl _invpcid(unsigned int , void * );
+
+
+extern void _Store_HLERelease(long volatile *,long);
+extern void _StorePointer_HLERelease(void * volatile *,void *);
+
+extern long _InterlockedExchange_HLEAcquire(long volatile *,long);
+extern long _InterlockedExchange_HLERelease(long volatile *,long);
+extern void * _InterlockedExchangePointer_HLEAcquire(void *volatile *,void *);
+extern void * _InterlockedExchangePointer_HLERelease(void *volatile *,void *);
+
+extern long _InterlockedCompareExchange_HLEAcquire(long volatile *,long,long);
+extern long _InterlockedCompareExchange_HLERelease(long volatile *,long,long);
+extern __int64 _InterlockedCompareExchange64_HLEAcquire(__int64 volatile *,__int64,__int64);
+extern __int64 _InterlockedCompareExchange64_HLERelease(__int64 volatile *,__int64,__int64);
+extern void * _InterlockedCompareExchangePointer_HLEAcquire(void *volatile *,void *,void *);
+extern void * _InterlockedCompareExchangePointer_HLERelease(void *volatile *,void *,void *);
+
+extern long _InterlockedExchangeAdd_HLEAcquire(long volatile *,long);
+extern long _InterlockedExchangeAdd_HLERelease(long volatile *,long);
+
+extern long _InterlockedAnd_HLEAcquire(long volatile *,long);
+extern long _InterlockedAnd_HLERelease(long volatile *,long);
+extern long _InterlockedOr_HLEAcquire(long volatile *,long);
+extern long _InterlockedOr_HLERelease(long volatile *,long);
+extern long _InterlockedXor_HLEAcquire(long volatile *,long);
+extern long _InterlockedXor_HLERelease(long volatile *,long);
+
+extern unsigned char _interlockedbittestandset_HLEAcquire(long *,long);
+extern unsigned char _interlockedbittestandset_HLERelease(long *,long);
+extern unsigned char _interlockedbittestandreset_HLEAcquire(long *,long);
+extern unsigned char _interlockedbittestandreset_HLERelease(long *,long);
+
+
+extern void _Store64_HLERelease(__int64 volatile *,__int64);
+extern __int64 _InterlockedExchange64_HLEAcquire(__int64 volatile *,__int64);
+extern __int64 _InterlockedExchange64_HLERelease(__int64 volatile *,__int64);
+
+extern __int64 _InterlockedExchangeAdd64_HLEAcquire(__int64 volatile *,__int64);
+extern __int64 _InterlockedExchangeAdd64_HLERelease(__int64 volatile *,__int64);
+
+extern __int64 _InterlockedAnd64_HLEAcquire(__int64 volatile *,__int64);
+extern __int64 _InterlockedAnd64_HLERelease(__int64 volatile *,__int64);
+extern __int64 _InterlockedOr64_HLEAcquire(__int64 volatile *,__int64);
+extern __int64 _InterlockedOr64_HLERelease(__int64 volatile *,__int64);
+extern __int64 _InterlockedXor64_HLEAcquire(__int64 volatile *,__int64);
+extern __int64 _InterlockedXor64_HLERelease(__int64 volatile *,__int64);
+
+extern unsigned char _interlockedbittestandset64_HLEAcquire(__int64 *,__int64);
+extern unsigned char _interlockedbittestandset64_HLERelease(__int64 *,__int64);
+extern unsigned char _interlockedbittestandreset64_HLEAcquire(__int64 *,__int64);
+extern unsigned char _interlockedbittestandreset64_HLERelease(__int64 *,__int64);
+#line 2053 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+
+
+
+
+
+
+extern unsigned int     __cdecl _xbegin(void);
+extern void             __cdecl _xend(void);
+extern void             __cdecl _xabort(const unsigned int);
+extern unsigned char    __cdecl _xtest(void);
+
+
+
+
+
+
+
+
+extern int __cdecl _rdseed16_step(unsigned short *);
+extern int __cdecl _rdseed32_step(unsigned int *);
+
+extern int __cdecl _rdseed64_step(unsigned __int64 *);
+#line 2081 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+
+
+
+
+
+extern unsigned char __cdecl _addcarryx_u32(unsigned char ,
+                                                   unsigned int ,
+                                                   unsigned int ,
+                                                   unsigned int * );
+
+
+
+extern unsigned char __cdecl _addcarryx_u64(unsigned char ,
+                                                   unsigned __int64 ,
+                                                   unsigned __int64 ,
+                                                   unsigned __int64 * );
+#line 2103 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+extern unsigned short   __cdecl _load_be_u16(void const*);
+extern unsigned int     __cdecl _load_be_u32(void const*);
+extern unsigned __int64 __cdecl _load_be_u64(void const*);
+
+
+
+
+
+
+
+extern void __cdecl _store_be_u16(void *, unsigned short);
+extern void __cdecl _store_be_u32(void *, unsigned int);
+extern void __cdecl _store_be_u64(void *, unsigned __int64);
+
+
+
+
+
+
+
+extern __m128i __cdecl _mm_sha1msg1_epu32(__m128i, __m128i);
+extern __m128i __cdecl _mm_sha1msg2_epu32(__m128i, __m128i);
+extern __m128i __cdecl _mm_sha1nexte_epu32(__m128i, __m128i);
+extern __m128i __cdecl _mm_sha1rnds4_epu32(__m128i, __m128i, const int);
+
+extern __m128i __cdecl _mm_sha256msg1_epu32(__m128i, __m128i);
+extern __m128i __cdecl _mm_sha256msg2_epu32(__m128i, __m128i);
+extern __m128i __cdecl _mm_sha256rnds2_epu32(__m128i, __m128i, __m128i);
+
+
+
+
+extern void * __cdecl _bnd_set_ptr_bounds(const void *, size_t);
+extern void * __cdecl _bnd_narrow_ptr_bounds(const void *, const void *, size_t);
+extern void * __cdecl _bnd_copy_ptr_bounds(const void *, const void *);
+extern void * __cdecl _bnd_init_ptr_bounds(const void *);
+extern void __cdecl _bnd_store_ptr_bounds(const void **, const void *);
+extern void __cdecl _bnd_chk_ptr_lbounds(const void *);
+extern void __cdecl _bnd_chk_ptr_ubounds(const void *);
+extern void __cdecl _bnd_chk_ptr_bounds(const void *, size_t);
+extern void * __cdecl _bnd_load_ptr_bounds(const void **, const void *);
+extern const void * __cdecl _bnd_get_ptr_lbound(const void *);
+extern const void * __cdecl _bnd_get_ptr_ubound(const void *);
+
+
+extern __m256i __cdecl _mm256_insert_epi8 (__m256i , int , const int );
+extern __m256i __cdecl _mm256_insert_epi16(__m256i , int , const int );
+extern __m256i __cdecl _mm256_insert_epi32(__m256i , int , const int );
+
+extern __m256i __cdecl _mm256_insert_epi64(__m256i , __int64 , const int );
+#line 2159 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+extern int __cdecl _mm256_extract_epi8 (__m256i , const int );
+extern int __cdecl _mm256_extract_epi16(__m256i , const int );
+extern int __cdecl _mm256_extract_epi32(__m256i , const int );
+
+extern __int64 __cdecl _mm256_extract_epi64(__m256i , const int );
+#line 2167 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+extern __m256d __cdecl _mm256_zextpd128_pd256(__m128d);
+extern __m256  __cdecl _mm256_zextps128_ps256(__m128);
+extern __m256i __cdecl _mm256_zextsi128_si256(__m128i);
+
+
+extern unsigned int __cdecl _rdpid_u32(void);
+
+extern void         __cdecl _ptwrite32(unsigned int);
+
+extern void         __cdecl _ptwrite64(unsigned __int64);
+#line 2180 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+extern __m128i __cdecl _mm_dpbusd_avx_epi32(__m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_dpbusd_avx_epi32(__m256i, __m256i, __m256i);
+extern __m128i __cdecl _mm_dpbusds_avx_epi32(__m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_dpbusds_avx_epi32(__m256i, __m256i, __m256i);
+extern __m128i __cdecl _mm_dpwssd_avx_epi32(__m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_dpwssd_avx_epi32(__m256i, __m256i, __m256i);
+extern __m128i __cdecl _mm_dpwssds_avx_epi32(__m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_dpwssds_avx_epi32(__m256i, __m256i, __m256i);
+
+
+extern unsigned int __cdecl _pconfig_u32(const int, size_t __data[]);
+extern void __cdecl _wbnoinvd(void);
+
+
+extern unsigned int __cdecl _encls_u32(const int, size_t __data[]);
+extern unsigned int __cdecl _enclu_u32(const int, size_t __data[]);
+extern unsigned int __cdecl _enclv_u32(const int, size_t __data[]);
+
+
+
+
+extern unsigned __int64 __cdecl _udiv128(unsigned __int64 , unsigned __int64 , unsigned __int64 , unsigned __int64* );
+extern __int64          __cdecl _div128(__int64 , __int64 , __int64 , __int64* );
+#line 2206 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+extern unsigned         __cdecl _udiv64(unsigned __int64 , unsigned , unsigned* );
+extern int              __cdecl _div64(__int64 , int , int* );
+
+
+extern unsigned char _mm_aesdec128kl_u8(__m128i* , __m128i , const void* );
+extern unsigned char _mm_aesdec256kl_u8(__m128i* , __m128i , const void* );
+extern unsigned char _mm_aesdecwide128kl_u8(__m128i* , const __m128i* , const void* );
+extern unsigned char _mm_aesdecwide256kl_u8(__m128i* , const __m128i* , const void* );
+extern unsigned char _mm_aesenc128kl_u8(__m128i* , __m128i , const void* );
+extern unsigned char _mm_aesenc256kl_u8(__m128i* , __m128i , const void* );
+extern unsigned char _mm_aesencwide128kl_u8(__m128i* , const __m128i* , const void* );
+extern unsigned char _mm_aesencwide256kl_u8(__m128i* , const __m128i* , const void* );
+extern unsigned int  _mm_encodekey128_u32(unsigned int , __m128i , void* );
+extern unsigned int  _mm_encodekey256_u32(unsigned int , __m128i , __m128i , void* );
+extern void          _mm_loadiwkey(unsigned int , __m128i , __m128i , __m128i );
+
+
+extern unsigned int     __cdecl _rdpkru_u32(void);
+extern void             __cdecl _wrpkru(unsigned int);
+
+
+extern int              __cdecl _enqcmd(void * , const void * );
+extern int              __cdecl _enqcmds(void * , const void * );
+
+
+
+
+extern void             __cdecl _incsspd (unsigned int);
+extern unsigned int     __cdecl _rdsspd (void);
+extern void             __cdecl _saveprevssp (void);
+extern void             __cdecl _rstorssp (void *);
+extern void             __cdecl _wrssd (unsigned int, void *);
+extern void             __cdecl _wrussd (unsigned int, void *);
+extern void             __cdecl _setssbsy (void);
+extern void             __cdecl _clrssbsy (void *);
+extern void *           __cdecl _switchssp(void *);
+
+extern void             __cdecl _incsspq (unsigned __int64);
+extern unsigned __int64 __cdecl _rdsspq (void);
+extern void             __cdecl _wrssq (unsigned __int64, void *);
+extern void             __cdecl _wrussq(unsigned __int64, void *);
+#line 2248 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+
+extern __m128i _mm_div_epi8(__m128i, __m128i);
+extern __m128i _mm_div_epi16(__m128i, __m128i);
+extern __m128i _mm_div_epi32(__m128i, __m128i);
+extern __m128i _mm_div_epi64(__m128i, __m128i);
+extern __m128i _mm_div_epu8(__m128i, __m128i);
+extern __m128i _mm_div_epu16(__m128i, __m128i);
+extern __m128i _mm_div_epu32(__m128i, __m128i);
+extern __m128i _mm_div_epu64(__m128i, __m128i);
+extern __m128i _mm_rem_epi8(__m128i, __m128i);
+extern __m128i _mm_rem_epi16(__m128i, __m128i);
+extern __m128i _mm_rem_epi32(__m128i, __m128i);
+extern __m128i _mm_rem_epi64(__m128i, __m128i);
+extern __m128i _mm_rem_epu8(__m128i, __m128i);
+extern __m128i _mm_rem_epu16(__m128i, __m128i);
+extern __m128i _mm_rem_epu32(__m128i, __m128i);
+extern __m128i _mm_rem_epu64(__m128i, __m128i);
+extern __m256i _mm256_div_epi8(__m256i, __m256i);
+extern __m256i _mm256_div_epi16(__m256i, __m256i);
+extern __m256i _mm256_div_epi32(__m256i, __m256i);
+extern __m256i _mm256_div_epi64(__m256i, __m256i);
+extern __m256i _mm256_div_epu8(__m256i, __m256i);
+extern __m256i _mm256_div_epu16(__m256i, __m256i);
+extern __m256i _mm256_div_epu32(__m256i, __m256i);
+extern __m256i _mm256_div_epu64(__m256i, __m256i);
+extern __m256i _mm256_rem_epi8(__m256i, __m256i);
+extern __m256i _mm256_rem_epi16(__m256i, __m256i);
+extern __m256i _mm256_rem_epi32(__m256i, __m256i);
+extern __m256i _mm256_rem_epi64(__m256i, __m256i);
+extern __m256i _mm256_rem_epu8(__m256i, __m256i);
+extern __m256i _mm256_rem_epu16(__m256i, __m256i);
+extern __m256i _mm256_rem_epu32(__m256i, __m256i);
+extern __m256i _mm256_rem_epu64(__m256i, __m256i);
+
+
+
+
+
+
+
+
+
+
+extern __m128i _mm_divrem_epi32(__m128i * , __m128i, __m128i);
+extern __m128i _mm_divrem_epu32(__m128i * , __m128i, __m128i);
+extern __m256i _mm256_divrem_epi32(__m256i * , __m256i, __m256i);
+extern __m256i _mm256_divrem_epu32(__m256i * , __m256i, __m256i);
+
+
+
+
+
+
+
+extern __m128  _mm_sin_ps(__m128);
+extern __m128d _mm_sin_pd(__m128d);
+extern __m256  _mm256_sin_ps(__m256);
+extern __m256d _mm256_sin_pd(__m256d);
+extern __m128  _mm_cos_ps(__m128);
+extern __m128d _mm_cos_pd(__m128d);
+extern __m256  _mm256_cos_ps(__m256);
+extern __m256d _mm256_cos_pd(__m256d);
+extern __m128  _mm_sincos_ps(__m128  * , __m128);
+extern __m128d _mm_sincos_pd(__m128d * , __m128d);
+extern __m256  _mm256_sincos_ps(__m256  * , __m256);
+extern __m256d _mm256_sincos_pd(__m256d * , __m256d);
+extern __m128  _mm_tan_ps(__m128);
+extern __m128d _mm_tan_pd(__m128d);
+extern __m256  _mm256_tan_ps(__m256);
+extern __m256d _mm256_tan_pd(__m256d);
+extern __m128  _mm_asin_ps(__m128);
+extern __m128d _mm_asin_pd(__m128d);
+extern __m256  _mm256_asin_ps(__m256);
+extern __m256d _mm256_asin_pd(__m256d);
+extern __m128  _mm_acos_ps(__m128);
+extern __m128d _mm_acos_pd(__m128d);
+extern __m256  _mm256_acos_ps(__m256);
+extern __m256d _mm256_acos_pd(__m256d);
+extern __m128  _mm_atan_ps(__m128);
+extern __m128d _mm_atan_pd(__m128d);
+extern __m256  _mm256_atan_ps(__m256);
+extern __m256d _mm256_atan_pd(__m256d);
+extern __m128  _mm_atan2_ps(__m128, __m128);
+extern __m128d _mm_atan2_pd(__m128d, __m128d);
+extern __m256  _mm256_atan2_ps(__m256, __m256);
+extern __m256d _mm256_atan2_pd(__m256d, __m256d);
+extern __m128  _mm_sind_ps(__m128);
+extern __m128d _mm_sind_pd(__m128d);
+extern __m256  _mm256_sind_ps(__m256);
+extern __m256d _mm256_sind_pd(__m256d);
+extern __m128  _mm_cosd_ps(__m128);
+extern __m128d _mm_cosd_pd(__m128d);
+extern __m256  _mm256_cosd_ps(__m256);
+extern __m256d _mm256_cosd_pd(__m256d);
+extern __m128  _mm_tand_ps(__m128);
+extern __m128d _mm_tand_pd(__m128d);
+extern __m256  _mm256_tand_ps(__m256);
+extern __m256d _mm256_tand_pd(__m256d);
+extern __m128  _mm_sinh_ps(__m128);
+extern __m128d _mm_sinh_pd(__m128d);
+extern __m256  _mm256_sinh_ps(__m256);
+extern __m256d _mm256_sinh_pd(__m256d);
+extern __m128  _mm_cosh_ps(__m128);
+extern __m128d _mm_cosh_pd(__m128d);
+extern __m256  _mm256_cosh_ps(__m256);
+extern __m256d _mm256_cosh_pd(__m256d);
+extern __m128  _mm_tanh_ps(__m128);
+extern __m128d _mm_tanh_pd(__m128d);
+extern __m256  _mm256_tanh_ps(__m256);
+extern __m256d _mm256_tanh_pd(__m256d);
+extern __m128  _mm_asinh_ps(__m128);
+extern __m128d _mm_asinh_pd(__m128d);
+extern __m256  _mm256_asinh_ps(__m256);
+extern __m256d _mm256_asinh_pd(__m256d);
+extern __m128  _mm_acosh_ps(__m128);
+extern __m128d _mm_acosh_pd(__m128d);
+extern __m256  _mm256_acosh_ps(__m256);
+extern __m256d _mm256_acosh_pd(__m256d);
+extern __m128  _mm_atanh_ps(__m128);
+extern __m128d _mm_atanh_pd(__m128d);
+extern __m256  _mm256_atanh_ps(__m256);
+extern __m256d _mm256_atanh_pd(__m256d);
+extern __m128  _mm_log_ps(__m128);
+extern __m128d _mm_log_pd(__m128d);
+extern __m256  _mm256_log_ps(__m256);
+extern __m256d _mm256_log_pd(__m256d);
+extern __m128  _mm_log1p_ps(__m128);
+extern __m128d _mm_log1p_pd(__m128d);
+extern __m256  _mm256_log1p_ps(__m256);
+extern __m256d _mm256_log1p_pd(__m256d);
+extern __m128  _mm_log10_ps(__m128);
+extern __m128d _mm_log10_pd(__m128d);
+extern __m256  _mm256_log10_ps(__m256);
+extern __m256d _mm256_log10_pd(__m256d);
+extern __m128  _mm_log2_ps(__m128);
+extern __m128d _mm_log2_pd(__m128d);
+extern __m256  _mm256_log2_ps(__m256);
+extern __m256d _mm256_log2_pd(__m256d);
+extern __m128  _mm_logb_ps(__m128);
+extern __m128d _mm_logb_pd(__m128d);
+extern __m256  _mm256_logb_ps(__m256);
+extern __m256d _mm256_logb_pd(__m256d);
+extern __m128  _mm_exp_ps(__m128);
+extern __m128d _mm_exp_pd(__m128d);
+extern __m256  _mm256_exp_ps(__m256);
+extern __m256d _mm256_exp_pd(__m256d);
+extern __m128  _mm_exp10_ps(__m128);
+extern __m128d _mm_exp10_pd(__m128d);
+extern __m256  _mm256_exp10_ps(__m256);
+extern __m256d _mm256_exp10_pd(__m256d);
+extern __m128  _mm_exp2_ps(__m128);
+extern __m128d _mm_exp2_pd(__m128d);
+extern __m256  _mm256_exp2_ps(__m256);
+extern __m256d _mm256_exp2_pd(__m256d);
+extern __m128  _mm_expm1_ps(__m128);
+extern __m128d _mm_expm1_pd(__m128d);
+extern __m256  _mm256_expm1_ps(__m256);
+extern __m256d _mm256_expm1_pd(__m256d);
+extern __m128  _mm_pow_ps(__m128, __m128);
+extern __m128d _mm_pow_pd(__m128d, __m128d);
+extern __m256  _mm256_pow_ps(__m256, __m256);
+extern __m256d _mm256_pow_pd(__m256d, __m256d);
+extern __m128  _mm_trunc_ps(__m128);
+extern __m128d _mm_trunc_pd(__m128d);
+extern __m256  _mm256_trunc_ps(__m256);
+extern __m256d _mm256_trunc_pd(__m256d);
+extern __m128  _mm_svml_floor_ps(__m128);
+extern __m128d _mm_svml_floor_pd(__m128d);
+extern __m256  _mm256_svml_floor_ps(__m256);
+extern __m256d _mm256_svml_floor_pd(__m256d);
+extern __m128  _mm_svml_ceil_ps(__m128);
+extern __m128d _mm_svml_ceil_pd(__m128d);
+extern __m256  _mm256_svml_ceil_ps(__m256);
+extern __m256d _mm256_svml_ceil_pd(__m256d);
+extern __m128  _mm_svml_round_ps(__m128);
+extern __m128d _mm_svml_round_pd(__m128d);
+extern __m256  _mm256_svml_round_ps(__m256);
+extern __m256d _mm256_svml_round_pd(__m256d);
+extern __m128  _mm_fmod_ps(__m128, __m128);
+extern __m128d _mm_fmod_pd(__m128d, __m128d);
+extern __m256  _mm256_fmod_ps(__m256, __m256);
+extern __m256d _mm256_fmod_pd(__m256d, __m256d);
+extern __m128  _mm_svml_sqrt_ps(__m128);
+extern __m128d _mm_svml_sqrt_pd(__m128d);
+extern __m256  _mm256_svml_sqrt_ps(__m256);
+extern __m256d _mm256_svml_sqrt_pd(__m256d);
+extern __m128  _mm_invsqrt_ps(__m128);
+extern __m128d _mm_invsqrt_pd(__m128d);
+extern __m256  _mm256_invsqrt_ps(__m256);
+extern __m256d _mm256_invsqrt_pd(__m256d);
+extern __m128  _mm_cbrt_ps(__m128);
+extern __m128d _mm_cbrt_pd(__m128d);
+extern __m256  _mm256_cbrt_ps(__m256);
+extern __m256d _mm256_cbrt_pd(__m256d);
+extern __m128  _mm_invcbrt_ps(__m128);
+extern __m128d _mm_invcbrt_pd(__m128d);
+extern __m256  _mm256_invcbrt_ps(__m256);
+extern __m256d _mm256_invcbrt_pd(__m256d);
+extern __m128  _mm_hypot_ps(__m128, __m128);
+extern __m128d _mm_hypot_pd(__m128d, __m128d);
+extern __m256  _mm256_hypot_ps(__m256, __m256);
+extern __m256d _mm256_hypot_pd(__m256d, __m256d);
+extern __m128  _mm_cdfnorm_ps(__m128);
+extern __m128d _mm_cdfnorm_pd(__m128d);
+extern __m256  _mm256_cdfnorm_ps(__m256);
+extern __m256d _mm256_cdfnorm_pd(__m256d);
+extern __m128  _mm_cdfnorminv_ps(__m128);
+extern __m128d _mm_cdfnorminv_pd(__m128d);
+extern __m256  _mm256_cdfnorminv_ps(__m256);
+extern __m256d _mm256_cdfnorminv_pd(__m256d);
+extern __m128  _mm_cexp_ps(__m128);
+extern __m256  _mm256_cexp_ps(__m256);
+extern __m128  _mm_clog_ps(__m128);
+extern __m256  _mm256_clog_ps(__m256);
+extern __m128  _mm_csqrt_ps(__m128);
+extern __m256  _mm256_csqrt_ps(__m256);
+extern __m128  _mm_erf_ps(__m128);
+extern __m128d _mm_erf_pd(__m128d);
+extern __m256  _mm256_erf_ps(__m256);
+extern __m256d _mm256_erf_pd(__m256d);
+extern __m128  _mm_erfc_ps(__m128);
+extern __m128d _mm_erfc_pd(__m128d);
+extern __m256  _mm256_erfc_ps(__m256);
+extern __m256d _mm256_erfc_pd(__m256d);
+extern __m128  _mm_erfcinv_ps(__m128);
+extern __m128d _mm_erfcinv_pd(__m128d);
+extern __m256  _mm256_erfcinv_ps(__m256);
+extern __m256d _mm256_erfcinv_pd(__m256d);
+extern __m128  _mm_erfinv_ps(__m128);
+extern __m128d _mm_erfinv_pd(__m128d);
+extern __m256  _mm256_erfinv_ps(__m256);
+extern __m256d _mm256_erfinv_pd(__m256d);
+
+
+extern void _mm_cldemote(void const *);
+
+
+
+extern void _directstoreu_u32(void *, unsigned int);
+
+extern void _directstoreu_u64(void *, unsigned __int64);
+#line 2495 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+extern void _movdir64b(void *, void const *);
+
+
+extern void __cdecl _serialize(void);
+extern void __cdecl _xsusldtrk(void);
+extern void __cdecl _xresldtrk(void);
+
+
+extern void _umonitor(void *);
+extern unsigned char _umwait(unsigned int, unsigned __int64);
+extern unsigned char _tpause(unsigned int, unsigned __int64);
+
+
+
+extern void _clui(void);
+extern void _stui(void);
+extern unsigned char _testui(void);
+extern void _senduipi(unsigned __int64);
+#line 2514 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+extern void _hreset(unsigned __int32);
+
+
+extern __m128 _mm_svml_cvtepu32_ps (__m128i);
+extern __m256 _mm256_svml_cvtepu32_ps (__m256i);
+extern __m128d _mm_svml_cvtepu32_pd (__m128i);
+extern __m256d _mm256_svml_cvtepu32_pd (__m128i);
+extern __m128d _mm_svml_cvtepi64_pd (__m128i);
+extern __m256d _mm256_svml_cvtepi64_pd (__m256i);
+extern __m128d _mm_svml_cvtepu64_pd (__m128i);
+extern __m256d _mm256_svml_cvtepu64_pd (__m256i);
+
+
+extern unsigned __int32 _castf32_u32 (float);
+extern unsigned __int64 _castf64_u64 (double);
+extern float _castu32_f32 (unsigned __int32);
+extern double _castu64_f64 (unsigned __int64);
+
+
+
+#line 2537 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+#line 1 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\zmmintrin.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef unsigned char       __mmask8;
+typedef unsigned short      __mmask16;
+typedef unsigned int        __mmask32;
+typedef unsigned __int64    __mmask64;
+
+typedef union __declspec(intrin_type) __declspec(align(64)) __m512 {
+    float m512_f32[16];
+} __m512;
+
+typedef struct __declspec(intrin_type) __declspec(align(64)) __m512d {
+    double m512d_f64[8];
+} __m512d;
+
+typedef union  __declspec(intrin_type) __declspec(align(64)) __m512i {
+    __int8              m512i_i8[64];
+    __int16             m512i_i16[32];
+    __int32             m512i_i32[16];
+    __int64             m512i_i64[8];
+    unsigned __int8     m512i_u8[64];
+    unsigned __int16    m512i_u16[32];
+    unsigned __int32    m512i_u32[16];
+    unsigned __int64    m512i_u64[8];
+} __m512i;
+
+
+
+
+
+
+
+
+extern __m256  __cdecl _mm512_castps512_ps256(__m512);
+extern __m512  __cdecl _mm512_castpd_ps(__m512d);
+extern __m512  __cdecl _mm512_castps256_ps512(__m256);
+extern __m512  __cdecl _mm512_castsi512_ps(__m512i);
+extern __m512  __cdecl _mm512_castps128_ps512(__m128);
+
+extern __m256d __cdecl _mm512_castpd512_pd256(__m512d);
+extern __m512d __cdecl _mm512_castpd256_pd512(__m256d);
+extern __m512d __cdecl _mm512_castps_pd(__m512);
+extern __m512d __cdecl _mm512_castsi512_pd(__m512i);
+extern __m512d __cdecl _mm512_castpd128_pd512(__m128d);
+
+extern __m256i __cdecl _mm512_castsi512_si256(__m512i);
+extern __m512i __cdecl _mm512_castpd_si512(__m512d);
+extern __m512i __cdecl _mm512_castps_si512(__m512);
+extern __m512i __cdecl _mm512_castsi256_si512(__m256i);
+
+
+
+
+
+
+
+
+typedef enum {
+    _MM_BROADCAST32_NONE,   
+
+    _MM_BROADCAST_1X16,     
+    _MM_BROADCAST_4X16      
+} _MM_BROADCAST32_ENUM;
+
+
+typedef enum {
+    _MM_BROADCAST64_NONE,   
+
+    _MM_BROADCAST_1X8,      
+    _MM_BROADCAST_4X8       
+} _MM_BROADCAST64_ENUM;
+
+
+
+
+
+
+typedef enum {
+    _MM_ROUND_MODE_NEAREST,             
+    _MM_ROUND_MODE_DOWN,                
+    _MM_ROUND_MODE_UP,                  
+    _MM_ROUND_MODE_TOWARD_ZERO,         
+    _MM_ROUND_MODE_DEFAULT,             
+    _MM_ROUND_MODE_NO_EXC = 8,          
+} _MM_ROUND_MODE_ENUM;
+
+
+typedef enum {
+    _MM_EXPADJ_NONE,               
+    _MM_EXPADJ_4,                  
+    _MM_EXPADJ_5,                  
+    _MM_EXPADJ_8,                  
+    _MM_EXPADJ_16,                 
+    _MM_EXPADJ_24,                 
+    _MM_EXPADJ_31,                 
+    _MM_EXPADJ_32                  
+} _MM_EXP_ADJ_ENUM;
+
+
+typedef enum {
+    _MM_SCALE_1 = 1,
+    _MM_SCALE_2 = 2,
+    _MM_SCALE_4 = 4,
+    _MM_SCALE_8 = 8
+} _MM_INDEX_SCALE_ENUM;
+
+
+typedef enum {
+    _MM_PERM_AAAA = 0x00, _MM_PERM_AAAB = 0x01, _MM_PERM_AAAC = 0x02,
+    _MM_PERM_AAAD = 0x03, _MM_PERM_AABA = 0x04, _MM_PERM_AABB = 0x05,
+    _MM_PERM_AABC = 0x06, _MM_PERM_AABD = 0x07, _MM_PERM_AACA = 0x08,
+    _MM_PERM_AACB = 0x09, _MM_PERM_AACC = 0x0A, _MM_PERM_AACD = 0x0B,
+    _MM_PERM_AADA = 0x0C, _MM_PERM_AADB = 0x0D, _MM_PERM_AADC = 0x0E,
+    _MM_PERM_AADD = 0x0F, _MM_PERM_ABAA = 0x10, _MM_PERM_ABAB = 0x11,
+    _MM_PERM_ABAC = 0x12, _MM_PERM_ABAD = 0x13, _MM_PERM_ABBA = 0x14,
+    _MM_PERM_ABBB = 0x15, _MM_PERM_ABBC = 0x16, _MM_PERM_ABBD = 0x17,
+    _MM_PERM_ABCA = 0x18, _MM_PERM_ABCB = 0x19, _MM_PERM_ABCC = 0x1A,
+    _MM_PERM_ABCD = 0x1B, _MM_PERM_ABDA = 0x1C, _MM_PERM_ABDB = 0x1D,
+    _MM_PERM_ABDC = 0x1E, _MM_PERM_ABDD = 0x1F, _MM_PERM_ACAA = 0x20,
+    _MM_PERM_ACAB = 0x21, _MM_PERM_ACAC = 0x22, _MM_PERM_ACAD = 0x23,
+    _MM_PERM_ACBA = 0x24, _MM_PERM_ACBB = 0x25, _MM_PERM_ACBC = 0x26,
+    _MM_PERM_ACBD = 0x27, _MM_PERM_ACCA = 0x28, _MM_PERM_ACCB = 0x29,
+    _MM_PERM_ACCC = 0x2A, _MM_PERM_ACCD = 0x2B, _MM_PERM_ACDA = 0x2C,
+    _MM_PERM_ACDB = 0x2D, _MM_PERM_ACDC = 0x2E, _MM_PERM_ACDD = 0x2F,
+    _MM_PERM_ADAA = 0x30, _MM_PERM_ADAB = 0x31, _MM_PERM_ADAC = 0x32,
+    _MM_PERM_ADAD = 0x33, _MM_PERM_ADBA = 0x34, _MM_PERM_ADBB = 0x35,
+    _MM_PERM_ADBC = 0x36, _MM_PERM_ADBD = 0x37, _MM_PERM_ADCA = 0x38,
+    _MM_PERM_ADCB = 0x39, _MM_PERM_ADCC = 0x3A, _MM_PERM_ADCD = 0x3B,
+    _MM_PERM_ADDA = 0x3C, _MM_PERM_ADDB = 0x3D, _MM_PERM_ADDC = 0x3E,
+    _MM_PERM_ADDD = 0x3F, _MM_PERM_BAAA = 0x40, _MM_PERM_BAAB = 0x41,
+    _MM_PERM_BAAC = 0x42, _MM_PERM_BAAD = 0x43, _MM_PERM_BABA = 0x44,
+    _MM_PERM_BABB = 0x45, _MM_PERM_BABC = 0x46, _MM_PERM_BABD = 0x47,
+    _MM_PERM_BACA = 0x48, _MM_PERM_BACB = 0x49, _MM_PERM_BACC = 0x4A,
+    _MM_PERM_BACD = 0x4B, _MM_PERM_BADA = 0x4C, _MM_PERM_BADB = 0x4D,
+    _MM_PERM_BADC = 0x4E, _MM_PERM_BADD = 0x4F, _MM_PERM_BBAA = 0x50,
+    _MM_PERM_BBAB = 0x51, _MM_PERM_BBAC = 0x52, _MM_PERM_BBAD = 0x53,
+    _MM_PERM_BBBA = 0x54, _MM_PERM_BBBB = 0x55, _MM_PERM_BBBC = 0x56,
+    _MM_PERM_BBBD = 0x57, _MM_PERM_BBCA = 0x58, _MM_PERM_BBCB = 0x59,
+    _MM_PERM_BBCC = 0x5A, _MM_PERM_BBCD = 0x5B, _MM_PERM_BBDA = 0x5C,
+    _MM_PERM_BBDB = 0x5D, _MM_PERM_BBDC = 0x5E, _MM_PERM_BBDD = 0x5F,
+    _MM_PERM_BCAA = 0x60, _MM_PERM_BCAB = 0x61, _MM_PERM_BCAC = 0x62,
+    _MM_PERM_BCAD = 0x63, _MM_PERM_BCBA = 0x64, _MM_PERM_BCBB = 0x65,
+    _MM_PERM_BCBC = 0x66, _MM_PERM_BCBD = 0x67, _MM_PERM_BCCA = 0x68,
+    _MM_PERM_BCCB = 0x69, _MM_PERM_BCCC = 0x6A, _MM_PERM_BCCD = 0x6B,
+    _MM_PERM_BCDA = 0x6C, _MM_PERM_BCDB = 0x6D, _MM_PERM_BCDC = 0x6E,
+    _MM_PERM_BCDD = 0x6F, _MM_PERM_BDAA = 0x70, _MM_PERM_BDAB = 0x71,
+    _MM_PERM_BDAC = 0x72, _MM_PERM_BDAD = 0x73, _MM_PERM_BDBA = 0x74,
+    _MM_PERM_BDBB = 0x75, _MM_PERM_BDBC = 0x76, _MM_PERM_BDBD = 0x77,
+    _MM_PERM_BDCA = 0x78, _MM_PERM_BDCB = 0x79, _MM_PERM_BDCC = 0x7A,
+    _MM_PERM_BDCD = 0x7B, _MM_PERM_BDDA = 0x7C, _MM_PERM_BDDB = 0x7D,
+    _MM_PERM_BDDC = 0x7E, _MM_PERM_BDDD = 0x7F, _MM_PERM_CAAA = 0x80,
+    _MM_PERM_CAAB = 0x81, _MM_PERM_CAAC = 0x82, _MM_PERM_CAAD = 0x83,
+    _MM_PERM_CABA = 0x84, _MM_PERM_CABB = 0x85, _MM_PERM_CABC = 0x86,
+    _MM_PERM_CABD = 0x87, _MM_PERM_CACA = 0x88, _MM_PERM_CACB = 0x89,
+    _MM_PERM_CACC = 0x8A, _MM_PERM_CACD = 0x8B, _MM_PERM_CADA = 0x8C,
+    _MM_PERM_CADB = 0x8D, _MM_PERM_CADC = 0x8E, _MM_PERM_CADD = 0x8F,
+    _MM_PERM_CBAA = 0x90, _MM_PERM_CBAB = 0x91, _MM_PERM_CBAC = 0x92,
+    _MM_PERM_CBAD = 0x93, _MM_PERM_CBBA = 0x94, _MM_PERM_CBBB = 0x95,
+    _MM_PERM_CBBC = 0x96, _MM_PERM_CBBD = 0x97, _MM_PERM_CBCA = 0x98,
+    _MM_PERM_CBCB = 0x99, _MM_PERM_CBCC = 0x9A, _MM_PERM_CBCD = 0x9B,
+    _MM_PERM_CBDA = 0x9C, _MM_PERM_CBDB = 0x9D, _MM_PERM_CBDC = 0x9E,
+    _MM_PERM_CBDD = 0x9F, _MM_PERM_CCAA = 0xA0, _MM_PERM_CCAB = 0xA1,
+    _MM_PERM_CCAC = 0xA2, _MM_PERM_CCAD = 0xA3, _MM_PERM_CCBA = 0xA4,
+    _MM_PERM_CCBB = 0xA5, _MM_PERM_CCBC = 0xA6, _MM_PERM_CCBD = 0xA7,
+    _MM_PERM_CCCA = 0xA8, _MM_PERM_CCCB = 0xA9, _MM_PERM_CCCC = 0xAA,
+    _MM_PERM_CCCD = 0xAB, _MM_PERM_CCDA = 0xAC, _MM_PERM_CCDB = 0xAD,
+    _MM_PERM_CCDC = 0xAE, _MM_PERM_CCDD = 0xAF, _MM_PERM_CDAA = 0xB0,
+    _MM_PERM_CDAB = 0xB1, _MM_PERM_CDAC = 0xB2, _MM_PERM_CDAD = 0xB3,
+    _MM_PERM_CDBA = 0xB4, _MM_PERM_CDBB = 0xB5, _MM_PERM_CDBC = 0xB6,
+    _MM_PERM_CDBD = 0xB7, _MM_PERM_CDCA = 0xB8, _MM_PERM_CDCB = 0xB9,
+    _MM_PERM_CDCC = 0xBA, _MM_PERM_CDCD = 0xBB, _MM_PERM_CDDA = 0xBC,
+    _MM_PERM_CDDB = 0xBD, _MM_PERM_CDDC = 0xBE, _MM_PERM_CDDD = 0xBF,
+    _MM_PERM_DAAA = 0xC0, _MM_PERM_DAAB = 0xC1, _MM_PERM_DAAC = 0xC2,
+    _MM_PERM_DAAD = 0xC3, _MM_PERM_DABA = 0xC4, _MM_PERM_DABB = 0xC5,
+    _MM_PERM_DABC = 0xC6, _MM_PERM_DABD = 0xC7, _MM_PERM_DACA = 0xC8,
+    _MM_PERM_DACB = 0xC9, _MM_PERM_DACC = 0xCA, _MM_PERM_DACD = 0xCB,
+    _MM_PERM_DADA = 0xCC, _MM_PERM_DADB = 0xCD, _MM_PERM_DADC = 0xCE,
+    _MM_PERM_DADD = 0xCF, _MM_PERM_DBAA = 0xD0, _MM_PERM_DBAB = 0xD1,
+    _MM_PERM_DBAC = 0xD2, _MM_PERM_DBAD = 0xD3, _MM_PERM_DBBA = 0xD4,
+    _MM_PERM_DBBB = 0xD5, _MM_PERM_DBBC = 0xD6, _MM_PERM_DBBD = 0xD7,
+    _MM_PERM_DBCA = 0xD8, _MM_PERM_DBCB = 0xD9, _MM_PERM_DBCC = 0xDA,
+    _MM_PERM_DBCD = 0xDB, _MM_PERM_DBDA = 0xDC, _MM_PERM_DBDB = 0xDD,
+    _MM_PERM_DBDC = 0xDE, _MM_PERM_DBDD = 0xDF, _MM_PERM_DCAA = 0xE0,
+    _MM_PERM_DCAB = 0xE1, _MM_PERM_DCAC = 0xE2, _MM_PERM_DCAD = 0xE3,
+    _MM_PERM_DCBA = 0xE4, _MM_PERM_DCBB = 0xE5, _MM_PERM_DCBC = 0xE6,
+    _MM_PERM_DCBD = 0xE7, _MM_PERM_DCCA = 0xE8, _MM_PERM_DCCB = 0xE9,
+    _MM_PERM_DCCC = 0xEA, _MM_PERM_DCCD = 0xEB, _MM_PERM_DCDA = 0xEC,
+    _MM_PERM_DCDB = 0xED, _MM_PERM_DCDC = 0xEE, _MM_PERM_DCDD = 0xEF,
+    _MM_PERM_DDAA = 0xF0, _MM_PERM_DDAB = 0xF1, _MM_PERM_DDAC = 0xF2,
+    _MM_PERM_DDAD = 0xF3, _MM_PERM_DDBA = 0xF4, _MM_PERM_DDBB = 0xF5,
+    _MM_PERM_DDBC = 0xF6, _MM_PERM_DDBD = 0xF7, _MM_PERM_DDCA = 0xF8,
+    _MM_PERM_DDCB = 0xF9, _MM_PERM_DDCC = 0xFA, _MM_PERM_DDCD = 0xFB,
+    _MM_PERM_DDDA = 0xFC, _MM_PERM_DDDB = 0xFD, _MM_PERM_DDDC = 0xFE,
+    _MM_PERM_DDDD = 0xFF
+} _MM_PERM_ENUM;
+
+
+
+
+
+typedef enum {
+    _MM_FIXUP_NO_CHANGE,
+    _MM_FIXUP_NEG_INF,
+    _MM_FIXUP_NEG_ZERO,
+    _MM_FIXUP_POS_ZERO,
+    _MM_FIXUP_POS_INF,
+    _MM_FIXUP_NAN,
+    _MM_FIXUP_MAX_FLOAT,
+    _MM_FIXUP_MIN_FLOAT
+} _MM_FIXUPRESULT_ENUM;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef enum {
+    _MM_MANT_NORM_1_2,      
+    _MM_MANT_NORM_p5_2,     
+    _MM_MANT_NORM_p5_1,     
+    _MM_MANT_NORM_p75_1p5   
+} _MM_MANTISSA_NORM_ENUM;
+
+typedef enum {
+    _MM_MANT_SIGN_src,      
+    _MM_MANT_SIGN_zero,     
+    _MM_MANT_SIGN_nan       
+} _MM_MANTISSA_SIGN_ENUM;
+
+
+
+
+
+
+typedef enum {
+    _MM_CMPINT_EQ,      
+    _MM_CMPINT_LT,      
+    _MM_CMPINT_LE,      
+    _MM_CMPINT_UNUSED,
+    _MM_CMPINT_NE,      
+    _MM_CMPINT_NLT,     
+
+    _MM_CMPINT_NLE      
+
+} _MM_CMPINT_ENUM;
+
+
+
+
+
+extern __m512  __cdecl _mm512_setzero_ps(void);
+extern __m512d __cdecl _mm512_setzero_pd(void);
+
+extern __m512  __cdecl _mm512_set_ps(float , float, float, float, float, float, float, float, float, float, float, float, float, float, float, float );
+extern __m512d __cdecl _mm512_set_pd(double , double, double, double, double, double, double, double );
+
+extern __m512  __cdecl _mm512_setr_ps(float , float, float, float, float, float, float, float, float, float, float, float, float, float, float, float );
+extern __m512d __cdecl _mm512_setr_pd(double , double, double, double, double, double, double, double );
+
+extern __m512  __cdecl _mm512_set1_ps(float);
+extern __m512d __cdecl _mm512_set1_pd(double);
+
+extern __m512  __cdecl _mm512_load_ps(void const*);
+extern __m512d __cdecl _mm512_load_pd(void const*);
+extern __m512  __cdecl _mm512_maskz_load_ps(__mmask16, void const*);
+extern __m512d __cdecl _mm512_maskz_load_pd(__mmask8, void const*);
+extern __m512  __cdecl _mm512_mask_load_ps(__m512, __mmask16, void const*);
+extern __m512d __cdecl _mm512_mask_load_pd(__m512d, __mmask8, void const*);
+extern __m512  __cdecl _mm512_loadu_ps(void const*);
+extern __m512d __cdecl _mm512_loadu_pd(void const*);
+extern __m512  __cdecl _mm512_maskz_loadu_ps(__mmask16, void const*);
+extern __m512d __cdecl _mm512_maskz_loadu_pd(__mmask8, void const*);
+extern __m512  __cdecl _mm512_mask_loadu_ps(__m512, __mmask16, void const*);
+extern __m512d __cdecl _mm512_mask_loadu_pd(__m512d, __mmask8, void const*);
+
+extern void    __cdecl _mm512_store_ps(void*, __m512);
+extern void    __cdecl _mm512_store_pd(void*, __m512d);
+extern void    __cdecl _mm512_storeu_ps(void*, __m512);
+extern void    __cdecl _mm512_storeu_pd(void*, __m512d);
+extern void    __cdecl _mm512_mask_store_ps(void*, __mmask16, __m512);
+extern void    __cdecl _mm512_mask_store_pd(void*, __mmask8, __m512d);
+extern void    __cdecl _mm512_mask_storeu_ps(void*, __mmask16, __m512);
+extern void    __cdecl _mm512_mask_storeu_pd(void*, __mmask8, __m512d);
+
+extern __m512  __cdecl _mm512_add_ps(__m512, __m512);
+extern __m512  __cdecl _mm512_maskz_add_ps(__mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_mask_add_ps(__m512, __mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_add_round_ps(__m512, __m512, const int );
+extern __m512  __cdecl _mm512_maskz_add_round_ps(__mmask16, __m512, __m512, const int );
+extern __m512  __cdecl _mm512_mask_add_round_ps(__m512, __mmask16, __m512, __m512, const int );
+extern __m512d __cdecl _mm512_add_pd(__m512d, __m512d);
+extern __m512d __cdecl _mm512_maskz_add_pd(__mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_mask_add_pd(__m512d, __mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_add_round_pd(__m512d, __m512d, const int );
+extern __m512d __cdecl _mm512_maskz_add_round_pd(__mmask8, __m512d, __m512d, const int );
+extern __m512d __cdecl _mm512_mask_add_round_pd(__m512d, __mmask8, __m512d, __m512d, const int );
+
+extern __m512  __cdecl _mm512_sub_ps(__m512, __m512);
+extern __m512  __cdecl _mm512_maskz_sub_ps(__mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_mask_sub_ps(__m512, __mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_sub_round_ps(__m512, __m512, const int );
+extern __m512  __cdecl _mm512_maskz_sub_round_ps(__mmask16, __m512, __m512, const int );
+extern __m512  __cdecl _mm512_mask_sub_round_ps(__m512, __mmask16, __m512, __m512, const int );
+extern __m512d __cdecl _mm512_sub_pd(__m512d, __m512d);
+extern __m512d __cdecl _mm512_maskz_sub_pd(__mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_mask_sub_pd(__m512d, __mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_sub_round_pd(__m512d, __m512d, const int );
+extern __m512d __cdecl _mm512_maskz_sub_round_pd(__mmask8, __m512d, __m512d, const int );
+extern __m512d __cdecl _mm512_mask_sub_round_pd(__m512d, __mmask8, __m512d, __m512d, const int );
+
+extern __m512  __cdecl _mm512_mul_ps(__m512, __m512);
+extern __m512  __cdecl _mm512_maskz_mul_ps(__mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_mask_mul_ps(__m512, __mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_mul_round_ps( __m512, __m512, const int );
+extern __m512  __cdecl _mm512_maskz_mul_round_ps(__mmask16, __m512, __m512, const int );
+extern __m512  __cdecl _mm512_mask_mul_round_ps(__m512, __mmask16, __m512, __m512, const int );
+extern __m512d __cdecl _mm512_mul_pd(__m512d, __m512d);
+extern __m512d __cdecl _mm512_maskz_mul_pd(__mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_mask_mul_pd(__m512d, __mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_mul_round_pd(__m512d, __m512d, const int );
+extern __m512d __cdecl _mm512_maskz_mul_round_pd(__mmask8, __m512d, __m512d, const int );
+extern __m512d __cdecl _mm512_mask_mul_round_pd(__m512d, __mmask8, __m512d, __m512d, const int );
+
+extern __m512  __cdecl _mm512_div_ps(__m512, __m512);
+extern __m512  __cdecl _mm512_maskz_div_ps(__mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_mask_div_ps(__m512, __mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_div_round_ps(__m512, __m512, const int );
+extern __m512  __cdecl _mm512_maskz_div_round_ps(__mmask16, __m512, __m512, const int );
+extern __m512  __cdecl _mm512_mask_div_round_ps(__m512, __mmask16, __m512, __m512, const int );
+extern __m512d __cdecl _mm512_div_pd(__m512d, __m512d);
+extern __m512d __cdecl _mm512_maskz_div_pd(__mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_mask_div_pd(__m512d, __mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_div_round_pd(__m512d, __m512d, const int );
+extern __m512d __cdecl _mm512_maskz_div_round_pd(__mmask8, __m512d, __m512d, const int );
+extern __m512d __cdecl _mm512_mask_div_round_pd(__m512d, __mmask8, __m512d, __m512d, const int );
+
+extern __m512  __cdecl _mm512_fmadd_ps(__m512, __m512, __m512);
+extern __m512  __cdecl _mm512_mask_fmadd_ps(__m512, __mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_mask3_fmadd_ps(__m512, __m512, __m512, __mmask16);
+extern __m512  __cdecl _mm512_maskz_fmadd_ps(__mmask16, __m512, __m512, __m512);
+extern __m512  __cdecl _mm512_fmadd_round_ps(__m512, __m512, __m512, const int );
+extern __m512  __cdecl _mm512_mask_fmadd_round_ps(__m512, __mmask16, __m512, __m512, const int );
+extern __m512  __cdecl _mm512_mask3_fmadd_round_ps(__m512, __m512, __m512, __mmask16, const int );
+extern __m512  __cdecl _mm512_maskz_fmadd_round_ps(__mmask16, __m512, __m512, __m512, const int );
+extern __m512d __cdecl _mm512_fmadd_pd(__m512d, __m512d, __m512d);
+extern __m512d __cdecl _mm512_mask_fmadd_pd(__m512d, __mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_mask3_fmadd_pd(__m512d, __m512d, __m512d, __mmask8);
+extern __m512d __cdecl _mm512_maskz_fmadd_pd(__mmask8, __m512d, __m512d, __m512d);
+extern __m512d __cdecl _mm512_fmadd_round_pd(__m512d, __m512d, __m512d, const int );
+extern __m512d __cdecl _mm512_mask_fmadd_round_pd(__m512d, __mmask8, __m512d, __m512d, const int );
+extern __m512d __cdecl _mm512_mask3_fmadd_round_pd(__m512d, __m512d, __m512d, __mmask8, const int );
+extern __m512d __cdecl _mm512_maskz_fmadd_round_pd(__mmask8, __m512d, __m512d, __m512d, const int );
+
+extern __m512  __cdecl _mm512_fmsub_ps(__m512, __m512, __m512);
+extern __m512  __cdecl _mm512_mask_fmsub_ps(__m512, __mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_mask3_fmsub_ps(__m512, __m512, __m512, __mmask16);
+extern __m512  __cdecl _mm512_maskz_fmsub_ps(__mmask16, __m512, __m512, __m512);
+extern __m512  __cdecl _mm512_fmsub_round_ps(__m512, __m512, __m512, const int );
+extern __m512  __cdecl _mm512_mask_fmsub_round_ps(__m512, __mmask16, __m512, __m512, const int );
+extern __m512  __cdecl _mm512_mask3_fmsub_round_ps(__m512, __m512, __m512, __mmask16, const int );
+extern __m512  __cdecl _mm512_maskz_fmsub_round_ps(__mmask16, __m512, __m512, __m512, const int );
+extern __m512d __cdecl _mm512_fmsub_pd(__m512d, __m512d, __m512d);
+extern __m512d __cdecl _mm512_mask_fmsub_pd(__m512d, __mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_mask3_fmsub_pd(__m512d, __m512d, __m512d, __mmask8);
+extern __m512d __cdecl _mm512_maskz_fmsub_pd(__mmask8, __m512d, __m512d, __m512d);
+extern __m512d __cdecl _mm512_fmsub_round_pd(__m512d, __m512d, __m512d, const int );
+extern __m512d __cdecl _mm512_mask_fmsub_round_pd(__m512d, __mmask8, __m512d, __m512d, const int );
+extern __m512d __cdecl _mm512_mask3_fmsub_round_pd(__m512d, __m512d, __m512d, __mmask8, const int );
+extern __m512d __cdecl _mm512_maskz_fmsub_round_pd(__mmask8, __m512d, __m512d, __m512d, const int );
+
+extern __m512  __cdecl _mm512_fmaddsub_ps(__m512, __m512, __m512);
+extern __m512  __cdecl _mm512_mask_fmaddsub_ps(__m512, __mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_mask3_fmaddsub_ps(__m512, __m512, __m512, __mmask16);
+extern __m512  __cdecl _mm512_maskz_fmaddsub_ps(__mmask16, __m512, __m512, __m512);
+extern __m512  __cdecl _mm512_fmaddsub_round_ps(__m512, __m512, __m512, const int );
+extern __m512  __cdecl _mm512_mask_fmaddsub_round_ps(__m512, __mmask16, __m512, __m512, const int );
+extern __m512  __cdecl _mm512_mask3_fmaddsub_round_ps(__m512, __m512, __m512, __mmask16, const int );
+extern __m512  __cdecl _mm512_maskz_fmaddsub_round_ps(__mmask16, __m512, __m512, __m512, const int );
+extern __m512d __cdecl _mm512_fmaddsub_pd(__m512d, __m512d, __m512d);
+extern __m512d __cdecl _mm512_mask_fmaddsub_pd(__m512d, __mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_mask3_fmaddsub_pd(__m512d, __m512d, __m512d, __mmask8);
+extern __m512d __cdecl _mm512_maskz_fmaddsub_pd(__mmask8, __m512d, __m512d, __m512d);
+extern __m512d __cdecl _mm512_fmaddsub_round_pd(__m512d, __m512d, __m512d, const int );
+extern __m512d __cdecl _mm512_mask_fmaddsub_round_pd(__m512d, __mmask8, __m512d, __m512d, const int );
+extern __m512d __cdecl _mm512_mask3_fmaddsub_round_pd(__m512d, __m512d, __m512d, __mmask8, const int );
+extern __m512d __cdecl _mm512_maskz_fmaddsub_round_pd(__mmask8, __m512d, __m512d, __m512d, const int );
+
+extern __m512  __cdecl _mm512_fmsubadd_ps(__m512, __m512, __m512);
+extern __m512  __cdecl _mm512_mask_fmsubadd_ps(__m512, __mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_mask3_fmsubadd_ps(__m512, __m512, __m512, __mmask16);
+extern __m512  __cdecl _mm512_maskz_fmsubadd_ps(__mmask16, __m512, __m512, __m512);
+extern __m512  __cdecl _mm512_fmsubadd_round_ps(__m512, __m512, __m512, const int );
+extern __m512  __cdecl _mm512_mask_fmsubadd_round_ps(__m512, __mmask16, __m512, __m512, const int );
+extern __m512  __cdecl _mm512_mask3_fmsubadd_round_ps(__m512, __m512, __m512, __mmask16, const int );
+extern __m512  __cdecl _mm512_maskz_fmsubadd_round_ps(__mmask16, __m512, __m512, __m512, const int );
+extern __m512d __cdecl _mm512_fmsubadd_pd(__m512d, __m512d, __m512d);
+extern __m512d __cdecl _mm512_mask_fmsubadd_pd(__m512d, __mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_mask3_fmsubadd_pd(__m512d, __m512d, __m512d, __mmask8);
+extern __m512d __cdecl _mm512_maskz_fmsubadd_pd(__mmask8, __m512d, __m512d, __m512d);
+extern __m512d __cdecl _mm512_fmsubadd_round_pd(__m512d, __m512d, __m512d, const int );
+extern __m512d __cdecl _mm512_mask_fmsubadd_round_pd(__m512d, __mmask8, __m512d, __m512d, const int );
+extern __m512d __cdecl _mm512_mask3_fmsubadd_round_pd(__m512d, __m512d, __m512d, __mmask8, const int );
+extern __m512d __cdecl _mm512_maskz_fmsubadd_round_pd(__mmask8, __m512d, __m512d, __m512d, const int );
+
+extern __m512  __cdecl _mm512_fnmadd_ps(__m512, __m512, __m512);
+extern __m512  __cdecl _mm512_mask_fnmadd_ps(__m512, __mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_mask3_fnmadd_ps(__m512, __m512, __m512, __mmask16);
+extern __m512  __cdecl _mm512_maskz_fnmadd_ps(__mmask16, __m512, __m512, __m512);
+extern __m512  __cdecl _mm512_fnmadd_round_ps(__m512, __m512, __m512, const int );
+extern __m512  __cdecl _mm512_mask_fnmadd_round_ps(__m512, __mmask16, __m512, __m512, const int );
+extern __m512  __cdecl _mm512_mask3_fnmadd_round_ps(__m512, __m512, __m512, __mmask16, const int );
+extern __m512  __cdecl _mm512_maskz_fnmadd_round_ps(__mmask16, __m512, __m512, __m512, const int );
+extern __m512d __cdecl _mm512_fnmadd_pd(__m512d, __m512d, __m512d);
+extern __m512d __cdecl _mm512_mask_fnmadd_pd(__m512d, __mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_mask3_fnmadd_pd(__m512d, __m512d, __m512d, __mmask8);
+extern __m512d __cdecl _mm512_maskz_fnmadd_pd(__mmask8, __m512d, __m512d, __m512d);
+extern __m512d __cdecl _mm512_fnmadd_round_pd(__m512d, __m512d, __m512d, const int );
+extern __m512d __cdecl _mm512_mask_fnmadd_round_pd(__m512d, __mmask8, __m512d, __m512d, const int );
+extern __m512d __cdecl _mm512_mask3_fnmadd_round_pd(__m512d, __m512d, __m512d, __mmask8, const int );
+extern __m512d __cdecl _mm512_maskz_fnmadd_round_pd(__mmask8, __m512d, __m512d, __m512d, const int );
+
+extern __m512  __cdecl _mm512_fnmsub_ps(__m512, __m512, __m512);
+extern __m512  __cdecl _mm512_mask_fnmsub_ps(__m512, __mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_mask3_fnmsub_ps(__m512, __m512, __m512, __mmask16);
+extern __m512  __cdecl _mm512_maskz_fnmsub_ps(__mmask16, __m512, __m512, __m512);
+extern __m512  __cdecl _mm512_fnmsub_round_ps(__m512, __m512, __m512, const int );
+extern __m512  __cdecl _mm512_mask_fnmsub_round_ps(__m512, __mmask16, __m512, __m512, const int );
+extern __m512  __cdecl _mm512_mask3_fnmsub_round_ps(__m512, __m512, __m512, __mmask16, const int );
+extern __m512  __cdecl _mm512_maskz_fnmsub_round_ps(__mmask16, __m512, __m512, __m512, const int );
+extern __m512d __cdecl _mm512_fnmsub_pd(__m512d, __m512d, __m512d);
+extern __m512d __cdecl _mm512_mask_fnmsub_pd(__m512d, __mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_mask3_fnmsub_pd(__m512d, __m512d, __m512d, __mmask8);
+extern __m512d __cdecl _mm512_maskz_fnmsub_pd(__mmask8, __m512d, __m512d, __m512d);
+extern __m512d __cdecl _mm512_fnmsub_round_pd(__m512d, __m512d, __m512d, const int );
+extern __m512d __cdecl _mm512_mask_fnmsub_round_pd(__m512d, __mmask8, __m512d, __m512d, const int );
+extern __m512d __cdecl _mm512_mask3_fnmsub_round_pd(__m512d, __m512d, __m512d, __mmask8, const int );
+extern __m512d __cdecl _mm512_maskz_fnmsub_round_pd(__mmask8, __m512d, __m512d, __m512d, const int );
+
+extern __m512  __cdecl _mm512_sqrt_ps(__m512);
+extern __m512d __cdecl _mm512_sqrt_pd(__m512d);
+extern __m512  __cdecl _mm512_maskz_sqrt_ps(__mmask16, __m512);
+extern __m512d __cdecl _mm512_maskz_sqrt_pd(__mmask8, __m512d);
+extern __m512  __cdecl _mm512_mask_sqrt_ps(__m512, __mmask16, __m512);
+extern __m512d __cdecl _mm512_mask_sqrt_pd(__m512d, __mmask8, __m512d);
+extern __m512  __cdecl _mm512_sqrt_round_ps(__m512, const int );
+extern __m512d __cdecl _mm512_sqrt_round_pd(__m512d, const int );
+extern __m512  __cdecl _mm512_maskz_sqrt_round_ps(__mmask16, __m512, const int );
+extern __m512d __cdecl _mm512_maskz_sqrt_round_pd(__mmask8, __m512d, const int );
+extern __m512  __cdecl _mm512_mask_sqrt_round_ps(__m512, __mmask16, __m512, const int );
+extern __m512d __cdecl _mm512_mask_sqrt_round_pd(__m512d, __mmask8, __m512d, const int );
+
+extern __m512  __cdecl _mm512_abs_ps(__m512);
+extern __m512  __cdecl _mm512_maskz_abs_ps(__mmask16, __m512);
+extern __m512  __cdecl _mm512_mask_abs_ps(__m512, __mmask16, __m512);
+extern __m512d __cdecl _mm512_abs_pd(__m512d);
+extern __m512d __cdecl _mm512_maskz_abs_pd(__mmask8, __m512d);
+extern __m512d __cdecl _mm512_mask_abs_pd(__m512d, __mmask8, __m512d);
+
+extern __m512  __cdecl _mm512_max_ps(__m512, __m512);
+extern __m512d __cdecl _mm512_max_pd(__m512d, __m512d);
+extern __m512  __cdecl _mm512_maskz_max_ps(__mmask16, __m512, __m512);
+extern __m512d __cdecl _mm512_maskz_max_pd(__mmask8, __m512d, __m512d);
+extern __m512  __cdecl _mm512_mask_max_ps(__m512, __mmask16, __m512, __m512);
+extern __m512d __cdecl _mm512_mask_max_pd(__m512d, __mmask8, __m512d, __m512d);
+extern __m512  __cdecl _mm512_max_round_ps(__m512, __m512, const int );
+extern __m512d __cdecl _mm512_max_round_pd(__m512d, __m512d, const int );
+extern __m512  __cdecl _mm512_maskz_max_round_ps(__mmask16, __m512, __m512, const int );
+extern __m512d __cdecl _mm512_maskz_max_round_pd(__mmask8, __m512d, __m512d, const int );
+extern __m512  __cdecl _mm512_mask_max_round_ps(__m512, __mmask16, __m512, __m512, const int );
+extern __m512d __cdecl _mm512_mask_max_round_pd(__m512d, __mmask8, __m512d, __m512d, const int );
+
+extern __m512  __cdecl _mm512_min_ps(__m512, __m512);
+extern __m512d __cdecl _mm512_min_pd(__m512d, __m512d);
+extern __m512  __cdecl _mm512_maskz_min_ps(__mmask16, __m512, __m512);
+extern __m512d __cdecl _mm512_maskz_min_pd(__mmask8, __m512d, __m512d);
+extern __m512  __cdecl _mm512_mask_min_ps(__m512, __mmask16, __m512, __m512);
+extern __m512d __cdecl _mm512_mask_min_pd(__m512d, __mmask8, __m512d, __m512d);
+extern __m512  __cdecl _mm512_min_round_ps(__m512, __m512, const int );
+extern __m512d __cdecl _mm512_min_round_pd(__m512d, __m512d, const int );
+extern __m512  __cdecl _mm512_maskz_min_round_ps(__mmask16, __m512, __m512, const int );
+extern __m512d __cdecl _mm512_maskz_min_round_pd(__mmask8, __m512d, __m512d, const int );
+extern __m512  __cdecl _mm512_mask_min_round_ps(__m512, __mmask16, __m512, __m512, const int );
+extern __m512d __cdecl _mm512_mask_min_round_pd(__m512d, __mmask8, __m512d, __m512d, const int );
+
+extern __m512  __cdecl _mm512_rcp14_ps(__m512);
+extern __m512d __cdecl _mm512_rcp14_pd(__m512d);
+extern __m512  __cdecl _mm512_maskz_rcp14_ps(__mmask16, __m512);
+extern __m512d __cdecl _mm512_maskz_rcp14_pd(__mmask8, __m512d);
+extern __m512  __cdecl _mm512_mask_rcp14_ps(__m512, __mmask16, __m512);
+extern __m512d __cdecl _mm512_mask_rcp14_pd(__m512d, __mmask8, __m512d);
+
+extern __m512  __cdecl _mm512_rsqrt14_ps(__m512);
+extern __m512d __cdecl _mm512_rsqrt14_pd(__m512d);
+extern __m512  __cdecl _mm512_maskz_rsqrt14_ps(__mmask16, __m512);
+extern __m512d __cdecl _mm512_maskz_rsqrt14_pd(__mmask8, __m512d);
+extern __m512  __cdecl _mm512_mask_rsqrt14_ps(__m512, __mmask16, __m512);
+extern __m512d __cdecl _mm512_mask_rsqrt14_pd(__m512d, __mmask8, __m512d);
+
+extern __m512d __cdecl _mm512_cvtps_pd(__m256);
+extern __m256  __cdecl _mm512_cvtpd_ps(__m512d);
+extern __m512d __cdecl _mm512_maskz_cvtps_pd(__mmask8, __m256);
+extern __m256  __cdecl _mm512_maskz_cvtpd_ps(__mmask8, __m512d);
+extern __m512d __cdecl _mm512_mask_cvtps_pd(__m512d, __mmask8, __m256);
+extern __m256  __cdecl _mm512_mask_cvtpd_ps(__m256, __mmask8, __m512d);
+extern __m512d __cdecl _mm512_cvt_roundps_pd(__m256, const int );
+extern __m256  __cdecl _mm512_cvt_roundpd_ps(__m512d, const int );
+extern __m512d __cdecl _mm512_maskz_cvt_roundps_pd(__mmask8, __m256, const int );
+extern __m256  __cdecl _mm512_maskz_cvt_roundpd_ps(__mmask8, __m512d, const int );
+extern __m512d __cdecl _mm512_mask_cvt_roundps_pd(__m512d, __mmask8, __m256, const int );
+extern __m256  __cdecl _mm512_mask_cvt_roundpd_ps(__m256, __mmask8, __m512d, const int );
+
+extern __mmask16 __cdecl _mm512_cmp_ps_mask(__m512, __m512, const int);
+extern __mmask16 __cdecl _mm512_mask_cmp_ps_mask(__mmask16, __m512, __m512, const int);
+extern __mmask16 __cdecl _mm512_cmp_round_ps_mask(__m512, __m512, const int, const int );
+extern __mmask16 __cdecl _mm512_mask_cmp_round_ps_mask(__mmask16, __m512, __m512, const int, const int );
+extern __mmask8  __cdecl _mm512_cmp_pd_mask(__m512d, __m512d, const int);
+extern __mmask8  __cdecl _mm512_mask_cmp_pd_mask(__mmask8, __m512d, __m512d, const int);
+extern __mmask8  __cdecl _mm512_cmp_round_pd_mask(__m512d, __m512d, const int, const int );
+extern __mmask8  __cdecl _mm512_mask_cmp_round_pd_mask(__mmask8, __m512d, __m512d, const int, const int );
+
+extern __m512  __cdecl _mm512_broadcast_f32x2(__m128);
+extern __m512  __cdecl _mm512_mask_broadcast_f32x2(__m512, __mmask16, __m128);
+extern __m512  __cdecl _mm512_maskz_broadcast_f32x2(__mmask16, __m128);
+extern __m512  __cdecl _mm512_broadcast_f32x4(__m128);
+extern __m512  __cdecl _mm512_mask_broadcast_f32x4(__m512, __mmask16, __m128);
+extern __m512  __cdecl _mm512_maskz_broadcast_f32x4(__mmask16, __m128);
+extern __m512  __cdecl _mm512_broadcast_f32x8(__m256);
+extern __m512  __cdecl _mm512_mask_broadcast_f32x8(__m512, __mmask16, __m256);
+extern __m512  __cdecl _mm512_maskz_broadcast_f32x8(__mmask16, __m256);
+extern __m512d __cdecl _mm512_broadcast_f64x2(__m128d);
+extern __m512d __cdecl _mm512_mask_broadcast_f64x2(__m512d, __mmask8, __m128d);
+extern __m512d __cdecl _mm512_maskz_broadcast_f64x2(__mmask8, __m128d);
+extern __m512d __cdecl _mm512_broadcast_f64x4(__m256d);
+extern __m512d __cdecl _mm512_mask_broadcast_f64x4(__m512d, __mmask8, __m256d);
+extern __m512d __cdecl _mm512_maskz_broadcast_f64x4(__mmask8, __m256d);
+extern __m512d __cdecl _mm512_broadcastsd_pd(__m128d);
+extern __m512d __cdecl _mm512_mask_broadcastsd_pd(__m512d, __mmask8, __m128d);
+extern __m512d __cdecl _mm512_maskz_broadcastsd_pd(__mmask8, __m128d);
+extern __m512  __cdecl _mm512_broadcastss_ps(__m128);
+extern __m512  __cdecl _mm512_mask_broadcastss_ps(__m512, __mmask16, __m128);
+extern __m512  __cdecl _mm512_maskz_broadcastss_ps(__mmask16, __m128);
+
+extern __m128  __cdecl _mm512_extractf32x4_ps(__m512, int);
+extern __m128  __cdecl _mm512_mask_extractf32x4_ps(__m128, __mmask8, __m512, const int);
+extern __m128  __cdecl _mm512_maskz_extractf32x4_ps(__mmask8, __m512, int);
+extern __m256  __cdecl _mm512_extractf32x8_ps(__m512, int);
+extern __m256  __cdecl _mm512_mask_extractf32x8_ps(__m256, __mmask8, __m512, const int);
+extern __m256  __cdecl _mm512_maskz_extractf32x8_ps(__mmask8, __m512, int);
+extern __m128d __cdecl _mm512_extractf64x2_pd(__m512d, int);
+extern __m128d __cdecl _mm512_mask_extractf64x2_pd(__m128d, __mmask8, __m512d, const int);
+extern __m128d __cdecl _mm512_maskz_extractf64x2_pd(__mmask8, __m512d, int);
+extern __m256d __cdecl _mm512_extractf64x4_pd(__m512d, int);
+extern __m256d __cdecl _mm512_mask_extractf64x4_pd(__m256d, __mmask8, __m512d, const int);
+extern __m256d __cdecl _mm512_maskz_extractf64x4_pd(__mmask8, __m512d, int);
+
+extern __m512  __cdecl _mm512_insertf32x4(__m512, __m128, int);
+extern __m512  __cdecl _mm512_mask_insertf32x4(__m512, __mmask16, __m512, __m128, const int);
+extern __m512  __cdecl _mm512_maskz_insertf32x4(__mmask16, __m512, __m128, int);
+extern __m512  __cdecl _mm512_insertf32x8(__m512, __m256, int);
+extern __m512  __cdecl _mm512_mask_insertf32x8(__m512, __mmask16, __m512, __m256, const int);
+extern __m512  __cdecl _mm512_maskz_insertf32x8(__mmask16, __m512, __m256, int);
+extern __m512d __cdecl _mm512_insertf64x2(__m512d, __m128d, int);
+extern __m512d __cdecl _mm512_mask_insertf64x2(__m512d, __mmask8, __m512d, __m128d, const int);
+extern __m512d __cdecl _mm512_maskz_insertf64x2(__mmask8, __m512d, __m128d, int);
+extern __m512d __cdecl _mm512_insertf64x4(__m512d, __m256d, int);
+extern __m512d __cdecl _mm512_mask_insertf64x4(__m512d, __mmask8, __m512d, __m256d, const int);
+extern __m512d __cdecl _mm512_maskz_insertf64x4(__mmask8, __m512d, __m256d, int);
+
+extern __m512  __cdecl _mm512_shuffle_f32x4(__m512, __m512, const int);
+extern __m512  __cdecl _mm512_mask_shuffle_f32x4(__m512, __mmask16, __m512, __m512, const int);
+extern __m512  __cdecl _mm512_maskz_shuffle_f32x4(__mmask16, __m512, __m512, const int);
+extern __m512d __cdecl _mm512_shuffle_f64x2(__m512d, __m512d, const int);
+extern __m512d __cdecl _mm512_mask_shuffle_f64x2(__m512d, __mmask8, __m512d, __m512d, const int);
+extern __m512d __cdecl _mm512_maskz_shuffle_f64x2(__mmask8, __m512d, __m512d, const int);
+extern __m512d __cdecl _mm512_shuffle_pd(__m512d, __m512d, const int);
+extern __m512d __cdecl _mm512_mask_shuffle_pd(__m512d, __mmask8, __m512d, __m512d, const int);
+extern __m512d __cdecl _mm512_maskz_shuffle_pd(__mmask8, __m512d, __m512d, const int);
+extern __m512  __cdecl _mm512_shuffle_ps(__m512, __m512, const int);
+extern __m512  __cdecl _mm512_mask_shuffle_ps(__m512, __mmask16, __m512, __m512, const int);
+extern __m512  __cdecl _mm512_maskz_shuffle_ps(__mmask16, __m512, __m512, const int);
+
+extern __mmask16 _mm512_cmpeq_ps_mask(__m512, __m512);
+extern __mmask16 _mm512_cmple_ps_mask(__m512, __m512);
+extern __mmask16 _mm512_cmplt_ps_mask(__m512, __m512);
+extern __mmask16 _mm512_cmpneq_ps_mask(__m512, __m512);
+extern __mmask16 _mm512_cmpnle_ps_mask(__m512, __m512);
+extern __mmask16 _mm512_cmpnlt_ps_mask(__m512, __m512);
+extern __mmask16 _mm512_cmpord_ps_mask(__m512, __m512);
+extern __mmask16 _mm512_cmpunord_ps_mask(__m512, __m512);
+
+extern __mmask16 _mm512_mask_cmpeq_ps_mask(__mmask16, __m512, __m512);
+extern __mmask16 _mm512_mask_cmple_ps_mask(__mmask16, __m512, __m512);
+extern __mmask16 _mm512_mask_cmplt_ps_mask(__mmask16, __m512, __m512);
+extern __mmask16 _mm512_mask_cmpneq_ps_mask(__mmask16, __m512, __m512);
+extern __mmask16 _mm512_mask_cmpnle_ps_mask(__mmask16, __m512, __m512);
+extern __mmask16 _mm512_mask_cmpnlt_ps_mask(__mmask16, __m512, __m512);
+extern __mmask16 _mm512_mask_cmpord_ps_mask(__mmask16, __m512, __m512);
+extern __mmask16 _mm512_mask_cmpunord_ps_mask(__mmask16, __m512, __m512);
+
+extern __mmask8 _mm512_cmpeq_pd_mask(__m512d, __m512d);
+extern __mmask8 _mm512_cmple_pd_mask(__m512d, __m512d);
+extern __mmask8 _mm512_cmplt_pd_mask(__m512d, __m512d);
+extern __mmask8 _mm512_cmpneq_pd_mask(__m512d, __m512d);
+extern __mmask8 _mm512_cmpnle_pd_mask(__m512d, __m512d);
+extern __mmask8 _mm512_cmpnlt_pd_mask(__m512d, __m512d);
+extern __mmask8 _mm512_cmpord_pd_mask(__m512d, __m512d);
+extern __mmask8 _mm512_cmpunord_pd_mask(__m512d, __m512d);
+
+extern __mmask8 _mm512_mask_cmpeq_pd_mask(__mmask8, __m512d, __m512d);
+extern __mmask8 _mm512_mask_cmple_pd_mask(__mmask8, __m512d, __m512d);
+extern __mmask8 _mm512_mask_cmplt_pd_mask(__mmask8, __m512d, __m512d);
+extern __mmask8 _mm512_mask_cmpneq_pd_mask(__mmask8, __m512d, __m512d);
+extern __mmask8 _mm512_mask_cmpnle_pd_mask(__mmask8, __m512d, __m512d);
+extern __mmask8 _mm512_mask_cmpnlt_pd_mask(__mmask8, __m512d, __m512d);
+extern __mmask8 _mm512_mask_cmpord_pd_mask(__mmask8, __m512d, __m512d);
+extern __mmask8 _mm512_mask_cmpunord_pd_mask(__mmask8, __m512d, __m512d);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m512i __cdecl _mm512_setzero_si512(void);
+
+extern __m512i __cdecl _mm512_set_epi8(char , char, char, char, char, char, char, char, char, char, char, char, char, char, char, char,
+                                       char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char,
+                                       char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char,
+                                       char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char );
+extern __m512i __cdecl _mm512_set_epi16(short , short, short, short, short, short, short, short, short, short, short, short, short, short, short, short,
+                                        short, short, short, short, short, short, short, short, short, short, short, short, short, short, short, short );
+extern __m512i __cdecl _mm512_set_epi32(int , int, int, int, int, int, int, int, int, int, int, int, int, int, int, int );
+extern __m512i __cdecl _mm512_set_epi64(__int64 , __int64, __int64, __int64, __int64, __int64, __int64, __int64 );
+
+extern __m512i __cdecl _mm512_setr_epi8(char , char, char, char, char, char, char, char, char, char, char, char, char, char, char, char,
+                                        char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char,
+                                        char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char,
+                                        char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char );
+extern __m512i __cdecl _mm512_setr_epi16(short , short, short, short, short, short, short, short, short, short, short, short, short, short, short, short,
+                                         short, short, short, short, short, short, short, short, short, short, short, short, short, short, short, short );
+extern __m512i __cdecl _mm512_setr_epi32(int , int, int, int, int, int, int, int, int, int, int, int, int, int, int, int );
+extern __m512i __cdecl _mm512_setr_epi64(__int64 , __int64, __int64, __int64, __int64, __int64, __int64, __int64 );
+
+extern __m512i __cdecl _mm512_set1_epi8(char);
+extern __m512i __cdecl _mm512_mask_set1_epi8(__m512i, __mmask64, char);
+extern __m512i __cdecl _mm512_maskz_set1_epi8(__mmask64, char);
+extern __m512i __cdecl _mm512_set1_epi16(short);
+extern __m512i __cdecl _mm512_mask_set1_epi16(__m512i, __mmask32, short);
+extern __m512i __cdecl _mm512_maskz_set1_epi16(__mmask32, short);
+extern __m512i __cdecl _mm512_set1_epi32(int);
+extern __m512i __cdecl _mm512_mask_set1_epi32(__m512i, __mmask16, int);
+extern __m512i __cdecl _mm512_maskz_set1_epi32(__mmask16, int);
+extern __m512i __cdecl _mm512_set1_epi64(__int64);
+extern __m512i __cdecl _mm512_mask_set1_epi64(__m512i, __mmask8, __int64);
+extern __m512i __cdecl _mm512_maskz_set1_epi64(__mmask8, __int64);
+
+extern __m512i __cdecl _mm512_add_epi8(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_add_epi8(__m512i, __mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_add_epi8(__mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_add_epi16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_add_epi16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_add_epi16(__mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_add_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_add_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_add_epi32(__mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_add_epi64(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_add_epi64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_add_epi64(__mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_adds_epi8(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_adds_epi8(__m512i, __mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_adds_epi8(__mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_adds_epi16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_adds_epi16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_adds_epi16(__mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_adds_epu8(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_adds_epu8(__m512i, __mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_adds_epu8(__mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_adds_epu16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_adds_epu16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_adds_epu16(__mmask32, __m512i, __m512i);
+
+extern __m512i __cdecl _mm512_abs_epi8(__m512i);
+extern __m512i __cdecl _mm512_mask_abs_epi8(__m512i, __mmask64, __m512i);
+extern __m512i __cdecl _mm512_maskz_abs_epi8(__mmask64, __m512i);
+extern __m512i __cdecl _mm512_abs_epi16(__m512i);
+extern __m512i __cdecl _mm512_mask_abs_epi16(__m512i, __mmask32, __m512i);
+extern __m512i __cdecl _mm512_maskz_abs_epi16(__mmask32, __m512i);
+extern __m512i __cdecl _mm512_abs_epi32(__m512i);
+extern __m512i __cdecl _mm512_mask_abs_epi32(__m512i, __mmask16, __m512i);
+extern __m512i __cdecl _mm512_maskz_abs_epi32(__mmask16, __m512i);
+extern __m512i __cdecl _mm512_abs_epi64(__m512i);
+extern __m512i __cdecl _mm512_mask_abs_epi64(__m512i, __mmask8, __m512i);
+extern __m512i __cdecl _mm512_maskz_abs_epi64(__mmask8, __m512i);
+
+extern __m512i  __cdecl _mm512_broadcast_i32x2(__m128i);
+extern __m512i  __cdecl _mm512_mask_broadcast_i32x2(__m512i, __mmask16, __m128i);
+extern __m512i  __cdecl _mm512_maskz_broadcast_i32x2(__mmask16, __m128i);
+extern __m512i  __cdecl _mm512_broadcast_i32x4(__m128i);
+extern __m512i  __cdecl _mm512_mask_broadcast_i32x4(__m512i, __mmask16, __m128i);
+extern __m512i  __cdecl _mm512_maskz_broadcast_i32x4(__mmask16, __m128i);
+extern __m512i  __cdecl _mm512_broadcast_i32x8(__m256i);
+extern __m512i  __cdecl _mm512_mask_broadcast_i32x8(__m512i, __mmask16, __m256i);
+extern __m512i  __cdecl _mm512_maskz_broadcast_i32x8(__mmask16, __m256i);
+extern __m512i  __cdecl _mm512_broadcast_i64x2(__m128i);
+extern __m512i  __cdecl _mm512_mask_broadcast_i64x2(__m512i, __mmask8, __m128i);
+extern __m512i  __cdecl _mm512_maskz_broadcast_i64x2(__mmask8, __m128i);
+extern __m512i  __cdecl _mm512_broadcast_i64x4(__m256i);
+extern __m512i  __cdecl _mm512_mask_broadcast_i64x4(__m512i, __mmask8, __m256i);
+extern __m512i  __cdecl _mm512_maskz_broadcast_i64x4(__mmask8, __m256i);
+extern __m512i __cdecl _mm512_broadcastb_epi8(__m128i);
+extern __m512i __cdecl _mm512_mask_broadcastb_epi8(__m512i, __mmask64, __m128i);
+extern __m512i __cdecl _mm512_maskz_broadcastb_epi8(__mmask64, __m128i);
+extern __m512i __cdecl _mm512_broadcastw_epi16(__m128i);
+extern __m512i __cdecl _mm512_mask_broadcastw_epi16(__m512i, __mmask32, __m128i);
+extern __m512i __cdecl _mm512_maskz_broadcastw_epi16(__mmask32, __m128i);
+extern __m512i __cdecl _mm512_broadcastd_epi32(__m128i);
+extern __m512i __cdecl _mm512_mask_broadcastd_epi32(__m512i, __mmask16, __m128i);
+extern __m512i __cdecl _mm512_maskz_broadcastd_epi32(__mmask16, __m128i);
+extern __m512i __cdecl _mm512_broadcastq_epi64(__m128i);
+extern __m512i __cdecl _mm512_mask_broadcastq_epi64(__m512i, __mmask8, __m128i);
+extern __m512i __cdecl _mm512_maskz_broadcastq_epi64(__mmask8, __m128i);
+extern __m512i __cdecl _mm512_broadcastmw_epi32(__mmask16);
+extern __m512i __cdecl _mm512_broadcastmb_epi64(__mmask8);
+
+extern __m512i __cdecl _mm512_sub_epi8(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_sub_epi8(__m512i, __mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_sub_epi8(__mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_sub_epi16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_sub_epi16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_sub_epi16(__mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_sub_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_sub_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_sub_epi32(__mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_sub_epi64(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_sub_epi64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_sub_epi64(__mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_subs_epi8(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_subs_epi8(__m512i, __mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_subs_epi8(__mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_subs_epi16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_subs_epi16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_subs_epi16(__mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_subs_epu8(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_subs_epu8(__m512i, __mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_subs_epu8(__mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_subs_epu16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_subs_epu16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_subs_epu16(__mmask32, __m512i, __m512i);
+
+extern __m512i __cdecl _mm512_max_epi8(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_max_epi8(__m512i, __mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_max_epi8(__mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_max_epi16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_max_epi16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_max_epi16(__mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_max_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_max_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_max_epi32(__mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_max_epi64(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_max_epi64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_max_epi64(__mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_max_epu8(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_max_epu8(__m512i, __mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_max_epu8(__mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_max_epu16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_max_epu16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_max_epu16(__mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_max_epu32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_max_epu32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_max_epu32(__mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_max_epu64(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_max_epu64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_max_epu64(__mmask8, __m512i, __m512i);
+
+extern __m512i __cdecl _mm512_min_epi8(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_min_epi8(__m512i, __mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_min_epi8(__mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_min_epi16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_min_epi16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_min_epi16(__mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_min_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_min_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_min_epi32(__mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_min_epi64(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_min_epi64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_min_epi64(__mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_min_epu8(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_min_epu8(__m512i, __mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_min_epu8(__mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_min_epu16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_min_epu16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_min_epu16(__mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_min_epu32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_min_epu32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_min_epu32(__mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_min_epu64(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_min_epu64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_min_epu64(__mmask8, __m512i, __m512i);
+
+extern __m512i __cdecl _mm512_mul_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_mul_epi32(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_mul_epi32(__mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mul_epu32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_mul_epu32(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_mul_epu32(__mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mulhi_epi16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_mulhi_epi16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_mulhi_epi16(__mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mulhi_epu16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_mulhi_epu16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_mulhi_epu16(__mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mullo_epi16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_mullo_epi16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_mullo_epi16(__mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mullo_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_mullo_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_mullo_epi32(__mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mullo_epi64(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_mullo_epi64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_mullo_epi64(__mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mullox_epi64(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_mullox_epi64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mulhrs_epi16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_mulhrs_epi16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_mulhrs_epi16(__mmask32, __m512i, __m512i);
+
+extern __m512i __cdecl _mm512_load_epi32(void const*);
+extern __m512i __cdecl _mm512_mask_load_epi32(__m512i, __mmask16, void const*);
+extern __m512i __cdecl _mm512_maskz_load_epi32(__mmask16, void const*);
+extern __m512i __cdecl _mm512_load_epi64(void const*);
+extern __m512i __cdecl _mm512_mask_load_epi64(__m512i, __mmask8, void const*);
+extern __m512i __cdecl _mm512_maskz_load_epi64(__mmask8, void const*);
+extern __m512i __cdecl _mm512_loadu_epi8(void const*);
+extern __m512i __cdecl _mm512_mask_loadu_epi8(__m512i, __mmask64, void const*);
+extern __m512i __cdecl _mm512_maskz_loadu_epi8(__mmask64, void const*);
+extern __m512i __cdecl _mm512_loadu_epi16(void const*);
+extern __m512i __cdecl _mm512_mask_loadu_epi16(__m512i, __mmask32, void const*);
+extern __m512i __cdecl _mm512_maskz_loadu_epi16(__mmask32, void const*);
+extern __m512i __cdecl _mm512_loadu_epi32(void const*);
+extern __m512i __cdecl _mm512_mask_loadu_epi32(__m512i, __mmask16, void const*);
+extern __m512i __cdecl _mm512_maskz_loadu_epi32(__mmask16, void const*);
+extern __m512i __cdecl _mm512_loadu_epi64(void const*);
+extern __m512i __cdecl _mm512_mask_loadu_epi64(__m512i, __mmask8, void const*);
+extern __m512i __cdecl _mm512_maskz_loadu_epi64(__mmask8, void const*);
+
+extern void    __cdecl _mm512_store_epi32(void*, __m512i);
+extern void    __cdecl _mm512_mask_store_epi32(void*, __mmask16, __m512i);
+extern void    __cdecl _mm512_store_epi64(void*, __m512i);
+extern void    __cdecl _mm512_mask_store_epi64(void*, __mmask8, __m512i);
+extern void    __cdecl _mm512_storeu_epi8(void*, __m512i);
+extern void    __cdecl _mm512_mask_storeu_epi8(void*, __mmask64, __m512i);
+extern void    __cdecl _mm512_storeu_epi16(void*, __m512i);
+extern void    __cdecl _mm512_mask_storeu_epi16(void*, __mmask32, __m512i);
+extern void    __cdecl _mm512_storeu_epi32(void*, __m512i);
+extern void    __cdecl _mm512_mask_storeu_epi32(void*, __mmask16, __m512i);
+extern void    __cdecl _mm512_storeu_epi64(void*, __m512i);
+extern void    __cdecl _mm512_mask_storeu_epi64(void*, __mmask8, __m512i);
+
+extern __m128i __cdecl _mm512_extracti32x4_epi32(__m512i, int);
+extern __m128i __cdecl _mm512_mask_extracti32x4_epi32(__m128i, __mmask8, __m512i, int);
+extern __m128i __cdecl _mm512_maskz_extracti32x4_epi32(__mmask8, __m512i, int);
+extern __m256i __cdecl _mm512_extracti32x8_epi32(__m512i, int);
+extern __m256i __cdecl _mm512_mask_extracti32x8_epi32(__m256i, __mmask8, __m512i, int);
+extern __m256i __cdecl _mm512_maskz_extracti32x8_epi32(__mmask8, __m512i, int);
+extern __m128i __cdecl _mm512_extracti64x2_epi64(__m512i, int);
+extern __m128i __cdecl _mm512_mask_extracti64x2_epi64(__m128i, __mmask8, __m512i, int);
+extern __m128i __cdecl _mm512_maskz_extracti64x2_epi64(__mmask8, __m512i, int);
+extern __m256i __cdecl _mm512_extracti64x4_epi64(__m512i, int);
+extern __m256i __cdecl _mm512_mask_extracti64x4_epi64(__m256i, __mmask8, __m512i, int);
+extern __m256i __cdecl _mm512_maskz_extracti64x4_epi64(__mmask8, __m512i, int);
+
+extern __m512i __cdecl _mm512_inserti32x4(__m512i, __m128i, int);
+extern __m512i __cdecl _mm512_mask_inserti32x4(__m512i, __mmask16, __m512i, __m128i, int);
+extern __m512i __cdecl _mm512_maskz_inserti32x4(__mmask16, __m512i, __m128i, int);
+extern __m512i __cdecl _mm512_inserti32x8(__m512i, __m256i, int);
+extern __m512i __cdecl _mm512_mask_inserti32x8(__m512i, __mmask16, __m512i, __m256i, int);
+extern __m512i __cdecl _mm512_maskz_inserti32x8(__mmask16, __m512i, __m256i, int);
+extern __m512i __cdecl _mm512_inserti64x2(__m512i, __m128i, int);
+extern __m512i __cdecl _mm512_mask_inserti64x2(__m512i, __mmask8, __m512i, __m128i, int);
+extern __m512i __cdecl _mm512_maskz_inserti64x2(__mmask8, __m512i, __m128i, int);
+extern __m512i __cdecl _mm512_inserti64x4(__m512i, __m256i, int);
+extern __m512i __cdecl _mm512_mask_inserti64x4(__m512i, __mmask8, __m512i, __m256i, int);
+extern __m512i __cdecl _mm512_maskz_inserti64x4(__mmask8, __m512i, __m256i, int);
+
+extern __m512i __cdecl _mm512_shuffle_epi8(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_shuffle_epi8(__m512i, __mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_shuffle_epi8(__mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_shuffle_epi32(__m512i, int);
+extern __m512i __cdecl _mm512_mask_shuffle_epi32(__m512i, __mmask16, __m512i, int);
+extern __m512i __cdecl _mm512_maskz_shuffle_epi32(__mmask16, __m512i, int);
+extern __m512i __cdecl _mm512_shuffle_i32x4(__m512i, __m512i, const int);
+extern __m512i __cdecl _mm512_mask_shuffle_i32x4(__m512i, __mmask16, __m512i, __m512i, const int);
+extern __m512i __cdecl _mm512_maskz_shuffle_i32x4(__mmask16, __m512i, __m512i, const int);
+extern __m512i __cdecl _mm512_shuffle_i64x2(__m512i, __m512i, const int);
+extern __m512i __cdecl _mm512_mask_shuffle_i64x2(__m512i, __mmask8, __m512i, __m512i, const int);
+extern __m512i __cdecl _mm512_maskz_shuffle_i64x2(__mmask8, __m512i, __m512i, const int);
+extern __m512i __cdecl _mm512_shufflehi_epi16(__m512i, int);
+extern __m512i __cdecl _mm512_mask_shufflehi_epi16(__m512i, __mmask32, __m512i, int);
+extern __m512i __cdecl _mm512_maskz_shufflehi_epi16(__mmask32, __m512i, int);
+extern __m512i __cdecl _mm512_shufflelo_epi16(__m512i, int);
+extern __m512i __cdecl _mm512_mask_shufflelo_epi16(__m512i, __mmask32, __m512i, int);
+extern __m512i __cdecl _mm512_maskz_shufflelo_epi16(__mmask32, __m512i, int);
+
+extern __m512  __cdecl _mm512_mask_mov_ps(__m512, __mmask16, __m512);
+extern __m512  __cdecl _mm512_maskz_mov_ps(__mmask16, __m512);
+extern __m512d __cdecl _mm512_mask_mov_pd(__m512d, __mmask8, __m512d);
+extern __m512d __cdecl _mm512_maskz_mov_pd(__mmask8, __m512d);
+extern __m512i __cdecl _mm512_mask_mov_epi8(__m512i, __mmask64, __m512i);
+extern __m512i __cdecl _mm512_maskz_mov_epi8(__mmask64, __m512i);
+extern __m512i __cdecl _mm512_mask_mov_epi16(__m512i, __mmask32, __m512i);
+extern __m512i __cdecl _mm512_maskz_mov_epi16(__mmask32, __m512i);
+extern __m512i __cdecl _mm512_mask_mov_epi32(__m512i, __mmask16, __m512i);
+extern __m512i __cdecl _mm512_maskz_mov_epi32(__mmask16, __m512i);
+extern __m512i __cdecl _mm512_mask_mov_epi64(__m512i, __mmask8, __m512i);
+extern __m512i __cdecl _mm512_maskz_mov_epi64(__mmask8, __m512i);
+extern __m512d __cdecl _mm512_movedup_pd(__m512d);
+extern __m512d __cdecl _mm512_mask_movedup_pd(__m512d, __mmask8, __m512d);
+extern __m512d __cdecl _mm512_maskz_movedup_pd(__mmask8, __m512d);
+extern __m512  __cdecl _mm512_movehdup_ps(__m512);
+extern __m512  __cdecl _mm512_mask_movehdup_ps(__m512, __mmask16, __m512);
+extern __m512  __cdecl _mm512_maskz_movehdup_ps(__mmask16, __m512);
+extern __m512  __cdecl _mm512_moveldup_ps(__m512);
+extern __m512  __cdecl _mm512_mask_moveldup_ps(__m512, __mmask16, __m512);
+extern __m512  __cdecl _mm512_maskz_moveldup_ps(__mmask16, __m512);
+
+extern __m512i __cdecl _mm512_movm_epi8(__mmask64);
+extern __m512i __cdecl _mm512_movm_epi16(__mmask32);
+extern __m512i __cdecl _mm512_movm_epi32(__mmask16);
+extern __m512i __cdecl _mm512_movm_epi64(__mmask8);
+extern __mmask64 __cdecl _mm512_movepi8_mask(__m512i);
+extern __mmask32 __cdecl _mm512_movepi16_mask(__m512i);
+extern __mmask16 __cdecl _mm512_movepi32_mask(__m512i);
+extern __mmask8  __cdecl _mm512_movepi64_mask(__m512i);
+
+extern __m512i __cdecl _mm512_alignr_epi8(__m512i, __m512i, const int);
+extern __m512i __cdecl _mm512_mask_alignr_epi8(__m512i, __mmask64, __m512i, __m512i, const int);
+extern __m512i __cdecl _mm512_maskz_alignr_epi8(__mmask64, __m512i, __m512i, const int);
+extern __m512i __cdecl _mm512_alignr_epi32(__m512i, __m512i, const int);
+extern __m512i __cdecl _mm512_mask_alignr_epi32(__m512i, __mmask16, __m512i, __m512i, const int );
+extern __m512i __cdecl _mm512_maskz_alignr_epi32(__mmask16, __m512i, __m512i, const int);
+extern __m512i __cdecl _mm512_alignr_epi64(__m512i, __m512i, const int);
+extern __m512i __cdecl _mm512_mask_alignr_epi64(__m512i, __mmask8, __m512i, __m512i, const int);
+extern __m512i __cdecl _mm512_maskz_alignr_epi64(__mmask8, __m512i, __m512i, const int);
+
+extern __m512d __cdecl _mm512_and_pd(__m512d, __m512d);
+extern __m512d __cdecl _mm512_mask_and_pd(__m512d, __mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_maskz_and_pd(__mmask8, __m512d, __m512d);
+extern __m512  __cdecl _mm512_and_ps(__m512, __m512);
+extern __m512  __cdecl _mm512_mask_and_ps(__m512, __mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_maskz_and_ps(__mmask16, __m512, __m512);
+extern __m512i __cdecl _mm512_and_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_and_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_and_epi32(__mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_and_epi64(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_and_epi64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_and_epi64(__mmask8, __m512i, __m512i);
+
+extern __m512d __cdecl _mm512_andnot_pd(__m512d, __m512d);
+extern __m512d __cdecl _mm512_mask_andnot_pd(__m512d, __mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_maskz_andnot_pd(__mmask8, __m512d, __m512d);
+extern __m512  __cdecl _mm512_andnot_ps(__m512, __m512);
+extern __m512  __cdecl _mm512_mask_andnot_ps(__m512, __mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_maskz_andnot_ps(__mmask16, __m512, __m512);
+extern __m512i __cdecl _mm512_andnot_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_andnot_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_andnot_epi32(__mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_andnot_epi64(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_andnot_epi64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_andnot_epi64(__mmask8, __m512i, __m512i);
+
+extern __m512d __cdecl _mm512_or_pd(__m512d, __m512d);
+extern __m512d __cdecl _mm512_mask_or_pd(__m512d, __mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_maskz_or_pd(__mmask8, __m512d, __m512d);
+extern __m512  __cdecl _mm512_or_ps(__m512, __m512);
+extern __m512  __cdecl _mm512_mask_or_ps(__m512, __mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_maskz_or_ps(__mmask16, __m512, __m512);
+extern __m512i __cdecl _mm512_or_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_or_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_or_epi32(__mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_or_epi64(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_or_epi64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_or_epi64(__mmask8, __m512i, __m512i);
+
+extern __m512d __cdecl _mm512_xor_pd(__m512d, __m512d);
+extern __m512d __cdecl _mm512_mask_xor_pd(__m512d, __mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_maskz_xor_pd(__mmask8, __m512d, __m512d);
+extern __m512  __cdecl _mm512_xor_ps(__m512, __m512);
+extern __m512  __cdecl _mm512_mask_xor_ps(__m512, __mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_maskz_xor_ps(__mmask16, __m512, __m512);
+extern __m512i __cdecl _mm512_xor_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_xor_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_xor_epi32(__mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_xor_epi64(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_xor_epi64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_xor_epi64(__mmask8, __m512i, __m512i);
+
+extern __m512  __cdecl _mm512_mask_blend_ps(__mmask16, __m512, __m512);
+extern __m512d __cdecl _mm512_mask_blend_pd(__mmask8, __m512d, __m512d);
+extern __m512i __cdecl _mm512_mask_blend_epi8(__mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_blend_epi16(__mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_blend_epi32(__mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_blend_epi64(__mmask8, __m512i, __m512i);
+
+extern __m512i __cdecl _mm512_sll_epi16(__m512i, __m128i);
+extern __m512i __cdecl _mm512_sll_epi32(__m512i, __m128i);
+extern __m512i __cdecl _mm512_sll_epi64(__m512i, __m128i);
+extern __m512i __cdecl _mm512_slli_epi16(__m512i, unsigned int);
+extern __m512i __cdecl _mm512_slli_epi32(__m512i, unsigned int);
+extern __m512i __cdecl _mm512_slli_epi64(__m512i, unsigned int);
+extern __m512i __cdecl _mm512_sllv_epi16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_sllv_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_sllv_epi64(__m512i, __m512i);
+
+extern __m512i __cdecl _mm512_mask_sll_epi16(__m512i, __mmask32, __m512i, __m128i);
+extern __m512i __cdecl _mm512_maskz_sll_epi16(__mmask32, __m512i, __m128i);
+extern __m512i __cdecl _mm512_mask_sll_epi32(__m512i, __mmask16, __m512i, __m128i);
+extern __m512i __cdecl _mm512_maskz_sll_epi32(__mmask16, __m512i, __m128i);
+extern __m512i __cdecl _mm512_mask_sll_epi64(__m512i, __mmask8, __m512i, __m128i);
+extern __m512i __cdecl _mm512_maskz_sll_epi64(__mmask8, __m512i, __m128i);
+extern __m512i __cdecl _mm512_mask_slli_epi16(__m512i, __mmask32, __m512i, unsigned int);
+extern __m512i __cdecl _mm512_maskz_slli_epi16(__mmask32, __m512i, unsigned int);
+extern __m512i __cdecl _mm512_mask_slli_epi32(__m512i, __mmask16, __m512i, unsigned int);
+extern __m512i __cdecl _mm512_maskz_slli_epi32(__mmask16, __m512i, unsigned int);
+extern __m512i __cdecl _mm512_mask_slli_epi64(__m512i, __mmask8, __m512i, unsigned int);
+extern __m512i __cdecl _mm512_maskz_slli_epi64(__mmask8, __m512i, unsigned int);
+extern __m512i __cdecl _mm512_mask_sllv_epi16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_sllv_epi16(__mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_sllv_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_sllv_epi32(__mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_sllv_epi64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_sllv_epi64(__mmask8, __m512i, __m512i);
+
+extern __m512i __cdecl _mm512_srl_epi16(__m512i, __m128i);
+extern __m512i __cdecl _mm512_srl_epi32(__m512i, __m128i);
+extern __m512i __cdecl _mm512_srl_epi64(__m512i, __m128i);
+extern __m512i __cdecl _mm512_srli_epi16(__m512i, int);
+extern __m512i __cdecl _mm512_srli_epi32(__m512i, unsigned int);
+extern __m512i __cdecl _mm512_srli_epi64(__m512i, unsigned int);
+extern __m512i __cdecl _mm512_srlv_epi16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_srlv_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_srlv_epi64(__m512i, __m512i);
+
+extern __m512i __cdecl _mm512_mask_srl_epi16(__m512i, __mmask32, __m512i, __m128i);
+extern __m512i __cdecl _mm512_maskz_srl_epi16(__mmask32, __m512i, __m128i);
+extern __m512i __cdecl _mm512_mask_srl_epi32(__m512i, __mmask16, __m512i, __m128i);
+extern __m512i __cdecl _mm512_maskz_srl_epi32(__mmask16, __m512i, __m128i);
+extern __m512i __cdecl _mm512_mask_srl_epi64(__m512i, __mmask8, __m512i, __m128i);
+extern __m512i __cdecl _mm512_maskz_srl_epi64(__mmask8, __m512i, __m128i);
+extern __m512i __cdecl _mm512_mask_srli_epi16(__m512i, __mmask32, __m512i, unsigned int);
+extern __m512i __cdecl _mm512_maskz_srli_epi16(__mmask32, __m512i, int);
+extern __m512i __cdecl _mm512_mask_srli_epi32(__m512i, __mmask16, __m512i, unsigned int);
+extern __m512i __cdecl _mm512_maskz_srli_epi32(__mmask16, __m512i, unsigned int);
+extern __m512i __cdecl _mm512_mask_srli_epi64(__m512i, __mmask8, __m512i, unsigned int);
+extern __m512i __cdecl _mm512_maskz_srli_epi64(__mmask8, __m512i, unsigned int);
+extern __m512i __cdecl _mm512_mask_srlv_epi16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_srlv_epi16(__mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_srlv_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_srlv_epi32(__mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_srlv_epi64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_srlv_epi64(__mmask8, __m512i, __m512i);
+
+extern __m512i __cdecl _mm512_sra_epi16(__m512i, __m128i);
+extern __m512i __cdecl _mm512_sra_epi32(__m512i, __m128i);
+extern __m512i __cdecl _mm512_sra_epi64(__m512i, __m128i);
+extern __m512i __cdecl _mm512_srai_epi16(__m512i, unsigned int);
+extern __m512i __cdecl _mm512_srai_epi32(__m512i, unsigned int);
+extern __m512i __cdecl _mm512_srai_epi64(__m512i, unsigned int);
+extern __m512i __cdecl _mm512_srav_epi16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_srav_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_srav_epi64(__m512i, __m512i);
+
+extern __m512i __cdecl _mm512_mask_sra_epi16(__m512i, __mmask32, __m512i, __m128i);
+extern __m512i __cdecl _mm512_maskz_sra_epi16(__mmask32, __m512i, __m128i);
+extern __m512i __cdecl _mm512_mask_sra_epi32(__m512i, __mmask16, __m512i, __m128i);
+extern __m512i __cdecl _mm512_maskz_sra_epi32(__mmask16, __m512i, __m128i);
+extern __m512i __cdecl _mm512_mask_sra_epi64(__m512i, __mmask8, __m512i, __m128i);
+extern __m512i __cdecl _mm512_maskz_sra_epi64(__mmask8, __m512i, __m128i);
+extern __m512i __cdecl _mm512_mask_srai_epi16(__m512i, __mmask32, __m512i, unsigned int);
+extern __m512i __cdecl _mm512_maskz_srai_epi16(__mmask32, __m512i, unsigned int);
+extern __m512i __cdecl _mm512_mask_srai_epi32(__m512i, __mmask16, __m512i, unsigned int);
+extern __m512i __cdecl _mm512_maskz_srai_epi32(__mmask16, __m512i, unsigned int);
+extern __m512i __cdecl _mm512_mask_srai_epi64(__m512i, __mmask8, __m512i, unsigned int);
+extern __m512i __cdecl _mm512_maskz_srai_epi64(__mmask8, __m512i, unsigned int);
+extern __m512i __cdecl _mm512_mask_srav_epi16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_srav_epi16(__mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_srav_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_srav_epi32(__mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_srav_epi64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_srav_epi64(__mmask8, __m512i, __m512i);
+
+extern __m512i __cdecl _mm512_bslli_epi128(__m512i, int);
+extern __m512i __cdecl _mm512_bsrli_epi128(__m512i, int);
+
+extern __m512i __cdecl _mm512_rol_epi32(__m512i, const int);
+extern __m512i __cdecl _mm512_mask_rol_epi32(__m512i, __mmask16, __m512i, const int);
+extern __m512i __cdecl _mm512_maskz_rol_epi32(__mmask16, __m512i, const int);
+extern __m512i __cdecl _mm512_rol_epi64(__m512i, const int);
+extern __m512i __cdecl _mm512_mask_rol_epi64(__m512i, __mmask8, __m512i, const int);
+extern __m512i __cdecl _mm512_maskz_rol_epi64(__mmask8, __m512i, const int);
+extern __m512i __cdecl _mm512_rolv_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_rolv_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_rolv_epi32(__mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_rolv_epi64(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_rolv_epi64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_rolv_epi64(__mmask8, __m512i, __m512i);
+
+extern __m512i __cdecl _mm512_ror_epi32(__m512i, int);
+extern __m512i __cdecl _mm512_mask_ror_epi32(__m512i, __mmask16, __m512i, int);
+extern __m512i __cdecl _mm512_maskz_ror_epi32(__mmask16, __m512i, int);
+extern __m512i __cdecl _mm512_ror_epi64(__m512i, int);
+extern __m512i __cdecl _mm512_mask_ror_epi64(__m512i, __mmask8, __m512i, int);
+extern __m512i __cdecl _mm512_maskz_ror_epi64(__mmask8, __m512i, int);
+extern __m512i __cdecl _mm512_rorv_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_rorv_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_rorv_epi32(__mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_rorv_epi64(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_rorv_epi64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_rorv_epi64(__mmask8, __m512i, __m512i);
+
+extern __m512d __cdecl _mm512_unpackhi_pd(__m512d, __m512d);
+extern __m512d __cdecl _mm512_mask_unpackhi_pd(__m512d, __mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_maskz_unpackhi_pd(__mmask8, __m512d, __m512d);
+extern __m512  __cdecl _mm512_unpackhi_ps(__m512, __m512);
+extern __m512  __cdecl _mm512_mask_unpackhi_ps(__m512, __mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_maskz_unpackhi_ps(__mmask16, __m512, __m512);
+extern __m512d __cdecl _mm512_unpacklo_pd(__m512d, __m512d);
+extern __m512d __cdecl _mm512_mask_unpacklo_pd(__m512d, __mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_maskz_unpacklo_pd(__mmask8, __m512d, __m512d);
+extern __m512  __cdecl _mm512_unpacklo_ps(__m512, __m512);
+extern __m512  __cdecl _mm512_mask_unpacklo_ps(__m512, __mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_maskz_unpacklo_ps(__mmask16, __m512, __m512);
+extern __m512i __cdecl _mm512_unpackhi_epi8(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_unpackhi_epi8(__m512i, __mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_unpackhi_epi8(__mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_unpackhi_epi16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_unpackhi_epi16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_unpackhi_epi16(__mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_unpackhi_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_unpackhi_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_unpackhi_epi32(__mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_unpackhi_epi64(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_unpackhi_epi64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_unpackhi_epi64(__mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_unpacklo_epi8(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_unpacklo_epi8(__m512i, __mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_unpacklo_epi8(__mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_unpacklo_epi16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_unpacklo_epi16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_unpacklo_epi16(__mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_unpacklo_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_unpacklo_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_unpacklo_epi32(__mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_unpacklo_epi64(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_unpacklo_epi64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_unpacklo_epi64(__mmask8, __m512i, __m512i);
+
+extern __m512  __cdecl _mm512_getexp_ps(__m512);
+extern __m512  __cdecl _mm512_mask_getexp_ps(__m512, __mmask16, __m512);
+extern __m512  __cdecl _mm512_maskz_getexp_ps(__mmask16, __m512);
+extern __m512  __cdecl _mm512_getexp_round_ps(__m512, int);
+extern __m512  __cdecl _mm512_mask_getexp_round_ps(__m512, __mmask16, __m512, int);
+extern __m512  __cdecl _mm512_maskz_getexp_round_ps(__mmask16, __m512, int);
+extern __m512d __cdecl _mm512_getexp_pd(__m512d);
+extern __m512d __cdecl _mm512_mask_getexp_pd(__m512d, __mmask8, __m512d);
+extern __m512d __cdecl _mm512_maskz_getexp_pd(__mmask8, __m512d);
+extern __m512d __cdecl _mm512_getexp_round_pd(__m512d, int);
+extern __m512d __cdecl _mm512_mask_getexp_round_pd(__m512d, __mmask8, __m512d, int);
+extern __m512d __cdecl _mm512_maskz_getexp_round_pd(__mmask8, __m512d, int);
+
+extern __m512  __cdecl _mm512_getmant_ps(__m512, int, int);
+extern __m512  __cdecl _mm512_mask_getmant_ps(__m512, __mmask16, __m512, int, int);
+extern __m512  __cdecl _mm512_maskz_getmant_ps(__mmask16, __m512, int, int);
+extern __m512  __cdecl _mm512_getmant_round_ps(__m512, int, int, int);
+extern __m512  __cdecl _mm512_mask_getmant_round_ps(__m512, __mmask16, __m512, int, int, int);
+extern __m512  __cdecl _mm512_maskz_getmant_round_ps(__mmask16, __m512, int, int, int);
+extern __m512d __cdecl _mm512_getmant_pd(__m512d, int, int);
+extern __m512d __cdecl _mm512_mask_getmant_pd(__m512d, __mmask8, __m512d, int, int);
+extern __m512d __cdecl _mm512_maskz_getmant_pd(__mmask8, __m512d, int, int);
+extern __m512d __cdecl _mm512_getmant_round_pd(__m512d, int, int, int);
+extern __m512d __cdecl _mm512_mask_getmant_round_pd(__m512d, __mmask8, __m512d, int, int, int);
+extern __m512d __cdecl _mm512_maskz_getmant_round_pd(__mmask8, __m512d, int, int, int);
+
+extern __m512d __cdecl _mm512_permute_pd(__m512d, const int);
+extern __m512d __cdecl _mm512_mask_permute_pd(__m512d, __mmask8, __m512d, const int);
+extern __m512d __cdecl _mm512_maskz_permute_pd(__mmask8, __m512d, const int);
+extern __m512  __cdecl _mm512_permute_ps(__m512, const int);
+extern __m512  __cdecl _mm512_mask_permute_ps(__m512, __mmask16, __m512, const int);
+extern __m512  __cdecl _mm512_maskz_permute_ps(__mmask16, __m512, const int);
+extern __m512d __cdecl _mm512_permutevar_pd(__m512d, __m512i);
+extern __m512d __cdecl _mm512_mask_permutevar_pd(__m512d, __mmask8, __m512d, __m512i);
+extern __m512d __cdecl _mm512_maskz_permutevar_pd(__mmask8, __m512d, __m512i);
+extern __m512  __cdecl _mm512_permutevar_ps(__m512, __m512i);
+extern __m512  __cdecl _mm512_mask_permutevar_ps(__m512, __mmask16, __m512, __m512i);
+extern __m512  __cdecl _mm512_maskz_permutevar_ps(__mmask16, __m512, __m512i);
+extern __m512i __cdecl _mm512_permutevar_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_permutevar_epi32(__m512i, __mmask16, __m512i, __m512i);
+
+extern __m512d __cdecl _mm512_permutex_pd(__m512d, const int);
+extern __m512d __cdecl _mm512_mask_permutex_pd(__m512d, __mmask8, __m512d, const int);
+extern __m512d __cdecl _mm512_maskz_permutex_pd(__mmask8, __m512d, const int);
+extern __m512i __cdecl _mm512_permutex_epi64(__m512i, const int);
+extern __m512i __cdecl _mm512_mask_permutex_epi64(__m512i, __mmask8, __m512i, const int);
+extern __m512i __cdecl _mm512_maskz_permutex_epi64(__mmask8, __m512i, const int);
+extern __m512d __cdecl _mm512_permutexvar_pd(__m512i, __m512d);
+extern __m512d __cdecl _mm512_mask_permutexvar_pd(__m512d, __mmask8, __m512i, __m512d);
+extern __m512d __cdecl _mm512_maskz_permutexvar_pd(__mmask8, __m512i, __m512d);
+extern __m512  __cdecl _mm512_permutexvar_ps(__m512i, __m512);
+extern __m512  __cdecl _mm512_mask_permutexvar_ps(__m512, __mmask16, __m512i, __m512);
+extern __m512  __cdecl _mm512_maskz_permutexvar_ps(__mmask16, __m512i, __m512);
+extern __m512i __cdecl _mm512_permutexvar_epi16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_permutexvar_epi16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_permutexvar_epi16(__mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_permutexvar_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_permutexvar_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_permutexvar_epi32(__mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_permutexvar_epi64(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_permutexvar_epi64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_permutexvar_epi64(__mmask8, __m512i, __m512i);
+
+extern __m512d __cdecl _mm512_permutex2var_pd(__m512d, __m512i , __m512d);
+extern __m512d __cdecl _mm512_mask_permutex2var_pd(__m512d, __mmask8, __m512i , __m512d);
+extern __m512d __cdecl _mm512_mask2_permutex2var_pd(__m512d, __m512i , __mmask8, __m512d);
+extern __m512d __cdecl _mm512_maskz_permutex2var_pd(__mmask8, __m512d, __m512i , __m512d);
+extern __m512  __cdecl _mm512_permutex2var_ps(__m512, __m512i , __m512);
+extern __m512  __cdecl _mm512_mask_permutex2var_ps(__m512, __mmask16, __m512i , __m512);
+extern __m512  __cdecl _mm512_mask2_permutex2var_ps(__m512, __m512i , __mmask16, __m512);
+extern __m512  __cdecl _mm512_maskz_permutex2var_ps(__mmask16, __m512, __m512i , __m512);
+extern __m512i __cdecl _mm512_permutex2var_epi16(__m512i, __m512i , __m512i);
+extern __m512i __cdecl _mm512_mask_permutex2var_epi16(__m512i, __mmask32, __m512i , __m512i);
+extern __m512i __cdecl _mm512_mask2_permutex2var_epi16(__m512i, __m512i , __mmask32, __m512i);
+extern __m512i __cdecl _mm512_maskz_permutex2var_epi16(__mmask32, __m512i, __m512i , __m512i);
+extern __m512i __cdecl _mm512_permutex2var_epi32(__m512i, __m512i , __m512i);
+extern __m512i __cdecl _mm512_mask_permutex2var_epi32(__m512i, __mmask16, __m512i , __m512i);
+extern __m512i __cdecl _mm512_mask2_permutex2var_epi32(__m512i, __m512i , __mmask16, __m512i);
+extern __m512i __cdecl _mm512_maskz_permutex2var_epi32(__mmask16, __m512i, __m512i , __m512i);
+extern __m512i __cdecl _mm512_permutex2var_epi64(__m512i, __m512i , __m512i);
+extern __m512i __cdecl _mm512_mask_permutex2var_epi64(__m512i, __mmask8, __m512i , __m512i);
+extern __m512i __cdecl _mm512_mask2_permutex2var_epi64(__m512i, __m512i , __mmask8, __m512i);
+extern __m512i __cdecl _mm512_maskz_permutex2var_epi64(__mmask8, __m512i, __m512i , __m512i);
+
+extern __m512d __cdecl _mm512_mask_compress_pd(__m512d, __mmask8, __m512d);
+extern __m512d __cdecl _mm512_maskz_compress_pd(__mmask8, __m512d);
+extern __m512  __cdecl _mm512_mask_compress_ps(__m512, __mmask16, __m512);
+extern __m512  __cdecl _mm512_maskz_compress_ps(__mmask16, __m512);
+extern __m512i __cdecl _mm512_mask_compress_epi8(__m512i, __mmask64, __m512i);
+extern __m512i __cdecl _mm512_maskz_compress_epi8(__mmask64, __m512i);
+extern __m512i __cdecl _mm512_mask_compress_epi16(__m512i, __mmask32, __m512i);
+extern __m512i __cdecl _mm512_maskz_compress_epi16(__mmask32, __m512i);
+extern __m512i __cdecl _mm512_mask_compress_epi32(__m512i, __mmask16, __m512i);
+extern __m512i __cdecl _mm512_maskz_compress_epi32(__mmask16, __m512i);
+extern __m512i __cdecl _mm512_mask_compress_epi64(__m512i, __mmask8, __m512i);
+extern __m512i __cdecl _mm512_maskz_compress_epi64(__mmask8, __m512i);
+
+extern void    __cdecl _mm512_mask_compressstoreu_pd(void*, __mmask8, __m512d);
+extern void    __cdecl _mm512_mask_compressstoreu_ps(void*, __mmask16, __m512);
+extern void    __cdecl _mm512_mask_compressstoreu_epi8(void*, __mmask64, __m512i);
+extern void    __cdecl _mm512_mask_compressstoreu_epi16(void*, __mmask32, __m512i);
+extern void    __cdecl _mm512_mask_compressstoreu_epi32(void*, __mmask16, __m512i);
+extern void    __cdecl _mm512_mask_compressstoreu_epi64(void*, __mmask8, __m512i);
+
+extern __m512d __cdecl _mm512_mask_expand_pd(__m512d, __mmask8, __m512d);
+extern __m512d __cdecl _mm512_maskz_expand_pd(__mmask8, __m512d);
+extern __m512  __cdecl _mm512_mask_expand_ps(__m512, __mmask16, __m512);
+extern __m512  __cdecl _mm512_maskz_expand_ps(__mmask16, __m512);
+extern __m512i __cdecl _mm512_mask_expand_epi8(__m512i, __mmask64, __m512i);
+extern __m512i __cdecl _mm512_maskz_expand_epi8(__mmask64, __m512i);
+extern __m512i __cdecl _mm512_mask_expand_epi16(__m512i, __mmask32, __m512i);
+extern __m512i __cdecl _mm512_maskz_expand_epi16(__mmask32, __m512i);
+extern __m512i __cdecl _mm512_mask_expand_epi32(__m512i, __mmask16, __m512i);
+extern __m512i __cdecl _mm512_maskz_expand_epi32(__mmask16, __m512i);
+extern __m512i __cdecl _mm512_mask_expand_epi64(__m512i, __mmask8, __m512i);
+extern __m512i __cdecl _mm512_maskz_expand_epi64(__mmask8, __m512i);
+extern __m512d __cdecl _mm512_mask_expandloadu_pd(__m512d, __mmask8, void const*);
+extern __m512d __cdecl _mm512_maskz_expandloadu_pd(__mmask8, void const*);
+extern __m512  __cdecl _mm512_mask_expandloadu_ps(__m512, __mmask16, void const*);
+extern __m512  __cdecl _mm512_maskz_expandloadu_ps(__mmask16, void const*);
+extern __m512i __cdecl _mm512_mask_expandloadu_epi8(__m512i, __mmask64, const void*);
+extern __m512i __cdecl _mm512_maskz_expandloadu_epi8(__mmask64, const void*);
+extern __m512i __cdecl _mm512_mask_expandloadu_epi16(__m512i, __mmask32, const void*);
+extern __m512i __cdecl _mm512_maskz_expandloadu_epi16(__mmask32, const void*);
+extern __m512i __cdecl _mm512_mask_expandloadu_epi32(__m512i, __mmask16, void const*);
+extern __m512i __cdecl _mm512_maskz_expandloadu_epi32(__mmask16, void const*);
+extern __m512i __cdecl _mm512_mask_expandloadu_epi64(__m512i, __mmask8, void const*);
+extern __m512i __cdecl _mm512_maskz_expandloadu_epi64(__mmask8, void const*);
+
+extern __m512i __cdecl _mm512_ternarylogic_epi32(__m512i, __m512i, __m512i, int);
+extern __m512i __cdecl _mm512_mask_ternarylogic_epi32(__m512i, __mmask16, __m512i, __m512i, int);
+extern __m512i __cdecl _mm512_maskz_ternarylogic_epi32(__mmask16, __m512i, __m512i, __m512i, int);
+extern __m512i __cdecl _mm512_ternarylogic_epi64(__m512i, __m512i, __m512i, int);
+extern __m512i __cdecl _mm512_mask_ternarylogic_epi64(__m512i, __mmask8, __m512i, __m512i, int);
+extern __m512i __cdecl _mm512_maskz_ternarylogic_epi64(__mmask8, __m512i, __m512i, __m512i, int);
+
+extern __m512i __cdecl _mm512_conflict_epi32(__m512i);
+extern __m512i __cdecl _mm512_mask_conflict_epi32(__m512i, __mmask16, __m512i);
+extern __m512i __cdecl _mm512_maskz_conflict_epi32(__mmask16, __m512i);
+extern __m512i __cdecl _mm512_conflict_epi64(__m512i);
+extern __m512i __cdecl _mm512_mask_conflict_epi64(__m512i, __mmask8, __m512i);
+extern __m512i __cdecl _mm512_maskz_conflict_epi64(__mmask8, __m512i);
+
+extern __m512i __cdecl _mm512_lzcnt_epi8(__m512i);
+extern __m256i __cdecl _mm256_lzcnt_epi8(__m256i);
+extern __m128i __cdecl _mm_lzcnt_epi8(__m128i);
+
+extern __m512i __cdecl _mm512_lzcnt_epi16(__m512i);
+extern __m256i __cdecl _mm256_lzcnt_epi16(__m256i);
+extern __m128i __cdecl _mm_lzcnt_epi16(__m128i);
+
+extern __m512i __cdecl _mm512_lzcnt_epi32(__m512i);
+extern __m512i __cdecl _mm512_mask_lzcnt_epi32(__m512i, __mmask16, __m512i);
+extern __m512i __cdecl _mm512_maskz_lzcnt_epi32(__mmask16, __m512i);
+extern __m512i __cdecl _mm512_lzcnt_epi64(__m512i);
+extern __m512i __cdecl _mm512_mask_lzcnt_epi64(__m512i, __mmask8, __m512i);
+extern __m512i __cdecl _mm512_maskz_lzcnt_epi64(__mmask8, __m512i);
+
+extern __m512i __cdecl _mm512_avg_epu8(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_avg_epu8(__m512i, __mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_avg_epu8(__mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_avg_epu16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_avg_epu16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_avg_epu16(__mmask32, __m512i, __m512i);
+
+extern __m512i __cdecl _mm512_sad_epu8(__m512i, __m512i);
+extern __m512i __cdecl _mm512_dbsad_epu8(__m512i, __m512i, int);
+extern __m512i __cdecl _mm512_mask_dbsad_epu8(__m512i, __mmask32, __m512i, __m512i, int);
+extern __m512i __cdecl _mm512_maskz_dbsad_epu8(__mmask32, __m512i, __m512i, int);
+
+extern float   __cdecl _mm512_reduce_add_ps(__m512);
+extern float   __cdecl _mm512_mask_reduce_add_ps(__mmask16, __m512);
+extern double  __cdecl _mm512_reduce_add_pd(__m512d);
+extern double  __cdecl _mm512_mask_reduce_add_pd(__mmask8, __m512d);
+extern int     __cdecl _mm512_reduce_add_epi8(__m512i);
+extern int     __cdecl _mm512_mask_reduce_add_epi8(__mmask64, __m512i);
+extern int     __cdecl _mm512_reduce_add_epi16(__m512i);
+extern int     __cdecl _mm512_mask_reduce_add_epi16(__mmask32, __m512i);
+extern int     __cdecl _mm512_reduce_add_epi32(__m512i);
+extern int     __cdecl _mm512_mask_reduce_add_epi32(__mmask16, __m512i);
+extern __int64 __cdecl _mm512_reduce_add_epi64(__m512i);
+extern __int64 __cdecl _mm512_mask_reduce_add_epi64(__mmask8, __m512i);
+extern int     __cdecl _mm512_reduce_add_epu8(__m512i);
+extern int     __cdecl _mm512_mask_reduce_add_epu8(__mmask64, __m512i);
+extern int     __cdecl _mm512_reduce_add_epu16(__m512i);
+extern int     __cdecl _mm512_mask_reduce_add_epu16(__mmask32, __m512i);
+
+extern float   __cdecl _mm512_reduce_mul_ps(__m512);
+extern float   __cdecl _mm512_mask_reduce_mul_ps(__mmask16, __m512);
+extern double  __cdecl _mm512_reduce_mul_pd(__m512d);
+extern double  __cdecl _mm512_mask_reduce_mul_pd(__mmask8, __m512d);
+extern int     __cdecl _mm512_reduce_mul_epi32(__m512i);
+extern int     __cdecl _mm512_mask_reduce_mul_epi32(__mmask16, __m512i);
+extern __int64 __cdecl _mm512_reduce_mul_epi64(__m512i);
+extern __int64 __cdecl _mm512_mask_reduce_mul_epi64(__mmask8, __m512i);
+
+extern float   __cdecl _mm512_reduce_min_ps(__m512);
+extern float   __cdecl _mm512_mask_reduce_min_ps(__mmask16, __m512);
+extern double  __cdecl _mm512_reduce_min_pd(__m512d);
+extern double  __cdecl _mm512_mask_reduce_min_pd(__mmask8, __m512d);
+extern int     __cdecl _mm512_reduce_min_epi32(__m512i);
+extern int     __cdecl _mm512_mask_reduce_min_epi32(__mmask16, __m512i);
+extern __int64 __cdecl _mm512_reduce_min_epi64(__m512i);
+extern __int64 __cdecl _mm512_mask_reduce_min_epi64(__mmask8, __m512i);
+extern unsigned int     __cdecl _mm512_reduce_min_epu32(__m512i);
+extern unsigned int     __cdecl _mm512_mask_reduce_min_epu32(__mmask16, __m512i);
+extern unsigned __int64 __cdecl _mm512_reduce_min_epu64(__m512i);
+extern unsigned __int64 __cdecl _mm512_mask_reduce_min_epu64(__mmask8, __m512i);
+
+extern float   __cdecl _mm512_reduce_max_ps(__m512);
+extern float   __cdecl _mm512_mask_reduce_max_ps(__mmask16, __m512);
+extern double  __cdecl _mm512_reduce_max_pd(__m512d);
+extern double  __cdecl _mm512_mask_reduce_max_pd(__mmask8, __m512d);
+extern int     __cdecl _mm512_reduce_max_epi32(__m512i);
+extern int     __cdecl _mm512_mask_reduce_max_epi32(__mmask16, __m512i);
+extern __int64 __cdecl _mm512_reduce_max_epi64(__m512i);
+extern __int64 __cdecl _mm512_mask_reduce_max_epi64(__mmask8, __m512i);
+extern unsigned int     __cdecl _mm512_reduce_max_epu32(__m512i);
+extern unsigned int     __cdecl _mm512_mask_reduce_max_epu32(__mmask16, __m512i);
+extern unsigned __int64 __cdecl _mm512_reduce_max_epu64(__m512i);
+extern unsigned __int64 __cdecl _mm512_mask_reduce_max_epu64(__mmask8, __m512i);
+
+extern int     __cdecl _mm512_reduce_and_epi32(__m512i);
+extern int     __cdecl _mm512_mask_reduce_and_epi32(__mmask16, __m512i);
+extern __int64 __cdecl _mm512_reduce_and_epi64(__m512i);
+extern __int64 __cdecl _mm512_mask_reduce_and_epi64(__mmask8, __m512i);
+
+extern int     __cdecl _mm512_reduce_or_epi32(__m512i);
+extern int     __cdecl _mm512_mask_reduce_or_epi32(__mmask16, __m512i);
+extern __int64 __cdecl _mm512_reduce_or_epi64(__m512i);
+extern __int64 __cdecl _mm512_mask_reduce_or_epi64(__mmask8, __m512i);
+
+extern int     __cdecl _mm512_reduce_xor_epi32(__m512i);
+extern int     __cdecl _mm512_mask_reduce_xor_epi32(__mmask16, __m512i);
+extern __int64 __cdecl _mm512_reduce_xor_epi64(__m512i);
+extern __int64 __cdecl _mm512_mask_reduce_xor_epi64(__mmask8, __m512i);
+
+extern __m512d __cdecl _mm512_reduce_pd(__m512d, int);
+extern __m512d __cdecl _mm512_mask_reduce_pd(__m512d, __mmask8, __m512d, int);
+extern __m512d __cdecl _mm512_maskz_reduce_pd(__mmask8, __m512d, int);
+extern __m512d __cdecl _mm512_reduce_round_pd(__m512d, int, int);
+extern __m512d __cdecl _mm512_mask_reduce_round_pd(__m512d, __mmask8, __m512d, int, int);
+extern __m512d __cdecl _mm512_maskz_reduce_round_pd(__mmask8, __m512d, int, int);
+extern __m512  __cdecl _mm512_reduce_ps(__m512, int);
+extern __m512  __cdecl _mm512_mask_reduce_ps(__m512, __mmask16, __m512, int);
+extern __m512  __cdecl _mm512_maskz_reduce_ps(__mmask16, __m512, int);
+extern __m512  __cdecl _mm512_reduce_round_ps(__m512, int, int);
+extern __m512  __cdecl _mm512_mask_reduce_round_ps(__m512, __mmask16, __m512, int, int);
+extern __m512  __cdecl _mm512_maskz_reduce_round_ps(__mmask16, __m512, int, int);
+
+extern __m512d __cdecl _mm512_roundscale_pd(__m512d, int);
+extern __m512d __cdecl _mm512_mask_roundscale_pd(__m512d, __mmask8, __m512d, int);
+extern __m512d __cdecl _mm512_maskz_roundscale_pd(__mmask8, __m512d, int);
+extern __m512d __cdecl _mm512_roundscale_round_pd(__m512d, int, int);
+extern __m512d __cdecl _mm512_mask_roundscale_round_pd(__m512d, __mmask8, __m512d, int, int);
+extern __m512d __cdecl _mm512_maskz_roundscale_round_pd(__mmask8, __m512d, int, int);
+extern __m512  __cdecl _mm512_roundscale_ps(__m512, int);
+extern __m512  __cdecl _mm512_mask_roundscale_ps(__m512, __mmask16, __m512, int);
+extern __m512  __cdecl _mm512_maskz_roundscale_ps(__mmask16, __m512, int);
+extern __m512  __cdecl _mm512_roundscale_round_ps(__m512, int, int);
+extern __m512  __cdecl _mm512_mask_roundscale_round_ps(__m512, __mmask16, __m512, int, int);
+extern __m512  __cdecl _mm512_maskz_roundscale_round_ps(__mmask16, __m512, int, int);
+
+extern __m512d __cdecl _mm512_scalef_pd(__m512d, __m512d);
+extern __m512d __cdecl _mm512_mask_scalef_pd(__m512d, __mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_maskz_scalef_pd(__mmask8, __m512d, __m512d);
+extern __m512d __cdecl _mm512_scalef_round_pd(__m512d, __m512d, int);
+extern __m512d __cdecl _mm512_mask_scalef_round_pd(__m512d, __mmask8, __m512d, __m512d, int);
+extern __m512d __cdecl _mm512_maskz_scalef_round_pd(__mmask8, __m512d, __m512d, int);
+extern __m512  __cdecl _mm512_scalef_ps(__m512, __m512);
+extern __m512  __cdecl _mm512_mask_scalef_ps(__m512, __mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_maskz_scalef_ps(__mmask16, __m512, __m512);
+extern __m512  __cdecl _mm512_scalef_round_ps(__m512, __m512, int);
+extern __m512  __cdecl _mm512_mask_scalef_round_ps(__m512, __mmask16, __m512, __m512, int);
+extern __m512  __cdecl _mm512_maskz_scalef_round_ps(__mmask16, __m512, __m512, int);
+
+extern __m512d __cdecl _mm512_fixupimm_pd(__m512d, __m512d, __m512i, const int);
+extern __m512d __cdecl _mm512_mask_fixupimm_pd(__m512d, __mmask8, __m512d, __m512i, const int);
+extern __m512d __cdecl _mm512_maskz_fixupimm_pd(__mmask8, __m512d, __m512d, __m512i, const int);
+extern __m512d __cdecl _mm512_fixupimm_round_pd(__m512d, __m512d, __m512i, const int, const int);
+extern __m512d __cdecl _mm512_mask_fixupimm_round_pd(__m512d, __mmask8, __m512d, __m512i, const int, const int);
+extern __m512d __cdecl _mm512_maskz_fixupimm_round_pd(__mmask8, __m512d, __m512d, __m512i, const int, const int);
+extern __m512  __cdecl _mm512_fixupimm_ps(__m512, __m512, __m512i, const int);
+extern __m512  __cdecl _mm512_mask_fixupimm_ps(__m512, __mmask16, __m512, __m512i, const int);
+extern __m512  __cdecl _mm512_maskz_fixupimm_ps(__mmask16, __m512, __m512, __m512i, const int);
+extern __m512  __cdecl _mm512_fixupimm_round_ps(__m512, __m512, __m512i, const int, const int);
+extern __m512  __cdecl _mm512_mask_fixupimm_round_ps(__m512, __mmask16, __m512, __m512i, const int, const int);
+extern __m512  __cdecl _mm512_maskz_fixupimm_round_ps(__mmask16, __m512, __m512, __m512i, const int, const int);
+
+extern void    __cdecl _mm512_stream_pd(void*, __m512d);
+extern void    __cdecl _mm512_stream_ps(void*, __m512);
+extern void    __cdecl _mm512_stream_si512(void*, __m512i);
+extern __m512i __cdecl _mm512_stream_load_si512(void const*);
+
+extern __m128d __cdecl _mm512_castpd512_pd128(__m512d);
+extern __m128  __cdecl _mm512_castps512_ps128(__m512);
+extern __m128i __cdecl _mm512_castsi512_si128(__m512i);
+extern __m512i __cdecl _mm512_castsi128_si512(__m128i);
+
+extern __mmask16 __cdecl _mm512_fpclass_ps_mask(__m512, int);
+extern __mmask16 __cdecl _mm512_mask_fpclass_ps_mask(__mmask16, __m512, int);
+extern __mmask8  __cdecl _mm512_fpclass_pd_mask(__m512d, int);
+extern __mmask8  __cdecl _mm512_mask_fpclass_pd_mask(__mmask8, __m512d, int);
+
+extern __m512d __cdecl _mm512_range_pd(__m512d, __m512d, int);
+extern __m512d __cdecl _mm512_mask_range_pd(__m512d, __mmask8, __m512d, __m512d, int);
+extern __m512d __cdecl _mm512_maskz_range_pd(__mmask8, __m512d, __m512d, int);
+extern __m512d __cdecl _mm512_range_round_pd(__m512d, __m512d, int, int);
+extern __m512d __cdecl _mm512_mask_range_round_pd(__m512d, __mmask8, __m512d, __m512d, int, int);
+extern __m512d __cdecl _mm512_maskz_range_round_pd(__mmask8, __m512d, __m512d, int, int);
+extern __m512  __cdecl _mm512_range_ps(__m512, __m512, int);
+extern __m512  __cdecl _mm512_mask_range_ps(__m512, __mmask16, __m512, __m512, int);
+extern __m512  __cdecl _mm512_maskz_range_ps(__mmask16, __m512, __m512, int);
+extern __m512  __cdecl _mm512_range_round_ps(__m512, __m512, int, int);
+extern __m512  __cdecl _mm512_mask_range_round_ps(__m512, __mmask16, __m512, __m512, int, int);
+extern __m512  __cdecl _mm512_maskz_range_round_ps(__mmask16, __m512, __m512, int, int);
+
+extern __m512i __cdecl _mm512_madd_epi16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_madd_epi16(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_madd_epi16(__mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maddubs_epi16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_maddubs_epi16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_maddubs_epi16(__mmask32, __m512i, __m512i);
+
+extern __m512i __cdecl _mm512_packs_epi16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_packs_epi16(__m512i, __mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_packs_epi16(__mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_packs_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_packs_epi32(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_packs_epi32(__mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_packus_epi16(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_packus_epi16(__m512i, __mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_packus_epi16(__mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_packus_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_packus_epi32(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_packus_epi32(__mmask32, __m512i, __m512i);
+
+extern __mmask64 __cdecl _mm512_cmp_epi8_mask(__m512i, __m512i, const int);
+extern __mmask64 __cdecl _mm512_mask_cmp_epi8_mask(__mmask64, __m512i, __m512i, const int);
+extern __mmask32 __cdecl _mm512_cmp_epi16_mask(__m512i, __m512i, const int);
+extern __mmask32 __cdecl _mm512_mask_cmp_epi16_mask(__mmask32, __m512i, __m512i, const int);
+extern __mmask16 __cdecl _mm512_cmp_epi32_mask(__m512i, __m512i, const int);
+extern __mmask16 __cdecl _mm512_mask_cmp_epi32_mask(__mmask16, __m512i, __m512i, const int);
+extern __mmask8  __cdecl _mm512_cmp_epi64_mask(__m512i, __m512i, const int);
+extern __mmask8  __cdecl _mm512_mask_cmp_epi64_mask(__mmask8, __m512i, __m512i, const int);
+extern __mmask64 __cdecl _mm512_cmp_epu8_mask(__m512i, __m512i, const int);
+extern __mmask64 __cdecl _mm512_mask_cmp_epu8_mask(__mmask64, __m512i, __m512i, const int);
+extern __mmask32 __cdecl _mm512_cmp_epu16_mask(__m512i, __m512i, const int);
+extern __mmask32 __cdecl _mm512_mask_cmp_epu16_mask(__mmask32, __m512i, __m512i, const int);
+extern __mmask16 __cdecl _mm512_cmp_epu32_mask(__m512i, __m512i, const int);
+extern __mmask16 __cdecl _mm512_mask_cmp_epu32_mask(__mmask16, __m512i, __m512i, const int);
+extern __mmask8  __cdecl _mm512_cmp_epu64_mask(__m512i, __m512i, const int);
+extern __mmask8  __cdecl _mm512_mask_cmp_epu64_mask(__mmask8, __m512i, __m512i, const int);
+
+extern __mmask64 __cdecl _mm512_test_epi8_mask(__m512i, __m512i);
+extern __mmask64 __cdecl _mm512_mask_test_epi8_mask(__mmask64, __m512i, __m512i);
+extern __mmask32 __cdecl _mm512_test_epi16_mask(__m512i, __m512i);
+extern __mmask32 __cdecl _mm512_mask_test_epi16_mask(__mmask32, __m512i, __m512i);
+extern __mmask64 __cdecl _mm512_testn_epi8_mask(__m512i, __m512i);
+extern __mmask64 __cdecl _mm512_mask_testn_epi8_mask(__mmask64, __m512i, __m512i);
+extern __mmask32 __cdecl _mm512_testn_epi16_mask(__m512i, __m512i);
+extern __mmask32 __cdecl _mm512_mask_testn_epi16_mask(__mmask32, __m512i, __m512i);
+extern __mmask16 __cdecl _mm512_test_epi32_mask(__m512i, __m512i);
+extern __mmask16 __cdecl _mm512_mask_test_epi32_mask(__mmask16, __m512i, __m512i);
+extern __mmask8  __cdecl _mm512_test_epi64_mask(__m512i, __m512i);
+extern __mmask8  __cdecl _mm512_mask_test_epi64_mask(__mmask8, __m512i, __m512i);
+extern __mmask16 __cdecl _mm512_testn_epi32_mask(__m512i, __m512i);
+extern __mmask16 __cdecl _mm512_mask_testn_epi32_mask(__mmask16, __m512i, __m512i);
+extern __mmask8  __cdecl _mm512_testn_epi64_mask(__m512i, __m512i);
+extern __mmask8  __cdecl _mm512_mask_testn_epi64_mask(__mmask8, __m512i, __m512i);
+
+extern __mmask16 __cdecl _mm512_kunpackb(__mmask16, __mmask16);
+extern __mmask32 __cdecl _mm512_kunpackw(__mmask32, __mmask32);
+extern __mmask64 __cdecl _mm512_kunpackd(__mmask64, __mmask64);
+
+extern unsigned char __cdecl _mm512_testz_and_mask8(__mmask8, __mmask8);
+extern unsigned char __cdecl _mm512_testz_and_mask16(__mmask16, __mmask16);
+extern unsigned char __cdecl _mm512_testz_and_mask32(__mmask32, __mmask32);
+extern unsigned char __cdecl _mm512_testz_and_mask64(__mmask64, __mmask64);
+extern unsigned char __cdecl _mm512_testz_andn_mask8(__mmask8, __mmask8);
+extern unsigned char __cdecl _mm512_testz_andn_mask16(__mmask16, __mmask16);
+extern unsigned char __cdecl _mm512_testz_andn_mask32(__mmask32, __mmask32);
+extern unsigned char __cdecl _mm512_testz_andn_mask64(__mmask64, __mmask64);
+extern unsigned char __cdecl _mm512_testz_or_mask8(__mmask8, __mmask8);
+extern unsigned char __cdecl _mm512_testz_or_mask16(__mmask16, __mmask16);
+extern unsigned char __cdecl _mm512_testz_or_mask32(__mmask32, __mmask32);
+extern unsigned char __cdecl _mm512_testz_or_mask64(__mmask64, __mmask64);
+extern unsigned char __cdecl _mm512_testz_nor_mask8(__mmask8, __mmask8);
+extern unsigned char __cdecl _mm512_testz_nor_mask16(__mmask16, __mmask16);
+extern unsigned char __cdecl _mm512_testz_nor_mask32(__mmask32, __mmask32);
+extern unsigned char __cdecl _mm512_testz_nor_mask64(__mmask64, __mmask64);
+
+extern __m512  __cdecl _mm512_i32gather_ps(__m512i, void const*, int);
+extern __m512  __cdecl _mm512_mask_i32gather_ps(__m512, __mmask16, __m512i, void const*, int);
+extern void    __cdecl _mm512_i32scatter_ps(void*, __m512i, __m512, int);
+extern void    __cdecl _mm512_mask_i32scatter_ps(void*, __mmask16, __m512i, __m512, int);
+extern __m512d __cdecl _mm512_i64gather_pd(__m512i, void const*, int);
+extern __m512d __cdecl _mm512_mask_i64gather_pd(__m512d, __mmask8, __m512i, void const*, int);
+extern void    __cdecl _mm512_i64scatter_pd(void*, __m512i, __m512d, int);
+extern void    __cdecl _mm512_mask_i64scatter_pd(void*, __mmask8, __m512i, __m512d, int);
+extern __m512d __cdecl _mm512_i32gather_pd(__m256i, void const*, int);
+extern __m512d __cdecl _mm512_mask_i32gather_pd(__m512d, __mmask8, __m256i, void const*, int);
+extern void    __cdecl _mm512_i32scatter_pd(void*, __m256i, __m512d, int);
+extern void    __cdecl _mm512_mask_i32scatter_pd(void*, __mmask8, __m256i, __m512d, int);
+extern __m512i __cdecl _mm512_i32gather_epi32(__m512i, void const*, int);
+extern __m512i __cdecl _mm512_mask_i32gather_epi32(__m512i, __mmask16, __m512i, void const*, int);
+extern void    __cdecl _mm512_i32scatter_epi32(void*, __m512i, __m512i, int);
+extern void    __cdecl _mm512_mask_i32scatter_epi32(void*, __mmask16, __m512i, __m512i, int);
+extern __m512i __cdecl _mm512_i32gather_epi64(__m256i, void const*, int);
+extern __m512i __cdecl _mm512_mask_i32gather_epi64(__m512i, __mmask8, __m256i, void const*, int);
+extern __m512i __cdecl _mm512_i64gather_epi64(__m512i, void const*, int);
+extern __m512i __cdecl _mm512_mask_i64gather_epi64(__m512i, __mmask8, __m512i, void const*, int);
+extern void    __cdecl _mm512_i32scatter_epi64(void*, __m256i, __m512i, int);
+extern void    __cdecl _mm512_mask_i32scatter_epi64(void*, __mmask8, __m256i, __m512i, int);
+extern void    __cdecl _mm512_i64scatter_epi64(void*, __m512i, __m512i, int);
+extern void    __cdecl _mm512_mask_i64scatter_epi64(void*, __mmask8, __m512i, __m512i, int);
+extern __m256  __cdecl _mm512_i64gather_ps(__m512i, void const*, int);
+extern __m256  __cdecl _mm512_mask_i64gather_ps(__m256, __mmask8, __m512i, void const*, int);
+extern void    __cdecl _mm512_i64scatter_ps(void*, __m512i, __m256, int);
+extern void    __cdecl _mm512_mask_i64scatter_ps(void*, __mmask8, __m512i, __m256, int);
+extern __m256i __cdecl _mm512_i64gather_epi32(__m512i, void const*, int);
+extern __m256i __cdecl _mm512_mask_i64gather_epi32(__m256i, __mmask8, __m512i, void const*, int);
+extern void    __cdecl _mm512_i64scatter_epi32(void*, __m512i, __m256i, int);
+extern void    __cdecl _mm512_mask_i64scatter_epi32(void*, __mmask8, __m512i, __m256i, int);
+
+extern __m512d __cdecl _mm512_cvtpslo_pd(__m512);
+extern __m512d __cdecl _mm512_mask_cvtpslo_pd(__m512d, __mmask8, __m512);
+extern __m512d __cdecl _mm512_cvtepi32lo_pd(__m512i);
+extern __m512d __cdecl _mm512_mask_cvtepi32lo_pd(__m512d, __mmask8, __m512i);
+extern __m512d __cdecl _mm512_cvtepu32lo_pd(__m512i);
+extern __m512d __cdecl _mm512_mask_cvtepu32lo_pd(__m512d, __mmask8, __m512i);
+extern __m512d __cdecl _mm512_cvtepi32_pd(__m256i);
+extern __m512d __cdecl _mm512_mask_cvtepi32_pd(__m512d, __mmask8, __m256i);
+extern __m512d __cdecl _mm512_maskz_cvtepi32_pd(__mmask8, __m256i);
+extern __m512d __cdecl _mm512_cvtepu32_pd(__m256i);
+extern __m512d __cdecl _mm512_mask_cvtepu32_pd(__m512d, __mmask8, __m256i);
+extern __m512d __cdecl _mm512_maskz_cvtepu32_pd(__mmask8, __m256i);
+
+extern __m512  __cdecl _mm512_cvtepi32_ps( __m512i);
+extern __m512  __cdecl _mm512_mask_cvtepi32_ps(__m512, __mmask16, __m512i);
+extern __m512  __cdecl _mm512_maskz_cvtepi32_ps(__mmask16, __m512i);
+extern __m512  __cdecl _mm512_cvt_roundepi32_ps(__m512i, int);
+extern __m512  __cdecl _mm512_mask_cvt_roundepi32_ps(__m512, __mmask16, __m512i, int);
+extern __m512  __cdecl _mm512_maskz_cvt_roundepi32_ps(__mmask16, __m512i, int);
+extern __m512  __cdecl _mm512_cvtepu32_ps( __m512i);
+extern __m512  __cdecl _mm512_mask_cvtepu32_ps(__m512, __mmask16, __m512i);
+extern __m512  __cdecl _mm512_maskz_cvtepu32_ps(__mmask16, __m512i);
+extern __m512  __cdecl _mm512_cvt_roundepu32_ps(__m512i, int);
+extern __m512  __cdecl _mm512_mask_cvt_roundepu32_ps(__m512, __mmask16, __m512i, int);
+extern __m512  __cdecl _mm512_maskz_cvt_roundepu32_ps(__mmask16, __m512i, int);
+extern __m512  __cdecl _mm512_cvtph_ps(__m256i);
+extern __m512  __cdecl _mm512_mask_cvtph_ps(__m512, __mmask16, __m256i);
+extern __m512  __cdecl _mm512_maskz_cvtph_ps(__mmask16, __m256i);
+extern __m512  __cdecl _mm512_cvt_roundph_ps(__m256i, int);
+extern __m512  __cdecl _mm512_mask_cvt_roundph_ps(__m512, __mmask16, __m256i, int);
+extern __m512  __cdecl _mm512_maskz_cvt_roundph_ps(__mmask16, __m256i, int);
+extern __m256i __cdecl _mm512_cvtps_ph(__m512, int);
+extern __m256i __cdecl _mm512_mask_cvtps_ph(__m256i, __mmask16, __m512, int);
+extern __m256i __cdecl _mm512_maskz_cvtps_ph(__mmask16, __m512, int);
+extern __m256i __cdecl _mm512_cvt_roundps_ph(__m512, int);
+extern __m256i __cdecl _mm512_mask_cvt_roundps_ph(__m256i, __mmask16, __m512, int);
+extern __m256i __cdecl _mm512_maskz_cvt_roundps_ph(__mmask16, __m512, int);
+extern __m256  __cdecl _mm512_cvtepi64_ps(__m512i);
+extern __m256  __cdecl _mm512_mask_cvtepi64_ps(__m256, __mmask8, __m512i);
+extern __m256  __cdecl _mm512_maskz_cvtepi64_ps(__mmask8, __m512i);
+extern __m256  __cdecl _mm512_cvt_roundepi64_ps(__m512i, int);
+extern __m256  __cdecl _mm512_mask_cvt_roundepi64_ps(__m256, __mmask8, __m512i, int);
+extern __m256  __cdecl _mm512_maskz_cvt_roundepi64_ps(__mmask8, __m512i, int);
+extern __m256  __cdecl _mm512_cvtepu64_ps(__m512i);
+extern __m256  __cdecl _mm512_mask_cvtepu64_ps(__m256, __mmask8, __m512i);
+extern __m256  __cdecl _mm512_maskz_cvtepu64_ps(__mmask8, __m512i);
+extern __m256  __cdecl _mm512_cvt_roundepu64_ps(__m512i, int);
+extern __m256  __cdecl _mm512_mask_cvt_roundepu64_ps(__m256, __mmask8, __m512i, int);
+extern __m256  __cdecl _mm512_maskz_cvt_roundepu64_ps(__mmask8, __m512i, int);
+
+extern __m512i __cdecl _mm512_cvtepi8_epi32(__m128i);
+extern __m512i __cdecl _mm512_mask_cvtepi8_epi32(__m512i, __mmask16, __m128i);
+extern __m512i __cdecl _mm512_maskz_cvtepi8_epi32(__mmask16, __m128i);
+extern __m512i __cdecl _mm512_cvtepi8_epi64(__m128i);
+extern __m512i __cdecl _mm512_mask_cvtepi8_epi64(__m512i, __mmask8, __m128i);
+extern __m512i __cdecl _mm512_maskz_cvtepi8_epi64(__mmask8, __m128i);
+extern __m512i __cdecl _mm512_cvtepi16_epi32(__m256i);
+extern __m512i __cdecl _mm512_mask_cvtepi16_epi32(__m512i, __mmask16, __m256i);
+extern __m512i __cdecl _mm512_maskz_cvtepi16_epi32(__mmask16, __m256i);
+extern __m512i __cdecl _mm512_cvtepi16_epi64(__m128i);
+extern __m512i __cdecl _mm512_mask_cvtepi16_epi64(__m512i, __mmask8, __m128i);
+extern __m512i __cdecl _mm512_maskz_cvtepi16_epi64(__mmask8, __m128i);
+extern __m128i __cdecl _mm512_cvtepi32_epi8(__m512i);
+extern __m128i __cdecl _mm512_mask_cvtepi32_epi8(__m128i, __mmask16, __m512i);
+extern __m128i __cdecl _mm512_maskz_cvtepi32_epi8(__mmask16, __m512i);
+extern void    __cdecl _mm512_mask_cvtepi32_storeu_epi8(void*, __mmask16, __m512i);
+extern __m128i __cdecl _mm512_cvtsepi32_epi8(__m512i);
+extern __m128i __cdecl _mm512_mask_cvtsepi32_epi8(__m128i, __mmask16, __m512i);
+extern __m128i __cdecl _mm512_maskz_cvtsepi32_epi8(__mmask16, __m512i);
+extern void    __cdecl _mm512_mask_cvtsepi32_storeu_epi8(void*, __mmask16, __m512i);
+extern __m128i __cdecl _mm512_cvtusepi32_epi8(__m512i);
+extern __m128i __cdecl _mm512_mask_cvtusepi32_epi8(__m128i, __mmask16, __m512i);
+extern __m128i __cdecl _mm512_maskz_cvtusepi32_epi8(__mmask16, __m512i);
+extern void    __cdecl _mm512_mask_cvtusepi32_storeu_epi8(void*, __mmask16, __m512i);
+extern __m256i __cdecl _mm512_cvtepi32_epi16(__m512i);
+extern __m256i __cdecl _mm512_mask_cvtepi32_epi16(__m256i, __mmask16, __m512i);
+extern __m256i __cdecl _mm512_maskz_cvtepi32_epi16(__mmask16, __m512i);
+extern void    __cdecl _mm512_mask_cvtepi32_storeu_epi16(void*, __mmask16, __m512i);
+extern __m256i __cdecl _mm512_cvtsepi32_epi16(__m512i);
+extern __m256i __cdecl _mm512_mask_cvtsepi32_epi16(__m256i, __mmask16, __m512i);
+extern __m256i __cdecl _mm512_maskz_cvtsepi32_epi16(__mmask16, __m512i);
+extern void    __cdecl _mm512_mask_cvtsepi32_storeu_epi16(void*, __mmask16, __m512i);
+extern __m256i __cdecl _mm512_cvtusepi32_epi16(__m512i);
+extern __m256i __cdecl _mm512_mask_cvtusepi32_epi16(__m256i, __mmask16, __m512i);
+extern __m256i __cdecl _mm512_maskz_cvtusepi32_epi16(__mmask16, __m512i);
+extern void    __cdecl _mm512_mask_cvtusepi32_storeu_epi16(void*, __mmask16, __m512i);
+extern __m512i __cdecl _mm512_cvtepi32_epi64(__m256i);
+extern __m512i __cdecl _mm512_mask_cvtepi32_epi64(__m512i, __mmask8, __m256i);
+extern __m512i __cdecl _mm512_maskz_cvtepi32_epi64(__mmask8, __m256i);
+extern __m128i __cdecl _mm512_cvtepi64_epi8(__m512i);
+extern __m128i __cdecl _mm512_mask_cvtepi64_epi8(__m128i, __mmask8, __m512i);
+extern __m128i __cdecl _mm512_maskz_cvtepi64_epi8(__mmask8, __m512i);
+extern void    __cdecl _mm512_mask_cvtepi64_storeu_epi8(void*, __mmask8, __m512i);
+extern __m128i __cdecl _mm512_cvtsepi64_epi8(__m512i);
+extern __m128i __cdecl _mm512_mask_cvtsepi64_epi8(__m128i, __mmask8, __m512i);
+extern __m128i __cdecl _mm512_maskz_cvtsepi64_epi8(__mmask8, __m512i);
+extern void    __cdecl _mm512_mask_cvtsepi64_storeu_epi8(void*, __mmask8, __m512i);
+extern __m128i __cdecl _mm512_cvtusepi64_epi8(__m512i);
+extern __m128i __cdecl _mm512_mask_cvtusepi64_epi8(__m128i, __mmask8, __m512i);
+extern __m128i __cdecl _mm512_maskz_cvtusepi64_epi8(__mmask8, __m512i);
+extern void    __cdecl _mm512_mask_cvtusepi64_storeu_epi8(void*, __mmask8, __m512i);
+extern __m128i __cdecl _mm512_cvtepi64_epi16(__m512i);
+extern __m128i __cdecl _mm512_mask_cvtepi64_epi16(__m128i, __mmask8, __m512i);
+extern __m128i __cdecl _mm512_maskz_cvtepi64_epi16(__mmask8, __m512i);
+extern void    __cdecl _mm512_mask_cvtepi64_storeu_epi16(void*, __mmask8, __m512i);
+extern __m128i __cdecl _mm512_cvtsepi64_epi16(__m512i);
+extern __m128i __cdecl _mm512_mask_cvtsepi64_epi16(__m128i, __mmask8, __m512i);
+extern __m128i __cdecl _mm512_maskz_cvtsepi64_epi16(__mmask8, __m512i);
+extern void    __cdecl _mm512_mask_cvtsepi64_storeu_epi16(void*, __mmask8, __m512i);
+extern __m128i __cdecl _mm512_cvtusepi64_epi16(__m512i);
+extern __m128i __cdecl _mm512_mask_cvtusepi64_epi16(__m128i, __mmask8, __m512i);
+extern __m128i __cdecl _mm512_maskz_cvtusepi64_epi16(__mmask8, __m512i);
+extern void    __cdecl _mm512_mask_cvtusepi64_storeu_epi16(void*, __mmask8, __m512i);
+extern __m256i __cdecl _mm512_cvtepi64_epi32(__m512i);
+extern __m256i __cdecl _mm512_mask_cvtepi64_epi32(__m256i, __mmask8, __m512i);
+extern __m256i __cdecl _mm512_maskz_cvtepi64_epi32(__mmask8, __m512i);
+extern void    __cdecl _mm512_mask_cvtepi64_storeu_epi32(void*, __mmask8, __m512i);
+extern __m256i __cdecl _mm512_cvtsepi64_epi32(__m512i);
+extern __m256i __cdecl _mm512_mask_cvtsepi64_epi32(__m256i, __mmask8, __m512i);
+extern __m256i __cdecl _mm512_maskz_cvtsepi64_epi32(__mmask8, __m512i);
+extern void    __cdecl _mm512_mask_cvtsepi64_storeu_epi32(void*, __mmask8, __m512i);
+extern __m256i __cdecl _mm512_cvtusepi64_epi32(__m512i);
+extern __m256i __cdecl _mm512_mask_cvtusepi64_epi32(__m256i, __mmask8, __m512i);
+extern __m256i __cdecl _mm512_maskz_cvtusepi64_epi32(__mmask8, __m512i);
+extern void    __cdecl _mm512_mask_cvtusepi64_storeu_epi32(void*, __mmask8, __m512i);
+extern __m512i __cdecl _mm512_cvtepu8_epi32(__m128i);
+extern __m512i __cdecl _mm512_mask_cvtepu8_epi32(__m512i, __mmask16, __m128i);
+extern __m512i __cdecl _mm512_maskz_cvtepu8_epi32(__mmask16, __m128i);
+extern __m512i __cdecl _mm512_cvtepu8_epi64(__m128i);
+extern __m512i __cdecl _mm512_mask_cvtepu8_epi64(__m512i, __mmask8, __m128i);
+extern __m512i __cdecl _mm512_maskz_cvtepu8_epi64(__mmask8, __m128i);
+extern __m512i __cdecl _mm512_cvtepu16_epi32(__m256i);
+extern __m512i __cdecl _mm512_mask_cvtepu16_epi32(__m512i, __mmask16, __m256i);
+extern __m512i __cdecl _mm512_maskz_cvtepu16_epi32(__mmask16, __m256i);
+extern __m512i __cdecl _mm512_cvtepu16_epi64(__m128i);
+extern __m512i __cdecl _mm512_mask_cvtepu16_epi64(__m512i, __mmask8, __m128i);
+extern __m512i __cdecl _mm512_maskz_cvtepu16_epi64(__mmask8, __m128i);
+extern __m512i __cdecl _mm512_cvtepu32_epi64(__m256i);
+extern __m512i __cdecl _mm512_mask_cvtepu32_epi64(__m512i, __mmask8, __m256i);
+extern __m512i __cdecl _mm512_maskz_cvtepu32_epi64(__mmask8, __m256i);
+
+extern __m512i __cdecl _mm512_cvtps_epi32(__m512);
+extern __m512i __cdecl _mm512_mask_cvtps_epi32(__m512i, __mmask16, __m512);
+extern __m512i __cdecl _mm512_maskz_cvtps_epi32(__mmask16, __m512);
+extern __m512i __cdecl _mm512_cvt_roundps_epi32(__m512, int);
+extern __m512i __cdecl _mm512_mask_cvt_roundps_epi32(__m512i, __mmask16, __m512, int);
+extern __m512i __cdecl _mm512_maskz_cvt_roundps_epi32(__mmask16, __m512, int);
+extern __m512i __cdecl _mm512_cvttps_epi32(__m512);
+extern __m512i __cdecl _mm512_mask_cvttps_epi32(__m512i, __mmask16, __m512);
+extern __m512i __cdecl _mm512_maskz_cvttps_epi32(__mmask16, __m512);
+extern __m512i __cdecl _mm512_cvtt_roundps_epi32(__m512, int);
+extern __m512i __cdecl _mm512_mask_cvtt_roundps_epi32(__m512i, __mmask16, __m512, int);
+extern __m512i __cdecl _mm512_maskz_cvtt_roundps_epi32(__mmask16, __m512, int);
+extern __m512i __cdecl _mm512_cvtps_epu32(__m512);
+extern __m512i __cdecl _mm512_mask_cvtps_epu32(__m512i, __mmask16, __m512);
+extern __m512i __cdecl _mm512_maskz_cvtps_epu32(__mmask16, __m512);
+extern __m512i __cdecl _mm512_cvt_roundps_epu32(__m512, int);
+extern __m512i __cdecl _mm512_mask_cvt_roundps_epu32(__m512i, __mmask16, __m512, int);
+extern __m512i __cdecl _mm512_maskz_cvt_roundps_epu32(__mmask16, __m512, int);
+extern __m512i __cdecl _mm512_cvttps_epu32(__m512);
+extern __m512i __cdecl _mm512_mask_cvttps_epu32(__m512i, __mmask16, __m512);
+extern __m512i __cdecl _mm512_maskz_cvttps_epu32(__mmask16, __m512);
+extern __m512i __cdecl _mm512_cvtt_roundps_epu32(__m512, int);
+extern __m512i __cdecl _mm512_mask_cvtt_roundps_epu32(__m512i, __mmask16, __m512, int);
+extern __m512i __cdecl _mm512_maskz_cvtt_roundps_epu32(__mmask16, __m512, int);
+extern __m256i __cdecl _mm512_cvtpd_epi32(__m512d);
+extern __m256i __cdecl _mm512_mask_cvtpd_epi32(__m256i, __mmask8, __m512d);
+extern __m256i __cdecl _mm512_maskz_cvtpd_epi32(__mmask8, __m512d);
+extern __m256i __cdecl _mm512_cvt_roundpd_epi32(__m512d, int);
+extern __m256i __cdecl _mm512_mask_cvt_roundpd_epi32(__m256i, __mmask8, __m512d, int);
+extern __m256i __cdecl _mm512_maskz_cvt_roundpd_epi32(__mmask8, __m512d, int);
+extern __m256i __cdecl _mm512_cvttpd_epi32(__m512d);
+extern __m256i __cdecl _mm512_mask_cvttpd_epi32(__m256i, __mmask8, __m512d);
+extern __m256i __cdecl _mm512_maskz_cvttpd_epi32(__mmask8, __m512d);
+extern __m256i __cdecl _mm512_cvtt_roundpd_epi32(__m512d, int);
+extern __m256i __cdecl _mm512_mask_cvtt_roundpd_epi32(__m256i, __mmask8, __m512d, int);
+extern __m256i __cdecl _mm512_maskz_cvtt_roundpd_epi32(__mmask8, __m512d, int);
+extern __m256i __cdecl _mm512_cvtpd_epu32(__m512d);
+extern __m256i __cdecl _mm512_mask_cvtpd_epu32(__m256i, __mmask8, __m512d);
+extern __m256i __cdecl _mm512_maskz_cvtpd_epu32(__mmask8, __m512d);
+extern __m256i __cdecl _mm512_cvt_roundpd_epu32(__m512d, int);
+extern __m256i __cdecl _mm512_mask_cvt_roundpd_epu32(__m256i, __mmask8, __m512d, int);
+extern __m256i __cdecl _mm512_maskz_cvt_roundpd_epu32(__mmask8, __m512d, int);
+extern __m256i __cdecl _mm512_cvttpd_epu32(__m512d);
+extern __m256i __cdecl _mm512_mask_cvttpd_epu32(__m256i, __mmask8, __m512d);
+extern __m256i __cdecl _mm512_maskz_cvttpd_epu32(__mmask8, __m512d);
+extern __m256i __cdecl _mm512_cvtt_roundpd_epu32(__m512d, int);
+extern __m256i __cdecl _mm512_mask_cvtt_roundpd_epu32(__m256i, __mmask8, __m512d, int);
+extern __m256i __cdecl _mm512_maskz_cvtt_roundpd_epu32(__mmask8, __m512d, int);
+
+extern __m512i __cdecl _mm512_cvtepi8_epi16(__m256i);
+extern __m512i __cdecl _mm512_mask_cvtepi8_epi16(__m512i, __mmask32, __m256i);
+extern __m512i __cdecl _mm512_maskz_cvtepi8_epi16(__mmask32, __m256i);
+extern __m512i __cdecl _mm512_cvtepu8_epi16(__m256i);
+extern __m512i __cdecl _mm512_mask_cvtepu8_epi16(__m512i, __mmask32, __m256i);
+extern __m512i __cdecl _mm512_maskz_cvtepu8_epi16(__mmask32, __m256i);
+extern __m256i __cdecl _mm512_cvtepi16_epi8(__m512i);
+extern __m256i __cdecl _mm512_mask_cvtepi16_epi8(__m256i, __mmask32, __m512i);
+extern __m256i __cdecl _mm512_maskz_cvtepi16_epi8(__mmask32, __m512i);
+extern void    __cdecl _mm512_mask_cvtepi16_storeu_epi8(void*, __mmask32, __m512i);
+extern __m256i __cdecl _mm512_cvtsepi16_epi8(__m512i);
+extern __m256i __cdecl _mm512_mask_cvtsepi16_epi8(__m256i, __mmask32, __m512i);
+extern __m256i __cdecl _mm512_maskz_cvtsepi16_epi8(__mmask32, __m512i);
+extern void    __cdecl _mm512_mask_cvtsepi16_storeu_epi8(void*, __mmask32, __m512i);
+extern __m256i __cdecl _mm512_cvtusepi16_epi8(__m512i);
+extern __m256i __cdecl _mm512_mask_cvtusepi16_epi8(__m256i, __mmask32, __m512i);
+extern __m256i __cdecl _mm512_maskz_cvtusepi16_epi8(__mmask32, __m512i);
+extern void    __cdecl _mm512_mask_cvtusepi16_storeu_epi8(void*, __mmask32, __m512i);
+
+extern __m512d __cdecl _mm512_cvtepi64_pd(__m512i);
+extern __m512d __cdecl _mm512_mask_cvtepi64_pd(__m512d, __mmask8, __m512i);
+extern __m512d __cdecl _mm512_maskz_cvtepi64_pd(__mmask8, __m512i);
+extern __m512d __cdecl _mm512_cvt_roundepi64_pd(__m512i, int);
+extern __m512d __cdecl _mm512_mask_cvt_roundepi64_pd(__m512d, __mmask8, __m512i, int);
+extern __m512d __cdecl _mm512_maskz_cvt_roundepi64_pd(__mmask8, __m512i, int);
+extern __m512d __cdecl _mm512_cvtepu64_pd(__m512i);
+extern __m512d __cdecl _mm512_mask_cvtepu64_pd(__m512d, __mmask8, __m512i);
+extern __m512d __cdecl _mm512_maskz_cvtepu64_pd(__mmask8, __m512i);
+extern __m512d __cdecl _mm512_cvt_roundepu64_pd(__m512i, int);
+extern __m512d __cdecl _mm512_mask_cvt_roundepu64_pd(__m512d, __mmask8, __m512i, int);
+extern __m512d __cdecl _mm512_maskz_cvt_roundepu64_pd(__mmask8, __m512i, int);
+extern __m512i __cdecl _mm512_cvtpd_epi64(__m512d);
+extern __m512i __cdecl _mm512_mask_cvtpd_epi64(__m512i, __mmask8, __m512d);
+extern __m512i __cdecl _mm512_maskz_cvtpd_epi64(__mmask8, __m512d);
+extern __m512i __cdecl _mm512_cvt_roundpd_epi64(__m512d, int);
+extern __m512i __cdecl _mm512_mask_cvt_roundpd_epi64(__m512i, __mmask8, __m512d, int);
+extern __m512i __cdecl _mm512_maskz_cvt_roundpd_epi64(__mmask8, __m512d, int);
+extern __m512i __cdecl _mm512_cvtpd_epu64(__m512d);
+extern __m512i __cdecl _mm512_mask_cvtpd_epu64(__m512i, __mmask8, __m512d);
+extern __m512i __cdecl _mm512_maskz_cvtpd_epu64(__mmask8, __m512d);
+extern __m512i __cdecl _mm512_cvt_roundpd_epu64(__m512d, int);
+extern __m512i __cdecl _mm512_mask_cvt_roundpd_epu64(__m512i, __mmask8, __m512d, int);
+extern __m512i __cdecl _mm512_maskz_cvt_roundpd_epu64(__mmask8, __m512d, int);
+extern __m512i __cdecl _mm512_cvttpd_epi64(__m512d);
+extern __m512i __cdecl _mm512_mask_cvttpd_epi64(__m512i, __mmask8, __m512d);
+extern __m512i __cdecl _mm512_maskz_cvttpd_epi64(__mmask8, __m512d);
+extern __m512i __cdecl _mm512_cvtt_roundpd_epi64(__m512d, int);
+extern __m512i __cdecl _mm512_mask_cvtt_roundpd_epi64(__m512i, __mmask8, __m512d, int);
+extern __m512i __cdecl _mm512_maskz_cvtt_roundpd_epi64(__mmask8, __m512d, int);
+extern __m512i __cdecl _mm512_cvttpd_epu64(__m512d);
+extern __m512i __cdecl _mm512_mask_cvttpd_epu64(__m512i, __mmask8, __m512d);
+extern __m512i __cdecl _mm512_maskz_cvttpd_epu64(__mmask8, __m512d);
+extern __m512i __cdecl _mm512_cvtt_roundpd_epu64(__m512d, int);
+extern __m512i __cdecl _mm512_mask_cvtt_roundpd_epu64(__m512i, __mmask8, __m512d, int);
+extern __m512i __cdecl _mm512_maskz_cvtt_roundpd_epu64(__mmask8, __m512d, int);
+extern __m512i __cdecl _mm512_cvtps_epi64(__m256);
+extern __m512i __cdecl _mm512_mask_cvtps_epi64(__m512i, __mmask8, __m256);
+extern __m512i __cdecl _mm512_maskz_cvtps_epi64(__mmask8, __m256);
+extern __m512i __cdecl _mm512_cvt_roundps_epi64(__m256, int);
+extern __m512i __cdecl _mm512_mask_cvt_roundps_epi64(__m512i, __mmask8, __m256, int);
+extern __m512i __cdecl _mm512_maskz_cvt_roundps_epi64(__mmask8, __m256, int);
+extern __m512i __cdecl _mm512_cvtps_epu64(__m256);
+extern __m512i __cdecl _mm512_mask_cvtps_epu64(__m512i, __mmask8, __m256);
+extern __m512i __cdecl _mm512_maskz_cvtps_epu64(__mmask8, __m256);
+extern __m512i __cdecl _mm512_cvt_roundps_epu64(__m256, int);
+extern __m512i __cdecl _mm512_mask_cvt_roundps_epu64(__m512i, __mmask8, __m256, int);
+extern __m512i __cdecl _mm512_maskz_cvt_roundps_epu64(__mmask8, __m256, int);
+extern __m512i __cdecl _mm512_cvttps_epi64(__m256);
+extern __m512i __cdecl _mm512_mask_cvttps_epi64(__m512i, __mmask8, __m256);
+extern __m512i __cdecl _mm512_maskz_cvttps_epi64(__mmask8, __m256);
+extern __m512i __cdecl _mm512_cvtt_roundps_epi64(__m256, int);
+extern __m512i __cdecl _mm512_mask_cvtt_roundps_epi64(__m512i, __mmask8, __m256, int);
+extern __m512i __cdecl _mm512_maskz_cvtt_roundps_epi64(__mmask8, __m256, int);
+extern __m512i __cdecl _mm512_cvttps_epu64(__m256);
+extern __m512i __cdecl _mm512_mask_cvttps_epu64(__m512i, __mmask8, __m256);
+extern __m512i __cdecl _mm512_maskz_cvttps_epu64(__mmask8, __m256);
+extern __m512i __cdecl _mm512_cvtt_roundps_epu64(__m256, int);
+extern __m512i __cdecl _mm512_mask_cvtt_roundps_epu64(__m512i, __mmask8, __m256, int);
+extern __m512i __cdecl _mm512_maskz_cvtt_roundps_epu64(__mmask8, __m256, int);
+
+extern __mmask64  __cdecl _mm512_cmpeq_epi8_mask(__m512i, __m512i);
+extern __mmask64  __cdecl _mm512_cmpge_epi8_mask(__m512i, __m512i);
+extern __mmask64  __cdecl _mm512_cmpgt_epi8_mask(__m512i, __m512i);
+extern __mmask64  __cdecl _mm512_cmple_epi8_mask(__m512i, __m512i);
+extern __mmask64  __cdecl _mm512_cmplt_epi8_mask(__m512i, __m512i);
+extern __mmask64  __cdecl _mm512_cmpneq_epi8_mask(__m512i, __m512i);
+extern __mmask64  __cdecl _mm512_cmpeq_epu8_mask(__m512i, __m512i);
+extern __mmask64  __cdecl _mm512_cmpge_epu8_mask(__m512i, __m512i);
+extern __mmask64  __cdecl _mm512_cmpgt_epu8_mask(__m512i, __m512i);
+extern __mmask64  __cdecl _mm512_cmple_epu8_mask(__m512i, __m512i);
+extern __mmask64  __cdecl _mm512_cmplt_epu8_mask(__m512i, __m512i);
+extern __mmask64  __cdecl _mm512_cmpneq_epu8_mask(__m512i, __m512i);
+
+extern __mmask64  __cdecl _mm512_mask_cmpeq_epi8_mask(__mmask64, __m512i, __m512i);
+extern __mmask64  __cdecl _mm512_mask_cmpge_epi8_mask(__mmask64, __m512i, __m512i);
+extern __mmask64  __cdecl _mm512_mask_cmpgt_epi8_mask(__mmask64, __m512i, __m512i);
+extern __mmask64  __cdecl _mm512_mask_cmple_epi8_mask(__mmask64, __m512i, __m512i);
+extern __mmask64  __cdecl _mm512_mask_cmplt_epi8_mask(__mmask64, __m512i, __m512i);
+extern __mmask64  __cdecl _mm512_mask_cmpneq_epi8_mask(__mmask64, __m512i, __m512i);
+extern __mmask64  __cdecl _mm512_mask_cmpeq_epu8_mask(__mmask64, __m512i, __m512i);
+extern __mmask64  __cdecl _mm512_mask_cmpge_epu8_mask(__mmask64, __m512i, __m512i);
+extern __mmask64  __cdecl _mm512_mask_cmpgt_epu8_mask(__mmask64, __m512i, __m512i);
+extern __mmask64  __cdecl _mm512_mask_cmple_epu8_mask(__mmask64, __m512i, __m512i);
+extern __mmask64  __cdecl _mm512_mask_cmplt_epu8_mask(__mmask64, __m512i, __m512i);
+extern __mmask64  __cdecl _mm512_mask_cmpneq_epu8_mask(__mmask64, __m512i, __m512i);
+
+extern __mmask32  __cdecl _mm512_cmpeq_epi16_mask(__m512i, __m512i);
+extern __mmask32  __cdecl _mm512_cmpge_epi16_mask(__m512i, __m512i);
+extern __mmask32  __cdecl _mm512_cmpgt_epi16_mask(__m512i, __m512i);
+extern __mmask32  __cdecl _mm512_cmple_epi16_mask(__m512i, __m512i);
+extern __mmask32  __cdecl _mm512_cmplt_epi16_mask(__m512i, __m512i);
+extern __mmask32  __cdecl _mm512_cmpneq_epi16_mask(__m512i, __m512i);
+extern __mmask32  __cdecl _mm512_cmpeq_epu16_mask(__m512i, __m512i);
+extern __mmask32  __cdecl _mm512_cmpge_epu16_mask(__m512i, __m512i);
+extern __mmask32  __cdecl _mm512_cmpgt_epu16_mask(__m512i, __m512i);
+extern __mmask32  __cdecl _mm512_cmple_epu16_mask(__m512i, __m512i);
+extern __mmask32  __cdecl _mm512_cmplt_epu16_mask(__m512i, __m512i);
+extern __mmask32  __cdecl _mm512_cmpneq_epu16_mask(__m512i, __m512i);
+
+extern __mmask32  __cdecl _mm512_mask_cmpeq_epi16_mask(__mmask32, __m512i, __m512i);
+extern __mmask32  __cdecl _mm512_mask_cmpge_epi16_mask(__mmask32, __m512i, __m512i);
+extern __mmask32  __cdecl _mm512_mask_cmpgt_epi16_mask(__mmask32, __m512i, __m512i);
+extern __mmask32  __cdecl _mm512_mask_cmple_epi16_mask(__mmask32, __m512i, __m512i);
+extern __mmask32  __cdecl _mm512_mask_cmplt_epi16_mask(__mmask32, __m512i, __m512i);
+extern __mmask32  __cdecl _mm512_mask_cmpneq_epi16_mask(__mmask32, __m512i, __m512i);
+extern __mmask32  __cdecl _mm512_mask_cmpeq_epu16_mask(__mmask32, __m512i, __m512i);
+extern __mmask32  __cdecl _mm512_mask_cmpge_epu16_mask(__mmask32, __m512i, __m512i);
+extern __mmask32  __cdecl _mm512_mask_cmpgt_epu16_mask(__mmask32, __m512i, __m512i);
+extern __mmask32  __cdecl _mm512_mask_cmple_epu16_mask(__mmask32, __m512i, __m512i);
+extern __mmask32  __cdecl _mm512_mask_cmplt_epu16_mask(__mmask32, __m512i, __m512i);
+extern __mmask32  __cdecl _mm512_mask_cmpneq_epu16_mask(__mmask32, __m512i, __m512i);
+
+extern __mmask16  __cdecl _mm512_cmpeq_epi32_mask(__m512i, __m512i);
+extern __mmask16  __cdecl _mm512_cmpge_epi32_mask(__m512i, __m512i);
+extern __mmask16  __cdecl _mm512_cmpgt_epi32_mask(__m512i, __m512i);
+extern __mmask16  __cdecl _mm512_cmple_epi32_mask(__m512i, __m512i);
+extern __mmask16  __cdecl _mm512_cmplt_epi32_mask(__m512i, __m512i);
+extern __mmask16  __cdecl _mm512_cmpneq_epi32_mask(__m512i, __m512i);
+extern __mmask16  __cdecl _mm512_cmpeq_epu32_mask(__m512i, __m512i);
+extern __mmask16  __cdecl _mm512_cmpge_epu32_mask(__m512i, __m512i);
+extern __mmask16  __cdecl _mm512_cmpgt_epu32_mask(__m512i, __m512i);
+extern __mmask16  __cdecl _mm512_cmple_epu32_mask(__m512i, __m512i);
+extern __mmask16  __cdecl _mm512_cmplt_epu32_mask(__m512i, __m512i);
+extern __mmask16  __cdecl _mm512_cmpneq_epu32_mask(__m512i, __m512i);
+
+extern __mmask16  __cdecl _mm512_mask_cmpeq_epi32_mask(__mmask16, __m512i, __m512i);
+extern __mmask16  __cdecl _mm512_mask_cmpge_epi32_mask(__mmask16, __m512i, __m512i);
+extern __mmask16  __cdecl _mm512_mask_cmpgt_epi32_mask(__mmask16, __m512i, __m512i);
+extern __mmask16  __cdecl _mm512_mask_cmple_epi32_mask(__mmask16, __m512i, __m512i);
+extern __mmask16  __cdecl _mm512_mask_cmplt_epi32_mask(__mmask16, __m512i, __m512i);
+extern __mmask16  __cdecl _mm512_mask_cmpneq_epi32_mask(__mmask16, __m512i, __m512i);
+extern __mmask16  __cdecl _mm512_mask_cmpeq_epu32_mask(__mmask16, __m512i, __m512i);
+extern __mmask16  __cdecl _mm512_mask_cmpge_epu32_mask(__mmask16, __m512i, __m512i);
+extern __mmask16  __cdecl _mm512_mask_cmpgt_epu32_mask(__mmask16, __m512i, __m512i);
+extern __mmask16  __cdecl _mm512_mask_cmple_epu32_mask(__mmask16, __m512i, __m512i);
+extern __mmask16  __cdecl _mm512_mask_cmplt_epu32_mask(__mmask16, __m512i, __m512i);
+extern __mmask16  __cdecl _mm512_mask_cmpneq_epu32_mask(__mmask16, __m512i, __m512i);
+
+extern __mmask8  __cdecl _mm512_cmpeq_epi64_mask(__m512i, __m512i);
+extern __mmask8  __cdecl _mm512_cmpge_epi64_mask(__m512i, __m512i);
+extern __mmask8  __cdecl _mm512_cmpgt_epi64_mask(__m512i, __m512i);
+extern __mmask8  __cdecl _mm512_cmple_epi64_mask(__m512i, __m512i);
+extern __mmask8  __cdecl _mm512_cmplt_epi64_mask(__m512i, __m512i);
+extern __mmask8  __cdecl _mm512_cmpneq_epi64_mask(__m512i, __m512i);
+extern __mmask8  __cdecl _mm512_cmpeq_epu64_mask(__m512i, __m512i);
+extern __mmask8  __cdecl _mm512_cmpge_epu64_mask(__m512i, __m512i);
+extern __mmask8  __cdecl _mm512_cmpgt_epu64_mask(__m512i, __m512i);
+extern __mmask8  __cdecl _mm512_cmple_epu64_mask(__m512i, __m512i);
+extern __mmask8  __cdecl _mm512_cmplt_epu64_mask(__m512i, __m512i);
+extern __mmask8  __cdecl _mm512_cmpneq_epu64_mask(__m512i, __m512i);
+
+extern __mmask8  __cdecl _mm512_mask_cmpeq_epi64_mask(__mmask8, __m512i, __m512i);
+extern __mmask8  __cdecl _mm512_mask_cmpge_epi64_mask(__mmask8, __m512i, __m512i);
+extern __mmask8  __cdecl _mm512_mask_cmpgt_epi64_mask(__mmask8, __m512i, __m512i);
+extern __mmask8  __cdecl _mm512_mask_cmple_epi64_mask(__mmask8, __m512i, __m512i);
+extern __mmask8  __cdecl _mm512_mask_cmplt_epi64_mask(__mmask8, __m512i, __m512i);
+extern __mmask8  __cdecl _mm512_mask_cmpneq_epi64_mask(__mmask8, __m512i, __m512i);
+extern __mmask8  __cdecl _mm512_mask_cmpeq_epu64_mask(__mmask8, __m512i, __m512i);
+extern __mmask8  __cdecl _mm512_mask_cmpge_epu64_mask(__mmask8, __m512i, __m512i);
+extern __mmask8  __cdecl _mm512_mask_cmpgt_epu64_mask(__mmask8, __m512i, __m512i);
+extern __mmask8  __cdecl _mm512_mask_cmple_epu64_mask(__mmask8, __m512i, __m512i);
+extern __mmask8  __cdecl _mm512_mask_cmplt_epu64_mask(__mmask8, __m512i, __m512i);
+extern __mmask8  __cdecl _mm512_mask_cmpneq_epu64_mask(__mmask8, __m512i, __m512i);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m128i   __cdecl _mm_mask_abs_epi16(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_abs_epi16(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_abs_epi16(__m256i, __mmask16, __m256i);
+extern __m256i   __cdecl _mm256_maskz_abs_epi16(__mmask16, __m256i);
+extern __m128i   __cdecl _mm_mask_abs_epi32(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_abs_epi32(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_abs_epi32(__m256i, __mmask8, __m256i);
+extern __m256i   __cdecl _mm256_maskz_abs_epi32(__mmask8, __m256i);
+extern __m128i   __cdecl _mm_abs_epi64(__m128i);
+extern __m128i   __cdecl _mm_mask_abs_epi64(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_abs_epi64(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_abs_epi64(__m256i);
+extern __m256i   __cdecl _mm256_mask_abs_epi64(__m256i, __mmask8, __m256i);
+extern __m256i   __cdecl _mm256_maskz_abs_epi64(__mmask8, __m256i);
+extern __m128i   __cdecl _mm_mask_abs_epi8(__m128i, __mmask16, __m128i);
+extern __m128i   __cdecl _mm_maskz_abs_epi8(__mmask16, __m128i);
+extern __m256i   __cdecl _mm256_mask_abs_epi8(__m256i, __mmask32, __m256i);
+extern __m256i   __cdecl _mm256_maskz_abs_epi8(__mmask32, __m256i);
+extern __m128i   __cdecl _mm_mask_add_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_add_epi16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_add_epi16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_add_epi16(__mmask16, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_add_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_add_epi32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_add_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_add_epi32(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_add_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_add_epi64(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_add_epi64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_add_epi64(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_add_epi8(__m128i, __mmask16, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_add_epi8(__mmask16, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_add_epi8(__m256i, __mmask32, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_add_epi8(__mmask32, __m256i, __m256i);
+extern __m128d   __cdecl _mm_mask_add_pd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_add_pd(__mmask8, __m128d, __m128d);
+extern __m256d   __cdecl _mm256_mask_add_pd(__m256d, __mmask8, __m256d, __m256d);
+extern __m256d   __cdecl _mm256_maskz_add_pd(__mmask8, __m256d, __m256d);
+extern __m128    __cdecl _mm_mask_add_ps(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_add_ps(__mmask8, __m128, __m128);
+extern __m256    __cdecl _mm256_mask_add_ps(__m256, __mmask8, __m256, __m256);
+extern __m256    __cdecl _mm256_maskz_add_ps(__mmask8, __m256, __m256);
+extern __m128i   __cdecl _mm_mask_adds_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_adds_epi16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_adds_epi16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_adds_epi16(__mmask16, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_adds_epi8(__m128i, __mmask16, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_adds_epi8(__mmask16, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_adds_epi8(__m256i, __mmask32, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_adds_epi8(__mmask32, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_adds_epu16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_adds_epu16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_adds_epu16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_adds_epu16(__mmask16, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_adds_epu8(__m128i, __mmask16, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_adds_epu8(__mmask16, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_adds_epu8(__m256i, __mmask32, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_adds_epu8(__mmask32, __m256i, __m256i);
+extern __m128i   __cdecl _mm_alignr_epi32(__m128i, __m128i, const int);
+extern __m128i   __cdecl _mm_mask_alignr_epi32(__m128i, __mmask8, __m128i, __m128i, const int);
+extern __m128i   __cdecl _mm_maskz_alignr_epi32(__mmask8, __m128i, __m128i, const int);
+extern __m256i   __cdecl _mm256_alignr_epi32(__m256i, __m256i, const int);
+extern __m256i   __cdecl _mm256_mask_alignr_epi32(__m256i, __mmask8, __m256i, __m256i, const int);
+extern __m256i   __cdecl _mm256_maskz_alignr_epi32(__mmask8, __m256i, __m256i, const int);
+extern __m128i   __cdecl _mm_alignr_epi64(__m128i, __m128i, const int);
+extern __m128i   __cdecl _mm_mask_alignr_epi64(__m128i, __mmask8, __m128i, __m128i, const int);
+extern __m128i   __cdecl _mm_maskz_alignr_epi64(__mmask8, __m128i, __m128i, const int);
+extern __m256i   __cdecl _mm256_alignr_epi64(__m256i, __m256i, const int);
+extern __m256i   __cdecl _mm256_mask_alignr_epi64(__m256i, __mmask8, __m256i, __m256i, const int);
+extern __m256i   __cdecl _mm256_maskz_alignr_epi64(__mmask8, __m256i, __m256i, const int);
+extern __m128i   __cdecl _mm_mask_alignr_epi8(__m128i, __mmask16, __m128i, __m128i, const int);
+extern __m128i   __cdecl _mm_maskz_alignr_epi8(__mmask16, __m128i, __m128i, const int);
+extern __m256i   __cdecl _mm256_mask_alignr_epi8(__m256i, __mmask32, __m256i, __m256i, const int);
+extern __m256i   __cdecl _mm256_maskz_alignr_epi8(__mmask32, __m256i, __m256i, const int);
+extern __m128i   __cdecl _mm_and_epi32(__m128i, __m128i);
+extern __m128i   __cdecl _mm_mask_and_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_and_epi32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_and_epi32(__m256i, __m256i);
+extern __m256i   __cdecl _mm256_mask_and_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_and_epi32(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_and_epi64(__m128i, __m128i);
+extern __m128i   __cdecl _mm_mask_and_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_and_epi64(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_and_epi64(__m256i, __m256i);
+extern __m256i   __cdecl _mm256_mask_and_epi64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_and_epi64(__mmask8, __m256i, __m256i);
+extern __m128d   __cdecl _mm_mask_and_pd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_and_pd(__mmask8, __m128d, __m128d);
+extern __m256d   __cdecl _mm256_mask_and_pd(__m256d, __mmask8, __m256d, __m256d);
+extern __m256d   __cdecl _mm256_maskz_and_pd(__mmask8, __m256d, __m256d);
+extern __m128    __cdecl _mm_mask_and_ps(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_and_ps(__mmask8, __m128, __m128);
+extern __m256    __cdecl _mm256_mask_and_ps(__m256, __mmask8, __m256, __m256);
+extern __m256    __cdecl _mm256_maskz_and_ps(__mmask8, __m256, __m256);
+extern __m128i   __cdecl _mm_andnot_epi32(__m128i, __m128i);
+extern __m128i   __cdecl _mm_mask_andnot_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_andnot_epi32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_andnot_epi32(__m256i, __m256i);
+extern __m256i   __cdecl _mm256_mask_andnot_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_andnot_epi32(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_andnot_epi64(__m128i, __m128i);
+extern __m128i   __cdecl _mm_mask_andnot_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_andnot_epi64(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_andnot_epi64(__m256i, __m256i);
+extern __m256i   __cdecl _mm256_mask_andnot_epi64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_andnot_epi64(__mmask8, __m256i, __m256i);
+extern __m128d   __cdecl _mm_mask_andnot_pd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_andnot_pd(__mmask8, __m128d, __m128d);
+extern __m256d   __cdecl _mm256_mask_andnot_pd(__m256d, __mmask8, __m256d, __m256d);
+extern __m256d   __cdecl _mm256_maskz_andnot_pd(__mmask8, __m256d, __m256d);
+extern __m128    __cdecl _mm_mask_andnot_ps(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_andnot_ps(__mmask8, __m128, __m128);
+extern __m256    __cdecl _mm256_mask_andnot_ps(__m256, __mmask8, __m256, __m256);
+extern __m256    __cdecl _mm256_maskz_andnot_ps(__mmask8, __m256, __m256);
+extern __m128i   __cdecl _mm_mask_avg_epu16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_avg_epu16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_avg_epu16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_avg_epu16(__mmask16, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_avg_epu8(__m128i, __mmask16, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_avg_epu8(__mmask16, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_avg_epu8(__m256i, __mmask32, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_avg_epu8(__mmask32, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_blend_epi16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_blend_epi16(__mmask16, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_blend_epi32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_blend_epi32(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_blend_epi64(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_blend_epi64(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_blend_epi8(__mmask16, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_blend_epi8(__mmask32, __m256i, __m256i);
+extern __m128d   __cdecl _mm_mask_blend_pd(__mmask8, __m128d, __m128d);
+extern __m256d   __cdecl _mm256_mask_blend_pd(__mmask8, __m256d, __m256d);
+extern __m128    __cdecl _mm_mask_blend_ps(__mmask8, __m128, __m128);
+extern __m256    __cdecl _mm256_mask_blend_ps(__mmask8, __m256, __m256);
+extern __m256    __cdecl _mm256_broadcast_f32x2(__m128);
+extern __m256    __cdecl _mm256_mask_broadcast_f32x2(__m256, __mmask8, __m128);
+extern __m256    __cdecl _mm256_maskz_broadcast_f32x2(__mmask8, __m128);
+extern __m256    __cdecl _mm256_broadcast_f32x4(__m128);
+extern __m256    __cdecl _mm256_mask_broadcast_f32x4(__m256, __mmask8, __m128);
+extern __m256    __cdecl _mm256_maskz_broadcast_f32x4(__mmask8, __m128);
+extern __m256d   __cdecl _mm256_broadcast_f64x2(__m128d);
+extern __m256d   __cdecl _mm256_mask_broadcast_f64x2(__m256d, __mmask8, __m128d);
+extern __m256d   __cdecl _mm256_maskz_broadcast_f64x2(__mmask8, __m128d);
+extern __m128i   __cdecl _mm_broadcast_i32x2(__m128i);
+extern __m128i   __cdecl _mm_mask_broadcast_i32x2(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_broadcast_i32x2(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_broadcast_i32x2(__m128i);
+extern __m256i   __cdecl _mm256_mask_broadcast_i32x2(__m256i, __mmask8, __m128i);
+extern __m256i   __cdecl _mm256_maskz_broadcast_i32x2(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_broadcast_i32x4(__m128i);
+extern __m256i   __cdecl _mm256_mask_broadcast_i32x4(__m256i, __mmask8, __m128i);
+extern __m256i   __cdecl _mm256_maskz_broadcast_i32x4(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_broadcast_i64x2(__m128i);
+extern __m256i   __cdecl _mm256_mask_broadcast_i64x2(__m256i, __mmask8, __m128i);
+extern __m256i   __cdecl _mm256_maskz_broadcast_i64x2(__mmask8, __m128i);
+extern __m128i   __cdecl _mm_mask_broadcastb_epi8(__m128i, __mmask16, __m128i);
+extern __m128i   __cdecl _mm_maskz_broadcastb_epi8(__mmask16, __m128i);
+extern __m256i   __cdecl _mm256_mask_broadcastb_epi8(__m256i, __mmask32, __m128i);
+extern __m256i   __cdecl _mm256_maskz_broadcastb_epi8(__mmask32, __m128i);
+extern __m128i   __cdecl _mm_mask_broadcastd_epi32(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_broadcastd_epi32(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_broadcastd_epi32(__m256i, __mmask8, __m128i);
+extern __m256i   __cdecl _mm256_maskz_broadcastd_epi32(__mmask8, __m128i);
+extern __m128i   __cdecl _mm_broadcastmb_epi64(__mmask8);
+extern __m256i   __cdecl _mm256_broadcastmb_epi64(__mmask8);
+extern __m128i   __cdecl _mm_broadcastmw_epi32(__mmask16);
+extern __m256i   __cdecl _mm256_broadcastmw_epi32(__mmask16);
+extern __m128i   __cdecl _mm_mask_broadcastq_epi64(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_broadcastq_epi64(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_broadcastq_epi64(__m256i, __mmask8, __m128i);
+extern __m256i   __cdecl _mm256_maskz_broadcastq_epi64(__mmask8, __m128i);
+extern __m256d   __cdecl _mm256_mask_broadcastsd_pd(__m256d, __mmask8, __m128d);
+extern __m256d   __cdecl _mm256_maskz_broadcastsd_pd(__mmask8, __m128d);
+extern __m128    __cdecl _mm_mask_broadcastss_ps(__m128, __mmask8, __m128);
+extern __m128    __cdecl _mm_maskz_broadcastss_ps(__mmask8, __m128);
+extern __m256    __cdecl _mm256_mask_broadcastss_ps(__m256, __mmask8, __m128);
+extern __m256    __cdecl _mm256_maskz_broadcastss_ps(__mmask8, __m128);
+extern __m128i   __cdecl _mm_mask_broadcastw_epi16(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_broadcastw_epi16(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_broadcastw_epi16(__m256i, __mmask16, __m128i);
+extern __m256i   __cdecl _mm256_maskz_broadcastw_epi16(__mmask16, __m128i);
+extern __mmask8  __cdecl _mm_cmp_epi16_mask(__m128i, __m128i, const int);
+extern __mmask8  __cdecl _mm_mask_cmp_epi16_mask(__mmask8, __m128i, __m128i, const int);
+extern __mmask16 __cdecl _mm256_cmp_epi16_mask(__m256i, __m256i, const int);
+extern __mmask16 __cdecl _mm256_mask_cmp_epi16_mask(__mmask16, __m256i, __m256i, const int);
+extern __mmask8  __cdecl _mm_cmp_epi32_mask(__m128i, __m128i, int);
+extern __mmask8  __cdecl _mm_mask_cmp_epi32_mask(__mmask8, __m128i, __m128i, int);
+extern __mmask8  __cdecl _mm256_cmp_epi32_mask(__m256i, __m256i, int);
+extern __mmask8  __cdecl _mm256_mask_cmp_epi32_mask(__mmask8, __m256i, __m256i, int);
+extern __mmask8  __cdecl _mm_cmp_epi64_mask(__m128i, __m128i, int);
+extern __mmask8  __cdecl _mm_mask_cmp_epi64_mask(__mmask8, __m128i, __m128i, int);
+extern __mmask8  __cdecl _mm256_cmp_epi64_mask(__m256i, __m256i, int);
+extern __mmask8  __cdecl _mm256_mask_cmp_epi64_mask(__mmask8, __m256i, __m256i, int);
+extern __mmask16 __cdecl _mm_cmp_epi8_mask(__m128i, __m128i, const int);
+extern __mmask16 __cdecl _mm_mask_cmp_epi8_mask(__mmask16, __m128i, __m128i, const int);
+extern __mmask32 __cdecl _mm256_cmp_epi8_mask(__m256i, __m256i, const int);
+extern __mmask32 __cdecl _mm256_mask_cmp_epi8_mask(__mmask32, __m256i, __m256i, const int);
+extern __mmask8  __cdecl _mm_cmp_epu16_mask(__m128i, __m128i, const int);
+extern __mmask8  __cdecl _mm_mask_cmp_epu16_mask(__mmask8, __m128i, __m128i, const int);
+extern __mmask16 __cdecl _mm256_cmp_epu16_mask(__m256i, __m256i, const int);
+extern __mmask16 __cdecl _mm256_mask_cmp_epu16_mask(__mmask16, __m256i, __m256i, const int);
+extern __mmask8  __cdecl _mm_cmp_epu32_mask(__m128i, __m128i, int);
+extern __mmask8  __cdecl _mm_mask_cmp_epu32_mask(__mmask8, __m128i, __m128i, int);
+extern __mmask8  __cdecl _mm256_cmp_epu32_mask(__m256i, __m256i, int);
+extern __mmask8  __cdecl _mm256_mask_cmp_epu32_mask(__mmask8, __m256i, __m256i, int);
+extern __mmask8  __cdecl _mm_cmp_epu64_mask(__m128i, __m128i, int);
+extern __mmask8  __cdecl _mm_mask_cmp_epu64_mask(__mmask8, __m128i, __m128i, int);
+extern __mmask8  __cdecl _mm256_cmp_epu64_mask(__m256i, __m256i, int);
+extern __mmask8  __cdecl _mm256_mask_cmp_epu64_mask(__mmask8, __m256i, __m256i, int);
+extern __mmask16 __cdecl _mm_cmp_epu8_mask(__m128i, __m128i, const int);
+extern __mmask16 __cdecl _mm_mask_cmp_epu8_mask(__mmask16, __m128i, __m128i, const int);
+extern __mmask32 __cdecl _mm256_cmp_epu8_mask(__m256i, __m256i, const int);
+extern __mmask32 __cdecl _mm256_mask_cmp_epu8_mask(__mmask32, __m256i, __m256i, const int);
+extern __mmask8  __cdecl _mm_cmp_pd_mask(__m128d, __m128d, const int);
+extern __mmask8  __cdecl _mm_mask_cmp_pd_mask(__mmask8, __m128d, __m128d, const int);
+extern __mmask8  __cdecl _mm256_cmp_pd_mask(__m256d, __m256d, const int);
+extern __mmask8  __cdecl _mm256_mask_cmp_pd_mask(__mmask8, __m256d, __m256d, const int);
+extern __mmask8  __cdecl _mm_cmp_ps_mask(__m128, __m128, const int);
+extern __mmask8  __cdecl _mm_mask_cmp_ps_mask(__mmask8, __m128, __m128, const int);
+extern __mmask8  __cdecl _mm256_cmp_ps_mask(__m256, __m256, const int);
+extern __mmask8  __cdecl _mm256_mask_cmp_ps_mask(__mmask8, __m256, __m256, const int);
+extern __m128i   __cdecl _mm_mask_compress_epi8(__m128i, __mmask16, __m128i);
+extern __m128i   __cdecl _mm_maskz_compress_epi8(__mmask16, __m128i);
+extern __m256i   __cdecl _mm256_mask_compress_epi8(__m256i, __mmask32, __m256i);
+extern __m256i   __cdecl _mm256_maskz_compress_epi8(__mmask32, __m256i);
+extern __m128i   __cdecl _mm_mask_compress_epi16(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_compress_epi16(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_compress_epi16(__m256i, __mmask16, __m256i);
+extern __m256i   __cdecl _mm256_maskz_compress_epi16(__mmask16, __m256i);
+extern __m128i   __cdecl _mm_mask_compress_epi32(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_compress_epi32(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_compress_epi32(__m256i, __mmask8, __m256i);
+extern __m256i   __cdecl _mm256_maskz_compress_epi32(__mmask8, __m256i);
+extern __m128i   __cdecl _mm_mask_compress_epi64(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_compress_epi64(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_compress_epi64(__m256i, __mmask8, __m256i);
+extern __m256i   __cdecl _mm256_maskz_compress_epi64(__mmask8, __m256i);
+extern __m128d   __cdecl _mm_mask_compress_pd(__m128d, __mmask8, __m128d);
+extern __m128d   __cdecl _mm_maskz_compress_pd(__mmask8, __m128d);
+extern __m256d   __cdecl _mm256_mask_compress_pd(__m256d, __mmask8, __m256d);
+extern __m256d   __cdecl _mm256_maskz_compress_pd(__mmask8, __m256d);
+extern __m128    __cdecl _mm_mask_compress_ps(__m128, __mmask8, __m128);
+extern __m128    __cdecl _mm_maskz_compress_ps(__mmask8, __m128);
+extern __m256    __cdecl _mm256_mask_compress_ps(__m256, __mmask8, __m256);
+extern __m256    __cdecl _mm256_maskz_compress_ps(__mmask8, __m256);
+extern void      __cdecl _mm_mask_compressstoreu_epi8(void*, __mmask16, __m128i);
+extern void      __cdecl _mm256_mask_compressstoreu_epi8(void*, __mmask32, __m256i);
+extern void      __cdecl _mm_mask_compressstoreu_epi16(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_compressstoreu_epi16(void*, __mmask16, __m256i);
+extern void      __cdecl _mm_mask_compressstoreu_epi32(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_compressstoreu_epi32(void*, __mmask8, __m256i);
+extern void      __cdecl _mm_mask_compressstoreu_epi64(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_compressstoreu_epi64(void*, __mmask8, __m256i);
+extern void      __cdecl _mm_mask_compressstoreu_pd(void*, __mmask8, __m128d);
+extern void      __cdecl _mm256_mask_compressstoreu_pd(void*, __mmask8, __m256d);
+extern void      __cdecl _mm_mask_compressstoreu_ps(void*, __mmask8, __m128);
+extern void      __cdecl _mm256_mask_compressstoreu_ps(void*, __mmask8, __m256);
+extern __m128i   __cdecl _mm_conflict_epi32(__m128i);
+extern __m128i   __cdecl _mm_mask_conflict_epi32(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_conflict_epi32(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_conflict_epi32(__m256i);
+extern __m256i   __cdecl _mm256_mask_conflict_epi32(__m256i, __mmask8, __m256i);
+extern __m256i   __cdecl _mm256_maskz_conflict_epi32(__mmask8, __m256i);
+extern __m128i   __cdecl _mm_conflict_epi64(__m128i);
+extern __m128i   __cdecl _mm_mask_conflict_epi64(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_conflict_epi64(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_conflict_epi64(__m256i);
+extern __m256i   __cdecl _mm256_mask_conflict_epi64(__m256i, __mmask8, __m256i);
+extern __m256i   __cdecl _mm256_maskz_conflict_epi64(__mmask8, __m256i);
+extern __m128i   __cdecl _mm_mask_cvtps_ph(__m128i, __mmask8, __m128, int);
+extern __m128i   __cdecl _mm_maskz_cvtps_ph(__mmask8, __m128, int);
+extern __m128i   __cdecl _mm_mask_cvt_roundps_ph(__m128i, __mmask8, __m128, int);
+extern __m128i   __cdecl _mm_maskz_cvt_roundps_ph(__mmask8, __m128, int);
+extern __m128i   __cdecl _mm256_mask_cvtps_ph(__m128i, __mmask8, __m256, int);
+extern __m128i   __cdecl _mm256_maskz_cvtps_ph(__mmask8, __m256, int);
+extern __m128i   __cdecl _mm256_mask_cvt_roundps_ph(__m128i, __mmask8, __m256, int);
+extern __m128i   __cdecl _mm256_maskz_cvt_roundps_ph(__mmask8, __m256, int);
+extern __m128i   __cdecl _mm_mask_cvtepi16_epi32(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtepi16_epi32(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_cvtepi16_epi32(__m256i, __mmask8, __m128i);
+extern __m256i   __cdecl _mm256_maskz_cvtepi16_epi32(__mmask8, __m128i);
+extern __m128i   __cdecl _mm_mask_cvtepi16_epi64(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtepi16_epi64(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_cvtepi16_epi64(__m256i, __mmask8, __m128i);
+extern __m256i   __cdecl _mm256_maskz_cvtepi16_epi64(__mmask8, __m128i);
+extern __m128i   __cdecl _mm_cvtepi16_epi8(__m128i);
+extern __m128i   __cdecl _mm_mask_cvtepi16_epi8(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtepi16_epi8(__mmask8, __m128i);
+extern __m128i   __cdecl _mm256_cvtepi16_epi8(__m256i);
+extern __m128i   __cdecl _mm256_mask_cvtepi16_epi8(__m128i, __mmask16, __m256i);
+extern __m128i   __cdecl _mm256_maskz_cvtepi16_epi8(__mmask16, __m256i);
+extern void      __cdecl _mm_mask_cvtepi16_storeu_epi8(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_cvtepi16_storeu_epi8(void*, __mmask16, __m256i);
+extern __m128i   __cdecl _mm_cvtepi32_epi16(__m128i);
+extern __m128i   __cdecl _mm_mask_cvtepi32_epi16(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtepi32_epi16(__mmask8, __m128i);
+extern __m128i   __cdecl _mm256_cvtepi32_epi16(__m256i);
+extern __m128i   __cdecl _mm256_mask_cvtepi32_epi16(__m128i, __mmask8, __m256i);
+extern __m128i   __cdecl _mm256_maskz_cvtepi32_epi16(__mmask8, __m256i);
+extern __m128i   __cdecl _mm_mask_cvtepi32_epi64(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtepi32_epi64(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_cvtepi32_epi64(__m256i, __mmask8, __m128i);
+extern __m256i   __cdecl _mm256_maskz_cvtepi32_epi64(__mmask8, __m128i);
+extern __m128i   __cdecl _mm_cvtepi32_epi8(__m128i);
+extern __m128i   __cdecl _mm_mask_cvtepi32_epi8(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtepi32_epi8(__mmask8, __m128i);
+extern __m128i   __cdecl _mm256_cvtepi32_epi8(__m256i);
+extern __m128i   __cdecl _mm256_mask_cvtepi32_epi8(__m128i, __mmask8, __m256i);
+extern __m128i   __cdecl _mm256_maskz_cvtepi32_epi8(__mmask8, __m256i);
+extern __m128d   __cdecl _mm_mask_cvtepi32_pd(__m128d, __mmask8, __m128i);
+extern __m128d   __cdecl _mm_maskz_cvtepi32_pd(__mmask8, __m128i);
+extern __m256d   __cdecl _mm256_mask_cvtepi32_pd(__m256d, __mmask8, __m128i);
+extern __m256d   __cdecl _mm256_maskz_cvtepi32_pd(__mmask8, __m128i);
+extern __m128    __cdecl _mm_mask_cvtepi32_ps(__m128, __mmask8, __m128i);
+extern __m128    __cdecl _mm_maskz_cvtepi32_ps(__mmask8, __m128i);
+extern __m256    __cdecl _mm256_mask_cvtepi32_ps(__m256, __mmask8, __m256i);
+extern __m256    __cdecl _mm256_maskz_cvtepi32_ps(__mmask8, __m256i);
+extern void      __cdecl _mm_mask_cvtepi32_storeu_epi16(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_cvtepi32_storeu_epi16(void*, __mmask8, __m256i);
+extern void      __cdecl _mm_mask_cvtepi32_storeu_epi8(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_cvtepi32_storeu_epi8(void*, __mmask8, __m256i);
+extern __m128i   __cdecl _mm_cvtepi64_epi16(__m128i);
+extern __m128i   __cdecl _mm_mask_cvtepi64_epi16(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtepi64_epi16(__mmask8, __m128i);
+extern __m128i   __cdecl _mm256_cvtepi64_epi16(__m256i);
+extern __m128i   __cdecl _mm256_mask_cvtepi64_epi16(__m128i, __mmask8, __m256i);
+extern __m128i   __cdecl _mm256_maskz_cvtepi64_epi16(__mmask8, __m256i);
+extern __m128i   __cdecl _mm_cvtepi64_epi32(__m128i);
+extern __m128i   __cdecl _mm_mask_cvtepi64_epi32(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtepi64_epi32(__mmask8, __m128i);
+extern __m128i   __cdecl _mm256_cvtepi64_epi32(__m256i);
+extern __m128i   __cdecl _mm256_mask_cvtepi64_epi32(__m128i, __mmask8, __m256i);
+extern __m128i   __cdecl _mm256_maskz_cvtepi64_epi32(__mmask8, __m256i);
+extern __m128i   __cdecl _mm_cvtepi64_epi8(__m128i);
+extern __m128i   __cdecl _mm_mask_cvtepi64_epi8(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtepi64_epi8(__mmask8, __m128i);
+extern __m128i   __cdecl _mm256_cvtepi64_epi8(__m256i);
+extern __m128i   __cdecl _mm256_mask_cvtepi64_epi8(__m128i, __mmask8, __m256i);
+extern __m128i   __cdecl _mm256_maskz_cvtepi64_epi8(__mmask8, __m256i);
+extern __m128d   __cdecl _mm_cvtepi64_pd(__m128i);
+extern __m128d   __cdecl _mm_mask_cvtepi64_pd(__m128d, __mmask8, __m128i);
+extern __m128d   __cdecl _mm_maskz_cvtepi64_pd(__mmask8, __m128i);
+extern __m256d   __cdecl _mm256_cvtepi64_pd(__m256i);
+extern __m256d   __cdecl _mm256_mask_cvtepi64_pd(__m256d, __mmask8, __m256i);
+extern __m256d   __cdecl _mm256_maskz_cvtepi64_pd(__mmask8, __m256i);
+extern __m128    __cdecl _mm_cvtepi64_ps(__m128i);
+extern __m128    __cdecl _mm_mask_cvtepi64_ps(__m128, __mmask8, __m128i);
+extern __m128    __cdecl _mm_maskz_cvtepi64_ps(__mmask8, __m128i);
+extern __m128    __cdecl _mm256_cvtepi64_ps(__m256i);
+extern __m128    __cdecl _mm256_mask_cvtepi64_ps(__m128, __mmask8, __m256i);
+extern __m128    __cdecl _mm256_maskz_cvtepi64_ps(__mmask8, __m256i);
+extern void      __cdecl _mm_mask_cvtepi64_storeu_epi16(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_cvtepi64_storeu_epi16(void*, __mmask8, __m256i);
+extern void      __cdecl _mm_mask_cvtepi64_storeu_epi32(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_cvtepi64_storeu_epi32(void*, __mmask8, __m256i);
+extern void      __cdecl _mm_mask_cvtepi64_storeu_epi8(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_cvtepi64_storeu_epi8(void*, __mmask8, __m256i);
+extern __m128i   __cdecl _mm_mask_cvtepi8_epi16(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtepi8_epi16(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_cvtepi8_epi16(__m256i, __mmask16, __m128i);
+extern __m256i   __cdecl _mm256_maskz_cvtepi8_epi16(__mmask16, __m128i);
+extern __m128i   __cdecl _mm_mask_cvtepi8_epi32(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtepi8_epi32(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_cvtepi8_epi32(__m256i, __mmask8, __m128i);
+extern __m256i   __cdecl _mm256_maskz_cvtepi8_epi32(__mmask8, __m128i);
+extern __m128i   __cdecl _mm_mask_cvtepi8_epi64(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtepi8_epi64(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_cvtepi8_epi64(__m256i, __mmask8, __m128i);
+extern __m256i   __cdecl _mm256_maskz_cvtepi8_epi64(__mmask8, __m128i);
+extern __m128i   __cdecl _mm_mask_cvtepu16_epi32(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtepu16_epi32(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_cvtepu16_epi32(__m256i, __mmask8, __m128i);
+extern __m256i   __cdecl _mm256_maskz_cvtepu16_epi32(__mmask8, __m128i);
+extern __m128i   __cdecl _mm_mask_cvtepu16_epi64(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtepu16_epi64(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_cvtepu16_epi64(__m256i, __mmask8, __m128i);
+extern __m256i   __cdecl _mm256_maskz_cvtepu16_epi64(__mmask8, __m128i);
+extern __m128i   __cdecl _mm_mask_cvtepu32_epi64(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtepu32_epi64(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_cvtepu32_epi64(__m256i, __mmask8, __m128i);
+extern __m256i   __cdecl _mm256_maskz_cvtepu32_epi64(__mmask8, __m128i);
+extern __m128    __cdecl _mm_cvtepu32_ps(__m128i);
+extern __m128    __cdecl _mm_mask_cvtepu32_ps(__m128, __mmask8, __m128i);
+extern __m128    __cdecl _mm_maskz_cvtepu32_ps(__mmask8, __m128i);
+extern __m256    __cdecl _mm256_cvtepu32_ps(__m256i);
+extern __m256    __cdecl _mm256_mask_cvtepu32_ps(__m256, __mmask8, __m256i);
+extern __m256    __cdecl _mm256_maskz_cvtepu32_ps(__mmask8, __m256i);
+extern __m128d   __cdecl _mm_cvtepu32_pd(__m128i);
+extern __m128d   __cdecl _mm_mask_cvtepu32_pd(__m128d, __mmask8, __m128i);
+extern __m128d   __cdecl _mm_maskz_cvtepu32_pd(__mmask8, __m128i);
+extern __m256d   __cdecl _mm256_cvtepu32_pd(__m128i);
+extern __m256d   __cdecl _mm256_mask_cvtepu32_pd(__m256d, __mmask8, __m128i);
+extern __m256d   __cdecl _mm256_maskz_cvtepu32_pd(__mmask8, __m128i);
+extern __m128d   __cdecl _mm_cvtepu64_pd(__m128i);
+extern __m128d   __cdecl _mm_mask_cvtepu64_pd(__m128d, __mmask8, __m128i);
+extern __m128d   __cdecl _mm_maskz_cvtepu64_pd(__mmask8, __m128i);
+extern __m256d   __cdecl _mm256_cvtepu64_pd(__m256i);
+extern __m256d   __cdecl _mm256_mask_cvtepu64_pd(__m256d, __mmask8, __m256i);
+extern __m256d   __cdecl _mm256_maskz_cvtepu64_pd(__mmask8, __m256i);
+extern __m128    __cdecl _mm_cvtepu64_ps(__m128i);
+extern __m128    __cdecl _mm_mask_cvtepu64_ps(__m128, __mmask8, __m128i);
+extern __m128    __cdecl _mm_maskz_cvtepu64_ps(__mmask8, __m128i);
+extern __m128    __cdecl _mm256_cvtepu64_ps(__m256i);
+extern __m128    __cdecl _mm256_mask_cvtepu64_ps(__m128, __mmask8, __m256i);
+extern __m128    __cdecl _mm256_maskz_cvtepu64_ps(__mmask8, __m256i);
+extern __m128i   __cdecl _mm_mask_cvtepu8_epi16(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtepu8_epi16(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_cvtepu8_epi16(__m256i, __mmask16, __m128i);
+extern __m256i   __cdecl _mm256_maskz_cvtepu8_epi16(__mmask16, __m128i);
+extern __m128i   __cdecl _mm_mask_cvtepu8_epi32(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtepu8_epi32(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_cvtepu8_epi32(__m256i, __mmask8, __m128i);
+extern __m256i   __cdecl _mm256_maskz_cvtepu8_epi32(__mmask8, __m128i);
+extern __m128i   __cdecl _mm_mask_cvtepu8_epi64(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtepu8_epi64(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_cvtepu8_epi64(__m256i, __mmask8, __m128i);
+extern __m256i   __cdecl _mm256_maskz_cvtepu8_epi64(__mmask8, __m128i);
+extern __m128i   __cdecl _mm_mask_cvtpd_epi32(__m128i, __mmask8, __m128d);
+extern __m128i   __cdecl _mm_maskz_cvtpd_epi32(__mmask8, __m128d);
+extern __m128i   __cdecl _mm256_mask_cvtpd_epi32(__m128i, __mmask8, __m256d);
+extern __m128i   __cdecl _mm256_maskz_cvtpd_epi32(__mmask8, __m256d);
+extern __m128i   __cdecl _mm_cvtpd_epi64(__m128d);
+extern __m128i   __cdecl _mm_mask_cvtpd_epi64(__m128i, __mmask8, __m128d);
+extern __m128i   __cdecl _mm_maskz_cvtpd_epi64(__mmask8, __m128d);
+extern __m256i   __cdecl _mm256_cvtpd_epi64(__m256d);
+extern __m256i   __cdecl _mm256_mask_cvtpd_epi64(__m256i, __mmask8, __m256d);
+extern __m256i   __cdecl _mm256_maskz_cvtpd_epi64(__mmask8, __m256d);
+extern __m128i   __cdecl _mm_cvtpd_epu32(__m128d);
+extern __m128i   __cdecl _mm_mask_cvtpd_epu32(__m128i, __mmask8, __m128d);
+extern __m128i   __cdecl _mm_maskz_cvtpd_epu32(__mmask8, __m128d);
+extern __m128i   __cdecl _mm256_cvtpd_epu32(__m256d);
+extern __m128i   __cdecl _mm256_mask_cvtpd_epu32(__m128i, __mmask8, __m256d);
+extern __m128i   __cdecl _mm256_maskz_cvtpd_epu32(__mmask8, __m256d);
+extern __m128i   __cdecl _mm_cvtpd_epu64(__m128d);
+extern __m128i   __cdecl _mm_mask_cvtpd_epu64(__m128i, __mmask8, __m128d);
+extern __m128i   __cdecl _mm_maskz_cvtpd_epu64(__mmask8, __m128d);
+extern __m256i   __cdecl _mm256_cvtpd_epu64(__m256d);
+extern __m256i   __cdecl _mm256_mask_cvtpd_epu64(__m256i, __mmask8, __m256d);
+extern __m256i   __cdecl _mm256_maskz_cvtpd_epu64(__mmask8, __m256d);
+extern __m128    __cdecl _mm_mask_cvtpd_ps(__m128, __mmask8, __m128d);
+extern __m128    __cdecl _mm_maskz_cvtpd_ps(__mmask8, __m128d);
+extern __m128    __cdecl _mm256_mask_cvtpd_ps(__m128, __mmask8, __m256d);
+extern __m128    __cdecl _mm256_maskz_cvtpd_ps(__mmask8, __m256d);
+extern __m128    __cdecl _mm_mask_cvtph_ps(__m128, __mmask8, __m128i);
+extern __m128    __cdecl _mm_maskz_cvtph_ps(__mmask8, __m128i);
+extern __m256    __cdecl _mm256_mask_cvtph_ps(__m256, __mmask8, __m128i);
+extern __m256    __cdecl _mm256_maskz_cvtph_ps(__mmask8, __m128i);
+extern __m128i   __cdecl _mm_mask_cvtps_epi32(__m128i, __mmask8, __m128);
+extern __m128i   __cdecl _mm_maskz_cvtps_epi32(__mmask8, __m128);
+extern __m256i   __cdecl _mm256_mask_cvtps_epi32(__m256i, __mmask8, __m256);
+extern __m256i   __cdecl _mm256_maskz_cvtps_epi32(__mmask8, __m256);
+extern __m128i   __cdecl _mm_cvtps_epi64(__m128);
+extern __m128i   __cdecl _mm_mask_cvtps_epi64(__m128i, __mmask8, __m128);
+extern __m128i   __cdecl _mm_maskz_cvtps_epi64(__mmask8, __m128);
+extern __m256i   __cdecl _mm256_cvtps_epi64(__m128);
+extern __m256i   __cdecl _mm256_mask_cvtps_epi64(__m256i, __mmask8, __m128);
+extern __m256i   __cdecl _mm256_maskz_cvtps_epi64(__mmask8, __m128);
+extern __m128i   __cdecl _mm_cvtps_epu32(__m128);
+extern __m128i   __cdecl _mm_mask_cvtps_epu32(__m128i, __mmask8, __m128);
+extern __m128i   __cdecl _mm_maskz_cvtps_epu32(__mmask8, __m128);
+extern __m256i   __cdecl _mm256_cvtps_epu32(__m256);
+extern __m256i   __cdecl _mm256_mask_cvtps_epu32(__m256i, __mmask8, __m256);
+extern __m256i   __cdecl _mm256_maskz_cvtps_epu32(__mmask8, __m256);
+extern __m128i   __cdecl _mm_cvtps_epu64(__m128);
+extern __m128i   __cdecl _mm_mask_cvtps_epu64(__m128i, __mmask8, __m128);
+extern __m128i   __cdecl _mm_maskz_cvtps_epu64(__mmask8, __m128);
+extern __m256i   __cdecl _mm256_cvtps_epu64(__m128);
+extern __m256i   __cdecl _mm256_mask_cvtps_epu64(__m256i, __mmask8, __m128);
+extern __m256i   __cdecl _mm256_maskz_cvtps_epu64(__mmask8, __m128);
+extern __m128d   __cdecl _mm_mask_cvtps_pd(__m128d, __mmask8, __m128);
+extern __m128d   __cdecl _mm_maskz_cvtps_pd(__mmask8, __m128);
+extern __m256d   __cdecl _mm256_mask_cvtps_pd(__m256d, __mmask8, __m128);
+extern __m256d   __cdecl _mm256_maskz_cvtps_pd(__mmask8, __m128);
+extern __m128i   __cdecl _mm_cvtsepi16_epi8(__m128i);
+extern __m128i   __cdecl _mm_mask_cvtsepi16_epi8(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtsepi16_epi8(__mmask8, __m128i);
+extern __m128i   __cdecl _mm256_cvtsepi16_epi8(__m256i);
+extern __m128i   __cdecl _mm256_mask_cvtsepi16_epi8(__m128i, __mmask16, __m256i);
+extern __m128i   __cdecl _mm256_maskz_cvtsepi16_epi8(__mmask16, __m256i);
+extern void      __cdecl _mm_mask_cvtsepi16_storeu_epi8(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_cvtsepi16_storeu_epi8(void*, __mmask16, __m256i);
+extern __m128i   __cdecl _mm_cvtsepi32_epi16(__m128i);
+extern __m128i   __cdecl _mm_mask_cvtsepi32_epi16(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtsepi32_epi16(__mmask8, __m128i);
+extern __m128i   __cdecl _mm256_cvtsepi32_epi16(__m256i);
+extern __m128i   __cdecl _mm256_mask_cvtsepi32_epi16(__m128i, __mmask8, __m256i);
+extern __m128i   __cdecl _mm256_maskz_cvtsepi32_epi16(__mmask8, __m256i);
+extern __m128i   __cdecl _mm_cvtsepi32_epi8(__m128i);
+extern __m128i   __cdecl _mm_mask_cvtsepi32_epi8(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtsepi32_epi8(__mmask8, __m128i);
+extern __m128i   __cdecl _mm256_cvtsepi32_epi8(__m256i);
+extern __m128i   __cdecl _mm256_mask_cvtsepi32_epi8(__m128i, __mmask8, __m256i);
+extern __m128i   __cdecl _mm256_maskz_cvtsepi32_epi8(__mmask8, __m256i);
+extern void      __cdecl _mm_mask_cvtsepi32_storeu_epi16(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_cvtsepi32_storeu_epi16(void*, __mmask8, __m256i);
+extern void      __cdecl _mm_mask_cvtsepi32_storeu_epi8(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_cvtsepi32_storeu_epi8(void*, __mmask8, __m256i);
+extern __m128i   __cdecl _mm_cvtsepi64_epi16(__m128i);
+extern __m128i   __cdecl _mm_mask_cvtsepi64_epi16(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtsepi64_epi16(__mmask8, __m128i);
+extern __m128i   __cdecl _mm256_cvtsepi64_epi16(__m256i);
+extern __m128i   __cdecl _mm256_mask_cvtsepi64_epi16(__m128i, __mmask8, __m256i);
+extern __m128i   __cdecl _mm256_maskz_cvtsepi64_epi16(__mmask8, __m256i);
+extern __m128i   __cdecl _mm_cvtsepi64_epi32(__m128i);
+extern __m128i   __cdecl _mm_mask_cvtsepi64_epi32(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtsepi64_epi32(__mmask8, __m128i);
+extern __m128i   __cdecl _mm256_cvtsepi64_epi32(__m256i);
+extern __m128i   __cdecl _mm256_mask_cvtsepi64_epi32(__m128i, __mmask8, __m256i);
+extern __m128i   __cdecl _mm256_maskz_cvtsepi64_epi32(__mmask8, __m256i);
+extern __m128i   __cdecl _mm_cvtsepi64_epi8(__m128i);
+extern __m128i   __cdecl _mm_mask_cvtsepi64_epi8(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtsepi64_epi8(__mmask8, __m128i);
+extern __m128i   __cdecl _mm256_cvtsepi64_epi8(__m256i);
+extern __m128i   __cdecl _mm256_mask_cvtsepi64_epi8(__m128i, __mmask8, __m256i);
+extern __m128i   __cdecl _mm256_maskz_cvtsepi64_epi8(__mmask8, __m256i);
+extern void      __cdecl _mm_mask_cvtsepi64_storeu_epi16(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_cvtsepi64_storeu_epi16(void*, __mmask8, __m256i);
+extern void      __cdecl _mm_mask_cvtsepi64_storeu_epi32(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_cvtsepi64_storeu_epi32(void*, __mmask8, __m256i);
+extern void      __cdecl _mm_mask_cvtsepi64_storeu_epi8(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_cvtsepi64_storeu_epi8(void*, __mmask8, __m256i);
+extern __m128i   __cdecl _mm_mask_cvttpd_epi32(__m128i, __mmask8, __m128d);
+extern __m128i   __cdecl _mm_maskz_cvttpd_epi32(__mmask8, __m128d);
+extern __m128i   __cdecl _mm256_mask_cvttpd_epi32(__m128i, __mmask8, __m256d);
+extern __m128i   __cdecl _mm256_maskz_cvttpd_epi32(__mmask8, __m256d);
+extern __m128i   __cdecl _mm_cvttpd_epi64(__m128d);
+extern __m128i   __cdecl _mm_mask_cvttpd_epi64(__m128i, __mmask8, __m128d);
+extern __m128i   __cdecl _mm_maskz_cvttpd_epi64(__mmask8, __m128d);
+extern __m256i   __cdecl _mm256_cvttpd_epi64(__m256d);
+extern __m256i   __cdecl _mm256_mask_cvttpd_epi64(__m256i, __mmask8, __m256d);
+extern __m256i   __cdecl _mm256_maskz_cvttpd_epi64(__mmask8, __m256d);
+extern __m128i   __cdecl _mm_cvttpd_epu32(__m128d);
+extern __m128i   __cdecl _mm_mask_cvttpd_epu32(__m128i, __mmask8, __m128d);
+extern __m128i   __cdecl _mm_maskz_cvttpd_epu32(__mmask8, __m128d);
+extern __m128i   __cdecl _mm256_cvttpd_epu32(__m256d);
+extern __m128i   __cdecl _mm256_mask_cvttpd_epu32(__m128i, __mmask8, __m256d);
+extern __m128i   __cdecl _mm256_maskz_cvttpd_epu32(__mmask8, __m256d);
+extern __m128i   __cdecl _mm_cvttpd_epu64(__m128d);
+extern __m128i   __cdecl _mm_mask_cvttpd_epu64(__m128i, __mmask8, __m128d);
+extern __m128i   __cdecl _mm_maskz_cvttpd_epu64(__mmask8, __m128d);
+extern __m256i   __cdecl _mm256_cvttpd_epu64(__m256d);
+extern __m256i   __cdecl _mm256_mask_cvttpd_epu64(__m256i, __mmask8, __m256d);
+extern __m256i   __cdecl _mm256_maskz_cvttpd_epu64(__mmask8, __m256d);
+extern __m128i   __cdecl _mm_mask_cvttps_epi32(__m128i, __mmask8, __m128);
+extern __m128i   __cdecl _mm_maskz_cvttps_epi32(__mmask8, __m128);
+extern __m256i   __cdecl _mm256_mask_cvttps_epi32(__m256i, __mmask8, __m256);
+extern __m256i   __cdecl _mm256_maskz_cvttps_epi32(__mmask8, __m256);
+extern __m128i   __cdecl _mm_cvttps_epi64(__m128);
+extern __m128i   __cdecl _mm_mask_cvttps_epi64(__m128i, __mmask8, __m128);
+extern __m128i   __cdecl _mm_maskz_cvttps_epi64(__mmask8, __m128);
+extern __m256i   __cdecl _mm256_cvttps_epi64(__m128);
+extern __m256i   __cdecl _mm256_mask_cvttps_epi64(__m256i, __mmask8, __m128);
+extern __m256i   __cdecl _mm256_maskz_cvttps_epi64(__mmask8, __m128);
+extern __m128i   __cdecl _mm_cvttps_epu32(__m128);
+extern __m128i   __cdecl _mm_mask_cvttps_epu32(__m128i, __mmask8, __m128);
+extern __m128i   __cdecl _mm_maskz_cvttps_epu32(__mmask8, __m128);
+extern __m256i   __cdecl _mm256_cvttps_epu32(__m256);
+extern __m256i   __cdecl _mm256_mask_cvttps_epu32(__m256i, __mmask8, __m256);
+extern __m256i   __cdecl _mm256_maskz_cvttps_epu32(__mmask8, __m256);
+extern __m128i   __cdecl _mm_cvttps_epu64(__m128);
+extern __m128i   __cdecl _mm_mask_cvttps_epu64(__m128i, __mmask8, __m128);
+extern __m128i   __cdecl _mm_maskz_cvttps_epu64(__mmask8, __m128);
+extern __m256i   __cdecl _mm256_cvttps_epu64(__m128);
+extern __m256i   __cdecl _mm256_mask_cvttps_epu64(__m256i, __mmask8, __m128);
+extern __m256i   __cdecl _mm256_maskz_cvttps_epu64(__mmask8, __m128);
+extern __m128i   __cdecl _mm_cvtusepi16_epi8(__m128i);
+extern __m128i   __cdecl _mm_mask_cvtusepi16_epi8(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtusepi16_epi8(__mmask8, __m128i);
+extern __m128i   __cdecl _mm256_cvtusepi16_epi8(__m256i);
+extern __m128i   __cdecl _mm256_mask_cvtusepi16_epi8(__m128i, __mmask16, __m256i);
+extern __m128i   __cdecl _mm256_maskz_cvtusepi16_epi8(__mmask16, __m256i);
+extern void      __cdecl _mm_mask_cvtusepi16_storeu_epi8(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_cvtusepi16_storeu_epi8(void*, __mmask16, __m256i);
+extern __m128i   __cdecl _mm_cvtusepi32_epi16(__m128i);
+extern __m128i   __cdecl _mm_mask_cvtusepi32_epi16(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtusepi32_epi16(__mmask8, __m128i);
+extern __m128i   __cdecl _mm256_cvtusepi32_epi16(__m256i);
+extern __m128i   __cdecl _mm256_mask_cvtusepi32_epi16(__m128i, __mmask8, __m256i);
+extern __m128i   __cdecl _mm256_maskz_cvtusepi32_epi16(__mmask8, __m256i);
+extern __m128i   __cdecl _mm_cvtusepi32_epi8(__m128i);
+extern __m128i   __cdecl _mm_mask_cvtusepi32_epi8(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtusepi32_epi8(__mmask8, __m128i);
+extern __m128i   __cdecl _mm256_cvtusepi32_epi8(__m256i);
+extern __m128i   __cdecl _mm256_mask_cvtusepi32_epi8(__m128i, __mmask8, __m256i);
+extern __m128i   __cdecl _mm256_maskz_cvtusepi32_epi8(__mmask8, __m256i);
+extern void      __cdecl _mm_mask_cvtusepi32_storeu_epi16(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_cvtusepi32_storeu_epi16(void*, __mmask8, __m256i);
+extern void      __cdecl _mm_mask_cvtusepi32_storeu_epi8(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_cvtusepi32_storeu_epi8(void*, __mmask8, __m256i);
+extern __m128i   __cdecl _mm_cvtusepi64_epi16(__m128i);
+extern __m128i   __cdecl _mm_mask_cvtusepi64_epi16(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtusepi64_epi16(__mmask8, __m128i);
+extern __m128i   __cdecl _mm256_cvtusepi64_epi16(__m256i);
+extern __m128i   __cdecl _mm256_mask_cvtusepi64_epi16(__m128i, __mmask8, __m256i);
+extern __m128i   __cdecl _mm256_maskz_cvtusepi64_epi16(__mmask8, __m256i);
+extern __m128i   __cdecl _mm_cvtusepi64_epi32(__m128i);
+extern __m128i   __cdecl _mm_mask_cvtusepi64_epi32(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtusepi64_epi32(__mmask8, __m128i);
+extern __m128i   __cdecl _mm256_cvtusepi64_epi32(__m256i);
+extern __m128i   __cdecl _mm256_mask_cvtusepi64_epi32(__m128i, __mmask8, __m256i);
+extern __m128i   __cdecl _mm256_maskz_cvtusepi64_epi32(__mmask8, __m256i);
+extern __m128i   __cdecl _mm_cvtusepi64_epi8(__m128i);
+extern __m128i   __cdecl _mm_mask_cvtusepi64_epi8(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_cvtusepi64_epi8(__mmask8, __m128i);
+extern __m128i   __cdecl _mm256_cvtusepi64_epi8(__m256i);
+extern __m128i   __cdecl _mm256_mask_cvtusepi64_epi8(__m128i, __mmask8, __m256i);
+extern __m128i   __cdecl _mm256_maskz_cvtusepi64_epi8(__mmask8, __m256i);
+extern void      __cdecl _mm_mask_cvtusepi64_storeu_epi16(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_cvtusepi64_storeu_epi16(void*, __mmask8, __m256i);
+extern void      __cdecl _mm_mask_cvtusepi64_storeu_epi32(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_cvtusepi64_storeu_epi32(void*, __mmask8, __m256i);
+extern void      __cdecl _mm_mask_cvtusepi64_storeu_epi8(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_cvtusepi64_storeu_epi8(void*, __mmask8, __m256i);
+extern __m128i   __cdecl _mm_dbsad_epu8(__m128i, __m128i, int);
+extern __m128i   __cdecl _mm_mask_dbsad_epu8(__m128i, __mmask8, __m128i, __m128i, int);
+extern __m128i   __cdecl _mm_maskz_dbsad_epu8(__mmask8, __m128i, __m128i, int);
+extern __m256i   __cdecl _mm256_dbsad_epu8(__m256i, __m256i, int);
+extern __m256i   __cdecl _mm256_mask_dbsad_epu8(__m256i, __mmask16, __m256i, __m256i, int);
+extern __m256i   __cdecl _mm256_maskz_dbsad_epu8(__mmask16, __m256i, __m256i, int);
+extern __m128d   __cdecl _mm_mask_div_pd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_div_pd(__mmask8, __m128d, __m128d);
+extern __m256d   __cdecl _mm256_mask_div_pd(__m256d, __mmask8, __m256d, __m256d);
+extern __m256d   __cdecl _mm256_maskz_div_pd(__mmask8, __m256d, __m256d);
+extern __m128    __cdecl _mm_mask_div_ps(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_div_ps(__mmask8, __m128, __m128);
+extern __m256    __cdecl _mm256_mask_div_ps(__m256, __mmask8, __m256, __m256);
+extern __m256    __cdecl _mm256_maskz_div_ps(__mmask8, __m256, __m256);
+extern __m128i   __cdecl _mm_mask_expand_epi8(__m128i, __mmask16, __m128i);
+extern __m128i   __cdecl _mm_maskz_expand_epi8(__mmask16, __m128i);
+extern __m256i   __cdecl _mm256_mask_expand_epi8(__m256i, __mmask32, __m256i);
+extern __m256i   __cdecl _mm256_maskz_expand_epi8(__mmask32, __m256i);
+extern __m128i   __cdecl _mm_mask_expand_epi16(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_expand_epi16(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_expand_epi16(__m256i, __mmask16, __m256i);
+extern __m256i   __cdecl _mm256_maskz_expand_epi16(__mmask16, __m256i);
+extern __m128i   __cdecl _mm_mask_expand_epi32(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_expand_epi32(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_expand_epi32(__m256i, __mmask8, __m256i);
+extern __m256i   __cdecl _mm256_maskz_expand_epi32(__mmask8, __m256i);
+extern __m128i   __cdecl _mm_mask_expand_epi64(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_expand_epi64(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_expand_epi64(__m256i, __mmask8, __m256i);
+extern __m256i   __cdecl _mm256_maskz_expand_epi64(__mmask8, __m256i);
+extern __m128d   __cdecl _mm_mask_expand_pd(__m128d, __mmask8, __m128d);
+extern __m128d   __cdecl _mm_maskz_expand_pd(__mmask8, __m128d);
+extern __m256d   __cdecl _mm256_mask_expand_pd(__m256d, __mmask8, __m256d);
+extern __m256d   __cdecl _mm256_maskz_expand_pd(__mmask8, __m256d);
+extern __m128    __cdecl _mm_mask_expand_ps(__m128, __mmask8, __m128);
+extern __m128    __cdecl _mm_maskz_expand_ps(__mmask8, __m128);
+extern __m256    __cdecl _mm256_mask_expand_ps(__m256, __mmask8, __m256);
+extern __m256    __cdecl _mm256_maskz_expand_ps(__mmask8, __m256);
+extern __m128i   __cdecl _mm_mask_expandloadu_epi8(__m128i, __mmask16, const void*);
+extern __m128i   __cdecl _mm_maskz_expandloadu_epi8(__mmask16, const void*);
+extern __m256i   __cdecl _mm256_mask_expandloadu_epi8(__m256i, __mmask32, const void*);
+extern __m256i   __cdecl _mm256_maskz_expandloadu_epi8(__mmask32, const void*);
+extern __m128i   __cdecl _mm_mask_expandloadu_epi16(__m128i, __mmask8, const void*);
+extern __m128i   __cdecl _mm_maskz_expandloadu_epi16(__mmask8, const void*);
+extern __m256i   __cdecl _mm256_mask_expandloadu_epi16(__m256i, __mmask16, const void*);
+extern __m256i   __cdecl _mm256_maskz_expandloadu_epi16(__mmask16, const void*);
+extern __m128i   __cdecl _mm_mask_expandloadu_epi32(__m128i, __mmask8, void const*);
+extern __m128i   __cdecl _mm_maskz_expandloadu_epi32(__mmask8, void const*);
+extern __m256i   __cdecl _mm256_mask_expandloadu_epi32(__m256i, __mmask8, void const*);
+extern __m256i   __cdecl _mm256_maskz_expandloadu_epi32(__mmask8, void const*);
+extern __m128i   __cdecl _mm_mask_expandloadu_epi64(__m128i, __mmask8, void const*);
+extern __m128i   __cdecl _mm_maskz_expandloadu_epi64(__mmask8, void const*);
+extern __m256i   __cdecl _mm256_mask_expandloadu_epi64(__m256i, __mmask8, void const*);
+extern __m256i   __cdecl _mm256_maskz_expandloadu_epi64(__mmask8, void const*);
+extern __m128d   __cdecl _mm_mask_expandloadu_pd(__m128d, __mmask8, void const*);
+extern __m128d   __cdecl _mm_maskz_expandloadu_pd(__mmask8, void const*);
+extern __m256d   __cdecl _mm256_mask_expandloadu_pd(__m256d, __mmask8, void const*);
+extern __m256d   __cdecl _mm256_maskz_expandloadu_pd(__mmask8, void const*);
+extern __m128    __cdecl _mm_mask_expandloadu_ps(__m128, __mmask8, void const*);
+extern __m128    __cdecl _mm_maskz_expandloadu_ps(__mmask8, void const*);
+extern __m256    __cdecl _mm256_mask_expandloadu_ps(__m256, __mmask8, void const*);
+extern __m256    __cdecl _mm256_maskz_expandloadu_ps(__mmask8, void const*);
+extern __m128    __cdecl _mm256_extractf32x4_ps(__m256, int);
+extern __m128    __cdecl _mm256_mask_extractf32x4_ps(__m128, __mmask8, __m256, int);
+extern __m128    __cdecl _mm256_maskz_extractf32x4_ps(__mmask8, __m256, int);
+extern __m128d   __cdecl _mm256_extractf64x2_pd(__m256d, int);
+extern __m128d   __cdecl _mm256_mask_extractf64x2_pd(__m128d, __mmask8, __m256d, int);
+extern __m128d   __cdecl _mm256_maskz_extractf64x2_pd(__mmask8, __m256d, int);
+extern __m128i   __cdecl _mm256_extracti32x4_epi32(__m256i, int);
+extern __m128i   __cdecl _mm256_mask_extracti32x4_epi32(__m128i, __mmask8, __m256i, int);
+extern __m128i   __cdecl _mm256_maskz_extracti32x4_epi32(__mmask8, __m256i, int);
+extern __m128i   __cdecl _mm256_extracti64x2_epi64(__m256i, int);
+extern __m128i   __cdecl _mm256_mask_extracti64x2_epi64(__m128i, __mmask8, __m256i, int);
+extern __m128i   __cdecl _mm256_maskz_extracti64x2_epi64(__mmask8, __m256i, int);
+extern __m128d   __cdecl _mm_fixupimm_pd(__m128d, __m128d, __m128i, const int);
+extern __m128d   __cdecl _mm_mask_fixupimm_pd(__m128d, __mmask8, __m128d, __m128i, const int);
+extern __m128d   __cdecl _mm_maskz_fixupimm_pd(__mmask8, __m128d, __m128d, __m128i, const int);
+extern __m256d   __cdecl _mm256_fixupimm_pd(__m256d, __m256d, __m256i, const int);
+extern __m256d   __cdecl _mm256_mask_fixupimm_pd(__m256d, __mmask8, __m256d, __m256i, const int);
+extern __m256d   __cdecl _mm256_maskz_fixupimm_pd(__mmask8, __m256d, __m256d, __m256i, const int);
+extern __m128    __cdecl _mm_fixupimm_ps(__m128, __m128, __m128i, const int);
+extern __m128    __cdecl _mm_mask_fixupimm_ps(__m128, __mmask8, __m128, __m128i, const int);
+extern __m128    __cdecl _mm_maskz_fixupimm_ps(__mmask8, __m128, __m128, __m128i, const int);
+extern __m256    __cdecl _mm256_fixupimm_ps(__m256, __m256, __m256i, const int);
+extern __m256    __cdecl _mm256_mask_fixupimm_ps(__m256, __mmask8, __m256, __m256i, const int);
+extern __m256    __cdecl _mm256_maskz_fixupimm_ps(__mmask8, __m256, __m256, __m256i, const int);
+extern __m128d   __cdecl _mm_mask_fmadd_pd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_mask3_fmadd_pd(__m128d, __m128d, __m128d, __mmask8);
+extern __m128d   __cdecl _mm_maskz_fmadd_pd(__mmask8, __m128d, __m128d, __m128d);
+extern __m256d   __cdecl _mm256_mask_fmadd_pd(__m256d, __mmask8, __m256d, __m256d);
+extern __m256d   __cdecl _mm256_mask3_fmadd_pd(__m256d, __m256d, __m256d, __mmask8);
+extern __m256d   __cdecl _mm256_maskz_fmadd_pd(__mmask8, __m256d, __m256d, __m256d);
+extern __m128    __cdecl _mm_mask_fmadd_ps(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_mask3_fmadd_ps(__m128, __m128, __m128, __mmask8);
+extern __m128    __cdecl _mm_maskz_fmadd_ps(__mmask8, __m128, __m128, __m128);
+extern __m256    __cdecl _mm256_mask_fmadd_ps(__m256, __mmask8, __m256, __m256);
+extern __m256    __cdecl _mm256_mask3_fmadd_ps(__m256, __m256, __m256, __mmask8);
+extern __m256    __cdecl _mm256_maskz_fmadd_ps(__mmask8, __m256, __m256, __m256);
+extern __m128d   __cdecl _mm_mask_fmaddsub_pd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_mask3_fmaddsub_pd(__m128d, __m128d, __m128d, __mmask8);
+extern __m128d   __cdecl _mm_maskz_fmaddsub_pd(__mmask8, __m128d, __m128d, __m128d);
+extern __m256d   __cdecl _mm256_mask_fmaddsub_pd(__m256d, __mmask8, __m256d, __m256d);
+extern __m256d   __cdecl _mm256_mask3_fmaddsub_pd(__m256d, __m256d, __m256d, __mmask8);
+extern __m256d   __cdecl _mm256_maskz_fmaddsub_pd(__mmask8, __m256d, __m256d, __m256d);
+extern __m128    __cdecl _mm_mask_fmaddsub_ps(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_mask3_fmaddsub_ps(__m128, __m128, __m128, __mmask8);
+extern __m128    __cdecl _mm_maskz_fmaddsub_ps(__mmask8, __m128, __m128, __m128);
+extern __m256    __cdecl _mm256_mask_fmaddsub_ps(__m256, __mmask8, __m256, __m256);
+extern __m256    __cdecl _mm256_mask3_fmaddsub_ps(__m256, __m256, __m256, __mmask8);
+extern __m256    __cdecl _mm256_maskz_fmaddsub_ps(__mmask8, __m256, __m256, __m256);
+extern __m128d   __cdecl _mm_mask_fmsub_pd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_mask3_fmsub_pd(__m128d, __m128d, __m128d, __mmask8);
+extern __m128d   __cdecl _mm_maskz_fmsub_pd(__mmask8, __m128d, __m128d, __m128d);
+extern __m256d   __cdecl _mm256_mask_fmsub_pd(__m256d, __mmask8, __m256d, __m256d);
+extern __m256d   __cdecl _mm256_mask3_fmsub_pd(__m256d, __m256d, __m256d, __mmask8);
+extern __m256d   __cdecl _mm256_maskz_fmsub_pd(__mmask8, __m256d, __m256d, __m256d);
+extern __m128    __cdecl _mm_mask_fmsub_ps(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_mask3_fmsub_ps(__m128, __m128, __m128, __mmask8);
+extern __m128    __cdecl _mm_maskz_fmsub_ps(__mmask8, __m128, __m128, __m128);
+extern __m256    __cdecl _mm256_mask_fmsub_ps(__m256, __mmask8, __m256, __m256);
+extern __m256    __cdecl _mm256_mask3_fmsub_ps(__m256, __m256, __m256, __mmask8);
+extern __m256    __cdecl _mm256_maskz_fmsub_ps(__mmask8, __m256, __m256, __m256);
+extern __m128d   __cdecl _mm_mask_fmsubadd_pd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_mask3_fmsubadd_pd(__m128d, __m128d, __m128d, __mmask8);
+extern __m128d   __cdecl _mm_maskz_fmsubadd_pd(__mmask8, __m128d, __m128d, __m128d);
+extern __m256d   __cdecl _mm256_mask_fmsubadd_pd(__m256d, __mmask8, __m256d, __m256d);
+extern __m256d   __cdecl _mm256_mask3_fmsubadd_pd(__m256d, __m256d, __m256d, __mmask8);
+extern __m256d   __cdecl _mm256_maskz_fmsubadd_pd(__mmask8, __m256d, __m256d, __m256d);
+extern __m128    __cdecl _mm_mask_fmsubadd_ps(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_mask3_fmsubadd_ps(__m128, __m128, __m128, __mmask8);
+extern __m128    __cdecl _mm_maskz_fmsubadd_ps(__mmask8, __m128, __m128, __m128);
+extern __m256    __cdecl _mm256_mask_fmsubadd_ps(__m256, __mmask8, __m256, __m256);
+extern __m256    __cdecl _mm256_mask3_fmsubadd_ps(__m256, __m256, __m256, __mmask8);
+extern __m256    __cdecl _mm256_maskz_fmsubadd_ps(__mmask8, __m256, __m256, __m256);
+extern __m128d   __cdecl _mm_mask_fnmadd_pd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_mask3_fnmadd_pd(__m128d, __m128d, __m128d, __mmask8);
+extern __m128d   __cdecl _mm_maskz_fnmadd_pd(__mmask8, __m128d, __m128d, __m128d);
+extern __m256d   __cdecl _mm256_mask_fnmadd_pd(__m256d, __mmask8, __m256d, __m256d);
+extern __m256d   __cdecl _mm256_mask3_fnmadd_pd(__m256d, __m256d, __m256d, __mmask8);
+extern __m256d   __cdecl _mm256_maskz_fnmadd_pd(__mmask8, __m256d, __m256d, __m256d);
+extern __m128    __cdecl _mm_mask_fnmadd_ps(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_mask3_fnmadd_ps(__m128, __m128, __m128, __mmask8);
+extern __m128    __cdecl _mm_maskz_fnmadd_ps(__mmask8, __m128, __m128, __m128);
+extern __m256    __cdecl _mm256_mask_fnmadd_ps(__m256, __mmask8, __m256, __m256);
+extern __m256    __cdecl _mm256_mask3_fnmadd_ps(__m256, __m256, __m256, __mmask8);
+extern __m256    __cdecl _mm256_maskz_fnmadd_ps(__mmask8, __m256, __m256, __m256);
+extern __m128d   __cdecl _mm_mask_fnmsub_pd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_mask3_fnmsub_pd(__m128d, __m128d, __m128d, __mmask8);
+extern __m128d   __cdecl _mm_maskz_fnmsub_pd(__mmask8, __m128d, __m128d, __m128d);
+extern __m256d   __cdecl _mm256_mask_fnmsub_pd(__m256d, __mmask8, __m256d, __m256d);
+extern __m256d   __cdecl _mm256_mask3_fnmsub_pd(__m256d, __m256d, __m256d, __mmask8);
+extern __m256d   __cdecl _mm256_maskz_fnmsub_pd(__mmask8, __m256d, __m256d, __m256d);
+extern __m128    __cdecl _mm_mask_fnmsub_ps(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_mask3_fnmsub_ps(__m128, __m128, __m128, __mmask8);
+extern __m128    __cdecl _mm_maskz_fnmsub_ps(__mmask8, __m128, __m128, __m128);
+extern __m256    __cdecl _mm256_mask_fnmsub_ps(__m256, __mmask8, __m256, __m256);
+extern __m256    __cdecl _mm256_mask3_fnmsub_ps(__m256, __m256, __m256, __mmask8);
+extern __m256    __cdecl _mm256_maskz_fnmsub_ps(__mmask8, __m256, __m256, __m256);
+extern __mmask8  __cdecl _mm_fpclass_pd_mask(__m128d, int);
+extern __mmask8  __cdecl _mm_mask_fpclass_pd_mask(__mmask8, __m128d, int);
+extern __mmask8  __cdecl _mm256_fpclass_pd_mask(__m256d, int);
+extern __mmask8  __cdecl _mm256_mask_fpclass_pd_mask(__mmask8, __m256d, int);
+extern __mmask8  __cdecl _mm_fpclass_ps_mask(__m128, int);
+extern __mmask8  __cdecl _mm_mask_fpclass_ps_mask(__mmask8, __m128, int);
+extern __mmask8  __cdecl _mm256_fpclass_ps_mask(__m256, int);
+extern __mmask8  __cdecl _mm256_mask_fpclass_ps_mask(__mmask8, __m256, int);
+extern __m128d   __cdecl _mm_getexp_pd(__m128d);
+extern __m128d   __cdecl _mm_mask_getexp_pd(__m128d, __mmask8, __m128d);
+extern __m128d   __cdecl _mm_maskz_getexp_pd(__mmask8, __m128d);
+extern __m256d   __cdecl _mm256_getexp_pd(__m256d);
+extern __m256d   __cdecl _mm256_mask_getexp_pd(__m256d, __mmask8, __m256d);
+extern __m256d   __cdecl _mm256_maskz_getexp_pd(__mmask8, __m256d);
+extern __m128    __cdecl _mm_getexp_ps(__m128);
+extern __m128    __cdecl _mm_mask_getexp_ps(__m128, __mmask8, __m128);
+extern __m128    __cdecl _mm_maskz_getexp_ps(__mmask8, __m128);
+extern __m256    __cdecl _mm256_getexp_ps(__m256);
+extern __m256    __cdecl _mm256_mask_getexp_ps(__m256, __mmask8, __m256);
+extern __m256    __cdecl _mm256_maskz_getexp_ps(__mmask8, __m256);
+extern __m128d   __cdecl _mm_getmant_pd(__m128d, int, int);
+extern __m128d   __cdecl _mm_mask_getmant_pd(__m128d, __mmask8, __m128d, int, int);
+extern __m128d   __cdecl _mm_maskz_getmant_pd(__mmask8, __m128d, int, int);
+extern __m256d   __cdecl _mm256_getmant_pd(__m256d, int, int);
+extern __m256d   __cdecl _mm256_mask_getmant_pd(__m256d, __mmask8, __m256d, int, int);
+extern __m256d   __cdecl _mm256_maskz_getmant_pd(__mmask8, __m256d, int, int);
+extern __m128    __cdecl _mm_getmant_ps(__m128, int, int);
+extern __m128    __cdecl _mm_mask_getmant_ps(__m128, __mmask8, __m128, int, int);
+extern __m128    __cdecl _mm_maskz_getmant_ps(__mmask8, __m128, int, int);
+extern __m256    __cdecl _mm256_getmant_ps(__m256, int, int);
+extern __m256    __cdecl _mm256_mask_getmant_ps(__m256, __mmask8, __m256, int, int);
+extern __m256    __cdecl _mm256_maskz_getmant_ps(__mmask8, __m256, int, int);
+extern __m128i   __cdecl _mm_mmask_i32gather_epi32(__m128i, __mmask8, __m128i, void const*, const int);
+extern __m256i   __cdecl _mm256_mmask_i32gather_epi32(__m256i, __mmask8, __m256i, void const*, const int);
+extern __m128i   __cdecl _mm_mmask_i32gather_epi64(__m128i, __mmask8, __m128i, void const*, const int);
+extern __m256i   __cdecl _mm256_mmask_i32gather_epi64(__m256i, __mmask8, __m128i, void const*, const int);
+extern __m128d   __cdecl _mm_mmask_i32gather_pd(__m128d, __mmask8, __m128i, void const*, const int);
+extern __m256d   __cdecl _mm256_mmask_i32gather_pd(__m256d, __mmask8, __m128i, void const*, const int);
+extern __m128    __cdecl _mm_mmask_i32gather_ps(__m128, __mmask8, __m128i, void const*, const int);
+extern __m256    __cdecl _mm256_mmask_i32gather_ps(__m256, __mmask8, __m256i, void const*, const int);
+extern void      __cdecl _mm_i32scatter_epi32(void*, __m128i, __m128i, const int);
+extern void      __cdecl _mm_mask_i32scatter_epi32(void*, __mmask8, __m128i, __m128i, const int);
+extern void      __cdecl _mm256_i32scatter_epi32(void*, __m256i, __m256i, const int);
+extern void      __cdecl _mm256_mask_i32scatter_epi32(void*, __mmask8, __m256i, __m256i, const int);
+extern void      __cdecl _mm_i32scatter_epi64(void*, __m128i, __m128i, const int);
+extern void      __cdecl _mm_mask_i32scatter_epi64(void*, __mmask8, __m128i, __m128i, const int);
+extern void      __cdecl _mm256_i32scatter_epi64(void*, __m128i, __m256i, const int);
+extern void      __cdecl _mm256_mask_i32scatter_epi64(void*, __mmask8, __m128i, __m256i, const int);
+extern void      __cdecl _mm_i32scatter_pd(void*, __m128i, __m128d, const int);
+extern void      __cdecl _mm_mask_i32scatter_pd(void*, __mmask8, __m128i, __m128d, const int);
+extern void      __cdecl _mm256_i32scatter_pd(void*, __m128i, __m256d, const int);
+extern void      __cdecl _mm256_mask_i32scatter_pd(void*, __mmask8, __m128i, __m256d, const int);
+extern void      __cdecl _mm_i32scatter_ps(void*, __m128i, __m128, const int);
+extern void      __cdecl _mm_mask_i32scatter_ps(void*, __mmask8, __m128i, __m128, const int);
+extern void      __cdecl _mm256_i32scatter_ps(void*, __m256i, __m256, const int);
+extern void      __cdecl _mm256_mask_i32scatter_ps(void*, __mmask8, __m256i, __m256, const int);
+extern __m128i   __cdecl _mm_mmask_i64gather_epi32(__m128i, __mmask8, __m128i, void const*, const int);
+extern __m128i   __cdecl _mm256_mmask_i64gather_epi32(__m128i, __mmask8, __m256i, void const*, const int);
+extern __m128i   __cdecl _mm_mmask_i64gather_epi64(__m128i, __mmask8, __m128i, void const*, const int);
+extern __m256i   __cdecl _mm256_mmask_i64gather_epi64(__m256i, __mmask8, __m256i, void const*, const int);
+extern __m128d   __cdecl _mm_mmask_i64gather_pd(__m128d, __mmask8, __m128i, void const*, const int);
+extern __m256d   __cdecl _mm256_mmask_i64gather_pd(__m256d, __mmask8, __m256i, void const*, const int);
+extern __m128    __cdecl _mm_mmask_i64gather_ps(__m128, __mmask8, __m128i, void const*, const int);
+extern __m128    __cdecl _mm256_mmask_i64gather_ps(__m128, __mmask8, __m256i, void const*, const int);
+extern void      __cdecl _mm_i64scatter_epi32(void*, __m128i, __m128i, const int);
+extern void      __cdecl _mm_mask_i64scatter_epi32(void*, __mmask8, __m128i, __m128i, const int);
+extern void      __cdecl _mm256_i64scatter_epi32(void*, __m256i, __m128i, const int);
+extern void      __cdecl _mm256_mask_i64scatter_epi32(void*, __mmask8, __m256i, __m128i, const int);
+extern void      __cdecl _mm_i64scatter_epi64(void*, __m128i, __m128i, const int);
+extern void      __cdecl _mm_mask_i64scatter_epi64(void*, __mmask8, __m128i, __m128i, const int);
+extern void      __cdecl _mm256_i64scatter_epi64(void*, __m256i, __m256i, const int);
+extern void      __cdecl _mm256_mask_i64scatter_epi64(void*, __mmask8, __m256i, __m256i, const int);
+extern void      __cdecl _mm_i64scatter_pd(void*, __m128i, __m128d, const int);
+extern void      __cdecl _mm_mask_i64scatter_pd(void*, __mmask8, __m128i, __m128d, const int);
+extern void      __cdecl _mm256_i64scatter_pd(void*, __m256i, __m256d, const int);
+extern void      __cdecl _mm256_mask_i64scatter_pd(void*, __mmask8, __m256i, __m256d, const int);
+extern void      __cdecl _mm_i64scatter_ps(void*, __m128i, __m128, const int);
+extern void      __cdecl _mm_mask_i64scatter_ps(void*, __mmask8, __m128i, __m128, const int);
+extern void      __cdecl _mm256_i64scatter_ps(void*, __m256i, __m128, const int);
+extern void      __cdecl _mm256_mask_i64scatter_ps(void*, __mmask8, __m256i, __m128, const int);
+extern __m256    __cdecl _mm256_insertf32x4(__m256, __m128, int);
+extern __m256    __cdecl _mm256_mask_insertf32x4(__m256, __mmask8, __m256, __m128, int);
+extern __m256    __cdecl _mm256_maskz_insertf32x4(__mmask8, __m256, __m128, int);
+extern __m256d   __cdecl _mm256_insertf64x2(__m256d, __m128d, int);
+extern __m256d   __cdecl _mm256_mask_insertf64x2(__m256d, __mmask8, __m256d, __m128d, int);
+extern __m256d   __cdecl _mm256_maskz_insertf64x2(__mmask8, __m256d, __m128d, int);
+extern __m256i   __cdecl _mm256_inserti32x4(__m256i, __m128i, int);
+extern __m256i   __cdecl _mm256_mask_inserti32x4(__m256i, __mmask8, __m256i, __m128i, int);
+extern __m256i   __cdecl _mm256_maskz_inserti32x4(__mmask8, __m256i, __m128i, int);
+extern __m256i   __cdecl _mm256_inserti64x2(__m256i, __m128i, int);
+extern __m256i   __cdecl _mm256_mask_inserti64x2(__m256i, __mmask8, __m256i, __m128i, int);
+extern __m256i   __cdecl _mm256_maskz_inserti64x2(__mmask8, __m256i, __m128i, int);
+extern __m128i   __cdecl _mm_mask_load_epi32(__m128i, __mmask8, void const*);
+extern __m128i   __cdecl _mm_maskz_load_epi32(__mmask8, void const*);
+extern __m256i   __cdecl _mm256_mask_load_epi32(__m256i, __mmask8, void const*);
+extern __m256i   __cdecl _mm256_maskz_load_epi32(__mmask8, void const*);
+extern __m128i   __cdecl _mm_mask_load_epi64(__m128i, __mmask8, void const*);
+extern __m128i   __cdecl _mm_maskz_load_epi64(__mmask8, void const*);
+extern __m256i   __cdecl _mm256_mask_load_epi64(__m256i, __mmask8, void const*);
+extern __m256i   __cdecl _mm256_maskz_load_epi64(__mmask8, void const*);
+extern __m128d   __cdecl _mm_mask_load_pd(__m128d, __mmask8, void const*);
+extern __m128d   __cdecl _mm_maskz_load_pd(__mmask8, void const*);
+extern __m256d   __cdecl _mm256_mask_load_pd(__m256d, __mmask8, void const*);
+extern __m256d   __cdecl _mm256_maskz_load_pd(__mmask8, void const*);
+extern __m128    __cdecl _mm_mask_load_ps(__m128, __mmask8, void const*);
+extern __m128    __cdecl _mm_maskz_load_ps(__mmask8, void const*);
+extern __m256    __cdecl _mm256_mask_load_ps(__m256, __mmask8, void const*);
+extern __m256    __cdecl _mm256_maskz_load_ps(__mmask8, void const*);
+extern __m128i   __cdecl _mm_loadu_epi16(void const*);
+extern __m128i   __cdecl _mm_mask_loadu_epi16(__m128i, __mmask8, void const*);
+extern __m128i   __cdecl _mm_maskz_loadu_epi16(__mmask8, void const*);
+extern __m256i   __cdecl _mm256_loadu_epi16(void const*);
+extern __m256i   __cdecl _mm256_mask_loadu_epi16(__m256i, __mmask16, void const*);
+extern __m256i   __cdecl _mm256_maskz_loadu_epi16(__mmask16, void const*);
+extern __m128i   __cdecl _mm_loadu_epi32(void const*);
+extern __m128i   __cdecl _mm_mask_loadu_epi32(__m128i, __mmask8, void const*);
+extern __m128i   __cdecl _mm_maskz_loadu_epi32(__mmask8, void const*);
+extern __m256i   __cdecl _mm256_loadu_epi32(void const*);
+extern __m256i   __cdecl _mm256_mask_loadu_epi32(__m256i, __mmask8, void const*);
+extern __m256i   __cdecl _mm256_maskz_loadu_epi32(__mmask8, void const*);
+extern __m128i   __cdecl _mm_loadu_epi64(void const*);
+extern __m128i   __cdecl _mm_mask_loadu_epi64(__m128i, __mmask8, void const*);
+extern __m128i   __cdecl _mm_maskz_loadu_epi64(__mmask8, void const*);
+extern __m256i   __cdecl _mm256_loadu_epi64(void const*);
+extern __m256i   __cdecl _mm256_mask_loadu_epi64(__m256i, __mmask8, void const*);
+extern __m256i   __cdecl _mm256_maskz_loadu_epi64(__mmask8, void const*);
+extern __m128i   __cdecl _mm_loadu_epi8(void const*);
+extern __m128i   __cdecl _mm_mask_loadu_epi8(__m128i, __mmask16, void const*);
+extern __m128i   __cdecl _mm_maskz_loadu_epi8(__mmask16, void const*);
+extern __m256i   __cdecl _mm256_loadu_epi8(void const*);
+extern __m256i   __cdecl _mm256_mask_loadu_epi8(__m256i, __mmask32, void const*);
+extern __m256i   __cdecl _mm256_maskz_loadu_epi8(__mmask32, void const*);
+extern __m128d   __cdecl _mm_mask_loadu_pd(__m128d, __mmask8, void const*);
+extern __m128d   __cdecl _mm_maskz_loadu_pd(__mmask8, void const*);
+extern __m256d   __cdecl _mm256_mask_loadu_pd(__m256d, __mmask8, void const*);
+extern __m256d   __cdecl _mm256_maskz_loadu_pd(__mmask8, void const*);
+extern __m128    __cdecl _mm_mask_loadu_ps(__m128, __mmask8, void const*);
+extern __m128    __cdecl _mm_maskz_loadu_ps(__mmask8, void const*);
+extern __m256    __cdecl _mm256_mask_loadu_ps(__m256, __mmask8, void const*);
+extern __m256    __cdecl _mm256_maskz_loadu_ps(__mmask8, void const*);
+extern __m128i   __cdecl _mm_lzcnt_epi32(__m128i);
+extern __m128i   __cdecl _mm_mask_lzcnt_epi32(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_lzcnt_epi32(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_lzcnt_epi32(__m256i);
+extern __m256i   __cdecl _mm256_mask_lzcnt_epi32(__m256i, __mmask8, __m256i);
+extern __m256i   __cdecl _mm256_maskz_lzcnt_epi32(__mmask8, __m256i);
+extern __m128i   __cdecl _mm_lzcnt_epi64(__m128i);
+extern __m128i   __cdecl _mm_mask_lzcnt_epi64(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_lzcnt_epi64(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_lzcnt_epi64(__m256i);
+extern __m256i   __cdecl _mm256_mask_lzcnt_epi64(__m256i, __mmask8, __m256i);
+extern __m256i   __cdecl _mm256_maskz_lzcnt_epi64(__mmask8, __m256i);
+extern __m128i   __cdecl _mm_mask_madd_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_madd_epi16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_madd_epi16(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_madd_epi16(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_maddubs_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_maddubs_epi16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_maddubs_epi16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_maddubs_epi16(__mmask16, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_max_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_max_epi16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_max_epi16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_max_epi16(__mmask16, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_max_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_max_epi32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_max_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_max_epi32(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_max_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_max_epi64(__mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_max_epi64(__m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_max_epi64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_max_epi64(__mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_max_epi64(__m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_max_epi8(__m128i, __mmask16, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_max_epi8(__mmask16, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_max_epi8(__m256i, __mmask32, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_max_epi8(__mmask32, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_max_epu16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_max_epu16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_max_epu16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_max_epu16(__mmask16, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_max_epu32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_max_epu32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_max_epu32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_max_epu32(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_max_epu64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_max_epu64(__mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_max_epu64(__m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_max_epu64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_max_epu64(__mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_max_epu64(__m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_max_epu8(__m128i, __mmask16, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_max_epu8(__mmask16, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_max_epu8(__m256i, __mmask32, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_max_epu8(__mmask32, __m256i, __m256i);
+extern __m128d   __cdecl _mm_mask_max_pd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_max_pd(__mmask8, __m128d, __m128d);
+extern __m256d   __cdecl _mm256_mask_max_pd(__m256d, __mmask8, __m256d, __m256d);
+extern __m256d   __cdecl _mm256_maskz_max_pd(__mmask8, __m256d, __m256d);
+extern __m128    __cdecl _mm_mask_max_ps(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_max_ps(__mmask8, __m128, __m128);
+extern __m256    __cdecl _mm256_mask_max_ps(__m256, __mmask8, __m256, __m256);
+extern __m256    __cdecl _mm256_maskz_max_ps(__mmask8, __m256, __m256);
+extern __m128i   __cdecl _mm_mask_min_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_min_epi16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_min_epi16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_min_epi16(__mmask16, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_min_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_min_epi32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_min_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_min_epi32(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_min_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_min_epi64(__mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_min_epi64(__m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_min_epi64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_min_epi64(__mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_min_epi64(__m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_min_epi8(__m128i, __mmask16, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_min_epi8(__mmask16, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_min_epi8(__m256i, __mmask32, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_min_epi8(__mmask32, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_min_epu16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_min_epu16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_min_epu16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_min_epu16(__mmask16, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_min_epu32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_min_epu32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_min_epu32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_min_epu32(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_min_epu64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_min_epu64(__mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_min_epu64(__m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_min_epu64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_min_epu64(__mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_min_epu64(__m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_min_epu8(__m128i, __mmask16, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_min_epu8(__mmask16, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_min_epu8(__m256i, __mmask32, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_min_epu8(__mmask32, __m256i, __m256i);
+extern __m128d   __cdecl _mm_mask_min_pd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_min_pd(__mmask8, __m128d, __m128d);
+extern __m256d   __cdecl _mm256_mask_min_pd(__m256d, __mmask8, __m256d, __m256d);
+extern __m256d   __cdecl _mm256_maskz_min_pd(__mmask8, __m256d, __m256d);
+extern __m128    __cdecl _mm_mask_min_ps(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_min_ps(__mmask8, __m128, __m128);
+extern __m256    __cdecl _mm256_mask_min_ps(__m256, __mmask8, __m256, __m256);
+extern __m256    __cdecl _mm256_maskz_min_ps(__mmask8, __m256, __m256);
+extern __m128i   __cdecl _mm_mask_mov_epi16(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_mov_epi16(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_mov_epi16(__m256i, __mmask16, __m256i);
+extern __m256i   __cdecl _mm256_maskz_mov_epi16(__mmask16, __m256i);
+extern __m128i   __cdecl _mm_mask_mov_epi32(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_mov_epi32(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_mov_epi32(__m256i, __mmask8, __m256i);
+extern __m256i   __cdecl _mm256_maskz_mov_epi32(__mmask8, __m256i);
+extern __m128i   __cdecl _mm_mask_mov_epi64(__m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_mov_epi64(__mmask8, __m128i);
+extern __m256i   __cdecl _mm256_mask_mov_epi64(__m256i, __mmask8, __m256i);
+extern __m256i   __cdecl _mm256_maskz_mov_epi64(__mmask8, __m256i);
+extern __m128i   __cdecl _mm_mask_mov_epi8(__m128i, __mmask16, __m128i);
+extern __m128i   __cdecl _mm_maskz_mov_epi8(__mmask16, __m128i);
+extern __m256i   __cdecl _mm256_mask_mov_epi8(__m256i, __mmask32, __m256i);
+extern __m256i   __cdecl _mm256_maskz_mov_epi8(__mmask32, __m256i);
+extern __m128d   __cdecl _mm_mask_mov_pd(__m128d, __mmask8, __m128d);
+extern __m128d   __cdecl _mm_maskz_mov_pd(__mmask8, __m128d);
+extern __m256d   __cdecl _mm256_mask_mov_pd(__m256d, __mmask8, __m256d);
+extern __m256d   __cdecl _mm256_maskz_mov_pd(__mmask8, __m256d);
+extern __m128    __cdecl _mm_mask_mov_ps(__m128, __mmask8, __m128);
+extern __m128    __cdecl _mm_maskz_mov_ps(__mmask8, __m128);
+extern __m256    __cdecl _mm256_mask_mov_ps(__m256, __mmask8, __m256);
+extern __m256    __cdecl _mm256_maskz_mov_ps(__mmask8, __m256);
+extern __m128d   __cdecl _mm_mask_movedup_pd(__m128d, __mmask8, __m128d);
+extern __m128d   __cdecl _mm_maskz_movedup_pd(__mmask8, __m128d);
+extern __m256d   __cdecl _mm256_mask_movedup_pd(__m256d, __mmask8, __m256d);
+extern __m256d   __cdecl _mm256_maskz_movedup_pd(__mmask8, __m256d);
+extern __m128    __cdecl _mm_mask_movehdup_ps(__m128, __mmask8, __m128);
+extern __m128    __cdecl _mm_maskz_movehdup_ps(__mmask8, __m128);
+extern __m256    __cdecl _mm256_mask_movehdup_ps(__m256, __mmask8, __m256);
+extern __m256    __cdecl _mm256_maskz_movehdup_ps(__mmask8, __m256);
+extern __m128    __cdecl _mm_mask_moveldup_ps(__m128, __mmask8, __m128);
+extern __m128    __cdecl _mm_maskz_moveldup_ps(__mmask8, __m128);
+extern __m256    __cdecl _mm256_mask_moveldup_ps(__m256, __mmask8, __m256);
+extern __m256    __cdecl _mm256_maskz_moveldup_ps(__mmask8, __m256);
+extern __mmask8  __cdecl _mm_movepi16_mask(__m128i);
+extern __mmask16 __cdecl _mm256_movepi16_mask(__m256i);
+extern __mmask8  __cdecl _mm_movepi32_mask(__m128i);
+extern __mmask8  __cdecl _mm256_movepi32_mask(__m256i);
+extern __mmask8  __cdecl _mm_movepi64_mask(__m128i);
+extern __mmask8  __cdecl _mm256_movepi64_mask(__m256i);
+extern __mmask16 __cdecl _mm_movepi8_mask(__m128i);
+extern __mmask32 __cdecl _mm256_movepi8_mask(__m256i);
+extern __m128i   __cdecl _mm_movm_epi16(__mmask8);
+extern __m256i   __cdecl _mm256_movm_epi16(__mmask16);
+extern __m128i   __cdecl _mm_movm_epi32(__mmask8);
+extern __m256i   __cdecl _mm256_movm_epi32(__mmask8);
+extern __m128i   __cdecl _mm_movm_epi64(__mmask8);
+extern __m256i   __cdecl _mm256_movm_epi64(__mmask8);
+extern __m128i   __cdecl _mm_movm_epi8(__mmask16);
+extern __m256i   __cdecl _mm256_movm_epi8(__mmask32);
+extern __m128i   __cdecl _mm_mask_mul_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_mul_epi32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_mul_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_mul_epi32(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_mul_epu32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_mul_epu32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_mul_epu32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_mul_epu32(__mmask8, __m256i, __m256i);
+extern __m128d   __cdecl _mm_mask_mul_pd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_mul_pd(__mmask8, __m128d, __m128d);
+extern __m256d   __cdecl _mm256_mask_mul_pd(__m256d, __mmask8, __m256d, __m256d);
+extern __m256d   __cdecl _mm256_maskz_mul_pd(__mmask8, __m256d, __m256d);
+extern __m128    __cdecl _mm_mask_mul_ps(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_mul_ps(__mmask8, __m128, __m128);
+extern __m256    __cdecl _mm256_mask_mul_ps(__m256, __mmask8, __m256, __m256);
+extern __m256    __cdecl _mm256_maskz_mul_ps(__mmask8, __m256, __m256);
+extern __m128i   __cdecl _mm_mask_mulhi_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_mulhi_epi16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_mulhi_epi16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_mulhi_epi16(__mmask16, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_mulhi_epu16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_mulhi_epu16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_mulhi_epu16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_mulhi_epu16(__mmask16, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_mulhrs_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_mulhrs_epi16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_mulhrs_epi16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_mulhrs_epi16(__mmask16, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_mullo_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_mullo_epi16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_mullo_epi16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_mullo_epi16(__mmask16, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_mullo_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_mullo_epi32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_mullo_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_mullo_epi32(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_mullo_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_mullo_epi64(__mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_mullo_epi64(__m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_mullo_epi64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_mullo_epi64(__mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_mullo_epi64(__m256i, __m256i);
+extern __m128i   __cdecl _mm_or_epi32(__m128i, __m128i);
+extern __m128i   __cdecl _mm_mask_or_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_or_epi32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_or_epi32(__m256i, __m256i);
+extern __m256i   __cdecl _mm256_mask_or_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_or_epi32(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_or_epi64(__m128i, __m128i);
+extern __m128i   __cdecl _mm_mask_or_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_or_epi64(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_or_epi64(__m256i, __m256i);
+extern __m256i   __cdecl _mm256_mask_or_epi64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_or_epi64(__mmask8, __m256i, __m256i);
+extern __m128d   __cdecl _mm_mask_or_pd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_or_pd(__mmask8, __m128d, __m128d);
+extern __m256d   __cdecl _mm256_mask_or_pd(__m256d, __mmask8, __m256d, __m256d);
+extern __m256d   __cdecl _mm256_maskz_or_pd(__mmask8, __m256d, __m256d);
+extern __m128    __cdecl _mm_mask_or_ps(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_or_ps(__mmask8, __m128, __m128);
+extern __m256    __cdecl _mm256_mask_or_ps(__m256, __mmask8, __m256, __m256);
+extern __m256    __cdecl _mm256_maskz_or_ps(__mmask8, __m256, __m256);
+extern __m128i   __cdecl _mm_mask_packs_epi16(__m128i, __mmask16, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_packs_epi16(__mmask16, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_packs_epi16(__m256i, __mmask32, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_packs_epi16(__mmask32, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_packs_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_packs_epi32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_packs_epi32(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_packs_epi32(__mmask16, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_packus_epi16(__m128i, __mmask16, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_packus_epi16(__mmask16, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_packus_epi16(__m256i, __mmask32, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_packus_epi16(__mmask32, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_packus_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_packus_epi32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_packus_epi32(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_packus_epi32(__mmask16, __m256i, __m256i);
+extern __m128d   __cdecl _mm_mask_permute_pd(__m128d, __mmask8, __m128d, const int);
+extern __m128d   __cdecl _mm_maskz_permute_pd(__mmask8, __m128d, const int);
+extern __m256d   __cdecl _mm256_mask_permute_pd(__m256d, __mmask8, __m256d, const int);
+extern __m256d   __cdecl _mm256_maskz_permute_pd(__mmask8, __m256d, const int);
+extern __m128    __cdecl _mm_mask_permute_ps(__m128, __mmask8, __m128, const int);
+extern __m128    __cdecl _mm_maskz_permute_ps(__mmask8, __m128, const int);
+extern __m256    __cdecl _mm256_mask_permute_ps(__m256, __mmask8, __m256, const int);
+extern __m256    __cdecl _mm256_maskz_permute_ps(__mmask8, __m256, const int);
+extern __m128d   __cdecl _mm_mask_permutevar_pd(__m128d, __mmask8, __m128d, __m128i);
+extern __m128d   __cdecl _mm_maskz_permutevar_pd(__mmask8, __m128d, __m128i);
+extern __m256d   __cdecl _mm256_mask_permutevar_pd(__m256d, __mmask8, __m256d, __m256i);
+extern __m256d   __cdecl _mm256_maskz_permutevar_pd(__mmask8, __m256d, __m256i);
+extern __m128    __cdecl _mm_mask_permutevar_ps(__m128, __mmask8, __m128, __m128i);
+extern __m128    __cdecl _mm_maskz_permutevar_ps(__mmask8, __m128, __m128i);
+extern __m256    __cdecl _mm256_mask_permutevar_ps(__m256, __mmask8, __m256, __m256i);
+extern __m256    __cdecl _mm256_maskz_permutevar_ps(__mmask8, __m256, __m256i);
+extern __m256i   __cdecl _mm256_mask_permutex_epi64(__m256i, __mmask8, __m256i, const int);
+extern __m256i   __cdecl _mm256_maskz_permutex_epi64(__mmask8, __m256i, const int);
+extern __m256i   __cdecl _mm256_permutex_epi64(__m256i, const int);
+extern __m256d   __cdecl _mm256_mask_permutex_pd(__m256d, __mmask8, __m256d, const int);
+extern __m256d   __cdecl _mm256_maskz_permutex_pd(__mmask8, __m256d, const int);
+extern __m256d   __cdecl _mm256_permutex_pd(__m256d, const int);
+extern __m128i   __cdecl _mm_mask_permutex2var_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_mask2_permutex2var_epi16(__m128i, __m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_permutex2var_epi16(__mmask8, __m128i, __m128i, __m128i);
+extern __m128i   __cdecl _mm_permutex2var_epi16(__m128i, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_permutex2var_epi16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_mask2_permutex2var_epi16(__m256i, __m256i, __mmask16, __m256i);
+extern __m256i   __cdecl _mm256_maskz_permutex2var_epi16(__mmask16, __m256i, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_permutex2var_epi16(__m256i, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_permutex2var_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_mask2_permutex2var_epi32(__m128i, __m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_permutex2var_epi32(__mmask8, __m128i, __m128i, __m128i);
+extern __m128i   __cdecl _mm_permutex2var_epi32(__m128i, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_permutex2var_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_mask2_permutex2var_epi32(__m256i, __m256i, __mmask8, __m256i);
+extern __m256i   __cdecl _mm256_maskz_permutex2var_epi32(__mmask8, __m256i, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_permutex2var_epi32(__m256i, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_permutex2var_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_mask2_permutex2var_epi64(__m128i, __m128i, __mmask8, __m128i);
+extern __m128i   __cdecl _mm_maskz_permutex2var_epi64(__mmask8, __m128i, __m128i, __m128i);
+extern __m128i   __cdecl _mm_permutex2var_epi64(__m128i, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_permutex2var_epi64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_mask2_permutex2var_epi64(__m256i, __m256i, __mmask8, __m256i);
+extern __m256i   __cdecl _mm256_maskz_permutex2var_epi64(__mmask8, __m256i, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_permutex2var_epi64(__m256i, __m256i, __m256i);
+extern __m128d   __cdecl _mm_mask_permutex2var_pd(__m128d, __mmask8, __m128i, __m128d);
+extern __m128d   __cdecl _mm_mask2_permutex2var_pd(__m128d, __m128i, __mmask8, __m128d);
+extern __m128d   __cdecl _mm_maskz_permutex2var_pd(__mmask8, __m128d, __m128i, __m128d);
+extern __m128d   __cdecl _mm_permutex2var_pd(__m128d, __m128i, __m128d);
+extern __m256d   __cdecl _mm256_mask_permutex2var_pd(__m256d, __mmask8, __m256i, __m256d);
+extern __m256d   __cdecl _mm256_mask2_permutex2var_pd(__m256d, __m256i, __mmask8, __m256d);
+extern __m256d   __cdecl _mm256_maskz_permutex2var_pd(__mmask8, __m256d, __m256i, __m256d);
+extern __m256d   __cdecl _mm256_permutex2var_pd(__m256d, __m256i, __m256d);
+extern __m128    __cdecl _mm_mask_permutex2var_ps(__m128, __mmask8, __m128i, __m128);
+extern __m128    __cdecl _mm_mask2_permutex2var_ps(__m128, __m128i, __mmask8, __m128);
+extern __m128    __cdecl _mm_maskz_permutex2var_ps(__mmask8, __m128, __m128i, __m128);
+extern __m128    __cdecl _mm_permutex2var_ps(__m128, __m128i, __m128);
+extern __m256    __cdecl _mm256_mask_permutex2var_ps(__m256, __mmask8, __m256i, __m256);
+extern __m256    __cdecl _mm256_mask2_permutex2var_ps(__m256, __m256i, __mmask8, __m256);
+extern __m256    __cdecl _mm256_maskz_permutex2var_ps(__mmask8, __m256, __m256i, __m256);
+extern __m256    __cdecl _mm256_permutex2var_ps(__m256, __m256i, __m256);
+extern __m128i   __cdecl _mm_mask_permutexvar_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_permutexvar_epi16(__mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_permutexvar_epi16(__m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_permutexvar_epi16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_permutexvar_epi16(__mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_permutexvar_epi16(__m256i, __m256i);
+extern __m256i   __cdecl _mm256_mask_permutexvar_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_permutexvar_epi32(__mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_permutexvar_epi32(__m256i, __m256i);
+extern __m256i   __cdecl _mm256_mask_permutexvar_epi64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_permutexvar_epi64(__mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_permutexvar_epi64(__m256i, __m256i);
+extern __m256d   __cdecl _mm256_mask_permutexvar_pd(__m256d, __mmask8, __m256i, __m256d);
+extern __m256d   __cdecl _mm256_maskz_permutexvar_pd(__mmask8, __m256i, __m256d);
+extern __m256d   __cdecl _mm256_permutexvar_pd(__m256i, __m256d);
+extern __m256    __cdecl _mm256_mask_permutexvar_ps(__m256, __mmask8, __m256i, __m256);
+extern __m256    __cdecl _mm256_maskz_permutexvar_ps(__mmask8, __m256i, __m256);
+extern __m256    __cdecl _mm256_permutexvar_ps(__m256i, __m256);
+extern __m128d   __cdecl _mm_mask_range_pd(__m128d, __mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_maskz_range_pd(__mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_range_pd(__m128d, __m128d, int);
+extern __m256d   __cdecl _mm256_mask_range_pd(__m256d, __mmask8, __m256d, __m256d, int);
+extern __m256d   __cdecl _mm256_maskz_range_pd(__mmask8, __m256d, __m256d, int);
+extern __m256d   __cdecl _mm256_range_pd(__m256d, __m256d, int);
+extern __m128    __cdecl _mm_mask_range_ps(__m128, __mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_maskz_range_ps(__mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_range_ps(__m128, __m128, int);
+extern __m256    __cdecl _mm256_mask_range_ps(__m256, __mmask8, __m256, __m256, int);
+extern __m256    __cdecl _mm256_maskz_range_ps(__mmask8, __m256, __m256, int);
+extern __m256    __cdecl _mm256_range_ps(__m256, __m256, int);
+extern __m128d   __cdecl _mm_mask_rcp14_pd(__m128d, __mmask8, __m128d);
+extern __m128d   __cdecl _mm_maskz_rcp14_pd(__mmask8, __m128d);
+extern __m128d   __cdecl _mm_rcp14_pd(__m128d);
+extern __m256d   __cdecl _mm256_mask_rcp14_pd(__m256d, __mmask8, __m256d);
+extern __m256d   __cdecl _mm256_maskz_rcp14_pd(__mmask8, __m256d);
+extern __m256d   __cdecl _mm256_rcp14_pd(__m256d);
+extern __m128    __cdecl _mm_mask_rcp14_ps(__m128, __mmask8, __m128);
+extern __m128    __cdecl _mm_maskz_rcp14_ps(__mmask8, __m128);
+extern __m128    __cdecl _mm_rcp14_ps(__m128);
+extern __m256    __cdecl _mm256_mask_rcp14_ps(__m256, __mmask8, __m256);
+extern __m256    __cdecl _mm256_maskz_rcp14_ps(__mmask8, __m256);
+extern __m256    __cdecl _mm256_rcp14_ps(__m256);
+extern __m128d   __cdecl _mm_mask_reduce_pd(__m128d, __mmask8, __m128d, int);
+extern __m128d   __cdecl _mm_maskz_reduce_pd(__mmask8, __m128d, int);
+extern __m128d   __cdecl _mm_reduce_pd(__m128d, int);
+extern __m256d   __cdecl _mm256_mask_reduce_pd(__m256d, __mmask8, __m256d, int);
+extern __m256d   __cdecl _mm256_maskz_reduce_pd(__mmask8, __m256d, int);
+extern __m256d   __cdecl _mm256_reduce_pd(__m256d, int);
+extern __m128    __cdecl _mm_mask_reduce_ps(__m128, __mmask8, __m128, int);
+extern __m128    __cdecl _mm_maskz_reduce_ps(__mmask8, __m128, int);
+extern __m128    __cdecl _mm_reduce_ps(__m128, int);
+extern __m256    __cdecl _mm256_mask_reduce_ps(__m256, __mmask8, __m256, int);
+extern __m256    __cdecl _mm256_maskz_reduce_ps(__mmask8, __m256, int);
+extern __m256    __cdecl _mm256_reduce_ps(__m256, int);
+extern __m128i   __cdecl _mm_mask_rol_epi32(__m128i, __mmask8, __m128i, const int);
+extern __m128i   __cdecl _mm_maskz_rol_epi32(__mmask8, __m128i, const int);
+extern __m128i   __cdecl _mm_rol_epi32(__m128i, int);
+extern __m256i   __cdecl _mm256_mask_rol_epi32(__m256i, __mmask8, __m256i, const int);
+extern __m256i   __cdecl _mm256_maskz_rol_epi32(__mmask8, __m256i, const int);
+extern __m256i   __cdecl _mm256_rol_epi32(__m256i, const int);
+extern __m128i   __cdecl _mm_mask_rol_epi64(__m128i, __mmask8, __m128i, const int);
+extern __m128i   __cdecl _mm_maskz_rol_epi64(__mmask8, __m128i, const int);
+extern __m128i   __cdecl _mm_rol_epi64(__m128i, const int);
+extern __m256i   __cdecl _mm256_mask_rol_epi64(__m256i, __mmask8, __m256i, const int);
+extern __m256i   __cdecl _mm256_maskz_rol_epi64(__mmask8, __m256i, const int);
+extern __m256i   __cdecl _mm256_rol_epi64(__m256i, const int);
+extern __m128i   __cdecl _mm_mask_rolv_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_rolv_epi32(__mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_rolv_epi32(__m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_rolv_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_rolv_epi32(__mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_rolv_epi32(__m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_rolv_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_rolv_epi64(__mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_rolv_epi64(__m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_rolv_epi64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_rolv_epi64(__mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_rolv_epi64(__m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_ror_epi32(__m128i, __mmask8, __m128i, const int);
+extern __m128i   __cdecl _mm_maskz_ror_epi32(__mmask8, __m128i, const int);
+extern __m128i   __cdecl _mm_ror_epi32(__m128i, const int);
+extern __m256i   __cdecl _mm256_mask_ror_epi32(__m256i, __mmask8, __m256i, const int);
+extern __m256i   __cdecl _mm256_maskz_ror_epi32(__mmask8, __m256i, const int);
+extern __m256i   __cdecl _mm256_ror_epi32(__m256i, const int);
+extern __m128i   __cdecl _mm_mask_ror_epi64(__m128i, __mmask8, __m128i, const int);
+extern __m128i   __cdecl _mm_maskz_ror_epi64(__mmask8, __m128i, const int);
+extern __m128i   __cdecl _mm_ror_epi64(__m128i, const int);
+extern __m256i   __cdecl _mm256_mask_ror_epi64(__m256i, __mmask8, __m256i, const int);
+extern __m256i   __cdecl _mm256_maskz_ror_epi64(__mmask8, __m256i, const int);
+extern __m256i   __cdecl _mm256_ror_epi64(__m256i, const int);
+extern __m128i   __cdecl _mm_mask_rorv_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_rorv_epi32(__mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_rorv_epi32(__m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_rorv_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_rorv_epi32(__mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_rorv_epi32(__m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_rorv_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_rorv_epi64(__mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_rorv_epi64(__m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_rorv_epi64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_rorv_epi64(__mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_rorv_epi64(__m256i, __m256i);
+extern __m128d   __cdecl _mm_mask_roundscale_pd(__m128d, __mmask8, __m128d, int);
+extern __m128d   __cdecl _mm_maskz_roundscale_pd(__mmask8, __m128d, int);
+extern __m128d   __cdecl _mm_roundscale_pd(__m128d, int);
+extern __m256d   __cdecl _mm256_mask_roundscale_pd(__m256d, __mmask8, __m256d, int);
+extern __m256d   __cdecl _mm256_maskz_roundscale_pd(__mmask8, __m256d, int);
+extern __m256d   __cdecl _mm256_roundscale_pd(__m256d, int);
+extern __m128    __cdecl _mm_mask_roundscale_ps(__m128, __mmask8, __m128, int);
+extern __m128    __cdecl _mm_maskz_roundscale_ps(__mmask8, __m128, int);
+extern __m128    __cdecl _mm_roundscale_ps(__m128, int);
+extern __m256    __cdecl _mm256_mask_roundscale_ps(__m256, __mmask8, __m256, int);
+extern __m256    __cdecl _mm256_maskz_roundscale_ps(__mmask8, __m256, int);
+extern __m256    __cdecl _mm256_roundscale_ps(__m256, int);
+extern __m128d   __cdecl _mm_mask_rsqrt14_pd(__m128d, __mmask8, __m128d);
+extern __m128d   __cdecl _mm_maskz_rsqrt14_pd(__mmask8, __m128d);
+extern __m256d   __cdecl _mm256_mask_rsqrt14_pd(__m256d, __mmask8, __m256d);
+extern __m256d   __cdecl _mm256_maskz_rsqrt14_pd(__mmask8, __m256d);
+extern __m128    __cdecl _mm_mask_rsqrt14_ps(__m128, __mmask8, __m128);
+extern __m128    __cdecl _mm_maskz_rsqrt14_ps(__mmask8, __m128);
+extern __m256    __cdecl _mm256_mask_rsqrt14_ps(__m256, __mmask8, __m256);
+extern __m256    __cdecl _mm256_maskz_rsqrt14_ps(__mmask8, __m256);
+extern __m128d   __cdecl _mm_mask_scalef_pd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_scalef_pd(__mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_scalef_pd(__m128d, __m128d);
+extern __m256d   __cdecl _mm256_mask_scalef_pd(__m256d, __mmask8, __m256d, __m256d);
+extern __m256d   __cdecl _mm256_maskz_scalef_pd(__mmask8, __m256d, __m256d);
+extern __m256d   __cdecl _mm256_scalef_pd(__m256d, __m256d);
+extern __m128    __cdecl _mm_mask_scalef_ps(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_scalef_ps(__mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_scalef_ps(__m128, __m128);
+extern __m256    __cdecl _mm256_mask_scalef_ps(__m256, __mmask8, __m256, __m256);
+extern __m256    __cdecl _mm256_maskz_scalef_ps(__mmask8, __m256, __m256);
+extern __m256    __cdecl _mm256_scalef_ps(__m256, __m256);
+extern __m128i   __cdecl _mm_mask_set1_epi16(__m128i, __mmask8, short);
+extern __m128i   __cdecl _mm_maskz_set1_epi16(__mmask8, short);
+extern __m256i   __cdecl _mm256_mask_set1_epi16(__m256i, __mmask16, short);
+extern __m256i   __cdecl _mm256_maskz_set1_epi16(__mmask16, short);
+extern __m128i   __cdecl _mm_mask_set1_epi32(__m128i, __mmask8, int);
+extern __m128i   __cdecl _mm_maskz_set1_epi32(__mmask8, int);
+extern __m256i   __cdecl _mm256_mask_set1_epi32(__m256i, __mmask8, int);
+extern __m256i   __cdecl _mm256_maskz_set1_epi32(__mmask8, int);
+extern __m128i   __cdecl _mm_mask_set1_epi64(__m128i, __mmask8, __int64);
+extern __m128i   __cdecl _mm_maskz_set1_epi64(__mmask8, __int64);
+extern __m256i   __cdecl _mm256_mask_set1_epi64(__m256i, __mmask8, __int64);
+extern __m256i   __cdecl _mm256_maskz_set1_epi64(__mmask8, __int64);
+extern __m128i   __cdecl _mm_mask_set1_epi8(__m128i, __mmask16, char);
+extern __m128i   __cdecl _mm_maskz_set1_epi8(__mmask16, char);
+extern __m256i   __cdecl _mm256_mask_set1_epi8(__m256i, __mmask32, char);
+extern __m256i   __cdecl _mm256_maskz_set1_epi8(__mmask32, char);
+extern __m128i   __cdecl _mm_mask_shuffle_epi32(__m128i, __mmask8, __m128i, int);
+extern __m128i   __cdecl _mm_maskz_shuffle_epi32(__mmask8, __m128i, int);
+extern __m256i   __cdecl _mm256_mask_shuffle_epi32(__m256i, __mmask8, __m256i, int);
+extern __m256i   __cdecl _mm256_maskz_shuffle_epi32(__mmask8, __m256i, int);
+extern __m128i   __cdecl _mm_mask_shuffle_epi8(__m128i, __mmask16, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_shuffle_epi8(__mmask16, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_shuffle_epi8(__m256i, __mmask32, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_shuffle_epi8(__mmask32, __m256i, __m256i);
+extern __m256    __cdecl _mm256_mask_shuffle_f32x4(__m256, __mmask8, __m256, __m256, const int);
+extern __m256    __cdecl _mm256_maskz_shuffle_f32x4(__mmask8, __m256, __m256, const int);
+extern __m256    __cdecl _mm256_shuffle_f32x4(__m256, __m256, const int);
+extern __m256d   __cdecl _mm256_mask_shuffle_f64x2(__m256d, __mmask8, __m256d, __m256d, const int);
+extern __m256d   __cdecl _mm256_maskz_shuffle_f64x2(__mmask8, __m256d, __m256d, const int);
+extern __m256d   __cdecl _mm256_shuffle_f64x2(__m256d, __m256d, const int);
+extern __m256i   __cdecl _mm256_mask_shuffle_i32x4(__m256i, __mmask8, __m256i, __m256i, const int);
+extern __m256i   __cdecl _mm256_maskz_shuffle_i32x4(__mmask8, __m256i, __m256i, const int);
+extern __m256i   __cdecl _mm256_shuffle_i32x4(__m256i, __m256i, const int);
+extern __m256i   __cdecl _mm256_mask_shuffle_i64x2(__m256i, __mmask8, __m256i, __m256i, const int);
+extern __m256i   __cdecl _mm256_maskz_shuffle_i64x2(__mmask8, __m256i, __m256i, const int);
+extern __m256i   __cdecl _mm256_shuffle_i64x2(__m256i, __m256i, const int);
+extern __m128d   __cdecl _mm_mask_shuffle_pd(__m128d, __mmask8, __m128d, __m128d, const int);
+extern __m128d   __cdecl _mm_maskz_shuffle_pd(__mmask8, __m128d, __m128d, const int);
+extern __m256d   __cdecl _mm256_mask_shuffle_pd(__m256d, __mmask8, __m256d, __m256d, const int);
+extern __m256d   __cdecl _mm256_maskz_shuffle_pd(__mmask8, __m256d, __m256d, const int);
+extern __m128    __cdecl _mm_mask_shuffle_ps(__m128, __mmask8, __m128, __m128, const int);
+extern __m128    __cdecl _mm_maskz_shuffle_ps(__mmask8, __m128, __m128, const int);
+extern __m256    __cdecl _mm256_mask_shuffle_ps(__m256, __mmask8, __m256, __m256, const int);
+extern __m256    __cdecl _mm256_maskz_shuffle_ps(__mmask8, __m256, __m256, const int);
+extern __m128i   __cdecl _mm_mask_shufflehi_epi16(__m128i, __mmask8, __m128i, int);
+extern __m128i   __cdecl _mm_maskz_shufflehi_epi16(__mmask8, __m128i, int);
+extern __m256i   __cdecl _mm256_mask_shufflehi_epi16(__m256i, __mmask16, __m256i, int);
+extern __m256i   __cdecl _mm256_maskz_shufflehi_epi16(__mmask16, __m256i, int);
+extern __m128i   __cdecl _mm_mask_shufflelo_epi16(__m128i, __mmask8, __m128i, int);
+extern __m128i   __cdecl _mm_maskz_shufflelo_epi16(__mmask8, __m128i, int);
+extern __m256i   __cdecl _mm256_mask_shufflelo_epi16(__m256i, __mmask16, __m256i, int);
+extern __m256i   __cdecl _mm256_maskz_shufflelo_epi16(__mmask16, __m256i, int);
+extern __m128i   __cdecl _mm_mask_sll_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_sll_epi16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_sll_epi16(__m256i, __mmask16, __m256i, __m128i);
+extern __m256i   __cdecl _mm256_maskz_sll_epi16(__mmask16, __m256i, __m128i);
+extern __m128i   __cdecl _mm_mask_sll_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_sll_epi32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_sll_epi32(__m256i, __mmask8, __m256i, __m128i);
+extern __m256i   __cdecl _mm256_maskz_sll_epi32(__mmask8, __m256i, __m128i);
+extern __m128i   __cdecl _mm_mask_sll_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_sll_epi64(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_sll_epi64(__m256i, __mmask8, __m256i, __m128i);
+extern __m256i   __cdecl _mm256_maskz_sll_epi64(__mmask8, __m256i, __m128i);
+extern __m128i   __cdecl _mm_mask_slli_epi16(__m128i, __mmask8, __m128i, unsigned int);
+extern __m128i   __cdecl _mm_maskz_slli_epi16(__mmask8, __m128i, unsigned int);
+extern __m256i   __cdecl _mm256_mask_slli_epi16(__m256i, __mmask16, __m256i, unsigned int);
+extern __m256i   __cdecl _mm256_maskz_slli_epi16(__mmask16, __m256i, unsigned int);
+extern __m128i   __cdecl _mm_mask_slli_epi32(__m128i, __mmask8, __m128i, unsigned int);
+extern __m128i   __cdecl _mm_maskz_slli_epi32(__mmask8, __m128i, unsigned int);
+extern __m256i   __cdecl _mm256_mask_slli_epi32(__m256i, __mmask8, __m256i, unsigned int);
+extern __m256i   __cdecl _mm256_maskz_slli_epi32(__mmask8, __m256i, unsigned int);
+extern __m128i   __cdecl _mm_mask_slli_epi64(__m128i, __mmask8, __m128i, unsigned int);
+extern __m128i   __cdecl _mm_maskz_slli_epi64(__mmask8, __m128i, unsigned int);
+extern __m256i   __cdecl _mm256_mask_slli_epi64(__m256i, __mmask8, __m256i, unsigned int);
+extern __m256i   __cdecl _mm256_maskz_slli_epi64(__mmask8, __m256i, unsigned int);
+extern __m128i   __cdecl _mm_mask_sllv_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_sllv_epi16(__mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_sllv_epi16(__m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_sllv_epi16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_sllv_epi16(__mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_sllv_epi16(__m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_sllv_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_sllv_epi32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_sllv_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_sllv_epi32(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_sllv_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_sllv_epi64(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_sllv_epi64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_sllv_epi64(__mmask8, __m256i, __m256i);
+extern __m128d   __cdecl _mm_mask_sqrt_pd(__m128d, __mmask8, __m128d);
+extern __m128d   __cdecl _mm_maskz_sqrt_pd(__mmask8, __m128d);
+extern __m256d   __cdecl _mm256_mask_sqrt_pd(__m256d, __mmask8, __m256d);
+extern __m256d   __cdecl _mm256_maskz_sqrt_pd(__mmask8, __m256d);
+extern __m128    __cdecl _mm_mask_sqrt_ps(__m128, __mmask8, __m128);
+extern __m128    __cdecl _mm_maskz_sqrt_ps(__mmask8, __m128);
+extern __m256    __cdecl _mm256_mask_sqrt_ps(__m256, __mmask8, __m256);
+extern __m256    __cdecl _mm256_maskz_sqrt_ps(__mmask8, __m256);
+extern __m128i   __cdecl _mm_mask_sra_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_sra_epi16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_sra_epi16(__m256i, __mmask16, __m256i, __m128i);
+extern __m256i   __cdecl _mm256_maskz_sra_epi16(__mmask16, __m256i, __m128i);
+extern __m128i   __cdecl _mm_mask_sra_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_sra_epi32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_sra_epi32(__m256i, __mmask8, __m256i, __m128i);
+extern __m256i   __cdecl _mm256_maskz_sra_epi32(__mmask8, __m256i, __m128i);
+extern __m128i   __cdecl _mm_mask_sra_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_sra_epi64(__mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_sra_epi64(__m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_sra_epi64(__m256i, __mmask8, __m256i, __m128i);
+extern __m256i   __cdecl _mm256_maskz_sra_epi64(__mmask8, __m256i, __m128i);
+extern __m256i   __cdecl _mm256_sra_epi64(__m256i, __m128i);
+extern __m128i   __cdecl _mm_mask_srai_epi16(__m128i, __mmask8, __m128i, unsigned int);
+extern __m128i   __cdecl _mm_maskz_srai_epi16(__mmask8, __m128i, unsigned int);
+extern __m256i   __cdecl _mm256_mask_srai_epi16(__m256i, __mmask16, __m256i, unsigned int);
+extern __m256i   __cdecl _mm256_maskz_srai_epi16(__mmask16, __m256i, unsigned int);
+extern __m128i   __cdecl _mm_mask_srai_epi32(__m128i, __mmask8, __m128i, unsigned int);
+extern __m128i   __cdecl _mm_maskz_srai_epi32(__mmask8, __m128i, unsigned int);
+extern __m256i   __cdecl _mm256_mask_srai_epi32(__m256i, __mmask8, __m256i, unsigned int);
+extern __m256i   __cdecl _mm256_maskz_srai_epi32(__mmask8, __m256i, unsigned int);
+extern __m128i   __cdecl _mm_mask_srai_epi64(__m128i, __mmask8, __m128i, unsigned int);
+extern __m128i   __cdecl _mm_maskz_srai_epi64(__mmask8, __m128i, unsigned int);
+extern __m128i   __cdecl _mm_srai_epi64(__m128i, unsigned int);
+extern __m256i   __cdecl _mm256_mask_srai_epi64(__m256i, __mmask8, __m256i, unsigned int);
+extern __m256i   __cdecl _mm256_maskz_srai_epi64(__mmask8, __m256i, unsigned int);
+extern __m256i   __cdecl _mm256_srai_epi64(__m256i, unsigned int);
+extern __m128i   __cdecl _mm_mask_srav_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_srav_epi16(__mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_srav_epi16(__m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_srav_epi16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_srav_epi16(__mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_srav_epi16(__m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_srav_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_srav_epi32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_srav_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_srav_epi32(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_srav_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_srav_epi64(__mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_srav_epi64(__m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_srav_epi64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_srav_epi64(__mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_srav_epi64(__m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_srl_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_srl_epi16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_srl_epi16(__m256i, __mmask16, __m256i, __m128i);
+extern __m256i   __cdecl _mm256_maskz_srl_epi16(__mmask16, __m256i, __m128i);
+extern __m128i   __cdecl _mm_mask_srl_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_srl_epi32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_srl_epi32(__m256i, __mmask8, __m256i, __m128i);
+extern __m256i   __cdecl _mm256_maskz_srl_epi32(__mmask8, __m256i, __m128i);
+extern __m128i   __cdecl _mm_mask_srl_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_srl_epi64(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_srl_epi64(__m256i, __mmask8, __m256i, __m128i);
+extern __m256i   __cdecl _mm256_maskz_srl_epi64(__mmask8, __m256i, __m128i);
+extern __m128i   __cdecl _mm_mask_srli_epi16(__m128i, __mmask8, __m128i, int);
+extern __m128i   __cdecl _mm_maskz_srli_epi16(__mmask8, __m128i, int);
+extern __m256i   __cdecl _mm256_mask_srli_epi16(__m256i, __mmask16, __m256i, int);
+extern __m256i   __cdecl _mm256_maskz_srli_epi16(__mmask16, __m256i, int);
+extern __m128i   __cdecl _mm_mask_srli_epi32(__m128i, __mmask8, __m128i, unsigned int);
+extern __m128i   __cdecl _mm_maskz_srli_epi32(__mmask8, __m128i, unsigned int);
+extern __m256i   __cdecl _mm256_mask_srli_epi32(__m256i, __mmask8, __m256i, unsigned int);
+extern __m256i   __cdecl _mm256_maskz_srli_epi32(__mmask8, __m256i, unsigned int);
+extern __m128i   __cdecl _mm_mask_srli_epi64(__m128i, __mmask8, __m128i, unsigned int);
+extern __m128i   __cdecl _mm_maskz_srli_epi64(__mmask8, __m128i, unsigned int);
+extern __m256i   __cdecl _mm256_mask_srli_epi64(__m256i, __mmask8, __m256i, unsigned int);
+extern __m256i   __cdecl _mm256_maskz_srli_epi64(__mmask8, __m256i, unsigned int);
+extern __m128i   __cdecl _mm_mask_srlv_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_srlv_epi16(__mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_srlv_epi16(__m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_srlv_epi16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_srlv_epi16(__mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_srlv_epi16(__m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_srlv_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_srlv_epi32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_srlv_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_srlv_epi32(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_srlv_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_srlv_epi64(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_srlv_epi64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_srlv_epi64(__mmask8, __m256i, __m256i);
+extern void      __cdecl _mm_mask_store_epi32(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_store_epi32(void*, __mmask8, __m256i);
+extern void      __cdecl _mm_mask_store_epi64(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_store_epi64(void*, __mmask8, __m256i);
+extern void      __cdecl _mm_mask_store_pd(void*, __mmask8, __m128d);
+extern void      __cdecl _mm256_mask_store_pd(void*, __mmask8, __m256d);
+extern void      __cdecl _mm_mask_store_ps(void*, __mmask8, __m128);
+extern void      __cdecl _mm256_mask_store_ps(void*, __mmask8, __m256);
+extern void      __cdecl _mm_storeu_epi16(void*, __m128i);
+extern void      __cdecl _mm256_storeu_epi16(void*, __m256i);
+extern void      __cdecl _mm_mask_storeu_epi16(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_storeu_epi16(void*, __mmask16, __m256i);
+extern void      __cdecl _mm_storeu_epi32(void*, __m128i);
+extern void      __cdecl _mm256_storeu_epi32(void*, __m256i);
+extern void      __cdecl _mm_mask_storeu_epi32(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_storeu_epi32(void*, __mmask8, __m256i);
+extern void      __cdecl _mm_storeu_epi64(void*, __m128i);
+extern void      __cdecl _mm256_storeu_epi64(void*, __m256i);
+extern void      __cdecl _mm_mask_storeu_epi64(void*, __mmask8, __m128i);
+extern void      __cdecl _mm256_mask_storeu_epi64(void*, __mmask8, __m256i);
+extern void      __cdecl _mm_storeu_epi8(void*, __m128i);
+extern void      __cdecl _mm256_storeu_epi8(void*, __m256i);
+extern void      __cdecl _mm_mask_storeu_epi8(void*, __mmask16, __m128i);
+extern void      __cdecl _mm256_mask_storeu_epi8(void*, __mmask32, __m256i);
+extern void      __cdecl _mm_mask_storeu_pd(void*, __mmask8, __m128d);
+extern void      __cdecl _mm256_mask_storeu_pd(void*, __mmask8, __m256d);
+extern void      __cdecl _mm_mask_storeu_ps(void*, __mmask8, __m128);
+extern void      __cdecl _mm256_mask_storeu_ps(void*, __mmask8, __m256);
+extern __m128i   __cdecl _mm_mask_sub_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_sub_epi16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_sub_epi16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_sub_epi16(__mmask16, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_sub_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_sub_epi32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_sub_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_sub_epi32(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_sub_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_sub_epi64(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_sub_epi64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_sub_epi64(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_sub_epi8(__m128i, __mmask16, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_sub_epi8(__mmask16, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_sub_epi8(__m256i, __mmask32, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_sub_epi8(__mmask32, __m256i, __m256i);
+extern __m128d   __cdecl _mm_mask_sub_pd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_sub_pd(__mmask8, __m128d, __m128d);
+extern __m256d   __cdecl _mm256_mask_sub_pd(__m256d, __mmask8, __m256d, __m256d);
+extern __m256d   __cdecl _mm256_maskz_sub_pd(__mmask8, __m256d, __m256d);
+extern __m128    __cdecl _mm_mask_sub_ps(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_sub_ps(__mmask8, __m128, __m128);
+extern __m256    __cdecl _mm256_mask_sub_ps(__m256, __mmask8, __m256, __m256);
+extern __m256    __cdecl _mm256_maskz_sub_ps(__mmask8, __m256, __m256);
+extern __m128i   __cdecl _mm_mask_subs_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_subs_epi16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_subs_epi16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_subs_epi16(__mmask16, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_subs_epi8(__m128i, __mmask16, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_subs_epi8(__mmask16, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_subs_epi8(__m256i, __mmask32, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_subs_epi8(__mmask32, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_subs_epu16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_subs_epu16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_subs_epu16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_subs_epu16(__mmask16, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_subs_epu8(__m128i, __mmask16, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_subs_epu8(__mmask16, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_subs_epu8(__m256i, __mmask32, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_subs_epu8(__mmask32, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_ternarylogic_epi32(__m128i, __mmask8, __m128i, __m128i, int);
+extern __m128i   __cdecl _mm_maskz_ternarylogic_epi32(__mmask8, __m128i, __m128i, __m128i, int);
+extern __m128i   __cdecl _mm_ternarylogic_epi32(__m128i, __m128i, __m128i, int);
+extern __m256i   __cdecl _mm256_mask_ternarylogic_epi32(__m256i, __mmask8, __m256i, __m256i, int);
+extern __m256i   __cdecl _mm256_maskz_ternarylogic_epi32(__mmask8, __m256i, __m256i, __m256i, int);
+extern __m256i   __cdecl _mm256_ternarylogic_epi32(__m256i, __m256i, __m256i, int);
+extern __m128i   __cdecl _mm_mask_ternarylogic_epi64(__m128i, __mmask8, __m128i, __m128i, int);
+extern __m128i   __cdecl _mm_maskz_ternarylogic_epi64(__mmask8, __m128i, __m128i, __m128i, int);
+extern __m128i   __cdecl _mm_ternarylogic_epi64(__m128i, __m128i, __m128i, int);
+extern __m256i   __cdecl _mm256_mask_ternarylogic_epi64(__m256i, __mmask8, __m256i, __m256i, int);
+extern __m256i   __cdecl _mm256_maskz_ternarylogic_epi64(__mmask8, __m256i, __m256i, __m256i, int);
+extern __m256i   __cdecl _mm256_ternarylogic_epi64(__m256i, __m256i, __m256i, int);
+extern __mmask8  __cdecl _mm_mask_test_epi16_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_test_epi16_mask(__m128i, __m128i);
+extern __mmask16 __cdecl _mm256_mask_test_epi16_mask(__mmask16, __m256i, __m256i);
+extern __mmask16 __cdecl _mm256_test_epi16_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm_mask_test_epi32_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_test_epi32_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm256_mask_test_epi32_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_test_epi32_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm_mask_test_epi64_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_test_epi64_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm256_mask_test_epi64_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_test_epi64_mask(__m256i, __m256i);
+extern __mmask16 __cdecl _mm_mask_test_epi8_mask(__mmask16, __m128i, __m128i);
+extern __mmask16 __cdecl _mm_test_epi8_mask(__m128i, __m128i);
+extern __mmask32 __cdecl _mm256_mask_test_epi8_mask(__mmask32, __m256i, __m256i);
+extern __mmask32 __cdecl _mm256_test_epi8_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm_mask_testn_epi16_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_testn_epi16_mask(__m128i, __m128i);
+extern __mmask16 __cdecl _mm256_mask_testn_epi16_mask(__mmask16, __m256i, __m256i);
+extern __mmask16 __cdecl _mm256_testn_epi16_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm_mask_testn_epi32_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_testn_epi32_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm256_mask_testn_epi32_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_testn_epi32_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm_mask_testn_epi64_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_testn_epi64_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm256_mask_testn_epi64_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_testn_epi64_mask(__m256i, __m256i);
+extern __mmask16 __cdecl _mm_mask_testn_epi8_mask(__mmask16, __m128i, __m128i);
+extern __mmask16 __cdecl _mm_testn_epi8_mask(__m128i, __m128i);
+extern __mmask32 __cdecl _mm256_mask_testn_epi8_mask(__mmask32, __m256i, __m256i);
+extern __mmask32 __cdecl _mm256_testn_epi8_mask(__m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_unpackhi_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_unpackhi_epi16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_unpackhi_epi16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_unpackhi_epi16(__mmask16, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_unpackhi_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_unpackhi_epi32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_unpackhi_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_unpackhi_epi32(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_unpackhi_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_unpackhi_epi64(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_unpackhi_epi64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_unpackhi_epi64(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_unpackhi_epi8(__m128i, __mmask16, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_unpackhi_epi8(__mmask16, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_unpackhi_epi8(__m256i, __mmask32, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_unpackhi_epi8(__mmask32, __m256i, __m256i);
+extern __m128d   __cdecl _mm_mask_unpackhi_pd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_unpackhi_pd(__mmask8, __m128d, __m128d);
+extern __m256d   __cdecl _mm256_mask_unpackhi_pd(__m256d, __mmask8, __m256d, __m256d);
+extern __m256d   __cdecl _mm256_maskz_unpackhi_pd(__mmask8, __m256d, __m256d);
+extern __m128    __cdecl _mm_mask_unpackhi_ps(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_unpackhi_ps(__mmask8, __m128, __m128);
+extern __m256    __cdecl _mm256_mask_unpackhi_ps(__m256, __mmask8, __m256, __m256);
+extern __m256    __cdecl _mm256_maskz_unpackhi_ps(__mmask8, __m256, __m256);
+extern __m128i   __cdecl _mm_mask_unpacklo_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_unpacklo_epi16(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_unpacklo_epi16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_unpacklo_epi16(__mmask16, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_unpacklo_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_unpacklo_epi32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_unpacklo_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_unpacklo_epi32(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_unpacklo_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_unpacklo_epi64(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_unpacklo_epi64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_unpacklo_epi64(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_mask_unpacklo_epi8(__m128i, __mmask16, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_unpacklo_epi8(__mmask16, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_mask_unpacklo_epi8(__m256i, __mmask32, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_unpacklo_epi8(__mmask32, __m256i, __m256i);
+extern __m128d   __cdecl _mm_mask_unpacklo_pd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_unpacklo_pd(__mmask8, __m128d, __m128d);
+extern __m256d   __cdecl _mm256_mask_unpacklo_pd(__m256d, __mmask8, __m256d, __m256d);
+extern __m256d   __cdecl _mm256_maskz_unpacklo_pd(__mmask8, __m256d, __m256d);
+extern __m128    __cdecl _mm_mask_unpacklo_ps(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_unpacklo_ps(__mmask8, __m128, __m128);
+extern __m256    __cdecl _mm256_mask_unpacklo_ps(__m256, __mmask8, __m256, __m256);
+extern __m256    __cdecl _mm256_maskz_unpacklo_ps(__mmask8, __m256, __m256);
+extern __m128i   __cdecl _mm_xor_epi32(__m128i, __m128i);
+extern __m128i   __cdecl _mm_mask_xor_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_xor_epi32(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_xor_epi32(__m256i, __m256i);
+extern __m256i   __cdecl _mm256_mask_xor_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_xor_epi32(__mmask8, __m256i, __m256i);
+extern __m128i   __cdecl _mm_xor_epi64(__m128i, __m128i);
+extern __m128i   __cdecl _mm_mask_xor_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i   __cdecl _mm_maskz_xor_epi64(__mmask8, __m128i, __m128i);
+extern __m256i   __cdecl _mm256_xor_epi64(__m256i, __m256i);
+extern __m256i   __cdecl _mm256_mask_xor_epi64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i   __cdecl _mm256_maskz_xor_epi64(__mmask8, __m256i, __m256i);
+extern __m128d   __cdecl _mm_mask_xor_pd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_xor_pd(__mmask8, __m128d, __m128d);
+extern __m256d   __cdecl _mm256_mask_xor_pd(__m256d, __mmask8, __m256d, __m256d);
+extern __m256d   __cdecl _mm256_maskz_xor_pd(__mmask8, __m256d, __m256d);
+extern __m128    __cdecl _mm_mask_xor_ps(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_xor_ps(__mmask8, __m128, __m128);
+extern __m256    __cdecl _mm256_mask_xor_ps(__m256, __mmask8, __m256, __m256);
+extern __m256    __cdecl _mm256_maskz_xor_ps(__mmask8, __m256, __m256);
+
+extern __mmask16  __cdecl _mm_cmpeq_epi8_mask(__m128i, __m128i);
+extern __mmask16  __cdecl _mm_cmpge_epi8_mask(__m128i, __m128i);
+extern __mmask16  __cdecl _mm_cmpgt_epi8_mask(__m128i, __m128i);
+extern __mmask16  __cdecl _mm_cmple_epi8_mask(__m128i, __m128i);
+extern __mmask16  __cdecl _mm_cmplt_epi8_mask(__m128i, __m128i);
+extern __mmask16  __cdecl _mm_cmpneq_epi8_mask(__m128i, __m128i);
+extern __mmask16  __cdecl _mm_cmpeq_epu8_mask(__m128i, __m128i);
+extern __mmask16  __cdecl _mm_cmpge_epu8_mask(__m128i, __m128i);
+extern __mmask16  __cdecl _mm_cmpgt_epu8_mask(__m128i, __m128i);
+extern __mmask16  __cdecl _mm_cmple_epu8_mask(__m128i, __m128i);
+extern __mmask16  __cdecl _mm_cmplt_epu8_mask(__m128i, __m128i);
+extern __mmask16  __cdecl _mm_cmpneq_epu8_mask(__m128i, __m128i);
+
+extern __mmask16  __cdecl _mm_mask_cmpeq_epi8_mask(__mmask16, __m128i, __m128i);
+extern __mmask16  __cdecl _mm_mask_cmpge_epi8_mask(__mmask16, __m128i, __m128i);
+extern __mmask16  __cdecl _mm_mask_cmpgt_epi8_mask(__mmask16, __m128i, __m128i);
+extern __mmask16  __cdecl _mm_mask_cmple_epi8_mask(__mmask16, __m128i, __m128i);
+extern __mmask16  __cdecl _mm_mask_cmplt_epi8_mask(__mmask16, __m128i, __m128i);
+extern __mmask16  __cdecl _mm_mask_cmpneq_epi8_mask(__mmask16, __m128i, __m128i);
+extern __mmask16  __cdecl _mm_mask_cmpeq_epu8_mask(__mmask16, __m128i, __m128i);
+extern __mmask16  __cdecl _mm_mask_cmpge_epu8_mask(__mmask16, __m128i, __m128i);
+extern __mmask16  __cdecl _mm_mask_cmpgt_epu8_mask(__mmask16, __m128i, __m128i);
+extern __mmask16  __cdecl _mm_mask_cmple_epu8_mask(__mmask16, __m128i, __m128i);
+extern __mmask16  __cdecl _mm_mask_cmplt_epu8_mask(__mmask16, __m128i, __m128i);
+extern __mmask16  __cdecl _mm_mask_cmpneq_epu8_mask(__mmask16, __m128i, __m128i);
+
+extern __mmask8  __cdecl _mm_cmpeq_epi16_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmpge_epi16_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmpgt_epi16_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmple_epi16_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmplt_epi16_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmpneq_epi16_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmpeq_epu16_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmpge_epu16_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmpgt_epu16_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmple_epu16_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmplt_epu16_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmpneq_epu16_mask(__m128i, __m128i);
+
+extern __mmask8  __cdecl _mm_mask_cmpeq_epi16_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmpge_epi16_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmpgt_epi16_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmple_epi16_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmplt_epi16_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmpneq_epi16_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmpeq_epu16_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmpge_epu16_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmpgt_epu16_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmple_epu16_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmplt_epu16_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmpneq_epu16_mask(__mmask8, __m128i, __m128i);
+
+extern __mmask8  __cdecl _mm_cmpeq_epi32_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmpge_epi32_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmpgt_epi32_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmple_epi32_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmplt_epi32_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmpneq_epi32_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmpeq_epu32_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmpge_epu32_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmpgt_epu32_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmple_epu32_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmplt_epu32_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmpneq_epu32_mask(__m128i, __m128i);
+
+extern __mmask8  __cdecl _mm_mask_cmpeq_epi32_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmpge_epi32_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmpgt_epi32_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmple_epi32_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmplt_epi32_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmpneq_epi32_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmpeq_epu32_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmpge_epu32_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmpgt_epu32_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmple_epu32_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmplt_epu32_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmpneq_epu32_mask(__mmask8, __m128i, __m128i);
+
+extern __mmask8  __cdecl _mm_cmpeq_epi64_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmpge_epi64_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmpgt_epi64_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmple_epi64_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmplt_epi64_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmpneq_epi64_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmpeq_epu64_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmpge_epu64_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmpgt_epu64_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmple_epu64_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmplt_epu64_mask(__m128i, __m128i);
+extern __mmask8  __cdecl _mm_cmpneq_epu64_mask(__m128i, __m128i);
+
+extern __mmask8  __cdecl _mm_mask_cmpeq_epi64_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmpge_epi64_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmpgt_epi64_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmple_epi64_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmplt_epi64_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmpneq_epi64_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmpeq_epu64_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmpge_epu64_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmpgt_epu64_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmple_epu64_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmplt_epu64_mask(__mmask8, __m128i, __m128i);
+extern __mmask8  __cdecl _mm_mask_cmpneq_epu64_mask(__mmask8, __m128i, __m128i);
+
+extern __mmask32  __cdecl _mm256_cmpeq_epi8_mask(__m256i, __m256i);
+extern __mmask32  __cdecl _mm256_cmpge_epi8_mask(__m256i, __m256i);
+extern __mmask32  __cdecl _mm256_cmpgt_epi8_mask(__m256i, __m256i);
+extern __mmask32  __cdecl _mm256_cmple_epi8_mask(__m256i, __m256i);
+extern __mmask32  __cdecl _mm256_cmplt_epi8_mask(__m256i, __m256i);
+extern __mmask32  __cdecl _mm256_cmpneq_epi8_mask(__m256i, __m256i);
+extern __mmask32  __cdecl _mm256_cmpeq_epu8_mask(__m256i, __m256i);
+extern __mmask32  __cdecl _mm256_cmpge_epu8_mask(__m256i, __m256i);
+extern __mmask32  __cdecl _mm256_cmpgt_epu8_mask(__m256i, __m256i);
+extern __mmask32  __cdecl _mm256_cmple_epu8_mask(__m256i, __m256i);
+extern __mmask32  __cdecl _mm256_cmplt_epu8_mask(__m256i, __m256i);
+extern __mmask32  __cdecl _mm256_cmpneq_epu8_mask(__m256i, __m256i);
+
+extern __mmask32  __cdecl _mm256_mask_cmpeq_epi8_mask(__mmask32, __m256i, __m256i);
+extern __mmask32  __cdecl _mm256_mask_cmpge_epi8_mask(__mmask32, __m256i, __m256i);
+extern __mmask32  __cdecl _mm256_mask_cmpgt_epi8_mask(__mmask32, __m256i, __m256i);
+extern __mmask32  __cdecl _mm256_mask_cmple_epi8_mask(__mmask32, __m256i, __m256i);
+extern __mmask32  __cdecl _mm256_mask_cmplt_epi8_mask(__mmask32, __m256i, __m256i);
+extern __mmask32  __cdecl _mm256_mask_cmpneq_epi8_mask(__mmask32, __m256i, __m256i);
+extern __mmask32  __cdecl _mm256_mask_cmpeq_epu8_mask(__mmask32, __m256i, __m256i);
+extern __mmask32  __cdecl _mm256_mask_cmpge_epu8_mask(__mmask32, __m256i, __m256i);
+extern __mmask32  __cdecl _mm256_mask_cmpgt_epu8_mask(__mmask32, __m256i, __m256i);
+extern __mmask32  __cdecl _mm256_mask_cmple_epu8_mask(__mmask32, __m256i, __m256i);
+extern __mmask32  __cdecl _mm256_mask_cmplt_epu8_mask(__mmask32, __m256i, __m256i);
+extern __mmask32  __cdecl _mm256_mask_cmpneq_epu8_mask(__mmask32, __m256i, __m256i);
+
+extern __mmask16  __cdecl _mm256_cmpeq_epi16_mask(__m256i, __m256i);
+extern __mmask16  __cdecl _mm256_cmpge_epi16_mask(__m256i, __m256i);
+extern __mmask16  __cdecl _mm256_cmpgt_epi16_mask(__m256i, __m256i);
+extern __mmask16  __cdecl _mm256_cmple_epi16_mask(__m256i, __m256i);
+extern __mmask16  __cdecl _mm256_cmplt_epi16_mask(__m256i, __m256i);
+extern __mmask16  __cdecl _mm256_cmpneq_epi16_mask(__m256i, __m256i);
+extern __mmask16  __cdecl _mm256_cmpeq_epu16_mask(__m256i, __m256i);
+extern __mmask16  __cdecl _mm256_cmpge_epu16_mask(__m256i, __m256i);
+extern __mmask16  __cdecl _mm256_cmpgt_epu16_mask(__m256i, __m256i);
+extern __mmask16  __cdecl _mm256_cmple_epu16_mask(__m256i, __m256i);
+extern __mmask16  __cdecl _mm256_cmplt_epu16_mask(__m256i, __m256i);
+extern __mmask16  __cdecl _mm256_cmpneq_epu16_mask(__m256i, __m256i);
+
+extern __mmask16  __cdecl _mm256_mask_cmpeq_epi16_mask(__mmask16, __m256i, __m256i);
+extern __mmask16  __cdecl _mm256_mask_cmpge_epi16_mask(__mmask16, __m256i, __m256i);
+extern __mmask16  __cdecl _mm256_mask_cmpgt_epi16_mask(__mmask16, __m256i, __m256i);
+extern __mmask16  __cdecl _mm256_mask_cmple_epi16_mask(__mmask16, __m256i, __m256i);
+extern __mmask16  __cdecl _mm256_mask_cmplt_epi16_mask(__mmask16, __m256i, __m256i);
+extern __mmask16  __cdecl _mm256_mask_cmpneq_epi16_mask(__mmask16, __m256i, __m256i);
+extern __mmask16  __cdecl _mm256_mask_cmpeq_epu16_mask(__mmask16, __m256i, __m256i);
+extern __mmask16  __cdecl _mm256_mask_cmpge_epu16_mask(__mmask16, __m256i, __m256i);
+extern __mmask16  __cdecl _mm256_mask_cmpgt_epu16_mask(__mmask16, __m256i, __m256i);
+extern __mmask16  __cdecl _mm256_mask_cmple_epu16_mask(__mmask16, __m256i, __m256i);
+extern __mmask16  __cdecl _mm256_mask_cmplt_epu16_mask(__mmask16, __m256i, __m256i);
+extern __mmask16  __cdecl _mm256_mask_cmpneq_epu16_mask(__mmask16, __m256i, __m256i);
+
+extern __mmask8  __cdecl _mm256_cmpeq_epi32_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmpge_epi32_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmpgt_epi32_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmple_epi32_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmplt_epi32_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmpneq_epi32_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmpeq_epu32_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmpge_epu32_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmpgt_epu32_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmple_epu32_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmplt_epu32_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmpneq_epu32_mask(__m256i, __m256i);
+
+extern __mmask8  __cdecl _mm256_mask_cmpeq_epi32_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmpge_epi32_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmpgt_epi32_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmple_epi32_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmplt_epi32_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmpneq_epi32_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmpeq_epu32_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmpge_epu32_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmpgt_epu32_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmple_epu32_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmplt_epu32_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmpneq_epu32_mask(__mmask8, __m256i, __m256i);
+
+extern __mmask8  __cdecl _mm256_cmpeq_epi64_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmpge_epi64_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmpgt_epi64_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmple_epi64_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmplt_epi64_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmpneq_epi64_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmpeq_epu64_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmpge_epu64_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmpgt_epu64_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmple_epu64_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmplt_epu64_mask(__m256i, __m256i);
+extern __mmask8  __cdecl _mm256_cmpneq_epu64_mask(__m256i, __m256i);
+
+extern __mmask8  __cdecl _mm256_mask_cmpeq_epi64_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmpge_epi64_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmpgt_epi64_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmple_epi64_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmplt_epi64_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmpneq_epi64_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmpeq_epu64_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmpge_epu64_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmpgt_epu64_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmple_epu64_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmplt_epu64_mask(__mmask8, __m256i, __m256i);
+extern __mmask8  __cdecl _mm256_mask_cmpneq_epu64_mask(__mmask8, __m256i, __m256i);
+
+
+extern __m128d   __cdecl _mm_add_round_sd(__m128d, __m128d, int);
+extern __m128d   __cdecl _mm_mask_add_round_sd(__m128d, __mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_maskz_add_round_sd(__mmask8, __m128d, __m128d, int);
+extern __m128    __cdecl _mm_add_round_ss(__m128, __m128, int);
+extern __m128    __cdecl _mm_mask_add_round_ss(__m128, __mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_maskz_add_round_ss(__mmask8, __m128, __m128, int);
+extern __m128d   __cdecl _mm_mask_add_sd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_add_sd(__mmask8, __m128d, __m128d);
+extern __m128    __cdecl _mm_mask_add_ss(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_add_ss(__mmask8, __m128, __m128);
+extern __mmask8  __cdecl _mm_cmp_round_sd_mask(__m128d, __m128d, const int, const int);
+extern __mmask8  __cdecl _mm_mask_cmp_round_sd_mask(__mmask8, __m128d, __m128d, const int, const int);
+extern __mmask8  __cdecl _mm_cmp_round_ss_mask(__m128, __m128, const int, const int);
+extern __mmask8  __cdecl _mm_mask_cmp_round_ss_mask(__mmask8, __m128, __m128, const int, const int);
+extern __mmask8  __cdecl _mm_cmp_sd_mask(__m128d, __m128d, const int);
+extern __mmask8  __cdecl _mm_mask_cmp_sd_mask(__mmask8, __m128d, __m128d, const int);
+extern __mmask8  __cdecl _mm_cmp_ss_mask(__m128, __m128, const int);
+extern __mmask8  __cdecl _mm_mask_cmp_ss_mask(__mmask8, __m128, __m128, const int);
+extern int       __cdecl _mm_comi_round_sd(__m128d, __m128d, const int, const int);
+extern int       __cdecl _mm_comi_round_ss(__m128, __m128, const int, const int);
+extern __m128    __cdecl _mm_cvt_roundi32_ss(__m128, int, int);
+extern int       __cdecl _mm_cvt_roundsd_i32(__m128d, int);
+extern int       __cdecl _mm_cvt_roundsd_si32(__m128d, int);
+extern __m128    __cdecl _mm_cvt_roundsd_ss(__m128, __m128d, int);
+extern __m128    __cdecl _mm_mask_cvt_roundsd_ss(__m128, __mmask8, __m128, __m128d, int);
+extern __m128    __cdecl _mm_maskz_cvt_roundsd_ss(__mmask8, __m128, __m128d, int);
+extern unsigned int __cdecl _mm_cvt_roundsd_u32(__m128d, int);
+extern __m128    __cdecl _mm_cvt_roundsi32_ss(__m128, int, int);
+extern int       __cdecl _mm_cvt_roundss_i32(__m128, int);
+extern __m128d   __cdecl _mm_cvt_roundss_sd(__m128d, __m128, int);
+extern __m128d   __cdecl _mm_mask_cvt_roundss_sd(__m128d, __mmask8, __m128d, __m128, int);
+extern __m128d   __cdecl _mm_maskz_cvt_roundss_sd(__mmask8, __m128d, __m128, int);
+extern int       __cdecl _mm_cvt_roundss_si32(__m128, int);
+extern unsigned int __cdecl _mm_cvt_roundss_u32(__m128, int);
+extern __m128    __cdecl _mm_cvt_roundu32_ss(__m128, unsigned int, int);
+extern __m128d   __cdecl _mm_cvti32_sd(__m128d, int);
+extern __m128    __cdecl _mm_cvti32_ss(__m128, int);
+extern int       __cdecl _mm_cvtsd_i32(__m128d);
+extern __m128    __cdecl _mm_mask_cvtsd_ss(__m128, __mmask8, __m128, __m128d);
+extern __m128    __cdecl _mm_maskz_cvtsd_ss(__mmask8, __m128, __m128d);
+extern unsigned int __cdecl _mm_cvtsd_u32(__m128d);
+extern int       __cdecl _mm_cvtss_i32(__m128);
+extern __m128d   __cdecl _mm_mask_cvtss_sd(__m128d, __mmask8, __m128d, __m128);
+extern __m128d   __cdecl _mm_maskz_cvtss_sd(__mmask8, __m128d, __m128);
+extern unsigned int __cdecl _mm_cvtss_u32(__m128);
+extern int       __cdecl _mm_cvtt_roundsd_i32(__m128d, int);
+extern int       __cdecl _mm_cvtt_roundsd_si32(__m128d, int);
+extern unsigned int __cdecl _mm_cvtt_roundsd_u32(__m128d, int);
+extern int       __cdecl _mm_cvtt_roundss_i32(__m128, int);
+extern int       __cdecl _mm_cvtt_roundss_si32(__m128, int);
+extern unsigned int __cdecl _mm_cvtt_roundss_u32(__m128, int);
+extern int       __cdecl _mm_cvttsd_i32(__m128d);
+extern unsigned int __cdecl _mm_cvttsd_u32(__m128d);
+extern int       __cdecl _mm_cvttss_i32(__m128);
+extern unsigned int __cdecl _mm_cvttss_u32(__m128);
+extern __m128d   __cdecl _mm_cvtu32_sd(__m128d, unsigned int);
+extern __m128    __cdecl _mm_cvtu32_ss(__m128, unsigned int);
+extern __m128d   __cdecl _mm_div_round_sd(__m128d, __m128d, int);
+extern __m128d   __cdecl _mm_mask_div_round_sd(__m128d, __mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_maskz_div_round_sd(__mmask8, __m128d, __m128d, int);
+extern __m128    __cdecl _mm_div_round_ss(__m128, __m128, int);
+extern __m128    __cdecl _mm_mask_div_round_ss(__m128, __mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_maskz_div_round_ss(__mmask8, __m128, __m128, int);
+extern __m128d   __cdecl _mm_mask_div_sd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_div_sd(__mmask8, __m128d, __m128d);
+extern __m128    __cdecl _mm_mask_div_ss(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_div_ss(__mmask8, __m128, __m128);
+extern __m128d   __cdecl _mm_fixupimm_round_sd(__m128d, __m128d, __m128i, const int, int);
+extern __m128d   __cdecl _mm_mask_fixupimm_round_sd(__m128d, __mmask8, __m128d, __m128i, const int, const int);
+extern __m128d   __cdecl _mm_maskz_fixupimm_round_sd(__mmask8, __m128d, __m128d, __m128i, const int, const int);
+extern __m128    __cdecl _mm_fixupimm_round_ss(__m128, __m128, __m128i, const int, const int);
+extern __m128    __cdecl _mm_mask_fixupimm_round_ss(__m128, __mmask8, __m128, __m128i, const int, const int);
+extern __m128    __cdecl _mm_maskz_fixupimm_round_ss(__mmask8, __m128, __m128, __m128i, const int, const int);
+extern __m128d   __cdecl _mm_fixupimm_sd(__m128d, __m128d, __m128i, const int);
+extern __m128d   __cdecl _mm_mask_fixupimm_sd(__m128d, __mmask8, __m128d, __m128i, const int);
+extern __m128d   __cdecl _mm_maskz_fixupimm_sd(__mmask8, __m128d, __m128d, __m128i, const int);
+extern __m128    __cdecl _mm_fixupimm_ss(__m128, __m128, __m128i, const int);
+extern __m128    __cdecl _mm_mask_fixupimm_ss(__m128, __mmask8, __m128, __m128i, const int);
+extern __m128    __cdecl _mm_maskz_fixupimm_ss(__mmask8, __m128, __m128, __m128i, const int);
+extern __m128d   __cdecl _mm_fmadd_round_sd(__m128d, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_mask_fmadd_round_sd(__m128d, __mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_mask3_fmadd_round_sd(__m128d, __m128d, __m128d, __mmask8, int);
+extern __m128d   __cdecl _mm_maskz_fmadd_round_sd(__mmask8, __m128d, __m128d, __m128d, int);
+extern __m128    __cdecl _mm_fmadd_round_ss(__m128, __m128, __m128, int);
+extern __m128    __cdecl _mm_mask_fmadd_round_ss(__m128, __mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_mask3_fmadd_round_ss(__m128, __m128, __m128, __mmask8, int);
+extern __m128    __cdecl _mm_maskz_fmadd_round_ss(__mmask8, __m128, __m128, __m128, int);
+extern __m128d   __cdecl _mm_mask_fmadd_sd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_mask3_fmadd_sd(__m128d, __m128d, __m128d, __mmask8);
+extern __m128d   __cdecl _mm_maskz_fmadd_sd(__mmask8, __m128d, __m128d, __m128d);
+extern __m128    __cdecl _mm_mask_fmadd_ss(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_mask3_fmadd_ss(__m128, __m128, __m128, __mmask8);
+extern __m128    __cdecl _mm_maskz_fmadd_ss(__mmask8, __m128, __m128, __m128);
+extern __m128d   __cdecl _mm_fmsub_round_sd(__m128d, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_mask_fmsub_round_sd(__m128d, __mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_mask3_fmsub_round_sd(__m128d, __m128d, __m128d, __mmask8, int);
+extern __m128d   __cdecl _mm_maskz_fmsub_round_sd(__mmask8, __m128d, __m128d, __m128d, int);
+extern __m128    __cdecl _mm_fmsub_round_ss(__m128, __m128, __m128, int);
+extern __m128    __cdecl _mm_mask_fmsub_round_ss(__m128, __mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_mask3_fmsub_round_ss(__m128, __m128, __m128, __mmask8, int);
+extern __m128    __cdecl _mm_maskz_fmsub_round_ss(__mmask8, __m128, __m128, __m128, int);
+extern __m128d   __cdecl _mm_mask_fmsub_sd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_mask3_fmsub_sd(__m128d, __m128d, __m128d, __mmask8);
+extern __m128d   __cdecl _mm_maskz_fmsub_sd(__mmask8, __m128d, __m128d, __m128d);
+extern __m128    __cdecl _mm_mask_fmsub_ss(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_mask3_fmsub_ss(__m128, __m128, __m128, __mmask8);
+extern __m128    __cdecl _mm_maskz_fmsub_ss(__mmask8, __m128, __m128, __m128);
+extern __m128d   __cdecl _mm_fnmadd_round_sd(__m128d, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_mask_fnmadd_round_sd(__m128d, __mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_mask3_fnmadd_round_sd(__m128d, __m128d, __m128d, __mmask8, int);
+extern __m128d   __cdecl _mm_maskz_fnmadd_round_sd(__mmask8, __m128d, __m128d, __m128d, int);
+extern __m128    __cdecl _mm_fnmadd_round_ss(__m128, __m128, __m128, int);
+extern __m128    __cdecl _mm_mask_fnmadd_round_ss(__m128, __mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_mask3_fnmadd_round_ss(__m128, __m128, __m128, __mmask8, int);
+extern __m128    __cdecl _mm_maskz_fnmadd_round_ss(__mmask8, __m128, __m128, __m128, int);
+extern __m128d   __cdecl _mm_mask_fnmadd_sd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_mask3_fnmadd_sd(__m128d, __m128d, __m128d, __mmask8);
+extern __m128d   __cdecl _mm_maskz_fnmadd_sd(__mmask8, __m128d, __m128d, __m128d);
+extern __m128    __cdecl _mm_mask_fnmadd_ss(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_mask3_fnmadd_ss(__m128, __m128, __m128, __mmask8);
+extern __m128    __cdecl _mm_maskz_fnmadd_ss(__mmask8, __m128, __m128, __m128);
+extern __m128d   __cdecl _mm_fnmsub_round_sd(__m128d, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_mask_fnmsub_round_sd(__m128d, __mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_mask3_fnmsub_round_sd(__m128d, __m128d, __m128d, __mmask8, int);
+extern __m128d   __cdecl _mm_maskz_fnmsub_round_sd(__mmask8, __m128d, __m128d, __m128d, int);
+extern __m128    __cdecl _mm_fnmsub_round_ss(__m128, __m128, __m128, int);
+extern __m128    __cdecl _mm_mask_fnmsub_round_ss(__m128, __mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_mask3_fnmsub_round_ss(__m128, __m128, __m128, __mmask8, int);
+extern __m128    __cdecl _mm_maskz_fnmsub_round_ss(__mmask8, __m128, __m128, __m128, int);
+extern __m128d   __cdecl _mm_mask_fnmsub_sd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_mask3_fnmsub_sd(__m128d, __m128d, __m128d, __mmask8);
+extern __m128d   __cdecl _mm_maskz_fnmsub_sd(__mmask8, __m128d, __m128d, __m128d);
+extern __m128    __cdecl _mm_mask_fnmsub_ss(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_mask3_fnmsub_ss(__m128, __m128, __m128, __mmask8);
+extern __m128    __cdecl _mm_maskz_fnmsub_ss(__mmask8, __m128, __m128, __m128);
+extern __mmask8  __cdecl _mm_fpclass_sd_mask(__m128d, int);
+extern __mmask8  __cdecl _mm_mask_fpclass_sd_mask(__mmask8, __m128d, int);
+extern __mmask8  __cdecl _mm_fpclass_ss_mask(__m128, int);
+extern __mmask8  __cdecl _mm_mask_fpclass_ss_mask(__mmask8, __m128, int);
+extern __m128d   __cdecl _mm_getexp_round_sd(__m128d, __m128d, const int);
+extern __m128d   __cdecl _mm_mask_getexp_round_sd(__m128d, __mmask8, __m128d, __m128d, const int);
+extern __m128d   __cdecl _mm_maskz_getexp_round_sd(__mmask8, __m128d, __m128d, const int);
+extern __m128    __cdecl _mm_getexp_round_ss(__m128, __m128, const int);
+extern __m128    __cdecl _mm_mask_getexp_round_ss(__m128, __mmask8, __m128, __m128, const int);
+extern __m128    __cdecl _mm_maskz_getexp_round_ss(__mmask8, __m128, __m128, const int);
+extern __m128d   __cdecl _mm_getexp_sd(__m128d, __m128d);
+extern __m128d   __cdecl _mm_mask_getexp_sd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_getexp_sd(__mmask8, __m128d, __m128d);
+extern __m128    __cdecl _mm_getexp_ss(__m128, __m128);
+extern __m128    __cdecl _mm_mask_getexp_ss(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_getexp_ss(__mmask8, __m128, __m128);
+extern __m128d   __cdecl _mm_getmant_round_sd(__m128d, __m128d, int, int, int);
+extern __m128d   __cdecl _mm_mask_getmant_round_sd(__m128d, __mmask8, __m128d, __m128d, int, int, int);
+extern __m128d   __cdecl _mm_maskz_getmant_round_sd(__mmask8, __m128d, __m128d, int, int, int);
+extern __m128    __cdecl _mm_getmant_round_ss(__m128, __m128, int, int, int);
+extern __m128    __cdecl _mm_mask_getmant_round_ss(__m128, __mmask8, __m128, __m128, int, int, int);
+extern __m128    __cdecl _mm_maskz_getmant_round_ss(__mmask8, __m128, __m128, int, int, int);
+extern __m128d   __cdecl _mm_getmant_sd(__m128d, __m128d, int, int);
+extern __m128d   __cdecl _mm_mask_getmant_sd(__m128d, __mmask8, __m128d, __m128d, int, int);
+extern __m128d   __cdecl _mm_maskz_getmant_sd(__mmask8, __m128d, __m128d, int, int);
+extern __m128    __cdecl _mm_getmant_ss(__m128, __m128, int, int);
+extern __m128    __cdecl _mm_mask_getmant_ss(__m128, __mmask8, __m128, __m128, int, int);
+extern __m128    __cdecl _mm_maskz_getmant_ss(__mmask8, __m128, __m128, int, int);
+extern __m128d   __cdecl _mm_mask_load_sd(__m128d, __mmask8, const double*);
+extern __m128d   __cdecl _mm_maskz_load_sd(__mmask8, const double*);
+extern __m128    __cdecl _mm_mask_load_ss(__m128, __mmask8, const float*);
+extern __m128    __cdecl _mm_maskz_load_ss(__mmask8, const float*);
+extern __m128d   __cdecl _mm_mask_max_round_sd(__m128d, __mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_maskz_max_round_sd(__mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_max_round_sd(__m128d, __m128d, int);
+extern __m128    __cdecl _mm_mask_max_round_ss(__m128, __mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_maskz_max_round_ss(__mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_max_round_ss(__m128, __m128, int);
+extern __m128d   __cdecl _mm_mask_max_sd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_max_sd(__mmask8, __m128d, __m128d);
+extern __m128    __cdecl _mm_mask_max_ss(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_max_ss(__mmask8, __m128, __m128);
+extern __m128d   __cdecl _mm_mask_min_round_sd(__m128d, __mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_maskz_min_round_sd(__mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_min_round_sd(__m128d, __m128d, int);
+extern __m128    __cdecl _mm_mask_min_round_ss(__m128, __mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_maskz_min_round_ss(__mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_min_round_ss(__m128, __m128, int);
+extern __m128d   __cdecl _mm_mask_min_sd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_min_sd(__mmask8, __m128d, __m128d);
+extern __m128    __cdecl _mm_mask_min_ss(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_min_ss(__mmask8, __m128, __m128);
+extern __m128d   __cdecl _mm_mask_move_sd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_move_sd(__mmask8, __m128d, __m128d);
+extern __m128    __cdecl _mm_mask_move_ss(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_move_ss(__mmask8, __m128, __m128);
+extern __m128d   __cdecl _mm_mask_mul_round_sd(__m128d, __mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_maskz_mul_round_sd(__mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_mul_round_sd(__m128d, __m128d, int);
+extern __m128    __cdecl _mm_mask_mul_round_ss(__m128, __mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_maskz_mul_round_ss(__mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_mul_round_ss(__m128, __m128, int);
+extern __m128d   __cdecl _mm_mask_mul_sd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_mul_sd(__mmask8, __m128d, __m128d);
+extern __m128    __cdecl _mm_mask_mul_ss(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_mul_ss(__mmask8, __m128, __m128);
+extern __m128d   __cdecl _mm_range_sd(__m128d, __m128d, const int);
+extern __m128d   __cdecl _mm_mask_range_sd(__m128d, __mmask8, __m128d, __m128d, const int);
+extern __m128d   __cdecl _mm_maskz_range_sd(__mmask8, __m128d, __m128d, const int);
+extern __m128d   __cdecl _mm_range_round_sd(__m128d, __m128d, const int, int);
+extern __m128d   __cdecl _mm_mask_range_round_sd(__m128d, __mmask8, __m128d, __m128d, const int, int);
+extern __m128d   __cdecl _mm_maskz_range_round_sd(__mmask8, __m128d, __m128d, const int, int);
+extern __m128    __cdecl _mm_range_ss(__m128, __m128, const int);
+extern __m128    __cdecl _mm_mask_range_ss(__m128, __mmask8, __m128, __m128, const int);
+extern __m128    __cdecl _mm_maskz_range_ss(__mmask8, __m128, __m128, const int);
+extern __m128    __cdecl _mm_range_round_ss(__m128, __m128, const int, int);
+extern __m128    __cdecl _mm_mask_range_round_ss(__m128, __mmask8, __m128, __m128, const int, int);
+extern __m128    __cdecl _mm_maskz_range_round_ss(__mmask8, __m128, __m128, const int, int);
+extern __m128d   __cdecl _mm_mask_rcp14_sd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_rcp14_sd(__mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_rcp14_sd(__m128d, __m128d);
+extern __m128    __cdecl _mm_mask_rcp14_ss(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_rcp14_ss(__mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_rcp14_ss(__m128, __m128);
+extern __m128d   __cdecl _mm_mask_rcp28_round_sd(__m128d, __mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_maskz_rcp28_round_sd(__mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_rcp28_round_sd(__m128d, __m128d, int);
+extern __m128    __cdecl _mm_mask_rcp28_round_ss(__m128, __mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_maskz_rcp28_round_ss(__mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_rcp28_round_ss(__m128, __m128, int);
+extern __m128d   __cdecl _mm_mask_rcp28_sd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_rcp28_sd(__mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_rcp28_sd(__m128d, __m128d);
+extern __m128    __cdecl _mm_mask_rcp28_ss(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_rcp28_ss(__mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_rcp28_ss(__m128, __m128);
+extern __m128d   __cdecl _mm_mask_reduce_round_sd(__m128d, __mmask8, __m128d, __m128d, const int, int);
+extern __m128d   __cdecl _mm_maskz_reduce_round_sd(__mmask8, __m128d, __m128d, const int, int);
+extern __m128d   __cdecl _mm_reduce_round_sd(__m128d, __m128d, const int, int);
+extern __m128    __cdecl _mm_mask_reduce_round_ss(__m128, __mmask8, __m128, __m128, const int, int);
+extern __m128    __cdecl _mm_maskz_reduce_round_ss(__mmask8, __m128, __m128, const int, int);
+extern __m128    __cdecl _mm_reduce_round_ss(__m128, __m128, const int, int);
+extern __m128d   __cdecl _mm_mask_reduce_sd(__m128d, __mmask8, __m128d, __m128d, const int);
+extern __m128d   __cdecl _mm_maskz_reduce_sd(__mmask8, __m128d, __m128d, const int);
+extern __m128d   __cdecl _mm_reduce_sd(__m128d, __m128d, const int);
+extern __m128    __cdecl _mm_mask_reduce_ss(__m128, __mmask8, __m128, __m128, const int);
+extern __m128    __cdecl _mm_maskz_reduce_ss(__mmask8, __m128, __m128, const int);
+extern __m128    __cdecl _mm_reduce_ss(__m128, __m128, const int);
+extern __m128d   __cdecl _mm_mask_roundscale_round_sd(__m128d, __mmask8, __m128d, __m128d, const int, const int);
+extern __m128d   __cdecl _mm_maskz_roundscale_round_sd(__mmask8, __m128d, __m128d, const int, const int);
+extern __m128d   __cdecl _mm_roundscale_round_sd(__m128d, __m128d, const int, const int);
+extern __m128    __cdecl _mm_mask_roundscale_round_ss(__m128, __mmask8, __m128, __m128, const int, const int);
+extern __m128    __cdecl _mm_maskz_roundscale_round_ss(__mmask8, __m128, __m128, const int, const int);
+extern __m128    __cdecl _mm_roundscale_round_ss(__m128, __m128, const int, const int);
+extern __m128d   __cdecl _mm_mask_roundscale_sd(__m128d, __mmask8, __m128d, __m128d, const int);
+extern __m128d   __cdecl _mm_maskz_roundscale_sd(__mmask8, __m128d, __m128d, const int);
+extern __m128d   __cdecl _mm_roundscale_sd(__m128d, __m128d, const int);
+extern __m128    __cdecl _mm_mask_roundscale_ss(__m128, __mmask8, __m128, __m128, const int);
+extern __m128    __cdecl _mm_maskz_roundscale_ss(__mmask8, __m128, __m128, const int);
+extern __m128    __cdecl _mm_roundscale_ss(__m128, __m128, const int);
+extern __m128d   __cdecl _mm_mask_rsqrt14_sd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_rsqrt14_sd(__mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_rsqrt14_sd(__m128d, __m128d);
+extern __m128    __cdecl _mm_mask_rsqrt14_ss(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_rsqrt14_ss(__mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_rsqrt14_ss(__m128, __m128);
+extern __m128d   __cdecl _mm_mask_rsqrt28_round_sd(__m128d, __mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_maskz_rsqrt28_round_sd(__mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_rsqrt28_round_sd(__m128d, __m128d, int);
+extern __m128    __cdecl _mm_mask_rsqrt28_round_ss(__m128, __mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_maskz_rsqrt28_round_ss(__mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_rsqrt28_round_ss(__m128, __m128, int);
+extern __m128d   __cdecl _mm_mask_rsqrt28_sd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_rsqrt28_sd(__mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_rsqrt28_sd(__m128d, __m128d);
+extern __m128    __cdecl _mm_mask_rsqrt28_ss(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_rsqrt28_ss(__mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_rsqrt28_ss(__m128, __m128);
+extern __m128d   __cdecl _mm_mask_scalef_round_sd(__m128d, __mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_maskz_scalef_round_sd(__mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_scalef_round_sd(__m128d, __m128d, int);
+extern __m128    __cdecl _mm_mask_scalef_round_ss(__m128, __mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_maskz_scalef_round_ss(__mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_scalef_round_ss(__m128, __m128, int);
+extern __m128d   __cdecl _mm_mask_scalef_sd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_scalef_sd(__mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_scalef_sd(__m128d, __m128d);
+extern __m128    __cdecl _mm_mask_scalef_ss(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_scalef_ss(__mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_scalef_ss(__m128, __m128);
+extern __m128d   __cdecl _mm_mask_sqrt_round_sd(__m128d, __mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_maskz_sqrt_round_sd(__mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_sqrt_round_sd(__m128d, __m128d, int);
+extern __m128    __cdecl _mm_mask_sqrt_round_ss(__m128, __mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_maskz_sqrt_round_ss(__mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_sqrt_round_ss(__m128, __m128, int);
+extern __m128d   __cdecl _mm_mask_sqrt_sd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_sqrt_sd(__mmask8, __m128d, __m128d);
+extern __m128    __cdecl _mm_mask_sqrt_ss(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_sqrt_ss(__mmask8, __m128, __m128);
+extern void      __cdecl _mm_mask_store_sd(double*, __mmask8, __m128d);
+extern void      __cdecl _mm_mask_store_ss(float*, __mmask8, __m128);
+extern __m128d   __cdecl _mm_mask_sub_round_sd(__m128d, __mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_maskz_sub_round_sd(__mmask8, __m128d, __m128d, int);
+extern __m128d   __cdecl _mm_sub_round_sd(__m128d, __m128d, int);
+extern __m128    __cdecl _mm_mask_sub_round_ss(__m128, __mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_maskz_sub_round_ss(__mmask8, __m128, __m128, int);
+extern __m128    __cdecl _mm_sub_round_ss(__m128, __m128, int);
+extern __m128d   __cdecl _mm_mask_sub_sd(__m128d, __mmask8, __m128d, __m128d);
+extern __m128d   __cdecl _mm_maskz_sub_sd(__mmask8, __m128d, __m128d);
+extern __m128    __cdecl _mm_mask_sub_ss(__m128, __mmask8, __m128, __m128);
+extern __m128    __cdecl _mm_maskz_sub_ss(__mmask8, __m128, __m128);
+
+
+
+extern unsigned __int64 __cdecl _mm_cvtsd_u64(__m128d);
+extern unsigned __int64 __cdecl _mm_cvtss_u64(__m128);
+extern unsigned __int64 __cdecl _mm_cvttsd_u64(__m128d);
+extern unsigned __int64 __cdecl _mm_cvttss_u64(__m128);
+extern unsigned __int64 __cdecl _mm_cvt_roundsd_u64(__m128d, int);
+extern unsigned __int64 __cdecl _mm_cvt_roundss_u64(__m128, int);
+extern unsigned __int64 __cdecl _mm_cvtt_roundsd_u64(__m128d, int);
+extern unsigned __int64 __cdecl _mm_cvtt_roundss_u64(__m128, int);
+
+extern __m128d   __cdecl _mm_cvti64_sd(__m128d, __int64);
+extern __m128    __cdecl _mm_cvti64_ss(__m128, __int64);
+extern __int64   __cdecl _mm_cvtsd_i64(__m128d);
+extern __int64   __cdecl _mm_cvtss_i64(__m128);
+extern __int64   __cdecl _mm_cvttsd_i64(__m128d);
+extern __int64   __cdecl _mm_cvttss_i64(__m128);
+extern __int64   __cdecl _mm_cvtt_roundsd_i64(__m128d, int);
+extern __int64   __cdecl _mm_cvtt_roundsd_si64(__m128d, int);
+extern __int64   __cdecl _mm_cvtt_roundss_i64(__m128, int);
+extern __int64   __cdecl _mm_cvtt_roundss_si64(__m128, int);
+extern __m128d   __cdecl _mm_cvtu64_sd(__m128d, unsigned __int64);
+extern __m128    __cdecl _mm_cvtu64_ss(__m128, unsigned __int64);
+extern __m128d   __cdecl _mm_cvt_roundi64_sd(__m128d, __int64, int);
+extern __m128    __cdecl _mm_cvt_roundi64_ss(__m128, __int64, int);
+extern __int64   __cdecl _mm_cvt_roundsd_i64(__m128d, int);
+extern __int64   __cdecl _mm_cvt_roundsd_si64(__m128d, int);
+extern __m128d   __cdecl _mm_cvt_roundsi64_sd(__m128d, __int64, int);
+extern __m128    __cdecl _mm_cvt_roundsi64_ss(__m128, __int64, int);
+extern __int64   __cdecl _mm_cvt_roundss_i64(__m128, int);
+extern __int64   __cdecl _mm_cvt_roundss_si64(__m128, int);
+extern __m128d   __cdecl _mm_cvt_roundu64_sd(__m128d, unsigned __int64, int);
+extern __m128    __cdecl _mm_cvt_roundu64_ss(__m128, unsigned __int64, int);
+
+#line 4360 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\zmmintrin.h"
+
+
+extern __m512d   __cdecl _mm512_zextpd128_pd512(__m128d);
+extern __m512d   __cdecl _mm512_zextpd256_pd512(__m256d);
+extern __m512    __cdecl _mm512_zextps128_ps512(__m128);
+extern __m512    __cdecl _mm512_zextps256_ps512(__m256);
+extern __m512i   __cdecl _mm512_zextsi128_si512(__m128i);
+extern __m512i   __cdecl _mm512_zextsi256_si512(__m256i);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 4396 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\zmmintrin.h"
+
+
+extern __m128i __cdecl _mm_madd52hi_epu64(__m128i, __m128i, __m128i);
+extern __m128i __cdecl _mm_mask_madd52hi_epu64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i __cdecl _mm_maskz_madd52hi_epu64(__mmask8, __m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_madd52hi_epu64(__m256i, __m256i, __m256i);
+extern __m256i __cdecl _mm256_mask_madd52hi_epu64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i __cdecl _mm256_maskz_madd52hi_epu64(__mmask8, __m256i, __m256i, __m256i);
+extern __m512i __cdecl _mm512_madd52hi_epu64(__m512i, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_madd52hi_epu64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_madd52hi_epu64(__mmask8, __m512i, __m512i, __m512i);
+
+extern __m128i __cdecl _mm_madd52lo_epu64(__m128i, __m128i, __m128i);
+extern __m128i __cdecl _mm_mask_madd52lo_epu64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i __cdecl _mm_maskz_madd52lo_epu64(__mmask8, __m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_madd52lo_epu64(__m256i, __m256i, __m256i);
+extern __m256i __cdecl _mm256_mask_madd52lo_epu64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i __cdecl _mm256_maskz_madd52lo_epu64(__mmask8, __m256i, __m256i, __m256i);
+extern __m512i __cdecl _mm512_madd52lo_epu64(__m512i, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_madd52lo_epu64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_madd52lo_epu64(__mmask8, __m512i, __m512i, __m512i);
+
+
+extern __m128i __cdecl _mm_permutexvar_epi8(__m128i, __m128i);
+extern __m128i __cdecl _mm_mask_permutexvar_epi8(__m128i, __mmask16, __m128i, __m128i);
+extern __m128i __cdecl _mm_maskz_permutexvar_epi8(__mmask16, __m128i, __m128i);
+extern __m256i __cdecl _mm256_permutexvar_epi8(__m256i, __m256i);
+extern __m256i __cdecl _mm256_mask_permutexvar_epi8(__m256i, __mmask32, __m256i, __m256i);
+extern __m256i __cdecl _mm256_maskz_permutexvar_epi8(__mmask32, __m256i, __m256i);
+extern __m512i __cdecl _mm512_permutexvar_epi8(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_permutexvar_epi8(__m512i, __mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_permutexvar_epi8(__mmask64, __m512i, __m512i);
+
+extern __m128i __cdecl _mm_permutex2var_epi8(__m128i, __m128i , __m128i);
+extern __m128i __cdecl _mm_mask_permutex2var_epi8(__m128i, __mmask16, __m128i , __m128i);
+extern __m128i __cdecl _mm_mask2_permutex2var_epi8(__m128i, __m128i , __mmask16, __m128i);
+extern __m128i __cdecl _mm_maskz_permutex2var_epi8(__mmask16, __m128i, __m128i , __m128i);
+extern __m256i __cdecl _mm256_permutex2var_epi8(__m256i, __m256i, __m256i);
+extern __m256i __cdecl _mm256_mask_permutex2var_epi8(__m256i, __mmask32, __m256i, __m256i);
+extern __m256i __cdecl _mm256_mask2_permutex2var_epi8(__m256i, __m256i, __mmask32, __m256i);
+extern __m256i __cdecl _mm256_maskz_permutex2var_epi8(__mmask32, __m256i, __m256i, __m256i);
+extern __m512i __cdecl _mm512_permutex2var_epi8(__m512i, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_permutex2var_epi8(__m512i, __mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask2_permutex2var_epi8(__m512i, __m512i, __mmask64, __m512i);
+extern __m512i __cdecl _mm512_maskz_permutex2var_epi8(__mmask64, __m512i, __m512i, __m512i);
+
+extern __m128i __cdecl _mm_multishift_epi64_epi8(__m128i, __m128i);
+extern __m128i __cdecl _mm_mask_multishift_epi64_epi8(__m128i, __mmask16, __m128i, __m128i);
+extern __m128i __cdecl _mm_maskz_multishift_epi64_epi8(__mmask16, __m128i, __m128i);
+extern __m256i __cdecl _mm256_multishift_epi64_epi8(__m256i, __m256i);
+extern __m256i __cdecl _mm256_mask_multishift_epi64_epi8(__m256i, __mmask32, __m256i, __m256i);
+extern __m256i __cdecl _mm256_maskz_multishift_epi64_epi8(__mmask32, __m256i, __m256i);
+extern __m512i __cdecl _mm512_multishift_epi64_epi8(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_multishift_epi64_epi8(__m512i, __mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_multishift_epi64_epi8(__mmask64, __m512i, __m512i);
+
+
+extern __m128i __cdecl _mm_dpbusd_epi32(__m128i, __m128i, __m128i);
+extern __m128i __cdecl _mm_mask_dpbusd_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i __cdecl _mm_maskz_dpbusd_epi32(__mmask8, __m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_dpbusd_epi32(__m256i, __m256i, __m256i);
+extern __m256i __cdecl _mm256_mask_dpbusd_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i __cdecl _mm256_maskz_dpbusd_epi32(__mmask8, __m256i, __m256i, __m256i);
+extern __m512i __cdecl _mm512_dpbusd_epi32(__m512i, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_dpbusd_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_dpbusd_epi32(__mmask16, __m512i, __m512i, __m512i);
+
+extern __m128i __cdecl _mm_dpbusds_epi32(__m128i, __m128i, __m128i);
+extern __m128i __cdecl _mm_mask_dpbusds_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i __cdecl _mm_maskz_dpbusds_epi32(__mmask8, __m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_dpbusds_epi32(__m256i, __m256i, __m256i);
+extern __m256i __cdecl _mm256_mask_dpbusds_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i __cdecl _mm256_maskz_dpbusds_epi32(__mmask8, __m256i, __m256i, __m256i);
+extern __m512i __cdecl _mm512_dpbusds_epi32(__m512i, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_dpbusds_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_dpbusds_epi32(__mmask16, __m512i, __m512i, __m512i);
+
+extern __m128i __cdecl _mm_dpwssd_epi32(__m128i, __m128i, __m128i);
+extern __m128i __cdecl _mm_mask_dpwssd_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i __cdecl _mm_maskz_dpwssd_epi32(__mmask8, __m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_dpwssd_epi32(__m256i, __m256i, __m256i);
+extern __m256i __cdecl _mm256_mask_dpwssd_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i __cdecl _mm256_maskz_dpwssd_epi32(__mmask8, __m256i, __m256i, __m256i);
+extern __m512i __cdecl _mm512_dpwssd_epi32(__m512i, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_dpwssd_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_dpwssd_epi32(__mmask16, __m512i, __m512i, __m512i);
+
+extern __m128i __cdecl _mm_dpwssds_epi32(__m128i, __m128i, __m128i);
+extern __m128i __cdecl _mm_mask_dpwssds_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i __cdecl _mm_maskz_dpwssds_epi32(__mmask8, __m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_dpwssds_epi32(__m256i, __m256i, __m256i);
+extern __m256i __cdecl _mm256_mask_dpwssds_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i __cdecl _mm256_maskz_dpwssds_epi32(__mmask8, __m256i, __m256i, __m256i);
+extern __m512i __cdecl _mm512_dpwssds_epi32(__m512i, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_dpwssds_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_dpwssds_epi32(__mmask16, __m512i, __m512i, __m512i);
+
+
+extern __m256i __cdecl _mm256_aesenc_epi128(__m256i, __m256i);
+extern __m512i __cdecl _mm512_aesenc_epi128(__m512i, __m512i);
+extern __m256i __cdecl _mm256_aesenclast_epi128(__m256i, __m256i);
+extern __m512i __cdecl _mm512_aesenclast_epi128(__m512i, __m512i);
+extern __m256i __cdecl _mm256_aesdec_epi128(__m256i, __m256i);
+extern __m512i __cdecl _mm512_aesdec_epi128(__m512i, __m512i);
+extern __m256i __cdecl _mm256_aesdeclast_epi128(__m256i, __m256i);
+extern __m512i __cdecl _mm512_aesdeclast_epi128(__m512i, __m512i);
+
+
+extern __m256i __cdecl _mm256_clmulepi64_epi128(__m256i, __m256i, const int);
+extern __m512i __cdecl _mm512_clmulepi64_epi128(__m512i, __m512i, const int);
+
+
+extern __m128i __cdecl _mm_popcnt_epi32(__m128i);
+extern __m128i __cdecl _mm_mask_popcnt_epi32(__m128i, __mmask8, __m128i);
+extern __m128i __cdecl _mm_maskz_popcnt_epi32(__mmask8, __m128i);
+extern __m256i __cdecl _mm256_popcnt_epi32(__m256i);
+extern __m256i __cdecl _mm256_mask_popcnt_epi32(__m256i, __mmask8, __m256i);
+extern __m256i __cdecl _mm256_maskz_popcnt_epi32(__mmask8, __m256i);
+extern __m512i __cdecl _mm512_popcnt_epi32(__m512i);
+extern __m512i __cdecl _mm512_mask_popcnt_epi32(__m512i, __mmask16, __m512i);
+extern __m512i __cdecl _mm512_maskz_popcnt_epi32(__mmask16, __m512i);
+
+extern __m128i __cdecl _mm_popcnt_epi64(__m128i);
+extern __m128i __cdecl _mm_mask_popcnt_epi64(__m128i, __mmask8, __m128i);
+extern __m128i __cdecl _mm_maskz_popcnt_epi64(__mmask8, __m128i);
+extern __m256i __cdecl _mm256_popcnt_epi64(__m256i);
+extern __m256i __cdecl _mm256_mask_popcnt_epi64(__m256i, __mmask8, __m256i);
+extern __m256i __cdecl _mm256_maskz_popcnt_epi64(__mmask8, __m256i);
+extern __m512i __cdecl _mm512_popcnt_epi64(__m512i);
+extern __m512i __cdecl _mm512_mask_popcnt_epi64(__m512i, __mmask8, __m512i);
+extern __m512i __cdecl _mm512_maskz_popcnt_epi64(__mmask8, __m512i);
+
+
+extern __m128i __cdecl _mm_popcnt_epi8(__m128i);
+extern __m128i __cdecl _mm_mask_popcnt_epi8(__m128i, __mmask16, __m128i);
+extern __m128i __cdecl _mm_maskz_popcnt_epi8(__mmask16, __m128i);
+extern __m256i __cdecl _mm256_popcnt_epi8(__m256i);
+extern __m256i __cdecl _mm256_mask_popcnt_epi8(__m256i, __mmask32, __m256i);
+extern __m256i __cdecl _mm256_maskz_popcnt_epi8(__mmask32, __m256i);
+extern __m512i __cdecl _mm512_popcnt_epi8(__m512i);
+extern __m512i __cdecl _mm512_mask_popcnt_epi8(__m512i, __mmask64, __m512i);
+extern __m512i __cdecl _mm512_maskz_popcnt_epi8(__mmask64, __m512i);
+
+extern __m128i __cdecl _mm_popcnt_epi16(__m128i);
+extern __m128i __cdecl _mm_mask_popcnt_epi16(__m128i, __mmask8, __m128i);
+extern __m128i __cdecl _mm_maskz_popcnt_epi16(__mmask8, __m128i);
+extern __m256i __cdecl _mm256_popcnt_epi16(__m256i);
+extern __m256i __cdecl _mm256_mask_popcnt_epi16(__m256i, __mmask16, __m256i);
+extern __m256i __cdecl _mm256_maskz_popcnt_epi16(__mmask16, __m256i);
+extern __m512i __cdecl _mm512_popcnt_epi16(__m512i);
+extern __m512i __cdecl _mm512_mask_popcnt_epi16(__m512i, __mmask32, __m512i);
+extern __m512i __cdecl _mm512_maskz_popcnt_epi16(__mmask32, __m512i);
+
+extern __mmask16 __cdecl _mm_bitshuffle_epi64_mask(__m128i, __m128i);
+extern __mmask16 __cdecl _mm_mask_bitshuffle_epi64_mask(__mmask16, __m128i, __m128i);
+extern __mmask32 __cdecl _mm256_bitshuffle_epi64_mask(__m256i, __m256i);
+extern __mmask32 __cdecl _mm256_mask_bitshuffle_epi64_mask(__mmask32, __m256i, __m256i);
+extern __mmask64 __cdecl _mm512_bitshuffle_epi64_mask(__m512i, __m512i);
+extern __mmask64 __cdecl _mm512_mask_bitshuffle_epi64_mask(__mmask64, __m512i, __m512i);
+
+
+extern __m128i __cdecl _mm_gf2p8affineinv_epi64_epi8(__m128i, __m128i, int);
+extern __m128i __cdecl _mm_mask_gf2p8affineinv_epi64_epi8(__m128i, __mmask16, __m128i, __m128i, int);
+extern __m128i __cdecl _mm_maskz_gf2p8affineinv_epi64_epi8(__mmask16, __m128i, __m128i, int);
+extern __m256i __cdecl _mm256_gf2p8affineinv_epi64_epi8(__m256i, __m256i, int);
+extern __m256i __cdecl _mm256_mask_gf2p8affineinv_epi64_epi8(__m256i, __mmask32, __m256i, __m256i, int);
+extern __m256i __cdecl _mm256_maskz_gf2p8affineinv_epi64_epi8(__mmask32, __m256i, __m256i, int);
+extern __m512i __cdecl _mm512_gf2p8affineinv_epi64_epi8(__m512i, __m512i, int);
+extern __m512i __cdecl _mm512_mask_gf2p8affineinv_epi64_epi8(__m512i, __mmask64, __m512i, __m512i, int);
+extern __m512i __cdecl _mm512_maskz_gf2p8affineinv_epi64_epi8(__mmask64, __m512i, __m512i, int);
+extern __m128i __cdecl _mm_gf2p8affine_epi64_epi8(__m128i, __m128i, int);
+extern __m128i __cdecl _mm_mask_gf2p8affine_epi64_epi8(__m128i, __mmask16, __m128i, __m128i, int);
+extern __m128i __cdecl _mm_maskz_gf2p8affine_epi64_epi8(__mmask16, __m128i, __m128i, int);
+extern __m256i __cdecl _mm256_gf2p8affine_epi64_epi8(__m256i, __m256i, int);
+extern __m256i __cdecl _mm256_mask_gf2p8affine_epi64_epi8(__m256i, __mmask32, __m256i, __m256i, int);
+extern __m256i __cdecl _mm256_maskz_gf2p8affine_epi64_epi8(__mmask32, __m256i, __m256i, int);
+extern __m512i __cdecl _mm512_gf2p8affine_epi64_epi8(__m512i, __m512i, int);
+extern __m512i __cdecl _mm512_mask_gf2p8affine_epi64_epi8(__m512i, __mmask64, __m512i, __m512i, int);
+extern __m512i __cdecl _mm512_maskz_gf2p8affine_epi64_epi8(__mmask64, __m512i, __m512i, int);
+extern __m128i __cdecl _mm_gf2p8mul_epi8(__m128i, __m128i);
+extern __m128i __cdecl _mm_mask_gf2p8mul_epi8(__m128i, __mmask16, __m128i, __m128i);
+extern __m128i __cdecl _mm_maskz_gf2p8mul_epi8(__mmask16, __m128i, __m128i);
+extern __m256i __cdecl _mm256_gf2p8mul_epi8(__m256i, __m256i);
+extern __m256i __cdecl _mm256_mask_gf2p8mul_epi8(__m256i, __mmask32, __m256i, __m256i);
+extern __m256i __cdecl _mm256_maskz_gf2p8mul_epi8(__mmask32, __m256i, __m256i);
+extern __m512i __cdecl _mm512_gf2p8mul_epi8(__m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_gf2p8mul_epi8(__m512i, __mmask64, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_gf2p8mul_epi8(__mmask64, __m512i, __m512i);
+
+
+extern __m128i __cdecl _mm_shldi_epi16(__m128i, __m128i, int);
+extern __m128i __cdecl _mm_mask_shldi_epi16(__m128i, __mmask8, __m128i, __m128i, int);
+extern __m128i __cdecl _mm_maskz_shldi_epi16(__mmask8, __m128i, __m128i, int);
+extern __m256i __cdecl _mm256_shldi_epi16(__m256i, __m256i, int);
+extern __m256i __cdecl _mm256_mask_shldi_epi16(__m256i, __mmask16, __m256i, __m256i, int);
+extern __m256i __cdecl _mm256_maskz_shldi_epi16(__mmask16, __m256i, __m256i, int);
+extern __m512i __cdecl _mm512_shldi_epi16(__m512i, __m512i, int);
+extern __m512i __cdecl _mm512_mask_shldi_epi16(__m512i, __mmask32, __m512i, __m512i, int);
+extern __m512i __cdecl _mm512_maskz_shldi_epi16(__mmask32, __m512i, __m512i, int);
+extern __m128i __cdecl _mm_shldi_epi32(__m128i, __m128i, int);
+extern __m128i __cdecl _mm_mask_shldi_epi32(__m128i, __mmask8, __m128i, __m128i, int);
+extern __m128i __cdecl _mm_maskz_shldi_epi32(__mmask8, __m128i, __m128i, int);
+extern __m256i __cdecl _mm256_shldi_epi32(__m256i, __m256i, int);
+extern __m256i __cdecl _mm256_mask_shldi_epi32(__m256i, __mmask8, __m256i, __m256i, int);
+extern __m256i __cdecl _mm256_maskz_shldi_epi32(__mmask8, __m256i, __m256i, int);
+extern __m512i __cdecl _mm512_shldi_epi32(__m512i, __m512i, int);
+extern __m512i __cdecl _mm512_mask_shldi_epi32(__m512i, __mmask16, __m512i, __m512i, int);
+extern __m512i __cdecl _mm512_maskz_shldi_epi32(__mmask16, __m512i, __m512i, int);
+extern __m128i __cdecl _mm_shldi_epi64(__m128i, __m128i, int);
+extern __m128i __cdecl _mm_mask_shldi_epi64(__m128i, __mmask8, __m128i, __m128i, int);
+extern __m128i __cdecl _mm_maskz_shldi_epi64(__mmask8, __m128i, __m128i, int);
+extern __m256i __cdecl _mm256_shldi_epi64(__m256i, __m256i, int);
+extern __m256i __cdecl _mm256_mask_shldi_epi64(__m256i, __mmask8, __m256i, __m256i, int);
+extern __m256i __cdecl _mm256_maskz_shldi_epi64(__mmask8, __m256i, __m256i, int);
+extern __m512i __cdecl _mm512_shldi_epi64(__m512i, __m512i, int);
+extern __m512i __cdecl _mm512_mask_shldi_epi64(__m512i, __mmask8, __m512i, __m512i, int);
+extern __m512i __cdecl _mm512_maskz_shldi_epi64(__mmask8, __m512i, __m512i, int);
+extern __m128i __cdecl _mm_shldv_epi16(__m128i, __m128i, __m128i);
+extern __m128i __cdecl _mm_mask_shldv_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i __cdecl _mm_maskz_shldv_epi16(__mmask8, __m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_shldv_epi16(__m256i, __m256i, __m256i);
+extern __m256i __cdecl _mm256_mask_shldv_epi16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i __cdecl _mm256_maskz_shldv_epi16(__mmask16, __m256i, __m256i, __m256i);
+extern __m512i __cdecl _mm512_shldv_epi16(__m512i, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_shldv_epi16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_shldv_epi16(__mmask32, __m512i, __m512i, __m512i);
+extern __m128i __cdecl _mm_shldv_epi32(__m128i, __m128i, __m128i);
+extern __m128i __cdecl _mm_mask_shldv_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i __cdecl _mm_maskz_shldv_epi32(__mmask8, __m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_shldv_epi32(__m256i, __m256i, __m256i);
+extern __m256i __cdecl _mm256_mask_shldv_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i __cdecl _mm256_maskz_shldv_epi32(__mmask8, __m256i, __m256i, __m256i);
+extern __m512i __cdecl _mm512_shldv_epi32(__m512i, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_shldv_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_shldv_epi32(__mmask16, __m512i, __m512i, __m512i);
+extern __m128i __cdecl _mm_shldv_epi64(__m128i, __m128i, __m128i);
+extern __m128i __cdecl _mm_mask_shldv_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i __cdecl _mm_maskz_shldv_epi64(__mmask8, __m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_shldv_epi64(__m256i, __m256i, __m256i);
+extern __m256i __cdecl _mm256_mask_shldv_epi64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i __cdecl _mm256_maskz_shldv_epi64(__mmask8, __m256i, __m256i, __m256i);
+extern __m512i __cdecl _mm512_shldv_epi64(__m512i, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_shldv_epi64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_shldv_epi64(__mmask8, __m512i, __m512i, __m512i);
+
+
+extern __m128i __cdecl _mm_shrdi_epi16(__m128i, __m128i, int);
+extern __m128i __cdecl _mm_mask_shrdi_epi16(__m128i, __mmask8, __m128i, __m128i, int);
+extern __m128i __cdecl _mm_maskz_shrdi_epi16(__mmask8, __m128i, __m128i, int);
+extern __m256i __cdecl _mm256_shrdi_epi16(__m256i, __m256i, int);
+extern __m256i __cdecl _mm256_mask_shrdi_epi16(__m256i, __mmask16, __m256i, __m256i, int);
+extern __m256i __cdecl _mm256_maskz_shrdi_epi16(__mmask16, __m256i, __m256i, int);
+extern __m512i __cdecl _mm512_shrdi_epi16(__m512i, __m512i, int);
+extern __m512i __cdecl _mm512_mask_shrdi_epi16(__m512i, __mmask32, __m512i, __m512i, int);
+extern __m512i __cdecl _mm512_maskz_shrdi_epi16(__mmask32, __m512i, __m512i, int);
+extern __m128i __cdecl _mm_shrdi_epi32(__m128i, __m128i, int);
+extern __m128i __cdecl _mm_mask_shrdi_epi32(__m128i, __mmask8, __m128i, __m128i, int);
+extern __m128i __cdecl _mm_maskz_shrdi_epi32(__mmask8, __m128i, __m128i, int);
+extern __m256i __cdecl _mm256_shrdi_epi32(__m256i, __m256i, int);
+extern __m256i __cdecl _mm256_mask_shrdi_epi32(__m256i, __mmask8, __m256i, __m256i, int);
+extern __m256i __cdecl _mm256_maskz_shrdi_epi32(__mmask8, __m256i, __m256i, int);
+extern __m512i __cdecl _mm512_shrdi_epi32(__m512i, __m512i, int);
+extern __m512i __cdecl _mm512_mask_shrdi_epi32(__m512i, __mmask16, __m512i, __m512i, int);
+extern __m512i __cdecl _mm512_maskz_shrdi_epi32(__mmask16, __m512i, __m512i, int);
+extern __m128i __cdecl _mm_shrdi_epi64(__m128i, __m128i, int);
+extern __m128i __cdecl _mm_mask_shrdi_epi64(__m128i, __mmask8, __m128i, __m128i, int);
+extern __m128i __cdecl _mm_maskz_shrdi_epi64(__mmask8, __m128i, __m128i, int);
+extern __m256i __cdecl _mm256_shrdi_epi64(__m256i, __m256i, int);
+extern __m256i __cdecl _mm256_mask_shrdi_epi64(__m256i, __mmask8, __m256i, __m256i, int);
+extern __m256i __cdecl _mm256_maskz_shrdi_epi64(__mmask8, __m256i, __m256i, int);
+extern __m512i __cdecl _mm512_shrdi_epi64(__m512i, __m512i, int);
+extern __m512i __cdecl _mm512_mask_shrdi_epi64(__m512i, __mmask8, __m512i, __m512i, int);
+extern __m512i __cdecl _mm512_maskz_shrdi_epi64(__mmask8, __m512i, __m512i, int);
+extern __m128i __cdecl _mm_shrdv_epi16(__m128i, __m128i, __m128i);
+extern __m128i __cdecl _mm_mask_shrdv_epi16(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i __cdecl _mm_maskz_shrdv_epi16(__mmask8, __m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_shrdv_epi16(__m256i, __m256i, __m256i);
+extern __m256i __cdecl _mm256_mask_shrdv_epi16(__m256i, __mmask16, __m256i, __m256i);
+extern __m256i __cdecl _mm256_maskz_shrdv_epi16(__mmask16, __m256i, __m256i, __m256i);
+extern __m512i __cdecl _mm512_shrdv_epi16(__m512i, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_shrdv_epi16(__m512i, __mmask32, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_shrdv_epi16(__mmask32, __m512i, __m512i, __m512i);
+extern __m128i __cdecl _mm_shrdv_epi32(__m128i, __m128i, __m128i);
+extern __m128i __cdecl _mm_mask_shrdv_epi32(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i __cdecl _mm_maskz_shrdv_epi32(__mmask8, __m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_shrdv_epi32(__m256i, __m256i, __m256i);
+extern __m256i __cdecl _mm256_mask_shrdv_epi32(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i __cdecl _mm256_maskz_shrdv_epi32(__mmask8, __m256i, __m256i, __m256i);
+extern __m512i __cdecl _mm512_shrdv_epi32(__m512i, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_shrdv_epi32(__m512i, __mmask16, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_shrdv_epi32(__mmask16, __m512i, __m512i, __m512i);
+extern __m128i __cdecl _mm_shrdv_epi64(__m128i, __m128i, __m128i);
+extern __m128i __cdecl _mm_mask_shrdv_epi64(__m128i, __mmask8, __m128i, __m128i);
+extern __m128i __cdecl _mm_maskz_shrdv_epi64(__mmask8, __m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_shrdv_epi64(__m256i, __m256i, __m256i);
+extern __m256i __cdecl _mm256_mask_shrdv_epi64(__m256i, __mmask8, __m256i, __m256i);
+extern __m256i __cdecl _mm256_maskz_shrdv_epi64(__mmask8, __m256i, __m256i, __m256i);
+extern __m512i __cdecl _mm512_shrdv_epi64(__m512i, __m512i, __m512i);
+extern __m512i __cdecl _mm512_mask_shrdv_epi64(__m512i, __mmask8, __m512i, __m512i);
+extern __m512i __cdecl _mm512_maskz_shrdv_epi64(__mmask8, __m512i, __m512i, __m512i);
+
+
+
+
+
+
+extern __m512i _mm512_div_epi8(__m512i, __m512i);
+extern __m512i _mm512_div_epi16(__m512i, __m512i);
+extern __m512i _mm512_div_epi32(__m512i, __m512i);
+extern __m512i _mm512_div_epi64(__m512i, __m512i);
+extern __m512i _mm512_div_epu8(__m512i, __m512i);
+extern __m512i _mm512_div_epu16(__m512i, __m512i);
+extern __m512i _mm512_div_epu32(__m512i, __m512i);
+extern __m512i _mm512_div_epu64(__m512i, __m512i);
+extern __m512i _mm512_mask_div_epi32(__m512i , __mmask16, __m512i, __m512i);
+extern __m512i _mm512_mask_div_epu32(__m512i , __mmask16, __m512i, __m512i);
+extern __m512i _mm512_rem_epi8(__m512i, __m512i);
+extern __m512i _mm512_rem_epi16(__m512i, __m512i);
+extern __m512i _mm512_rem_epi32(__m512i, __m512i);
+extern __m512i _mm512_rem_epi64(__m512i, __m512i);
+extern __m512i _mm512_rem_epu8(__m512i, __m512i);
+extern __m512i _mm512_rem_epu16(__m512i, __m512i);
+extern __m512i _mm512_rem_epu32(__m512i, __m512i);
+extern __m512i _mm512_rem_epu64(__m512i, __m512i);
+extern __m512i _mm512_mask_rem_epi32(__m512i , __mmask16, __m512i, __m512i);
+extern __m512i _mm512_mask_rem_epu32(__m512i , __mmask16, __m512i, __m512i);
+
+
+extern __m512  _mm512_sin_ps(__m512);
+extern __m512  _mm512_mask_sin_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_sin_pd(__m512d);
+extern __m512d _mm512_mask_sin_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_cos_ps(__m512);
+extern __m512  _mm512_mask_cos_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_cos_pd(__m512d);
+extern __m512d _mm512_mask_cos_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_sincos_ps(__m512  * , __m512);
+extern __m512  _mm512_mask_sincos_ps(__m512  * , __m512  , __m512  , __mmask16, __m512);
+extern __m512d _mm512_sincos_pd(__m512d * , __m512d);
+extern __m512d _mm512_mask_sincos_pd(__m512d * , __m512d , __m512d , __mmask8, __m512d);
+extern __m512  _mm512_tan_ps(__m512);
+extern __m512  _mm512_mask_tan_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_tan_pd(__m512d);
+extern __m512d _mm512_mask_tan_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_asin_ps(__m512);
+extern __m512  _mm512_mask_asin_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_asin_pd(__m512d);
+extern __m512d _mm512_mask_asin_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_acos_ps(__m512);
+extern __m512  _mm512_mask_acos_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_acos_pd(__m512d);
+extern __m512d _mm512_mask_acos_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_atan_ps(__m512);
+extern __m512  _mm512_mask_atan_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_atan_pd(__m512d);
+extern __m512d _mm512_mask_atan_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_atan2_ps(__m512, __m512);
+extern __m512  _mm512_mask_atan2_ps(__m512  , __mmask16, __m512, __m512);
+extern __m512d _mm512_atan2_pd(__m512d, __m512d);
+extern __m512d _mm512_mask_atan2_pd(__m512d , __mmask8, __m512d, __m512d);
+extern __m512  _mm512_sind_ps(__m512);
+extern __m512  _mm512_mask_sind_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_sind_pd(__m512d);
+extern __m512d _mm512_mask_sind_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_cosd_ps(__m512);
+extern __m512  _mm512_mask_cosd_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_cosd_pd(__m512d);
+extern __m512d _mm512_mask_cosd_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_tand_ps(__m512);
+extern __m512  _mm512_mask_tand_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_tand_pd(__m512d);
+extern __m512d _mm512_mask_tand_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_sinh_ps(__m512);
+extern __m512  _mm512_mask_sinh_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_sinh_pd(__m512d);
+extern __m512d _mm512_mask_sinh_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_cosh_ps(__m512);
+extern __m512  _mm512_mask_cosh_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_cosh_pd(__m512d);
+extern __m512d _mm512_mask_cosh_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_tanh_ps(__m512);
+extern __m512  _mm512_mask_tanh_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_tanh_pd(__m512d);
+extern __m512d _mm512_mask_tanh_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_asinh_ps(__m512);
+extern __m512  _mm512_mask_asinh_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_asinh_pd(__m512d);
+extern __m512d _mm512_mask_asinh_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_acosh_ps(__m512);
+extern __m512  _mm512_mask_acosh_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_acosh_pd(__m512d);
+extern __m512d _mm512_mask_acosh_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_atanh_ps(__m512);
+extern __m512  _mm512_mask_atanh_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_atanh_pd(__m512d);
+extern __m512d _mm512_mask_atanh_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_log_ps(__m512);
+extern __m512  _mm512_mask_log_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_log_pd(__m512d);
+extern __m512d _mm512_mask_log_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_log1p_ps(__m512);
+extern __m512  _mm512_mask_log1p_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_log1p_pd(__m512d);
+extern __m512d _mm512_mask_log1p_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_log10_ps(__m512);
+extern __m512  _mm512_mask_log10_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_log10_pd(__m512d);
+extern __m512d _mm512_mask_log10_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_log2_ps(__m512);
+extern __m512  _mm512_mask_log2_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_log2_pd(__m512d);
+extern __m512d _mm512_mask_log2_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_logb_ps(__m512);
+extern __m512  _mm512_mask_logb_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_logb_pd(__m512d);
+extern __m512d _mm512_mask_logb_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_exp_ps(__m512);
+extern __m512  _mm512_mask_exp_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_exp_pd(__m512d);
+extern __m512d _mm512_mask_exp_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_exp10_ps(__m512);
+extern __m512  _mm512_mask_exp10_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_exp10_pd(__m512d);
+extern __m512d _mm512_mask_exp10_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_exp2_ps(__m512);
+extern __m512  _mm512_mask_exp2_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_exp2_pd(__m512d);
+extern __m512d _mm512_mask_exp2_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_expm1_ps(__m512);
+extern __m512  _mm512_mask_expm1_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_expm1_pd(__m512d);
+extern __m512d _mm512_mask_expm1_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_pow_ps(__m512, __m512);
+extern __m512  _mm512_mask_pow_ps(__m512  , __mmask16, __m512, __m512);
+extern __m512d _mm512_pow_pd(__m512d, __m512d);
+extern __m512d _mm512_mask_pow_pd(__m512d , __mmask8, __m512d, __m512d);
+extern __m512  _mm512_trunc_ps(__m512);
+extern __m512  _mm512_mask_trunc_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_trunc_pd(__m512d);
+extern __m512d _mm512_mask_trunc_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_floor_ps(__m512);
+extern __m512  _mm512_mask_floor_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_floor_pd(__m512d);
+extern __m512d _mm512_mask_floor_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_ceil_ps(__m512);
+extern __m512  _mm512_mask_ceil_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_ceil_pd(__m512d);
+extern __m512d _mm512_mask_ceil_pd(__m512d , __mmask8, __m512d);
+extern __m512 _mm512_svml_round_ps(__m512);
+extern __m512 _mm512_mask_svml_round_ps(__m512 , __mmask16, __m512);
+extern __m512d _mm512_svml_round_pd(__m512d);
+extern __m512d _mm512_mask_svml_round_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_fmod_ps(__m512, __m512);
+extern __m512  _mm512_mask_fmod_ps(__m512  , __mmask16, __m512, __m512);
+extern __m512d _mm512_fmod_pd(__m512d, __m512d);
+extern __m512d _mm512_mask_fmod_pd(__m512d , __mmask8, __m512d, __m512d);
+extern __m512  _mm512_rint_ps(__m512);
+extern __m512  _mm512_mask_rint_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_rint_pd(__m512d);
+extern __m512d _mm512_mask_rint_pd(__m512d , __mmask8, __m512d);
+
+
+
+
+
+
+extern __m512  _mm512_invsqrt_ps(__m512);
+extern __m512  _mm512_mask_invsqrt_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_invsqrt_pd(__m512d);
+extern __m512d _mm512_mask_invsqrt_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_cbrt_ps(__m512);
+extern __m512  _mm512_mask_cbrt_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_cbrt_pd(__m512d);
+extern __m512d _mm512_mask_cbrt_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_invcbrt_ps(__m512);
+extern __m512  _mm512_mask_invcbrt_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_invcbrt_pd(__m512d);
+extern __m512d _mm512_mask_invcbrt_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_hypot_ps(__m512, __m512);
+extern __m512  _mm512_mask_hypot_ps(__m512  , __mmask16, __m512, __m512);
+extern __m512d _mm512_hypot_pd(__m512d, __m512d);
+extern __m512d _mm512_mask_hypot_pd(__m512d , __mmask8, __m512d, __m512d);
+extern __m512  _mm512_cdfnorm_ps(__m512);
+extern __m512  _mm512_mask_cdfnorm_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_cdfnorm_pd(__m512d);
+extern __m512d _mm512_mask_cdfnorm_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_cdfnorminv_ps(__m512);
+extern __m512  _mm512_mask_cdfnorminv_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_cdfnorminv_pd(__m512d);
+extern __m512d _mm512_mask_cdfnorminv_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_erf_ps(__m512);
+extern __m512  _mm512_mask_erf_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_erf_pd(__m512d);
+extern __m512d _mm512_mask_erf_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_erfc_ps(__m512);
+extern __m512  _mm512_mask_erfc_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_erfc_pd(__m512d);
+extern __m512d _mm512_mask_erfc_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_erfcinv_ps(__m512);
+extern __m512  _mm512_mask_erfcinv_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_erfcinv_pd(__m512d);
+extern __m512d _mm512_mask_erfcinv_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_erfinv_ps(__m512);
+extern __m512  _mm512_mask_erfinv_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_erfinv_pd(__m512d);
+extern __m512d _mm512_mask_erfinv_pd(__m512d , __mmask8, __m512d);
+extern __m512  _mm512_nearbyint_ps(__m512);
+extern __m512  _mm512_mask_nearbyint_ps(__m512  , __mmask16, __m512);
+extern __m512d _mm512_nearbyint_pd(__m512d);
+extern __m512d _mm512_mask_nearbyint_pd(__m512d , __mmask8, __m512d);
+
+
+typedef __m128i __m128bh;
+typedef __m256i __m256bh;
+typedef __m512i __m512bh;
+typedef unsigned short __bfloat16;
+
+extern __m128bh _mm_cvtneps_pbh(__m128);
+extern __m128bh _mm_mask_cvtneps_pbh(__m128bh, __mmask8, __m128);
+extern __m128bh _mm_maskz_cvtneps_pbh(__mmask8, __m128);
+extern __m128bh _mm_cvtne2ps_pbh(__m128, __m128);
+extern __m128bh _mm_mask_cvtne2ps_pbh(__m128bh, __mmask8, __m128, __m128);
+extern __m128bh _mm_maskz_cvtne2ps_pbh(__mmask8, __m128, __m128);
+extern __m128   _mm_dpbf16_ps(__m128, __m128bh, __m128bh);
+extern __m128   _mm_mask_dpbf16_ps(__m128, __mmask8, __m128bh, __m128bh);
+extern __m128   _mm_maskz_dpbf16_ps(__mmask8, __m128, __m128bh, __m128bh);
+extern __m128bh _mm256_cvtneps_pbh(__m256);
+extern __m128bh _mm256_mask_cvtneps_pbh(__m128bh, __mmask8, __m256);
+extern __m128bh _mm256_maskz_cvtneps_pbh(__mmask8, __m256);
+extern __m256bh _mm256_cvtne2ps_pbh(__m256, __m256);
+extern __m256bh _mm256_mask_cvtne2ps_pbh(__m256bh, __mmask16, __m256, __m256);
+extern __m256bh _mm256_maskz_cvtne2ps_pbh(__mmask16, __m256, __m256);
+extern __m256   _mm256_dpbf16_ps(__m256, __m256bh, __m256bh);
+extern __m256   _mm256_mask_dpbf16_ps(__m256, __mmask8, __m256bh, __m256bh);
+extern __m256   _mm256_maskz_dpbf16_ps(__mmask8, __m256, __m256bh, __m256bh);
+extern __m256bh _mm512_cvtneps_pbh(__m512);
+extern __m256bh _mm512_mask_cvtneps_pbh(__m256bh, __mmask16, __m512);
+extern __m256bh _mm512_maskz_cvtneps_pbh(__mmask16, __m512);
+extern __m512bh _mm512_cvtne2ps_pbh(__m512, __m512);
+extern __m512bh _mm512_mask_cvtne2ps_pbh(__m512bh, __mmask32, __m512, __m512);
+extern __m512bh _mm512_maskz_cvtne2ps_pbh(__mmask32, __m512, __m512);
+extern __m512   _mm512_dpbf16_ps(__m512, __m512bh, __m512bh);
+extern __m512   _mm512_mask_dpbf16_ps(__m512, __mmask16, __m512bh, __m512bh);
+extern __m512   _mm512_maskz_dpbf16_ps(__mmask16, __m512, __m512bh, __m512bh);
+extern __bfloat16 _mm_cvtness_sbh(float);
+extern float      _mm_cvtsbh_ss(__bfloat16);
+extern __m128     _mm_cvtpbh_ps(__m128bh);
+extern __m128     _mm_mask_cvtpbh_ps(__m128, __mmask8, __m128bh);
+extern __m128     _mm_maskz_cvtpbh_ps(__mmask8, __m128bh);
+extern __m256     _mm256_cvtpbh_ps(__m128bh);
+extern __m256     _mm256_mask_cvtpbh_ps(__m256, __mmask8, __m128bh);
+extern __m256     _mm256_maskz_cvtpbh_ps(__mmask8, __m128bh);
+extern __m512     _mm512_cvtpbh_ps(__m256bh);
+extern __m512     _mm512_mask_cvtpbh_ps(__m512, __mmask16, __m256bh);
+extern __m512     _mm512_maskz_cvtpbh_ps(__mmask16, __m256bh);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern __mmask8  __cdecl _kadd_mask8(__mmask8, __mmask8);
+extern __mmask16 __cdecl _kadd_mask16(__mmask16, __mmask16);
+extern __mmask32 __cdecl _kadd_mask32(__mmask32, __mmask32);
+extern __mmask64 __cdecl _kadd_mask64(__mmask64, __mmask64);
+extern __mmask8  __cdecl _kand_mask8(__mmask8, __mmask8);
+extern __mmask16 __cdecl _kand_mask16(__mmask16, __mmask16);
+extern __mmask32 __cdecl _kand_mask32(__mmask32, __mmask32);
+extern __mmask64 __cdecl _kand_mask64(__mmask64, __mmask64);
+extern __mmask8  __cdecl _kandn_mask8(__mmask8, __mmask8);
+extern __mmask16 __cdecl _kandn_mask16(__mmask16, __mmask16);
+extern __mmask32 __cdecl _kandn_mask32(__mmask32, __mmask32);
+extern __mmask64 __cdecl _kandn_mask64(__mmask64, __mmask64);
+extern __mmask8  __cdecl _knot_mask8(__mmask8);
+extern __mmask16 __cdecl _knot_mask16(__mmask16);
+extern __mmask32 __cdecl _knot_mask32(__mmask32);
+extern __mmask64 __cdecl _knot_mask64(__mmask64);
+extern __mmask8  __cdecl _kor_mask8(__mmask8, __mmask8);
+extern __mmask16 __cdecl _kor_mask16(__mmask16, __mmask16);
+extern __mmask32 __cdecl _kor_mask32(__mmask32, __mmask32);
+extern __mmask64 __cdecl _kor_mask64(__mmask64, __mmask64);
+extern __mmask8  __cdecl _kxnor_mask8(__mmask8, __mmask8);
+extern __mmask16 __cdecl _kxnor_mask16(__mmask16, __mmask16);
+extern __mmask32 __cdecl _kxnor_mask32(__mmask32, __mmask32);
+extern __mmask64 __cdecl _kxnor_mask64(__mmask64, __mmask64);
+extern __mmask8  __cdecl _kxor_mask8(__mmask8, __mmask8);
+extern __mmask16 __cdecl _kxor_mask16(__mmask16, __mmask16);
+extern __mmask32 __cdecl _kxor_mask32(__mmask32, __mmask32);
+extern __mmask64 __cdecl _kxor_mask64(__mmask64, __mmask64);
+extern __mmask8  __cdecl _kshiftli_mask8(__mmask8, unsigned int);
+extern __mmask16 __cdecl _kshiftli_mask16(__mmask16, unsigned int);
+extern __mmask32 __cdecl _kshiftli_mask32(__mmask32, unsigned int);
+extern __mmask64 __cdecl _kshiftli_mask64(__mmask64, unsigned int);
+extern __mmask8  __cdecl _kshiftri_mask8(__mmask8, unsigned int);
+extern __mmask16 __cdecl _kshiftri_mask16(__mmask16, unsigned int);
+extern __mmask32 __cdecl _kshiftri_mask32(__mmask32, unsigned int);
+extern __mmask64 __cdecl _kshiftri_mask64(__mmask64, unsigned int);
+extern __mmask8  __cdecl _load_mask8(__mmask8 *);
+extern __mmask16 __cdecl _load_mask16(__mmask16 *);
+extern __mmask32 __cdecl _load_mask32(__mmask32 *);
+extern __mmask64 __cdecl _load_mask64(__mmask64 *);
+extern void      __cdecl _store_mask8(__mmask8 *, __mmask8);
+extern void      __cdecl _store_mask16(__mmask16 *, __mmask16);
+extern void      __cdecl _store_mask32(__mmask32 *, __mmask32);
+extern void      __cdecl _store_mask64(__mmask64 *, __mmask64);
+extern unsigned int     __cdecl _cvtmask8_u32(__mmask8);
+extern unsigned int     __cdecl _cvtmask16_u32(__mmask16);
+extern unsigned int     __cdecl _cvtmask32_u32(__mmask32);
+extern unsigned __int64 __cdecl _cvtmask64_u64(__mmask64);
+extern __mmask8         __cdecl _cvtu32_mask8(unsigned int);
+extern __mmask16        __cdecl _cvtu32_mask16(unsigned int);
+extern __mmask32        __cdecl _cvtu32_mask32(unsigned int);
+extern __mmask64        __cdecl _cvtu64_mask64(unsigned __int64);
+extern __mmask16        __cdecl _mm512_kmov(__mmask16);
+extern unsigned char __cdecl _kortest_mask8_u8(__mmask8, __mmask8, unsigned char *);
+extern unsigned char __cdecl _kortest_mask16_u8(__mmask16, __mmask16, unsigned char *);
+extern unsigned char __cdecl _kortest_mask32_u8(__mmask32, __mmask32, unsigned char *);
+extern unsigned char __cdecl _kortest_mask64_u8(__mmask64, __mmask64, unsigned char *);
+extern unsigned char __cdecl _ktest_mask8_u8(__mmask8, __mmask8, unsigned char *);
+extern unsigned char __cdecl _ktest_mask16_u8(__mmask16, __mmask16, unsigned char *);
+extern unsigned char __cdecl _ktest_mask32_u8(__mmask32, __mmask32, unsigned char *);
+extern unsigned char __cdecl _ktest_mask64_u8(__mmask64, __mmask64, unsigned char *);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m512  __cdecl _mm512_mask_exp2a23_round_ps(__m512, __mmask16, __m512, int);
+extern __m512  __cdecl _mm512_maskz_exp2a23_round_ps(__mmask16, __m512, int);
+extern __m512d __cdecl _mm512_mask_exp2a23_round_pd(__m512d, __mmask8, __m512d, int);
+extern __m512d __cdecl _mm512_maskz_exp2a23_round_pd(__mmask8, __m512d, int);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m512  __cdecl _mm512_mask_rcp28_round_ps(__m512, __mmask16, __m512, const int);
+extern __m512  __cdecl _mm512_maskz_rcp28_round_ps(__mmask16, __m512, const int);
+extern __m512d __cdecl _mm512_mask_rcp28_round_pd(__m512d, __mmask8, __m512d, const int);
+extern __m512d __cdecl _mm512_maskz_rcp28_round_pd(__mmask8, __m512d, const int);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m512  __cdecl _mm512_mask_rsqrt28_round_ps(__m512, __mmask16, __m512, const int);
+extern __m512  __cdecl _mm512_maskz_rsqrt28_round_ps(__mmask16, __m512, const int);
+extern __m512d __cdecl _mm512_mask_rsqrt28_round_pd(__m512d, __mmask8, __m512d, const int);
+extern __m512d __cdecl _mm512_maskz_rsqrt28_round_pd(__mmask8, __m512d, const int);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern void __cdecl _mm512_prefetch_i32gather_pd(__m256i vindex, void const* base_addr, int scale, const int hint);
+extern void __cdecl _mm512_prefetch_i32gather_ps(__m512i index, void const* mv, int scale, const int hint);
+extern void __cdecl _mm512_prefetch_i32scatter_pd(void* base_addr, __m256i vindex, int scale, const int hint);
+extern void __cdecl _mm512_prefetch_i32scatter_ps(void* mv, __m512i index, int scale, const int hint);
+extern void __cdecl _mm512_prefetch_i64gather_pd(__m512i vindex, void const* base_addr, int scale, const int hint);
+extern void __cdecl _mm512_prefetch_i64gather_ps(__m512i vindex, void const* base_addr, int scale, const int hint);
+extern void __cdecl _mm512_prefetch_i64scatter_pd(void* base_addr, __m512i vindex, int scale, const int hint);
+extern void __cdecl _mm512_prefetch_i64scatter_ps(void* base_addr, __m512i vindex, int scale, const int hint);
+extern void __cdecl _mm512_mask_prefetch_i32gather_pd(__m256i vindex, __mmask8 mask, void const* base_addr, int scale, const int hint);
+extern void __cdecl _mm512_mask_prefetch_i32gather_ps(__m512i vindex, __mmask16 mask, void const* base_addr, int scale, const int hint);
+extern void __cdecl _mm512_mask_prefetch_i32scatter_pd(void* base_addr, __mmask8 mask, __m256i vinde, int scale, const int hint);
+extern void __cdecl _mm512_mask_prefetch_i32scatter_ps(void* mv, __mmask16 k, __m512i index, int scale, const int hint);
+extern void __cdecl _mm512_mask_prefetch_i64gather_pd(__m512i vindex, __mmask8 mask, void const* base_addr, int scale, const int hint);
+extern void __cdecl _mm512_mask_prefetch_i64gather_ps(__m512i vindex, __mmask8 mask, void const* base_addr, int scale, const int hint);
+extern void __cdecl _mm512_mask_prefetch_i64scatter_pd(void* base_addr, __mmask8 mask, __m512i vindex, int scale, const int hint);
+extern void __cdecl _mm512_mask_prefetch_i64scatter_ps(void* base_addr, __mmask8 mask, __m512i vindex, int scale, const int hint);
+
+
+extern void __cdecl _mm_2intersect_epi32(__m128i, __m128i, __mmask8 *, __mmask8 *);
+extern void __cdecl _mm256_2intersect_epi32(__m256i, __m256i, __mmask8 *, __mmask8 *);
+extern void __cdecl _mm512_2intersect_epi32(__m512i, __m512i, __mmask16 *, __mmask16 *);
+extern void __cdecl _mm_2intersect_epi64(__m128i, __m128i, __mmask8 *, __mmask8 *);
+extern void __cdecl _mm256_2intersect_epi64(__m256i, __m256i, __mmask8 *, __mmask8 *);
+extern void __cdecl _mm512_2intersect_epi64(__m512i, __m512i, __mmask8 *, __mmask8 *);
+
+
+
+
+typedef int __tile;
+
+extern void __cdecl _tile_loadconfig(const void *);
+extern void __cdecl _tile_storeconfig(void *);
+extern void __cdecl _tile_release(void);
+
+extern void __cdecl _tile_loadd(__tile dst, const void *base, int stride);
+extern void __cdecl _tile_loaddrs(__tile dst, const void *base, int stride);
+extern void __cdecl _tile_loaddrst1(__tile dst, const void *base, int stride);
+extern void __cdecl _tile_stream_loadd(__tile dst, const void *base, int stride);
+extern void __cdecl _tile_stored(__tile src, void *base, int stride);
+extern void __cdecl _tile_zero(__tile dst);
+
+extern void __cdecl _tile_dpbf16ps(__tile dst, __tile src1, __tile src2);
+extern void __cdecl _tile_dpfp16ps(__tile dst, __tile src1, __tile src2);
+extern void __cdecl _tile_dpbssd(__tile dst, __tile src1, __tile src2);
+extern void __cdecl _tile_dpbsud(__tile dst, __tile src1, __tile src2);
+extern void __cdecl _tile_dpbusd(__tile dst, __tile src1, __tile src2);
+extern void __cdecl _tile_dpbuud(__tile dst, __tile src1, __tile src2);
+
+
+extern void __cdecl _tile_cmmimfp16ps(__tile dst, __tile src1, __tile src2);
+extern void __cdecl _tile_cmmrlfp16ps(__tile dst, __tile src1, __tile src2);
+
+
+extern void __cdecl _tile_dpbf8ps(__tile dst, __tile src1, __tile src2);
+extern void __cdecl _tile_dpbhf8ps(__tile dst, __tile src1, __tile src2);
+extern void __cdecl _tile_dphbf8ps(__tile dst, __tile src1, __tile src2);
+extern void __cdecl _tile_dphf8ps(__tile dst, __tile src1, __tile src2);
+
+
+extern void __cdecl _tile_mmultf32ps(__tile dst, __tile src1, __tile src2);
+extern void __cdecl _tile_tmmultf32ps(__tile dst, __tile src1, __tile src2);
+
+
+extern void __cdecl _tile_2rpntlvwz0(__tile dst, const void *base, int stride);
+extern void __cdecl _tile_2rpntlvwz0t1(__tile dst, const void *base, int stride);
+extern void __cdecl _tile_2rpntlvwz1(__tile dst, const void *base, int stride);
+extern void __cdecl _tile_2rpntlvwz1t1(__tile dst, const void *base, int stride);
+extern void __cdecl _tile_transposed(__tile dst, __tile src1);
+
+
+extern void __cdecl _tile_2rpntlvwz0rs(__tile dst, const void *base, int stride);
+extern void __cdecl _tile_2rpntlvwz0rst1(__tile dst, const void *base, int stride);
+extern void __cdecl _tile_2rpntlvwz1rs(__tile dst, const void *base, int stride);
+extern void __cdecl _tile_2rpntlvwz1rst1(__tile dst, const void *base, int stride);
+
+
+extern void __cdecl _tile_conjtcmmimfp16ps(__tile dst, __tile src1, __tile src2);
+extern void __cdecl _tile_conjtfp16(__tile dst, __tile src1);
+extern void __cdecl _tile_tcmmimfp16ps(__tile dst, __tile src1, __tile src2);
+extern void __cdecl _tile_tcmmrlfp16ps(__tile dst, __tile src1, __tile src2);
+
+
+extern void __cdecl _tile_tdpbf16ps(__tile dst, __tile src1, __tile src2);
+
+
+extern void __cdecl _tile_tdpfp16ps(__tile dst, __tile src1, __tile src2);
+
+#line 5223 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\zmmintrin.h"
+
+
+typedef __m128i __m128h;
+typedef __m256i __m256h;
+typedef __m512i __m512h;
+
+
+
+
+extern __m512   __cdecl _tile_cvtrowd2ps(__tile dst, unsigned int a);
+extern __m512   __cdecl _tile_cvtrowd2psi(__tile dst, const unsigned int);
+extern __m512bh __cdecl _tile_cvtrowps2bf16h(__tile dst, unsigned int a);
+extern __m512bh __cdecl _tile_cvtrowps2bf16hi(__tile dst, const unsigned int);
+extern __m512bh __cdecl _tile_cvtrowps2bf16l(__tile dst, unsigned int a);
+extern __m512bh __cdecl _tile_cvtrowps2bf16li(__tile dst, const unsigned int);
+extern __m512h  __cdecl _tile_cvtrowps2phh(__tile dst, unsigned int a);
+extern __m512h  __cdecl _tile_cvtrowps2phhi(__tile dst, const unsigned int);
+extern __m512h  __cdecl _tile_cvtrowps2phl(__tile dst, unsigned int a);
+extern __m512h  __cdecl _tile_cvtrowps2phli(__tile dst, const unsigned int);
+extern __m512   __cdecl _tile_movrow(__tile dst, unsigned int a);
+extern __m512   __cdecl _tile_movrowi(__tile dst, const unsigned int);
+
+#line 5246 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\zmmintrin.h"
+
+
+extern __m128h __cdecl _mm_add_ph(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_add_ph(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_add_ph(__mmask8, __m128h, __m128h);
+extern __m256h __cdecl _mm256_add_ph(__m256h, __m256h);
+extern __m256h __cdecl _mm256_mask_add_ph(__m256h, __mmask16, __m256h, __m256h);
+extern __m256h __cdecl _mm256_maskz_add_ph(__mmask16, __m256h, __m256h);
+extern __m512h __cdecl _mm512_add_ph(__m512h, __m512h);
+extern __m512h __cdecl _mm512_mask_add_ph(__m512h, __mmask32, __m512h, __m512h);
+extern __m512h __cdecl _mm512_maskz_add_ph(__mmask32, __m512h, __m512h);
+extern __m512h __cdecl _mm512_add_round_ph(__m512h, __m512h, int);
+extern __m512h __cdecl _mm512_mask_add_round_ph(__m512h, __mmask32, __m512h, __m512h, int);
+extern __m512h __cdecl _mm512_maskz_add_round_ph(__mmask32, __m512h, __m512h, int);
+
+
+extern __m128h __cdecl _mm_add_sh(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_add_sh(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_add_sh(__mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_add_round_sh(__m128h, __m128h, int);
+extern __m128h __cdecl _mm_mask_add_round_sh(__m128h, __mmask8, __m128h, __m128h, int);
+extern __m128h __cdecl _mm_maskz_add_round_sh(__mmask8, __m128h, __m128h, int);
+
+
+
+
+
+
+
+extern __mmask8 __cdecl _mm_cmp_ph_mask(__m128h, __m128h, const int);
+extern __mmask8 __cdecl _mm_mask_cmp_ph_mask(__mmask8, __m128h, __m128h, const int);
+extern __mmask16 __cdecl _mm256_cmp_ph_mask(__m256h, __m256h, const int);
+extern __mmask16 __cdecl _mm256_mask_cmp_ph_mask(__mmask16, __m256h, __m256h, const int);
+extern __mmask32 __cdecl _mm512_cmp_ph_mask(__m512h, __m512h, const int);
+extern __mmask32 __cdecl _mm512_mask_cmp_ph_mask(__mmask32, __m512h, __m512h, const int);
+extern __mmask32 __cdecl _mm512_cmp_round_ph_mask(__m512h, __m512h, const int, const int);
+extern __mmask32 __cdecl _mm512_mask_cmp_round_ph_mask(__mmask32, __m512h, __m512h, const int, const int);
+
+
+extern __mmask8 __cdecl _mm_cmp_sh_mask(__m128h, __m128h, const int);
+extern __mmask8 __cdecl _mm_mask_cmp_sh_mask(__mmask8, __m128h, __m128h, const int);
+extern __mmask8 __cdecl _mm_cmp_round_sh_mask(__m128h, __m128h, const int, const int);
+extern __mmask8 __cdecl _mm_mask_cmp_round_sh_mask(__mmask8, __m128h, __m128h, const int, const int);
+
+
+extern int __cdecl _mm_comi_sh(__m128h, __m128h, const int);
+extern int __cdecl _mm_comi_round_sh(__m128h, __m128h, const int, const int);
+
+
+extern __m128h __cdecl _mm_cvtepi32_ph(__m128i);
+extern __m128h __cdecl _mm_mask_cvtepi32_ph(__m128h, __mmask8, __m128i);
+extern __m128h __cdecl _mm_maskz_cvtepi32_ph(__mmask8, __m128i);
+extern __m128h __cdecl _mm256_cvtepi32_ph(__m256i);
+extern __m128h __cdecl _mm256_mask_cvtepi32_ph(__m128h, __mmask8, __m256i);
+extern __m128h __cdecl _mm256_maskz_cvtepi32_ph(__mmask8, __m256i);
+extern __m256h __cdecl _mm512_cvtepi32_ph (__m512i);
+extern __m256h __cdecl _mm512_mask_cvtepi32_ph (__m256h, __mmask16, __m512i);
+extern __m256h __cdecl _mm512_maskz_cvtepi32_ph (__mmask16, __m512i);
+extern __m256h __cdecl _mm512_cvt_roundepi32_ph(__m512i, int);
+extern __m256h __cdecl _mm512_mask_cvt_roundepi32_ph(__m256h, __mmask16, __m512i, int);
+extern __m256h __cdecl _mm512_maskz_cvt_roundepi32_ph(__mmask16, __m512i, int);
+
+
+extern __m128h __cdecl _mm_cvtpd_ph(__m128d);
+extern __m128h __cdecl _mm_mask_cvtpd_ph(__m128h, __mmask8, __m128d);
+extern __m128h __cdecl _mm_maskz_cvtpd_ph(__mmask8, __m128d);
+extern __m128h __cdecl _mm256_cvtpd_ph(__m256d);
+extern __m128h __cdecl _mm256_mask_cvtpd_ph(__m128h, __mmask8, __m256d);
+extern __m128h __cdecl _mm256_maskz_cvtpd_ph(__mmask8, __m256d);
+extern __m128h __cdecl _mm512_cvtpd_ph (__m512d);
+extern __m128h __cdecl _mm512_mask_cvtpd_ph (__m128h, __mmask8, __m512d);
+extern __m128h __cdecl _mm512_maskz_cvtpd_ph (__mmask8, __m512d);
+extern __m128h __cdecl _mm512_cvt_roundpd_ph(__m512d, int);
+extern __m128h __cdecl _mm512_mask_cvt_roundpd_ph(__m128h, __mmask8, __m512d, int);
+extern __m128h __cdecl _mm512_maskz_cvt_roundpd_ph(__mmask8, __m512d, int);
+
+
+extern __m128i __cdecl _mm_cvtph_epi32(__m128h);
+extern __m128i __cdecl _mm_mask_cvtph_epi32(__m128i, __mmask8, __m128h);
+extern __m128i __cdecl _mm_maskz_cvtph_epi32(__mmask8, __m128h);
+extern __m256i __cdecl _mm256_cvtph_epi32(__m128h);
+extern __m256i __cdecl _mm256_mask_cvtph_epi32(__m256i, __mmask8, __m128h);
+extern __m256i __cdecl _mm256_maskz_cvtph_epi32(__mmask8, __m128h);
+extern __m512i __cdecl _mm512_cvtph_epi32 (__m256h);
+extern __m512i __cdecl _mm512_mask_cvtph_epi32 (__m512i, __mmask16, __m256h);
+extern __m512i __cdecl _mm512_maskz_cvtph_epi32 (__mmask16, __m256h);
+extern __m512i __cdecl _mm512_cvt_roundph_epi32(__m256h, int);
+extern __m512i __cdecl _mm512_mask_cvt_roundph_epi32(__m512i, __mmask16, __m256h, int);
+extern __m512i __cdecl _mm512_maskz_cvt_roundph_epi32(__mmask16, __m256h, int);
+
+
+extern __m128d __cdecl _mm_cvtph_pd(__m128h);
+extern __m128d __cdecl _mm_mask_cvtph_pd(__m128d, __mmask8, __m128h);
+extern __m128d __cdecl _mm_maskz_cvtph_pd(__mmask8, __m128h);
+extern __m256d __cdecl _mm256_cvtph_pd(__m128h);
+extern __m256d __cdecl _mm256_mask_cvtph_pd(__m256d, __mmask8, __m128h);
+extern __m256d __cdecl _mm256_maskz_cvtph_pd(__mmask8, __m128h);
+extern __m512d __cdecl _mm512_cvtph_pd (__m128h);
+extern __m512d __cdecl _mm512_mask_cvtph_pd (__m512d, __mmask8, __m128h);
+extern __m512d __cdecl _mm512_maskz_cvtph_pd (__mmask8, __m128h);
+extern __m512d __cdecl _mm512_cvt_roundph_pd(__m128h, int);
+extern __m512d __cdecl _mm512_mask_cvt_roundph_pd(__m512d, __mmask8, __m128h, int);
+extern __m512d __cdecl _mm512_maskz_cvt_roundph_pd(__mmask8, __m128h, int);
+
+
+extern __m128 __cdecl _mm_cvtxph_ps(__m128h);
+extern __m128 __cdecl _mm_mask_cvtxph_ps(__m128, __mmask8, __m128h);
+extern __m128 __cdecl _mm_maskz_cvtxph_ps(__mmask8, __m128h);
+extern __m256 __cdecl _mm256_cvtxph_ps(__m128h);
+extern __m256 __cdecl _mm256_mask_cvtxph_ps(__m256, __mmask8, __m128h);
+extern __m256 __cdecl _mm256_maskz_cvtxph_ps(__mmask8, __m128h);
+extern __m512 __cdecl _mm512_cvtxph_ps(__m256h);
+extern __m512 __cdecl _mm512_mask_cvtxph_ps(__m512, __mmask16, __m256h);
+extern __m512 __cdecl _mm512_maskz_cvtxph_ps(__mmask16, __m256h);
+extern __m512 __cdecl _mm512_cvtx_roundph_ps(__m256h, int);
+extern __m512 __cdecl _mm512_mask_cvtx_roundph_ps(__m512, __mmask16, __m256h, int);
+extern __m512 __cdecl _mm512_maskz_cvtx_roundph_ps(__mmask16, __m256h, int);
+
+
+extern __m128i __cdecl _mm_cvtph_epi64(__m128h);
+extern __m128i __cdecl _mm_mask_cvtph_epi64(__m128i, __mmask8, __m128h);
+extern __m128i __cdecl _mm_maskz_cvtph_epi64(__mmask8, __m128h);
+extern __m256i __cdecl _mm256_cvtph_epi64(__m128h);
+extern __m256i __cdecl _mm256_mask_cvtph_epi64(__m256i, __mmask8, __m128h);
+extern __m256i __cdecl _mm256_maskz_cvtph_epi64(__mmask8, __m128h);
+extern __m512i __cdecl _mm512_cvtph_epi64 (__m128h);
+extern __m512i __cdecl _mm512_mask_cvtph_epi64 (__m512i, __mmask8, __m128h);
+extern __m512i __cdecl _mm512_maskz_cvtph_epi64 (__mmask8, __m128h);
+extern __m512i __cdecl _mm512_cvt_roundph_epi64(__m128h, int);
+extern __m512i __cdecl _mm512_mask_cvt_roundph_epi64(__m512i, __mmask8, __m128h, int);
+extern __m512i __cdecl _mm512_maskz_cvt_roundph_epi64(__mmask8, __m128h, int);
+
+
+extern __m128i __cdecl _mm_cvtph_epu32(__m128h);
+extern __m128i __cdecl _mm_mask_cvtph_epu32(__m128i, __mmask8, __m128h);
+extern __m128i __cdecl _mm_maskz_cvtph_epu32(__mmask8, __m128h);
+extern __m256i __cdecl _mm256_cvtph_epu32(__m128h);
+extern __m256i __cdecl _mm256_mask_cvtph_epu32(__m256i, __mmask8, __m128h);
+extern __m256i __cdecl _mm256_maskz_cvtph_epu32(__mmask8, __m128h);
+extern __m512i __cdecl _mm512_cvtph_epu32 (__m256h);
+extern __m512i __cdecl _mm512_mask_cvtph_epu32 (__m512i, __mmask16, __m256h);
+extern __m512i __cdecl _mm512_maskz_cvtph_epu32 (__mmask16, __m256h);
+extern __m512i __cdecl _mm512_cvt_roundph_epu32(__m256h, int);
+extern __m512i __cdecl _mm512_mask_cvt_roundph_epu32(__m512i, __mmask16, __m256h, int);
+extern __m512i __cdecl _mm512_maskz_cvt_roundph_epu32(__mmask16, __m256h, int);
+
+
+extern __m128i __cdecl _mm_cvtph_epu64(__m128h);
+extern __m128i __cdecl _mm_mask_cvtph_epu64(__m128i, __mmask8, __m128h);
+extern __m128i __cdecl _mm_maskz_cvtph_epu64(__mmask8, __m128h);
+extern __m256i __cdecl _mm256_cvtph_epu64(__m128h);
+extern __m256i __cdecl _mm256_mask_cvtph_epu64(__m256i, __mmask8, __m128h);
+extern __m256i __cdecl _mm256_maskz_cvtph_epu64(__mmask8, __m128h);
+extern __m512i __cdecl _mm512_cvtph_epu64 (__m128h);
+extern __m512i __cdecl _mm512_mask_cvtph_epu64 (__m512i, __mmask8, __m128h);
+extern __m512i __cdecl _mm512_maskz_cvtph_epu64 (__mmask8, __m128h);
+extern __m512i __cdecl _mm512_cvt_roundph_epu64(__m128h, int);
+extern __m512i __cdecl _mm512_mask_cvt_roundph_epu64(__m512i, __mmask8, __m128h, int);
+extern __m512i __cdecl _mm512_maskz_cvt_roundph_epu64(__mmask8, __m128h, int);
+
+
+extern __m128i __cdecl _mm_cvtph_epu16(__m128h);
+extern __m128i __cdecl _mm_mask_cvtph_epu16(__m128i, __mmask8, __m128h);
+extern __m128i __cdecl _mm_maskz_cvtph_epu16(__mmask8, __m128h);
+extern __m256i __cdecl _mm256_cvtph_epu16(__m256h);
+extern __m256i __cdecl _mm256_mask_cvtph_epu16(__m256i, __mmask16, __m256h);
+extern __m256i __cdecl _mm256_maskz_cvtph_epu16(__mmask16, __m256h);
+extern __m512i __cdecl _mm512_cvtph_epu16 (__m512h);
+extern __m512i __cdecl _mm512_mask_cvtph_epu16 (__m512i, __mmask32, __m512h);
+extern __m512i __cdecl _mm512_maskz_cvtph_epu16 (__mmask32, __m512h);
+extern __m512i __cdecl _mm512_cvt_roundph_epu16(__m512h, int);
+extern __m512i __cdecl _mm512_mask_cvt_roundph_epu16(__m512i, __mmask32, __m512h, int);
+extern __m512i __cdecl _mm512_maskz_cvt_roundph_epu16(__mmask32, __m512h, int);
+
+
+extern __m128i __cdecl _mm_cvtph_epi16(__m128h);
+extern __m128i __cdecl _mm_mask_cvtph_epi16(__m128i, __mmask8, __m128h);
+extern __m128i __cdecl _mm_maskz_cvtph_epi16(__mmask8, __m128h);
+extern __m256i __cdecl _mm256_cvtph_epi16(__m256h);
+extern __m256i __cdecl _mm256_mask_cvtph_epi16(__m256i, __mmask16, __m256h);
+extern __m256i __cdecl _mm256_maskz_cvtph_epi16(__mmask16, __m256h);
+extern __m512i __cdecl _mm512_cvtph_epi16 (__m512h);
+extern __m512i __cdecl _mm512_mask_cvtph_epi16 (__m512i, __mmask32, __m512h);
+extern __m512i __cdecl _mm512_maskz_cvtph_epi16 (__mmask32, __m512h);
+extern __m512i __cdecl _mm512_cvt_roundph_epi16(__m512h, int);
+extern __m512i __cdecl _mm512_mask_cvt_roundph_epi16(__m512i, __mmask32, __m512h, int);
+extern __m512i __cdecl _mm512_maskz_cvt_roundph_epi16(__mmask32, __m512h, int);
+
+
+extern __m128h __cdecl _mm_cvtxps_ph(__m128);
+extern __m128h __cdecl _mm_mask_cvtxps_ph(__m128h, __mmask8, __m128);
+extern __m128h __cdecl _mm_maskz_cvtxps_ph(__mmask8, __m128);
+extern __m128h __cdecl _mm256_cvtxps_ph(__m256);
+extern __m128h __cdecl _mm256_mask_cvtxps_ph(__m128h, __mmask8, __m256);
+extern __m128h __cdecl _mm256_maskz_cvtxps_ph(__mmask8, __m256);
+extern __m256h __cdecl _mm512_cvtxps_ph(__m512);
+extern __m256h __cdecl _mm512_mask_cvtxps_ph(__m256h, __mmask16, __m512);
+extern __m256h __cdecl _mm512_maskz_cvtxps_ph(__mmask16, __m512);
+extern __m256h __cdecl _mm512_cvtx_roundps_ph(__m512, int);
+extern __m256h __cdecl _mm512_mask_cvtx_roundps_ph(__m256h, __mmask16, __m512, int);
+extern __m256h __cdecl _mm512_maskz_cvtx_roundps_ph(__mmask16, __m512, int);
+
+
+extern __m128h __cdecl _mm_cvtepi64_ph(__m128i);
+extern __m128h __cdecl _mm_mask_cvtepi64_ph(__m128h, __mmask8, __m128i);
+extern __m128h __cdecl _mm_maskz_cvtepi64_ph(__mmask8, __m128i);
+extern __m128h __cdecl _mm256_cvtepi64_ph(__m256i);
+extern __m128h __cdecl _mm256_mask_cvtepi64_ph(__m128h, __mmask8, __m256i);
+extern __m128h __cdecl _mm256_maskz_cvtepi64_ph(__mmask8, __m256i);
+extern __m128h __cdecl _mm512_cvtepi64_ph (__m512i);
+extern __m128h __cdecl _mm512_mask_cvtepi64_ph (__m128h, __mmask8, __m512i);
+extern __m128h __cdecl _mm512_maskz_cvtepi64_ph (__mmask8, __m512i);
+extern __m128h __cdecl _mm512_cvt_roundepi64_ph(__m512i, int);
+extern __m128h __cdecl _mm512_mask_cvt_roundepi64_ph(__m128h, __mmask8, __m512i, int);
+extern __m128h __cdecl _mm512_maskz_cvt_roundepi64_ph(__mmask8, __m512i, int);
+
+
+extern __m128h __cdecl _mm_cvtsd_sh(__m128h, __m128d);
+extern __m128h __cdecl _mm_mask_cvtsd_sh(__m128h, __mmask8, __m128h, __m128d);
+extern __m128h __cdecl _mm_maskz_cvtsd_sh(__mmask8, __m128h, __m128d);
+extern __m128h __cdecl _mm_cvt_roundsd_sh(__m128h, __m128d, const int);
+extern __m128h __cdecl _mm_mask_cvt_roundsd_sh(__m128h, __mmask8, __m128h, __m128d, const int);
+extern __m128h __cdecl _mm_maskz_cvt_roundsd_sh(__mmask8, __m128h, __m128d, const int);
+
+
+extern __m128d __cdecl _mm_cvtsh_sd(__m128d, __m128h);
+extern __m128d __cdecl _mm_mask_cvtsh_sd(__m128d, __mmask8, __m128d, __m128h);
+extern __m128d __cdecl _mm_maskz_cvtsh_sd(__mmask8, __m128d, __m128h);
+extern __m128d __cdecl _mm_cvt_roundsh_sd(__m128d, __m128h, const int);
+extern __m128d __cdecl _mm_mask_cvt_roundsh_sd(__m128d, __mmask8, __m128d, __m128h, const int);
+extern __m128d __cdecl _mm_maskz_cvt_roundsh_sd(__mmask8, __m128d, __m128h, const int);
+
+
+extern int __cdecl _mm_cvtsh_i32(__m128h);
+extern __int64 __cdecl _mm_cvtsh_i64(__m128h);
+extern int __cdecl _mm_cvt_roundsh_i32(__m128h, int);
+extern __int64 __cdecl _mm_cvt_roundsh_i64(__m128h, int);
+
+
+extern __m128 __cdecl _mm_cvtsh_ss(__m128, __m128h);
+extern __m128 __cdecl _mm_mask_cvtsh_ss(__m128, __mmask8, __m128, __m128h);
+extern __m128 __cdecl _mm_maskz_cvtsh_ss(__mmask8, __m128, __m128h);
+extern __m128 __cdecl _mm_cvt_roundsh_ss(__m128, __m128h, const int);
+extern __m128 __cdecl _mm_mask_cvt_roundsh_ss(__m128, __mmask8, __m128, __m128h, const int);
+extern __m128 __cdecl _mm_maskz_cvt_roundsh_ss(__mmask8, __m128, __m128h, const int);
+
+
+extern unsigned int __cdecl _mm_cvtsh_u32(__m128h);
+extern unsigned __int64 __cdecl _mm_cvtsh_u64(__m128h);
+extern unsigned int __cdecl _mm_cvt_roundsh_u32(__m128h, int);
+extern unsigned __int64 __cdecl _mm_cvt_roundsh_u64(__m128h, int);
+
+
+extern __m128h __cdecl _mm_cvti32_sh(__m128h, int);
+extern __m128h __cdecl _mm_cvti64_sh(__m128h, __int64);
+extern __m128h __cdecl _mm_cvt_roundi32_sh(__m128h, int, int);
+extern __m128h __cdecl _mm_cvt_roundi64_sh(__m128h, __int64, int);
+
+
+extern __m128h __cdecl _mm_cvtss_sh(__m128h, __m128);
+extern __m128h __cdecl _mm_mask_cvtss_sh(__m128h, __mmask8, __m128h, __m128);
+extern __m128h __cdecl _mm_maskz_cvtss_sh(__mmask8, __m128h, __m128);
+extern __m128h __cdecl _mm_cvt_roundss_sh(__m128h, __m128, const int);
+extern __m128h __cdecl _mm_mask_cvt_roundss_sh(__m128h, __mmask8, __m128h, __m128, const int);
+extern __m128h __cdecl _mm_maskz_cvt_roundss_sh(__mmask8, __m128h, __m128, const int);
+
+
+extern __m128i __cdecl _mm_cvttph_epi32(__m128h);
+extern __m128i __cdecl _mm_mask_cvttph_epi32(__m128i, __mmask8, __m128h);
+extern __m128i __cdecl _mm_maskz_cvttph_epi32(__mmask8, __m128h);
+extern __m256i __cdecl _mm256_cvttph_epi32(__m128h);
+extern __m256i __cdecl _mm256_mask_cvttph_epi32(__m256i, __mmask8, __m128h);
+extern __m256i __cdecl _mm256_maskz_cvttph_epi32(__mmask8, __m128h);
+extern __m512i __cdecl _mm512_cvttph_epi32 (__m256h);
+extern __m512i __cdecl _mm512_mask_cvttph_epi32 (__m512i, __mmask16, __m256h);
+extern __m512i __cdecl _mm512_maskz_cvttph_epi32 (__mmask16, __m256h);
+extern __m512i __cdecl _mm512_cvtt_roundph_epi32(__m256h, int);
+extern __m512i __cdecl _mm512_mask_cvtt_roundph_epi32(__m512i, __mmask16, __m256h, int);
+extern __m512i __cdecl _mm512_maskz_cvtt_roundph_epi32(__mmask16, __m256h, int);
+
+
+extern __m128i __cdecl _mm_cvttph_epi64(__m128h);
+extern __m128i __cdecl _mm_mask_cvttph_epi64(__m128i, __mmask8, __m128h);
+extern __m128i __cdecl _mm_maskz_cvttph_epi64(__mmask8, __m128h);
+extern __m256i __cdecl _mm256_cvttph_epi64(__m128h);
+extern __m256i __cdecl _mm256_mask_cvttph_epi64(__m256i, __mmask8, __m128h);
+extern __m256i __cdecl _mm256_maskz_cvttph_epi64(__mmask8, __m128h);
+extern __m512i __cdecl _mm512_cvttph_epi64 (__m128h);
+extern __m512i __cdecl _mm512_mask_cvttph_epi64 (__m512i, __mmask8, __m128h);
+extern __m512i __cdecl _mm512_maskz_cvttph_epi64 (__mmask8, __m128h);
+extern __m512i __cdecl _mm512_cvtt_roundph_epi64(__m128h, int);
+extern __m512i __cdecl _mm512_mask_cvtt_roundph_epi64(__m512i, __mmask8, __m128h, int);
+extern __m512i __cdecl _mm512_maskz_cvtt_roundph_epi64(__mmask8, __m128h, int);
+
+
+extern __m128i __cdecl _mm_cvttph_epu32(__m128h);
+extern __m128i __cdecl _mm_mask_cvttph_epu32(__m128i, __mmask8, __m128h);
+extern __m128i __cdecl _mm_maskz_cvttph_epu32(__mmask8, __m128h);
+extern __m256i __cdecl _mm256_cvttph_epu32(__m128h);
+extern __m256i __cdecl _mm256_mask_cvttph_epu32(__m256i, __mmask8, __m128h);
+extern __m256i __cdecl _mm256_maskz_cvttph_epu32(__mmask8, __m128h);
+extern __m512i __cdecl _mm512_cvttph_epu32 (__m256h);
+extern __m512i __cdecl _mm512_mask_cvttph_epu32 (__m512i, __mmask16, __m256h);
+extern __m512i __cdecl _mm512_maskz_cvttph_epu32 (__mmask16, __m256h);
+extern __m512i __cdecl _mm512_cvtt_roundph_epu32(__m256h, int);
+extern __m512i __cdecl _mm512_mask_cvtt_roundph_epu32(__m512i, __mmask16, __m256h, int);
+extern __m512i __cdecl _mm512_maskz_cvtt_roundph_epu32(__mmask16, __m256h, int);
+
+
+extern __m128i __cdecl _mm_cvttph_epu64(__m128h);
+extern __m128i __cdecl _mm_mask_cvttph_epu64(__m128i, __mmask8, __m128h);
+extern __m128i __cdecl _mm_maskz_cvttph_epu64(__mmask8, __m128h);
+extern __m256i __cdecl _mm256_cvttph_epu64(__m128h);
+extern __m256i __cdecl _mm256_mask_cvttph_epu64(__m256i, __mmask8, __m128h);
+extern __m256i __cdecl _mm256_maskz_cvttph_epu64(__mmask8, __m128h);
+extern __m512i __cdecl _mm512_cvttph_epu64 (__m128h);
+extern __m512i __cdecl _mm512_mask_cvttph_epu64 (__m512i, __mmask8, __m128h);
+extern __m512i __cdecl _mm512_maskz_cvttph_epu64 (__mmask8, __m128h);
+extern __m512i __cdecl _mm512_cvtt_roundph_epu64(__m128h, int);
+extern __m512i __cdecl _mm512_mask_cvtt_roundph_epu64(__m512i, __mmask8, __m128h, int);
+extern __m512i __cdecl _mm512_maskz_cvtt_roundph_epu64(__mmask8, __m128h, int);
+
+
+extern __m128i __cdecl _mm_cvttph_epu16(__m128h);
+extern __m128i __cdecl _mm_mask_cvttph_epu16(__m128i, __mmask8, __m128h);
+extern __m128i __cdecl _mm_maskz_cvttph_epu16(__mmask8, __m128h);
+extern __m256i __cdecl _mm256_cvttph_epu16(__m256h);
+extern __m256i __cdecl _mm256_mask_cvttph_epu16(__m256i, __mmask16, __m256h);
+extern __m256i __cdecl _mm256_maskz_cvttph_epu16(__mmask16, __m256h);
+extern __m512i __cdecl _mm512_cvttph_epu16 (__m512h);
+extern __m512i __cdecl _mm512_mask_cvttph_epu16 (__m512i, __mmask32, __m512h);
+extern __m512i __cdecl _mm512_maskz_cvttph_epu16 (__mmask32, __m512h);
+extern __m512i __cdecl _mm512_cvtt_roundph_epu16(__m512h, int);
+extern __m512i __cdecl _mm512_mask_cvtt_roundph_epu16(__m512i, __mmask32, __m512h, int);
+extern __m512i __cdecl _mm512_maskz_cvtt_roundph_epu16(__mmask32, __m512h, int);
+
+
+extern __m128i __cdecl _mm_cvttph_epi16(__m128h);
+extern __m128i __cdecl _mm_mask_cvttph_epi16(__m128i, __mmask8, __m128h);
+extern __m128i __cdecl _mm_maskz_cvttph_epi16(__mmask8, __m128h);
+extern __m256i __cdecl _mm256_cvttph_epi16(__m256h);
+extern __m256i __cdecl _mm256_mask_cvttph_epi16(__m256i, __mmask16, __m256h);
+extern __m256i __cdecl _mm256_maskz_cvttph_epi16(__mmask16, __m256h);
+extern __m512i __cdecl _mm512_cvttph_epi16 (__m512h);
+extern __m512i __cdecl _mm512_mask_cvttph_epi16 (__m512i, __mmask32, __m512h);
+extern __m512i __cdecl _mm512_maskz_cvttph_epi16 (__mmask32, __m512h);
+extern __m512i __cdecl _mm512_cvtt_roundph_epi16(__m512h, int);
+extern __m512i __cdecl _mm512_mask_cvtt_roundph_epi16(__m512i, __mmask32, __m512h, int);
+extern __m512i __cdecl _mm512_maskz_cvtt_roundph_epi16(__mmask32, __m512h, int);
+
+
+extern int __cdecl _mm_cvttsh_i32(__m128h);
+extern __int64 __cdecl _mm_cvttsh_i64(__m128h);
+extern int __cdecl _mm_cvtt_roundsh_i32(__m128h, int);
+extern __int64 __cdecl _mm_cvtt_roundsh_i64(__m128h, int);
+
+
+extern unsigned int __cdecl _mm_cvttsh_u32(__m128h);
+extern unsigned __int64 __cdecl _mm_cvttsh_u64(__m128h);
+extern unsigned int __cdecl _mm_cvtt_roundsh_u32(__m128h, int);
+extern unsigned __int64 __cdecl _mm_cvtt_roundsh_u64(__m128h, int);
+
+
+extern __m128h __cdecl _mm_cvtepu32_ph(__m128i);
+extern __m128h __cdecl _mm_mask_cvtepu32_ph(__m128h, __mmask8, __m128i);
+extern __m128h __cdecl _mm_maskz_cvtepu32_ph(__mmask8, __m128i);
+extern __m128h __cdecl _mm256_cvtepu32_ph(__m256i);
+extern __m128h __cdecl _mm256_mask_cvtepu32_ph(__m128h, __mmask8, __m256i);
+extern __m128h __cdecl _mm256_maskz_cvtepu32_ph(__mmask8, __m256i);
+extern __m256h __cdecl _mm512_cvtepu32_ph (__m512i);
+extern __m256h __cdecl _mm512_mask_cvtepu32_ph (__m256h, __mmask16, __m512i);
+extern __m256h __cdecl _mm512_maskz_cvtepu32_ph (__mmask16, __m512i);
+extern __m256h __cdecl _mm512_cvt_roundepu32_ph(__m512i, int);
+extern __m256h __cdecl _mm512_mask_cvt_roundepu32_ph(__m256h, __mmask16, __m512i, int);
+extern __m256h __cdecl _mm512_maskz_cvt_roundepu32_ph(__mmask16, __m512i, int);
+
+
+extern __m128h __cdecl _mm_cvtepu64_ph(__m128i);
+extern __m128h __cdecl _mm_mask_cvtepu64_ph(__m128h, __mmask8, __m128i);
+extern __m128h __cdecl _mm_maskz_cvtepu64_ph(__mmask8, __m128i);
+extern __m128h __cdecl _mm256_cvtepu64_ph(__m256i);
+extern __m128h __cdecl _mm256_mask_cvtepu64_ph(__m128h, __mmask8, __m256i);
+extern __m128h __cdecl _mm256_maskz_cvtepu64_ph(__mmask8, __m256i);
+extern __m128h __cdecl _mm512_cvtepu64_ph (__m512i);
+extern __m128h __cdecl _mm512_mask_cvtepu64_ph (__m128h, __mmask8, __m512i);
+extern __m128h __cdecl _mm512_maskz_cvtepu64_ph (__mmask8, __m512i);
+extern __m128h __cdecl _mm512_cvt_roundepu64_ph(__m512i, int);
+extern __m128h __cdecl _mm512_mask_cvt_roundepu64_ph(__m128h, __mmask8, __m512i, int);
+extern __m128h __cdecl _mm512_maskz_cvt_roundepu64_ph(__mmask8, __m512i, int);
+
+
+extern __m128h __cdecl _mm_cvtu32_sh(__m128h, unsigned int);
+extern __m128h __cdecl _mm_cvtu64_sh(__m128h, unsigned __int64);
+extern __m128h __cdecl _mm_cvt_roundu32_sh(__m128h, unsigned int, int);
+extern __m128h __cdecl _mm_cvt_roundu64_sh(__m128h, unsigned __int64, int);
+
+
+extern __m128h __cdecl _mm_cvtepu16_ph(__m128i);
+extern __m128h __cdecl _mm_mask_cvtepu16_ph(__m128h, __mmask8, __m128i);
+extern __m128h __cdecl _mm_maskz_cvtepu16_ph(__mmask8, __m128i);
+extern __m256h __cdecl _mm256_cvtepu16_ph(__m256i);
+extern __m256h __cdecl _mm256_mask_cvtepu16_ph(__m256h, __mmask16, __m256i);
+extern __m256h __cdecl _mm256_maskz_cvtepu16_ph(__mmask16, __m256i);
+extern __m512h __cdecl _mm512_cvtepu16_ph (__m512i);
+extern __m512h __cdecl _mm512_mask_cvtepu16_ph (__m512h, __mmask32, __m512i);
+extern __m512h __cdecl _mm512_maskz_cvtepu16_ph (__mmask32, __m512i);
+extern __m512h __cdecl _mm512_cvt_roundepu16_ph(__m512i, int);
+extern __m512h __cdecl _mm512_mask_cvt_roundepu16_ph(__m512h, __mmask32, __m512i, int);
+extern __m512h __cdecl _mm512_maskz_cvt_roundepu16_ph(__mmask32, __m512i, int);
+
+
+extern __m128h __cdecl _mm_cvtepi16_ph(__m128i);
+extern __m128h __cdecl _mm_mask_cvtepi16_ph(__m128h, __mmask8, __m128i);
+extern __m128h __cdecl _mm_maskz_cvtepi16_ph(__mmask8, __m128i);
+extern __m256h __cdecl _mm256_cvtepi16_ph(__m256i);
+extern __m256h __cdecl _mm256_mask_cvtepi16_ph(__m256h, __mmask16, __m256i);
+extern __m256h __cdecl _mm256_maskz_cvtepi16_ph(__mmask16, __m256i);
+extern __m512h __cdecl _mm512_cvtepi16_ph (__m512i);
+extern __m512h __cdecl _mm512_mask_cvtepi16_ph (__m512h, __mmask32, __m512i);
+extern __m512h __cdecl _mm512_maskz_cvtepi16_ph (__mmask32, __m512i);
+extern __m512h __cdecl _mm512_cvt_roundepi16_ph(__m512i, int);
+extern __m512h __cdecl _mm512_mask_cvt_roundepi16_ph(__m512h, __mmask32, __m512i, int);
+extern __m512h __cdecl _mm512_maskz_cvt_roundepi16_ph(__mmask32, __m512i, int);
+
+
+extern __m128h __cdecl _mm_div_ph(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_div_ph(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_div_ph(__mmask8, __m128h, __m128h);
+extern __m256h __cdecl _mm256_div_ph(__m256h, __m256h);
+extern __m256h __cdecl _mm256_mask_div_ph(__m256h, __mmask16, __m256h, __m256h);
+extern __m256h __cdecl _mm256_maskz_div_ph(__mmask16, __m256h, __m256h);
+extern __m512h __cdecl _mm512_div_ph(__m512h, __m512h);
+extern __m512h __cdecl _mm512_mask_div_ph(__m512h, __mmask32, __m512h, __m512h);
+extern __m512h __cdecl _mm512_maskz_div_ph(__mmask32, __m512h, __m512h);
+extern __m512h __cdecl _mm512_div_round_ph(__m512h, __m512h, int);
+extern __m512h __cdecl _mm512_mask_div_round_ph(__m512h, __mmask32, __m512h, __m512h, int);
+extern __m512h __cdecl _mm512_maskz_div_round_ph(__mmask32, __m512h, __m512h, int);
+
+
+extern __m128h __cdecl _mm_div_sh(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_div_sh(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_div_sh(__mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_div_round_sh(__m128h, __m128h, int);
+extern __m128h __cdecl _mm_mask_div_round_sh(__m128h, __mmask8, __m128h, __m128h, int);
+extern __m128h __cdecl _mm_maskz_div_round_sh(__mmask8, __m128h, __m128h, int);
+
+
+extern __m128h __cdecl _mm_fmaddsub_ph(__m128h, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask_fmaddsub_ph(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask3_fmaddsub_ph(__m128h, __m128h, __m128h, __mmask8);
+extern __m128h __cdecl _mm_maskz_fmaddsub_ph(__mmask8, __m128h, __m128h, __m128h);
+extern __m256h __cdecl _mm256_fmaddsub_ph(__m256h, __m256h, __m256h);
+extern __m256h __cdecl _mm256_mask_fmaddsub_ph(__m256h, __mmask16, __m256h, __m256h);
+extern __m256h __cdecl _mm256_mask3_fmaddsub_ph(__m256h, __m256h, __m256h, __mmask16);
+extern __m256h __cdecl _mm256_maskz_fmaddsub_ph(__mmask16, __m256h, __m256h, __m256h);
+extern __m512h __cdecl _mm512_fmaddsub_ph(__m512h, __m512h, __m512h);
+extern __m512h __cdecl _mm512_mask_fmaddsub_ph(__m512h, __mmask32, __m512h, __m512h);
+extern __m512h __cdecl _mm512_mask3_fmaddsub_ph(__m512h, __m512h, __m512h, __mmask32);
+extern __m512h __cdecl _mm512_maskz_fmaddsub_ph(__mmask32, __m512h, __m512h, __m512h);
+extern __m512h __cdecl _mm512_fmaddsub_round_ph(__m512h, __m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_mask_fmaddsub_round_ph(__m512h, __mmask32, __m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_mask3_fmaddsub_round_ph(__m512h, __m512h, __m512h, __mmask32, const int);
+extern __m512h __cdecl _mm512_maskz_fmaddsub_round_ph(__mmask32, __m512h, __m512h, __m512h, const int);
+
+
+extern __m128h __cdecl _mm_fmsubadd_ph(__m128h, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask_fmsubadd_ph(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask3_fmsubadd_ph(__m128h, __m128h, __m128h, __mmask8);
+extern __m128h __cdecl _mm_maskz_fmsubadd_ph(__mmask8, __m128h, __m128h, __m128h);
+extern __m256h __cdecl _mm256_fmsubadd_ph(__m256h, __m256h, __m256h);
+extern __m256h __cdecl _mm256_mask_fmsubadd_ph(__m256h, __mmask16, __m256h, __m256h);
+extern __m256h __cdecl _mm256_mask3_fmsubadd_ph(__m256h, __m256h, __m256h, __mmask16);
+extern __m256h __cdecl _mm256_maskz_fmsubadd_ph(__mmask16, __m256h, __m256h, __m256h);
+extern __m512h __cdecl _mm512_fmsubadd_ph(__m512h, __m512h, __m512h);
+extern __m512h __cdecl _mm512_mask_fmsubadd_ph(__m512h, __mmask32, __m512h, __m512h);
+extern __m512h __cdecl _mm512_mask3_fmsubadd_ph(__m512h, __m512h, __m512h, __mmask32);
+extern __m512h __cdecl _mm512_maskz_fmsubadd_ph(__mmask32, __m512h, __m512h, __m512h);
+extern __m512h __cdecl _mm512_fmsubadd_round_ph(__m512h, __m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_mask_fmsubadd_round_ph(__m512h, __mmask32, __m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_mask3_fmsubadd_round_ph(__m512h, __m512h, __m512h, __mmask32, const int);
+extern __m512h __cdecl _mm512_maskz_fmsubadd_round_ph(__mmask32, __m512h, __m512h, __m512h, const int);
+
+
+extern __mmask8 __cdecl _mm_fpclass_ph_mask(__m128h, int);
+extern __mmask8 __cdecl _mm_mask_fpclass_ph_mask(__mmask8, __m128h, int);
+extern __mmask16 __cdecl _mm256_fpclass_ph_mask(__m256h, int);
+extern __mmask16 __cdecl _mm256_mask_fpclass_ph_mask(__mmask16, __m256h, int);
+extern __mmask32 __cdecl _mm512_fpclass_ph_mask(__m512h, int);
+extern __mmask32 __cdecl _mm512_mask_fpclass_ph_mask(__mmask32, __m512h, int);
+
+
+extern __mmask8 __cdecl _mm_fpclass_sh_mask(__m128h, int);
+extern __mmask8 __cdecl _mm_mask_fpclass_sh_mask(__mmask8, __m128h, int);
+
+
+extern __m128h __cdecl _mm_fmadd_pch(__m128h, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask_fmadd_pch(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask3_fmadd_pch(__m128h, __m128h, __m128h, __mmask8);
+extern __m128h __cdecl _mm_maskz_fmadd_pch(__mmask8, __m128h, __m128h, __m128h);
+extern __m256h __cdecl _mm256_fmadd_pch(__m256h, __m256h, __m256h);
+extern __m256h __cdecl _mm256_mask_fmadd_pch(__m256h, __mmask8, __m256h, __m256h);
+extern __m256h __cdecl _mm256_mask3_fmadd_pch(__m256h, __m256h, __m256h, __mmask8);
+extern __m256h __cdecl _mm256_maskz_fmadd_pch(__mmask8, __m256h, __m256h, __m256h);
+extern __m512h __cdecl _mm512_fmadd_pch(__m512h, __m512h, __m512h);
+extern __m512h __cdecl _mm512_mask_fmadd_pch(__m512h, __mmask16, __m512h, __m512h);
+extern __m512h __cdecl _mm512_mask3_fmadd_pch(__m512h, __m512h, __m512h, __mmask16);
+extern __m512h __cdecl _mm512_maskz_fmadd_pch(__mmask16, __m512h, __m512h, __m512h);
+extern __m512h __cdecl _mm512_fmadd_round_pch(__m512h, __m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_mask_fmadd_round_pch(__m512h, __mmask16, __m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_mask3_fmadd_round_pch(__m512h, __m512h, __m512h, __mmask16, const int);
+extern __m512h __cdecl _mm512_maskz_fmadd_round_pch(__mmask16, __m512h, __m512h, __m512h, const int);
+extern __m128h __cdecl _mm_fcmadd_pch(__m128h, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask_fcmadd_pch(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask3_fcmadd_pch(__m128h, __m128h, __m128h, __mmask8);
+extern __m128h __cdecl _mm_maskz_fcmadd_pch(__mmask8, __m128h, __m128h, __m128h);
+extern __m256h __cdecl _mm256_fcmadd_pch(__m256h, __m256h, __m256h);
+extern __m256h __cdecl _mm256_mask_fcmadd_pch(__m256h, __mmask8, __m256h, __m256h);
+extern __m256h __cdecl _mm256_mask3_fcmadd_pch(__m256h, __m256h, __m256h, __mmask8);
+extern __m256h __cdecl _mm256_maskz_fcmadd_pch(__mmask8, __m256h, __m256h, __m256h);
+extern __m512h __cdecl _mm512_fcmadd_pch(__m512h, __m512h, __m512h);
+extern __m512h __cdecl _mm512_mask_fcmadd_pch(__m512h, __mmask16, __m512h, __m512h);
+extern __m512h __cdecl _mm512_mask3_fcmadd_pch(__m512h, __m512h, __m512h, __mmask16);
+extern __m512h __cdecl _mm512_maskz_fcmadd_pch(__mmask16, __m512h, __m512h, __m512h);
+extern __m512h __cdecl _mm512_fcmadd_round_pch(__m512h, __m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_mask_fcmadd_round_pch(__m512h, __mmask16, __m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_mask3_fcmadd_round_pch(__m512h, __m512h, __m512h, __mmask16, const int);
+extern __m512h __cdecl _mm512_maskz_fcmadd_round_pch(__mmask16, __m512h, __m512h, __m512h, const int);
+
+
+extern __m128h __cdecl _mm_fcmadd_sch(__m128h, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask_fcmadd_sch(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask3_fcmadd_sch(__m128h, __m128h, __m128h, __mmask8);
+extern __m128h __cdecl _mm_maskz_fcmadd_sch(__mmask8, __m128h, __m128h, __m128h);
+extern __m128h __cdecl _mm_fcmadd_round_sch(__m128h, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_mask_fcmadd_round_sch(__m128h, __mmask8, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_mask3_fcmadd_round_sch(__m128h, __m128h, __m128h, __mmask8, const int);
+extern __m128h __cdecl _mm_maskz_fcmadd_round_sch(__mmask8, __m128h, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_fmadd_sch(__m128h, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask_fmadd_sch(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask3_fmadd_sch(__m128h, __m128h, __m128h, __mmask8);
+extern __m128h __cdecl _mm_maskz_fmadd_sch(__mmask8, __m128h, __m128h, __m128h);
+extern __m128h __cdecl _mm_fmadd_round_sch(__m128h, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_mask_fmadd_round_sch(__m128h, __mmask8, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_mask3_fmadd_round_sch(__m128h, __m128h, __m128h, __mmask8, const int);
+extern __m128h __cdecl _mm_maskz_fmadd_round_sch(__mmask8, __m128h, __m128h, __m128h, const int);
+
+
+extern __m128h __cdecl _mm_fcmul_pch(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_fcmul_pch(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_fcmul_pch(__mmask8, __m128h, __m128h);
+extern __m256h __cdecl _mm256_fcmul_pch(__m256h, __m256h);
+extern __m256h __cdecl _mm256_mask_fcmul_pch(__m256h, __mmask8, __m256h, __m256h);
+extern __m256h __cdecl _mm256_maskz_fcmul_pch(__mmask8, __m256h, __m256h);
+extern __m512h __cdecl _mm512_fcmul_pch(__m512h, __m512h);
+extern __m512h __cdecl _mm512_mask_fcmul_pch(__m512h, __mmask16, __m512h, __m512h);
+extern __m512h __cdecl _mm512_maskz_fcmul_pch(__mmask16, __m512h, __m512h);
+extern __m512h __cdecl _mm512_fcmul_round_pch(__m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_mask_fcmul_round_pch(__m512h, __mmask16, __m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_maskz_fcmul_round_pch(__mmask16, __m512h, __m512h, const int);
+extern __m128h __cdecl _mm_fmul_pch(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_fmul_pch(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_fmul_pch(__mmask8, __m128h, __m128h);
+extern __m256h __cdecl _mm256_fmul_pch(__m256h, __m256h);
+extern __m256h __cdecl _mm256_mask_fmul_pch(__m256h, __mmask8, __m256h, __m256h);
+extern __m256h __cdecl _mm256_maskz_fmul_pch(__mmask8, __m256h, __m256h);
+extern __m512h __cdecl _mm512_fmul_pch(__m512h, __m512h);
+extern __m512h __cdecl _mm512_mask_fmul_pch(__m512h, __mmask16, __m512h, __m512h);
+extern __m512h __cdecl _mm512_maskz_fmul_pch(__mmask16, __m512h, __m512h);
+extern __m512h __cdecl _mm512_fmul_round_pch(__m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_mask_fmul_round_pch(__m512h, __mmask16, __m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_maskz_fmul_round_pch(__mmask16, __m512h, __m512h, const int);
+
+
+extern __m128h __cdecl _mm_fcmul_sch(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_fcmul_sch(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_fcmul_sch(__mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_fcmul_round_sch(__m128h, __m128h, const int);
+extern __m128h __cdecl _mm_mask_fcmul_round_sch(__m128h, __mmask8, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_maskz_fcmul_round_sch(__mmask8, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_fmul_sch(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_fmul_sch(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_fmul_sch(__mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_fmul_round_sch(__m128h, __m128h, const int);
+extern __m128h __cdecl _mm_mask_fmul_round_sch(__m128h, __mmask8, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_maskz_fmul_round_sch(__mmask8, __m128h, __m128h, const int);
+
+
+extern __m128h __cdecl _mm_fnmadd_ph(__m128h, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask_fnmadd_ph(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask3_fnmadd_ph(__m128h, __m128h, __m128h, __mmask8);
+extern __m128h __cdecl _mm_maskz_fnmadd_ph(__mmask8, __m128h, __m128h, __m128h);
+extern __m256h __cdecl _mm256_fnmadd_ph(__m256h, __m256h, __m256h);
+extern __m256h __cdecl _mm256_mask_fnmadd_ph(__m256h, __mmask16, __m256h, __m256h);
+extern __m256h __cdecl _mm256_mask3_fnmadd_ph(__m256h, __m256h, __m256h, __mmask16);
+extern __m256h __cdecl _mm256_maskz_fnmadd_ph(__mmask16, __m256h, __m256h, __m256h);
+extern __m512h __cdecl _mm512_fnmadd_ph(__m512h, __m512h, __m512h);
+extern __m512h __cdecl _mm512_mask_fnmadd_ph(__m512h, __mmask32, __m512h, __m512h);
+extern __m512h __cdecl _mm512_mask3_fnmadd_ph(__m512h, __m512h, __m512h, __mmask32);
+extern __m512h __cdecl _mm512_maskz_fnmadd_ph(__mmask32, __m512h, __m512h, __m512h);
+extern __m512h __cdecl _mm512_fnmadd_round_ph(__m512h, __m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_mask_fnmadd_round_ph(__m512h, __mmask32, __m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_mask3_fnmadd_round_ph(__m512h, __m512h, __m512h, __mmask32, const int);
+extern __m512h __cdecl _mm512_maskz_fnmadd_round_ph(__mmask32, __m512h, __m512h, __m512h, const int);
+extern __m128h __cdecl _mm_fmadd_ph(__m128h, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask_fmadd_ph(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask3_fmadd_ph(__m128h, __m128h, __m128h, __mmask8);
+extern __m128h __cdecl _mm_maskz_fmadd_ph(__mmask8, __m128h, __m128h, __m128h);
+extern __m256h __cdecl _mm256_fmadd_ph(__m256h, __m256h, __m256h);
+extern __m256h __cdecl _mm256_mask_fmadd_ph(__m256h, __mmask16, __m256h, __m256h);
+extern __m256h __cdecl _mm256_mask3_fmadd_ph(__m256h, __m256h, __m256h, __mmask16);
+extern __m256h __cdecl _mm256_maskz_fmadd_ph(__mmask16, __m256h, __m256h, __m256h);
+extern __m512h __cdecl _mm512_fmadd_ph(__m512h, __m512h, __m512h);
+extern __m512h __cdecl _mm512_mask_fmadd_ph(__m512h, __mmask32, __m512h, __m512h);
+extern __m512h __cdecl _mm512_mask3_fmadd_ph(__m512h, __m512h, __m512h, __mmask32);
+extern __m512h __cdecl _mm512_maskz_fmadd_ph(__mmask32, __m512h, __m512h, __m512h);
+extern __m512h __cdecl _mm512_fmadd_round_ph(__m512h, __m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_mask_fmadd_round_ph(__m512h, __mmask32, __m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_mask3_fmadd_round_ph(__m512h, __m512h, __m512h, __mmask32, const int);
+extern __m512h __cdecl _mm512_maskz_fmadd_round_ph(__mmask32, __m512h, __m512h, __m512h, const int);
+
+
+extern __m128h __cdecl _mm_fnmadd_sh(__m128h, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask_fnmadd_sh(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask3_fnmadd_sh(__m128h, __m128h, __m128h, __mmask8);
+extern __m128h __cdecl _mm_maskz_fnmadd_sh(__mmask8, __m128h, __m128h, __m128h);
+extern __m128h __cdecl _mm_fnmadd_round_sh(__m128h, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_mask_fnmadd_round_sh(__m128h, __mmask8, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_mask3_fnmadd_round_sh(__m128h, __m128h, __m128h, __mmask8, const int);
+extern __m128h __cdecl _mm_maskz_fnmadd_round_sh(__mmask8, __m128h, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_fmadd_sh(__m128h, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask_fmadd_sh(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask3_fmadd_sh(__m128h, __m128h, __m128h, __mmask8);
+extern __m128h __cdecl _mm_maskz_fmadd_sh(__mmask8, __m128h, __m128h, __m128h);
+extern __m128h __cdecl _mm_fmadd_round_sh(__m128h, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_mask_fmadd_round_sh(__m128h, __mmask8, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_mask3_fmadd_round_sh(__m128h, __m128h, __m128h, __mmask8, const int);
+extern __m128h __cdecl _mm_maskz_fmadd_round_sh(__mmask8, __m128h, __m128h, __m128h, const int);
+
+
+extern __m128h __cdecl _mm_fnmsub_ph(__m128h, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask_fnmsub_ph(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask3_fnmsub_ph(__m128h, __m128h, __m128h, __mmask8);
+extern __m128h __cdecl _mm_maskz_fnmsub_ph(__mmask8, __m128h, __m128h, __m128h);
+extern __m256h __cdecl _mm256_fnmsub_ph(__m256h, __m256h, __m256h);
+extern __m256h __cdecl _mm256_mask_fnmsub_ph(__m256h, __mmask16, __m256h, __m256h);
+extern __m256h __cdecl _mm256_mask3_fnmsub_ph(__m256h, __m256h, __m256h, __mmask16);
+extern __m256h __cdecl _mm256_maskz_fnmsub_ph(__mmask16, __m256h, __m256h, __m256h);
+extern __m512h __cdecl _mm512_fnmsub_ph(__m512h, __m512h, __m512h);
+extern __m512h __cdecl _mm512_mask_fnmsub_ph(__m512h, __mmask32, __m512h, __m512h);
+extern __m512h __cdecl _mm512_mask3_fnmsub_ph(__m512h, __m512h, __m512h, __mmask32);
+extern __m512h __cdecl _mm512_maskz_fnmsub_ph(__mmask32, __m512h, __m512h, __m512h);
+extern __m512h __cdecl _mm512_fnmsub_round_ph(__m512h, __m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_mask_fnmsub_round_ph(__m512h, __mmask32, __m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_mask3_fnmsub_round_ph(__m512h, __m512h, __m512h, __mmask32, const int);
+extern __m512h __cdecl _mm512_maskz_fnmsub_round_ph(__mmask32, __m512h, __m512h, __m512h, const int);
+extern __m128h __cdecl _mm_fmsub_ph(__m128h, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask_fmsub_ph(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask3_fmsub_ph(__m128h, __m128h, __m128h, __mmask8);
+extern __m128h __cdecl _mm_maskz_fmsub_ph(__mmask8, __m128h, __m128h, __m128h);
+extern __m256h __cdecl _mm256_fmsub_ph(__m256h, __m256h, __m256h);
+extern __m256h __cdecl _mm256_mask_fmsub_ph(__m256h, __mmask16, __m256h, __m256h);
+extern __m256h __cdecl _mm256_mask3_fmsub_ph(__m256h, __m256h, __m256h, __mmask16);
+extern __m256h __cdecl _mm256_maskz_fmsub_ph(__mmask16, __m256h, __m256h, __m256h);
+extern __m512h __cdecl _mm512_fmsub_ph(__m512h, __m512h, __m512h);
+extern __m512h __cdecl _mm512_mask_fmsub_ph(__m512h, __mmask32, __m512h, __m512h);
+extern __m512h __cdecl _mm512_mask3_fmsub_ph(__m512h, __m512h, __m512h, __mmask32);
+extern __m512h __cdecl _mm512_maskz_fmsub_ph(__mmask32, __m512h, __m512h, __m512h);
+extern __m512h __cdecl _mm512_fmsub_round_ph(__m512h, __m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_mask_fmsub_round_ph(__m512h, __mmask32, __m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_mask3_fmsub_round_ph(__m512h, __m512h, __m512h, __mmask32, const int);
+extern __m512h __cdecl _mm512_maskz_fmsub_round_ph(__mmask32, __m512h, __m512h, __m512h, const int);
+
+
+extern __m128h __cdecl _mm_fnmsub_sh(__m128h, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask_fnmsub_sh(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask3_fnmsub_sh(__m128h, __m128h, __m128h, __mmask8);
+extern __m128h __cdecl _mm_maskz_fnmsub_sh(__mmask8, __m128h, __m128h, __m128h);
+extern __m128h __cdecl _mm_fnmsub_round_sh(__m128h, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_mask_fnmsub_round_sh(__m128h, __mmask8, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_mask3_fnmsub_round_sh(__m128h, __m128h, __m128h, __mmask8, const int);
+extern __m128h __cdecl _mm_maskz_fnmsub_round_sh(__mmask8, __m128h, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_fmsub_sh(__m128h, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask_fmsub_sh(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_mask3_fmsub_sh(__m128h, __m128h, __m128h, __mmask8);
+extern __m128h __cdecl _mm_maskz_fmsub_sh(__mmask8, __m128h, __m128h, __m128h);
+extern __m128h __cdecl _mm_fmsub_round_sh(__m128h, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_mask_fmsub_round_sh(__m128h, __mmask8, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_mask3_fmsub_round_sh(__m128h, __m128h, __m128h, __mmask8, const int);
+extern __m128h __cdecl _mm_maskz_fmsub_round_sh(__mmask8, __m128h, __m128h, __m128h, const int);
+
+
+extern __m128h __cdecl _mm_getexp_ph(__m128h);
+extern __m128h __cdecl _mm_mask_getexp_ph(__m128h, __mmask8, __m128h);
+extern __m128h __cdecl _mm_maskz_getexp_ph(__mmask8, __m128h);
+extern __m256h __cdecl _mm256_getexp_ph(__m256h);
+extern __m256h __cdecl _mm256_mask_getexp_ph(__m256h, __mmask16, __m256h);
+extern __m256h __cdecl _mm256_maskz_getexp_ph(__mmask16, __m256h);
+extern __m512h __cdecl _mm512_getexp_ph(__m512h);
+extern __m512h __cdecl _mm512_mask_getexp_ph(__m512h, __mmask32, __m512h);
+extern __m512h __cdecl _mm512_maskz_getexp_ph(__mmask32, __m512h);
+extern __m512h __cdecl _mm512_getexp_round_ph(__m512h, const int);
+extern __m512h __cdecl _mm512_mask_getexp_round_ph(__m512h, __mmask32, __m512h, const int);
+extern __m512h __cdecl _mm512_maskz_getexp_round_ph(__mmask32, __m512h, const int);
+
+
+extern __m128h __cdecl _mm_getexp_sh(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_getexp_sh(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_getexp_sh(__mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_getexp_round_sh(__m128h, __m128h, const int);
+extern __m128h __cdecl _mm_mask_getexp_round_sh(__m128h, __mmask8, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_maskz_getexp_round_sh(__mmask8, __m128h, __m128h, const int);
+
+
+extern __m128h __cdecl _mm_getmant_ph(__m128h, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern __m128h __cdecl _mm_mask_getmant_ph(__m128h, __mmask8, __m128h, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern __m128h __cdecl _mm_maskz_getmant_ph(__mmask8, __m128h, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern __m256h __cdecl _mm256_getmant_ph(__m256h, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern __m256h __cdecl _mm256_mask_getmant_ph(__m256h, __mmask16, __m256h, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern __m256h __cdecl _mm256_maskz_getmant_ph(__mmask16, __m256h, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern __m512h __cdecl _mm512_getmant_ph(__m512h, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern __m512h __cdecl _mm512_mask_getmant_ph(__m512h, __mmask32, __m512h, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern __m512h __cdecl _mm512_maskz_getmant_ph(__mmask32, __m512h, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern __m512h __cdecl _mm512_getmant_round_ph(__m512h, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM, const int);
+extern __m512h __cdecl _mm512_mask_getmant_round_ph(__m512h, __mmask32, __m512h, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM, const int);
+extern __m512h __cdecl _mm512_maskz_getmant_round_ph(__mmask32, __m512h, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM, const int);
+
+
+extern __m128h __cdecl _mm_getmant_sh(__m128h, __m128h, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern __m128h __cdecl _mm_mask_getmant_sh(__m128h, __mmask8, __m128h, __m128h, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern __m128h __cdecl _mm_maskz_getmant_sh(__mmask8, __m128h, __m128h, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern __m128h __cdecl _mm_getmant_round_sh(__m128h, __m128h, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM, const int);
+extern __m128h __cdecl _mm_mask_getmant_round_sh(__m128h, __mmask8, __m128h, __m128h, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM, const int);
+extern __m128h __cdecl _mm_maskz_getmant_round_sh(__mmask8, __m128h, __m128h, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM, const int);
+
+
+extern __m128h __cdecl _mm_max_ph(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_max_ph(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_max_ph(__mmask8, __m128h, __m128h);
+extern __m256h __cdecl _mm256_max_ph(__m256h, __m256h);
+extern __m256h __cdecl _mm256_mask_max_ph(__m256h, __mmask16, __m256h, __m256h);
+extern __m256h __cdecl _mm256_maskz_max_ph(__mmask16, __m256h, __m256h);
+extern __m512h __cdecl _mm512_max_ph(__m512h, __m512h);
+extern __m512h __cdecl _mm512_mask_max_ph(__m512h, __mmask32, __m512h, __m512h);
+extern __m512h __cdecl _mm512_maskz_max_ph(__mmask32, __m512h, __m512h);
+extern __m512h __cdecl _mm512_max_round_ph(__m512h, __m512h, int);
+extern __m512h __cdecl _mm512_mask_max_round_ph(__m512h, __mmask32, __m512h, __m512h, int);
+extern __m512h __cdecl _mm512_maskz_max_round_ph(__mmask32, __m512h, __m512h, int);
+
+
+extern __m128h __cdecl _mm_max_sh(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_max_sh(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_max_sh(__mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_max_round_sh(__m128h, __m128h, int);
+extern __m128h __cdecl _mm_mask_max_round_sh(__m128h, __mmask8, __m128h, __m128h, int);
+extern __m128h __cdecl _mm_maskz_max_round_sh(__mmask8, __m128h, __m128h, int);
+
+
+extern __m128h __cdecl _mm_min_ph(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_min_ph(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_min_ph(__mmask8, __m128h, __m128h);
+extern __m256h __cdecl _mm256_min_ph(__m256h, __m256h);
+extern __m256h __cdecl _mm256_mask_min_ph(__m256h, __mmask16, __m256h, __m256h);
+extern __m256h __cdecl _mm256_maskz_min_ph(__mmask16, __m256h, __m256h);
+extern __m512h __cdecl _mm512_min_ph(__m512h, __m512h);
+extern __m512h __cdecl _mm512_mask_min_ph(__m512h, __mmask32, __m512h, __m512h);
+extern __m512h __cdecl _mm512_maskz_min_ph(__mmask32, __m512h, __m512h);
+extern __m512h __cdecl _mm512_min_round_ph(__m512h, __m512h, int);
+extern __m512h __cdecl _mm512_mask_min_round_ph(__m512h, __mmask32, __m512h, __m512h, int);
+extern __m512h __cdecl _mm512_maskz_min_round_ph(__mmask32, __m512h, __m512h, int);
+
+
+extern __m128h __cdecl _mm_min_sh(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_min_sh(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_min_sh(__mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_min_round_sh(__m128h, __m128h, int);
+extern __m128h __cdecl _mm_mask_min_round_sh(__m128h, __mmask8, __m128h, __m128h, int);
+extern __m128h __cdecl _mm_maskz_min_round_sh(__mmask8, __m128h, __m128h, int);
+
+
+extern __m128h __cdecl _mm_load_sh(void const*);
+extern __m128h __cdecl _mm_mask_load_sh(__m128h, __mmask8, void const*);
+extern __m128h __cdecl _mm_maskz_load_sh(__mmask8, void const*);
+extern void __cdecl _mm_store_sh(void*, __m128h);
+extern void __cdecl _mm_mask_store_sh(void*, __mmask8, __m128h);
+extern __m128h __cdecl _mm_move_sh(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_move_sh(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_move_sh(__mmask8, __m128h, __m128h);
+
+
+extern __m128i __cdecl _mm_cvtsi16_si128(short);
+extern short __cdecl _mm_cvtsi128_si16(__m128i);
+
+
+extern __m128h __cdecl _mm_mul_ph(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_mul_ph(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_mul_ph(__mmask8, __m128h, __m128h);
+extern __m256h __cdecl _mm256_mul_ph(__m256h, __m256h);
+extern __m256h __cdecl _mm256_mask_mul_ph(__m256h, __mmask16, __m256h, __m256h);
+extern __m256h __cdecl _mm256_maskz_mul_ph(__mmask16, __m256h, __m256h);
+extern __m512h __cdecl _mm512_mul_ph(__m512h, __m512h);
+extern __m512h __cdecl _mm512_mask_mul_ph(__m512h, __mmask32, __m512h, __m512h);
+extern __m512h __cdecl _mm512_maskz_mul_ph(__mmask32, __m512h, __m512h);
+extern __m512h __cdecl _mm512_mul_round_ph(__m512h, __m512h, int);
+extern __m512h __cdecl _mm512_mask_mul_round_ph(__m512h, __mmask32, __m512h, __m512h, int);
+extern __m512h __cdecl _mm512_maskz_mul_round_ph(__mmask32, __m512h, __m512h, int);
+
+
+extern __m128h __cdecl _mm_mul_sh(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_mul_sh(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_mul_sh(__mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_mul_round_sh(__m128h, __m128h, int);
+extern __m128h __cdecl _mm_mask_mul_round_sh(__m128h, __mmask8, __m128h, __m128h, int);
+extern __m128h __cdecl _mm_maskz_mul_round_sh(__mmask8, __m128h, __m128h, int);
+
+
+extern __m128h __cdecl _mm_rcp_ph(__m128h);
+extern __m128h __cdecl _mm_mask_rcp_ph(__m128h, __mmask8, __m128h);
+extern __m128h __cdecl _mm_maskz_rcp_ph(__mmask8, __m128h);
+extern __m256h __cdecl _mm256_rcp_ph(__m256h);
+extern __m256h __cdecl _mm256_mask_rcp_ph(__m256h, __mmask16, __m256h);
+extern __m256h __cdecl _mm256_maskz_rcp_ph(__mmask16, __m256h);
+extern __m512h __cdecl _mm512_rcp_ph(__m512h);
+extern __m512h __cdecl _mm512_mask_rcp_ph(__m512h, __mmask32, __m512h);
+extern __m512h __cdecl _mm512_maskz_rcp_ph(__mmask32, __m512h);
+
+
+extern __m128h __cdecl _mm_rcp_sh(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_rcp_sh(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_rcp_sh(__mmask8, __m128h, __m128h);
+
+
+extern __m128h __cdecl _mm_reduce_ph(__m128h, int);
+extern __m128h __cdecl _mm_mask_reduce_ph(__m128h, __mmask8, __m128h, int);
+extern __m128h __cdecl _mm_maskz_reduce_ph(__mmask8, __m128h, int);
+extern __m256h __cdecl _mm256_reduce_ph(__m256h, int);
+extern __m256h __cdecl _mm256_mask_reduce_ph(__m256h, __mmask16, __m256h, int);
+extern __m256h __cdecl _mm256_maskz_reduce_ph(__mmask16, __m256h, int);
+extern __m512h __cdecl _mm512_reduce_ph(__m512h, int);
+extern __m512h __cdecl _mm512_mask_reduce_ph(__m512h, __mmask32, __m512h, int);
+extern __m512h __cdecl _mm512_maskz_reduce_ph(__mmask32, __m512h, int);
+extern __m512h __cdecl _mm512_reduce_round_ph(__m512h, int, const int);
+extern __m512h __cdecl _mm512_mask_reduce_round_ph(__m512h, __mmask32, __m512h, int, const int);
+extern __m512h __cdecl _mm512_maskz_reduce_round_ph(__mmask32, __m512h, int, const int);
+
+
+extern __m128h __cdecl _mm_reduce_sh(__m128h, __m128h, int);
+extern __m128h __cdecl _mm_mask_reduce_sh(__m128h, __mmask8, __m128h, __m128h, int);
+extern __m128h __cdecl _mm_maskz_reduce_sh(__mmask8, __m128h, __m128h, int);
+extern __m128h __cdecl _mm_reduce_round_sh(__m128h, __m128h, int, const int);
+extern __m128h __cdecl _mm_mask_reduce_round_sh(__m128h, __mmask8, __m128h, __m128h, int, const int);
+extern __m128h __cdecl _mm_maskz_reduce_round_sh(__mmask8, __m128h, __m128h, int, const int);
+
+
+extern __m128h __cdecl _mm_roundscale_ph(__m128h, int);
+extern __m128h __cdecl _mm_mask_roundscale_ph(__m128h, __mmask8, __m128h, int);
+extern __m128h __cdecl _mm_maskz_roundscale_ph(__mmask8, __m128h, int);
+extern __m256h __cdecl _mm256_roundscale_ph(__m256h, int);
+extern __m256h __cdecl _mm256_mask_roundscale_ph(__m256h, __mmask16, __m256h, int);
+extern __m256h __cdecl _mm256_maskz_roundscale_ph(__mmask16, __m256h, int);
+extern __m512h __cdecl _mm512_roundscale_ph(__m512h, int);
+extern __m512h __cdecl _mm512_mask_roundscale_ph(__m512h, __mmask32, __m512h, int);
+extern __m512h __cdecl _mm512_maskz_roundscale_ph(__mmask32, __m512h, int);
+extern __m512h __cdecl _mm512_roundscale_round_ph(__m512h, int, const int);
+extern __m512h __cdecl _mm512_mask_roundscale_round_ph(__m512h, __mmask32, __m512h, int, const int);
+extern __m512h __cdecl _mm512_maskz_roundscale_round_ph(__mmask32, __m512h, int, const int);
+
+
+extern __m128h __cdecl _mm_roundscale_sh(__m128h, __m128h, int);
+extern __m128h __cdecl _mm_mask_roundscale_sh(__m128h, __mmask8, __m128h, __m128h, int);
+extern __m128h __cdecl _mm_maskz_roundscale_sh(__mmask8, __m128h, __m128h, int);
+extern __m128h __cdecl _mm_roundscale_round_sh(__m128h, __m128h, int, const int);
+extern __m128h __cdecl _mm_mask_roundscale_round_sh(__m128h, __mmask8, __m128h, __m128h, int, const int);
+extern __m128h __cdecl _mm_maskz_roundscale_round_sh(__mmask8, __m128h, __m128h, int, const int);
+
+
+extern __m128h __cdecl _mm_rsqrt_ph(__m128h);
+extern __m128h __cdecl _mm_mask_rsqrt_ph(__m128h, __mmask8, __m128h);
+extern __m128h __cdecl _mm_maskz_rsqrt_ph(__mmask8, __m128h);
+extern __m256h __cdecl _mm256_rsqrt_ph(__m256h);
+extern __m256h __cdecl _mm256_mask_rsqrt_ph(__m256h, __mmask16, __m256h);
+extern __m256h __cdecl _mm256_maskz_rsqrt_ph(__mmask16, __m256h);
+extern __m512h __cdecl _mm512_rsqrt_ph(__m512h);
+extern __m512h __cdecl _mm512_mask_rsqrt_ph(__m512h, __mmask32, __m512h);
+extern __m512h __cdecl _mm512_maskz_rsqrt_ph(__mmask32, __m512h);
+
+
+extern __m128h __cdecl _mm_rsqrt_sh(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_rsqrt_sh(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_rsqrt_sh(__mmask8, __m128h, __m128h);
+
+
+extern __m128h __cdecl _mm_scalef_ph(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_scalef_ph(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_scalef_ph(__mmask8, __m128h, __m128h);
+extern __m256h __cdecl _mm256_scalef_ph(__m256h, __m256h);
+extern __m256h __cdecl _mm256_mask_scalef_ph(__m256h, __mmask16, __m256h, __m256h);
+extern __m256h __cdecl _mm256_maskz_scalef_ph(__mmask16, __m256h, __m256h);
+extern __m512h __cdecl _mm512_scalef_ph(__m512h, __m512h);
+extern __m512h __cdecl _mm512_mask_scalef_ph(__m512h, __mmask32, __m512h, __m512h);
+extern __m512h __cdecl _mm512_maskz_scalef_ph(__mmask32, __m512h, __m512h);
+extern __m512h __cdecl _mm512_scalef_round_ph(__m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_mask_scalef_round_ph(__m512h, __mmask32, __m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_maskz_scalef_round_ph(__mmask32, __m512h, __m512h, const int);
+
+
+extern __m128h __cdecl _mm_scalef_sh(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_scalef_sh(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_scalef_sh(__mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_scalef_round_sh(__m128h, __m128h, const int);
+extern __m128h __cdecl _mm_mask_scalef_round_sh(__m128h, __mmask8, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_maskz_scalef_round_sh(__mmask8, __m128h, __m128h, const int);
+
+
+extern __m128h __cdecl _mm_sqrt_ph(__m128h);
+extern __m128h __cdecl _mm_mask_sqrt_ph(__m128h, __mmask8, __m128h);
+extern __m128h __cdecl _mm_maskz_sqrt_ph(__mmask8, __m128h);
+extern __m256h __cdecl _mm256_sqrt_ph(__m256h);
+extern __m256h __cdecl _mm256_mask_sqrt_ph(__m256h, __mmask16, __m256h);
+extern __m256h __cdecl _mm256_maskz_sqrt_ph(__mmask16, __m256h);
+extern __m512h __cdecl _mm512_sqrt_ph(__m512h);
+extern __m512h __cdecl _mm512_mask_sqrt_ph(__m512h, __mmask32, __m512h);
+extern __m512h __cdecl _mm512_maskz_sqrt_ph(__mmask32, __m512h);
+extern __m512h __cdecl _mm512_sqrt_round_ph(__m512h, const int);
+extern __m512h __cdecl _mm512_mask_sqrt_round_ph(__m512h, __mmask32, __m512h, const int);
+extern __m512h __cdecl _mm512_maskz_sqrt_round_ph(__mmask32, __m512h, const int);
+
+
+extern __m128h __cdecl _mm_sqrt_sh(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_sqrt_sh(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_sqrt_sh(__mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_sqrt_round_sh(__m128h, __m128h, const int);
+extern __m128h __cdecl _mm_mask_sqrt_round_sh(__m128h, __mmask8, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_maskz_sqrt_round_sh(__mmask8, __m128h, __m128h, const int);
+
+
+extern __m128h __cdecl _mm_sub_ph(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_sub_ph(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_sub_ph(__mmask8, __m128h, __m128h);
+extern __m256h __cdecl _mm256_sub_ph(__m256h, __m256h);
+extern __m256h __cdecl _mm256_mask_sub_ph(__m256h, __mmask16, __m256h, __m256h);
+extern __m256h __cdecl _mm256_maskz_sub_ph(__mmask16, __m256h, __m256h);
+extern __m512h __cdecl _mm512_sub_ph(__m512h, __m512h);
+extern __m512h __cdecl _mm512_mask_sub_ph(__m512h, __mmask32, __m512h, __m512h);
+extern __m512h __cdecl _mm512_maskz_sub_ph(__mmask32, __m512h, __m512h);
+extern __m512h __cdecl _mm512_sub_round_ph(__m512h, __m512h, int);
+extern __m512h __cdecl _mm512_mask_sub_round_ph(__m512h, __mmask32, __m512h, __m512h, int);
+extern __m512h __cdecl _mm512_maskz_sub_round_ph(__mmask32, __m512h, __m512h, int);
+
+
+extern __m128h __cdecl _mm_sub_sh(__m128h, __m128h);
+extern __m128h __cdecl _mm_mask_sub_sh(__m128h, __mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_maskz_sub_sh(__mmask8, __m128h, __m128h);
+extern __m128h __cdecl _mm_sub_round_sh(__m128h, __m128h, int);
+extern __m128h __cdecl _mm_mask_sub_round_sh(__m128h, __mmask8, __m128h, __m128h, int);
+extern __m128h __cdecl _mm_maskz_sub_round_sh(__mmask8, __m128h, __m128h, int);
+
+extern __m128h __cdecl _mm_mask_blend_ph (__mmask8, __m128h, __m128h);
+extern __m256h __cdecl _mm256_mask_blend_ph (__mmask16, __m256h, __m256h);
+extern __m512h __cdecl _mm512_mask_blend_ph (__mmask32, __m512h, __m512h);
+
+
+extern __m256  __cdecl _mm256_rsqrt14_ps(__m256);
+extern __m256d __cdecl _mm256_rsqrt14_pd(__m256d);
+extern __m128  __cdecl _mm_rsqrt14_ps(__m128);
+extern __m128d __cdecl _mm_rsqrt14_pd(__m128d);
+
+
+extern float  __cdecl __getexp_ss(float);
+extern double __cdecl __getexp_sd(double);
+extern float  __cdecl __getmant_ss(float, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern double __cdecl __getmant_sd(double, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern float  __cdecl __scalef_ss(float, float);
+extern double __cdecl __scalef_sd(double, double);
+
+
+extern __m512i __cdecl _mm512_sm4key4_epi32(__m512i, __m512i);
+extern __m512i __cdecl _mm512_sm4rnds4_epi32(__m512i, __m512i);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern __m128i __cdecl _mm_loadrs_epi8(void const *);
+extern __m128i __cdecl _mm_mask_loadrs_epi8(__m128i, __mmask16, void const *);
+extern __m128i __cdecl _mm_maskz_loadrs_epi8(__mmask16, void const *);
+
+extern __m256i __cdecl _mm256_loadrs_epi8(void const *);
+extern __m256i __cdecl _mm256_mask_loadrs_epi8(__m256i, __mmask32, void const *);
+extern __m256i __cdecl _mm256_maskz_loadrs_epi8(__mmask32, void const *);
+
+extern __m512i __cdecl _mm512_loadrs_epi8(void const *);
+extern __m512i __cdecl _mm512_mask_loadrs_epi8(__m512i, __mmask64, void const *);
+extern __m512i __cdecl _mm512_maskz_loadrs_epi8(__mmask64, void const *);
+
+extern __m128i __cdecl _mm_loadrs_epi16(void const *);
+extern __m128i __cdecl _mm_mask_loadrs_epi16(__m128i, __mmask8, void const *);
+extern __m128i __cdecl _mm_maskz_loadrs_epi16(__mmask8, void const *);
+
+extern __m256i __cdecl _mm256_loadrs_epi16(void const *);
+extern __m256i __cdecl _mm256_mask_loadrs_epi16(__m256i, __mmask16, void const *);
+extern __m256i __cdecl _mm256_maskz_loadrs_epi16(__mmask16, void const *);
+
+extern __m512i __cdecl _mm512_loadrs_epi16(void const *);
+extern __m512i __cdecl _mm512_mask_loadrs_epi16(__m512i, __mmask32, void const *);
+extern __m512i __cdecl _mm512_maskz_loadrs_epi16(__mmask32, void const *);
+
+extern __m128i __cdecl _mm_loadrs_epi32(void const *);
+extern __m128i __cdecl _mm_mask_loadrs_epi32(__m128i, __mmask8, void const *);
+extern __m128i __cdecl _mm_maskz_loadrs_epi32(__mmask8, void const *);
+
+extern __m256i __cdecl _mm256_loadrs_epi32(void const *);
+extern __m256i __cdecl _mm256_mask_loadrs_epi32(__m256i, __mmask8, void const *);
+extern __m256i __cdecl _mm256_maskz_loadrs_epi32(__mmask8, void const *);
+
+extern __m512i __cdecl _mm512_loadrs_epi32(void const *);
+extern __m512i __cdecl _mm512_mask_loadrs_epi32(__m512i, __mmask16, void const *);
+extern __m512i __cdecl _mm512_maskz_loadrs_epi32(__mmask16, void const *);
+
+extern __m128i __cdecl _mm_loadrs_epi64(void const *);
+extern __m128i __cdecl _mm_mask_loadrs_epi64(__m128i, __mmask8, void const *);
+extern __m128i __cdecl _mm_maskz_loadrs_epi64(__mmask8, void const *);
+
+extern __m256i __cdecl _mm256_loadrs_epi64(void const *);
+extern __m256i __cdecl _mm256_mask_loadrs_epi64(__m256i, __mmask8, void const *);
+extern __m256i __cdecl _mm256_maskz_loadrs_epi64(__mmask8, void const *);
+
+extern __m512i __cdecl _mm512_loadrs_epi64(void const *);
+extern __m512i __cdecl _mm512_mask_loadrs_epi64(__m512i, __mmask8, void const *);
+extern __m512i __cdecl _mm512_maskz_loadrs_epi64(__mmask8, void const *);
+#line 6423 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\zmmintrin.h"
+
+
+extern __m128bh  __cdecl _mm_add_pbh(__m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_mask_add_pbh(__m128bh, __mmask8, __m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_maskz_add_pbh(__mmask8, __m128bh, __m128bh);
+extern __m256bh  __cdecl _mm256_add_pbh(__m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_mask_add_pbh(__m256bh, __mmask16, __m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_maskz_add_pbh(__mmask16, __m256bh, __m256bh);
+extern __m512bh  __cdecl _mm512_add_pbh(__m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_mask_add_pbh(__m512bh, __mmask32, __m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_maskz_add_pbh(__mmask32, __m512bh, __m512bh);
+extern __mmask8  __cdecl _mm_cmp_pbh_mask(__m128bh, __m128bh, const int);
+extern __mmask8  __cdecl _mm_mask_cmp_pbh_mask(__mmask8, __m128bh, __m128bh, const int);
+extern __mmask16 __cdecl _mm256_cmp_pbh_mask(__m256bh, __m256bh, const int);
+extern __mmask16 __cdecl _mm256_mask_cmp_pbh_mask(__mmask16, __m256bh, __m256bh, const int);
+extern __mmask32 __cdecl _mm512_cmp_pbh_mask(__m512bh, __m512bh, const int);
+extern __mmask32 __cdecl _mm512_mask_cmp_pbh_mask(__mmask32, __m512bh, __m512bh, const int);
+extern int       __cdecl _mm_comeq_sbh(__m128bh, __m128bh);
+extern int       __cdecl _mm_comlt_sbh(__m128bh, __m128bh);
+extern int       __cdecl _mm_comle_sbh(__m128bh, __m128bh);
+extern int       __cdecl _mm_comgt_sbh(__m128bh, __m128bh);
+extern int       __cdecl _mm_comge_sbh(__m128bh, __m128bh);
+extern int       __cdecl _mm_comneq_sbh(__m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_div_pbh(__m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_mask_div_pbh(__m128bh, __mmask8, __m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_maskz_div_pbh(__mmask8, __m128bh, __m128bh);
+extern __m256bh  __cdecl _mm256_div_pbh(__m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_mask_div_pbh(__m256bh, __mmask16, __m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_maskz_div_pbh(__mmask16, __m256bh, __m256bh);
+extern __m512bh  __cdecl _mm512_div_pbh(__m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_mask_div_pbh(__m512bh, __mmask32, __m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_maskz_div_pbh(__mmask32, __m512bh, __m512bh);
+extern __m128bh  __cdecl _mm_fmadd_pbh(__m128bh, __m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_mask_fmadd_pbh(__m128bh, __mmask8, __m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_mask3_fmadd_pbh(__m128bh, __m128bh, __m128bh, __mmask8);
+extern __m128bh  __cdecl _mm_maskz_fmadd_pbh(__mmask8, __m128bh, __m128bh, __m128bh);
+extern __m256bh  __cdecl _mm256_fmadd_pbh(__m256bh, __m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_mask_fmadd_pbh(__m256bh, __mmask16, __m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_mask3_fmadd_pbh(__m256bh, __m256bh, __m256bh, __mmask16);
+extern __m256bh  __cdecl _mm256_maskz_fmadd_pbh(__mmask16, __m256bh, __m256bh, __m256bh);
+extern __m512bh  __cdecl _mm512_fmadd_pbh(__m512bh, __m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_mask_fmadd_pbh(__m512bh, __mmask32, __m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_mask3_fmadd_pbh(__m512bh, __m512bh, __m512bh, __mmask32);
+extern __m512bh  __cdecl _mm512_maskz_fmadd_pbh(__mmask32, __m512bh, __m512bh, __m512bh);
+extern __m128bh  __cdecl _mm_fmsub_pbh(__m128bh, __m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_mask_fmsub_pbh(__m128bh, __mmask8, __m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_mask3_fmsub_pbh(__m128bh, __m128bh, __m128bh, __mmask8);
+extern __m128bh  __cdecl _mm_maskz_fmsub_pbh(__mmask8, __m128bh, __m128bh, __m128bh);
+extern __m256bh  __cdecl _mm256_fmsub_pbh(__m256bh, __m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_mask_fmsub_pbh(__m256bh, __mmask16, __m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_mask3_fmsub_pbh(__m256bh, __m256bh, __m256bh, __mmask16);
+extern __m256bh  __cdecl _mm256_maskz_fmsub_pbh(__mmask16, __m256bh, __m256bh, __m256bh);
+extern __m512bh  __cdecl _mm512_fmsub_pbh(__m512bh, __m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_mask_fmsub_pbh(__m512bh, __mmask32, __m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_mask3_fmsub_pbh(__m512bh, __m512bh, __m512bh, __mmask32);
+extern __m512bh  __cdecl _mm512_maskz_fmsub_pbh(__mmask32, __m512bh, __m512bh, __m512bh);
+extern __m128bh  __cdecl _mm_fnmadd_pbh(__m128bh, __m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_mask_fnmadd_pbh(__m128bh, __mmask8, __m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_mask3_fnmadd_pbh(__m128bh, __m128bh, __m128bh, __mmask8);
+extern __m128bh  __cdecl _mm_maskz_fnmadd_pbh(__mmask8, __m128bh, __m128bh, __m128bh);
+extern __m256bh  __cdecl _mm256_fnmadd_pbh(__m256bh, __m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_mask_fnmadd_pbh(__m256bh, __mmask16, __m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_mask3_fnmadd_pbh(__m256bh, __m256bh, __m256bh, __mmask16);
+extern __m256bh  __cdecl _mm256_maskz_fnmadd_pbh(__mmask16, __m256bh, __m256bh, __m256bh);
+extern __m512bh  __cdecl _mm512_fnmadd_pbh(__m512bh, __m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_mask_fnmadd_pbh(__m512bh, __mmask32, __m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_mask3_fnmadd_pbh(__m512bh, __m512bh, __m512bh, __mmask32);
+extern __m512bh  __cdecl _mm512_maskz_fnmadd_pbh(__mmask32, __m512bh, __m512bh, __m512bh);
+extern __m128bh  __cdecl _mm_fnmsub_pbh(__m128bh, __m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_mask_fnmsub_pbh(__m128bh, __mmask8, __m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_mask3_fnmsub_pbh(__m128bh, __m128bh, __m128bh, __mmask8);
+extern __m128bh  __cdecl _mm_maskz_fnmsub_pbh(__mmask8, __m128bh, __m128bh, __m128bh);
+extern __m256bh  __cdecl _mm256_fnmsub_pbh(__m256bh, __m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_mask_fnmsub_pbh(__m256bh, __mmask16, __m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_mask3_fnmsub_pbh(__m256bh, __m256bh, __m256bh, __mmask16);
+extern __m256bh  __cdecl _mm256_maskz_fnmsub_pbh(__mmask16, __m256bh, __m256bh, __m256bh);
+extern __m512bh  __cdecl _mm512_fnmsub_pbh(__m512bh, __m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_mask_fnmsub_pbh(__m512bh, __mmask32, __m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_mask3_fnmsub_pbh(__m512bh, __m512bh, __m512bh, __mmask32);
+extern __m512bh  __cdecl _mm512_maskz_fnmsub_pbh(__mmask32, __m512bh, __m512bh, __m512bh);
+extern __mmask8  __cdecl _mm_fpclass_pbh_mask(__m128bh, const int);
+extern __mmask8  __cdecl _mm_mask_fpclass_pbh_mask(__mmask8, __m128bh, const int);
+extern __mmask16 __cdecl _mm256_fpclass_pbh_mask(__m256bh, const int);
+extern __mmask16 __cdecl _mm256_mask_fpclass_pbh_mask(__mmask16, __m256bh, const int);
+extern __mmask32 __cdecl _mm512_fpclass_pbh_mask(__m512bh, const int);
+extern __mmask32 __cdecl _mm512_mask_fpclass_pbh_mask(__mmask32, __m512bh, const int);
+extern __m128bh  __cdecl _mm_getexp_pbh(__m128bh);
+extern __m128bh  __cdecl _mm_mask_getexp_pbh(__m128bh, __mmask8, __m128bh);
+extern __m128bh  __cdecl _mm_maskz_getexp_pbh(__mmask8, __m128bh);
+extern __m256bh  __cdecl _mm256_getexp_pbh(__m256bh);
+extern __m256bh  __cdecl _mm256_mask_getexp_pbh(__m256bh, __mmask16, __m256bh);
+extern __m256bh  __cdecl _mm256_maskz_getexp_pbh(__mmask16, __m256bh);
+extern __m512bh  __cdecl _mm512_getexp_pbh(__m512bh);
+extern __m512bh  __cdecl _mm512_mask_getexp_pbh(__m512bh, __mmask32, __m512bh);
+extern __m512bh  __cdecl _mm512_maskz_getexp_pbh(__mmask32, __m512bh);
+extern __m128bh  __cdecl _mm_getmant_pbh(__m128bh, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern __m128bh  __cdecl _mm_mask_getmant_pbh(__m128bh, __mmask8, __m128bh, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern __m128bh  __cdecl _mm_maskz_getmant_pbh(__mmask8, __m128bh, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern __m256bh  __cdecl _mm256_getmant_pbh(__m256bh, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern __m256bh  __cdecl _mm256_mask_getmant_pbh(__m256bh, __mmask16, __m256bh, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern __m256bh  __cdecl _mm256_maskz_getmant_pbh(__mmask16, __m256bh, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern __m512bh  __cdecl _mm512_getmant_pbh(__m512bh, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern __m512bh  __cdecl _mm512_mask_getmant_pbh(__m512bh, __mmask32, __m512bh, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern __m512bh  __cdecl _mm512_maskz_getmant_pbh(__mmask32, __m512bh, _MM_MANTISSA_NORM_ENUM, _MM_MANTISSA_SIGN_ENUM);
+extern __m128bh  __cdecl _mm_max_pbh(__m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_mask_max_pbh(__m128bh, __mmask8, __m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_maskz_max_pbh(__mmask8, __m128bh, __m128bh);
+extern __m256bh  __cdecl _mm256_max_pbh(__m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_mask_max_pbh(__m256bh, __mmask16, __m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_maskz_max_pbh(__mmask16, __m256bh, __m256bh);
+extern __m512bh  __cdecl _mm512_max_pbh(__m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_mask_max_pbh(__m512bh, __mmask32, __m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_maskz_max_pbh(__mmask32, __m512bh, __m512bh);
+extern __m128bh  __cdecl _mm_min_pbh(__m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_mask_min_pbh(__m128bh, __mmask8, __m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_maskz_min_pbh(__mmask8, __m128bh, __m128bh);
+extern __m256bh  __cdecl _mm256_min_pbh(__m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_mask_min_pbh(__m256bh, __mmask16, __m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_maskz_min_pbh(__mmask16, __m256bh, __m256bh);
+extern __m512bh  __cdecl _mm512_min_pbh(__m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_mask_min_pbh(__m512bh, __mmask32, __m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_maskz_min_pbh(__mmask32, __m512bh, __m512bh);
+extern __m128bh  __cdecl _mm_mul_pbh(__m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_mask_mul_pbh(__m128bh, __mmask8, __m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_maskz_mul_pbh(__mmask8, __m128bh, __m128bh);
+extern __m256bh  __cdecl _mm256_mul_pbh(__m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_mask_mul_pbh(__m256bh, __mmask16, __m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_maskz_mul_pbh(__mmask16, __m256bh, __m256bh);
+extern __m512bh  __cdecl _mm512_mul_pbh(__m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_mask_mul_pbh(__m512bh, __mmask32, __m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_maskz_mul_pbh(__mmask32, __m512bh, __m512bh);
+extern __m128bh  __cdecl _mm_rcp_pbh(__m128bh);
+extern __m128bh  __cdecl _mm_mask_rcp_pbh(__m128bh, __mmask8, __m128bh);
+extern __m128bh  __cdecl _mm_maskz_rcp_pbh(__mmask8, __m128bh);
+extern __m256bh  __cdecl _mm256_rcp_pbh(__m256bh);
+extern __m256bh  __cdecl _mm256_mask_rcp_pbh(__m256bh, __mmask16, __m256bh);
+extern __m256bh  __cdecl _mm256_maskz_rcp_pbh(__mmask16, __m256bh);
+extern __m512bh  __cdecl _mm512_rcp_pbh(__m512bh);
+extern __m512bh  __cdecl _mm512_mask_rcp_pbh(__m512bh, __mmask32, __m512bh);
+extern __m512bh  __cdecl _mm512_maskz_rcp_pbh(__mmask32, __m512bh);
+extern __m128bh  __cdecl _mm_reduce_pbh(__m128bh, int);
+extern __m128bh  __cdecl _mm_mask_reduce_pbh(__m128bh, __mmask8, __m128bh, int);
+extern __m128bh  __cdecl _mm_maskz_reduce_pbh(__mmask8, __m128bh, int);
+extern __m256bh  __cdecl _mm256_reduce_pbh(__m256bh, int);
+extern __m256bh  __cdecl _mm256_mask_reduce_pbh(__m256bh, __mmask16, __m256bh, int);
+extern __m256bh  __cdecl _mm256_maskz_reduce_pbh(__mmask16, __m256bh, int);
+extern __m512bh  __cdecl _mm512_reduce_pbh(__m512bh, int);
+extern __m512bh  __cdecl _mm512_mask_reduce_pbh(__m512bh, __mmask32, __m512bh, int);
+extern __m512bh  __cdecl _mm512_maskz_reduce_pbh(__mmask32, __m512bh, int);
+extern __m128bh  __cdecl _mm_rndscale_pbh(__m128bh, int);
+extern __m128bh  __cdecl _mm_mask_rndscale_pbh(__m128bh, __mmask8, __m128bh, int);
+extern __m128bh  __cdecl _mm_maskz_rndscale_pbh(__mmask8, __m128bh, int);
+extern __m256bh  __cdecl _mm256_rndscale_pbh(__m256bh, int);
+extern __m256bh  __cdecl _mm256_mask_rndscale_pbh(__m256bh, __mmask16, __m256bh, int);
+extern __m256bh  __cdecl _mm256_maskz_rndscale_pbh(__mmask16, __m256bh, int);
+extern __m512bh  __cdecl _mm512_rndscale_pbh(__m512bh, int);
+extern __m512bh  __cdecl _mm512_mask_rndscale_pbh(__m512bh, __mmask32, __m512bh, int);
+extern __m512bh  __cdecl _mm512_maskz_rndscale_pbh(__mmask32, __m512bh, int);
+extern __m128bh  __cdecl _mm_rsqrt_pbh(__m128bh);
+extern __m128bh  __cdecl _mm_mask_rsqrt_pbh(__m128bh, __mmask8, __m128bh);
+extern __m128bh  __cdecl _mm_maskz_rsqrt_pbh(__mmask8, __m128bh);
+extern __m256bh  __cdecl _mm256_rsqrt_pbh(__m256bh);
+extern __m256bh  __cdecl _mm256_mask_rsqrt_pbh(__m256bh, __mmask16, __m256bh);
+extern __m256bh  __cdecl _mm256_maskz_rsqrt_pbh(__mmask16, __m256bh);
+extern __m512bh  __cdecl _mm512_rsqrt_pbh(__m512bh);
+extern __m512bh  __cdecl _mm512_mask_rsqrt_pbh(__m512bh, __mmask32, __m512bh);
+extern __m512bh  __cdecl _mm512_maskz_rsqrt_pbh(__mmask32, __m512bh);
+extern __m128bh  __cdecl _mm_scalef_pbh(__m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_mask_scalef_pbh(__m128bh, __mmask8, __m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_maskz_scalef_pbh(__mmask8, __m128bh, __m128bh);
+extern __m256bh  __cdecl _mm256_scalef_pbh(__m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_mask_scalef_pbh(__m256bh, __mmask16, __m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_maskz_scalef_pbh(__mmask16, __m256bh, __m256bh);
+extern __m512bh  __cdecl _mm512_scalef_pbh(__m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_mask_scalef_pbh(__m512bh, __mmask32, __m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_maskz_scalef_pbh(__mmask32, __m512bh, __m512bh);
+extern __m128bh  __cdecl _mm_sqrt_pbh(__m128bh);
+extern __m128bh  __cdecl _mm_mask_sqrt_pbh(__m128bh, __mmask8, __m128bh);
+extern __m128bh  __cdecl _mm_maskz_sqrt_pbh(__mmask8, __m128bh);
+extern __m256bh  __cdecl _mm256_sqrt_pbh(__m256bh);
+extern __m256bh  __cdecl _mm256_mask_sqrt_pbh(__m256bh, __mmask16, __m256bh);
+extern __m256bh  __cdecl _mm256_maskz_sqrt_pbh(__mmask16, __m256bh);
+extern __m512bh  __cdecl _mm512_sqrt_pbh(__m512bh);
+extern __m512bh  __cdecl _mm512_mask_sqrt_pbh(__m512bh, __mmask32, __m512bh);
+extern __m512bh  __cdecl _mm512_maskz_sqrt_pbh(__mmask32, __m512bh);
+extern __m128bh  __cdecl _mm_sub_pbh(__m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_mask_sub_pbh(__m128bh, __mmask8, __m128bh, __m128bh);
+extern __m128bh  __cdecl _mm_maskz_sub_pbh(__mmask8, __m128bh, __m128bh);
+extern __m256bh  __cdecl _mm256_sub_pbh(__m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_mask_sub_pbh(__m256bh, __mmask16, __m256bh, __m256bh);
+extern __m256bh  __cdecl _mm256_maskz_sub_pbh(__mmask16, __m256bh, __m256bh);
+extern __m512bh  __cdecl _mm512_sub_pbh(__m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_mask_sub_pbh(__m512bh, __mmask32, __m512bh, __m512bh);
+extern __m512bh  __cdecl _mm512_maskz_sub_pbh(__mmask32, __m512bh, __m512bh);
+
+
+extern __m128h __cdecl _mm_cvtx2ps_ph(__m128, __m128);
+extern __m128h __cdecl _mm_mask_cvtx2ps_ph(__m128h, __mmask8, __m128, __m128);
+extern __m128h __cdecl _mm_maskz_cvtx2ps_ph(__mmask8, __m128, __m128);
+extern __m256h __cdecl _mm256_cvtx2ps_ph(__m256, __m256);
+extern __m256h __cdecl _mm256_mask_cvtx2ps_ph(__m256h, __mmask16, __m256, __m256);
+extern __m256h __cdecl _mm256_maskz_cvtx2ps_ph(__mmask16, __m256, __m256);
+extern __m512h __cdecl _mm512_cvtx2ps_ph(__m512, __m512);
+extern __m512h __cdecl _mm512_mask_cvtx2ps_ph(__m512h, __mmask32, __m512, __m512);
+extern __m512h __cdecl _mm512_maskz_cvtx2ps_ph(__mmask32, __m512, __m512);
+extern __m512h __cdecl _mm512_cvtx_round2ps_ph(__m512, __m512, const int);
+extern __m512h __cdecl _mm512_mask_cvtx_round2ps_ph(__m512h, __mmask32, __m512, __m512, const int);
+extern __m512h __cdecl _mm512_maskz_cvtx_round2ps_ph(__mmask32, __m512, __m512, const int);
+extern __m128i __cdecl _mm_cvtbiasph_pbf8(__m128i, __m128h);
+extern __m128i __cdecl _mm_mask_cvtbiasph_pbf8(__m128i, __mmask8, __m128i, __m128h);
+extern __m128i __cdecl _mm_maskz_cvtbiasph_pbf8(__mmask8, __m128i, __m128h);
+extern __m128i __cdecl _mm256_cvtbiasph_pbf8(__m256i, __m256h);
+extern __m128i __cdecl _mm256_mask_cvtbiasph_pbf8(__m128i, __mmask16, __m256i, __m256h);
+extern __m128i __cdecl _mm256_maskz_cvtbiasph_pbf8(__mmask16, __m256i, __m256h);
+extern __m256i __cdecl _mm512_cvtbiasph_pbf8(__m512i, __m512h);
+extern __m256i __cdecl _mm512_mask_cvtbiasph_pbf8(__m256i, __mmask32, __m512i, __m512h);
+extern __m256i __cdecl _mm512_maskz_cvtbiasph_pbf8(__mmask32, __m512i, __m512h);
+extern __m128i __cdecl _mm_cvtbiassph_pbf8(__m128i, __m128h);
+extern __m128i __cdecl _mm_mask_cvtbiassph_pbf8(__m128i, __mmask8, __m128i, __m128h);
+extern __m128i __cdecl _mm_maskz_cvtbiassph_pbf8(__mmask8, __m128i, __m128h);
+extern __m128i __cdecl _mm256_cvtbiassph_pbf8(__m256i, __m256h);
+extern __m128i __cdecl _mm256_mask_cvtbiassph_pbf8(__m128i, __mmask16, __m256i, __m256h);
+extern __m128i __cdecl _mm256_maskz_cvtbiassph_pbf8(__mmask16, __m256i, __m256h);
+extern __m256i __cdecl _mm512_cvtbiassph_pbf8(__m512i, __m512h);
+extern __m256i __cdecl _mm512_mask_cvtbiassph_pbf8(__m256i, __mmask32, __m512i, __m512h);
+extern __m256i __cdecl _mm512_maskz_cvtbiassph_pbf8(__mmask32, __m512i, __m512h);
+extern __m128i __cdecl _mm_cvtbiasph_phf8(__m128i, __m128h);
+extern __m128i __cdecl _mm_mask_cvtbiasph_phf8(__m128i, __mmask8, __m128i, __m128h);
+extern __m128i __cdecl _mm_maskz_cvtbiasph_phf8(__mmask8, __m128i, __m128h);
+extern __m128i __cdecl _mm256_cvtbiasph_phf8(__m256i, __m256h);
+extern __m128i __cdecl _mm256_mask_cvtbiasph_phf8(__m128i, __mmask16, __m256i, __m256h);
+extern __m128i __cdecl _mm256_maskz_cvtbiasph_phf8(__mmask16, __m256i, __m256h);
+extern __m256i __cdecl _mm512_cvtbiasph_phf8(__m512i, __m512h);
+extern __m256i __cdecl _mm512_mask_cvtbiasph_phf8(__m256i, __mmask32, __m512i, __m512h);
+extern __m256i __cdecl _mm512_maskz_cvtbiasph_phf8(__mmask32, __m512i, __m512h);
+extern __m128i __cdecl _mm_cvtbiassph_phf8(__m128i, __m128h);
+extern __m128i __cdecl _mm_mask_cvtbiassph_phf8(__m128i, __mmask8, __m128i, __m128h);
+extern __m128i __cdecl _mm_maskz_cvtbiassph_phf8(__mmask8, __m128i, __m128h);
+extern __m128i __cdecl _mm256_cvtbiassph_phf8(__m256i, __m256h);
+extern __m128i __cdecl _mm256_mask_cvtbiassph_phf8(__m128i, __mmask16, __m256i, __m256h);
+extern __m128i __cdecl _mm256_maskz_cvtbiassph_phf8(__mmask16, __m256i, __m256h);
+extern __m256i __cdecl _mm512_cvtbiassph_phf8(__m512i, __m512h);
+extern __m256i __cdecl _mm512_mask_cvtbiassph_phf8(__m256i, __mmask32, __m512i, __m512h);
+extern __m256i __cdecl _mm512_maskz_cvtbiassph_phf8(__mmask32, __m512i, __m512h);
+extern __m128h __cdecl _mm_cvthf8_ph(__m128i);
+extern __m128h __cdecl _mm_mask_cvthf8_ph(__m128h, __mmask8, __m128i);
+extern __m128h __cdecl _mm_maskz_cvthf8_ph(__mmask8, __m128i);
+extern __m256h __cdecl _mm256_cvthf8_ph(__m128i);
+extern __m256h __cdecl _mm256_mask_cvthf8_ph(__m256h, __mmask16, __m128i);
+extern __m256h __cdecl _mm256_maskz_cvthf8_ph(__mmask16, __m128i);
+extern __m512h __cdecl _mm512_cvthf8_ph(__m256i);
+extern __m512h __cdecl _mm512_mask_cvthf8_ph(__m512h, __mmask32, __m256i);
+extern __m512h __cdecl _mm512_maskz_cvthf8_ph(__mmask32, __m256i);
+extern __m128i __cdecl _mm_cvt2ph_bf8(__m128h, __m128h);
+extern __m128i __cdecl _mm_mask_cvt2ph_bf8(__m128i, __mmask16, __m128h, __m128h);
+extern __m128i __cdecl _mm_maskz_cvt2ph_bf8(__mmask16, __m128h, __m128h);
+extern __m256i __cdecl _mm256_cvt2ph_bf8(__m256h, __m256h);
+extern __m256i __cdecl _mm256_mask_cvt2ph_bf8(__m256i, __mmask32, __m256h, __m256h);
+extern __m256i __cdecl _mm256_maskz_cvt2ph_bf8(__mmask32, __m256h, __m256h);
+extern __m512i __cdecl _mm512_cvt2ph_bf8(__m512h, __m512h);
+extern __m512i __cdecl _mm512_mask_cvt2ph_bf8(__m512i, __mmask64, __m512h, __m512h);
+extern __m512i __cdecl _mm512_maskz_cvt2ph_bf8(__mmask64, __m512h, __m512h);
+extern __m128i __cdecl _mm_cvts2ph_bf8(__m128h, __m128h);
+extern __m128i __cdecl _mm_mask_cvts2ph_bf8(__m128i, __mmask16, __m128h, __m128h);
+extern __m128i __cdecl _mm_maskz_cvts2ph_bf8(__mmask16, __m128h, __m128h);
+extern __m256i __cdecl _mm256_cvts2ph_bf8(__m256h, __m256h);
+extern __m256i __cdecl _mm256_mask_cvts2ph_bf8(__m256i, __mmask32, __m256h, __m256h);
+extern __m256i __cdecl _mm256_maskz_cvts2ph_bf8(__mmask32, __m256h, __m256h);
+extern __m512i __cdecl _mm512_cvts2ph_bf8(__m512h, __m512h);
+extern __m512i __cdecl _mm512_mask_cvts2ph_bf8(__m512i, __mmask64, __m512h, __m512h);
+extern __m512i __cdecl _mm512_maskz_cvts2ph_bf8(__mmask64, __m512h, __m512h);
+extern __m128i __cdecl _mm_cvt2ph_hf8(__m128h, __m128h);
+extern __m128i __cdecl _mm_mask_cvt2ph_hf8(__m128i, __mmask16, __m128h, __m128h);
+extern __m128i __cdecl _mm_maskz_cvt2ph_hf8(__mmask16, __m128h, __m128h);
+extern __m256i __cdecl _mm256_cvt2ph_hf8(__m256h, __m256h);
+extern __m256i __cdecl _mm256_mask_cvt2ph_hf8(__m256i, __mmask32, __m256h, __m256h);
+extern __m256i __cdecl _mm256_maskz_cvt2ph_hf8(__mmask32, __m256h, __m256h);
+extern __m512i __cdecl _mm512_cvt2ph_hf8(__m512h, __m512h);
+extern __m512i __cdecl _mm512_mask_cvt2ph_hf8(__m512i, __mmask64, __m512h, __m512h);
+extern __m512i __cdecl _mm512_maskz_cvt2ph_hf8(__mmask64, __m512h, __m512h);
+extern __m128i __cdecl _mm_cvts2ph_hf8(__m128h, __m128h);
+extern __m128i __cdecl _mm_mask_cvts2ph_hf8(__m128i, __mmask16, __m128h, __m128h);
+extern __m128i __cdecl _mm_maskz_cvts2ph_hf8(__mmask16, __m128h, __m128h);
+extern __m256i __cdecl _mm256_cvts2ph_hf8(__m256h, __m256h);
+extern __m256i __cdecl _mm256_mask_cvts2ph_hf8(__m256i, __mmask32, __m256h, __m256h);
+extern __m256i __cdecl _mm256_maskz_cvts2ph_hf8(__mmask32, __m256h, __m256h);
+extern __m512i __cdecl _mm512_cvts2ph_hf8(__m512h, __m512h);
+extern __m512i __cdecl _mm512_mask_cvts2ph_hf8(__m512i, __mmask64, __m512h, __m512h);
+extern __m512i __cdecl _mm512_maskz_cvts2ph_hf8(__mmask64, __m512h, __m512h);
+extern __m128i __cdecl _mm_cvtph_bf8(__m128h);
+extern __m128i __cdecl _mm_mask_cvtph_bf8(__m128i, __mmask8, __m128h);
+extern __m128i __cdecl _mm_maskz_cvtph_bf8(__mmask8, __m128h);
+extern __m128i __cdecl _mm256_cvtph_bf8(__m256h);
+extern __m128i __cdecl _mm256_mask_cvtph_bf8(__m128i, __mmask16,  __m256h);
+extern __m128i __cdecl _mm256_maskz_cvtph_bf8(__mmask16, __m256h);
+extern __m256i __cdecl _mm512_cvtph_bf8(__m512h);
+extern __m256i __cdecl _mm512_mask_cvtph_bf8(__m256i, __mmask32, __m512h);
+extern __m256i __cdecl _mm512_maskz_cvtph_bf8(__mmask32, __m512h);
+extern __m128i __cdecl _mm_cvtsph_bf8(__m128h);
+extern __m128i __cdecl _mm_mask_cvtsph_bf8(__m128i, __mmask8, __m128h);
+extern __m128i __cdecl _mm_maskz_cvtsph_bf8(__mmask8, __m128h);
+extern __m128i __cdecl _mm256_cvtsph_bf8(__m256h);
+extern __m128i __cdecl _mm256_mask_cvtsph_bf8(__m128i, __mmask16,  __m256h);
+extern __m128i __cdecl _mm256_maskz_cvtsph_bf8(__mmask16, __m256h);
+extern __m256i __cdecl _mm512_cvtsph_bf8(__m512h);
+extern __m256i __cdecl _mm512_mask_cvtsph_bf8(__m256i, __mmask32, __m512h);
+extern __m256i __cdecl _mm512_maskz_cvtsph_bf8(__mmask32, __m512h);
+extern __m128i __cdecl _mm_cvtph_hf8(__m128h);
+extern __m128i __cdecl _mm_mask_cvtph_hf8(__m128i, __mmask8, __m128h);
+extern __m128i __cdecl _mm_maskz_cvtph_hf8(__mmask8, __m128h);
+extern __m128i __cdecl _mm256_cvtph_hf8(__m256h);
+extern __m128i __cdecl _mm256_mask_cvtph_hf8(__m128i, __mmask16,  __m256h);
+extern __m128i __cdecl _mm256_maskz_cvtph_hf8(__mmask16, __m256h);
+extern __m256i __cdecl _mm512_cvtph_hf8(__m512h);
+extern __m256i __cdecl _mm512_mask_cvtph_hf8(__m256i, __mmask32, __m512h);
+extern __m256i __cdecl _mm512_maskz_cvtph_hf8(__mmask32, __m512h);
+extern __m128i __cdecl _mm_cvtsph_hf8(__m128h);
+extern __m128i __cdecl _mm_mask_cvtsph_hf8(__m128i, __mmask8, __m128h);
+extern __m128i __cdecl _mm_maskz_cvtsph_hf8(__mmask8, __m128h);
+extern __m128i __cdecl _mm256_cvtsph_hf8(__m256h);
+extern __m128i __cdecl _mm256_mask_cvtsph_hf8(__m128i, __mmask16,  __m256h);
+extern __m128i __cdecl _mm256_maskz_cvtsph_hf8(__mmask16, __m256h);
+extern __m256i __cdecl _mm512_cvtsph_hf8(__m512h);
+extern __m256i __cdecl _mm512_mask_cvtsph_hf8(__m256i, __mmask32, __m512h);
+extern __m256i __cdecl _mm512_maskz_cvtsph_hf8(__mmask32, __m512h);
+
+
+
+extern unsigned int __cdecl _mm_cvttsss_u32(__m128);
+extern unsigned int __cdecl _mm_cvtts_roundss_u32(__m128, const int);
+
+extern unsigned long long __cdecl _mm_cvttsss_u64(__m128);
+extern unsigned long long __cdecl _mm_cvtts_roundss_u64(__m128, const int); 
+#line 6757 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\zmmintrin.h"
+
+
+extern int       __cdecl _mm_cvttsss_i32(__m128);
+extern int       __cdecl _mm_cvtts_roundss_i32(__m128, const int);
+
+extern long long   __cdecl _mm_cvtts_roundss_i64(__m128, const int); 
+extern long long   __cdecl _mm_cvttsss_i64(__m128);
+#line 6765 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\zmmintrin.h"
+
+
+extern unsigned int __cdecl _mm_cvttsds_u32(__m128d);
+extern unsigned int __cdecl _mm_cvtts_roundsd_u32(__m128d, const int);
+
+extern unsigned long long __cdecl _mm_cvttsds_u64(__m128d);
+extern unsigned long long __cdecl _mm_cvtts_roundsd_u64(__m128d, const int); 
+#line 6773 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\zmmintrin.h"
+
+
+extern int       __cdecl _mm_cvttsds_i32(__m128d);
+extern int       __cdecl _mm_cvtts_roundsd_i32(__m128d, const int);
+
+extern long long   __cdecl _mm_cvtts_roundsd_i64(__m128d, const int);
+extern long long   __cdecl _mm_cvttsds_i64(__m128d);
+#line 6781 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\zmmintrin.h"
+
+
+extern __m128i __cdecl _mm_cvttsps_epu64(__m128);
+extern __m128i __cdecl _mm_mask_cvttsps_epu64(__m128i, __mmask8, __m128);
+extern __m128i __cdecl _mm_maskz_cvttsps_epu64(__mmask8, __m128);
+extern __m256i __cdecl _mm256_cvttsps_epu64(__m128);
+extern __m256i __cdecl _mm256_mask_cvttsps_epu64(__m256i, __mmask8, __m128);
+extern __m256i __cdecl _mm256_maskz_cvttsps_epu64(__mmask8, __m128);
+extern __m512i __cdecl _mm512_cvttsps_epu64(__m256);
+extern __m512i __cdecl _mm512_mask_cvttsps_epu64(__m512i, __mmask8, __m256);
+extern __m512i __cdecl _mm512_maskz_cvttsps_epu64(__mmask8, __m256);
+extern __m512i __cdecl _mm512_cvtts_roundps_epu64(__m256, const int);
+extern __m512i __cdecl _mm512_mask_cvtts_roundps_epu64(__m512i, __mmask8, __m256, const int);
+extern __m512i __cdecl _mm512_maskz_cvtts_roundps_epu64(__mmask8, __m256, const int);
+
+
+extern __m128i __cdecl _mm_cvttsps_epu32(__m128);
+extern __m128i __cdecl _mm_mask_cvttsps_epu32(__m128i, __mmask8, __m128);
+extern __m128i __cdecl _mm_maskz_cvttsps_epu32(__mmask8, __m128);
+extern __m256i __cdecl _mm256_cvttsps_epu32(__m256);
+extern __m256i __cdecl _mm256_mask_cvttsps_epu32(__m256i, __mmask8, __m256);
+extern __m256i __cdecl _mm256_maskz_cvttsps_epu32(__mmask8, __m256);
+extern __m512i __cdecl _mm512_cvttsps_epu32(__m512); 
+extern __m512i __cdecl _mm512_mask_cvttsps_epu32(__m512i, __mmask16, __m512); 
+extern __m512i __cdecl _mm512_maskz_cvttsps_epu32(__mmask16, __m512); 
+extern __m512i __cdecl _mm512_cvtts_roundps_epu32(__m512, const int);
+extern __m512i __cdecl _mm512_mask_cvtts_roundps_epu32(__m512i, __mmask16, __m512, const int);
+extern __m512i __cdecl _mm512_maskz_cvtts_roundps_epu32(__mmask16, __m512, const int);
+
+
+extern __m128i __cdecl _mm_cvttsps_epi64(__m128);
+extern __m128i __cdecl _mm_mask_cvttsps_epi64(__m128i, __mmask8, __m128);
+extern __m128i __cdecl _mm_maskz_cvttsps_epi64(__mmask8, __m128);
+extern __m256i __cdecl _mm256_cvttsps_epi64(__m128);
+extern __m256i __cdecl _mm256_mask_cvttsps_epi64(__m256i, __mmask8, __m128);
+extern __m256i __cdecl _mm256_maskz_cvttsps_epi64(__mmask8, __m128);
+extern __m512i __cdecl _mm512_cvttsps_epi64(__m256); 
+extern __m512i __cdecl _mm512_mask_cvttsps_epi64(__m512i, __mmask8, __m256); 
+extern __m512i __cdecl _mm512_maskz_cvttsps_epi64(__mmask8, __m256); 
+extern __m512i __cdecl _mm512_cvtts_roundps_epi64(__m256, const int);
+extern __m512i __cdecl _mm512_mask_cvtts_roundps_epi64(__m512i, __mmask8, __m256, const int);
+extern __m512i __cdecl _mm512_maskz_cvtts_roundps_epi64(__mmask8, __m256, const int);
+
+
+extern __m128i __cdecl _mm_cvttsps_epi32(__m128);
+extern __m128i __cdecl _mm_mask_cvttsps_epi32(__m128i, __mmask8, __m128);
+extern __m128i __cdecl _mm_maskz_cvttsps_epi32(__mmask8, __m128);
+extern __m256i __cdecl _mm256_cvttsps_epi32(__m256);
+extern __m256i __cdecl _mm256_mask_cvttsps_epi32(__m256i, __mmask8, __m256);
+extern __m256i __cdecl _mm256_maskz_cvttsps_epi32(__mmask8, __m256);
+extern __m512i __cdecl _mm512_cvttsps_epi32(__m512);
+extern __m512i __cdecl _mm512_mask_cvttsps_epi32(__m512i, __mmask16, __m512);
+extern __m512i __cdecl _mm512_maskz_cvttsps_epi32(__mmask16, __m512);
+extern __m512i __cdecl _mm512_cvtts_roundps_epi32(__m512, const int);
+extern __m512i __cdecl _mm512_mask_cvtts_roundps_epi32(__m512i, __mmask16, __m512, const int);
+extern __m512i __cdecl _mm512_maskz_cvtts_roundps_epi32(__mmask16, __m512, const int);
+
+
+extern __m128i __cdecl _mm_cvttspd_epu64(__m128d);
+extern __m128i __cdecl _mm_mask_cvttspd_epu64(__m128i, __mmask8, __m128d);
+extern __m128i __cdecl _mm_maskz_cvttspd_epu64(__mmask8, __m128d);
+extern __m256i __cdecl _mm256_cvttspd_epu64(__m256d);
+extern __m256i __cdecl _mm256_mask_cvttspd_epu64(__m256i, __mmask8, __m256d);
+extern __m256i __cdecl _mm256_maskz_cvttspd_epu64(__mmask8, __m256d);
+extern __m512i __cdecl _mm512_cvttspd_epu64(__m512d); 
+extern __m512i __cdecl _mm512_mask_cvttspd_epu64(__m512i, __mmask8, __m512d); 
+extern __m512i __cdecl _mm512_maskz_cvttspd_epu64(__mmask8, __m512d);
+extern __m512i __cdecl _mm512_cvtts_roundpd_epu64(__m512d, const int);
+extern __m512i __cdecl _mm512_mask_cvtts_roundpd_epu64(__m512i, __mmask8, __m512d, const int);
+extern __m512i __cdecl _mm512_maskz_cvtts_roundpd_epu64(__mmask8, __m512d, const int);
+
+
+extern __m128i __cdecl _mm_cvttspd_epu32(__m128d);
+extern __m128i __cdecl _mm_mask_cvttspd_epu32(__m128i, __mmask8, __m128d);
+extern __m128i __cdecl _mm_maskz_cvttspd_epu32(__mmask8, __m128d);
+extern __m128i __cdecl _mm256_cvttspd_epu32(__m256d);
+extern __m128i __cdecl _mm256_mask_cvttspd_epu32(__m128i, __mmask8, __m256d);
+extern __m128i __cdecl _mm256_maskz_cvttspd_epu32(__mmask8, __m256d);
+extern __m256i __cdecl _mm512_cvttspd_epu32(__m512d); 
+extern __m256i __cdecl _mm512_mask_cvttspd_epu32(__m256i, __mmask8, __m512d); 
+extern __m256i __cdecl _mm512_maskz_cvttspd_epu32(__mmask8, __m512d); 
+extern __m256i __cdecl _mm512_cvtts_roundpd_epu32(__m512d, const int);
+extern __m256i __cdecl _mm512_mask_cvtts_roundpd_epu32(__m256i, __mmask8, __m512d, const int);
+extern __m256i __cdecl _mm512_maskz_cvtts_roundpd_epu32(__mmask8, __m512d, const int);
+
+
+extern __m128i __cdecl _mm_cvttspd_epi64(__m128d);
+extern __m128i __cdecl _mm_mask_cvttspd_epi64(__m128i, __mmask8, __m128d);
+extern __m128i __cdecl _mm_maskz_cvttspd_epi64(__mmask8, __m128d);
+extern __m256i __cdecl _mm256_cvttspd_epi64(__m256d);
+extern __m256i __cdecl _mm256_mask_cvttspd_epi64(__m256i, __mmask8, __m256d);
+extern __m256i __cdecl _mm256_maskz_cvttspd_epi64(__mmask8, __m256d);
+extern __m512i __cdecl _mm512_cvttspd_epi64(__m512d); 
+extern __m512i __cdecl _mm512_mask_cvttspd_epi64(__m512i, __mmask8, __m512d);
+extern __m512i __cdecl _mm512_maskz_cvttspd_epi64(__mmask8, __m512d);
+extern __m512i __cdecl _mm512_cvtts_roundpd_epi64(__m512d, const int);
+extern __m512i __cdecl _mm512_mask_cvtts_roundpd_epi64(__m512i, __mmask8, __m512d, const int);
+extern __m512i __cdecl _mm512_maskz_cvtts_roundpd_epi64(__mmask8, __m512d, const int);
+
+
+extern __m128i __cdecl _mm_cvttspd_epi32(__m128d);
+extern __m128i __cdecl _mm_mask_cvttspd_epi32(__m128i, __mmask8, __m128d);
+extern __m128i __cdecl _mm_maskz_cvttspd_epi32(__mmask8, __m128d);
+extern __m128i __cdecl _mm256_cvttspd_epi32(__m256d);
+extern __m128i __cdecl _mm256_mask_cvttspd_epi32(__m128i, __mmask8, __m256d);
+extern __m128i __cdecl _mm256_maskz_cvttspd_epi32(__mmask8, __m256d); 
+extern __m256i __cdecl _mm512_cvttspd_epi32(__m512d);
+extern __m256i __cdecl _mm512_mask_cvttspd_epi32(__m256i, __mmask8, __m512d); 
+extern __m256i __cdecl _mm512_maskz_cvttspd_epi32(__mmask8, __m512d);
+extern __m256i __cdecl _mm512_cvtts_roundpd_epi32(__m512d, const int);
+extern __m256i __cdecl _mm512_mask_cvtts_roundpd_epi32(__m256i, __mmask8, __m512d, const int);
+extern __m256i __cdecl _mm512_maskz_cvtts_roundpd_epi32(__mmask8, __m512d, const int);
+
+
+extern __m128i __cdecl _mm_ipcvtbf16_epi16(__m128bh);
+extern __m128i __cdecl _mm_mask_ipcvtbf16_epi16(__m128i, __mmask8, __m128bh);
+extern __m128i __cdecl _mm_maskz_ipcvtbf16_epi16(__mmask8, __m128bh);
+extern __m256i __cdecl _mm256_ipcvtbf16_epi16(__m256bh);
+extern __m256i __cdecl _mm256_mask_ipcvtbf16_epi16(__m256i, __mmask16, __m256bh);
+extern __m256i __cdecl _mm256_maskz_ipcvtbf16_epi16(__mmask16, __m256bh);
+extern __m512i __cdecl _mm512_ipcvtbf16_epi16(__m512bh);
+extern __m512i __cdecl _mm512_mask_ipcvtbf16_epi16(__m512i, __mmask32, __m512bh);
+extern __m512i __cdecl _mm512_maskz_ipcvtbf16_epi16(__mmask32, __m512bh);
+
+
+extern __m128i __cdecl _mm_ipcvttbf16_epi16(__m128bh);
+extern __m128i __cdecl _mm_mask_ipcvttbf16_epi16(__m128i, __mmask8, __m128bh);
+extern __m128i __cdecl _mm_maskz_ipcvttbf16_epi16(__mmask8, __m128bh);
+extern __m256i __cdecl _mm256_ipcvttbf16_epi16(__m256bh);
+extern __m256i __cdecl _mm256_mask_ipcvttbf16_epi16(__m256i, __mmask16, __m256bh);
+extern __m256i __cdecl _mm256_maskz_ipcvttbf16_epi16(__mmask16, __m256bh);
+extern __m512i __cdecl _mm512_ipcvttbf16_epi16(__m512bh);
+extern __m512i __cdecl _mm512_mask_ipcvttbf16_epi16(__m512i, __mmask32, __m512bh);
+extern __m512i __cdecl _mm512_maskz_ipcvttbf16_epi16(__mmask32, __m512bh);
+
+
+extern __m128i __cdecl _mm_ipcvtbf16_epu16(__m128bh);
+extern __m128i __cdecl _mm_mask_ipcvtbf16_epu16(__m128i, __mmask8, __m128bh);
+extern __m128i __cdecl _mm_maskz_ipcvtbf16_epu16(__mmask8, __m128bh);
+extern __m256i __cdecl _mm256_ipcvtbf16_epu16(__m256bh);
+extern __m256i __cdecl _mm256_mask_ipcvtbf16_epu16(__m256i, __mmask16, __m256bh);
+extern __m256i __cdecl _mm256_maskz_ipcvtbf16_epu16(__mmask16, __m256bh);
+extern __m512i __cdecl _mm512_ipcvtbf16_epu16(__m512bh);
+extern __m512i __cdecl _mm512_mask_ipcvtbf16_epu16(__m512i, __mmask32, __m512bh);
+extern __m512i __cdecl _mm512_maskz_ipcvtbf16_epu16(__mmask32, __m512bh);
+
+
+extern __m128i __cdecl _mm_ipcvttbf16_epu16(__m128bh);
+extern __m128i __cdecl _mm_mask_ipcvttbf16_epu16(__m128i, __mmask8, __m128bh);
+extern __m128i __cdecl _mm_maskz_ipcvttbf16_epu16(__mmask8, __m128bh);
+extern __m256i __cdecl _mm256_ipcvttbf16_epu16(__m256bh);
+extern __m256i __cdecl _mm256_mask_ipcvttbf16_epu16(__m256i, __mmask16, __m256bh);
+extern __m256i __cdecl _mm256_maskz_ipcvttbf16_epu16(__mmask16, __m256bh);
+extern __m512i __cdecl _mm512_ipcvttbf16_epu16(__m512bh);
+extern __m512i __cdecl _mm512_mask_ipcvttbf16_epu16(__m512i, __mmask32, __m512bh);
+extern __m512i __cdecl _mm512_maskz_ipcvttbf16_epu16(__mmask32, __m512bh);
+
+
+extern __m128i __cdecl _mm_ipcvtph_epi16(__m128h);
+extern __m128i __cdecl _mm_mask_ipcvtph_epi16(__m128i, __mmask8, __m128h);
+extern __m128i __cdecl _mm_maskz_ipcvtph_epi16(__mmask8, __m128h);
+extern __m256i __cdecl _mm256_ipcvtph_epi16(__m256h);
+extern __m256i __cdecl _mm256_mask_ipcvtph_epi16(__m256i, __mmask16, __m256h);
+extern __m256i __cdecl _mm256_maskz_ipcvtph_epi16( __mmask16, __m256h);
+extern __m512i __cdecl _mm512_ipcvtph_epi16(__m512h);
+extern __m512i __cdecl _mm512_mask_ipcvtph_epi16(__m512i, __mmask32, __m512h);
+extern __m512i __cdecl _mm512_maskz_ipcvtph_epi16( __mmask32, __m512h);
+extern __m512i __cdecl _mm512_ipcvt_roundph_epi16(__m512h, const int);
+extern __m512i __cdecl _mm512_mask_ipcvt_roundph_epi16(__m512i, __mmask32, __m512h, const int);
+extern __m512i __cdecl _mm512_maskz_ipcvt_roundph_epi16(__mmask32, __m512h, const int);
+
+
+extern __m128i __cdecl _mm_ipcvttph_epi16(__m128h);
+extern __m128i __cdecl _mm_mask_ipcvttph_epi16(__m128i, __mmask8, __m128h);
+extern __m128i __cdecl _mm_maskz_ipcvttph_epi16(__mmask8, __m128h);
+extern __m256i __cdecl _mm256_ipcvttph_epi16(__m256h);
+extern __m256i __cdecl _mm256_mask_ipcvttph_epi16(__m256i, __mmask16, __m256h);
+extern __m256i __cdecl _mm256_maskz_ipcvttph_epi16( __mmask16, __m256h);
+extern __m512i __cdecl _mm512_ipcvttph_epi16(__m512h);
+extern __m512i __cdecl _mm512_mask_ipcvttph_epi16(__m512i, __mmask32, __m512h);
+extern __m512i __cdecl _mm512_maskz_ipcvttph_epi16( __mmask32, __m512h);
+extern __m512i __cdecl _mm512_ipcvtt_roundph_epi16(__m512h, const int);
+extern __m512i __cdecl _mm512_mask_ipcvtt_roundph_epi16(__m512i, __mmask32, __m512h, const int);
+extern __m512i __cdecl _mm512_maskz_ipcvtt_roundph_epi16(__mmask32, __m512h, const int);
+
+
+extern __m128i __cdecl _mm_ipcvtph_epu16(__m128h);
+extern __m128i __cdecl _mm_mask_ipcvtph_epu16(__m128i, __mmask8, __m128h);
+extern __m128i __cdecl _mm_maskz_ipcvtph_epu16(__mmask8, __m128h);
+extern __m256i __cdecl _mm256_ipcvtph_epu16(__m256h);
+extern __m256i __cdecl _mm256_mask_ipcvtph_epu16(__m256i, __mmask16, __m256h);
+extern __m256i __cdecl _mm256_maskz_ipcvtph_epu16( __mmask16, __m256h);
+extern __m512i __cdecl _mm512_ipcvtph_epu16(__m512h);
+extern __m512i __cdecl _mm512_mask_ipcvtph_epu16(__m512i, __mmask32, __m512h);
+extern __m512i __cdecl _mm512_maskz_ipcvtph_epu16( __mmask32, __m512h);
+extern __m512i __cdecl _mm512_ipcvt_roundph_epu16(__m512h, const int);
+extern __m512i __cdecl _mm512_mask_ipcvt_roundph_epu16(__m512i, __mmask32, __m512h, const int);
+extern __m512i __cdecl _mm512_maskz_ipcvt_roundph_epu16(__mmask32, __m512h, const int);
+
+
+extern __m128i __cdecl _mm_ipcvttph_epu16(__m128h);
+extern __m128i __cdecl _mm_mask_ipcvttph_epu16(__m128i, __mmask8, __m128h);
+extern __m128i __cdecl _mm_maskz_ipcvttph_epu16(__mmask8, __m128h);
+extern __m256i __cdecl _mm256_ipcvttph_epu16(__m256h);
+extern __m256i __cdecl _mm256_mask_ipcvttph_epu16(__m256i, __mmask16, __m256h);
+extern __m256i __cdecl _mm256_maskz_ipcvttph_epu16( __mmask16, __m256h);
+extern __m512i __cdecl _mm512_ipcvttph_epu16(__m512h);
+extern __m512i __cdecl _mm512_mask_ipcvttph_epu16(__m512i, __mmask32, __m512h);
+extern __m512i __cdecl _mm512_maskz_ipcvttph_epu16( __mmask32, __m512h);
+extern __m512i __cdecl _mm512_ipcvtt_roundph_epu16(__m512h, const int);
+extern __m512i __cdecl _mm512_mask_ipcvtt_roundph_epu16(__m512i, __mmask32, __m512h, const int);
+extern __m512i __cdecl _mm512_maskz_ipcvtt_roundph_epu16(__mmask32, __m512h, const int);
+
+
+extern __m128i __cdecl _mm_ipcvtps_epi32(__m128);
+extern __m128i __cdecl _mm_mask_ipcvtps_epi32(__m128i, __mmask8, __m128);
+extern __m128i __cdecl _mm_maskz_ipcvtps_epi32(__mmask8, __m128);
+extern __m256i __cdecl _mm256_ipcvtps_epi32(__m256);
+extern __m256i __cdecl _mm256_mask_ipcvtps_epi32(__m256i, __mmask8, __m256);
+extern __m256i __cdecl _mm256_maskz_ipcvtps_epi32(__mmask8, __m256);
+extern __m512i __cdecl _mm512_ipcvtps_epi32(__m512);
+extern __m512i __cdecl _mm512_mask_ipcvtps_epi32(__m512i, __mmask16, __m512);
+extern __m512i __cdecl _mm512_maskz_ipcvtps_epi32(__mmask16, __m512);
+extern __m512i __cdecl _mm512_ipcvt_roundps_epi32(__m512, const int);
+extern __m512i __cdecl _mm512_mask_ipcvt_roundps_epi32(__m512i, __mmask16, __m512, const int);
+extern __m512i __cdecl _mm512_maskz_ipcvt_roundps_epi32(__mmask16, __m512, const int);
+
+
+extern __m128i __cdecl _mm_ipcvttps_epi32(__m128);
+extern __m128i __cdecl _mm_mask_ipcvttps_epi32(__m128i, __mmask8, __m128);
+extern __m128i __cdecl _mm_maskz_ipcvttps_epi32(__mmask8, __m128);
+extern __m256i __cdecl _mm256_ipcvttps_epi32(__m256);
+extern __m256i __cdecl _mm256_mask_ipcvttps_epi32(__m256i, __mmask8, __m256);
+extern __m256i __cdecl _mm256_maskz_ipcvttps_epi32(__mmask8, __m256);
+extern __m512i __cdecl _mm512_ipcvttps_epi32(__m512);
+extern __m512i __cdecl _mm512_mask_ipcvttps_epi32(__m512i, __mmask16, __m512);
+extern __m512i __cdecl _mm512_maskz_ipcvttps_epi32(__mmask16, __m512);
+extern __m512i __cdecl _mm512_ipcvtt_roundps_epi32(__m512, const int);
+extern __m512i __cdecl _mm512_mask_ipcvtt_roundps_epi32(__m512i, __mmask16, __m512, const int);
+extern __m512i __cdecl _mm512_maskz_ipcvtt_roundps_epi32(__mmask16, __m512, const int);
+
+
+extern __m128i __cdecl _mm_ipcvtps_epu32(__m128);
+extern __m128i __cdecl _mm_mask_ipcvtps_epu32(__m128i, __mmask8, __m128);
+extern __m128i __cdecl _mm_maskz_ipcvtps_epu32(__mmask8, __m128);
+extern __m256i __cdecl _mm256_ipcvtps_epu32(__m256);
+extern __m256i __cdecl _mm256_mask_ipcvtps_epu32(__m256i, __mmask8, __m256);
+extern __m256i __cdecl _mm256_maskz_ipcvtps_epu32(__mmask8, __m256);
+extern __m512i __cdecl _mm512_ipcvtps_epu32(__m512);
+extern __m512i __cdecl _mm512_mask_ipcvtps_epu32(__m512i, __mmask16, __m512);
+extern __m512i __cdecl _mm512_maskz_ipcvtps_epu32(__mmask16, __m512);
+extern __m512i __cdecl _mm512_ipcvt_roundps_epu32(__m512, const int);
+extern __m512i __cdecl _mm512_mask_ipcvt_roundps_epu32(__m512i, __mmask16, __m512, const int);
+extern __m512i __cdecl _mm512_maskz_ipcvt_roundps_epu32(__mmask16, __m512, const int);
+
+
+extern __m128i __cdecl _mm_ipcvttps_epu32(__m128);
+extern __m128i __cdecl _mm_mask_ipcvttps_epu32(__m128i, __mmask8, __m128);
+extern __m128i __cdecl _mm_maskz_ipcvttps_epu32(__mmask8, __m128);
+extern __m256i __cdecl _mm256_ipcvttps_epu32(__m256);
+extern __m256i __cdecl _mm256_mask_ipcvttps_epu32(__m256i, __mmask8, __m256);
+extern __m256i __cdecl _mm256_maskz_ipcvttps_epu32(__mmask8, __m256);
+extern __m512i __cdecl _mm512_ipcvttps_epu32(__m512);
+extern __m512i __cdecl _mm512_mask_ipcvttps_epu32(__m512i, __mmask16, __m512);
+extern __m512i __cdecl _mm512_maskz_ipcvttps_epu32(__mmask16, __m512);
+extern __m512i __cdecl _mm512_ipcvtt_roundps_epu32(__m512, const int);
+extern __m512i __cdecl _mm512_mask_ipcvtt_roundps_epu32(__m512i, __mmask16, __m512, const int);
+extern __m512i __cdecl _mm512_maskz_ipcvtt_roundps_epu32(__mmask16, __m512, const int);
+
+
+
+extern __m128bh __cdecl _mm_minmax_pbh(__m128bh, __m128bh, const int);
+extern __m128bh __cdecl _mm_mask_minmax_pbh(__m128bh, __mmask8, __m128bh, __m128bh, const int);
+extern __m128bh __cdecl _mm_maskz_minmax_pbh(__mmask8, __m128bh, __m128bh, const int);
+extern __m256bh __cdecl _mm256_minmax_pbh(__m256bh, __m256bh, const int);
+extern __m256bh __cdecl _mm256_mask_minmax_pbh(__m256bh, __mmask16, __m256bh, __m256bh, const int);
+extern __m256bh __cdecl _mm256_maskz_minmax_pbh(__mmask16, __m256bh, __m256bh, const int);
+extern __m512bh __cdecl _mm512_minmax_pbh(__m512bh, __m512bh, const int);
+extern __m512bh __cdecl _mm512_mask_minmax_pbh(__m512bh, __mmask32, __m512bh, __m512bh, const int);
+extern __m512bh __cdecl _mm512_maskz_minmax_pbh(__mmask32, __m512bh, __m512bh, const int);
+
+
+extern __m128d __cdecl _mm_minmax_pd(__m128d, __m128d, const int);
+extern __m128d __cdecl _mm_mask_minmax_pd(__m128d, __mmask8, __m128d, __m128d, const int);
+extern __m128d __cdecl _mm_maskz_minmax_pd(__mmask8, __m128d, __m128d, const int);
+extern __m256d __cdecl _mm256_minmax_pd(__m256d, __m256d, const int);
+extern __m256d __cdecl _mm256_mask_minmax_pd(__m256d, __mmask8, __m256d, __m256d, const int);
+extern __m256d __cdecl _mm256_maskz_minmax_pd(__mmask8, __m256d, __m256d, const int);
+extern __m512d __cdecl _mm512_minmax_pd(__m512d, __m512d, const int);
+extern __m512d __cdecl _mm512_mask_minmax_pd(__m512d, __mmask8, __m512d, __m512d, const int);
+extern __m512d __cdecl _mm512_maskz_minmax_pd(__mmask8, __m512d, __m512d, const int);
+extern __m512d __cdecl _mm512_minmax_round_pd(__m512d, __m512d, const int, const int);
+extern __m512d __cdecl _mm512_mask_minmax_round_pd(__m512d, __mmask8, __m512d, __m512d, const int, const int);
+extern __m512d __cdecl _mm512_maskz_minmax_round_pd(__mmask8, __m512d, __m512d, const int, const int);
+
+
+extern __m128 __cdecl _mm_minmax_ps(__m128, __m128, const int);
+extern __m128 __cdecl _mm_mask_minmax_ps(__m128, __mmask8, __m128, __m128, const int);
+extern __m128 __cdecl _mm_maskz_minmax_ps(__mmask8, __m128, __m128, const int);
+extern __m256 __cdecl _mm256_minmax_ps(__m256, __m256, const int);
+extern __m256 __cdecl _mm256_mask_minmax_ps(__m256, __mmask8, __m256, __m256, const int);
+extern __m256 __cdecl _mm256_maskz_minmax_ps(__mmask8, __m256, __m256, const int);
+extern __m512 __cdecl _mm512_minmax_ps(__m512, __m512, const int);
+extern __m512 __cdecl _mm512_mask_minmax_ps(__m512, __mmask16, __m512, __m512, const int);
+extern __m512 __cdecl _mm512_maskz_minmax_ps(__mmask16, __m512, __m512, const int);
+extern __m512 __cdecl _mm512_minmax_round_ps(__m512, __m512, const int, const int);
+extern __m512 __cdecl _mm512_mask_minmax_round_ps(__m512, __mmask16, __m512, __m512, const int, const int);
+extern __m512 __cdecl _mm512_maskz_minmax_round_ps(__mmask16, __m512, __m512, const int, const int);
+
+
+extern __m128h __cdecl _mm_minmax_ph(__m128h, __m128h, const int);
+extern __m128h __cdecl _mm_mask_minmax_ph(__m128h, __mmask8, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_maskz_minmax_ph(__mmask8, __m128h, __m128h, const int);
+extern __m256h __cdecl _mm256_minmax_ph(__m256h, __m256h, const int);
+extern __m256h __cdecl _mm256_mask_minmax_ph(__m256h, __mmask16, __m256h, __m256h, const int);
+extern __m256h __cdecl _mm256_maskz_minmax_ph(__mmask16, __m256h, __m256h, const int);
+extern __m512h __cdecl _mm512_minmax_ph(__m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_mask_minmax_ph(__m512h, __mmask32, __m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_maskz_minmax_ph(__mmask32, __m512h, __m512h, const int);
+extern __m512h __cdecl _mm512_minmax_round_ph(__m512h, __m512h, const int, const int);
+extern __m512h __cdecl _mm512_mask_minmax_round_ph(__m512h, __mmask32, __m512h, __m512h, const int, const int);
+extern __m512h __cdecl _mm512_maskz_minmax_round_ph(__mmask32, __m512h, __m512h, const int, const int);
+
+
+extern __m128d __cdecl _mm_minmax_sd(__m128d, __m128d, const int);
+extern __m128d __cdecl _mm_mask_minmax_sd(__m128d, __mmask8, __m128d, __m128d, const int);
+extern __m128d __cdecl _mm_maskz_minmax_sd(__mmask8, __m128d, __m128d, const int);
+extern __m128d __cdecl _mm_minmax_round_sd(__m128d, __m128d, const int, const int);
+extern __m128d __cdecl _mm_mask_minmax_round_sd(__m128d, __mmask8, __m128d, __m128d, const int, const int);
+extern __m128d __cdecl _mm_maskz_minmax_round_sd(__mmask8, __m128d, __m128d, const int, const int);
+extern __m128h __cdecl _mm_minmax_sh(__m128h, __m128h, const int);
+extern __m128h __cdecl _mm_mask_minmax_sh(__m128h, __mmask8, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_maskz_minmax_sh(__mmask8, __m128h, __m128h, const int);
+extern __m128h __cdecl _mm_minmax_round_sh(__m128h, __m128h, const int, const int);
+extern __m128h __cdecl _mm_mask_minmax_round_sh(__m128h, __mmask8, __m128h, __m128h, const int, const int);
+extern __m128h __cdecl _mm_maskz_minmax_round_sh(__mmask8, __m128h, __m128h, const int, const int);
+extern __m128 __cdecl _mm_minmax_ss(__m128, __m128, const int);
+extern __m128 __cdecl _mm_mask_minmax_ss(__m128, __mmask8, __m128, __m128, const int);
+extern __m128 __cdecl _mm_maskz_minmax_ss(__mmask8, __m128, __m128, const int);
+extern __m128 __cdecl _mm_minmax_round_ss(__m128, __m128, const int, const int);
+extern __m128 __cdecl _mm_mask_minmax_round_ss(__m128, __mmask8, __m128, __m128, const int, const int);
+extern __m128 __cdecl _mm_maskz_minmax_round_ss(__mmask8, __m128, __m128, const int, const int);
+
+
+
+extern __m128i __cdecl _mm_move_epi32(__m128i);
+extern __m128i __cdecl _mm_move_epi16(__m128i);
+
+
+
+extern int __cdecl _mm_comx_sd(__m128d, __m128d, const int);
+extern int __cdecl _mm_comx_round_sd(__m128d, __m128d, const int, const int);
+extern int __cdecl _mm_comx_sh(__m128h, __m128h, const int);
+extern int __cdecl _mm_comx_round_sh(__m128h, __m128h, const int, const int);
+extern int __cdecl _mm_comx_ss(__m128, __m128, const int);
+extern int __cdecl _mm_comx_round_ss(__m128, __m128, const int, const int);
+extern int __cdecl _mm_ucomx_sd(__m128d, __m128d, const int);
+extern int __cdecl _mm_ucomx_round_sd(__m128d, __m128d, const int, const int);
+extern int __cdecl _mm_ucomx_sh(__m128h, __m128h, const int);
+extern int __cdecl _mm_ucomx_round_sh(__m128h, __m128h, const int, const int);
+extern int __cdecl _mm_ucomx_ss(__m128, __m128, const int);
+extern int __cdecl _mm_ucomx_round_ss(__m128, __m128, const int, const int);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 7192 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\zmmintrin.h"
+#line 2539 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+
+
+
+
+extern __m128i __cdecl _mm_madd52hi_avx_epu64(__m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_madd52hi_avx_epu64(__m256i, __m256i, __m256i);
+extern __m128i __cdecl _mm_madd52lo_avx_epu64(__m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_madd52lo_avx_epu64(__m256i, __m256i, __m256i);
+
+
+extern __m128 __cdecl _mm_bcstnebf16_ps(const __bfloat16 *);
+extern __m256 __cdecl _mm256_bcstnebf16_ps(const __bfloat16 *);
+extern __m128 __cdecl _mm_bcstnesh_ps(const void *);
+extern __m256 __cdecl _mm256_bcstnesh_ps(const void *);
+extern __m128 __cdecl _mm_cvtneebf16_ps(const __m128bh *);
+extern __m256 __cdecl _mm256_cvtneebf16_ps(const __m256bh *);
+extern __m128 __cdecl _mm_cvtneeph_ps(const __m128h *);
+extern __m256 __cdecl _mm256_cvtneeph_ps(const __m256h *);
+extern __m128 __cdecl _mm_cvtneobf16_ps(const __m128bh *);
+extern __m256 __cdecl _mm256_cvtneobf16_ps(const __m256bh *);
+extern __m128 __cdecl _mm_cvtneoph_ps(const __m128h *);
+extern __m256 __cdecl _mm256_cvtneoph_ps(const __m256h *);
+extern __m128bh __cdecl _mm_cvtneps_avx_pbh(__m128);
+extern __m128bh __cdecl _mm256_cvtneps_avx_pbh(__m256);
+
+
+extern __m128i __cdecl _mm_dpbssd_epi32(__m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_dpbssd_epi32(__m256i, __m256i, __m256i);
+extern __m128i __cdecl _mm_dpbssds_epi32( __m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_dpbssds_epi32(__m256i, __m256i, __m256i);
+extern __m128i __cdecl _mm_dpbsud_epi32(__m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_dpbsud_epi32(__m256i, __m256i, __m256i);
+extern __m128i __cdecl _mm_dpbsuds_epi32( __m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_dpbsuds_epi32(__m256i, __m256i, __m256i);
+extern __m128i __cdecl _mm_dpbuud_epi32(__m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_dpbuud_epi32(__m256i, __m256i, __m256i);
+extern __m128i __cdecl _mm_dpbuuds_epi32( __m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_dpbuuds_epi32(__m256i, __m256i, __m256i);
+
+
+extern void __cdecl _aadd_i32(int*, int);
+extern void __cdecl _aand_i32(int*, int);
+extern void __cdecl _aor_i32(int*, int);
+extern void __cdecl _axor_i32(int*, int);
+
+extern void __cdecl _aadd_i64(__int64*, __int64);
+extern void __cdecl _aand_i64(__int64*, __int64);
+extern void __cdecl _aor_i64(__int64*, __int64);
+extern void __cdecl _axor_i64(__int64*, __int64);
+#line 2593 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+
+extern float  __cdecl __rsqrt14_ss(float);
+extern double __cdecl __rsqrt14_sd(double);
+extern float  __cdecl __rsqrt_ss(float);
+extern float  __cdecl __sqrt_ss(float);
+extern double __cdecl __sqrt_sd(double);
+extern float  __cdecl __max_ss(float, float);
+extern double __cdecl __max_sd(double, double);
+extern float  __cdecl __min_ss(float, float);
+extern double __cdecl __min_sd(double, double);
+
+
+
+
+typedef enum {
+  _CMPCCX_O,   
+  _CMPCCX_NO,  
+  _CMPCCX_B,   
+  _CMPCCX_NB,  
+  _CMPCCX_Z,   
+  _CMPCCX_NZ,  
+  _CMPCCX_BE,  
+  _CMPCCX_NBE, 
+  _CMPCCX_S,   
+  _CMPCCX_NS,  
+  _CMPCCX_P,   
+  _CMPCCX_NP,  
+  _CMPCCX_L,   
+  _CMPCCX_NL,  
+  _CMPCCX_LE,  
+  _CMPCCX_NLE, 
+} _CMPCCX_ENUM;
+
+extern int __cdecl _cmpccxadd_epi32(void *, int, int, const int);
+extern __int64 __cdecl _cmpccxadd_epi64(void *, __int64, __int64, const int);
+
+#line 2633 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+extern double __round_sd(double, int);
+extern float __round_ss(float, int);
+
+extern __m128i __cdecl _mm_dpwsud_epi32(__m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_dpwsud_epi32(__m256i, __m256i, __m256i);
+extern __m128i __cdecl _mm_dpwsuds_epi32(__m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_dpwsuds_epi32(__m256i, __m256i, __m256i);
+extern __m128i __cdecl _mm_dpwusd_epi32(__m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_dpwusd_epi32(__m256i, __m256i, __m256i);
+extern __m128i __cdecl _mm_dpwusds_epi32(__m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_dpwusds_epi32(__m256i, __m256i, __m256i);
+extern __m128i __cdecl _mm_dpwuud_epi32(__m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_dpwuud_epi32(__m256i, __m256i, __m256i);
+extern __m128i __cdecl _mm_dpwuuds_epi32(__m128i, __m128i, __m128i);
+extern __m256i __cdecl _mm256_dpwuuds_epi32(__m256i, __m256i, __m256i);
+
+
+
+extern long long __cdecl _pbndkb(const void*, void*);
+#line 2655 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+extern __m256i __cdecl _mm256_sha512msg1_epi64(__m256i, __m128i);
+extern __m256i __cdecl _mm256_sha512msg2_epi64(__m256i, __m256i);
+extern __m256i __cdecl _mm256_sha512rnds2_epi64(__m256i, __m256i, __m128i);
+
+
+extern __m128i __cdecl _mm_sm3msg1_epi32(__m128i, __m128i, __m128i);
+extern __m128i __cdecl _mm_sm3msg2_epi32(__m128i, __m128i, __m128i);
+extern __m128i __cdecl _mm_sm3rnds2_epi32(__m128i, __m128i, __m128i, const int);
+
+
+extern __m128i __cdecl _mm_sm4key4_epi32(__m128i, __m128i);
+extern __m256i __cdecl _mm256_sm4key4_epi32(__m256i, __m256i);
+extern __m128i __cdecl _mm_sm4rnds4_epi32(__m128i, __m128i);
+extern __m256i __cdecl _mm256_sm4rnds4_epi32(__m256i, __m256i);
+
+
+extern unsigned __int64 __cdecl _urdmsr(unsigned __int64);
+extern void __cdecl _uwrmsr(unsigned __int64, unsigned __int64);
+#line 2676 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+__m128i __iso_volatile_ia_load128(const volatile __m128i*);
+__m256i __iso_volatile_ia_load256(const volatile __m256i*);
+__m512i __iso_volatile_ia_load512(const volatile __m512i*);
+void __iso_volatile_ia_store128(volatile __m128i*, __m128i);
+void __iso_volatile_ia_store256(volatile __m256i*, __m256i);
+void __iso_volatile_ia_store512(volatile __m512i*, __m512i);
+__m128i __iso_volatile_ia_nt_load128(const volatile __m128i*);
+__m256i __iso_volatile_ia_nt_load256(const volatile __m256i*);
+__m512i __iso_volatile_ia_nt_load512(const volatile __m512i*);
+void __iso_volatile_ia_nt_store128(volatile __m128i*, __m128i);
+void __iso_volatile_ia_nt_store256(volatile __m256i*, __m256i);
+void __iso_volatile_ia_nt_store512(volatile __m512i*, __m512i);
+
+
+
+extern void _m_prefetchrs(const void *);
+
+
+extern char  __cdecl _movrs_i8(const void *);
+extern short __cdecl _movrs_i16(const void *);
+extern int   __cdecl _movrs_i32(const void *);
+extern long long __cdecl _movrs_i64(const void *);
+#line 2700 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+
+
+#line 2704 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+
+#line 2706 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+#line 2707 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+#line 2708 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\immintrin.h"
+#line 36 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin.h"
+        #line 1 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\ammintrin.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma once
+
+
+
+#line 37 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\ammintrin.h"
+
+
+
+#line 41 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\ammintrin.h"
+
+
+
+
+
+
+
+#line 49 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\ammintrin.h"
+
+
+
+#line 53 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\ammintrin.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+__m128 _mm_macc_ps(__m128, __m128, __m128);
+__m128d _mm_macc_pd(__m128d, __m128d, __m128d);
+__m128 _mm_macc_ss(__m128, __m128, __m128);
+__m128d _mm_macc_sd(__m128d, __m128d, __m128d);
+__m128 _mm_maddsub_ps(__m128, __m128, __m128);
+__m128d _mm_maddsub_pd(__m128d, __m128d, __m128d);
+__m128 _mm_msubadd_ps(__m128, __m128, __m128);
+__m128d _mm_msubadd_pd(__m128d, __m128d, __m128d);
+__m128 _mm_msub_ps(__m128, __m128, __m128);
+__m128d _mm_msub_pd(__m128d, __m128d, __m128d);
+__m128 _mm_msub_ss(__m128, __m128, __m128);
+__m128d _mm_msub_sd(__m128d, __m128d, __m128d);
+__m128 _mm_nmacc_ps(__m128, __m128, __m128);
+__m128d _mm_nmacc_pd(__m128d, __m128d, __m128d);
+__m128 _mm_nmacc_ss(__m128, __m128, __m128);
+__m128d _mm_nmacc_sd(__m128d, __m128d, __m128d);
+__m128 _mm_nmsub_ps(__m128, __m128, __m128);
+__m128d _mm_nmsub_pd(__m128d, __m128d, __m128d);
+__m128 _mm_nmsub_ss(__m128, __m128, __m128);
+__m128d _mm_nmsub_sd(__m128d, __m128d, __m128d);
+
+
+__m128i _mm_maccs_epi16(__m128i, __m128i, __m128i);
+__m128i _mm_macc_epi16(__m128i, __m128i, __m128i);
+__m128i _mm_maccsd_epi16(__m128i, __m128i, __m128i);
+__m128i _mm_maccd_epi16(__m128i, __m128i, __m128i);
+__m128i _mm_maccs_epi32(__m128i, __m128i, __m128i);
+__m128i _mm_macc_epi32(__m128i, __m128i, __m128i);
+__m128i _mm_maccslo_epi32(__m128i, __m128i, __m128i);
+__m128i _mm_macclo_epi32(__m128i, __m128i, __m128i);
+__m128i _mm_maccshi_epi32(__m128i, __m128i, __m128i);
+__m128i _mm_macchi_epi32(__m128i, __m128i, __m128i);
+__m128i _mm_maddsd_epi16(__m128i, __m128i, __m128i);
+__m128i _mm_maddd_epi16(__m128i, __m128i, __m128i);
+
+
+__m128i _mm_haddw_epi8(__m128i);
+__m128i _mm_haddd_epi8(__m128i);
+__m128i _mm_haddq_epi8(__m128i);
+__m128i _mm_haddd_epi16(__m128i);
+__m128i _mm_haddq_epi16(__m128i);
+__m128i _mm_haddq_epi32(__m128i);
+__m128i _mm_haddw_epu8(__m128i);
+__m128i _mm_haddd_epu8(__m128i);
+__m128i _mm_haddq_epu8(__m128i);
+__m128i _mm_haddd_epu16(__m128i);
+__m128i _mm_haddq_epu16(__m128i);
+__m128i _mm_haddq_epu32(__m128i);
+__m128i _mm_hsubw_epi8(__m128i);
+__m128i _mm_hsubd_epi16(__m128i);
+__m128i _mm_hsubq_epi32(__m128i);
+
+
+__m128i _mm_cmov_si128(__m128i, __m128i, __m128i);
+__m128i _mm_perm_epi8(__m128i, __m128i, __m128i);
+
+
+__m128i _mm_rot_epi8(__m128i, __m128i);
+__m128i _mm_rot_epi16(__m128i, __m128i);
+__m128i _mm_rot_epi32(__m128i, __m128i);
+__m128i _mm_rot_epi64(__m128i, __m128i);
+__m128i _mm_roti_epi8(__m128i, int);
+__m128i _mm_roti_epi16(__m128i, int);
+__m128i _mm_roti_epi32(__m128i, int);
+__m128i _mm_roti_epi64(__m128i, int);
+__m128i _mm_shl_epi8(__m128i, __m128i);
+__m128i _mm_shl_epi16(__m128i, __m128i);
+__m128i _mm_shl_epi32(__m128i, __m128i);
+__m128i _mm_shl_epi64(__m128i, __m128i);
+__m128i _mm_sha_epi8(__m128i, __m128i);
+__m128i _mm_sha_epi16(__m128i, __m128i);
+__m128i _mm_sha_epi32(__m128i, __m128i);
+__m128i _mm_sha_epi64(__m128i, __m128i);
+
+
+
+__m128i _mm_com_epu8(__m128i, __m128i, int);
+__m128i _mm_com_epu16(__m128i, __m128i, int);
+__m128i _mm_com_epu32(__m128i, __m128i, int);
+__m128i _mm_com_epu64(__m128i, __m128i, int);
+__m128i _mm_com_epi8(__m128i, __m128i, int);
+__m128i _mm_com_epi16(__m128i, __m128i, int);
+__m128i _mm_com_epi32(__m128i, __m128i, int);
+__m128i _mm_com_epi64(__m128i, __m128i, int);
+
+
+
+__m128 _mm_frcz_ps(__m128);
+__m128d _mm_frcz_pd(__m128d);
+__m128 _mm_frcz_ss(__m128, __m128);
+__m128d _mm_frcz_sd(__m128d, __m128d);
+
+
+
+
+
+
+
+
+__m128 _mm_permute2_ps(__m128, __m128, __m128i, int);
+__m128d _mm_permute2_pd(__m128d, __m128d, __m128i, int);
+
+
+
+__m256 _mm256_macc_ps(__m256, __m256, __m256);
+__m256d _mm256_macc_pd(__m256d, __m256d, __m256d);
+__m256 _mm256_maddsub_ps(__m256, __m256, __m256);
+__m256d _mm256_maddsub_pd(__m256d, __m256d, __m256d);
+__m256 _mm256_msubadd_ps(__m256, __m256, __m256);
+__m256d _mm256_msubadd_pd(__m256d, __m256d, __m256d);
+__m256 _mm256_msub_ps(__m256, __m256, __m256);
+__m256d _mm256_msub_pd(__m256d, __m256d, __m256d);
+__m256 _mm256_nmacc_ps(__m256, __m256, __m256);
+__m256d _mm256_nmacc_pd(__m256d, __m256d, __m256d);
+__m256 _mm256_nmsub_ps(__m256, __m256, __m256);
+__m256d _mm256_nmsub_pd(__m256d, __m256d, __m256d);
+__m256i _mm256_cmov_si256(__m256i, __m256i, __m256i);
+__m256 _mm256_frcz_ps(__m256);
+__m256d _mm256_frcz_pd(__m256d);
+__m256 _mm256_permute2_ps(__m256, __m256, __m256i, int);
+__m256d _mm256_permute2_pd(__m256d, __m256d, __m256i, int);
+
+
+void __llwpcb(void *);
+void *__slwpcb(void);
+void __lwpval32(unsigned int, unsigned int, unsigned int);
+unsigned char __lwpins32(unsigned int, unsigned int, unsigned int);
+
+void __lwpval64(unsigned __int64, unsigned int, unsigned int);
+unsigned char __lwpins64(unsigned __int64, unsigned int, unsigned int);
+#line 277 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\ammintrin.h"
+
+
+unsigned int _bextr_u32(unsigned int, unsigned int, unsigned int);
+unsigned int _andn_u32(unsigned int, unsigned int);
+unsigned int _tzcnt_u32(unsigned int);
+unsigned int _lzcnt_u32(unsigned int);
+unsigned int _blsr_u32(unsigned int);
+unsigned int _blsmsk_u32(unsigned int);
+unsigned int _blsi_u32(unsigned int);
+
+unsigned __int64 _bextr_u64(unsigned __int64, unsigned int, unsigned int);
+unsigned __int64 _andn_u64(unsigned __int64, unsigned __int64);
+unsigned __int64 _tzcnt_u64(unsigned __int64);
+unsigned __int64 _lzcnt_u64(unsigned __int64);
+unsigned __int64 _blsr_u64(unsigned __int64);
+unsigned __int64 _blsmsk_u64(unsigned __int64);
+unsigned __int64 _blsi_u64(unsigned __int64);
+#line 295 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\ammintrin.h"
+
+
+unsigned int _bextri_u32(unsigned int, unsigned int);
+unsigned int _blcfill_u32(unsigned int);
+unsigned int _blsfill_u32(unsigned int);
+unsigned int _blcs_u32(unsigned int);
+unsigned int _tzmsk_u32(unsigned int);
+unsigned int _blcic_u32(unsigned int);
+unsigned int _blsic_u32(unsigned int);
+unsigned int _t1mskc_u32(unsigned int);
+unsigned int _blcmsk_u32(unsigned int);
+unsigned int _blci_u32(unsigned int);
+
+unsigned __int64 _bextri_u64(unsigned __int64, unsigned int);
+unsigned __int64 _blcfill_u64(unsigned __int64);
+unsigned __int64 _blsfill_u64(unsigned __int64);
+unsigned __int64 _blcs_u64(unsigned __int64);
+unsigned __int64 _tzmsk_u64(unsigned __int64);
+unsigned __int64 _blcic_u64(unsigned __int64);
+unsigned __int64 _blsic_u64(unsigned __int64);
+unsigned __int64 _t1mskc_u64(unsigned __int64);
+unsigned __int64 _blcmsk_u64(unsigned __int64);
+unsigned __int64 _blci_u64(unsigned __int64);
+#line 319 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\ammintrin.h"
+
+void _mm_monitorx(void const *, unsigned int, unsigned int);
+void _mm_mwaitx(unsigned int, unsigned int, unsigned int);
+
+void _mm_clzero(void const *);
+unsigned __int64 _rdpru(unsigned int);
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 346 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\ammintrin.h"
+
+
+typedef struct rmp_entry {
+    unsigned __int64 guest_pa;
+    unsigned __int8  assigned;
+    unsigned __int8  page_size : 1;
+    unsigned __int8  rmp_2mb_region_status : 1;
+    unsigned __int8  reserved1 : 6;
+    unsigned __int8  immutable;
+    unsigned __int8  reserved2;
+    unsigned __int32 asid;
+} rmp_entry;
+
+typedef struct rmpquery_result {
+    unsigned __int8  target_perm_mask;
+    unsigned __int8  vmsa;
+    unsigned __int8  page_size;
+} rmpquery_result;
+
+unsigned int __rmpupdate(unsigned __int64, rmp_entry*);
+unsigned int __pvalidate(unsigned __int64, unsigned __int8, unsigned __int8, unsigned __int8*);
+unsigned int __psmash(unsigned __int64);
+unsigned int __rmpadjust(unsigned __int64, unsigned __int8, unsigned __int8, unsigned __int8);
+unsigned int __rmpquery(unsigned __int64, unsigned __int8, rmpquery_result*);
+unsigned int __rmpread(unsigned __int64, rmp_entry*);
+
+#line 373 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\ammintrin.h"
+#line 374 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\ammintrin.h"
+
+
+
+void __svm_invlpgb(void*, int);
+void __svm_tlbsync(void);
+
+
+
+
+#line 384 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\ammintrin.h"
+
+#line 386 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\ammintrin.h"
+#line 387 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\ammintrin.h"
+#line 388 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\ammintrin.h"
+#line 37 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin.h"
+    #line 38 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin.h"
+
+    
+
+#line 42 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin.h"
+
+    
+
+
+#line 47 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin.h"
+
+    
+
+
+#line 52 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin.h"
+#line 53 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin.h"
+
+
+
+#line 57 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin.h"
+
+
+
+
+#pragma warning(push)
+#pragma warning(disable: 28251)
+
+
+void * _AddressOfReturnAddress(void);
+
+
+
+
+
+
+
+
+
+
+int _cvt_dtoi_fast (double);
+int _cvt_dtoi_sat (double);
+int _cvt_dtoi_sent (double);
+long long _cvt_dtoll_fast (double);
+long long _cvt_dtoll_sat (double);
+long long _cvt_dtoll_sent (double);
+unsigned _cvt_dtoui_fast (double);
+unsigned _cvt_dtoui_sat (double);
+unsigned _cvt_dtoui_sent (double);
+unsigned long long _cvt_dtoull_fast (double);
+unsigned long long _cvt_dtoull_sat (double);
+unsigned long long _cvt_dtoull_sent (double);
+int _cvt_ftoi_fast (float);
+int _cvt_ftoi_sat (float);
+int _cvt_ftoi_sent (float);
+long long _cvt_ftoll_fast (float);
+long long _cvt_ftoll_sat (float);
+long long _cvt_ftoll_sent (float);
+unsigned _cvt_ftoui_fast (float);
+unsigned _cvt_ftoui_sat (float);
+unsigned _cvt_ftoui_sent (float);
+unsigned long long _cvt_ftoull_fast (float);
+unsigned long long _cvt_ftoull_sat (float);
+unsigned long long _cvt_ftoull_sent (float);
+
+
+
+
+
+long _interlockedadd(long volatile * _Addend, long _Value);
+
+__int64 _interlockedadd64(__int64 volatile * _Addend, __int64 _Value);
+
+
+
+
+
+
+
+short _InterlockedAnd16_np(short volatile * _Value, short _Mask);
+__int64 _InterlockedAnd64_np(__int64 volatile * _Value, __int64 _Mask);
+char _InterlockedAnd8_np(char volatile * _Value, char _Mask);
+long _InterlockedAnd_np(long volatile * _Value, long _Mask);
+unsigned char _interlockedbittestandset(long volatile *, long);
+
+
+
+unsigned char _InterlockedCompareExchange128_np(__int64 volatile * _Destination, __int64 _ExchangeHigh, __int64 _ExchangeLow, __int64 * _ComparandResult);
+short _InterlockedCompareExchange16_np(short volatile * _Destination, short _Exchange, short _Comparand);
+__int64 _InterlockedCompareExchange64_np(__int64 volatile * _Destination, __int64 _Exchange, __int64 _Comparand);
+void * _InterlockedCompareExchangePointer(void * volatile * _Destination, void * _Exchange, void * _Comparand);
+
+
+void * _InterlockedCompareExchangePointer_np(void * volatile * _Destination, void * _Exchange, void * _Comparand);
+
+long _InterlockedCompareExchange_np(long volatile * _Destination, long _Exchange, long _Comparand);
+
+
+
+
+
+
+
+
+
+void * _InterlockedExchangePointer(void * volatile * _Target, void * _Value);
+
+
+
+
+
+
+
+
+
+
+
+short _InterlockedOr16_np(short volatile * _Value, short _Mask);
+__int64 _InterlockedOr64_np(__int64 volatile * _Value, __int64 _Mask);
+char _InterlockedOr8_np(char volatile * _Value, char _Mask);
+long _InterlockedOr_np(long volatile * _Value, long _Mask);
+short _InterlockedXor16_np(short volatile * _Value, short _Mask);
+__int64 _InterlockedXor64_np(__int64 volatile * _Value, __int64 _Mask);
+char _InterlockedXor8_np(char volatile * _Value, char _Mask);
+long _InterlockedXor_np(long volatile * _Value, long _Mask);
+
+
+
+
+
+
+
+
+void _ReadBarrier(void);
+
+
+
+
+
+
+void * _ReturnAddress(void);
+
+void _WriteBarrier(void);
+
+
+
+
+
+
+
+
+
+void __addgsbyte(unsigned long, unsigned char);
+void __addgsdword(unsigned long, unsigned long);
+void __addgsqword(unsigned long, unsigned __int64);
+void __addgsword(unsigned long, unsigned short);
+
+
+
+
+void __clts(void);
+void __code_seg(const char *);
+void __cpuid(int[4], int);
+void __cpuidex(int[4], int, int);
+void __cdecl __debugbreak(void);
+
+__int64 __emul(int, int);
+unsigned __int64 __emulu(unsigned int, unsigned int);
+__declspec(noreturn) void __fastfail(unsigned int);
+void __faststorefence(void);
+unsigned int __getcallerseflags(void);
+void __halt(void);
+
+
+unsigned char __inbyte(unsigned short);
+void __inbytestring(unsigned short, unsigned char *, unsigned long);
+
+
+
+void __incgsbyte(unsigned long);
+void __incgsdword(unsigned long);
+void __incgsqword(unsigned long);
+void __incgsword(unsigned long);
+
+
+
+
+unsigned long __indword(unsigned short);
+void __indwordstring(unsigned short, unsigned long *, unsigned long);
+void __int2c(void);
+void __invlpg(void *);
+unsigned short __inword(unsigned short);
+void __inwordstring(unsigned short, unsigned short *, unsigned long);
+void __lidt(void *);
+unsigned __int64 __ll_lshift(unsigned __int64, int);
+__int64 __ll_rshift(__int64, int);
+void __movsb(unsigned char *, unsigned char const *, size_t);
+void __movsd(unsigned long *, unsigned long const *, size_t);
+void __movsq(unsigned long long *, unsigned long long const *, size_t);
+void __movsw(unsigned short *, unsigned short const *, size_t);
+__int64 __mulh(__int64, __int64);
+void __nop(void);
+void __nvreg_restore_fence(void);
+void __nvreg_save_fence(void);
+void __outbyte(unsigned short, unsigned char);
+void __outbytestring(unsigned short, unsigned char *, unsigned long);
+void __outdword(unsigned short, unsigned long);
+void __outdwordstring(unsigned short, unsigned long *, unsigned long);
+void __outword(unsigned short, unsigned short);
+void __outwordstring(unsigned short, unsigned short *, unsigned long);
+
+
+
+
+unsigned __int64 __rdtsc(void);
+unsigned __int64 __rdtscp(unsigned int *);
+unsigned __int64 __readcr0(void);
+
+unsigned __int64 __readcr2(void);
+
+unsigned __int64 __readcr3(void);
+
+unsigned __int64 __readcr4(void);
+
+unsigned __int64 __readcr8(void);
+
+unsigned __int64 __readdr(unsigned int);
+
+unsigned __int64 __readeflags(void);
+
+
+
+
+
+unsigned char __readgsbyte(unsigned long);
+unsigned long __readgsdword(unsigned long);
+unsigned __int64 __readgsqword(unsigned long);
+unsigned short __readgsword(unsigned long);
+unsigned __int64 __readmsr(unsigned long);
+void __readmsrlist(unsigned __int64, unsigned __int64 *, unsigned __int64 *);
+unsigned __int64 __readpmc(unsigned long);
+
+
+
+
+double __rint(double);
+float __rintf(float);
+double __nearbyint(double);
+float __nearbyintf(float);
+unsigned long __segmentlimit(unsigned long);
+
+void __sidt(void *);
+
+void __stosb(unsigned char *, unsigned char, size_t);
+void __stosd(unsigned long *, unsigned long, size_t);
+void __stosq(unsigned __int64 *, unsigned __int64, size_t);
+void __stosw(unsigned short *, unsigned short, size_t);
+void __svm_clgi(void);
+void __svm_invlpga(void *, int);
+void __svm_skinit(int);
+void __svm_stgi(void);
+void __svm_vmload(size_t);
+void __svm_vmrun(size_t);
+void __svm_vmsave(size_t);
+
+
+
+
+
+void __ud2(void);
+unsigned __int64 __ull_rshift(unsigned __int64, int);
+void __vmx_off(void);
+unsigned char __vmx_on(unsigned __int64 *);
+unsigned char __vmx_vmclear(unsigned __int64 *);
+unsigned char __vmx_vmlaunch(void);
+unsigned char __vmx_vmptrld(unsigned __int64 *);
+void __vmx_vmptrst(unsigned __int64 *);
+unsigned char __vmx_vmread(size_t, size_t *);
+unsigned char __vmx_vmresume(void);
+unsigned char __vmx_vmwrite(size_t, size_t);
+void __wbinvd(void);
+
+
+void __writecr0(unsigned __int64);
+
+void __writecr2(unsigned __int64);
+
+void __writecr3(unsigned __int64);
+
+void __writecr4(unsigned __int64);
+
+void __writecr8(unsigned __int64);
+
+void __writedr(unsigned int, unsigned __int64);
+
+void __writeeflags(unsigned __int64);
+
+
+
+
+
+void __writegsbyte(unsigned long, unsigned char);
+void __writegsdword(unsigned long, unsigned long);
+void __writegsqword(unsigned long, unsigned __int64);
+void __writegsword(unsigned long, unsigned short);
+void __writemsr(unsigned long, unsigned __int64);
+void __writemsrlist(unsigned __int64, unsigned __int64 *, unsigned __int64 *);
+void __writemsrns(unsigned long, unsigned __int64);
+
+
+
+
+unsigned char _bittest64(__int64 const *, __int64);
+unsigned char _bittestandcomplement(long *, long);
+unsigned char _bittestandcomplement64(__int64 *, __int64);
+unsigned char _bittestandreset(long *, long);
+unsigned char _bittestandreset64(__int64 *, __int64);
+unsigned char _bittestandset(long *, long);
+unsigned char _bittestandset64(__int64 *, __int64);
+   unsigned __int64 __cdecl _byteswap_uint64(  unsigned __int64);
+   unsigned long __cdecl _byteswap_ulong(  unsigned long);
+   unsigned short __cdecl _byteswap_ushort(  unsigned short);
+void __cdecl _disable(void);
+void __cdecl _enable(void);
+unsigned char _interlockedbittestandreset(long volatile *, long);
+unsigned char _interlockedbittestandreset64(__int64 volatile *, __int64);
+
+
+
+
+
+
+unsigned char _interlockedbittestandset64(__int64 volatile *, __int64);
+
+
+
+
+
+
+
+
+
+
+
+
+
+   unsigned long __cdecl _lrotl(  unsigned long,   int);
+   unsigned long __cdecl _lrotr(  unsigned long,   int);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void _m_prefetch(void *);
+void _m_prefetchw(volatile const void *);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+__m128i _mm_abs_epi16(__m128i);
+__m128i _mm_abs_epi32(__m128i);
+__m128i _mm_abs_epi8(__m128i);
+
+
+
+__m128i _mm_add_epi16(__m128i, __m128i);
+__m128i _mm_add_epi32(__m128i, __m128i);
+__m128i _mm_add_epi64(__m128i, __m128i);
+__m128i _mm_add_epi8(__m128i, __m128i);
+__m128d _mm_add_pd(__m128d, __m128d);
+__m128 _mm_add_ps(__m128, __m128);
+__m128d _mm_add_sd(__m128d, __m128d);
+
+__m128 _mm_add_ss(__m128, __m128);
+__m128i _mm_adds_epi16(__m128i, __m128i);
+__m128i _mm_adds_epi8(__m128i, __m128i);
+__m128i _mm_adds_epu16(__m128i, __m128i);
+__m128i _mm_adds_epu8(__m128i, __m128i);
+__m128d _mm_addsub_pd(__m128d, __m128d);
+__m128 _mm_addsub_ps(__m128, __m128);
+__m128i _mm_alignr_epi8(__m128i, __m128i, int);
+
+__m128d _mm_and_pd(__m128d, __m128d);
+__m128 _mm_and_ps(__m128, __m128);
+__m128i _mm_and_si128(__m128i, __m128i);
+__m128d _mm_andnot_pd(__m128d, __m128d);
+__m128 _mm_andnot_ps(__m128, __m128);
+__m128i _mm_andnot_si128(__m128i, __m128i);
+__m128i _mm_avg_epu16(__m128i, __m128i);
+__m128i _mm_avg_epu8(__m128i, __m128i);
+__m128i _mm_blend_epi16(__m128i, __m128i, int);
+__m128d _mm_blend_pd(__m128d, __m128d, int);
+__m128 _mm_blend_ps(__m128, __m128, int);
+__m128i _mm_blendv_epi8(__m128i, __m128i, __m128i);
+__m128d _mm_blendv_pd(__m128d, __m128d, __m128d);
+__m128 _mm_blendv_ps(__m128, __m128, __m128);
+void _mm_clflush(void const *);
+void _mm_clflushopt(void const *);
+void _mm_clwb(void const *);
+void _mm_clzero(void const *);
+__m128i _mm_cmpeq_epi16(__m128i, __m128i);
+__m128i _mm_cmpeq_epi32(__m128i, __m128i);
+__m128i _mm_cmpeq_epi64(__m128i, __m128i);
+__m128i _mm_cmpeq_epi8(__m128i, __m128i);
+__m128d _mm_cmpeq_pd(__m128d, __m128d);
+__m128 _mm_cmpeq_ps(__m128, __m128);
+__m128d _mm_cmpeq_sd(__m128d, __m128d);
+__m128 _mm_cmpeq_ss(__m128, __m128);
+int _mm_cmpestra(__m128i, int, __m128i, int, int);
+int _mm_cmpestrc(__m128i, int, __m128i, int, int);
+int _mm_cmpestri(__m128i, int, __m128i, int, int);
+__m128i _mm_cmpestrm(__m128i, int, __m128i, int, int);
+int _mm_cmpestro(__m128i, int, __m128i, int, int);
+int _mm_cmpestrs(__m128i, int, __m128i, int, int);
+int _mm_cmpestrz(__m128i, int, __m128i, int, int);
+__m128d _mm_cmpge_pd(__m128d, __m128d);
+__m128 _mm_cmpge_ps(__m128, __m128);
+__m128d _mm_cmpge_sd(__m128d, __m128d);
+__m128 _mm_cmpge_ss(__m128, __m128);
+__m128i _mm_cmpgt_epi16(__m128i, __m128i);
+__m128i _mm_cmpgt_epi32(__m128i, __m128i);
+__m128i _mm_cmpgt_epi64(__m128i, __m128i);
+__m128i _mm_cmpgt_epi8(__m128i, __m128i);
+__m128d _mm_cmpgt_pd(__m128d, __m128d);
+__m128 _mm_cmpgt_ps(__m128, __m128);
+__m128d _mm_cmpgt_sd(__m128d, __m128d);
+__m128 _mm_cmpgt_ss(__m128, __m128);
+int _mm_cmpistra(__m128i, __m128i, int);
+int _mm_cmpistrc(__m128i, __m128i, int);
+int _mm_cmpistri(__m128i, __m128i, int);
+__m128i _mm_cmpistrm(__m128i, __m128i, int);
+int _mm_cmpistro(__m128i, __m128i, int);
+int _mm_cmpistrs(__m128i, __m128i, int);
+int _mm_cmpistrz(__m128i, __m128i, int);
+__m128d _mm_cmple_pd(__m128d, __m128d);
+__m128 _mm_cmple_ps(__m128, __m128);
+__m128d _mm_cmple_sd(__m128d, __m128d);
+__m128 _mm_cmple_ss(__m128, __m128);
+__m128i _mm_cmplt_epi16(__m128i, __m128i);
+__m128i _mm_cmplt_epi32(__m128i, __m128i);
+__m128i _mm_cmplt_epi8(__m128i, __m128i);
+__m128d _mm_cmplt_pd(__m128d, __m128d);
+__m128 _mm_cmplt_ps(__m128, __m128);
+__m128d _mm_cmplt_sd(__m128d, __m128d);
+__m128 _mm_cmplt_ss(__m128, __m128);
+__m128d _mm_cmpneq_pd(__m128d, __m128d);
+__m128 _mm_cmpneq_ps(__m128, __m128);
+__m128d _mm_cmpneq_sd(__m128d, __m128d);
+__m128 _mm_cmpneq_ss(__m128, __m128);
+__m128d _mm_cmpnge_pd(__m128d, __m128d);
+__m128 _mm_cmpnge_ps(__m128, __m128);
+__m128d _mm_cmpnge_sd(__m128d, __m128d);
+__m128 _mm_cmpnge_ss(__m128, __m128);
+__m128d _mm_cmpngt_pd(__m128d, __m128d);
+__m128 _mm_cmpngt_ps(__m128, __m128);
+__m128d _mm_cmpngt_sd(__m128d, __m128d);
+__m128 _mm_cmpngt_ss(__m128, __m128);
+__m128d _mm_cmpnle_pd(__m128d, __m128d);
+__m128 _mm_cmpnle_ps(__m128, __m128);
+__m128d _mm_cmpnle_sd(__m128d, __m128d);
+__m128 _mm_cmpnle_ss(__m128, __m128);
+__m128d _mm_cmpnlt_pd(__m128d, __m128d);
+__m128 _mm_cmpnlt_ps(__m128, __m128);
+__m128d _mm_cmpnlt_sd(__m128d, __m128d);
+__m128 _mm_cmpnlt_ss(__m128, __m128);
+__m128d _mm_cmpord_pd(__m128d, __m128d);
+__m128 _mm_cmpord_ps(__m128, __m128);
+__m128d _mm_cmpord_sd(__m128d, __m128d);
+__m128 _mm_cmpord_ss(__m128, __m128);
+__m128d _mm_cmpunord_pd(__m128d, __m128d);
+__m128 _mm_cmpunord_ps(__m128, __m128);
+__m128d _mm_cmpunord_sd(__m128d, __m128d);
+__m128 _mm_cmpunord_ss(__m128, __m128);
+int _mm_comieq_sd(__m128d, __m128d);
+int _mm_comieq_ss(__m128, __m128);
+int _mm_comige_sd(__m128d, __m128d);
+int _mm_comige_ss(__m128, __m128);
+int _mm_comigt_sd(__m128d, __m128d);
+int _mm_comigt_ss(__m128, __m128);
+int _mm_comile_sd(__m128d, __m128d);
+int _mm_comile_ss(__m128, __m128);
+int _mm_comilt_sd(__m128d, __m128d);
+int _mm_comilt_ss(__m128, __m128);
+int _mm_comineq_sd(__m128d, __m128d);
+int _mm_comineq_ss(__m128, __m128);
+unsigned int _mm_crc32_u16(unsigned int, unsigned short);
+unsigned int _mm_crc32_u32(unsigned int, unsigned int);
+unsigned __int64 _mm_crc32_u64(unsigned __int64, unsigned __int64);
+unsigned int _mm_crc32_u8(unsigned int, unsigned char);
+
+
+__m128 _mm_cvt_si2ss(__m128, int);
+int _mm_cvt_ss2si(__m128);
+__m128i _mm_cvtepi16_epi32(__m128i);
+__m128i _mm_cvtepi16_epi64(__m128i);
+__m128i _mm_cvtepi32_epi64(__m128i);
+__m128d _mm_cvtepi32_pd(__m128i);
+__m128 _mm_cvtepi32_ps(__m128i);
+__m128i _mm_cvtepi8_epi16(__m128i);
+__m128i _mm_cvtepi8_epi32(__m128i);
+__m128i _mm_cvtepi8_epi64(__m128i);
+__m128i _mm_cvtepu16_epi32(__m128i);
+__m128i _mm_cvtepu16_epi64(__m128i);
+__m128i _mm_cvtepu32_epi64(__m128i);
+__m128i _mm_cvtepu8_epi16(__m128i);
+__m128i _mm_cvtepu8_epi32(__m128i);
+__m128i _mm_cvtepu8_epi64(__m128i);
+__m128i _mm_cvtpd_epi32(__m128d);
+
+__m128 _mm_cvtpd_ps(__m128d);
+
+__m128i _mm_cvtps_epi32(__m128);
+__m128d _mm_cvtps_pd(__m128);
+int _mm_cvtsd_si32(__m128d);
+__int64 _mm_cvtsd_si64(__m128d);
+__int64 _mm_cvtsd_si64x(__m128d);
+__m128 _mm_cvtsd_ss(__m128, __m128d);
+int _mm_cvtsi128_si32(__m128i);
+__int64 _mm_cvtsi128_si64(__m128i);
+__int64 _mm_cvtsi128_si64x(__m128i);
+__m128d _mm_cvtsi32_sd(__m128d, int);
+__m128i _mm_cvtsi32_si128(int);
+__m128d _mm_cvtsi64_sd(__m128d, __int64);
+__m128i _mm_cvtsi64_si128(__int64);
+__m128 _mm_cvtsi64_ss(__m128, __int64);
+__m128d _mm_cvtsi64x_sd(__m128d, __int64);
+__m128i _mm_cvtsi64x_si128(__int64);
+__m128 _mm_cvtsi64x_ss(__m128, __int64);
+__m128d _mm_cvtss_sd(__m128d, __m128);
+__int64 _mm_cvtss_si64(__m128);
+__int64 _mm_cvtss_si64x(__m128);
+
+int _mm_cvtt_ss2si(__m128);
+__m128i _mm_cvttpd_epi32(__m128d);
+
+__m128i _mm_cvttps_epi32(__m128);
+int _mm_cvttsd_si32(__m128d);
+__int64 _mm_cvttsd_si64(__m128d);
+__int64 _mm_cvttsd_si64x(__m128d);
+__int64 _mm_cvttss_si64(__m128);
+__int64 _mm_cvttss_si64x(__m128);
+__m128d _mm_div_pd(__m128d, __m128d);
+__m128 _mm_div_ps(__m128, __m128);
+__m128d _mm_div_sd(__m128d, __m128d);
+__m128 _mm_div_ss(__m128, __m128);
+__m128d _mm_dp_pd(__m128d, __m128d, int);
+__m128 _mm_dp_ps(__m128, __m128, int);
+int _mm_extract_epi16(__m128i, int);
+int _mm_extract_epi32(__m128i, int);
+__int64 _mm_extract_epi64(__m128i, int);
+int _mm_extract_epi8(__m128i, int);
+int _mm_extract_ps(__m128, int);
+__m128i _mm_extract_si64(__m128i, __m128i);
+__m128i _mm_extracti_si64(__m128i, int, int);
+unsigned int _mm_getcsr(void);
+__m128i _mm_hadd_epi16(__m128i, __m128i);
+__m128i _mm_hadd_epi32(__m128i, __m128i);
+__m128d _mm_hadd_pd(__m128d, __m128d);
+
+
+__m128 _mm_hadd_ps(__m128, __m128);
+__m128i _mm_hadds_epi16(__m128i, __m128i);
+
+__m128i _mm_hsub_epi16(__m128i, __m128i);
+__m128i _mm_hsub_epi32(__m128i, __m128i);
+__m128d _mm_hsub_pd(__m128d, __m128d);
+
+
+__m128 _mm_hsub_ps(__m128, __m128);
+__m128i _mm_hsubs_epi16(__m128i, __m128i);
+
+__m128i _mm_insert_epi16(__m128i, int, int);
+__m128i _mm_insert_epi32(__m128i, int, int);
+__m128i _mm_insert_epi64(__m128i, __int64, int);
+__m128i _mm_insert_epi8(__m128i, int, int);
+__m128 _mm_insert_ps(__m128, __m128, int);
+__m128i _mm_insert_si64(__m128i, __m128i);
+__m128i _mm_inserti_si64(__m128i, __m128i, int, int);
+__m128i _mm_lddqu_si128(__m128i const *);
+void _mm_lfence(void);
+__m128d _mm_load1_pd(double const *);
+__m128d _mm_load_pd(double const *);
+__m128 _mm_load_ps(float const *);
+__m128 _mm_load_ps1(float const *);
+__m128d _mm_load_sd(double const *);
+__m128i _mm_load_si128(__m128i const *);
+__m128 _mm_load_ss(float const *);
+__m128d _mm_loaddup_pd(double const *);
+__m128d _mm_loadh_pd(__m128d, double const *);
+__m128 _mm_loadh_pi(__m128, __m64 const *);
+__m128i _mm_loadl_epi64(__m128i const *);
+__m128d _mm_loadl_pd(__m128d, double const *);
+__m128 _mm_loadl_pi(__m128, __m64 const *);
+__m128d _mm_loadr_pd(double const *);
+__m128 _mm_loadr_ps(float const *);
+__m128d _mm_loadu_pd(double const *);
+__m128 _mm_loadu_ps(float const *);
+__m128i _mm_loadu_si128(__m128i const *);
+__m128i _mm_madd_epi16(__m128i, __m128i);
+__m128i _mm_maddubs_epi16(__m128i, __m128i);
+
+void _mm_maskmoveu_si128(__m128i, __m128i, char *);
+__m128i _mm_max_epi16(__m128i, __m128i);
+__m128i _mm_max_epi32(__m128i, __m128i);
+__m128i _mm_max_epi8(__m128i, __m128i);
+__m128i _mm_max_epu16(__m128i, __m128i);
+__m128i _mm_max_epu32(__m128i, __m128i);
+__m128i _mm_max_epu8(__m128i, __m128i);
+__m128d _mm_max_pd(__m128d, __m128d);
+__m128 _mm_max_ps(__m128, __m128);
+__m128d _mm_max_sd(__m128d, __m128d);
+__m128 _mm_max_ss(__m128, __m128);
+void _mm_mfence(void);
+__m128i _mm_min_epi16(__m128i, __m128i);
+__m128i _mm_min_epi32(__m128i, __m128i);
+__m128i _mm_min_epi8(__m128i, __m128i);
+__m128i _mm_min_epu16(__m128i, __m128i);
+__m128i _mm_min_epu32(__m128i, __m128i);
+__m128i _mm_min_epu8(__m128i, __m128i);
+__m128d _mm_min_pd(__m128d, __m128d);
+__m128 _mm_min_ps(__m128, __m128);
+__m128d _mm_min_sd(__m128d, __m128d);
+__m128 _mm_min_ss(__m128, __m128);
+__m128i _mm_minpos_epu16(__m128i);
+void _mm_monitor(void const *, unsigned int, unsigned int);
+__m128i _mm_move_epi64(__m128i);
+__m128d _mm_move_sd(__m128d, __m128d);
+__m128 _mm_move_ss(__m128, __m128);
+__m128d _mm_movedup_pd(__m128d);
+__m128 _mm_movehdup_ps(__m128);
+__m128 _mm_movehl_ps(__m128, __m128);
+__m128 _mm_moveldup_ps(__m128);
+__m128 _mm_movelh_ps(__m128, __m128);
+int _mm_movemask_epi8(__m128i);
+int _mm_movemask_pd(__m128d);
+int _mm_movemask_ps(__m128);
+
+
+__m128i _mm_mpsadbw_epu8(__m128i, __m128i, int);
+__m128i _mm_mul_epi32(__m128i, __m128i);
+__m128i _mm_mul_epu32(__m128i, __m128i);
+__m128d _mm_mul_pd(__m128d, __m128d);
+__m128 _mm_mul_ps(__m128, __m128);
+__m128d _mm_mul_sd(__m128d, __m128d);
+__m128 _mm_mul_ss(__m128, __m128);
+
+__m128i _mm_mulhi_epi16(__m128i, __m128i);
+__m128i _mm_mulhi_epu16(__m128i, __m128i);
+__m128i _mm_mulhrs_epi16(__m128i, __m128i);
+
+__m128i _mm_mullo_epi16(__m128i, __m128i);
+__m128i _mm_mullo_epi32(__m128i, __m128i);
+void _mm_mwait(unsigned int, unsigned int);
+__m128d _mm_or_pd(__m128d, __m128d);
+__m128 _mm_or_ps(__m128, __m128);
+__m128i _mm_or_si128(__m128i, __m128i);
+__m128i _mm_packs_epi16(__m128i, __m128i);
+__m128i _mm_packs_epi32(__m128i, __m128i);
+__m128i _mm_packus_epi16(__m128i, __m128i);
+__m128i _mm_packus_epi32(__m128i, __m128i);
+int _mm_popcnt_u32(unsigned int);
+__int64 _mm_popcnt_u64(unsigned __int64);
+void _mm_prefetch(char const *, int);
+__m128 _mm_rcp_ps(__m128);
+__m128 _mm_rcp_ss(__m128);
+__m128d _mm_round_pd(__m128d, int);
+__m128 _mm_round_ps(__m128, int);
+__m128d _mm_round_sd(__m128d, __m128d, int);
+__m128 _mm_round_ss(__m128, __m128, int);
+__m128 _mm_rsqrt_ps(__m128);
+__m128 _mm_rsqrt_ss(__m128);
+__m128i _mm_sad_epu8(__m128i, __m128i);
+__m128i _mm_set1_epi16(short);
+__m128i _mm_set1_epi32(int);
+
+__m128i _mm_set1_epi64x(__int64);
+__m128i _mm_set1_epi8(char);
+__m128d _mm_set1_pd(double);
+
+
+
+__m128i _mm_set_epi16(short, short, short, short, short, short, short, short);
+__m128i _mm_set_epi32(int, int, int, int);
+
+__m128i _mm_set_epi64x(__int64, __int64);
+__m128i _mm_set_epi8(char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char);
+__m128d _mm_set_pd(double, double);
+
+
+
+__m128 _mm_set_ps(float, float, float, float);
+__m128 _mm_set_ps1(float);
+__m128d _mm_set_sd(double);
+__m128 _mm_set_ss(float);
+void _mm_setcsr(unsigned int);
+__m128i _mm_setl_epi64(__m128i);
+__m128i _mm_setr_epi16(short, short, short, short, short, short, short, short);
+__m128i _mm_setr_epi32(int, int, int, int);
+
+__m128i _mm_setr_epi64x(__int64, __int64);
+__m128i _mm_setr_epi8(char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char);
+__m128d _mm_setr_pd(double, double);
+
+
+
+__m128 _mm_setr_ps(float, float, float, float);
+__m128d _mm_setzero_pd(void);
+__m128 _mm_setzero_ps(void);
+__m128i _mm_setzero_si128(void);
+
+void _mm_sfence(void);
+__m128i _mm_shuffle_epi32(__m128i, int);
+__m128i _mm_shuffle_epi8(__m128i, __m128i);
+__m128d _mm_shuffle_pd(__m128d, __m128d, int);
+
+__m128 _mm_shuffle_ps(__m128, __m128, unsigned int);
+__m128i _mm_shufflehi_epi16(__m128i, int);
+__m128i _mm_shufflelo_epi16(__m128i, int);
+__m128i _mm_sign_epi16(__m128i, __m128i);
+__m128i _mm_sign_epi32(__m128i, __m128i);
+__m128i _mm_sign_epi8(__m128i, __m128i);
+
+
+
+__m128i _mm_sll_epi16(__m128i, __m128i);
+__m128i _mm_sll_epi32(__m128i, __m128i);
+__m128i _mm_sll_epi64(__m128i, __m128i);
+__m128i _mm_slli_epi16(__m128i, int);
+__m128i _mm_slli_epi32(__m128i, int);
+__m128i _mm_slli_epi64(__m128i, int);
+__m128i _mm_slli_si128(__m128i, int);
+__m128d _mm_sqrt_pd(__m128d);
+__m128 _mm_sqrt_ps(__m128);
+__m128d _mm_sqrt_sd(__m128d, __m128d);
+__m128 _mm_sqrt_ss(__m128);
+__m128i _mm_sra_epi16(__m128i, __m128i);
+__m128i _mm_sra_epi32(__m128i, __m128i);
+__m128i _mm_srai_epi16(__m128i, int);
+__m128i _mm_srai_epi32(__m128i, int);
+__m128i _mm_srl_epi16(__m128i, __m128i);
+__m128i _mm_srl_epi32(__m128i, __m128i);
+__m128i _mm_srl_epi64(__m128i, __m128i);
+__m128i _mm_srli_epi16(__m128i, int);
+__m128i _mm_srli_epi32(__m128i, int);
+__m128i _mm_srli_epi64(__m128i, int);
+__m128i _mm_srli_si128(__m128i, int);
+void _mm_store1_pd(double *, __m128d);
+void _mm_store_pd(double *, __m128d);
+void _mm_store_ps(float *, __m128);
+void _mm_store_ps1(float *, __m128);
+void _mm_store_sd(double *, __m128d);
+void _mm_store_si128(__m128i *, __m128i);
+void _mm_store_ss(float *, __m128);
+void _mm_storeh_pd(double *, __m128d);
+void _mm_storeh_pi(__m64 *, __m128);
+void _mm_storel_epi64(__m128i *, __m128i);
+void _mm_storel_pd(double *, __m128d);
+void _mm_storel_pi(__m64 *, __m128);
+void _mm_storer_pd(double *, __m128d);
+void _mm_storer_ps(float *, __m128);
+void _mm_storeu_pd(double *, __m128d);
+void _mm_storeu_ps(float *, __m128);
+void _mm_storeu_si128(__m128i *, __m128i);
+
+
+#line 888 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin.h"
+__m128i _mm_stream_load_si128(const __m128i *);
+#line 890 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin.h"
+void _mm_stream_pd(double *, __m128d);
+
+void _mm_stream_ps(float *, __m128);
+void _mm_stream_sd(double *, __m128d);
+void _mm_stream_si128(__m128i *, __m128i);
+void _mm_stream_si32(int *, int);
+void _mm_stream_si64x(__int64 *, __int64);
+void _mm_stream_ss(float *, __m128);
+__m128i _mm_sub_epi16(__m128i, __m128i);
+__m128i _mm_sub_epi32(__m128i, __m128i);
+__m128i _mm_sub_epi64(__m128i, __m128i);
+__m128i _mm_sub_epi8(__m128i, __m128i);
+__m128d _mm_sub_pd(__m128d, __m128d);
+__m128 _mm_sub_ps(__m128, __m128);
+__m128d _mm_sub_sd(__m128d, __m128d);
+
+__m128 _mm_sub_ss(__m128, __m128);
+__m128i _mm_subs_epi16(__m128i, __m128i);
+__m128i _mm_subs_epi8(__m128i, __m128i);
+__m128i _mm_subs_epu16(__m128i, __m128i);
+__m128i _mm_subs_epu8(__m128i, __m128i);
+int _mm_testc_si128(__m128i, __m128i);
+int _mm_testnzc_si128(__m128i, __m128i);
+int _mm_testz_si128(__m128i, __m128i);
+int _mm_ucomieq_sd(__m128d, __m128d);
+int _mm_ucomieq_ss(__m128, __m128);
+int _mm_ucomige_sd(__m128d, __m128d);
+int _mm_ucomige_ss(__m128, __m128);
+int _mm_ucomigt_sd(__m128d, __m128d);
+int _mm_ucomigt_ss(__m128, __m128);
+int _mm_ucomile_sd(__m128d, __m128d);
+int _mm_ucomile_ss(__m128, __m128);
+int _mm_ucomilt_sd(__m128d, __m128d);
+int _mm_ucomilt_ss(__m128, __m128);
+int _mm_ucomineq_sd(__m128d, __m128d);
+int _mm_ucomineq_ss(__m128, __m128);
+__m128i _mm_unpackhi_epi16(__m128i, __m128i);
+__m128i _mm_unpackhi_epi32(__m128i, __m128i);
+__m128i _mm_unpackhi_epi64(__m128i, __m128i);
+__m128i _mm_unpackhi_epi8(__m128i, __m128i);
+__m128d _mm_unpackhi_pd(__m128d, __m128d);
+__m128 _mm_unpackhi_ps(__m128, __m128);
+__m128i _mm_unpacklo_epi16(__m128i, __m128i);
+__m128i _mm_unpacklo_epi32(__m128i, __m128i);
+__m128i _mm_unpacklo_epi64(__m128i, __m128i);
+__m128i _mm_unpacklo_epi8(__m128i, __m128i);
+__m128d _mm_unpacklo_pd(__m128d, __m128d);
+__m128 _mm_unpacklo_ps(__m128, __m128);
+__m128d _mm_xor_pd(__m128d, __m128d);
+__m128 _mm_xor_ps(__m128, __m128);
+__m128i _mm_xor_si128(__m128i, __m128i);
+__int64 _mul128(__int64 _Multiplier, __int64 _Multiplicand, __int64 * _HighProduct);
+int __cdecl _setjmp(jmp_buf);
+int __cdecl _setjmpex(jmp_buf);
+void _rsm(void);
+void _lgdt(void *);
+void _sgdt(void *);
+void _clac(void);
+void _stac(void);
+unsigned char _addcarry_u8(unsigned char, unsigned char, unsigned char, unsigned char *);
+unsigned char _subborrow_u8(unsigned char, unsigned char, unsigned char, unsigned char *);
+unsigned char _addcarry_u16(unsigned char, unsigned short, unsigned short, unsigned short *);
+unsigned char _subborrow_u16(unsigned char, unsigned short, unsigned short, unsigned short *);
+unsigned char _addcarry_u32(unsigned char, unsigned int, unsigned int, unsigned int *);
+unsigned char _subborrow_u32(unsigned char, unsigned int, unsigned int, unsigned int *);
+unsigned char _add_overflow_i8(unsigned char, signed char, signed char, signed char *);
+unsigned char _add_overflow_i16(unsigned char, signed short, signed short, signed short *);
+unsigned char _add_overflow_i32(unsigned char, signed int, signed int, signed int *);
+unsigned char _add_overflow_i64(unsigned char, signed __int64, signed __int64, signed __int64 *);
+unsigned char _sub_overflow_i8(unsigned char, signed char, signed char, signed char *);
+unsigned char _sub_overflow_i16(unsigned char, signed short, signed short, signed short *);
+unsigned char _sub_overflow_i32(unsigned char, signed int, signed int, signed int *);
+unsigned char _sub_overflow_i64(unsigned char, signed __int64, signed __int64, signed __int64 *);
+unsigned char _mul_overflow_i16(signed short, signed short, signed short *);
+unsigned char _mul_overflow_i32(signed int, signed int, signed int *);
+unsigned char _mul_overflow_i64(signed __int64, signed __int64, signed __int64 *);
+unsigned char _mul_full_overflow_i8(signed char, signed char, signed short *);
+unsigned char _mul_full_overflow_i16(signed short, signed short, signed short *, signed short *);
+unsigned char _mul_full_overflow_i32(signed int, signed int, signed int *, signed int *);
+unsigned char _mul_full_overflow_i64(signed __int64, signed __int64, signed __int64 *, signed __int64 *);
+unsigned char _mul_full_overflow_u8(unsigned char, unsigned char, unsigned short *);
+unsigned char _mul_full_overflow_u16(unsigned short, unsigned short, unsigned short *, unsigned short *);
+unsigned char _mul_full_overflow_u32(unsigned int, unsigned int, unsigned int *, unsigned int *);
+unsigned char _mul_full_overflow_u64(unsigned __int64, unsigned __int64, unsigned __int64 *, unsigned __int64 *);
+void _mm_monitorx(void const *, unsigned int, unsigned int);
+void _mm_mwaitx(unsigned int, unsigned int, unsigned int);
+unsigned __int64 _rdpru(unsigned int);
+
+
+
+
+
+#line 983 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin.h"
+unsigned int __rmpupdate(unsigned __int64, rmp_entry*);
+unsigned int __psmash(unsigned __int64);
+unsigned int __rmpadjust(unsigned __int64, unsigned __int8, unsigned __int8, unsigned __int8);
+unsigned int __pvalidate(unsigned __int64, unsigned __int8, unsigned __int8, unsigned __int8*);
+unsigned int __rmpquery(unsigned __int64, unsigned __int8, rmpquery_result*);
+unsigned int __rmpread(unsigned __int64, rmp_entry*);
+#line 990 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin.h"
+void __svm_invlpgb(void*, int);
+void __svm_tlbsync(void);
+void * _AddressOfNextInstruction(void);
+unsigned char __is_unorderedf(float, float);
+unsigned char __is_unordered(double, double);
+unsigned char __is_unorderedl(long double, long double);
+unsigned char __is_nanf(float);
+unsigned char __is_nan(double);
+unsigned char __is_nanl(long double);
+unsigned char __is_normalf(float);
+unsigned char __is_normal(double);
+unsigned char __is_normall(long double);
+unsigned char __is_finitef(float);
+unsigned char __is_finite(double);
+unsigned char __is_finitel(long double);
+unsigned char __is_infinityf(float);
+unsigned char __is_infinity(double);
+unsigned char __is_infinityl(long double);
+unsigned char __is_subnormalf(float);
+unsigned char __is_subnormal(double);
+unsigned char __is_subnormall(long double);
+float __fminf(float, float);
+double __fmin(double, double);
+long double __fminl(long double, long double);
+float __fmaxf(float, float);
+double __fmax(double, double);
+long double __fmaxl(long double, long double);
+signed char _sat_add_i8(signed char, signed char);
+signed short _sat_add_i16(signed short, signed short);
+signed int _sat_add_i32(signed int, signed int);
+signed __int64 _sat_add_i64(signed __int64, signed __int64);
+unsigned char _sat_add_u8(unsigned char, unsigned char);
+unsigned short _sat_add_u16(unsigned short, unsigned short);
+unsigned int _sat_add_u32(unsigned int, unsigned int);
+unsigned __int64 _sat_add_u64(unsigned __int64, unsigned __int64);
+signed char _sat_sub_i8(signed char, signed char);
+signed short _sat_sub_i16(signed short, signed short);
+signed int _sat_sub_i32(signed int, signed int);
+signed __int64 _sat_sub_i64(signed __int64, signed __int64);
+unsigned char _sat_sub_u8(unsigned char, unsigned char);
+unsigned short _sat_sub_u16(unsigned short, unsigned short);
+unsigned int _sat_sub_u32(unsigned int, unsigned int);
+unsigned __int64 _sat_sub_u64(unsigned __int64, unsigned __int64);
+long _InterlockedNand(long volatile *, long);
+
+
+
+char _InterlockedNand8(char volatile *, char);
+
+
+
+short _InterlockedNand16(short volatile *, short);
+
+
+
+__int64 _InterlockedNand64(__int64 volatile *, __int64);
+
+
+
+long _InterlockedMax(long volatile *, long);
+
+
+
+char _InterlockedMax8(char volatile *, char);
+
+
+
+short _InterlockedMax16(short volatile *, short);
+
+
+
+__int64 _InterlockedMax64(__int64 volatile *, __int64);
+
+
+
+long _InterlockedMin(long volatile *, long);
+
+
+
+char _InterlockedMin8(char volatile *, char);
+
+
+
+short _InterlockedMin16(short volatile *, short);
+
+
+
+__int64 _InterlockedMin64(__int64 volatile *, __int64);
+
+
+
+unsigned long _InterlockedUMax(unsigned long volatile *, unsigned long);
+
+
+
+unsigned char _InterlockedUMax8(unsigned char volatile *, unsigned char);
+
+
+
+unsigned short _InterlockedUMax16(unsigned short volatile *, unsigned short);
+
+
+
+unsigned __int64 _InterlockedUMax64(unsigned __int64 volatile *, unsigned __int64);
+
+
+
+unsigned long _InterlockedUMin(unsigned long volatile *, unsigned long);
+
+
+
+unsigned char _InterlockedUMin8(unsigned char volatile *, unsigned char);
+
+
+
+unsigned short _InterlockedUMin16(unsigned short volatile *, unsigned short);
+
+
+
+unsigned __int64 _InterlockedUMin64(unsigned __int64 volatile *, unsigned __int64);
+
+
+
+
+#pragma warning(pop) 
+
+
+
+    
+
+
+
+
+
+#line 1125 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin.h"
+
+#line 1127 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin.h"
+
+
+
+#line 1131 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin.h"
+#pragma warning(pop) 
+#line 1133 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin.h"
+
+#line 1135 "D:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.44.35207\\include\\intrin.h"
+#line 385 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+static __inline uint32_t mp_clz(uint32_t x) {
+    unsigned long lz = 0;
+    return _BitScanReverse(&lz, x) ? (sizeof(x) * 8 - 1) - lz : 0;
+}
+
+static __inline uint32_t mp_clzl(unsigned long x) {
+    unsigned long lz = 0;
+    return _BitScanReverse(&lz, x) ? (sizeof(x) * 8 - 1) - lz : 0;
+}
+
+
+static __inline uint32_t mp_clzll(unsigned long long x) {
+    unsigned long lz = 0;
+    return _BitScanReverse64(&lz, x) ? (sizeof(x) * 8 - 1) - lz : 0;
+}
+
+
+
+
+
+
+#line 408 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+static __inline uint32_t mp_ctz(uint32_t x) {
+    unsigned long tz = 0;
+    return _BitScanForward(&tz, x) ? tz : 0;
+}
+
+static __inline uint32_t mp_popcount(uint32_t x) {
+    return __popcnt(x);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 433 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+
+
+
+
+
+static __inline uint32_t mp_clz_mpi(mp_int_t x) {
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+#line 456 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+#line 458 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+    return mp_clzll((unsigned long long)x);
+    
+
+#line 462 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+    #line 463 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 484 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+_Bool mp_mul_ll_overflow(long long int x, long long int y, long long int *res);
+_Bool mp_mul_mp_int_t_overflow(mp_int_t x, mp_int_t y, mp_int_t *res);
+static __inline _Bool mp_mul_ull_overflow(unsigned long long int x, unsigned long long int y, unsigned long long int *res) {
+    if (y > 0 && x > (0xffffffffffffffffui64 / y)) {
+        return 1; 
+    }
+    *res = x * y;
+    return 0;
+}
+
+#line 496 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+
+#line 500 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+static __inline _Bool mp_add_ll_overflow(long long int lhs, long long int rhs, long long int *res) {
+    _Bool overflow;
+
+    if (rhs > 0) {
+        overflow = (lhs > 9223372036854775807i64 - rhs);
+    } else {
+        overflow = (lhs < (-9223372036854775807i64 - 1) - rhs);
+    }
+
+    if (!overflow) {
+        *res = lhs + rhs;
+    }
+
+    return overflow;
+}
+#line 516 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+
+#line 520 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+static __inline _Bool mp_sub_ll_overflow(long long int lhs, long long int rhs, long long int *res) {
+    _Bool overflow;
+
+    if (rhs > 0) {
+        overflow = (lhs < (-9223372036854775807i64 - 1) + rhs);
+    } else {
+        overflow = (lhs > 9223372036854775807i64 + rhs);
+    }
+
+    if (!overflow) {
+        *res = lhs - rhs;
+    }
+
+    return overflow;
+}
+#line 536 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+
+
+
+
+
+
+
+
+#line 547 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+
+#line 551 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+
+
+#line 555 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+
+#line 557 "E:\\Work\\code\\opensource\\micropython\\py/misc.h"
+#line 33 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+#line 1 "E:\\Work\\code\\opensource\\micropython\\py/qstr.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+enum {
+    
+
+
+
+
+
+
+    MP_QSTRnumber_of_static,
+    MP_QSTRstart_of_main = MP_QSTRnumber_of_static - 1, 
+
+    
+
+
+
+
+
+
+    MP_QSTRnumber_of, 
+};
+
+typedef size_t qstr;
+typedef uint16_t qstr_short_t;
+
+
+
+#line 66 "E:\\Work\\code\\opensource\\micropython\\py/qstr.h"
+typedef uint8_t qstr_hash_t;
+
+
+
+
+#line 72 "E:\\Work\\code\\opensource\\micropython\\py/qstr.h"
+
+
+typedef uint8_t qstr_len_t;
+
+
+
+
+#line 80 "E:\\Work\\code\\opensource\\micropython\\py/qstr.h"
+
+typedef struct _qstr_pool_t {
+    const struct _qstr_pool_t *prev;
+    size_t total_prev_len : (8 * sizeof(size_t) - 1);
+    size_t is_sorted : 1;
+    size_t alloc;
+    size_t len;
+    
+    qstr_hash_t *hashes;
+    #line 90 "E:\\Work\\code\\opensource\\micropython\\py/qstr.h"
+    qstr_len_t *lengths;
+    const char *qstrs[];
+} qstr_pool_t;
+
+
+
+void qstr_init(void);
+
+size_t qstr_compute_hash(const byte *data, size_t len);
+
+qstr qstr_find_strn(const char *str, size_t str_len); 
+
+qstr qstr_from_str(const char *str);
+qstr qstr_from_strn(const char *str, size_t len);
+
+
+#line 107 "E:\\Work\\code\\opensource\\micropython\\py/qstr.h"
+
+mp_uint_t qstr_hash(qstr q);
+const char *qstr_str(qstr q);
+size_t qstr_len(qstr q);
+const byte *qstr_data(qstr q, size_t *len);
+
+void qstr_pool_info(size_t *n_pool, size_t *n_qstr, size_t *n_str_data_bytes, size_t *n_total_bytes);
+void qstr_dump_data(void);
+
+
+
+
+#line 120 "E:\\Work\\code\\opensource\\micropython\\py/qstr.h"
+
+#line 122 "E:\\Work\\code\\opensource\\micropython\\py/qstr.h"
+#line 34 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+#line 1 "E:\\Work\\code\\opensource\\micropython\\py/mpprint.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 45 "E:\\Work\\code\\opensource\\micropython\\py/mpprint.h"
+
+#line 47 "E:\\Work\\code\\opensource\\micropython\\py/mpprint.h"
+
+typedef void (*mp_print_strn_t)(void *data, const char *str, size_t len);
+
+typedef struct _mp_print_t {
+    void *data;
+    mp_print_strn_t print_strn;
+} mp_print_t;
+
+typedef struct _mp_print_ext_t {
+    mp_print_t base;
+    const char *item_separator;
+    const char *key_separator;
+} mp_print_ext_t;
+
+
+
+
+
+extern const mp_print_t mp_plat_print;
+
+
+
+#line 70 "E:\\Work\\code\\opensource\\micropython\\py/mpprint.h"
+
+int mp_print_str(const mp_print_t *print, const char *str);
+int mp_print_strn(const mp_print_t *print, const char *str, size_t len, unsigned int flags, char fill, int width);
+
+int mp_print_float(const mp_print_t *print, mp_float_t f, char fmt, unsigned int flags, char fill, int width, int prec);
+#line 76 "E:\\Work\\code\\opensource\\micropython\\py/mpprint.h"
+
+int mp_printf(const mp_print_t *print, const char *fmt, ...);
+
+
+
+
+#line 83 "E:\\Work\\code\\opensource\\micropython\\py/mpprint.h"
+#line 35 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+#line 1 "E:\\Work\\code\\opensource\\micropython\\py/runtime0.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 68 "E:\\Work\\code\\opensource\\micropython\\py/runtime0.h"
+
+#line 70 "E:\\Work\\code\\opensource\\micropython\\py/runtime0.h"
+
+typedef enum {
+    
+    
+    MP_UNARY_OP_POSITIVE,
+    MP_UNARY_OP_NEGATIVE,
+    MP_UNARY_OP_INVERT,
+    MP_UNARY_OP_NOT,
+
+    
+    MP_UNARY_OP_BOOL, 
+    MP_UNARY_OP_LEN, 
+    MP_UNARY_OP_HASH, 
+    MP_UNARY_OP_ABS, 
+    MP_UNARY_OP_INT_MAYBE, 
+    MP_UNARY_OP_FLOAT_MAYBE, 
+    MP_UNARY_OP_COMPLEX_MAYBE, 
+    MP_UNARY_OP_SIZEOF, 
+} mp_unary_op_t;
+
+typedef enum {
+    
+    
+
+    
+    MP_BINARY_OP_LESS,
+    MP_BINARY_OP_MORE,
+    MP_BINARY_OP_EQUAL,
+    MP_BINARY_OP_LESS_EQUAL,
+    MP_BINARY_OP_MORE_EQUAL,
+    MP_BINARY_OP_NOT_EQUAL,
+    MP_BINARY_OP_IN,
+    MP_BINARY_OP_IS,
+    MP_BINARY_OP_EXCEPTION_MATCH,
+
+    
+    MP_BINARY_OP_INPLACE_OR,
+    MP_BINARY_OP_INPLACE_XOR,
+    MP_BINARY_OP_INPLACE_AND,
+    MP_BINARY_OP_INPLACE_LSHIFT,
+    MP_BINARY_OP_INPLACE_RSHIFT,
+    MP_BINARY_OP_INPLACE_ADD,
+    MP_BINARY_OP_INPLACE_SUBTRACT,
+    MP_BINARY_OP_INPLACE_MULTIPLY,
+    MP_BINARY_OP_INPLACE_MAT_MULTIPLY,
+    MP_BINARY_OP_INPLACE_FLOOR_DIVIDE,
+    MP_BINARY_OP_INPLACE_TRUE_DIVIDE,
+    MP_BINARY_OP_INPLACE_MODULO,
+    MP_BINARY_OP_INPLACE_POWER,
+
+    
+    MP_BINARY_OP_OR,
+    MP_BINARY_OP_XOR,
+    MP_BINARY_OP_AND,
+    MP_BINARY_OP_LSHIFT,
+    MP_BINARY_OP_RSHIFT,
+    MP_BINARY_OP_ADD,
+    MP_BINARY_OP_SUBTRACT,
+    MP_BINARY_OP_MULTIPLY,
+    MP_BINARY_OP_MAT_MULTIPLY,
+    MP_BINARY_OP_FLOOR_DIVIDE,
+    MP_BINARY_OP_TRUE_DIVIDE,
+    MP_BINARY_OP_MODULO,
+    MP_BINARY_OP_POWER,
+
+    
+    
+
+    
+    
+    MP_BINARY_OP_DIVMOD,
+
+    
+    
+    MP_BINARY_OP_CONTAINS,
+
+    
+    
+    MP_BINARY_OP_REVERSE_OR,
+    MP_BINARY_OP_REVERSE_XOR,
+    MP_BINARY_OP_REVERSE_AND,
+    MP_BINARY_OP_REVERSE_LSHIFT,
+    MP_BINARY_OP_REVERSE_RSHIFT,
+    MP_BINARY_OP_REVERSE_ADD,
+    MP_BINARY_OP_REVERSE_SUBTRACT,
+    MP_BINARY_OP_REVERSE_MULTIPLY,
+    MP_BINARY_OP_REVERSE_MAT_MULTIPLY,
+    MP_BINARY_OP_REVERSE_FLOOR_DIVIDE,
+    MP_BINARY_OP_REVERSE_TRUE_DIVIDE,
+    MP_BINARY_OP_REVERSE_MODULO,
+    MP_BINARY_OP_REVERSE_POWER,
+
+    
+    MP_BINARY_OP_NOT_IN,
+    MP_BINARY_OP_IS_NOT,
+} mp_binary_op_t;
+
+#line 168 "E:\\Work\\code\\opensource\\micropython\\py/runtime0.h"
+#line 36 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+
+
+
+
+
+
+#line 44 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+typedef void *mp_obj_t;
+typedef const void *mp_const_obj_t;
+#line 47 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+
+
+typedef struct _mp_obj_type_t mp_obj_type_t;
+
+
+
+struct _mp_obj_base_t {
+    const mp_obj_type_t *type ;
+};
+typedef struct _mp_obj_base_t mp_obj_base_t;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 75 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+
+
+#line 79 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+
+
+
+
+
+
+static __inline _Bool mp_obj_is_small_int(mp_const_obj_t o) {
+    return (((mp_int_t)(o)) & 1) != 0;
+}
+
+
+
+static __inline _Bool mp_obj_is_qstr(mp_const_obj_t o) {
+    return (((mp_int_t)(o)) & 7) == 2;
+}
+
+
+
+static __inline _Bool mp_obj_is_immediate_obj(mp_const_obj_t o) {
+    return (((mp_int_t)(o)) & 7) == 6;
+}
+
+
+
+
+
+
+
+
+
+
+#line 112 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+extern const struct _mp_obj_float_t mp_const_float_e_obj;
+extern const struct _mp_obj_float_t mp_const_float_pi_obj;
+
+extern const struct _mp_obj_float_t mp_const_float_tau_obj;
+extern const struct _mp_obj_float_t mp_const_float_inf_obj;
+extern const struct _mp_obj_float_t mp_const_float_nan_obj;
+#line 119 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+
+mp_float_t mp_obj_float_get(mp_obj_t self_in);
+mp_obj_t mp_obj_new_float(mp_float_t value);
+#line 124 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+static __inline _Bool mp_obj_is_obj(mp_const_obj_t o) {
+    return (((mp_int_t)(o)) & 3) == 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 327 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+
+
+
+
+
+
+
+
+#line 337 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+
+
+
+#line 342 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+
+
+
+
+
+
+
+#line 351 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+#line 352 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+
+
+
+
+
+
+
+#line 361 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+#line 362 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+
+typedef mp_const_obj_t mp_rom_obj_t;
+
+
+
+
+
+
+
+
+
+#line 375 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef struct _mp_map_elem_t {
+    mp_obj_t key;
+    mp_obj_t value;
+} mp_map_elem_t;
+
+typedef struct _mp_rom_map_elem_t {
+    mp_rom_obj_t key;
+    mp_rom_obj_t value;
+} mp_rom_map_elem_t;
+
+typedef struct _mp_map_t {
+    size_t all_keys_are_qstrs : 1;
+    size_t is_fixed : 1;    
+    size_t is_ordered : 1;  
+    size_t used : (8 * sizeof(size_t) - 3);
+    size_t alloc;
+    mp_map_elem_t *table;
+} mp_map_t;
+
+
+typedef enum _mp_map_lookup_kind_t {
+    MP_MAP_LOOKUP = 0,
+    MP_MAP_LOOKUP_ADD_IF_NOT_FOUND = 1,
+    MP_MAP_LOOKUP_REMOVE_IF_FOUND = 2,
+    MP_MAP_LOOKUP_ADD_IF_NOT_FOUND_OR_REMOVE_IF_FOUND = 3, 
+} mp_map_lookup_kind_t;
+
+static __inline _Bool mp_map_slot_is_filled(const mp_map_t *map, size_t pos) {
+    ((void)( (!!(pos < map->alloc)) || (_wassert(L"pos < map->alloc", L"E:\\Work\\code\\opensource\\micropython\\py/obj.h", (unsigned)(499)), 0)) );
+    return (map)->table[pos].key != (((mp_obj_t)((void *)0))) && (map)->table[pos].key != (((mp_obj_t)((void *)4)));
+}
+
+void mp_map_init(mp_map_t *map, size_t n);
+void mp_map_init_fixed_table(mp_map_t *map, size_t n, const mp_obj_t *table);
+void mp_map_deinit(mp_map_t *map);
+mp_map_elem_t *mp_map_lookup(mp_map_t *map, mp_obj_t index, mp_map_lookup_kind_t lookup_kind);
+void mp_map_clear(mp_map_t *map);
+void mp_map_dump(mp_map_t *map);
+
+
+
+typedef struct _mp_set_t {
+    size_t alloc;
+    size_t used;
+    mp_obj_t *table;
+} mp_set_t;
+
+static __inline _Bool mp_set_slot_is_filled(const mp_set_t *set, size_t pos) {
+    return (set)->table[pos] != (((mp_obj_t)((void *)0))) && (set)->table[pos] != (((mp_obj_t)((void *)4)));
+}
+
+void mp_set_init(mp_set_t *set, size_t n);
+mp_obj_t mp_set_lookup(mp_set_t *set, mp_obj_t index, mp_map_lookup_kind_t lookup_kind);
+mp_obj_t mp_set_remove_first(mp_set_t *set);
+void mp_set_clear(mp_set_t *set);
+
+
+
+typedef mp_obj_t (*mp_fun_0_t)(void);
+typedef mp_obj_t (*mp_fun_1_t)(mp_obj_t);
+typedef mp_obj_t (*mp_fun_2_t)(mp_obj_t, mp_obj_t);
+typedef mp_obj_t (*mp_fun_3_t)(mp_obj_t, mp_obj_t, mp_obj_t);
+typedef mp_obj_t (*mp_fun_var_t)(size_t n, const mp_obj_t *);
+
+
+
+
+
+typedef mp_obj_t (*mp_fun_kw_t)(size_t n, const mp_obj_t *, mp_map_t *);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef enum {
+    PRINT_STR = 0,
+    PRINT_REPR = 1,
+    PRINT_EXC = 2, 
+    PRINT_JSON = 3,
+    PRINT_RAW = 4, 
+    PRINT_EXC_SUBCLASS = 0x80, 
+} mp_print_kind_t;
+
+typedef struct _mp_obj_iter_buf_t {
+    mp_obj_base_t base;
+    mp_obj_t buf[3];
+} mp_obj_iter_buf_t;
+
+
+
+
+
+typedef void (*mp_print_fun_t)(const mp_print_t *print, mp_obj_t o, mp_print_kind_t kind);
+typedef mp_obj_t (*mp_make_new_fun_t)(const mp_obj_type_t *type, size_t n_args, size_t n_kw, const mp_obj_t *args);
+typedef mp_obj_t (*mp_call_fun_t)(mp_obj_t fun, size_t n_args, size_t n_kw, const mp_obj_t *args);
+typedef mp_obj_t (*mp_unary_op_fun_t)(mp_unary_op_t op, mp_obj_t);
+typedef mp_obj_t (*mp_binary_op_fun_t)(mp_binary_op_t op, mp_obj_t, mp_obj_t);
+typedef void (*mp_attr_fun_t)(mp_obj_t self_in, qstr attr, mp_obj_t *dest);
+typedef mp_obj_t (*mp_subscr_fun_t)(mp_obj_t self_in, mp_obj_t index, mp_obj_t value);
+typedef mp_obj_t (*mp_getiter_fun_t)(mp_obj_t self_in, mp_obj_iter_buf_t *iter_buf);
+typedef mp_fun_1_t mp_iternext_fun_t;
+
+
+typedef struct _mp_getiter_iternext_custom_t {
+    mp_getiter_fun_t getiter;
+    mp_iternext_fun_t iternext;
+} mp_getiter_iternext_custom_t;
+
+
+
+typedef struct _mp_buffer_info_t {
+    void *buf;      
+    size_t len;     
+    int typecode;   
+} mp_buffer_info_t;
+
+
+
+
+
+
+typedef mp_int_t (*mp_buffer_fun_t)(mp_obj_t obj, mp_buffer_info_t *bufinfo, mp_uint_t flags);
+
+_Bool mp_get_buffer(mp_obj_t obj, mp_buffer_info_t *bufinfo, mp_uint_t flags);
+
+static __inline void mp_get_buffer_raise(mp_obj_t obj, mp_buffer_info_t *bufinfo, mp_uint_t flags) {
+    mp_get_buffer(obj, bufinfo, flags | (4));
+}
+
+
+
+
+struct _mp_obj_type_t {
+    
+    mp_obj_base_t base;
+
+    
+    uint16_t flags;
+
+    
+    uint16_t name;
+
+    
+    
+    
+    
+    
+
+    
+    uint8_t slot_index_make_new;
+
+    
+    uint8_t slot_index_print;
+
+    
+    uint8_t slot_index_call;
+
+    
+    
+    uint8_t slot_index_unary_op;
+    uint8_t slot_index_binary_op;
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    uint8_t slot_index_attr;
+
+    
+    
+    
+    
+    
+    uint8_t slot_index_subscr;
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    uint8_t slot_index_iter;
+
+    
+    uint8_t slot_index_buffer;
+
+    
+    uint8_t slot_index_protocol;
+
+    
+    
+    
+    
+    uint8_t slot_index_parent;
+
+    
+    uint8_t slot_index_locals_dict;
+
+    const void *slots[];
+};
+
+
+
+
+
+typedef struct _mp_obj_empty_type_t {
+    mp_obj_base_t base;
+    uint16_t flags;
+    uint16_t name;
+
+    uint8_t slot_index_make_new;
+    uint8_t slot_index_print;
+    uint8_t slot_index_call;
+    uint8_t slot_index_unary_op;
+    uint8_t slot_index_binary_op;
+    uint8_t slot_index_attr;
+    uint8_t slot_index_subscr;
+    uint8_t slot_index_iter;
+    uint8_t slot_index_buffer;
+    uint8_t slot_index_protocol;
+    uint8_t slot_index_parent;
+    uint8_t slot_index_locals_dict;
+
+    
+} mp_obj_empty_type_t;
+
+typedef struct _mp_obj_full_type_t {
+    mp_obj_base_t base;
+    uint16_t flags;
+    uint16_t name;
+
+    uint8_t slot_index_make_new;
+    uint8_t slot_index_print;
+    uint8_t slot_index_call;
+    uint8_t slot_index_unary_op;
+    uint8_t slot_index_binary_op;
+    uint8_t slot_index_attr;
+    uint8_t slot_index_subscr;
+    uint8_t slot_index_iter;
+    uint8_t slot_index_buffer;
+    uint8_t slot_index_protocol;
+    uint8_t slot_index_parent;
+    uint8_t slot_index_locals_dict;
+
+    
+    const void *slots[11];
+} mp_obj_full_type_t;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern const mp_obj_type_t mp_type_type;
+extern const mp_obj_type_t mp_type_object;
+extern const mp_obj_type_t mp_type_NoneType;
+extern const mp_obj_type_t mp_type_bool;
+extern const mp_obj_type_t mp_type_int;
+extern const mp_obj_type_t mp_type_str;
+extern const mp_obj_type_t mp_type_bytes;
+extern const mp_obj_type_t mp_type_bytearray;
+extern const mp_obj_type_t mp_type_memoryview;
+extern const mp_obj_type_t mp_type_float;
+extern const mp_obj_type_t mp_type_complex;
+extern const mp_obj_type_t mp_type_tuple;
+extern const mp_obj_type_t mp_type_list;
+extern const mp_obj_type_t mp_type_map; 
+extern const mp_obj_type_t mp_type_enumerate;
+extern const mp_obj_type_t mp_type_filter;
+extern const mp_obj_type_t mp_type_deque;
+extern const mp_obj_type_t mp_type_dict;
+extern const mp_obj_type_t mp_type_ordereddict;
+extern const mp_obj_type_t mp_type_range;
+extern const mp_obj_type_t mp_type_set;
+extern const mp_obj_type_t mp_type_frozenset;
+extern const mp_obj_type_t mp_type_slice;
+extern const mp_obj_type_t mp_type_zip;
+extern const mp_obj_type_t mp_type_array;
+extern const mp_obj_type_t mp_type_super;
+extern const mp_obj_type_t mp_type_gen_wrap;
+extern const mp_obj_type_t mp_type_native_gen_wrap;
+extern const mp_obj_type_t mp_type_gen_instance;
+extern const mp_obj_type_t mp_type_fun_builtin_0;
+extern const mp_obj_type_t mp_type_fun_builtin_1;
+extern const mp_obj_type_t mp_type_fun_builtin_2;
+extern const mp_obj_type_t mp_type_fun_builtin_3;
+extern const mp_obj_type_t mp_type_fun_builtin_var;
+extern const mp_obj_type_t mp_type_fun_bc;
+extern const mp_obj_type_t mp_type_fun_native;
+extern const mp_obj_type_t mp_type_fun_viper;
+extern const mp_obj_type_t mp_type_fun_asm;
+extern const mp_obj_type_t mp_type_code;
+extern const mp_obj_type_t mp_type_module;
+extern const mp_obj_type_t mp_type_staticmethod;
+extern const mp_obj_type_t mp_type_classmethod;
+extern const mp_obj_type_t mp_type_bound_meth;
+extern const mp_obj_type_t mp_type_property;
+extern const mp_obj_type_t mp_type_stringio;
+extern const mp_obj_type_t mp_type_bytesio;
+extern const mp_obj_type_t mp_type_ringio;
+extern const mp_obj_type_t mp_type_reversed;
+extern const mp_obj_type_t mp_type_polymorph_iter;
+
+
+#line 880 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+
+extern const mp_obj_type_t mp_type_BaseException;
+extern const mp_obj_type_t mp_type_ArithmeticError;
+extern const mp_obj_type_t mp_type_AssertionError;
+extern const mp_obj_type_t mp_type_AttributeError;
+extern const mp_obj_type_t mp_type_EOFError;
+extern const mp_obj_type_t mp_type_Exception;
+extern const mp_obj_type_t mp_type_GeneratorExit;
+extern const mp_obj_type_t mp_type_ImportError;
+extern const mp_obj_type_t mp_type_IndentationError;
+extern const mp_obj_type_t mp_type_IndexError;
+extern const mp_obj_type_t mp_type_KeyboardInterrupt;
+extern const mp_obj_type_t mp_type_KeyError;
+extern const mp_obj_type_t mp_type_LookupError;
+extern const mp_obj_type_t mp_type_MemoryError;
+extern const mp_obj_type_t mp_type_NameError;
+extern const mp_obj_type_t mp_type_NotImplementedError;
+extern const mp_obj_type_t mp_type_OSError;
+extern const mp_obj_type_t mp_type_OverflowError;
+extern const mp_obj_type_t mp_type_RuntimeError;
+extern const mp_obj_type_t mp_type_StopAsyncIteration;
+extern const mp_obj_type_t mp_type_StopIteration;
+extern const mp_obj_type_t mp_type_SyntaxError;
+extern const mp_obj_type_t mp_type_SystemExit;
+extern const mp_obj_type_t mp_type_TypeError;
+extern const mp_obj_type_t mp_type_UnicodeError;
+extern const mp_obj_type_t mp_type_ValueError;
+extern const mp_obj_type_t mp_type_ViperTypeError;
+extern const mp_obj_type_t mp_type_ZeroDivisionError;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 926 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+
+
+
+
+
+extern const struct _mp_obj_str_t mp_const_empty_bytes_obj;
+extern const struct _mp_obj_tuple_t mp_const_empty_tuple_obj;
+extern const struct _mp_obj_dict_t mp_const_empty_dict_obj;
+extern const struct _mp_obj_singleton_t mp_const_ellipsis_obj;
+extern const struct _mp_obj_singleton_t mp_const_notimplemented_obj;
+extern const struct _mp_obj_exception_t mp_const_GeneratorExit_obj;
+
+
+
+
+
+
+
+
+
+
+
+void *mp_obj_malloc_helper(size_t num_bytes, const mp_obj_type_t *type);
+
+
+
+
+
+
+#line 957 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+
+#line 960 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 986 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+
+
+_Bool mp_obj_is_dict_or_ordereddict(mp_obj_t o);
+
+
+static __inline mp_obj_t mp_obj_new_bool(mp_int_t x) {
+    return x ? ((mp_obj_t)(((3) << 3) | 6)) : ((mp_obj_t)(((1) << 3) | 6));
+}
+mp_obj_t mp_obj_new_cell(mp_obj_t obj);
+mp_obj_t mp_obj_new_int(mp_int_t value);
+mp_obj_t mp_obj_new_int_from_uint(mp_uint_t value);
+mp_obj_t mp_obj_new_int_from_str_len(const char **str, size_t len, _Bool neg, unsigned int base);
+mp_obj_t mp_obj_new_int_from_ll(long long val); 
+mp_obj_t mp_obj_new_int_from_ull(unsigned long long val); 
+mp_obj_t mp_obj_new_str(const char *data, size_t len); 
+mp_obj_t mp_obj_new_str_from_cstr(const char *str); 
+mp_obj_t mp_obj_new_str_via_qstr(const char *data, size_t len); 
+mp_obj_t mp_obj_new_str_from_vstr(vstr_t *vstr); 
+
+mp_obj_t mp_obj_new_str_from_utf8_vstr(vstr_t *vstr); 
+
+
+#line 1010 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+mp_obj_t mp_obj_new_bytes_from_vstr(vstr_t *vstr);
+mp_obj_t mp_obj_new_bytes(const byte *data, size_t len);
+mp_obj_t mp_obj_new_bytearray(size_t n, const void *items);
+mp_obj_t mp_obj_new_bytearray_by_ref(size_t n, void *items);
+
+mp_obj_t mp_obj_new_int_from_float(mp_float_t val);
+mp_obj_t mp_obj_new_complex(mp_float_t real, mp_float_t imag);
+#line 1018 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+mp_obj_t mp_obj_new_exception(const mp_obj_type_t *exc_type);
+mp_obj_t mp_obj_new_exception_args(const mp_obj_type_t *exc_type, size_t n_args, const mp_obj_t *args);
+
+
+
+#line 1024 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+mp_obj_t mp_obj_new_exception_msg(const mp_obj_type_t *exc_type, mp_rom_error_text_t msg);
+mp_obj_t mp_obj_new_exception_msg_varg(const mp_obj_type_t *exc_type, mp_rom_error_text_t fmt, ...); 
+#line 1027 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+
+
+mp_obj_t mp_obj_new_gen_wrap(mp_obj_t fun);
+mp_obj_t mp_obj_new_closure(mp_obj_t fun, size_t n_closed, const mp_obj_t *closed);
+mp_obj_t mp_obj_new_tuple(size_t n, const mp_obj_t *items);
+mp_obj_t mp_obj_new_list(size_t n, mp_obj_t *items);
+mp_obj_t mp_obj_new_dict(size_t n_args);
+mp_obj_t mp_obj_new_set(size_t n_args, mp_obj_t *items);
+mp_obj_t mp_obj_new_slice(mp_obj_t start, mp_obj_t stop, mp_obj_t step);
+mp_obj_t mp_obj_new_bound_meth(mp_obj_t meth, mp_obj_t self);
+mp_obj_t mp_obj_new_getitem_iter(mp_obj_t *args, mp_obj_iter_buf_t *iter_buf);
+mp_obj_t mp_obj_new_module(qstr module_name);
+mp_obj_t mp_obj_new_memoryview(byte typecode, size_t nitems, void *items);
+
+const mp_obj_type_t *mp_obj_get_type(mp_const_obj_t o_in);
+const char *mp_obj_get_type_str(mp_const_obj_t o_in);
+_Bool mp_obj_is_subclass_fast(mp_const_obj_t object, mp_const_obj_t classinfo); 
+mp_obj_t mp_obj_cast_to_native_base(mp_obj_t self_in, mp_const_obj_t native_type);
+
+void mp_obj_print_helper(const mp_print_t *print, mp_obj_t o_in, mp_print_kind_t kind);
+void mp_obj_print(mp_obj_t o, mp_print_kind_t kind);
+void mp_obj_print_exception(const mp_print_t *print, mp_obj_t exc);
+
+_Bool mp_obj_is_true(mp_obj_t arg);
+_Bool mp_obj_is_callable(mp_obj_t o_in);
+mp_obj_t mp_obj_equal_not_equal(mp_binary_op_t op, mp_obj_t o1, mp_obj_t o2);
+_Bool mp_obj_equal(mp_obj_t o1, mp_obj_t o2);
+
+
+static __inline _Bool mp_obj_is_integer(mp_const_obj_t o) {
+    return (mp_obj_is_small_int(o) || (mp_obj_is_obj(o) && (((mp_obj_base_t *)((void *)(o)))->type == (&mp_type_int)))) || ((o) == ((mp_obj_t)(((1) << 3) | 6)) || (o) == ((mp_obj_t)(((3) << 3) | 6)));
+}
+
+mp_int_t mp_obj_get_int(mp_const_obj_t arg);
+mp_uint_t mp_obj_get_uint(mp_const_obj_t arg);
+long long mp_obj_get_ll(mp_const_obj_t arg);
+mp_int_t mp_obj_get_int_truncated(mp_const_obj_t arg);
+_Bool mp_obj_get_int_maybe(mp_const_obj_t arg, mp_int_t *value);
+
+mp_float_t mp_obj_get_float(mp_obj_t self_in);
+_Bool mp_obj_get_float_maybe(mp_obj_t arg, mp_float_t *value);
+void mp_obj_get_complex(mp_obj_t self_in, mp_float_t *real, mp_float_t *imag);
+_Bool mp_obj_get_complex_maybe(mp_obj_t self_in, mp_float_t *real, mp_float_t *imag);
+#line 1072 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+void mp_obj_get_array(mp_obj_t o, size_t *len, mp_obj_t **items); 
+void mp_obj_get_array_fixed_n(mp_obj_t o, size_t len, mp_obj_t **items); 
+size_t mp_get_index(const mp_obj_type_t *type, size_t len, mp_obj_t index, _Bool is_slice);
+mp_obj_t mp_obj_id(mp_obj_t o_in);
+mp_obj_t mp_obj_len(mp_obj_t o_in);
+mp_obj_t mp_obj_len_maybe(mp_obj_t o_in); 
+mp_obj_t mp_obj_subscr(mp_obj_t base, mp_obj_t index, mp_obj_t val);
+
+
+
+typedef struct _mp_obj_cell_t {
+    mp_obj_base_t base;
+    mp_obj_t obj;
+} mp_obj_cell_t;
+
+static __inline mp_obj_t mp_obj_cell_get(mp_obj_t self_in) {
+    mp_obj_cell_t *self = (mp_obj_cell_t *)((void *)(self_in));
+    return self->obj;
+}
+
+static __inline void mp_obj_cell_set(mp_obj_t self_in, mp_obj_t obj) {
+    mp_obj_cell_t *self = (mp_obj_cell_t *)((void *)(self_in));
+    self->obj = obj;
+}
+
+
+
+mp_int_t mp_obj_int_get_truncated(mp_const_obj_t self_in);
+
+mp_int_t mp_obj_int_get_checked(mp_const_obj_t self_in);
+
+mp_uint_t mp_obj_int_get_uint_checked(mp_const_obj_t self_in);
+
+
+_Bool mp_obj_is_native_exception_instance(mp_obj_t self_in);
+_Bool mp_obj_is_exception_type(mp_obj_t self_in);
+_Bool mp_obj_is_exception_instance(mp_obj_t self_in);
+_Bool mp_obj_exception_match(mp_obj_t exc, mp_const_obj_t exc_type);
+void mp_obj_exception_clear_traceback(mp_obj_t self_in);
+void mp_obj_exception_add_traceback(mp_obj_t self_in, qstr file, size_t line, qstr block);
+void mp_obj_exception_get_traceback(mp_obj_t self_in, size_t *n, size_t **values);
+mp_obj_t mp_obj_exception_get_value(mp_obj_t self_in);
+mp_obj_t mp_obj_exception_make_new(const mp_obj_type_t *type_in, size_t n_args, size_t n_kw, const mp_obj_t *args);
+mp_obj_t mp_alloc_emergency_exception_buf(mp_obj_t size_in);
+void mp_init_emergency_exception_buf(void);
+static __inline mp_obj_t mp_obj_new_exception_arg1(const mp_obj_type_t *exc_type, mp_obj_t arg) {
+    ((void)( (!!(((mp_make_new_fun_t)(((exc_type)->slot_index_make_new) ? ((mp_make_new_fun_t)(exc_type)->slots[(exc_type)->slot_index_make_new - 1]) : ((void *)0))) == mp_obj_exception_make_new)) || (_wassert(L"MP_OBJ_TYPE_GET_SLOT_OR_NULL(exc_type, make_new) == mp_obj_exception_make_new", L"E:\\Work\\code\\opensource\\micropython\\py/obj.h", (unsigned)(1118)), 0)) );
+    return mp_obj_exception_make_new(exc_type, 1, 0, &arg);
+}
+
+
+_Bool mp_obj_str_equal(mp_obj_t s1, mp_obj_t s2);
+qstr mp_obj_str_get_qstr(mp_obj_t self_in); 
+const char *mp_obj_str_get_str(mp_obj_t self_in); 
+const char *mp_obj_str_get_data(mp_obj_t self_in, size_t *len);
+mp_obj_t mp_obj_str_intern(mp_obj_t str);
+mp_obj_t mp_obj_str_intern_checked(mp_obj_t obj);
+void mp_str_print_quoted(const mp_print_t *print, const byte *str_data, size_t str_len, _Bool is_bytes);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1150 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+static __inline float mp_obj_get_float_to_f(mp_obj_t o) {
+    return (float)mp_obj_get_float(o);
+}
+
+static __inline double mp_obj_get_float_to_d(mp_obj_t o) {
+    return mp_obj_get_float(o);
+}
+
+static __inline mp_obj_t mp_obj_new_float_from_f(float o) {
+    return mp_obj_new_float((mp_float_t)o);
+}
+
+static __inline mp_obj_t mp_obj_new_float_from_d(double o) {
+    return mp_obj_new_float(o);
+}
+#line 1166 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+
+#line 1169 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+static __inline mp_int_t mp_float_hash(mp_float_t val) {
+    return (mp_int_t)val;
+}
+#line 1173 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+mp_obj_t mp_obj_float_binary_op(mp_binary_op_t op, mp_float_t lhs_val, mp_obj_t rhs); 
+
+
+void mp_obj_complex_get(mp_obj_t self_in, mp_float_t *real, mp_float_t *imag);
+mp_obj_t mp_obj_complex_binary_op(mp_binary_op_t op, mp_float_t lhs_real, mp_float_t lhs_imag, mp_obj_t rhs_in); 
+
+
+#line 1181 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+
+void mp_obj_tuple_get(mp_obj_t self_in, size_t *len, mp_obj_t **items);
+void mp_obj_tuple_del(mp_obj_t self_in);
+mp_int_t mp_obj_tuple_hash(mp_obj_t self_in);
+
+
+mp_obj_t mp_obj_list_append(mp_obj_t self_in, mp_obj_t arg);
+mp_obj_t mp_obj_list_remove(mp_obj_t self_in, mp_obj_t value);
+void mp_obj_list_get(mp_obj_t self_in, size_t *len, mp_obj_t **items);
+void mp_obj_list_set_len(mp_obj_t self_in, size_t len);
+void mp_obj_list_store(mp_obj_t self_in, mp_obj_t index, mp_obj_t value);
+mp_obj_t mp_obj_list_sort(size_t n_args, const mp_obj_t *args, mp_map_t *kwargs);
+
+
+typedef struct _mp_obj_dict_t {
+    mp_obj_base_t base;
+    mp_map_t map;
+} mp_obj_dict_t;
+mp_obj_t mp_obj_dict_make_new(const mp_obj_type_t *type, size_t n_args, size_t n_kw, const mp_obj_t *args);
+void mp_obj_dict_init(mp_obj_dict_t *dict, size_t n_args);
+size_t mp_obj_dict_len(mp_obj_t self_in);
+mp_obj_t mp_obj_dict_get(mp_obj_t self_in, mp_obj_t index);
+mp_obj_t mp_obj_dict_store(mp_obj_t self_in, mp_obj_t key, mp_obj_t value);
+mp_obj_t mp_obj_dict_delete(mp_obj_t self_in, mp_obj_t key);
+mp_obj_t mp_obj_dict_copy(mp_obj_t self_in);
+static __inline mp_map_t *mp_obj_dict_get_map(mp_obj_t dict) {
+    return &((mp_obj_dict_t *)((void *)(dict)))->map;
+}
+
+
+void mp_obj_set_store(mp_obj_t self_in, mp_obj_t item);
+
+
+typedef struct {
+    mp_int_t start;
+    mp_int_t stop;
+    mp_int_t step;
+} mp_bound_slice_t;
+
+
+typedef struct _mp_obj_slice_t {
+    mp_obj_base_t base;
+    mp_obj_t start;
+    mp_obj_t stop;
+    mp_obj_t step;
+} mp_obj_slice_t;
+void mp_obj_slice_indices(mp_obj_t self_in, mp_int_t length, mp_bound_slice_t *result);
+
+
+
+typedef struct _mp_obj_fun_builtin_fixed_t {
+    mp_obj_base_t base;
+    union {
+        mp_fun_0_t _0;
+        mp_fun_1_t _1;
+        mp_fun_2_t _2;
+        mp_fun_3_t _3;
+    } fun;
+} mp_obj_fun_builtin_fixed_t;
+
+typedef struct _mp_obj_fun_builtin_var_t {
+    mp_obj_base_t base;
+    uint32_t sig; 
+    union {
+        mp_fun_var_t var;
+        mp_fun_kw_t kw;
+    } fun;
+} mp_obj_fun_builtin_var_t;
+
+qstr mp_obj_fun_get_name(mp_const_obj_t fun);
+
+mp_obj_t mp_identity(mp_obj_t self);
+extern const mp_obj_fun_builtin_fixed_t mp_identity_obj;
+
+
+typedef struct _mp_obj_module_t {
+    mp_obj_base_t base;
+    mp_obj_dict_t *globals;
+} mp_obj_module_t;
+static __inline mp_obj_dict_t *mp_obj_module_get_globals(mp_obj_t module) {
+    return ((mp_obj_module_t *)((void *)(module)))->globals;
+}
+
+
+
+typedef struct _mp_obj_static_class_method_t {
+    mp_obj_base_t base;
+    mp_obj_t fun;
+} mp_obj_static_class_method_t;
+typedef struct _mp_rom_obj_static_class_method_t {
+    mp_obj_base_t base;
+    mp_rom_obj_t fun;
+} mp_rom_obj_static_class_method_t;
+
+
+const mp_obj_t *mp_obj_property_get(mp_obj_t self_in);
+
+
+
+void mp_seq_multiply(const void *items, size_t item_sz, size_t len, size_t times, void *dest);
+
+_Bool mp_seq_get_fast_slice_indexes(mp_uint_t len, mp_obj_t slice, mp_bound_slice_t *indexes);
+#line 1285 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+
+_Bool mp_seq_cmp_bytes(mp_uint_t op, const byte *data1, size_t len1, const byte *data2, size_t len2);
+_Bool mp_seq_cmp_objs(mp_uint_t op, const mp_obj_t *items1, size_t len1, const mp_obj_t *items2, size_t len2);
+mp_obj_t mp_seq_index_obj(const mp_obj_t *items, size_t len, size_t n_args, const mp_obj_t *args);
+mp_obj_t mp_seq_count_obj(const mp_obj_t *items, size_t len, mp_obj_t value);
+mp_obj_t mp_seq_extract_slice(const mp_obj_t *seq, mp_bound_slice_t *indexes);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1321 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+
+#line 1323 "E:\\Work\\code\\opensource\\micropython\\py/obj.h"
+#line 30 "E:\\Work\\code\\opensource\\micropython\\py/builtin.h"
+
+typedef enum {
+    MP_IMPORT_STAT_NO_EXIST,
+    MP_IMPORT_STAT_DIR,
+    MP_IMPORT_STAT_FILE,
+} mp_import_stat_t;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 57 "E:\\Work\\code\\opensource\\micropython\\py/builtin.h"
+
+
+mp_import_stat_t mp_import_stat(const char *path);
+mp_obj_t mp_builtin_open(size_t n_args, const mp_obj_t *args, mp_map_t *kwargs);
+
+
+extern const mp_obj_fun_builtin_var_t mp_builtin_open_obj;
+
+#line 66 "E:\\Work\\code\\opensource\\micropython\\py/builtin.h"
+
+
+
+
+#line 71 "E:\\Work\\code\\opensource\\micropython\\py/builtin.h"
+mp_obj_t mp_builtin___import___default(size_t n_args, const mp_obj_t *args);
+mp_obj_t mp_builtin___import___default(size_t n_args, const mp_obj_t *args);
+
+mp_obj_t mp_micropython_mem_info(size_t n_args, const mp_obj_t *args);
+
+extern const mp_obj_fun_builtin_var_t mp_builtin___build_class___obj;
+extern const mp_obj_fun_builtin_var_t mp_builtin___import___obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin___repl_print___obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_abs_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_all_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_any_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_bin_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_callable_obj;
+extern const mp_obj_fun_builtin_var_t mp_builtin_compile_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_chr_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_delattr_obj;
+extern const mp_obj_fun_builtin_var_t mp_builtin_dir_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_divmod_obj;
+extern const mp_obj_fun_builtin_var_t mp_builtin_eval_obj;
+extern const mp_obj_fun_builtin_var_t mp_builtin_exec_obj;
+extern const mp_obj_fun_builtin_var_t mp_builtin_execfile_obj;
+extern const mp_obj_fun_builtin_var_t mp_builtin_getattr_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_setattr_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_globals_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_hasattr_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_hash_obj;
+extern const mp_obj_fun_builtin_var_t mp_builtin_help_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_hex_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_id_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_isinstance_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_issubclass_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_iter_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_len_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_locals_obj;
+extern const mp_obj_fun_builtin_var_t mp_builtin_max_obj;
+extern const mp_obj_fun_builtin_var_t mp_builtin_min_obj;
+
+
+#line 110 "E:\\Work\\code\\opensource\\micropython\\py/builtin.h"
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_next_obj;
+#line 112 "E:\\Work\\code\\opensource\\micropython\\py/builtin.h"
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_oct_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_ord_obj;
+extern const mp_obj_fun_builtin_var_t mp_builtin_pow_obj;
+extern const mp_obj_fun_builtin_var_t mp_builtin_print_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_builtin_repr_obj;
+extern const mp_obj_fun_builtin_var_t mp_builtin_round_obj;
+extern const mp_obj_fun_builtin_var_t mp_builtin_sorted_obj;
+extern const mp_obj_fun_builtin_var_t mp_builtin_sum_obj;
+extern const mp_obj_fun_builtin_var_t mp_builtin_input_obj;
+
+extern const mp_obj_fun_builtin_fixed_t mp_namedtuple_obj;
+
+extern const mp_obj_fun_builtin_fixed_t mp_op_contains_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_op_getitem_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_op_setitem_obj;
+extern const mp_obj_fun_builtin_fixed_t mp_op_delitem_obj;
+
+extern const mp_obj_fun_builtin_var_t mp_sys_exit_obj;
+
+
+extern const mp_obj_dict_t mp_module_builtins_globals;
+extern const mp_obj_module_t mp_module___main__;
+extern const mp_obj_module_t mp_module_builtins;
+extern const mp_obj_module_t mp_module_sys;
+
+
+extern const mp_obj_module_t mp_module_errno;
+extern const mp_obj_module_t mp_module_uctypes;
+extern const mp_obj_module_t mp_module_machine;
+extern const mp_obj_module_t mp_module_math;
+
+extern const char mp_help_default_text[];
+
+#line 146 "E:\\Work\\code\\opensource\\micropython\\py/builtin.h"
+#line 28 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+#line 1 "E:\\Work\\code\\opensource\\micropython\\py/runtime.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "E:\\Work\\code\\opensource\\micropython\\py/mpthread.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 58 "E:\\Work\\code\\opensource\\micropython\\py/mpthread.h"
+
+
+
+
+
+#line 64 "E:\\Work\\code\\opensource\\micropython\\py/mpthread.h"
+
+
+#line 67 "E:\\Work\\code\\opensource\\micropython\\py/mpthread.h"
+
+#line 69 "E:\\Work\\code\\opensource\\micropython\\py/mpthread.h"
+#line 33 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+#line 1 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\assert.h"
+
+
+
+
+
+
+
+
+
+#line 11 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\assert.h"
+
+
+
+#pragma warning(push)
+#pragma warning(disable: 4324  4514 4574 4710 4793 4820 4995 4996 28719 28726 28727 )
+
+__pragma(pack(push, 8))
+
+
+
+
+
+#line 24 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\assert.h"
+
+
+
+
+
+
+
+
+
+     void __cdecl _wassert(
+          wchar_t const* _Message,
+          wchar_t const* _File,
+            unsigned       _Line
+        );
+
+    
+
+
+
+
+#line 45 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\assert.h"
+
+
+
+__pragma(pack(pop))
+
+#pragma warning(pop) 
+#line 34 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 60 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+
+
+
+#line 64 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+
+
+
+
+
+
+#line 71 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+
+
+
+
+
+
+
+
+
+#line 81 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+
+
+#line 84 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+
+
+#line 87 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+
+
+
+#line 91 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+
+
+#line 94 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+
+
+
+
+
+
+
+
+
+#line 104 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+    
+    
+#line 107 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+#line 108 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+
+
+
+
+
+#line 114 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+
+typedef struct _nlr_buf_t nlr_buf_t;
+struct _nlr_buf_t {
+    
+
+    
+    
+    nlr_buf_t *prev;
+
+    
+    
+    
+    void *ret_val;
+
+    
+    jmp_buf jmpbuf;
+    
+
+#line 133 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+
+    
+
+#line 137 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+};
+
+typedef void (*nlr_jump_callback_fun_t)(void *ctx);
+
+typedef struct _nlr_jump_callback_node_t nlr_jump_callback_node_t;
+
+struct _nlr_jump_callback_node_t {
+    nlr_jump_callback_node_t *prev;
+    nlr_jump_callback_fun_t fun;
+};
+
+
+
+
+
+#line 153 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+
+
+#line 156 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 177 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+
+unsigned int nlr_push_tail(nlr_buf_t *top);
+void nlr_pop(void);
+__declspec(noreturn) void nlr_jump(void *val);
+
+
+
+
+
+#line 187 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+
+
+
+
+__declspec(noreturn) void nlr_jump_fail(void *val);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 212 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+
+
+
+
+void nlr_push_jump_callback(nlr_jump_callback_node_t *node, nlr_jump_callback_fun_t fun);
+
+
+
+void nlr_pop_jump_callback(_Bool run_callback);
+
+
+void nlr_call_jump_callbacks(nlr_buf_t *nlr);
+
+#line 226 "E:\\Work\\code\\opensource\\micropython\\py/nlr.h"
+#line 35 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+#line 1 "E:\\Work\\code\\opensource\\micropython\\py/objlist.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef struct _mp_obj_list_t {
+    mp_obj_base_t base;
+    size_t alloc;
+    size_t len;
+    mp_obj_t *items;
+} mp_obj_list_t;
+
+void mp_obj_list_init(mp_obj_list_t *o, size_t n);
+mp_obj_t mp_obj_list_make_new(const mp_obj_type_t *type_in, size_t n_args, size_t n_kw, const mp_obj_t *args);
+
+#line 42 "E:\\Work\\code\\opensource\\micropython\\py/objlist.h"
+#line 37 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+#line 1 "E:\\Work\\code\\opensource\\micropython\\py/objexcept.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "E:\\Work\\code\\opensource\\micropython\\py/objtuple.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef struct _mp_obj_tuple_t {
+    mp_obj_base_t base;
+    size_t len;
+    mp_obj_t items[];
+} mp_obj_tuple_t;
+
+typedef struct _mp_rom_obj_tuple_t {
+    mp_obj_base_t base;
+    size_t len;
+    mp_rom_obj_t items[];
+} mp_rom_obj_tuple_t;
+
+void mp_obj_tuple_print(const mp_print_t *print, mp_obj_t o_in, mp_print_kind_t kind);
+mp_obj_t mp_obj_tuple_unary_op(mp_unary_op_t op, mp_obj_t self_in);
+mp_obj_t mp_obj_tuple_binary_op(mp_binary_op_t op, mp_obj_t lhs, mp_obj_t rhs);
+mp_obj_t mp_obj_tuple_subscr(mp_obj_t base, mp_obj_t index, mp_obj_t value);
+mp_obj_t mp_obj_tuple_getiter(mp_obj_t o_in, mp_obj_iter_buf_t *iter_buf);
+
+extern const mp_obj_type_t mp_type_attrtuple;
+
+
+
+
+
+
+
+
+
+
+#line 61 "E:\\Work\\code\\opensource\\micropython\\py/objtuple.h"
+
+mp_obj_t mp_obj_new_attrtuple(const qstr *fields, size_t n, const mp_obj_t *items);
+
+
+
+
+#line 68 "E:\\Work\\code\\opensource\\micropython\\py/objtuple.h"
+#line 31 "E:\\Work\\code\\opensource\\micropython\\py/objexcept.h"
+
+typedef struct _mp_obj_exception_t {
+    mp_obj_base_t base;
+    size_t traceback_alloc : (8 * sizeof(size_t) / 2);
+    size_t traceback_len : (8 * sizeof(size_t) / 2);
+    size_t *traceback_data;
+    mp_obj_tuple_t *args;
+} mp_obj_exception_t;
+
+void mp_obj_exception_print(const mp_print_t *print, mp_obj_t o_in, mp_print_kind_t kind);
+void mp_obj_exception_attr(mp_obj_t self_in, qstr attr, mp_obj_t *dest);
+
+
+
+
+
+
+
+
+
+#line 52 "E:\\Work\\code\\opensource\\micropython\\py/objexcept.h"
+#line 38 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+
+
+
+
+
+
+enum {
+    
+    MP_SYS_MUTABLE_PATH,
+    #line 49 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+    
+
+
+#line 53 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+    
+
+#line 56 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+    MP_SYS_MUTABLE_NUM,
+};
+#line 59 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+
+
+typedef struct mp_dynamic_compiler_t {
+    
+    
+    
+    
+    
+    void *backend_options;
+    uint8_t small_int_bits; 
+    uint8_t native_arch;
+    uint8_t nlr_buf_num_regs;
+} mp_dynamic_compiler_t;
+extern mp_dynamic_compiler_t mp_dynamic_compiler;
+#line 75 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+
+
+
+
+
+typedef struct _mp_sched_item_t {
+    mp_obj_t func;
+    mp_obj_t arg;
+} mp_sched_item_t;
+
+
+
+
+
+
+#line 92 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+
+
+
+#line 97 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+
+
+typedef struct _mp_state_mem_area_t {
+    
+
+#line 104 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+    byte *gc_alloc_table_start;
+    size_t gc_alloc_table_byte_len;
+    
+
+#line 110 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+    byte *gc_pool_start;
+    byte *gc_pool_end;
+
+    size_t gc_last_free_atb_index;
+    size_t gc_last_used_block; 
+} mp_state_mem_area_t;
+
+
+typedef struct _mp_state_mem_t {
+    
+
+
+
+#line 124 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+    mp_state_mem_area_t area;
+
+    int gc_stack_overflow;
+    size_t gc_block_stack[(64)];
+    
+
+
+#line 133 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+    
+    
+    
+    uint16_t gc_auto_collect_enabled;
+
+    
+    size_t gc_alloc_amount;
+    size_t gc_alloc_threshold;
+    #line 143 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+    
+
+#line 147 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+    
+
+#line 151 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+    
+
+
+#line 156 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+} mp_state_mem_t;
+
+
+
+typedef struct _mp_state_vm_t {
+    
+    
+    
+    
+    
+    
+
+    qstr_pool_t *last_pool;
+
+    
+
+#line 173 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+    
+    mp_obj_exception_t mp_emergency_exception_obj;
+
+    
+    
+
+
+
+
+
+
+
+#line 187 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+    
+
+
+#line 192 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+    
+    mp_obj_dict_t mp_loaded_modules_dict;
+
+    
+    mp_obj_dict_t dict_main;
+
+    
+    
+
+#line 203 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+    
+    
+
+
+
+
+
+    
+    
+    
+
+    
+    
+    char *qstr_last_chunk;
+    size_t qstr_last_alloc;
+    size_t qstr_last_used;
+
+    
+
+
+#line 225 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+    
+    mp_uint_t mp_optimise_value;
+    
+    uint8_t default_emit_opt; 
+    #line 231 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+    #line 232 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+    
+    
+
+#line 237 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 253 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+    
+
+
+#line 258 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+    
+
+
+#line 263 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+    
+
+
+#line 268 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+} mp_state_vm_t;
+
+
+
+
+
+typedef struct _mp_state_thread_t {
+    
+    char *stack_top;
+
+    
+    size_t stack_limit;
+    #line 281 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+    
+
+
+
+#line 287 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+    
+    
+    uint16_t gc_lock_depth;
+
+    
+    
+    
+    
+    
+
+    mp_obj_dict_t *dict_locals;
+    mp_obj_dict_t *dict_globals;
+
+    nlr_buf_t *nlr_top;
+    nlr_jump_callback_node_t *nlr_jump_callback_top;
+
+    
+    volatile mp_obj_t mp_pending_exception;
+
+    
+    mp_obj_t stop_iteration_arg;
+
+    
+
+
+
+#line 315 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+    
+
+#line 319 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+} mp_state_thread_t;
+
+
+
+typedef struct _mp_state_ctx_t {
+    mp_state_thread_t thread;
+    mp_state_vm_t vm;
+    mp_state_mem_t mem;
+} mp_state_ctx_t;
+
+extern mp_state_ctx_t mp_state_ctx;
+
+
+
+
+
+
+
+
+#line 339 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+
+#line 342 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+
+#line 344 "E:\\Work\\code\\opensource\\micropython\\py/mpstate.h"
+#line 30 "E:\\Work\\code\\opensource\\micropython\\py/runtime.h"
+#line 1 "E:\\Work\\code\\opensource\\micropython\\py/pystack.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 75 "E:\\Work\\code\\opensource\\micropython\\py/pystack.h"
+
+
+
+
+
+static __inline void mp_local_free(void *ptr) {
+    (void)ptr;
+}
+
+static __inline void *mp_nonlocal_alloc(size_t n_bytes) {
+    return ((uint8_t *)(m_malloc(sizeof(uint8_t) * (n_bytes))));
+}
+
+static __inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+    return ((uint8_t *)(m_realloc((ptr), sizeof(uint8_t) * (new_n_bytes))));
+}
+
+static __inline void mp_nonlocal_free(void *ptr, size_t n_bytes) {
+    ((void)(n_bytes), m_free(ptr));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 122 "E:\\Work\\code\\opensource\\micropython\\py/pystack.h"
+
+#line 124 "E:\\Work\\code\\opensource\\micropython\\py/pystack.h"
+#line 31 "E:\\Work\\code\\opensource\\micropython\\py/runtime.h"
+#line 1 "E:\\Work\\code\\opensource\\micropython\\py/cstack.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void mp_cstack_init_with_sp_here(size_t stack_size);
+
+static __inline void mp_cstack_init_with_top(void *top, size_t stack_size) {
+    (mp_state_ctx.thread.stack_top) = (char *)top;
+
+    
+    ((void)( (!!(stack_size > (0))) || (_wassert(L"stack_size > MICROPY_STACK_CHECK_MARGIN", L"E:\\Work\\code\\opensource\\micropython\\py/cstack.h", (unsigned)(42)), 0)) ); 
+    (mp_state_ctx.thread.stack_limit) = stack_size - (0);
+    
+
+#line 47 "E:\\Work\\code\\opensource\\micropython\\py/cstack.h"
+}
+
+mp_uint_t mp_cstack_usage(void);
+
+
+
+void mp_cstack_check(void);
+
+
+
+
+
+
+
+#line 62 "E:\\Work\\code\\opensource\\micropython\\py/cstack.h"
+
+#line 64 "E:\\Work\\code\\opensource\\micropython\\py/cstack.h"
+#line 32 "E:\\Work\\code\\opensource\\micropython\\py/runtime.h"
+
+
+
+
+
+
+
+
+typedef enum {
+    MP_VM_RETURN_NORMAL,
+    MP_VM_RETURN_YIELD,
+    MP_VM_RETURN_EXCEPTION,
+} mp_vm_return_kind_t;
+
+typedef enum {
+    MP_ARG_BOOL      = 0x001,
+    MP_ARG_INT       = 0x002,
+    MP_ARG_OBJ       = 0x003,
+    MP_ARG_KIND_MASK = 0x0ff,
+    MP_ARG_REQUIRED  = 0x100,
+    MP_ARG_KW_ONLY   = 0x200,
+} mp_arg_flag_t;
+
+typedef enum {
+    MP_HANDLE_PENDING_CALLBACKS_ONLY,
+    MP_HANDLE_PENDING_CALLBACKS_AND_EXCEPTIONS,
+    MP_HANDLE_PENDING_CALLBACKS_AND_CLEAR_EXCEPTIONS,
+} mp_handle_pending_behaviour_t;
+
+typedef union _mp_arg_val_t {
+    _Bool u_bool;
+    mp_int_t u_int;
+    mp_obj_t u_obj;
+    mp_rom_obj_t u_rom_obj;
+} mp_arg_val_t;
+
+typedef struct _mp_arg_t {
+    uint16_t qst;
+    uint16_t flags;
+    mp_arg_val_t defval;
+} mp_arg_t;
+
+struct _mp_sched_node_t;
+
+typedef void (*mp_sched_callback_t)(struct _mp_sched_node_t *);
+
+typedef struct _mp_sched_node_t {
+    mp_sched_callback_t callback;
+    struct _mp_sched_node_t *next;
+} mp_sched_node_t;
+
+
+typedef struct _nlr_jump_callback_node_globals_locals_t {
+    nlr_jump_callback_node_t callback;
+    mp_obj_dict_t *globals;
+    mp_obj_dict_t *locals;
+} nlr_jump_callback_node_globals_locals_t;
+
+
+typedef struct _nlr_jump_callback_node_call_function_1_t {
+    nlr_jump_callback_node_t callback;
+    void (*func)(void *);
+    void *arg;
+} nlr_jump_callback_node_call_function_1_t;
+
+
+extern const byte mp_unary_op_method_name[];
+extern const byte mp_binary_op_method_name[];
+
+void mp_init(void);
+void mp_deinit(void);
+
+void mp_sched_exception(mp_obj_t exc);
+void mp_sched_keyboard_interrupt(void);
+
+
+#line 109 "E:\\Work\\code\\opensource\\micropython\\py/runtime.h"
+
+void mp_handle_pending_internal(mp_handle_pending_behaviour_t behavior);
+
+static __inline void mp_handle_pending(_Bool raise_exc) {
+    mp_handle_pending_internal(raise_exc ?
+        MP_HANDLE_PENDING_CALLBACKS_AND_EXCEPTIONS :
+        MP_HANDLE_PENDING_CALLBACKS_AND_CLEAR_EXCEPTIONS);
+}
+
+
+
+
+
+
+
+#line 125 "E:\\Work\\code\\opensource\\micropython\\py/runtime.h"
+
+
+void mp_event_handle_nowait(void);
+
+
+
+
+
+
+
+void mp_event_wait_indefinite(void);
+
+
+
+
+
+void mp_event_wait_ms(mp_uint_t timeout_ms);
+
+
+int mp_print_mp_int(const mp_print_t *print, mp_obj_t x, unsigned base, int base_char, int flags, char fill, int width, int prec);
+
+void mp_arg_check_num_sig(size_t n_args, size_t n_kw, uint32_t sig);
+static __inline void mp_arg_check_num(size_t n_args, size_t n_kw, size_t n_args_min, size_t n_args_max, _Bool takes_kw) {
+    mp_arg_check_num_sig(n_args, n_kw, ((uint32_t)((((uint32_t)(n_args_min)) << 17) | (((uint32_t)(n_args_max)) << 1) | ((takes_kw) ? 1 : 0))));
+}
+void mp_arg_parse_all(size_t n_pos, const mp_obj_t *pos, mp_map_t *kws, size_t n_allowed, const mp_arg_t *allowed, mp_arg_val_t *out_vals);
+void mp_arg_parse_all_kw_array(size_t n_pos, size_t n_kw, const mp_obj_t *args, size_t n_allowed, const mp_arg_t *allowed, mp_arg_val_t *out_vals);
+__declspec(noreturn) void mp_arg_error_terse_mismatch(void);
+__declspec(noreturn) void mp_arg_error_unimpl_kw(void);
+
+static __inline mp_obj_dict_t *mp_locals_get(void) {
+    return (mp_state_ctx.thread.dict_locals);
+}
+static __inline void mp_locals_set(mp_obj_dict_t *d) {
+    (mp_state_ctx.thread.dict_locals) = d;
+}
+static __inline mp_obj_dict_t *mp_globals_get(void) {
+    return (mp_state_ctx.thread.dict_globals);
+}
+static __inline void mp_globals_set(mp_obj_dict_t *d) {
+    (mp_state_ctx.thread.dict_globals) = d;
+}
+
+void mp_globals_locals_set_from_nlr_jump_callback(void *ctx_in);
+void mp_call_function_1_from_nlr_jump_callback(void *ctx_in);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 202 "E:\\Work\\code\\opensource\\micropython\\py/runtime.h"
+
+mp_obj_t mp_load_name(qstr qst);
+mp_obj_t mp_load_global(qstr qst);
+mp_obj_t mp_load_build_class(void);
+void mp_store_name(qstr qst, mp_obj_t obj);
+void mp_store_global(qstr qst, mp_obj_t obj);
+void mp_delete_name(qstr qst);
+void mp_delete_global(qstr qst);
+
+mp_obj_t mp_unary_op(mp_unary_op_t op, mp_obj_t arg);
+mp_obj_t mp_binary_op(mp_binary_op_t op, mp_obj_t lhs, mp_obj_t rhs);
+
+mp_obj_t mp_call_function_0(mp_obj_t fun);
+mp_obj_t mp_call_function_1(mp_obj_t fun, mp_obj_t arg);
+mp_obj_t mp_call_function_2(mp_obj_t fun, mp_obj_t arg1, mp_obj_t arg2);
+mp_obj_t mp_call_function_n_kw(mp_obj_t fun, size_t n_args, size_t n_kw, const mp_obj_t *args);
+mp_obj_t mp_call_method_n_kw(size_t n_args, size_t n_kw, const mp_obj_t *args);
+mp_obj_t mp_call_method_n_kw_var(_Bool have_self, size_t n_args_n_kw, const mp_obj_t *args);
+mp_obj_t mp_call_method_self_n_kw(mp_obj_t meth, mp_obj_t self, size_t n_args, size_t n_kw, const mp_obj_t *args);
+
+
+mp_obj_t mp_call_function_1_protected(mp_obj_t fun, mp_obj_t arg);
+mp_obj_t mp_call_function_2_protected(mp_obj_t fun, mp_obj_t arg1, mp_obj_t arg2);
+
+typedef struct _mp_call_args_t {
+    mp_obj_t fun;
+    size_t n_args, n_kw, n_alloc;
+    mp_obj_t *args;
+} mp_call_args_t;
+
+
+
+
+
+
+
+#line 239 "E:\\Work\\code\\opensource\\micropython\\py/runtime.h"
+
+void mp_unpack_sequence(mp_obj_t seq, size_t num, mp_obj_t *items);
+void mp_unpack_ex(mp_obj_t seq, size_t num, mp_obj_t *items);
+mp_obj_t mp_store_map(mp_obj_t map, mp_obj_t key, mp_obj_t value);
+mp_obj_t mp_load_attr(mp_obj_t base, qstr attr);
+void mp_convert_member_lookup(mp_obj_t obj, const mp_obj_type_t *type, mp_obj_t member, mp_obj_t *dest);
+void mp_load_method(mp_obj_t base, qstr attr, mp_obj_t *dest);
+void mp_load_method_maybe(mp_obj_t base, qstr attr, mp_obj_t *dest);
+void mp_load_method_protected(mp_obj_t obj, qstr attr, mp_obj_t *dest, _Bool catch_all_exc);
+void mp_load_super_method(qstr attr, mp_obj_t *dest);
+void mp_store_attr(mp_obj_t base, qstr attr, mp_obj_t val);
+
+mp_obj_t mp_getiter(mp_obj_t o, mp_obj_iter_buf_t *iter_buf);
+mp_obj_t mp_iternext_allow_raise(mp_obj_t o); 
+mp_obj_t mp_iternext(mp_obj_t o); 
+mp_vm_return_kind_t mp_resume(mp_obj_t self_in, mp_obj_t send_value, mp_obj_t throw_value, mp_obj_t *ret_val);
+
+static __inline mp_obj_t mp_make_stop_iteration(mp_obj_t o) {
+    (mp_state_ctx.thread.stop_iteration_arg) = o;
+    return (((mp_obj_t)((void *)0)));
+}
+
+mp_obj_t mp_make_raise_obj(mp_obj_t o);
+
+mp_obj_t mp_import_name(qstr name, mp_obj_t fromlist, mp_obj_t level);
+mp_obj_t mp_import_from(mp_obj_t module, qstr name);
+void mp_import_all(mp_obj_t module);
+
+
+
+
+
+
+
+
+
+
+
+#line 278 "E:\\Work\\code\\opensource\\micropython\\py/runtime.h"
+
+__declspec(noreturn) void mp_raise_msg(const mp_obj_type_t *exc_type, mp_rom_error_text_t msg);
+__declspec(noreturn) void mp_raise_msg_varg(const mp_obj_type_t *exc_type, mp_rom_error_text_t fmt, ...);
+__declspec(noreturn) void mp_raise_ValueError(mp_rom_error_text_t msg);
+__declspec(noreturn) void mp_raise_TypeError(mp_rom_error_text_t msg);
+__declspec(noreturn) void mp_raise_NotImplementedError(mp_rom_error_text_t msg);
+#line 285 "E:\\Work\\code\\opensource\\micropython\\py/runtime.h"
+
+__declspec(noreturn) void mp_raise_type_arg(const mp_obj_type_t *exc_type, mp_obj_t arg);
+__declspec(noreturn) void mp_raise_StopIteration(mp_obj_t arg);
+__declspec(noreturn) void mp_raise_TypeError_int_conversion(mp_const_obj_t arg);
+__declspec(noreturn) void mp_raise_OSError(int errno_);
+__declspec(noreturn) void mp_raise_OSError_with_filename(int errno_, const char *filename);
+__declspec(noreturn) void mp_raise_recursion_depth(void);
+
+
+
+
+
+
+
+
+
+#line 302 "E:\\Work\\code\\opensource\\micropython\\py/runtime.h"
+
+
+int mp_native_type_from_qstr(qstr qst);
+mp_uint_t mp_native_from_obj(mp_obj_t obj, mp_uint_t type);
+mp_obj_t mp_native_to_obj(mp_uint_t val, mp_uint_t type);
+
+
+
+#line 311 "E:\\Work\\code\\opensource\\micropython\\py/runtime.h"
+
+
+
+#line 315 "E:\\Work\\code\\opensource\\micropython\\py/runtime.h"
+
+
+
+void mp_warning(const char *category, const char *msg, ...);
+#line 320 "E:\\Work\\code\\opensource\\micropython\\py/runtime.h"
+
+
+#line 323 "E:\\Work\\code\\opensource\\micropython\\py/runtime.h"
+
+#line 325 "E:\\Work\\code\\opensource\\micropython\\py/runtime.h"
+#line 29 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+
+
+
+#line 1 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\math.h"
+
+
+
+
+
+
+
+
+
+
+#line 1 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+
+
+
+
+
+
+#pragma once
+
+
+
+
+
+#pragma warning(push)
+#pragma warning(disable: 4324  4514 4574 4710 4793 4820 4995 4996 28719 28726 28727 )
+
+
+__pragma(pack(push, 8))
+
+
+    
+    
+    struct _exception
+    {
+        int    type;   
+        char*  name;   
+        double arg1;   
+        double arg2;   
+        double retval; 
+    };
+
+    
+    
+    
+        
+
+        struct _complex
+        {
+            double x, y; 
+        };
+
+        
+            
+            
+        #line 46 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+    #line 47 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+#line 48 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+
+
+
+
+
+
+
+
+
+#line 59 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+    typedef float  float_t;
+    typedef double double_t;
+#line 62 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        extern double const _HUGE;
+    
+
+#line 82 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+#line 83 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+
+
+
+
+#line 89 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+
+    
+#line 93 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+
+
+
+#line 98 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+
+
+
+
+
+
+
+#line 107 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+
+
+
+
+#line 113 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void __cdecl _fperrraise(  int _Except);
+
+   short __cdecl _dclass(  double _X);
+   short __cdecl _ldclass(  long double _X);
+   short __cdecl _fdclass(  float _X);
+
+   int __cdecl _dsign(  double _X);
+   int __cdecl _ldsign(  long double _X);
+   int __cdecl _fdsign(  float _X);
+
+   int __cdecl _dpcomp(  double _X,   double _Y);
+   int __cdecl _ldpcomp(  long double _X,   long double _Y);
+   int __cdecl _fdpcomp(  float _X,   float _Y);
+
+   short __cdecl _dtest(  double* _Px);
+   short __cdecl _ldtest(  long double* _Px);
+   short __cdecl _fdtest(  float* _Px);
+
+ short __cdecl _d_int(  double* _Px,   short _Xexp);
+ short __cdecl _ld_int(  long double* _Px,   short _Xexp);
+ short __cdecl _fd_int(  float* _Px,   short _Xexp);
+
+ short __cdecl _dscale(  double* _Px,   long _Lexp);
+ short __cdecl _ldscale(  long double* _Px,   long _Lexp);
+ short __cdecl _fdscale(  float* _Px,   long _Lexp);
+
+ short __cdecl _dunscale(  short* _Pex,   double* _Px);
+ short __cdecl _ldunscale(  short* _Pex,   long double* _Px);
+ short __cdecl _fdunscale(  short* _Pex,   float* _Px);
+
+   short __cdecl _dexp(  double* _Px,   double _Y,   long _Eoff);
+   short __cdecl _ldexp(  long double* _Px,   long double _Y,   long _Eoff);
+   short __cdecl _fdexp(  float* _Px,   float _Y,   long _Eoff);
+
+   short __cdecl _dnorm(  unsigned short* _Ps);
+   short __cdecl _fdnorm(  unsigned short* _Ps);
+
+   double __cdecl _dpoly(  double _X,   double const* _Tab,   int _N);
+   long double __cdecl _ldpoly(  long double _X,   long double const* _Tab,   int _N);
+   float __cdecl _fdpoly(  float _X,   float const* _Tab,   int _N);
+
+   double __cdecl _dlog(  double _X,   int _Baseflag);
+   long double __cdecl _ldlog(  long double _X,   int _Baseflag);
+   float __cdecl _fdlog(  float _X,   int _Baseflag);
+
+   double __cdecl _dsin(  double _X,   unsigned int _Qoff);
+   long double __cdecl _ldsin(  long double _X,   unsigned int _Qoff);
+   float __cdecl _fdsin(  float _X,   unsigned int _Qoff);
+
+
+typedef union
+{   
+    unsigned short _Sh[4];
+    double _Val;
+} _double_val;
+
+
+typedef union
+{   
+    unsigned short _Sh[2];
+    float _Val;
+} _float_val;
+
+
+typedef union
+{   
+    unsigned short _Sh[4];
+    long double _Val;
+} _ldouble_val;
+
+typedef union
+{   
+    unsigned short _Word[4];
+    float _Float;
+    double _Double;
+    long double _Long_double;
+} _float_const;
+
+extern const _float_const _Denorm_C,  _Inf_C,  _Nan_C,  _Snan_C, _Hugeval_C;
+extern const _float_const _FDenorm_C, _FInf_C, _FNan_C, _FSnan_C;
+extern const _float_const _LDenorm_C, _LInf_C, _LNan_C, _LSnan_C;
+
+extern const _float_const _Eps_C,  _Rteps_C;
+extern const _float_const _FEps_C, _FRteps_C;
+extern const _float_const _LEps_C, _LRteps_C;
+
+extern const double      _Zero_C,  _Xbig_C;
+extern const float       _FZero_C, _FXbig_C;
+extern const long double _LZero_C, _LXbig_C;
+
+
+
+
+
+
+
+    
+    
+    
+
+
+
+#line 292 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+    
+#line 294 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 495 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+
+
+
+
+      int       __cdecl abs(  int _X);
+      long      __cdecl labs(  long _X);
+      long long __cdecl llabs(  long long _X);
+
+      double __cdecl acos(  double _X);
+      double __cdecl asin(  double _X);
+      double __cdecl atan(  double _X);
+      double __cdecl atan2(  double _Y,   double _X);
+
+      double __cdecl cos(  double _X);
+      double __cdecl cosh(  double _X);
+      double __cdecl exp(  double _X);
+       double __cdecl fabs(  double _X);
+      double __cdecl fmod(  double _X,   double _Y);
+      double __cdecl log(  double _X);
+      double __cdecl log10(  double _X);
+      double __cdecl pow(  double _X,   double _Y);
+      double __cdecl sin(  double _X);
+      double __cdecl sinh(  double _X);
+       double __cdecl sqrt(  double _X);
+      double __cdecl tan(  double _X);
+      double __cdecl tanh(  double _X);
+
+       double    __cdecl acosh(  double _X);
+       double    __cdecl asinh(  double _X);
+       double    __cdecl atanh(  double _X);
+        double    __cdecl atof(  char const* _String);
+        double    __cdecl _atof_l(  char const* _String,   _locale_t _Locale);
+       double    __cdecl _cabs(  struct _complex _Complex_value);
+       double    __cdecl cbrt(  double _X);
+       double    __cdecl ceil(  double _X);
+       double    __cdecl _chgsign(  double _X);
+       double    __cdecl copysign(  double _Number,   double _Sign);
+       double    __cdecl _copysign(  double _Number,   double _Sign);
+       double    __cdecl erf(  double _X);
+       double    __cdecl erfc(  double _X);
+       double    __cdecl exp2(  double _X);
+       double    __cdecl expm1(  double _X);
+       double    __cdecl fdim(  double _X,   double _Y);
+       double    __cdecl floor(  double _X);
+       double    __cdecl fma(  double _X,   double _Y,   double _Z);
+       double    __cdecl fmax(  double _X,   double _Y);
+       double    __cdecl fmin(  double _X,   double _Y);
+       double    __cdecl frexp(  double _X,   int* _Y);
+       double    __cdecl hypot(  double _X,   double _Y);
+       double    __cdecl _hypot(  double _X,   double _Y);
+       int       __cdecl ilogb(  double _X);
+       double    __cdecl ldexp(  double _X,   int _Y);
+       double    __cdecl lgamma(  double _X);
+       long long __cdecl llrint(  double _X);
+       long long __cdecl llround(  double _X);
+       double    __cdecl log1p(  double _X);
+       double    __cdecl log2(  double _X);
+       double    __cdecl logb(  double _X);
+       long      __cdecl lrint(  double _X);
+       long      __cdecl lround(  double _X);
+
+    int __cdecl _matherr(  struct _exception* _Except);
+
+       double __cdecl modf(  double _X,   double* _Y);
+       double __cdecl nan(  char const* _X);
+       double __cdecl nearbyint(  double _X);
+       double __cdecl nextafter(  double _X,   double _Y);
+       double __cdecl nexttoward(  double _X,   long double _Y);
+       double __cdecl remainder(  double _X,   double _Y);
+       double __cdecl remquo(  double _X,   double _Y,   int* _Z);
+       double __cdecl rint(  double _X);
+       double __cdecl round(  double _X);
+       double __cdecl scalbln(  double _X,   long _Y);
+       double __cdecl scalbn(  double _X,   int _Y);
+       double __cdecl tgamma(  double _X);
+       double __cdecl trunc(  double _X);
+       double __cdecl _j0(  double _X );
+       double __cdecl _j1(  double _X );
+       double __cdecl _jn(int _X,   double _Y);
+       double __cdecl _y0(  double _X);
+       double __cdecl _y1(  double _X);
+       double __cdecl _yn(  int _X,   double _Y);
+
+       float     __cdecl acoshf(  float _X);
+       float     __cdecl asinhf(  float _X);
+       float     __cdecl atanhf(  float _X);
+       float     __cdecl cbrtf(  float _X);
+       float     __cdecl _chgsignf(  float _X);
+       float     __cdecl copysignf(  float _Number,   float _Sign);
+       float     __cdecl _copysignf(  float _Number,   float _Sign);
+       float     __cdecl erff(  float _X);
+       float     __cdecl erfcf(  float _X);
+       float     __cdecl expm1f(  float _X);
+       float     __cdecl exp2f(  float _X);
+       float     __cdecl fdimf(  float _X,   float _Y);
+       float     __cdecl fmaf(  float _X,   float _Y,   float _Z);
+       float     __cdecl fmaxf(  float _X,   float _Y);
+       float     __cdecl fminf(  float _X,   float _Y);
+       float     __cdecl _hypotf(  float _X,   float _Y);
+       int       __cdecl ilogbf(  float _X);
+       float     __cdecl lgammaf(  float _X);
+       long long __cdecl llrintf(  float _X);
+       long long __cdecl llroundf(  float _X);
+       float     __cdecl log1pf(  float _X);
+       float     __cdecl log2f(  float _X);
+       float     __cdecl logbf(  float _X);
+       long      __cdecl lrintf(  float _X);
+       long      __cdecl lroundf(  float _X);
+       float     __cdecl nanf(  char const* _X);
+       float     __cdecl nearbyintf(  float _X);
+       float     __cdecl nextafterf(  float _X,   float _Y);
+       float     __cdecl nexttowardf(  float _X,   long double _Y);
+       float     __cdecl remainderf(  float _X,   float _Y);
+       float     __cdecl remquof(  float _X,   float _Y,   int* _Z);
+       float     __cdecl rintf(  float _X);
+       float     __cdecl roundf(  float _X);
+       float     __cdecl scalblnf(  float _X,   long _Y);
+       float     __cdecl scalbnf(  float _X,   int _Y);
+       float     __cdecl tgammaf(  float _X);
+       float     __cdecl truncf(  float _X);
+
+    
+
+
+
+#line 622 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+    
+
+           float __cdecl _logbf(  float _X);
+           float __cdecl _nextafterf(  float _X,   float _Y);
+           int   __cdecl _finitef(  float _X);
+           int   __cdecl _isnanf(  float _X);
+           int   __cdecl _fpclassf(  float _X);
+
+           int   __cdecl _set_FMA3_enable(  int _Flag);
+           int   __cdecl _get_FMA3_enable(void);
+
+    
+
+
+
+
+#line 640 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+
+
+    
+
+           float __cdecl acosf(  float _X);
+           float __cdecl asinf(  float _X);
+           float __cdecl atan2f(  float _Y,   float _X);
+           float __cdecl atanf(  float _X);
+           float __cdecl ceilf(  float _X);
+           float __cdecl cosf(  float _X);
+           float __cdecl coshf(  float _X);
+           float __cdecl expf(  float _X);
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 697 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+    
+
+
+
+#line 703 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+    
+
+
+#line 708 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+          __inline float __cdecl fabsf(  float _X)
+        {
+            return (float)fabs(_X);
+        }
+
+    #line 715 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+    
+
+           float __cdecl floorf(  float _X);
+           float __cdecl fmodf(  float _X,   float _Y);
+
+    
+
+
+
+
+
+
+
+
+
+
+
+#line 734 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+      __inline float __cdecl frexpf(  float _X,   int *_Y)
+    {
+        return (float)frexp(_X, _Y);
+    }
+
+      __inline float __cdecl hypotf(  float _X,   float _Y)
+    {
+        return _hypotf(_X, _Y);
+    }
+
+      __inline float __cdecl ldexpf(  float _X,   int _Y)
+    {
+        return (float)ldexp(_X, _Y);
+    }
+
+    
+
+           float  __cdecl log10f(  float _X);
+           float  __cdecl logf(  float _X);
+           float  __cdecl modff(  float _X,   float *_Y);
+           float  __cdecl powf(  float _X,   float _Y);
+           float  __cdecl sinf(  float _X);
+           float  __cdecl sinhf(  float _X);
+           float  __cdecl sqrtf(  float _X);
+           float  __cdecl tanf(  float _X);
+           float  __cdecl tanhf(  float _X);
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 813 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+       long double __cdecl acoshl(  long double _X);
+
+      __inline long double __cdecl acosl(  long double _X)
+    {
+        return acos((double)_X);
+    }
+
+       long double __cdecl asinhl(  long double _X);
+
+      __inline long double __cdecl asinl(  long double _X)
+    {
+        return asin((double)_X);
+    }
+
+      __inline long double __cdecl atan2l(  long double _Y,   long double _X)
+    {
+        return atan2((double)_Y, (double)_X);
+    }
+
+       long double __cdecl atanhl(  long double _X);
+
+      __inline long double __cdecl atanl(  long double _X)
+    {
+        return atan((double)_X);
+    }
+
+       long double __cdecl cbrtl(  long double _X);
+
+      __inline long double __cdecl ceill(  long double _X)
+    {
+        return ceil((double)_X);
+    }
+
+      __inline long double __cdecl _chgsignl(  long double _X)
+    {
+        return _chgsign((double)_X);
+    }
+
+       long double __cdecl copysignl(  long double _Number,   long double _Sign);
+
+      __inline long double __cdecl _copysignl(  long double _Number,   long double _Sign)
+    {
+        return _copysign((double)_Number, (double)_Sign);
+    }
+
+      __inline long double __cdecl coshl(  long double _X)
+    {
+        return cosh((double)_X);
+    }
+
+      __inline long double __cdecl cosl(  long double _X)
+    {
+        return cos((double)_X);
+    }
+
+       long double __cdecl erfl(  long double _X);
+       long double __cdecl erfcl(  long double _X);
+
+      __inline long double __cdecl expl(  long double _X)
+    {
+        return exp((double)_X);
+    }
+
+       long double __cdecl exp2l(  long double _X);
+       long double __cdecl expm1l(  long double _X);
+
+      __inline long double __cdecl fabsl(  long double _X)
+    {
+        return fabs((double)_X);
+    }
+
+       long double __cdecl fdiml(  long double _X,   long double _Y);
+
+      __inline long double __cdecl floorl(  long double _X)
+    {
+        return floor((double)_X);
+    }
+
+       long double __cdecl fmal(  long double _X,   long double _Y,   long double _Z);
+       long double __cdecl fmaxl(  long double _X,   long double _Y);
+       long double __cdecl fminl(  long double _X,   long double _Y);
+
+      __inline long double __cdecl fmodl(  long double _X,   long double _Y)
+    {
+        return fmod((double)_X, (double)_Y);
+    }
+
+      __inline long double __cdecl frexpl(  long double _X,   int *_Y)
+    {
+        return frexp((double)_X, _Y);
+    }
+
+       int __cdecl ilogbl(  long double _X);
+
+      __inline long double __cdecl _hypotl(  long double _X,   long double _Y)
+    {
+        return _hypot((double)_X, (double)_Y);
+    }
+
+      __inline long double __cdecl hypotl(  long double _X,   long double _Y)
+    {
+        return _hypot((double)_X, (double)_Y);
+    }
+
+      __inline long double __cdecl ldexpl(  long double _X,   int _Y)
+    {
+        return ldexp((double)_X, _Y);
+    }
+
+       long double __cdecl lgammal(  long double _X);
+       long long __cdecl llrintl(  long double _X);
+       long long __cdecl llroundl(  long double _X);
+
+      __inline long double __cdecl logl(  long double _X)
+    {
+        return log((double)_X);
+    }
+
+      __inline long double __cdecl log10l(  long double _X)
+    {
+        return log10((double)_X);
+    }
+
+       long double __cdecl log1pl(  long double _X);
+       long double __cdecl log2l(  long double _X);
+       long double __cdecl logbl(  long double _X);
+       long __cdecl lrintl(  long double _X);
+       long __cdecl lroundl(  long double _X);
+
+      __inline long double __cdecl modfl(  long double _X,   long double* _Y)
+    {
+        double _F, _I;
+        _F = modf((double)_X, &_I);
+        *_Y = _I;
+        return _F;
+    }
+
+       long double __cdecl nanl(  char const* _X);
+       long double __cdecl nearbyintl(  long double _X);
+       long double __cdecl nextafterl(  long double _X,   long double _Y);
+       long double __cdecl nexttowardl(  long double _X,   long double _Y);
+
+      __inline long double __cdecl powl(  long double _X,   long double _Y)
+    {
+        return pow((double)_X, (double)_Y);
+    }
+
+       long double __cdecl remainderl(  long double _X,   long double _Y);
+       long double __cdecl remquol(  long double _X,   long double _Y,   int* _Z);
+       long double __cdecl rintl(  long double _X);
+       long double __cdecl roundl(  long double _X);
+       long double __cdecl scalblnl(  long double _X,   long _Y);
+       long double __cdecl scalbnl(  long double _X,   int _Y);
+
+      __inline long double __cdecl sinhl(  long double _X)
+    {
+        return sinh((double)_X);
+    }
+
+      __inline long double __cdecl sinl(  long double _X)
+    {
+        return sin((double)_X);
+    }
+
+      __inline long double __cdecl sqrtl(  long double _X)
+    {
+        return sqrt((double)_X);
+    }
+
+      __inline long double __cdecl tanhl(  long double _X)
+    {
+        return tanh((double)_X);
+    }
+
+      __inline long double __cdecl tanl(  long double _X)
+    {
+        return tan((double)_X);
+    }
+
+       long double __cdecl tgammal(  long double _X);
+       long double __cdecl truncl(  long double _X);
+
+    
+        
+    #line 999 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+#line 1001 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+
+
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+        
+            extern double HUGE;
+        
+
+#line 1019 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+            double __cdecl j0(  double _X);
+            double __cdecl j1(  double _X);
+            double __cdecl jn(  int _X,   double _Y);
+            double __cdecl y0(  double _X);
+            double __cdecl y1(  double _X);
+            double __cdecl yn(  int _X,   double _Y);
+    #line 1027 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+#line 1029 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+
+__pragma(pack(pop))
+
+#pragma warning(pop) 
+#line 1034 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math.h"
+#line 12 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\math.h"
+
+
+    #line 1 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math_defines.h"
+
+
+
+
+
+
+
+#pragma once
+
+
+
+
+
+#pragma warning(push)
+#pragma warning(disable: 4324  4514 4574 4710 4793 4820 4995 4996 28719 28726 28727 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma warning(pop) 
+#line 40 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\corecrt_math_defines.h"
+#line 15 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\math.h"
+#line 16 "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\ucrt\\math.h"
+#line 33 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+
+
+
+
+
+
+
+static __declspec(noreturn) void math_error(void) {
+    mp_raise_ValueError((mp_rom_error_text_t)"math domain error");
+}
+
+static mp_obj_t math_generic_1(mp_obj_t x_obj, mp_float_t (*f)(mp_float_t)) {
+    mp_float_t x = mp_obj_get_float(x_obj);
+    mp_float_t ans = f(x);
+    if (((((__pragma(warning(suppress:6334))(sizeof ((ans) + (float)0) == sizeof (float) ? 'f' : sizeof ((ans) + (double)0) == sizeof (double) ? 'd' : 'l') == 'f' ? _fdclass((float)(ans)) : __pragma(warning(suppress:6334))(sizeof ((ans) + (float)0) == sizeof (float) ? 'f' : sizeof ((ans) + (double)0) == sizeof (double) ? 'd' : 'l') == 'd' ? _dclass((double)(ans)) : _ldclass((long double)(ans)))) == 2) && !(((__pragma(warning(suppress:6334))(sizeof ((x) + (float)0) == sizeof (float) ? 'f' : sizeof ((x) + (double)0) == sizeof (double) ? 'd' : 'l') == 'f' ? _fdclass((float)(x)) : __pragma(warning(suppress:6334))(sizeof ((x) + (float)0) == sizeof (float) ? 'f' : sizeof ((x) + (double)0) == sizeof (double) ? 'd' : 'l') == 'd' ? _dclass((double)(x)) : _ldclass((long double)(x)))) == 2)) || ((((__pragma(warning(suppress:6334))(sizeof ((ans) + (float)0) == sizeof (float) ? 'f' : sizeof ((ans) + (double)0) == sizeof (double) ? 'd' : 'l') == 'f' ? _fdclass((float)(ans)) : __pragma(warning(suppress:6334))(sizeof ((ans) + (float)0) == sizeof (float) ? 'f' : sizeof ((ans) + (double)0) == sizeof (double) ? 'd' : 'l') == 'd' ? _dclass((double)(ans)) : _ldclass((long double)(ans)))) == 1) && !(((__pragma(warning(suppress:6334))(sizeof ((x) + (float)0) == sizeof (float) ? 'f' : sizeof ((x) + (double)0) == sizeof (double) ? 'd' : 'l') == 'f' ? _fdclass((float)(x)) : __pragma(warning(suppress:6334))(sizeof ((x) + (float)0) == sizeof (float) ? 'f' : sizeof ((x) + (double)0) == sizeof (double) ? 'd' : 'l') == 'd' ? _dclass((double)(x)) : _ldclass((long double)(x)))) == 1))) {
+        math_error();
+    }
+    return mp_obj_new_float(ans);
+}
+
+static mp_obj_t math_generic_2(mp_obj_t x_obj, mp_obj_t y_obj, mp_float_t (*f)(mp_float_t, mp_float_t)) {
+    mp_float_t x = mp_obj_get_float(x_obj);
+    mp_float_t y = mp_obj_get_float(y_obj);
+    mp_float_t ans = f(x, y);
+    if (((((__pragma(warning(suppress:6334))(sizeof ((ans) + (float)0) == sizeof (float) ? 'f' : sizeof ((ans) + (double)0) == sizeof (double) ? 'd' : 'l') == 'f' ? _fdclass((float)(ans)) : __pragma(warning(suppress:6334))(sizeof ((ans) + (float)0) == sizeof (float) ? 'f' : sizeof ((ans) + (double)0) == sizeof (double) ? 'd' : 'l') == 'd' ? _dclass((double)(ans)) : _ldclass((long double)(ans)))) == 2) && !(((__pragma(warning(suppress:6334))(sizeof ((x) + (float)0) == sizeof (float) ? 'f' : sizeof ((x) + (double)0) == sizeof (double) ? 'd' : 'l') == 'f' ? _fdclass((float)(x)) : __pragma(warning(suppress:6334))(sizeof ((x) + (float)0) == sizeof (float) ? 'f' : sizeof ((x) + (double)0) == sizeof (double) ? 'd' : 'l') == 'd' ? _dclass((double)(x)) : _ldclass((long double)(x)))) == 2) && !(((__pragma(warning(suppress:6334))(sizeof ((y) + (float)0) == sizeof (float) ? 'f' : sizeof ((y) + (double)0) == sizeof (double) ? 'd' : 'l') == 'f' ? _fdclass((float)(y)) : __pragma(warning(suppress:6334))(sizeof ((y) + (float)0) == sizeof (float) ? 'f' : sizeof ((y) + (double)0) == sizeof (double) ? 'd' : 'l') == 'd' ? _dclass((double)(y)) : _ldclass((long double)(y)))) == 2)) || ((((__pragma(warning(suppress:6334))(sizeof ((ans) + (float)0) == sizeof (float) ? 'f' : sizeof ((ans) + (double)0) == sizeof (double) ? 'd' : 'l') == 'f' ? _fdclass((float)(ans)) : __pragma(warning(suppress:6334))(sizeof ((ans) + (float)0) == sizeof (float) ? 'f' : sizeof ((ans) + (double)0) == sizeof (double) ? 'd' : 'l') == 'd' ? _dclass((double)(ans)) : _ldclass((long double)(ans)))) == 1) && !(((__pragma(warning(suppress:6334))(sizeof ((x) + (float)0) == sizeof (float) ? 'f' : sizeof ((x) + (double)0) == sizeof (double) ? 'd' : 'l') == 'f' ? _fdclass((float)(x)) : __pragma(warning(suppress:6334))(sizeof ((x) + (float)0) == sizeof (float) ? 'f' : sizeof ((x) + (double)0) == sizeof (double) ? 'd' : 'l') == 'd' ? _dclass((double)(x)) : _ldclass((long double)(x)))) == 1) && !(((__pragma(warning(suppress:6334))(sizeof ((y) + (float)0) == sizeof (float) ? 'f' : sizeof ((y) + (double)0) == sizeof (double) ? 'd' : 'l') == 'f' ? _fdclass((float)(y)) : __pragma(warning(suppress:6334))(sizeof ((y) + (float)0) == sizeof (float) ? 'f' : sizeof ((y) + (double)0) == sizeof (double) ? 'd' : 'l') == 'd' ? _dclass((double)(y)) : _ldclass((long double)(y)))) == 1))) {
+        math_error();
+    }
+    return mp_obj_new_float(ans);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 97 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+
+
+static mp_obj_t mp_math_sqrt(mp_obj_t x_obj) { return math_generic_1(x_obj, sqrt); } static const mp_obj_fun_builtin_fixed_t mp_math_sqrt_obj = {.base = {.type = &mp_type_fun_builtin_1}, .fun = {._1 = mp_math_sqrt}};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 116 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+static mp_obj_t mp_math_pow(mp_obj_t x_obj, mp_obj_t y_obj) { return math_generic_2(x_obj, y_obj, pow); } static const mp_obj_fun_builtin_fixed_t mp_math_pow_obj = {.base = {.type = &mp_type_fun_builtin_2}, .fun = {._2 = mp_math_pow}};
+#line 118 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+
+static mp_obj_t mp_math_exp(mp_obj_t x_obj) { return math_generic_1(x_obj, exp); } static const mp_obj_fun_builtin_fixed_t mp_math_exp_obj = {.base = {.type = &mp_type_fun_builtin_1}, .fun = {._1 = mp_math_exp}};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 140 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+
+static mp_obj_t mp_math_cos(mp_obj_t x_obj) { return math_generic_1(x_obj, cos); } static const mp_obj_fun_builtin_fixed_t mp_math_cos_obj = {.base = {.type = &mp_type_fun_builtin_1}, .fun = {._1 = mp_math_cos}};
+
+static mp_obj_t mp_math_sin(mp_obj_t x_obj) { return math_generic_1(x_obj, sin); } static const mp_obj_fun_builtin_fixed_t mp_math_sin_obj = {.base = {.type = &mp_type_fun_builtin_1}, .fun = {._1 = mp_math_sin}};
+
+static mp_obj_t mp_math_tan(mp_obj_t x_obj) { return math_generic_1(x_obj, tan); } static const mp_obj_fun_builtin_fixed_t mp_math_tan_obj = {.base = {.type = &mp_type_fun_builtin_1}, .fun = {._1 = mp_math_tan}};
+
+static mp_obj_t mp_math_acos(mp_obj_t x_obj) { return math_generic_1(x_obj, acos); } static const mp_obj_fun_builtin_fixed_t mp_math_acos_obj = {.base = {.type = &mp_type_fun_builtin_1}, .fun = {._1 = mp_math_acos}};
+
+static mp_obj_t mp_math_asin(mp_obj_t x_obj) { return math_generic_1(x_obj, asin); } static const mp_obj_fun_builtin_fixed_t mp_math_asin_obj = {.base = {.type = &mp_type_fun_builtin_1}, .fun = {._1 = mp_math_asin}};
+
+static mp_obj_t mp_math_atan(mp_obj_t x_obj) { return math_generic_1(x_obj, atan); } static const mp_obj_fun_builtin_fixed_t mp_math_atan_obj = {.base = {.type = &mp_type_fun_builtin_1}, .fun = {._1 = mp_math_atan}};
+
+
+
+
+
+
+
+
+
+#line 162 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+static mp_obj_t mp_math_atan2(mp_obj_t x_obj, mp_obj_t y_obj) { return math_generic_2(x_obj, y_obj, atan2); } static const mp_obj_fun_builtin_fixed_t mp_math_atan2_obj = {.base = {.type = &mp_type_fun_builtin_2}, .fun = {._2 = mp_math_atan2}};
+#line 164 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+
+static mp_obj_t mp_math_ceil(mp_obj_t x_obj) { return mp_obj_new_int_from_float(ceil(mp_obj_get_float(x_obj))); } static const mp_obj_fun_builtin_fixed_t mp_math_ceil_obj = {.base = {.type = &mp_type_fun_builtin_1}, .fun = {._1 = mp_math_ceil}};
+
+static mp_float_t copysign_func(mp_float_t x, mp_float_t y) {
+    
+
+
+
+#line 173 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+    return copysign(x, y);
+}
+static mp_obj_t mp_math_copysign(mp_obj_t x_obj, mp_obj_t y_obj) { return math_generic_2(x_obj, y_obj, copysign_func); } static const mp_obj_fun_builtin_fixed_t mp_math_copysign_obj = {.base = {.type = &mp_type_fun_builtin_2}, .fun = {._2 = mp_math_copysign}};
+
+static mp_float_t fabs_func(mp_float_t x) {
+    return fabs(x);
+}
+static mp_obj_t mp_math_fabs(mp_obj_t x_obj) { return math_generic_1(x_obj, fabs_func); } static const mp_obj_fun_builtin_fixed_t mp_math_fabs_obj = {.base = {.type = &mp_type_fun_builtin_1}, .fun = {._1 = mp_math_fabs}};
+
+static mp_obj_t mp_math_floor(mp_obj_t x_obj) { return mp_obj_new_int_from_float(floor(mp_obj_get_float(x_obj))); } static const mp_obj_fun_builtin_fixed_t mp_math_floor_obj = {.base = {.type = &mp_type_fun_builtin_1}, .fun = {._1 = mp_math_floor}}; 
+
+
+
+
+
+
+#line 190 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+static mp_obj_t mp_math_fmod(mp_obj_t x_obj, mp_obj_t y_obj) { return math_generic_2(x_obj, y_obj, fmod); } static const mp_obj_fun_builtin_fixed_t mp_math_fmod_obj = {.base = {.type = &mp_type_fun_builtin_2}, .fun = {._2 = mp_math_fmod}};
+#line 192 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+
+static mp_obj_t mp_math_isfinite(mp_obj_t x_obj) { return mp_obj_new_bool((((__pragma(warning(suppress:6334))(sizeof ((mp_obj_get_float(x_obj)) + (float)0) == sizeof (float) ? 'f' : sizeof ((mp_obj_get_float(x_obj)) + (double)0) == sizeof (double) ? 'd' : 'l') == 'f' ? _fdclass((float)(mp_obj_get_float(x_obj))) : __pragma(warning(suppress:6334))(sizeof ((mp_obj_get_float(x_obj)) + (float)0) == sizeof (float) ? 'f' : sizeof ((mp_obj_get_float(x_obj)) + (double)0) == sizeof (double) ? 'd' : 'l') == 'd' ? _dclass((double)(mp_obj_get_float(x_obj))) : _ldclass((long double)(mp_obj_get_float(x_obj))))) <= 0)); } static const mp_obj_fun_builtin_fixed_t mp_math_isfinite_obj = {.base = {.type = &mp_type_fun_builtin_1}, .fun = {._1 = mp_math_isfinite}};
+
+static mp_obj_t mp_math_isinf(mp_obj_t x_obj) { return mp_obj_new_bool((((__pragma(warning(suppress:6334))(sizeof ((mp_obj_get_float(x_obj)) + (float)0) == sizeof (float) ? 'f' : sizeof ((mp_obj_get_float(x_obj)) + (double)0) == sizeof (double) ? 'd' : 'l') == 'f' ? _fdclass((float)(mp_obj_get_float(x_obj))) : __pragma(warning(suppress:6334))(sizeof ((mp_obj_get_float(x_obj)) + (float)0) == sizeof (float) ? 'f' : sizeof ((mp_obj_get_float(x_obj)) + (double)0) == sizeof (double) ? 'd' : 'l') == 'd' ? _dclass((double)(mp_obj_get_float(x_obj))) : _ldclass((long double)(mp_obj_get_float(x_obj))))) == 1)); } static const mp_obj_fun_builtin_fixed_t mp_math_isinf_obj = {.base = {.type = &mp_type_fun_builtin_1}, .fun = {._1 = mp_math_isinf}};
+
+static mp_obj_t mp_math_isnan(mp_obj_t x_obj) { return mp_obj_new_bool((((__pragma(warning(suppress:6334))(sizeof ((mp_obj_get_float(x_obj)) + (float)0) == sizeof (float) ? 'f' : sizeof ((mp_obj_get_float(x_obj)) + (double)0) == sizeof (double) ? 'd' : 'l') == 'f' ? _fdclass((float)(mp_obj_get_float(x_obj))) : __pragma(warning(suppress:6334))(sizeof ((mp_obj_get_float(x_obj)) + (float)0) == sizeof (float) ? 'f' : sizeof ((mp_obj_get_float(x_obj)) + (double)0) == sizeof (double) ? 'd' : 'l') == 'd' ? _dclass((double)(mp_obj_get_float(x_obj))) : _ldclass((long double)(mp_obj_get_float(x_obj))))) == 2)); } static const mp_obj_fun_builtin_fixed_t mp_math_isnan_obj = {.base = {.type = &mp_type_fun_builtin_1}, .fun = {._1 = mp_math_isnan}};
+
+static mp_obj_t mp_math_trunc(mp_obj_t x_obj) { return mp_obj_new_int_from_float(trunc(mp_obj_get_float(x_obj))); } static const mp_obj_fun_builtin_fixed_t mp_math_trunc_obj = {.base = {.type = &mp_type_fun_builtin_1}, .fun = {._1 = mp_math_trunc}};
+
+static mp_obj_t mp_math_ldexp(mp_obj_t x_obj, mp_obj_t y_obj) { return mp_obj_new_float(ldexp(mp_obj_get_float(x_obj), mp_obj_get_int(y_obj))); } static const mp_obj_fun_builtin_fixed_t mp_math_ldexp_obj = {.base = {.type = &mp_type_fun_builtin_2}, .fun = {._2 = mp_math_ldexp}};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 222 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 257 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+
+
+
+
+static mp_obj_t mp_math_log(size_t n_args, const mp_obj_t *args) {
+    mp_float_t x = mp_obj_get_float(args[0]);
+    if (x <= (mp_float_t)0.0) {
+        math_error();
+    }
+    mp_float_t l = log(x);
+    if (n_args == 1) {
+        return mp_obj_new_float(l);
+    } else {
+        mp_float_t base = mp_obj_get_float(args[1]);
+        if (base <= (mp_float_t)0.0) {
+            math_error();
+        } else if (base == (mp_float_t)1.0) {
+            mp_raise_msg(&mp_type_ZeroDivisionError, (mp_rom_error_text_t)"divide by zero");
+        }
+        return mp_obj_new_float(l / log(base));
+    }
+}
+static const mp_obj_fun_builtin_var_t mp_math_log_obj = {.base = {.type = &mp_type_fun_builtin_var}, .sig = ((uint32_t)((((uint32_t)(1)) << 17) | (((uint32_t)(2)) << 1) | ((0) ? 1 : 0))), .fun = {.var = mp_math_log}};
+
+
+
+
+static mp_obj_t mp_math_frexp(mp_obj_t x_obj) {
+    int int_exponent = 0;
+    mp_float_t significand = frexp(mp_obj_get_float(x_obj), &int_exponent);
+    mp_obj_t tuple[2];
+    tuple[0] = mp_obj_new_float(significand);
+    tuple[1] = mp_obj_new_int(int_exponent);
+    return mp_obj_new_tuple(2, tuple);
+}
+static const mp_obj_fun_builtin_fixed_t mp_math_frexp_obj = {.base = {.type = &mp_type_fun_builtin_1}, .fun = {._1 = mp_math_frexp}};
+
+
+static mp_obj_t mp_math_modf(mp_obj_t x_obj) {
+    mp_float_t int_part = 0.0;
+    mp_float_t x = mp_obj_get_float(x_obj);
+    mp_float_t fractional_part = modf(x, &int_part);
+    
+
+
+
+#line 304 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+    mp_obj_t tuple[2];
+    tuple[0] = mp_obj_new_float(fractional_part);
+    tuple[1] = mp_obj_new_float(int_part);
+    return mp_obj_new_tuple(2, tuple);
+}
+static const mp_obj_fun_builtin_fixed_t mp_math_modf_obj = {.base = {.type = &mp_type_fun_builtin_1}, .fun = {._1 = mp_math_modf}};
+
+
+
+
+static mp_obj_t mp_math_radians(mp_obj_t x_obj) {
+    return mp_obj_new_float(mp_obj_get_float(x_obj) * (3.14159265358979323846 / 180.0));
+}
+static const mp_obj_fun_builtin_fixed_t mp_math_radians_obj = {.base = {.type = &mp_type_fun_builtin_1}, .fun = {._1 = mp_math_radians}};
+
+
+static mp_obj_t mp_math_degrees(mp_obj_t x_obj) {
+    return mp_obj_new_float(mp_obj_get_float(x_obj) * (180.0 / 3.14159265358979323846));
+}
+static const mp_obj_fun_builtin_fixed_t mp_math_degrees_obj = {.base = {.type = &mp_type_fun_builtin_1}, .fun = {._1 = mp_math_degrees}};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 388 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+
+static const mp_rom_map_elem_t mp_module_math_globals_table[] = {
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR___name__)) << 3) | 2)), ((mp_obj_t)((((mp_uint_t)(MP_QSTR_math)) << 3) | 2)) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_e)) << 3) | 2)), (&mp_const_float_e_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_pi)) << 3) | 2)), (&mp_const_float_pi_obj) },
+    
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_tau)) << 3) | 2)), (&mp_const_float_tau_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_inf)) << 3) | 2)), (&mp_const_float_inf_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_nan)) << 3) | 2)), (&mp_const_float_nan_obj) },
+    #line 398 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_sqrt)) << 3) | 2)), (&mp_math_sqrt_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_pow)) << 3) | 2)), (&mp_math_pow_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_exp)) << 3) | 2)), (&mp_math_exp_obj) },
+    
+
+#line 404 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_log)) << 3) | 2)), (&mp_math_log_obj) },
+    
+
+
+
+
+
+
+
+
+#line 415 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_cos)) << 3) | 2)), (&mp_math_cos_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_sin)) << 3) | 2)), (&mp_math_sin_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_tan)) << 3) | 2)), (&mp_math_tan_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_acos)) << 3) | 2)), (&mp_math_acos_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_asin)) << 3) | 2)), (&mp_math_asin_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_atan)) << 3) | 2)), (&mp_math_atan_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_atan2)) << 3) | 2)), (&mp_math_atan2_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_ceil)) << 3) | 2)), (&mp_math_ceil_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_copysign)) << 3) | 2)), (&mp_math_copysign_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_fabs)) << 3) | 2)), (&mp_math_fabs_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_floor)) << 3) | 2)), (&mp_math_floor_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_fmod)) << 3) | 2)), (&mp_math_fmod_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_frexp)) << 3) | 2)), (&mp_math_frexp_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_ldexp)) << 3) | 2)), (&mp_math_ldexp_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_modf)) << 3) | 2)), (&mp_math_modf_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_isfinite)) << 3) | 2)), (&mp_math_isfinite_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_isinf)) << 3) | 2)), (&mp_math_isinf_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_isnan)) << 3) | 2)), (&mp_math_isnan_obj) },
+    
+
+#line 436 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_trunc)) << 3) | 2)), (&mp_math_trunc_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_radians)) << 3) | 2)), (&mp_math_radians_obj) },
+    { ((mp_obj_t)((((mp_uint_t)(MP_QSTR_degrees)) << 3) | 2)), (&mp_math_degrees_obj) },
+    
+
+#line 442 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+    
+
+
+
+
+#line 448 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"
+};
+
+static const mp_obj_dict_t mp_module_math_globals = { .base = {&mp_type_dict}, .map = { .all_keys_are_qstrs = 1, .is_fixed = 1, .is_ordered = 1, .used = (sizeof(mp_module_math_globals_table) / sizeof((mp_module_math_globals_table)[0])), .alloc = (sizeof(mp_module_math_globals_table) / sizeof((mp_module_math_globals_table)[0])), .table = (mp_map_elem_t *)(mp_rom_map_elem_t *)mp_module_math_globals_table, }, };
+
+const mp_obj_module_t mp_module_math = {
+    .base = { &mp_type_module },
+    .globals = (mp_obj_dict_t *)&mp_module_math_globals,
+};
+
+MP_REGISTER_MODULE(MP_QSTR_math, mp_module_math);
+
+#line 460 "E:\\Work\\code\\opensource\\micropython\\py\\modmath.c"

@@ -1,0 +1,11 @@
+*** Using Compiler 'V6.24', folder: 'D:\Program Files\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'mp_threadx'
+Note: source file '../AZURE_RTOS/App/app_azure_rtos.c' - object file renamed from 'mp_threadx\app_azure_rtos.o' to 'mp_threadx\app_azure_rtos_1.o'.compiling stdout_helpers.c...
+linking...
+mp_threadx\mp_threadx.axf: Error: L6200E: Symbol mp_hal_stdout_tx_strn_cooked multiply defined (by stdout_helpers.o and uart_core.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+"mp_threadx\mp_threadx.axf" - 1 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:01

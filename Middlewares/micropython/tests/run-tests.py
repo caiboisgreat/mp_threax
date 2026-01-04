@@ -22,6 +22,11 @@ TEST_TIMEOUT = float(os.environ.get("MICROPY_TEST_TIMEOUT", 30))
 # are guaranteed to always work, this one should though.
 BASEPATH = os.path.dirname(os.path.abspath(inspect.getsourcefile(lambda: None)))
 
+RV32_ARCH_FLAGS = {
+    "zba": 1 << 0,
+    "zcmp": 1 << 1,
+}
+
 
 def base_path(*p):
     return os.path.abspath(os.path.join(BASEPATH, *p)).replace("\\", "/")
@@ -57,6 +62,23 @@ DIFF = os.getenv("MICROPY_DIFF", "diff -u")
 
 # Set PYTHONIOENCODING so that CPython will use utf-8 on systems which set another encoding in the locale
 os.environ["PYTHONIOENCODING"] = "utf-8"
+
+
+def normalize_newlines(data):
+    """Normalize newline variations to \\n.
+
+    Only normalizes actual line endings, not literal \\r characters in strings.
+    Handles \\r\\r\\n and \\r\\n cases to ensure consistent comparison
+    across different platforms and terminals.
+    """
+    if isinstance(data, bytes):
+        # Handle PTY double-newline issue first
+        data = data.replace(b"\r\r\n", b"\n")
+        # Then handle standard Windows line endings
+        data = data.replace(b"\r\n", b"\n")
+        # Don't convert standalone \r as it might be literal content
+    return data
+
 
 # Code to allow a target MicroPython to import an .mpy from RAM
 # Note: the module is named `__injected_test` but it needs to have `__name__` set to
@@ -161,6 +183,9 @@ emitter_tests_to_skip = {
 # Tests to skip on specific targets.
 # These are tests that are difficult to detect that they should not be run on the given target.
 platform_tests_to_skip = {
+    "esp8266": (
+        "stress/list_sort.py",  # watchdog kicks in because it takes too long
+    ),
     "minimal": (
         "basics/class_inplace_op.py",  # all special methods not supported
         "basics/subclass_native_init.py",  # native subclassing corner cases not support
@@ -307,6 +332,7 @@ tests_requiring_slice = (
 tests_requiring_target_wiring = (
     "extmod/machine_uart_irq_txidle.py",
     "extmod/machine_uart_tx.py",
+    "extmod_hardware/machine_encoder.py",
     "extmod_hardware/machine_uart_irq_break.py",
     "extmod_hardware/machine_uart_irq_rx.py",
     "extmod_hardware/machine_uart_irq_rxidle.py",
@@ -382,12 +408,25 @@ def detect_inline_asm_arch(pyb, args):
     return None
 
 
+def map_rv32_arch_flags(flags):
+    mapped_flags = []
+    for extension, bit in RV32_ARCH_FLAGS.items():
+        if flags & bit:
+            mapped_flags.append(extension)
+        flags &= ~bit
+    if flags:
+        raise Exception("Unexpected flag bits set in value {}".format(flags))
+    return mapped_flags
+
+
 def detect_test_platform(pyb, args):
     # Run a script to detect various bits of information about the target test instance.
     output = run_feature_check(pyb, args, "target_info.py")
     if output.endswith(b"CRASH"):
         raise ValueError("cannot detect platform: {}".format(output))
-    platform, arch, build, thread, float_prec, unicode = str(output, "ascii").strip().split()
+    platform, arch, arch_flags, build, thread, float_prec, unicode = (
+        str(output, "ascii").strip().split()
+    )
     if arch == "None":
         arch = None
     inlineasm_arch = detect_inline_asm_arch(pyb, args)
@@ -395,11 +434,18 @@ def detect_test_platform(pyb, args):
         thread = None
     float_prec = int(float_prec)
     unicode = unicode == "True"
+    if arch == "rv32imc":
+        arch_flags = map_rv32_arch_flags(int(arch_flags))
+    else:
+        arch_flags = None
 
     args.platform = platform
     args.arch = arch
+    args.arch_flags = arch_flags
     if arch and not args.mpy_cross_flags:
         args.mpy_cross_flags = "-march=" + arch
+        if arch_flags:
+            args.mpy_cross_flags += " -march-flags=" + ",".join(arch_flags)
     args.inlineasm_arch = inlineasm_arch
     args.build = build
     args.thread = thread
@@ -410,6 +456,8 @@ def detect_test_platform(pyb, args):
     print("platform={}".format(platform), end="")
     if arch:
         print(" arch={}".format(arch), end="")
+        if arch_flags:
+            print(" arch_flags={}".format(",".join(arch_flags)), end="")
     if inlineasm_arch:
         print(" inlineasm={}".format(inlineasm_arch), end="")
     if thread:
@@ -681,7 +729,7 @@ def run_micropython(pyb, args, test_file, test_file_abspath, is_special=False):
         )
 
     # canonical form for all ports/platforms is to use \n for end-of-line
-    output_mupy = output_mupy.replace(b"\r\n", b"\n")
+    output_mupy = normalize_newlines(output_mupy)
 
     # don't try to convert the output if we should skip this test
     if had_crash or output_mupy in (b"SKIP\n", b"SKIP-TOO-LARGE\n", b"CRASH"):
@@ -905,10 +953,15 @@ def run_tests(pyb, tests, args, result_dir, num_threads=1):
                 skip_tests.add("inlineasm/thumb/asmfpsqrt.py")
 
         if args.inlineasm_arch == "rv32":
-            # Check if @micropython.asm_rv32 supports Zba instructions, and skip such tests if it doesn't
-            output = run_feature_check(pyb, args, "inlineasm_rv32_zba.py")
-            if output != b"rv32_zba\n":
-                skip_tests.add("inlineasm/rv32/asmzba.py")
+            # Discover extension-specific inlineasm tests and add them to the
+            # list of tests to run if applicable.
+            for extension in RV32_ARCH_FLAGS:
+                try:
+                    output = run_feature_check(pyb, args, "inlineasm_rv32_{}.py".format(extension))
+                    if output.strip() != "rv32_{}".format(extension).encode():
+                        skip_tests.add("inlineasm/rv32/asm_ext_{}.py".format(extension))
+                except FileNotFoundError:
+                    pass
 
         # Check if emacs repl is supported, and skip such tests if it's not
         t = run_feature_check(pyb, args, "repl_emacs_check.py")

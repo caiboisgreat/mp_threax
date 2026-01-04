@@ -1,0 +1,8 @@
+Q(function)
+Q(any)
+Q(read)
+Q(readline)
+Q(readinto)
+Q(write)
+Q(close)
+Q(RingIO)

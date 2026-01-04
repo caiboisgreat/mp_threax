@@ -162,7 +162,7 @@ static void decompress_error_text_maybe(mp_obj_exception_t *o) {
 
 void mp_obj_exception_print(const mp_print_t *print, mp_obj_t o_in, mp_print_kind_t kind) {
     mp_obj_exception_t *o = MP_OBJ_TO_PTR(o_in);
-    mp_print_kind_t k = (mp_print_kind_t)(kind & (mp_print_kind_t)~PRINT_EXC_SUBCLASS);
+    mp_print_kind_t k = kind & ~PRINT_EXC_SUBCLASS;
     bool is_subclass = kind & PRINT_EXC_SUBCLASS;
     if (!is_subclass && (k == PRINT_REPR || k == PRINT_EXC)) {
         mp_print_str(print, qstr_str(o->base.type->name));

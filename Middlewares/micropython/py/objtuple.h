@@ -37,14 +37,7 @@ typedef struct _mp_obj_tuple_t {
 typedef struct _mp_rom_obj_tuple_t {
     mp_obj_base_t base;
     size_t len;
-    #if defined(__CC_ARM)
-    // ArmCC (Keil v5) rejects initialisers for flexible array members.
-    // Reserve enough space for all ROM tuples/attrtuples used in this build.
-    // Note: MP_DEFINE_ATTRTUPLE stores an extra pointer to the fields array.
-    mp_rom_obj_t items[8];
-    #else
     mp_rom_obj_t items[];
-    #endif
 } mp_rom_obj_tuple_t;
 
 void mp_obj_tuple_print(const mp_print_t *print, mp_obj_t o_in, mp_print_kind_t kind);

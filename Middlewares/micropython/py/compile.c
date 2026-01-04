@@ -103,6 +103,7 @@ static const emit_method_table_t *emit_native_table[] = {
     &emit_native_xtensa_method_table,
     &emit_native_xtensawin_method_table,
     &emit_native_rv32_method_table,
+    NULL,
     &emit_native_debug_method_table,
 };
 
@@ -497,23 +498,23 @@ static void c_assign_atom_expr(compiler_t *comp, mp_parse_node_struct_t *pns, as
 
 static void c_assign_tuple(compiler_t *comp, uint num_tail, mp_parse_node_t *nodes_tail) {
     // look for star expression
-    int have_star_index = -1;
+    uint have_star_index = -1;
     for (uint i = 0; i < num_tail; i++) {
         if (MP_PARSE_NODE_IS_STRUCT_KIND(nodes_tail[i], PN_star_expr)) {
-            if (have_star_index < 0) {
+            if (have_star_index == (uint)-1) {
                 EMIT_ARG(unpack_ex, i, num_tail - i - 1);
-                have_star_index = (int)i;
+                have_star_index = i;
             } else {
                 compile_syntax_error(comp, nodes_tail[i], MP_ERROR_TEXT("multiple *x in assignment"));
                 return;
             }
         }
     }
-    if (have_star_index < 0) {
+    if (have_star_index == (uint)-1) {
         EMIT_ARG(unpack_sequence, num_tail);
     }
     for (uint i = 0; i < num_tail; i++) {
-        if ((int)i == have_star_index) {
+        if (i == have_star_index) {
             c_assign(comp, ((mp_parse_node_struct_t *)nodes_tail[i])->nodes[0], ASSIGN_STORE);
         } else {
             c_assign(comp, nodes_tail[i], ASSIGN_STORE);
@@ -571,6 +572,7 @@ static void c_assign(compiler_t *comp, mp_parse_node_t pn, assign_kind_t assign_
                     pns = (mp_parse_node_struct_t *)pns->nodes[0];
                     goto testlist_comp;
                 }
+                break;
 
             case PN_atom_bracket:
                 // lhs is something in brackets
@@ -1320,9 +1322,6 @@ static void compile_assert_stmt(compiler_t *comp, mp_parse_node_struct_t *pns) {
 static void compile_if_stmt(compiler_t *comp, mp_parse_node_struct_t *pns) {
     uint l_end = comp_next_label(comp);
 
-    mp_parse_node_t *pn_elif = NULL;
-    size_t n_elif = 0;
-
     // optimisation: don't emit anything when "if False"
     if (!mp_parse_node_is_const_false(pns->nodes[0])) {
         uint l_fail = comp_next_label(comp);
@@ -1345,7 +1344,8 @@ static void compile_if_stmt(compiler_t *comp, mp_parse_node_struct_t *pns) {
     }
 
     // compile elif blocks (if any)
-    n_elif = mp_parse_node_extract_list(&pns->nodes[2], PN_if_stmt_elif_list, &pn_elif);
+    mp_parse_node_t *pn_elif;
+    size_t n_elif = mp_parse_node_extract_list(&pns->nodes[2], PN_if_stmt_elif_list, &pn_elif);
     for (size_t i = 0; i < n_elif; i++) {
         assert(MP_PARSE_NODE_IS_STRUCT_KIND(pn_elif[i], PN_if_stmt_elif)); // should be
         mp_parse_node_struct_t *pns_elif = (mp_parse_node_struct_t *)pn_elif[i];
@@ -2005,8 +2005,6 @@ static void compile_async_stmt(compiler_t *comp, mp_parse_node_struct_t *pns) {
 
 static void compile_expr_stmt(compiler_t *comp, mp_parse_node_struct_t *pns) {
     mp_parse_node_t pn_rhs = pns->nodes[1];
-    mp_parse_node_struct_t *pns1 = NULL;
-    int kind = 0;
     if (MP_PARSE_NODE_IS_NULL(pn_rhs)) {
         if (comp->is_repl && comp->scope_cur->kind == SCOPE_MODULE) {
             // for REPL, evaluate then print the expression
@@ -2026,8 +2024,8 @@ static void compile_expr_stmt(compiler_t *comp, mp_parse_node_struct_t *pns) {
             }
         }
     } else if (MP_PARSE_NODE_IS_STRUCT(pn_rhs)) {
-        pns1 = (mp_parse_node_struct_t *)pn_rhs;
-        kind = MP_PARSE_NODE_STRUCT_KIND(pns1);
+        mp_parse_node_struct_t *pns1 = (mp_parse_node_struct_t *)pn_rhs;
+        int kind = MP_PARSE_NODE_STRUCT_KIND(pns1);
         if (kind == PN_annassign) {
             // the annotation is in pns1->nodes[0] and is ignored
             if (MP_PARSE_NODE_IS_NULL(pns1->nodes[1])) {
@@ -2048,8 +2046,8 @@ static void compile_expr_stmt(compiler_t *comp, mp_parse_node_struct_t *pns) {
             c_assign(comp, pns->nodes[0], ASSIGN_AUG_LOAD); // lhs load for aug assign
             compile_node(comp, pns1->nodes[1]); // rhs
             assert(MP_PARSE_NODE_IS_TOKEN(pns1->nodes[0]));
-            mp_token_kind_t tok = (mp_token_kind_t)MP_PARSE_NODE_LEAF_ARG(pns1->nodes[0]);
-            mp_binary_op_t op = (mp_binary_op_t)(MP_BINARY_OP_INPLACE_OR + (tok - MP_TOKEN_DEL_PIPE_EQUAL));
+            mp_token_kind_t tok = MP_PARSE_NODE_LEAF_ARG(pns1->nodes[0]);
+            mp_binary_op_t op = MP_BINARY_OP_INPLACE_OR + (tok - MP_TOKEN_DEL_PIPE_EQUAL);
             EMIT_ARG(binary_op, op);
             c_assign(comp, pns->nodes[0], ASSIGN_AUG_STORE); // lhs store for aug assign
         } else if (kind == PN_expr_stmt_assign_list) {
@@ -2221,12 +2219,12 @@ static void compile_comparison(compiler_t *comp, mp_parse_node_struct_t *pns) {
             EMIT(rot_three);
         }
         if (MP_PARSE_NODE_IS_TOKEN(pns->nodes[i])) {
-            mp_token_kind_t tok = (mp_token_kind_t)MP_PARSE_NODE_LEAF_ARG(pns->nodes[i]);
+            mp_token_kind_t tok = MP_PARSE_NODE_LEAF_ARG(pns->nodes[i]);
             mp_binary_op_t op;
             if (tok == MP_TOKEN_KW_IN) {
                 op = MP_BINARY_OP_IN;
             } else {
-                op = (mp_binary_op_t)(MP_BINARY_OP_LESS + (tok - MP_TOKEN_OP_LESS));
+                op = MP_BINARY_OP_LESS + (tok - MP_TOKEN_OP_LESS);
             }
             EMIT_ARG(binary_op, op);
         } else {
@@ -2266,7 +2264,7 @@ static void compile_star_expr(compiler_t *comp, mp_parse_node_struct_t *pns) {
 static void compile_binary_op(compiler_t *comp, mp_parse_node_struct_t *pns) {
     MP_STATIC_ASSERT(MP_BINARY_OP_OR + PN_xor_expr - PN_expr == MP_BINARY_OP_XOR);
     MP_STATIC_ASSERT(MP_BINARY_OP_OR + PN_and_expr - PN_expr == MP_BINARY_OP_AND);
-    mp_binary_op_t binary_op = (mp_binary_op_t)(MP_BINARY_OP_OR + MP_PARSE_NODE_STRUCT_KIND(pns) - PN_expr);
+    mp_binary_op_t binary_op = MP_BINARY_OP_OR + MP_PARSE_NODE_STRUCT_KIND(pns) - PN_expr;
     int num_nodes = MP_PARSE_NODE_STRUCT_NUM_NODES(pns);
     compile_node(comp, pns->nodes[0]);
     for (int i = 1; i < num_nodes; ++i) {
@@ -2280,21 +2278,21 @@ static void compile_term(compiler_t *comp, mp_parse_node_struct_t *pns) {
     compile_node(comp, pns->nodes[0]);
     for (int i = 1; i + 1 < num_nodes; i += 2) {
         compile_node(comp, pns->nodes[i + 1]);
-        mp_token_kind_t tok = (mp_token_kind_t)MP_PARSE_NODE_LEAF_ARG(pns->nodes[i]);
-        mp_binary_op_t op = (mp_binary_op_t)(MP_BINARY_OP_LSHIFT + (tok - MP_TOKEN_OP_DBL_LESS));
+        mp_token_kind_t tok = MP_PARSE_NODE_LEAF_ARG(pns->nodes[i]);
+        mp_binary_op_t op = MP_BINARY_OP_LSHIFT + (tok - MP_TOKEN_OP_DBL_LESS);
         EMIT_ARG(binary_op, op);
     }
 }
 
 static void compile_factor_2(compiler_t *comp, mp_parse_node_struct_t *pns) {
     compile_node(comp, pns->nodes[1]);
-    mp_token_kind_t tok = (mp_token_kind_t)MP_PARSE_NODE_LEAF_ARG(pns->nodes[0]);
+    mp_token_kind_t tok = MP_PARSE_NODE_LEAF_ARG(pns->nodes[0]);
     mp_unary_op_t op;
     if (tok == MP_TOKEN_OP_TILDE) {
         op = MP_UNARY_OP_INVERT;
     } else {
         assert(tok == MP_TOKEN_OP_PLUS || tok == MP_TOKEN_OP_MINUS);
-        op = (mp_unary_op_t)(MP_UNARY_OP_POSITIVE + (tok - MP_TOKEN_OP_PLUS));
+        op = MP_UNARY_OP_POSITIVE + (tok - MP_TOKEN_OP_PLUS);
     }
     EMIT_ARG(unary_op, op);
 }
@@ -2826,7 +2824,7 @@ static void compile_node(compiler_t *comp, mp_parse_node_t pn) {
                     // or when single_input lets through a NEWLINE (user enters a blank line)
                     // do nothing
                 } else {
-                    EMIT_ARG(load_const_tok, (mp_token_kind_t)arg);
+                    EMIT_ARG(load_const_tok, arg);
                 }
                 break;
         }
@@ -3574,6 +3572,13 @@ void mp_compile_to_raw_code(mp_parse_tree_t *parse_tree, qstr source_file, bool 
                 case MP_EMIT_OPT_NATIVE_PYTHON:
                 case MP_EMIT_OPT_VIPER:
                     if (emit_native == NULL) {
+                        // The check looks like this to work around a false
+                        // warning in GCC 13 (and possibly later), where it
+                        // assumes that the check will always fail.
+                        if ((uintptr_t)NATIVE_EMITTER_TABLE == (uintptr_t)NULL) {
+                            comp->compile_error = mp_obj_new_exception_msg(&mp_type_NotImplementedError, MP_ERROR_TEXT("cannot emit native code for this architecture"));
+                            goto emit_finished;
+                        }
                         emit_native = NATIVE_EMITTER(new)(&comp->emit_common, &comp->compile_error, &comp->next_label, max_num_labels);
                     }
                     comp->emit_method_table = NATIVE_EMITTER_TABLE;
@@ -3605,6 +3610,10 @@ void mp_compile_to_raw_code(mp_parse_tree_t *parse_tree, qstr source_file, bool 
             }
         }
     }
+
+    #if MICROPY_EMIT_NATIVE
+emit_finished:
+    #endif
 
     if (comp->compile_error != MP_OBJ_NULL) {
         // if there is no line number for the error then use the line

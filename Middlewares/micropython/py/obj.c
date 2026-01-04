@@ -262,8 +262,7 @@ mp_obj_t mp_obj_equal_not_equal(mp_binary_op_t op, mp_obj_t o1, mp_obj_t o2) {
 
     // generic type, call binary_op(MP_BINARY_OP_EQUAL)
     while (pass_number < 2) {
-        const mp_obj_type_t *type;
-        type = mp_obj_get_type(o1);
+        const mp_obj_type_t *type = mp_obj_get_type(o1);
         // If a full equality test is not needed and the other object is a different
         // type then we don't need to bother trying the comparison.
         if (MP_OBJ_TYPE_HAS_SLOT(type, binary_op) &&

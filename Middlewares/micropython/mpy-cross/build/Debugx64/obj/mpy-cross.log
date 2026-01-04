@@ -1,0 +1,12 @@
+﻿  GEN E:\Work\code\opensource\micropython\mpy-cross\build\genhdr\mpversion.h.tmp
+  1>
+  asmrv32.c
+  QSTR not updated
+  Module registrations not updated
+  Root pointer registrations not updated
+  Compressed data not updated
+  asmrv32.c
+  modsys.c
+  main.c
+  gchelper_generic.c
+  mpy-cross.vcxproj -> E:\Work\code\opensource\micropython\mpy-cross\build\Debugx64\mpy-cross.exe
