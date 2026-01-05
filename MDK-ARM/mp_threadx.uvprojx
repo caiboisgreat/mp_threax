@@ -787,6 +787,11 @@
               <FilePath>..\Middlewares\micropython\py_port\py_init.c</FilePath>
             </File>
             <File>
+              <FileName>frozen_mpy.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\frozen_mpy.c</FilePath>
+            </File>
+            <File>
               <FileName>py_init.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\Middlewares\micropython\py_port\py_init.h</FilePath>

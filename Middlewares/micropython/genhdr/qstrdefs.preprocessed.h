@@ -415,7 +415,6 @@
 #define USE_HAL_DRIVER 1
 #define STM32F405xx 1
 #define TX_INCLUDE_USER_DEFINE_FILE 1
-#define MBEDTLS_CONFIG_FILE "py_port/mbedtls_config_port.h"
 #define _RTE_ 1
 # 1 "<built-in>" 2
 # 1 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\genhdr\\qstrdefs.concat.quoted.h" 2
@@ -858,13 +857,20 @@ typedef unsigned long long uintmax_t;
 #define MICROPY_ENABLE_COMPILER (1)
 
 
+#define MICROPY_MODULE_FROZEN_MPY (1)
+#define MICROPY_ENABLE_EXTERNAL_IMPORT (1)
+
+
+
+
+#define MICROPY_QSTR_EXTRA_POOL mp_qstr_frozen_const_pool
+
+
 
 
 
 
 #define MICROPY_HELPER_REPL (1)
-#define MICROPY_MODULE_FROZEN_MPY (1)
-#define MICROPY_ENABLE_EXTERNAL_IMPORT (1)
 
 #define MICROPY_ALLOC_PATH_MAX (256)
 
@@ -931,7 +937,7 @@ typedef long mp_off_t;
 
 #define MICROPY_HW_BOARD_NAME "PYBASE"
 #define MICROPY_HW_MCU_NAME "STM32F405RG6"
-# 158 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 165 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_MIN_USE_CORTEX_CPU (0)
 
 

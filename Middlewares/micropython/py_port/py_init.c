@@ -18,12 +18,11 @@
 #include "shared/runtime/pyexec.h"
 
 // Frozen modules are required for stdlib modules when MICROPY_VFS=0.
-// The generated file defines:
-// - mp_qstr_frozen_const_pool
-// - mp_frozen_names
-// - mp_frozen_mpy_content
-#if MICROPY_MODULE_FROZEN_MPY && !defined(NO_QSTR)
-#include "frozen_mpy.c"
+// They are generated into py_port/frozen_mpy.c and compiled as a normal
+// translation unit (added to the Keil project).
+#if MICROPY_MODULE_FROZEN_MPY
+extern const char mp_frozen_names[];
+extern const mp_frozen_module_t *const mp_frozen_mpy_content[];
 #else
 const char mp_frozen_names[] = "";
 const mp_frozen_module_t *const mp_frozen_mpy_content[] = { NULL };

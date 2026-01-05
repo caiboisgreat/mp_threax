@@ -52,13 +52,17 @@ def parse_uvprojx(uvprojx_path: Path):
             continue
         # Normalise Keil's backslashes.
         fp_norm = fp.replace("/", "\\")
+        fp_norm_l = fp_norm.lower()
         if "\\Middlewares\\micropython\\" not in fp_norm:
+            continue
+        # Skip generated frozen module C output (it is derived from .mpy inputs).
+        # Including it in NO_QSTR preprocessing can cause duplicated registrations/QSTRs.
+        if fp_norm_l.endswith("\\middlewares\\micropython\\py_port\\frozen_mpy.c"):
             continue
         # Skip third-party/library code under MicroPython's tree.
         # genhdr is only interested in MP_QSTR*/MP_REGISTER_* usage from the
         # MicroPython runtime/modules; vendor libs (eg mbedTLS) can have
         # platform-specific #error blocks that break preprocessing.
-        fp_norm_l = fp_norm.lower()
         if "\\middlewares\\micropython\\lib\\" in fp_norm_l:
             continue
         if "\\middlewares\\micropython\\examples\\" in fp_norm_l:
@@ -281,10 +285,49 @@ def main():
     mod_text = run([sys.executable, str(py_dir / "makemoduledefs.py"), str(mod_collected)], cwd=workspace_root)
     moduledefs_h.write_text(mod_text, encoding="utf-8")
 
+    # 4) Frozen .mpy modules
+    # This project has MICROPY_VFS=0, so Python-level stdlib shims must be frozen.
+    # Regenerate the port's frozen_mpy.c from the compiled .mpy files.
+    frozen_build_dir = workspace_root / "Middlewares" / "micropython" / "py_port" / "frozen_build"
+    frozen_out_c = workspace_root / "Middlewares" / "micropython" / "py_port" / "frozen_mpy.c"
+    qstr_header_for_freeze = qstr_preprocessed_for_data
+    mpy_tool = workspace_root / "Middlewares" / "micropython" / "tools" / "mpy-tool.py"
+
+    # Keep this list explicit to avoid accidentally overriding built-in C modules.
+    # (eg socket is C-backed in this port, so don't freeze a socket.py shim here.)
+    frozen_allowlist = [
+        "zlib.mpy",
+        "gzip.mpy",
+        "_thread.mpy",
+        "ssl.mpy",
+    ]
+
+    mpy_files: list[Path] = []
+    for name in frozen_allowlist:
+        p = frozen_build_dir / name
+        if not p.exists():
+            raise RuntimeError(f"Missing frozen module: {p}")
+        mpy_files.append(p)
+
+    frozen_c = run(
+        [
+            sys.executable,
+            str(mpy_tool),
+            "--freeze",
+            "--qstr-header",
+            str(qstr_header_for_freeze),
+        ]
+        + [str(p) for p in mpy_files],
+        cwd=workspace_root,
+    )
+    # mpy-tool prints generated C to stdout for --freeze; persist it to the port file.
+    frozen_out_c.write_text(frozen_c, encoding="utf-8", newline="\n")
+
     print("Regenerated MicroPython genhdr:")
     print(f"- {qstr_generated}")
     print(f"- {rp_generated}")
     print(f"- {moduledefs_h}")
+    print(f"- {frozen_out_c}")
 
 
 if __name__ == "__main__":
