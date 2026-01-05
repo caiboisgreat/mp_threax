@@ -207,9 +207,79 @@ void MP_NORETURN __fatal_error(const char *msg) {
 // Arm Compiler may emit calls to __aeabi_assert for assert() even in freestanding
 // builds. Provide a minimal implementation to satisfy the linker.
 void __aeabi_assert(const char *expr, const char *file, int line) {
-    (void)expr;
-    (void)file;
-    (void)line;
+    uint32_t ipsr = 0;
+    __asm volatile ("mrs %0, ipsr" : "=r"(ipsr));
+
+    #if MICROPY_MIN_USE_STM32_MCU
+    typedef struct {
+        volatile uint32_t SR;
+        volatile uint32_t DR;
+    } periph_uart_t;
+    #define USART2_DBG ((periph_uart_t *)0x40004400)
+
+    // Best-effort panic message over USART2 (polling, no HAL), then spin.
+    const char *p = "\r\nFATAL: __aeabi_assert expr='";
+    while (*p) {
+        while ((USART2_DBG->SR & (1u << 7)) == 0u) {
+        }
+        USART2_DBG->DR = (uint32_t)(uint8_t)(*p++);
+    }
+    if (expr) {
+        while (*expr) {
+            while ((USART2_DBG->SR & (1u << 7)) == 0u) {
+            }
+            USART2_DBG->DR = (uint32_t)(uint8_t)(*expr++);
+        }
+    }
+    p = "' file='";
+    while (*p) {
+        while ((USART2_DBG->SR & (1u << 7)) == 0u) {
+        }
+        USART2_DBG->DR = (uint32_t)(uint8_t)(*p++);
+    }
+    if (file) {
+        while (*file) {
+            while ((USART2_DBG->SR & (1u << 7)) == 0u) {
+            }
+            USART2_DBG->DR = (uint32_t)(uint8_t)(*file++);
+        }
+    }
+    p = "' line=";
+    while (*p) {
+        while ((USART2_DBG->SR & (1u << 7)) == 0u) {
+        }
+        USART2_DBG->DR = (uint32_t)(uint8_t)(*p++);
+    }
+    // Print line in decimal.
+    char buf[12];
+    unsigned int u = (line < 0) ? 0u : (unsigned int)line;
+    int n = 0;
+    do {
+        buf[n++] = (char)('0' + (u % 10u));
+        u /= 10u;
+    } while (u != 0u && n < (int)sizeof(buf));
+    while (n--) {
+        while ((USART2_DBG->SR & (1u << 7)) == 0u) {
+        }
+        USART2_DBG->DR = (uint32_t)(uint8_t)buf[n];
+    }
+    p = "\r\n";
+    while (*p) {
+        while ((USART2_DBG->SR & (1u << 7)) == 0u) {
+        }
+        USART2_DBG->DR = (uint32_t)(uint8_t)(*p++);
+    }
+    #endif
+
+    // If this assert happens during normal MicroPython VM execution then it's
+    // better to raise an exception than to hard-fault, so users can see a
+    // traceback and continue debugging.
+    //
+    // If there's no NLR handler (or we are in an ISR), we can't safely raise.
+    if (ipsr == 0 && MP_STATE_THREAD(nlr_top) != NULL) {
+        mp_raise_msg(&mp_type_AssertionError, MP_ERROR_TEXT("C assert failed"));
+    }
+
     __fatal_error("assert");
 }
 

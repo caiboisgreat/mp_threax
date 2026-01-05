@@ -12,6 +12,15 @@
  *  SPDX-License-Identifier: Apache-2.0 OR GPL-2.0-or-later
  */
 
+// When building mbedTLS as part of this firmware workspace, prefer the
+// MicroPython-provided configuration header if it is available.
+//
+// Do not rely on MicroPython feature macros here: the mbedTLS sources are
+// compiled independently and don't include mpconfigport.h.
+#if defined(__has_include) && __has_include("py_port/mbedtls_config_port.h")
+#include "py_port/mbedtls_config_port.h"
+#else
+
 /**
  * This is an optional version symbol that enables compatibility handling of
  * config files.
@@ -4243,3 +4252,5 @@
 //#define MBEDTLS_X509_MAX_FILE_PATH_LEN     512 /**< Maximum length of a path/filename string in bytes including the null terminator character ('\0'). */
 
 /** \} name SECTION: Module configuration options */
+
+#endif /* defined(__has_include) && __has_include("py_port/mbedtls_config_port.h") */

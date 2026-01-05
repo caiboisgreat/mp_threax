@@ -54,6 +54,15 @@ def parse_uvprojx(uvprojx_path: Path):
         fp_norm = fp.replace("/", "\\")
         if "\\Middlewares\\micropython\\" not in fp_norm:
             continue
+        # Skip third-party/library code under MicroPython's tree.
+        # genhdr is only interested in MP_QSTR*/MP_REGISTER_* usage from the
+        # MicroPython runtime/modules; vendor libs (eg mbedTLS) can have
+        # platform-specific #error blocks that break preprocessing.
+        fp_norm_l = fp_norm.lower()
+        if "\\middlewares\\micropython\\lib\\" in fp_norm_l:
+            continue
+        if "\\middlewares\\micropython\\examples\\" in fp_norm_l:
+            continue
         if not fp_norm.lower().endswith((".c", ".cc", ".cpp", ".cxx")):
             continue
         mp_sources.append(Path(fp_norm))

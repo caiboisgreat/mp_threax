@@ -1,96 +1,12 @@
 *** Using Compiler 'V6.24', folder: 'D:\Program Files\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'mp_threadx'
-../Middlewares/micropython/py/objint_mpz.c(34): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
-   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
-      |                                                           ^
-../Middlewares/micropython/py/objint_mpz.c(48): error: use of undeclared identifier 'SSIZE_MAX'
-   48 |     (MP_SSIZE_MAX >> MPZ_DIG_SIZE * 0) & DIG_MASK,
-      |      ^
-../Middlewares/micropython\py/mpconfig.h(2342): note: expanded from macro 'MP_SSIZE_MAX'
- 2342 | #define MP_SSIZE_MAX SSIZE_MAX
-      |                      ^
-1 warning and 1 error generated.
-compiling objint_mpz.c...
-../Middlewares/micropython/py_port/py_init.c(7): warning: In file included from...../Middlewares/micropython\py/compile.h(31): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
-   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
-      |                                                           ^
-../Middlewares/micropython/py_port/py_init.c(26): warning: In file included from...../Middlewares/micropython/py_port\frozen_mpy.c(31): error: redefinition of enumerator 'MP_QSTR_GzipFile'
-   31 |     MP_QSTR_GzipFile = MP_QSTRnumber_of,
-      |     ^
-../Middlewares/micropython\genhdr/qstrdefs.generated.h(226): note: previous definition is here
-  226 | QDEF1(MP_QSTR_GzipFile, 48391, 8, "GzipFile")
-      |       ^
-../Middlewares/micropython/py_port/py_init.c(26): warning: In file included from...../Middlewares/micropython/py_port\frozen_mpy.c(32): error: redefinition of enumerator 'MP_QSTR__decode_wbits'
-   32 |     MP_QSTR__decode_wbits,
-      |     ^
-../Middlewares/micropython\genhdr/qstrdefs.generated.h(334): note: previous definition is here
-  334 | QDEF1(MP_QSTR__decode_wbits, 34514, 13, "_decode_wbits")
-      |       ^
-../Middlewares/micropython/py_port/py_init.c(26): warning: In file included from...../Middlewares/micropython/py_port\frozen_mpy.c(33): error: redefinition of enumerator 'MP_QSTR_compress'
-   33 |     MP_QSTR_compress,
-      |     ^
-../Middlewares/micropython\genhdr/qstrdefs.generated.h(373): note: previous definition is here
-  373 | QDEF1(MP_QSTR_compress, 31395, 8, "compress")
-      |       ^
-../Middlewares/micropython/py_port/py_init.c(26): warning: In file included from...../Middlewares/micropython/py_port\frozen_mpy.c(34): error: redefinition of enumerator 'MP_QSTR_decompress'
-   34 |     MP_QSTR_decompress,
-      |     ^
-../Middlewares/micropython\genhdr/qstrdefs.generated.h(382): note: previous definition is here
-  382 | QDEF1(MP_QSTR_decompress, 64354, 10, "decompress")
-      |       ^
-../Middlewares/micropython/py_port/py_init.c(26): warning: In file included from...../Middlewares/micropython/py_port\frozen_mpy.c(35): error: redefinition of enumerator 'MP_QSTR_filename'
-   35 |     MP_QSTR_filename,
-      |     ^
-../Middlewares/micropython\genhdr/qstrdefs.generated.h(415): note: previous definition is here
-  415 | QDEF1(MP_QSTR_filename, 21732, 8, "filename")
-      |       ^
-../Middlewares/micropython/py_port/py_init.c(26): warning: In file included from...../Middlewares/micropython/py_port\frozen_mpy.c(36): error: redefinition of enumerator 'MP_QSTR_fileobj'
-   36 |     MP_QSTR_fileobj,
-      |     ^
-../Middlewares/micropython\genhdr/qstrdefs.generated.h(416): note: previous definition is here
-  416 | QDEF1(MP_QSTR_fileobj, 19460, 7, "fileobj")
-      |       ^
-../Middlewares/micropython/py_port/py_init.c(26): warning: In file included from...../Middlewares/micropython/py_port\frozen_mpy.c(37): error: redefinition of enumerator 'MP_QSTR_gzip_dot_py'
-   37 |     MP_QSTR_gzip_dot_py,
-      |     ^
-../Middlewares/micropython\genhdr/qstrdefs.generated.h(437): note: previous definition is here
-  437 | QDEF1(MP_QSTR_gzip_dot_py, 13591, 11, "gzip_dot_py")
-      |       ^
-../Middlewares/micropython/py_port/py_init.c(26): warning: In file included from...../Middlewares/micropython/py_port\frozen_mpy.c(38): error: redefinition of enumerator 'MP_QSTR_mode'
-   38 |     MP_QSTR_mode,
-      |     ^
-../Middlewares/micropython\genhdr/qstrdefs.generated.h(492): note: previous definition is here
-  492 | QDEF1(MP_QSTR_mode, 49190, 4, "mode")
-      |       ^
-../Middlewares/micropython/py_port/py_init.c(26): warning: In file included from...../Middlewares/micropython/py_port\frozen_mpy.c(39): error: redefinition of enumerator 'MP_QSTR_rb'
-   39 |     MP_QSTR_rb,
-      |     ^
-../Middlewares/micropython\genhdr/qstrdefs.generated.h(531): note: previous definition is here
-  531 | QDEF1(MP_QSTR_rb, 28885, 2, "rb")
-      |       ^
-../Middlewares/micropython/py_port/py_init.c(26): warning: In file included from...../Middlewares/micropython/py_port\frozen_mpy.c(40): error: redefinition of enumerator 'MP_QSTR_wbits'
-   40 |     MP_QSTR_wbits,
-      |     ^
-../Middlewares/micropython\genhdr/qstrdefs.generated.h(593): note: previous definition is here
-  593 | QDEF1(MP_QSTR_wbits, 27294, 5, "wbits")
-      |       ^
-../Middlewares/micropython/py_port/py_init.c(26): warning: In file included from...../Middlewares/micropython/py_port\frozen_mpy.c(41): error: redefinition of enumerator 'MP_QSTR_zlib_dot_py'
-   41 |     MP_QSTR_zlib_dot_py,
-      |     ^
-../Middlewares/micropython\genhdr/qstrdefs.generated.h(594): note: previous definition is here
-  594 | QDEF1(MP_QSTR_zlib_dot_py, 31630, 11, "zlib_dot_py")
-      |       ^
-../Middlewares/micropython/py_port/py_init.c(121): warning: unused parameter 'filename' [-Wunused-parameter]
-  121 | mp_lexer_t *mp_lexer_new_from_file(qstr filename) {
-      |                                         ^
-../Middlewares/micropython/py_port/py_init.c(125): warning: unused parameter 'path' [-Wunused-parameter]
-  125 | mp_import_stat_t mp_import_stat(const char *path) {
-      |                                             ^
-../Middlewares/micropython/py_port/py_init.c(217): warning: unused parameter 'func' [-Wunused-parameter]
-  217 | void MP_WEAK __assert_func(const char *file, int line, const char *func, const char *expr) {
-      |                                                                    ^
-4 warnings and 11 errors generated.
-compiling py_init.c...
-"mp_threadx\mp_threadx.axf" - 12 Error(s), 5 Warning(s).
-Target not created.
-Build Time Elapsed:  00:00:01
+compiling pk_ecc.c...
+compiling rsa_alt_helpers.c...
+compiling bignum_core.c...
+compiling ssl_cookie.c...
+compiling ssl_client.c...
+linking...
+Program Size: Code=429844 RO-data=91880 RW-data=180 ZI-data=73244  
+FromELF: creating hex file...
+"mp_threadx\mp_threadx.axf" - 0 Error(s), 0 Warning(s).
+Build Time Elapsed:  00:00:02

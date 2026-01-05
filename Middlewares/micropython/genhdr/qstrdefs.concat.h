@@ -134,6 +134,12 @@ Q(BytesIO)
 
 Q(BytesIO)
 
+Q(CERT_NONE)
+
+Q(CERT_OPTIONAL)
+
+Q(CERT_REQUIRED)
+
 Q(CancelledError)
 
 Q(DeflateIO)
@@ -308,6 +314,8 @@ Q(LookupError)
 
 Q(LookupError)
 
+Q(MBEDTLS_VERSION)
+
 Q(MONO_HLSB)
 
 Q(MONO_HMSB)
@@ -358,6 +366,14 @@ Q(POLLIN)
 
 Q(POLLOUT)
 
+Q(PROTOCOL_DTLS_CLIENT)
+
+Q(PROTOCOL_DTLS_SERVER)
+
+Q(PROTOCOL_TLS_CLIENT)
+
+Q(PROTOCOL_TLS_SERVER)
+
 Q(PTR)
 
 Q(RAW)
@@ -391,6 +407,12 @@ Q(SO_RCVTIMEO)
 Q(SO_REUSEADDR)
 
 Q(SO_SNDTIMEO)
+
+Q(SSLContext)
+
+Q(SSLContext)
+
+Q(SSLSocket)
 
 Q(STA_IF)
 
@@ -517,6 +539,10 @@ Q(__contains__)
 Q(__contains__)
 
 Q(__contains__)
+
+Q(__del__)
+
+Q(__del__)
 
 Q(__del__)
 
@@ -653,6 +679,8 @@ Q(__mod__)
 Q(__module__)
 
 Q(__mul__)
+
+Q(__name__)
 
 Q(__name__)
 
@@ -1008,15 +1036,21 @@ Q(choice)
 
 Q(chr)
 
-Q(classmethod)
+Q(cipher)
 
 Q(classmethod)
 
-Q(clear)
+Q(classmethod)
 
 Q(clear)
 
 Q(clear)
+
+Q(clear)
+
+Q(client_id)
+
+Q(close)
 
 Q(close)
 
@@ -1128,6 +1162,10 @@ Q(difference_update)
 
 Q(digest)
 
+Q(digest)
+
+Q(digest)
+
 Q(dir)
 
 Q(disable)
@@ -1135,6 +1173,8 @@ Q(disable)
 Q(discard)
 
 Q(divmod)
+
+Q(do_handshake_on_connect)
 
 Q(doc)
 
@@ -1604,6 +1644,10 @@ Q(function)
 
 Q(function)
 
+Q(function)
+
+Q(function)
+
 Q(gamma)
 
 Q(gc)
@@ -1615,6 +1659,8 @@ Q(generator)
 Q(generator)
 
 Q(get)
+
+Q(get_ciphers)
 
 Q(getaddrinfo)
 
@@ -1798,6 +1844,10 @@ Q(little)
 
 Q(load)
 
+Q(load_cert_chain)
+
+Q(load_verify_locations)
+
 Q(loads)
 
 Q(loads)
@@ -1845,6 +1895,10 @@ Q(max)
 Q(maximum_space_recursion_space_depth_space_exceeded)
 
 Q(maxsize)
+
+Q(md5)
+
+Q(md5)
 
 Q(mem_alloc)
 
@@ -2020,7 +2074,7 @@ Q(read)
 
 Q(read)
 
-Q(readinto)
+Q(read)
 
 Q(readinto)
 
@@ -2031,6 +2085,12 @@ Q(readinto)
 Q(readinto)
 
 Q(readinto)
+
+Q(readinto)
+
+Q(readinto)
+
+Q(readline)
 
 Q(readline)
 
@@ -2051,6 +2111,10 @@ Q(rect)
 Q(rect)
 
 Q(recv)
+
+Q(recv)
+
+Q(recv_into)
 
 Q(recvfrom)
 
@@ -2116,6 +2180,10 @@ Q(send)
 
 Q(send)
 
+Q(send)
+
+Q(sendall)
+
 Q(sendall)
 
 Q(sendto)
@@ -2124,11 +2192,21 @@ Q(sep)
 
 Q(separators)
 
+Q(server_hostname)
+
+Q(server_side)
+
 Q(set)
 
 Q(set)
+
+Q(set_ciphers)
 
 Q(setattr)
+
+Q(setblocking)
+
+Q(setblocking)
 
 Q(setblocking)
 
@@ -2139,6 +2217,10 @@ Q(setsockopt)
 Q(setter)
 
 Q(settimeout)
+
+Q(sha1)
+
+Q(sha1)
 
 Q(sha256)
 
@@ -2288,6 +2370,10 @@ Q(time)
 
 Q(time)
 
+Q(tls)
+
+Q(tls)
+
 Q(to_bytes)
 
 Q(trunc)
@@ -2328,6 +2414,10 @@ Q(update)
 
 Q(update)
 
+Q(update)
+
+Q(update)
+
 Q(upper)
 
 Q(usys)
@@ -2340,6 +2430,14 @@ Q(value)
 
 Q(values)
 
+Q(verify_callback)
+
+Q(verify_callback)
+
+Q(verify_mode)
+
+Q(verify_mode)
+
 Q(version)
 
 Q(version)
@@ -2347,6 +2445,10 @@ Q(version)
 Q(version_info)
 
 Q(vline)
+
+Q(wrap_socket)
+
+Q(write)
 
 Q(write)
 

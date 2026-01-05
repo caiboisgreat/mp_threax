@@ -48,7 +48,12 @@
 #define MICROPY_PORT_NETWORK_INTERFACES
 #define MICROPY_PY_LWIP                   (0)
 #define MICROPY_PY_SOCKET                 (1)
-// Keep TLS off until mbedTLS is fully wired into the build.
+// Enable the CPython-style `ssl` module backed by mbedTLS.
+// (Requires wiring mbedTLS sources + config into the build.)
+#define MICROPY_PY_SSL                    (1)
+#define MICROPY_SSL_MBEDTLS               (1)
+
+// Keep the legacy `ussl` alias/module off for now.
 #define MICROPY_PY_USSL                   (0)
 
 // Required by extmod/modnetwork.c when MICROPY_PY_NETWORK is enabled.
@@ -170,3 +175,4 @@ typedef long mp_off_t;
 #define MICROPY_GCREGS_SETJMP (0)
 #define MP_UNREACHABLE for (;;);
 #define MICROPY_USE_INTERNAL_ERRNO (1)
+

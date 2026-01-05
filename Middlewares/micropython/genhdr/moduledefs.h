@@ -112,6 +112,10 @@ extern const struct _mp_obj_module_t mp_module_sys;
 #undef MODULE_DEF_SYS
 #define MODULE_DEF_SYS { MP_ROM_QSTR(MP_QSTR_sys), MP_ROM_PTR(&mp_module_sys) },
 
+extern const struct _mp_obj_module_t mp_module_tls;
+#undef MODULE_DEF_TLS
+#define MODULE_DEF_TLS { MP_ROM_QSTR(MP_QSTR_tls), MP_ROM_PTR(&mp_module_tls) },
+
 extern const struct _mp_obj_module_t mp_module_uctypes;
 #undef MODULE_DEF_UCTYPES
 #define MODULE_DEF_UCTYPES { MP_ROM_QSTR(MP_QSTR_uctypes), MP_ROM_PTR(&mp_module_uctypes) },
@@ -128,6 +132,7 @@ extern const struct _mp_obj_module_t mp_module_uctypes;
     MODULE_DEF_MICROPYTHON \
     MODULE_DEF_NETWORK \
     MODULE_DEF_SYS \
+    MODULE_DEF_TLS \
     MODULE_DEF_UCTYPES \
     MODULE_DEF__ASYNCIO \
     MODULE_DEF___MAIN__ \

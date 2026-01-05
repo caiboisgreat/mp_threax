@@ -18,6 +18,7 @@
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port",
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython",
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\genhdr",
+                "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\lib\\mbedtls\\include",
                 "D:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\include",
                 "D:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\include\\arm_linux",
                 "D:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\include\\arm_linux_compat",
@@ -26,6 +27,7 @@
                 "e:\\Work\\code\\study\\mp_threadx\\Core\\Src",
                 "e:\\Work\\code\\study\\mp_threadx\\Drivers\\STM32F4xx_HAL_Driver\\Src",
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\shared\\netutils",
+                "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\lib\\mbedtls\\library",
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\ST\\threadx\\ports\\cortex_m4\\ac6\\src",
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\ST\\threadx\\common\\src"
             ],

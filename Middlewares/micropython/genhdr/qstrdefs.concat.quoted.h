@@ -134,6 +134,12 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(BytesIO)"
 
+"Q(CERT_NONE)"
+
+"Q(CERT_OPTIONAL)"
+
+"Q(CERT_REQUIRED)"
+
 "Q(CancelledError)"
 
 "Q(DeflateIO)"
@@ -308,6 +314,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(LookupError)"
 
+"Q(MBEDTLS_VERSION)"
+
 "Q(MONO_HLSB)"
 
 "Q(MONO_HMSB)"
@@ -358,6 +366,14 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(POLLOUT)"
 
+"Q(PROTOCOL_DTLS_CLIENT)"
+
+"Q(PROTOCOL_DTLS_SERVER)"
+
+"Q(PROTOCOL_TLS_CLIENT)"
+
+"Q(PROTOCOL_TLS_SERVER)"
+
 "Q(PTR)"
 
 "Q(RAW)"
@@ -391,6 +407,12 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(SO_REUSEADDR)"
 
 "Q(SO_SNDTIMEO)"
+
+"Q(SSLContext)"
+
+"Q(SSLContext)"
+
+"Q(SSLSocket)"
 
 "Q(STA_IF)"
 
@@ -517,6 +539,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(__contains__)"
 
 "Q(__contains__)"
+
+"Q(__del__)"
+
+"Q(__del__)"
 
 "Q(__del__)"
 
@@ -653,6 +679,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(__module__)"
 
 "Q(__mul__)"
+
+"Q(__name__)"
 
 "Q(__name__)"
 
@@ -1008,15 +1036,21 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(chr)"
 
-"Q(classmethod)"
+"Q(cipher)"
 
 "Q(classmethod)"
 
-"Q(clear)"
+"Q(classmethod)"
 
 "Q(clear)"
 
 "Q(clear)"
+
+"Q(clear)"
+
+"Q(client_id)"
+
+"Q(close)"
 
 "Q(close)"
 
@@ -1128,6 +1162,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(digest)"
 
+"Q(digest)"
+
+"Q(digest)"
+
 "Q(dir)"
 
 "Q(disable)"
@@ -1135,6 +1173,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(discard)"
 
 "Q(divmod)"
+
+"Q(do_handshake_on_connect)"
 
 "Q(doc)"
 
@@ -1604,6 +1644,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(function)"
 
+"Q(function)"
+
+"Q(function)"
+
 "Q(gamma)"
 
 "Q(gc)"
@@ -1615,6 +1659,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(generator)"
 
 "Q(get)"
+
+"Q(get_ciphers)"
 
 "Q(getaddrinfo)"
 
@@ -1798,6 +1844,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(load)"
 
+"Q(load_cert_chain)"
+
+"Q(load_verify_locations)"
+
 "Q(loads)"
 
 "Q(loads)"
@@ -1845,6 +1895,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(maximum_space_recursion_space_depth_space_exceeded)"
 
 "Q(maxsize)"
+
+"Q(md5)"
+
+"Q(md5)"
 
 "Q(mem_alloc)"
 
@@ -2020,7 +2074,7 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(read)"
 
-"Q(readinto)"
+"Q(read)"
 
 "Q(readinto)"
 
@@ -2031,6 +2085,12 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(readinto)"
 
 "Q(readinto)"
+
+"Q(readinto)"
+
+"Q(readinto)"
+
+"Q(readline)"
 
 "Q(readline)"
 
@@ -2051,6 +2111,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(rect)"
 
 "Q(recv)"
+
+"Q(recv)"
+
+"Q(recv_into)"
 
 "Q(recvfrom)"
 
@@ -2116,6 +2180,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(send)"
 
+"Q(send)"
+
+"Q(sendall)"
+
 "Q(sendall)"
 
 "Q(sendto)"
@@ -2124,11 +2192,21 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(separators)"
 
+"Q(server_hostname)"
+
+"Q(server_side)"
+
 "Q(set)"
 
 "Q(set)"
+
+"Q(set_ciphers)"
 
 "Q(setattr)"
+
+"Q(setblocking)"
+
+"Q(setblocking)"
 
 "Q(setblocking)"
 
@@ -2139,6 +2217,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(setter)"
 
 "Q(settimeout)"
+
+"Q(sha1)"
+
+"Q(sha1)"
 
 "Q(sha256)"
 
@@ -2288,6 +2370,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(time)"
 
+"Q(tls)"
+
+"Q(tls)"
+
 "Q(to_bytes)"
 
 "Q(trunc)"
@@ -2328,6 +2414,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(update)"
 
+"Q(update)"
+
+"Q(update)"
+
 "Q(upper)"
 
 "Q(usys)"
@@ -2340,6 +2430,14 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(values)"
 
+"Q(verify_callback)"
+
+"Q(verify_callback)"
+
+"Q(verify_mode)"
+
+"Q(verify_mode)"
+
 "Q(version)"
 
 "Q(version)"
@@ -2347,6 +2445,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(version_info)"
 
 "Q(vline)"
+
+"Q(wrap_socket)"
+
+"Q(write)"
 
 "Q(write)"
 
