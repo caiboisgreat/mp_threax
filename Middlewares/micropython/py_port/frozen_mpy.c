@@ -47,8 +47,6 @@ enum {
     MP_QSTR_get_ident,
     MP_QSTR_gzip_dot_py,
     MP_QSTR_locked,
-    MP_QSTR_mode,
-    MP_QSTR_rb,
     MP_QSTR_release,
     MP_QSTR_release_space_unlocked_space_lock,
     MP_QSTR_sock,
@@ -82,8 +80,6 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     45566,
     56646,
     47631,
-    49190,
-    28885,
     36844,
     51606,
     40913,
@@ -117,8 +113,6 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     9,
     7,
     6,
-    4,
-    2,
     7,
     21,
     4,
@@ -138,7 +132,7 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
     MP_QSTRnumber_of, // previous pool size
     true, // is_sorted
     10, // allocated entries
-    32, // used entries
+    30, // used entries
     (qstr_hash_t *)mp_qstr_frozen_const_hashes,
     (qstr_len_t *)mp_qstr_frozen_const_lengths,
     {
@@ -161,8 +155,6 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "get_ident",
         "gzip.py",
         "locked",
-        "mode",
-        "rb",
         "release",
         "release unlocked lock",
         "sock",
@@ -1903,7 +1895,7 @@ MICROPY_FROZEN_LIST_ITEM("ssl", "ssl.py")
 
 /*
 byte sizes:
-qstr content: 32 unique, 397 bytes
+qstr content: 30 unique, 383 bytes
 bc content: 906
 const str content: 0
 const int content: 0
@@ -1913,5 +1905,5 @@ const table ptr content: 1 entries, 4 bytes
 raw code content: 26 * 4 = 416
 mp_frozen_mpy_names_content: 35
 mp_frozen_mpy_content_size: 16
-total: 1774
+total: 1760
 */

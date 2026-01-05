@@ -2,6 +2,12 @@
 
 // options to control how MicroPython is built
 
+// ooFatFs (MicroPython's bundled FatFs fork) requires FFCONF_H to point at the
+// correct configuration header. Without this, builds may accidentally pick up a
+// different ffconf.h from other middleware (eg TinyUSB), causing:
+//   ff.h: error: Wrong configuration file (ffconf.h).
+#define FFCONF_H "lib/oofatfs/ffconf.h"
+
 // Enable a reasonably complete feature set (standard modules) while still
 // keeping hardware/network/filesystem features explicitly opt-in for this
 // project.
@@ -31,10 +37,19 @@
 // Enable MPZ so frozen bytecode is compatible with this firmware build.
 #define MICROPY_LONGINT_IMPL              (MICROPY_LONGINT_IMPL_MPZ)
 
-// Keep VFS/filesystem features off for now (device/filesystem porting comes
-// next). This still allows many standard modules to be built-in.
-#define MICROPY_VFS                       (0)
-#define MICROPY_VFS_FAT                   (0)
+// Enable the VFS framework. Actual storage (SD/flash block device) will be
+// brought up incrementally; enabling VFS first lets us expose VfsFat and the
+// mount API.
+#define MICROPY_VFS                       (1)
+// Use VFS-backed file reader so `import foo.py` and `exec(open(...))` can read
+// from mounted filesystems.
+#define MICROPY_READER_VFS                (1)
+// Start with FAT VFS (works well with SD cards and is PC-friendly).
+#define MICROPY_VFS_FAT                   (1)
+// Enable relative paths and getcwd/chdir support in ooFatFs.
+#define MICROPY_FATFS_RPATH               (2)
+// LittleFS is not enabled yet (requires bringing in lib/littlefs sources and a
+// flash block device driver).
 #define MICROPY_VFS_LFS1                  (0)
 #define MICROPY_VFS_LFS2                  (0)
 

@@ -61,6 +61,12 @@ int micro_python_init(void *stack_top, uint32_t stack_len_bytes) {
     gc_init(heap, heap + sizeof(heap));
     #endif
     mp_init();
+
+    // Best-effort SD card auto-mount (VFS/FAT). Safe if no card present.
+    #if MICROPY_VFS && MICROPY_VFS_FAT
+    extern void mp_threadx_try_mount_sdcard(void);
+    mp_threadx_try_mount_sdcard();
+    #endif
     #if MICROPY_ENABLE_COMPILER
     #if MICROPY_REPL_EVENT_DRIVEN
     // Top-level exception handler: protects the event-driven REPL processing.
@@ -117,6 +123,7 @@ void gc_collect(void) {
 }
 #endif
 
+#if !MICROPY_VFS
 mp_lexer_t *mp_lexer_new_from_file(qstr filename) {
     mp_raise_OSError(MP_ENOENT);
 }
@@ -134,6 +141,7 @@ mp_obj_t mp_builtin_open(size_t n_args, const mp_obj_t *args, mp_map_t *kwargs) 
 }
 
 MP_DEFINE_CONST_FUN_OBJ_KW(mp_builtin_open_obj, 1, mp_builtin_open);
+#endif
 
 void nlr_jump_fail(void *val) {
     (void)val;

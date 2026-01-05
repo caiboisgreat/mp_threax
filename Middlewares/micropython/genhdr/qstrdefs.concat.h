@@ -81,6 +81,9 @@ Q(pystack exhausted)
 // qstrs specific to this port
 // *FORMAT-OFF*
 
+Q(rb)
+Q(SDCard)
+
 
 Q(AF_INET)
 
@@ -252,6 +255,8 @@ Q(FLOAT64)
 
 Q(FileIO)
 
+Q(FileIO)
+
 Q(FrameBuffer)
 
 Q(FrameBuffer)
@@ -388,6 +393,12 @@ Q(RuntimeError)
 
 Q(RuntimeError)
 
+Q(SDCard)
+
+Q(SDCard)
+
+Q(SDCard)
+
 Q(SHORT)
 
 Q(SOCK_DGRAM)
@@ -452,6 +463,8 @@ Q(TaskQueue)
 
 Q(TextIOWrapper)
 
+Q(TextIOWrapper)
+
 Q(TypeError)
 
 Q(TypeError)
@@ -481,6 +494,12 @@ Q(VOID)
 Q(ValueError)
 
 Q(ValueError)
+
+Q(VfsFat)
+
+Q(VfsFat)
+
+Q(VfsFat)
 
 Q(ZLIB)
 
@@ -554,6 +573,8 @@ Q(__del__)
 
 Q(__del__)
 
+Q(__del__)
+
 Q(__delattr__)
 
 Q(__delattr__)
@@ -590,9 +611,13 @@ Q(__enter__)
 
 Q(__enter__)
 
+Q(__enter__)
+
 Q(__eq__)
 
 Q(__eq__)
+
+Q(__exit__)
 
 Q(__exit__)
 
@@ -683,6 +708,8 @@ Q(__mod__)
 Q(__module__)
 
 Q(__mul__)
+
+Q(__name__)
 
 Q(__name__)
 
@@ -928,6 +955,16 @@ Q(_percent__hash_o)
 
 Q(_percent__hash_x)
 
+Q(_slash_)
+
+Q(_slash_)
+
+Q(_slash_)
+
+Q(_slash_)
+
+Q(_slash_)
+
 Q(_space_)
 
 Q(_star_)
@@ -1012,6 +1049,8 @@ Q(bound_method)
 
 Q(buffer)
 
+Q(buffering)
+
 Q(builtins)
 
 Q(builtins)
@@ -1044,6 +1083,14 @@ Q(ceil)
 
 Q(center)
 
+Q(chdir)
+
+Q(chdir)
+
+Q(chdir)
+
+Q(chdir)
+
 Q(choice)
 
 Q(chr)
@@ -1061,6 +1108,8 @@ Q(clear)
 Q(clear)
 
 Q(client_id)
+
+Q(close)
 
 Q(close)
 
@@ -1123,6 +1172,8 @@ Q(cos)
 Q(cos)
 
 Q(cosh)
+
+Q(count)
 
 Q(count)
 
@@ -1216,6 +1267,8 @@ Q(enable)
 
 Q(encode)
 
+Q(encoding)
+
 Q(encrypt)
 
 Q(end)
@@ -1270,6 +1323,8 @@ Q(factorial)
 
 Q(file)
 
+Q(file)
+
 Q(fill)
 
 Q(fill_rect)
@@ -1285,6 +1340,8 @@ Q(float)
 Q(float)
 
 Q(floor)
+
+Q(flush)
 
 Q(flush)
 
@@ -1672,6 +1729,16 @@ Q(function)
 
 Q(function)
 
+Q(function)
+
+Q(function)
+
+Q(function)
+
+Q(function)
+
+Q(function)
+
 Q(gamma)
 
 Q(gc)
@@ -1689,6 +1756,12 @@ Q(get_ciphers)
 Q(getaddrinfo)
 
 Q(getattr)
+
+Q(getcwd)
+
+Q(getcwd)
+
+Q(getcwd)
 
 Q(getrandbits)
 
@@ -1738,6 +1811,14 @@ Q(id)
 
 Q(idle)
 
+Q(ilistdir)
+
+Q(ilistdir)
+
+Q(ilistdir)
+
+Q(ilistdir)
+
 Q(imag)
 
 Q(implementation)
@@ -1771,6 +1852,10 @@ Q(invert)
 Q(io)
 
 Q(io)
+
+Q(ioctl)
+
+Q(ioctl)
 
 Q(ioctl)
 
@@ -1863,6 +1948,8 @@ Q(line)
 Q(list)
 
 Q(list)
+
+Q(listdir)
 
 Q(listen)
 
@@ -1964,6 +2051,18 @@ Q(micropython)
 
 Q(min)
 
+Q(mkdir)
+
+Q(mkdir)
+
+Q(mkdir)
+
+Q(mkfs)
+
+Q(mkfs)
+
+Q(mode)
+
 Q(modf)
 
 Q(modify)
@@ -1973,6 +2072,16 @@ Q(module)
 Q(modules)
 
 Q(modules)
+
+Q(mount)
+
+Q(mount)
+
+Q(mount)
+
+Q(mount)
+
+Q(mount)
 
 Q(name)
 
@@ -1997,6 +2106,10 @@ Q(oct)
 Q(off)
 
 Q(on)
+
+Q(open)
+
+Q(open)
 
 Q(open)
 
@@ -2086,6 +2199,8 @@ Q(python_compiler)
 
 Q(qstr_info)
 
+Q(r)
+
 Q(radians)
 
 Q(randint)
@@ -2104,13 +2219,13 @@ Q(range)
 
 Q(range)
 
-Q(re)
+Q(rb)
 
 Q(re)
 
 Q(re)
 
-Q(read)
+Q(re)
 
 Q(read)
 
@@ -2122,7 +2237,13 @@ Q(read)
 
 Q(read)
 
-Q(readinto)
+Q(read)
+
+Q(read)
+
+Q(readblocks)
+
+Q(readblocks)
 
 Q(readinto)
 
@@ -2135,6 +2256,12 @@ Q(readinto)
 Q(readinto)
 
 Q(readinto)
+
+Q(readinto)
+
+Q(readinto)
+
+Q(readline)
 
 Q(readline)
 
@@ -2149,6 +2276,10 @@ Q(readline)
 Q(readline)
 
 Q(readlines)
+
+Q(readlines)
+
+Q(readonly)
 
 Q(real)
 
@@ -2176,6 +2307,18 @@ Q(remove)
 
 Q(remove)
 
+Q(remove)
+
+Q(remove)
+
+Q(remove)
+
+Q(rename)
+
+Q(rename)
+
+Q(rename)
+
 Q(replace)
 
 Q(repr)
@@ -2195,6 +2338,12 @@ Q(reversed)
 Q(rfind)
 
 Q(rindex)
+
+Q(rmdir)
+
+Q(rmdir)
+
+Q(rmdir)
 
 Q(round)
 
@@ -2218,6 +2367,8 @@ Q(seed)
 
 Q(seek)
 
+Q(seek)
+
 Q(select)
 
 Q(select)
@@ -2237,6 +2388,8 @@ Q(sendall)
 Q(sendall)
 
 Q(sendto)
+
+Q(sep)
 
 Q(sep)
 
@@ -2330,6 +2483,14 @@ Q(start)
 
 Q(startswith)
 
+Q(stat)
+
+Q(stat)
+
+Q(stat)
+
+Q(stat)
+
 Q(state)
 
 Q(state)
@@ -2337,6 +2498,12 @@ Q(state)
 Q(staticmethod)
 
 Q(staticmethod)
+
+Q(statvfs)
+
+Q(statvfs)
+
+Q(statvfs)
 
 Q(stderr)
 
@@ -2388,6 +2555,8 @@ Q(symmetric_difference)
 
 Q(symmetric_difference_update)
 
+Q(sync)
+
 Q(sys)
 
 Q(sys)
@@ -2397,6 +2566,8 @@ Q(tan)
 Q(tanh)
 
 Q(tau)
+
+Q(tell)
 
 Q(tell)
 
@@ -2446,6 +2617,14 @@ Q(uctypes)
 
 Q(uctypes)
 
+Q(umount)
+
+Q(umount)
+
+Q(umount)
+
+Q(umount)
+
 Q(unhexlify)
 
 Q(uniform)
@@ -2455,6 +2634,8 @@ Q(union)
 Q(union)
 
 Q(unique_id)
+
+Q(unlink)
 
 Q(unpack)
 
@@ -2500,6 +2681,10 @@ Q(version)
 
 Q(version_info)
 
+Q(vfs)
+
+Q(vfs)
+
 Q(vline)
 
 Q(wrap_socket)
@@ -2515,6 +2700,12 @@ Q(write)
 Q(write)
 
 Q(write)
+
+Q(write)
+
+Q(writeblocks)
+
+Q(writeblocks)
 
 Q(zip)
 

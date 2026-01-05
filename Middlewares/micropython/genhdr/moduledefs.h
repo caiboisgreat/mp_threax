@@ -128,6 +128,10 @@ extern const struct _mp_obj_module_t mp_module_uctypes;
 #undef MODULE_DEF_UCTYPES
 #define MODULE_DEF_UCTYPES { MP_ROM_QSTR(MP_QSTR_uctypes), MP_ROM_PTR(&mp_module_uctypes) },
 
+extern const struct _mp_obj_module_t mp_module_vfs;
+#undef MODULE_DEF_VFS
+#define MODULE_DEF_VFS { MP_ROM_QSTR(MP_QSTR_vfs), MP_ROM_PTR(&mp_module_vfs) },
+
 
 #define MICROPY_REGISTERED_MODULES \
     MODULE_DEF_BUILTINS \
@@ -142,6 +146,7 @@ extern const struct _mp_obj_module_t mp_module_uctypes;
     MODULE_DEF_SYS \
     MODULE_DEF_TLS \
     MODULE_DEF_UCTYPES \
+    MODULE_DEF_VFS \
     MODULE_DEF__ASYNCIO \
     MODULE_DEF___MAIN__ \
 // MICROPY_REGISTERED_MODULES

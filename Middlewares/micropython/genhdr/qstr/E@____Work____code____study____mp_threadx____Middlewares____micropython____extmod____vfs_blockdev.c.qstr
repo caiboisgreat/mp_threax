@@ -1,1 +1,6 @@
 Q(function)
+Q(readblocks)
+Q(writeblocks)
+Q(ioctl)
+Q(sync)
+Q(count)

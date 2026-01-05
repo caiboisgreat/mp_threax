@@ -802,6 +802,16 @@
               <FilePath>..\Middlewares\micropython\py_port\mp_hal_rtos.c</FilePath>
             </File>
             <File>
+              <FileName>fatfs_port.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\fatfs_port.c</FilePath>
+            </File>
+            <File>
+              <FileName>sdcard_sdio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\sdcard_sdio.c</FilePath>
+            </File>
+            <File>
               <FileName>mpconfigport.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\Middlewares\micropython\py_port\mpconfigport.h</FilePath>
@@ -1367,6 +1377,16 @@
               <FilePath>..\Middlewares\micropython\extmod\vfs_fat_file.c</FilePath>
             </File>
             <File>
+              <FileName>ff.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\oofatfs\ff.c</FilePath>
+            </File>
+            <File>
+              <FileName>ffunicode.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\oofatfs\ffunicode.c</FilePath>
+            </File>
+            <File>
               <FileName>vfs_lfs.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Middlewares\micropython\extmod\vfs_lfs.c</FilePath>
@@ -1411,6 +1431,16 @@
         <Group>
           <GroupName>MicroPython/genhdr</GroupName>
           <Files>
+            <File>
+              <FileName>stm32f4xx_hal_sd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_ll_sdmmc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c</FilePath>
+            </File>
             <File>
               <FileName>compressed.data.h</FileName>
               <FileType>5</FileType>
@@ -1470,6 +1500,11 @@
               <FileName>readline.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Middlewares\micropython\shared\readline\readline.c</FilePath>
+            </File>
+            <File>
+              <FileName>timeutils.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\shared\timeutils\timeutils.c</FilePath>
             </File>
           </Files>
         </Group>

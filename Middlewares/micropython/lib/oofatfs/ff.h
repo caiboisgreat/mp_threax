@@ -30,6 +30,13 @@
 extern "C" {
 #endif
 
+// The upstream MicroPython build system passes FFCONF_H via the compiler
+// command line. Some IDE-based builds (eg Keil) don't, so provide a safe
+// default here to avoid accidentally including an unrelated ffconf.h.
+#ifndef FFCONF_H
+#define FFCONF_H "lib/oofatfs/ffconf.h"
+#endif
+
 #include FFCONF_H       /* FatFs configuration options */
 
 #if FF_DEFINED != FFCONF_DEF

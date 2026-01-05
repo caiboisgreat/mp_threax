@@ -28,6 +28,8 @@
                 "e:\\Work\\code\\study\\mp_threadx\\Drivers\\STM32F4xx_HAL_Driver\\Src",
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\shared\\netutils",
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\lib\\mbedtls\\library",
+                "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\lib\\oofatfs",
+                "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\shared\\timeutils",
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\ST\\threadx\\ports\\cortex_m4\\ac6\\src",
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\ST\\threadx\\common\\src"
             ],

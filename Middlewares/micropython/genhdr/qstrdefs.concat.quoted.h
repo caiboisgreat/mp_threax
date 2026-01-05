@@ -81,6 +81,9 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 // qstrs specific to this port
 // *FORMAT-OFF*
 
+"Q(rb)"
+"Q(SDCard)"
+
 
 "Q(AF_INET)"
 
@@ -252,6 +255,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(FileIO)"
 
+"Q(FileIO)"
+
 "Q(FrameBuffer)"
 
 "Q(FrameBuffer)"
@@ -388,6 +393,12 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(RuntimeError)"
 
+"Q(SDCard)"
+
+"Q(SDCard)"
+
+"Q(SDCard)"
+
 "Q(SHORT)"
 
 "Q(SOCK_DGRAM)"
@@ -452,6 +463,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(TextIOWrapper)"
 
+"Q(TextIOWrapper)"
+
 "Q(TypeError)"
 
 "Q(TypeError)"
@@ -481,6 +494,12 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(ValueError)"
 
 "Q(ValueError)"
+
+"Q(VfsFat)"
+
+"Q(VfsFat)"
+
+"Q(VfsFat)"
 
 "Q(ZLIB)"
 
@@ -554,6 +573,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(__del__)"
 
+"Q(__del__)"
+
 "Q(__delattr__)"
 
 "Q(__delattr__)"
@@ -590,9 +611,13 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(__enter__)"
 
+"Q(__enter__)"
+
 "Q(__eq__)"
 
 "Q(__eq__)"
+
+"Q(__exit__)"
 
 "Q(__exit__)"
 
@@ -683,6 +708,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(__module__)"
 
 "Q(__mul__)"
+
+"Q(__name__)"
 
 "Q(__name__)"
 
@@ -928,6 +955,16 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(_percent__hash_x)"
 
+"Q(_slash_)"
+
+"Q(_slash_)"
+
+"Q(_slash_)"
+
+"Q(_slash_)"
+
+"Q(_slash_)"
+
 "Q(_space_)"
 
 "Q(_star_)"
@@ -1012,6 +1049,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(buffer)"
 
+"Q(buffering)"
+
 "Q(builtins)"
 
 "Q(builtins)"
@@ -1044,6 +1083,14 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(center)"
 
+"Q(chdir)"
+
+"Q(chdir)"
+
+"Q(chdir)"
+
+"Q(chdir)"
+
 "Q(choice)"
 
 "Q(chr)"
@@ -1061,6 +1108,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(clear)"
 
 "Q(client_id)"
+
+"Q(close)"
 
 "Q(close)"
 
@@ -1123,6 +1172,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(cos)"
 
 "Q(cosh)"
+
+"Q(count)"
 
 "Q(count)"
 
@@ -1216,6 +1267,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(encode)"
 
+"Q(encoding)"
+
 "Q(encrypt)"
 
 "Q(end)"
@@ -1270,6 +1323,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(file)"
 
+"Q(file)"
+
 "Q(fill)"
 
 "Q(fill_rect)"
@@ -1285,6 +1340,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(float)"
 
 "Q(floor)"
+
+"Q(flush)"
 
 "Q(flush)"
 
@@ -1672,6 +1729,16 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(function)"
 
+"Q(function)"
+
+"Q(function)"
+
+"Q(function)"
+
+"Q(function)"
+
+"Q(function)"
+
 "Q(gamma)"
 
 "Q(gc)"
@@ -1689,6 +1756,12 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(getaddrinfo)"
 
 "Q(getattr)"
+
+"Q(getcwd)"
+
+"Q(getcwd)"
+
+"Q(getcwd)"
 
 "Q(getrandbits)"
 
@@ -1738,6 +1811,14 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(idle)"
 
+"Q(ilistdir)"
+
+"Q(ilistdir)"
+
+"Q(ilistdir)"
+
+"Q(ilistdir)"
+
 "Q(imag)"
 
 "Q(implementation)"
@@ -1771,6 +1852,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(io)"
 
 "Q(io)"
+
+"Q(ioctl)"
+
+"Q(ioctl)"
 
 "Q(ioctl)"
 
@@ -1863,6 +1948,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(list)"
 
 "Q(list)"
+
+"Q(listdir)"
 
 "Q(listen)"
 
@@ -1964,6 +2051,18 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(min)"
 
+"Q(mkdir)"
+
+"Q(mkdir)"
+
+"Q(mkdir)"
+
+"Q(mkfs)"
+
+"Q(mkfs)"
+
+"Q(mode)"
+
 "Q(modf)"
 
 "Q(modify)"
@@ -1973,6 +2072,16 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(modules)"
 
 "Q(modules)"
+
+"Q(mount)"
+
+"Q(mount)"
+
+"Q(mount)"
+
+"Q(mount)"
+
+"Q(mount)"
 
 "Q(name)"
 
@@ -1997,6 +2106,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(off)"
 
 "Q(on)"
+
+"Q(open)"
+
+"Q(open)"
 
 "Q(open)"
 
@@ -2086,6 +2199,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(qstr_info)"
 
+"Q(r)"
+
 "Q(radians)"
 
 "Q(randint)"
@@ -2104,13 +2219,13 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(range)"
 
-"Q(re)"
+"Q(rb)"
 
 "Q(re)"
 
 "Q(re)"
 
-"Q(read)"
+"Q(re)"
 
 "Q(read)"
 
@@ -2122,7 +2237,13 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(read)"
 
-"Q(readinto)"
+"Q(read)"
+
+"Q(read)"
+
+"Q(readblocks)"
+
+"Q(readblocks)"
 
 "Q(readinto)"
 
@@ -2135,6 +2256,12 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(readinto)"
 
 "Q(readinto)"
+
+"Q(readinto)"
+
+"Q(readinto)"
+
+"Q(readline)"
 
 "Q(readline)"
 
@@ -2149,6 +2276,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(readline)"
 
 "Q(readlines)"
+
+"Q(readlines)"
+
+"Q(readonly)"
 
 "Q(real)"
 
@@ -2176,6 +2307,18 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(remove)"
 
+"Q(remove)"
+
+"Q(remove)"
+
+"Q(remove)"
+
+"Q(rename)"
+
+"Q(rename)"
+
+"Q(rename)"
+
 "Q(replace)"
 
 "Q(repr)"
@@ -2195,6 +2338,12 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(rfind)"
 
 "Q(rindex)"
+
+"Q(rmdir)"
+
+"Q(rmdir)"
+
+"Q(rmdir)"
 
 "Q(round)"
 
@@ -2218,6 +2367,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(seek)"
 
+"Q(seek)"
+
 "Q(select)"
 
 "Q(select)"
@@ -2237,6 +2388,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(sendall)"
 
 "Q(sendto)"
+
+"Q(sep)"
 
 "Q(sep)"
 
@@ -2330,6 +2483,14 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(startswith)"
 
+"Q(stat)"
+
+"Q(stat)"
+
+"Q(stat)"
+
+"Q(stat)"
+
 "Q(state)"
 
 "Q(state)"
@@ -2337,6 +2498,12 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(staticmethod)"
 
 "Q(staticmethod)"
+
+"Q(statvfs)"
+
+"Q(statvfs)"
+
+"Q(statvfs)"
 
 "Q(stderr)"
 
@@ -2388,6 +2555,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(symmetric_difference_update)"
 
+"Q(sync)"
+
 "Q(sys)"
 
 "Q(sys)"
@@ -2397,6 +2566,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(tanh)"
 
 "Q(tau)"
+
+"Q(tell)"
 
 "Q(tell)"
 
@@ -2446,6 +2617,14 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(uctypes)"
 
+"Q(umount)"
+
+"Q(umount)"
+
+"Q(umount)"
+
+"Q(umount)"
+
 "Q(unhexlify)"
 
 "Q(uniform)"
@@ -2455,6 +2634,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(union)"
 
 "Q(unique_id)"
+
+"Q(unlink)"
 
 "Q(unpack)"
 
@@ -2500,6 +2681,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(version_info)"
 
+"Q(vfs)"
+
+"Q(vfs)"
+
 "Q(vline)"
 
 "Q(wrap_socket)"
@@ -2515,6 +2700,12 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(write)"
 
 "Q(write)"
+
+"Q(write)"
+
+"Q(writeblocks)"
+
+"Q(writeblocks)"
 
 "Q(zip)"
 

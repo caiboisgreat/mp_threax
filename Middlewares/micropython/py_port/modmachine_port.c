@@ -5,6 +5,13 @@
 // CMSIS / STM32 headers (for __WFI, NVIC_SystemReset, UID_BASE, SystemCoreClock).
 #include "stm32f4xx.h"
 
+extern const mp_obj_type_t machine_sdcard_type;
+
+#ifndef MICROPY_PY_MACHINE_EXTRA_GLOBALS
+#define MICROPY_PY_MACHINE_EXTRA_GLOBALS \
+    { MP_ROM_QSTR(MP_QSTR_SDCard), MP_ROM_PTR(&machine_sdcard_type) },
+#endif
+
 // This file is text-included by extmod/modmachine.c via MICROPY_PY_MACHINE_INCLUDEFILE.
 // It must provide the static low-level hooks that modmachine.c declares.
 
