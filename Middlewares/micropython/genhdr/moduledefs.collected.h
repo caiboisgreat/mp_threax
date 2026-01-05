@@ -4,6 +4,8 @@ MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_binascii, mp_module_binascii);
 
 MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_collections, mp_module_collections);
 
+MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_cryptolib, mp_module_cryptolib);
+
 MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_errno, mp_module_errno);
 
 MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_hashlib, mp_module_hashlib);
@@ -13,6 +15,8 @@ MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_heapq, mp_module_heapq);
 MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_io, mp_module_io);
 
 MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_json, mp_module_json);
+
+MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_machine, mp_module_machine);
 
 MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_os, mp_module_os);
 

@@ -332,6 +332,10 @@ Q(SSLSocket)
 
 Q(STA_IF)
 
+Q(Signal)
+
+Q(Signal)
+
 Q(StopAsyncIteration)
 
 Q(StopAsyncIteration)
@@ -670,6 +674,10 @@ Q(__name__)
 
 Q(__name__)
 
+Q(__name__)
+
+Q(__name__)
+
 Q(__ne__)
 
 Q(__neg__)
@@ -860,6 +868,10 @@ Q(add)
 
 Q(addressof)
 
+Q(aes)
+
+Q(aes)
+
 Q(all)
 
 Q(any)
@@ -1038,6 +1050,10 @@ Q(country)
 
 Q(crc32)
 
+Q(cryptolib)
+
+Q(cryptolib)
+
 Q(cur_task)
 
 Q(cur_task)
@@ -1047,6 +1063,10 @@ Q(data)
 Q(data)
 
 Q(decode)
+
+Q(decrypt)
+
+Q(deepsleep)
 
 Q(default)
 
@@ -1111,6 +1131,8 @@ Q(ellipse)
 Q(enable)
 
 Q(encode)
+
+Q(encrypt)
 
 Q(end)
 
@@ -1189,6 +1211,8 @@ Q(format)
 Q(framebuf)
 
 Q(framebuf)
+
+Q(freq)
 
 Q(frexp)
 
@@ -1628,6 +1652,8 @@ Q(hostname)
 
 Q(id)
 
+Q(idle)
+
 Q(imag)
 
 Q(implementation)
@@ -1655,6 +1681,8 @@ Q(intersection)
 Q(intersection)
 
 Q(intersection_update)
+
+Q(invert)
 
 Q(io)
 
@@ -1744,6 +1772,8 @@ Q(lgamma)
 
 Q(libc_ver)
 
+Q(lightsleep)
+
 Q(line)
 
 Q(list)
@@ -1784,6 +1814,10 @@ Q(lower)
 
 Q(lstrip)
 
+Q(machine)
+
+Q(machine)
+
 Q(makefile)
 
 Q(map)
@@ -1815,6 +1849,14 @@ Q(maxsize)
 Q(md5)
 
 Q(md5)
+
+Q(mem)
+
+Q(mem16)
+
+Q(mem32)
+
+Q(mem8)
 
 Q(mem_alloc)
 
@@ -1867,6 +1909,10 @@ Q(object)
 Q(object)
 
 Q(oct)
+
+Q(off)
+
+Q(on)
 
 Q(open)
 
@@ -2050,6 +2096,10 @@ Q(replace)
 
 Q(repr)
 
+Q(reset)
+
+Q(reset_cause)
+
 Q(reverse)
 
 Q(reverse)
@@ -2169,6 +2219,8 @@ Q(socket)
 Q(socket)
 
 Q(socket)
+
+Q(soft_reset)
 
 Q(sort)
 
@@ -2318,6 +2370,8 @@ Q(union)
 
 Q(union)
 
+Q(unique_id)
+
 Q(unpack)
 
 Q(unpack_from)
@@ -2341,6 +2395,8 @@ Q(usys)
 Q(utf_hyphen_8)
 
 Q(utf_hyphen_8)
+
+Q(value)
 
 Q(value)
 

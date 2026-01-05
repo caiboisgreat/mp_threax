@@ -1,4 +1,1230 @@
 *** Using Compiler 'V6.24', folder: 'D:\Program Files\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'mp_threadx'
-"mp_threadx\mp_threadx.axf" - 0 Error(s), 0 Warning(s).
-Build Time Elapsed:  00:00:01
+../Middlewares/micropython/extmod/machine_pwm.c(27): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling machine_pwm.c...
+../Middlewares/micropython/extmod/machine_bitstream.c(28): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling machine_bitstream.c...
+../Middlewares/micropython/extmod/machine_pulse.c(27): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling machine_pulse.c...
+../Middlewares/micropython/extmod/machine_adc.c(27): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling machine_adc.c...
+../Middlewares/micropython/extmod/machine_i2c.c(33): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling machine_i2c.c...
+../Middlewares/micropython/extmod/machine_i2s.c(28): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling machine_i2s.c...
+../Middlewares/micropython/extmod/machine_pinbase.c(27): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling machine_pinbase.c...
+../Middlewares/micropython/extmod/modplatform.c(28): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/extmod/modplatform.c(49): warning: unused parameter 'n_args' [-Wunused-parameter]
+   49 | static mp_obj_t platform_platform(size_t n_args, const mp_obj_t *pos_args, mp_map_t *kw_args) {
+      |                                          ^
+../Middlewares/micropython/extmod/modplatform.c(49): warning: unused parameter 'pos_args' [-Wunused-parameter]
+   49 | static mp_obj_t platform_platform(size_t n_args, const mp_obj_t *pos_args, mp_map_t *kw_args) {
+      |                                                                  ^
+../Middlewares/micropython/extmod/modplatform.c(49): warning: unused parameter 'kw_args' [-Wunused-parameter]
+   49 | static mp_obj_t platform_platform(size_t n_args, const mp_obj_t *pos_args, mp_map_t *kw_args) {
+      |                                                                                      ^
+../Middlewares/micropython/extmod/modplatform.c(59): warning: unused parameter 'n_args' [-Wunused-parameter]
+   59 | static mp_obj_t platform_libc_ver(size_t n_args, const mp_obj_t *pos_args, mp_map_t *kw_args) {
+      |                                          ^
+../Middlewares/micropython/extmod/modplatform.c(59): warning: unused parameter 'pos_args' [-Wunused-parameter]
+   59 | static mp_obj_t platform_libc_ver(size_t n_args, const mp_obj_t *pos_args, mp_map_t *kw_args) {
+      |                                                                  ^
+../Middlewares/micropython/extmod/modplatform.c(59): warning: unused parameter 'kw_args' [-Wunused-parameter]
+   59 | static mp_obj_t platform_libc_ver(size_t n_args, const mp_obj_t *pos_args, mp_map_t *kw_args) {
+      |                                                                                      ^
+7 warnings generated.
+compiling modplatform.c...
+compiling mp_hal_rtos.c...
+compiling uart_core.c...
+../Middlewares/micropython/extmod/machine_i2c_target.c(27): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling machine_i2c_target.c...
+../Middlewares/micropython/extmod/machine_mem.c(27): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/extmod/machine_mem.c(106): error: use of undeclared identifier 'MP_QSTR_mem'
+  106 |     MP_QSTR_mem,
+      |     ^
+1 warning and 1 error generated.
+compiling machine_mem.c...
+../Middlewares/micropython/extmod/machine_adc_block.c(28): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling machine_adc_block.c...
+../Middlewares/micropython/py_port/frozen_mpy.c(4): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling frozen_mpy.c...
+../Middlewares/micropython/py_port/py_init.c(7): warning: In file included from...../Middlewares/micropython\py/compile.h(31): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/py_port/py_init.c(120): warning: unused parameter 'filename' [-Wunused-parameter]
+  120 | mp_lexer_t *mp_lexer_new_from_file(qstr filename) {
+      |                                         ^
+../Middlewares/micropython/py_port/py_init.c(124): warning: unused parameter 'path' [-Wunused-parameter]
+  124 | mp_import_stat_t mp_import_stat(const char *path) {
+      |                                             ^
+../Middlewares/micropython/py_port/py_init.c(226): warning: nonnull parameter 'expr' will evaluate to 'true' on first encounter [-Wpointer-bool-conversion]
+  226 |     if (expr) {
+      |     ~~  ^~~~
+D:\Program Files\Keil_v5\ARM\ARMCLANG\bin\..\include\assert.h(44): note: declared 'nonnull' here
+   44 |     extern _ARMABI_NORETURN void __aeabi_assert(const char *, const char *, int) __attribute__((__nonnull__(1,2)));
+      |                                                                                                 ^
+../Middlewares/micropython/py_port/py_init.c(239): warning: nonnull parameter 'file' will evaluate to 'true' on first encounter [-Wpointer-bool-conversion]
+  239 |     if (file) {
+      |     ~~  ^~~~
+D:\Program Files\Keil_v5\ARM\ARMCLANG\bin\..\include\assert.h(44): note: declared 'nonnull' here
+   44 |     extern _ARMABI_NORETURN void __aeabi_assert(const char *, const char *, int) __attribute__((__nonnull__(1,2)));
+      |                                                                                                 ^
+../Middlewares/micropython/py_port/py_init.c(286): warning: unused parameter 'func' [-Wunused-parameter]
+  286 | void MP_WEAK __assert_func(const char *file, int line, const char *func, const char *expr) {
+      |                                                                    ^
+6 warnings generated.
+compiling py_init.c...
+compiling virtpin.c...
+../Middlewares/micropython/extmod/machine_signal.c(28): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/extmod/machine_signal.c(98): error: use of undeclared identifier 'MP_QSTR_invert'; did you mean 'MP_QSTR_insert'?
+   98 |             } else if (n_kw == 1 && args[1] == MP_OBJ_NEW_QSTR(MP_QSTR_invert)) {
+      |                                                                ^~~~~~~~~~~~~~
+      |                                                                MP_QSTR_insert
+../Middlewares/micropython\py/obj.h(96): note: expanded from macro 'MP_OBJ_NEW_QSTR'
+   96 | #define MP_OBJ_NEW_QSTR(qst) ((mp_obj_t)((((mp_uint_t)(qst)) << 3) | 2))
+      |                                                        ^
+../Middlewares/micropython\genhdr/qstrdefs.generated.h(96): note: 'MP_QSTR_insert' declared here
+   96 | QDEF0(MP_QSTR_insert, 21522, 6, "insert")
+      |       ^
+../Middlewares/micropython/extmod/machine_signal.c(163): error: use of undeclared identifier 'MP_QSTR_on'; did you mean 'MP_QSTR_os'?
+  163 |     { MP_ROM_QSTR(MP_QSTR_on), MP_ROM_PTR(&signal_on_obj) },
+      |                   ^~~~~~~~~~
+      |                   MP_QSTR_os
+../Middlewares/micropython\py/obj.h(366): note: expanded from macro 'MP_ROM_QSTR'
+  366 | #define MP_ROM_QSTR(q) MP_OBJ_NEW_QSTR(q)
+      |                                        ^
+../Middlewares/micropython\py/obj.h(96): note: expanded from macro 'MP_OBJ_NEW_QSTR'
+   96 | #define MP_OBJ_NEW_QSTR(qst) ((mp_obj_t)((((mp_uint_t)(qst)) << 3) | 2))
+      |                                                        ^
+../Middlewares/micropython\genhdr/qstrdefs.generated.h(534): note: 'MP_QSTR_os' declared here
+  534 | QDEF1(MP_QSTR_os, 28537, 2, "os")
+      |       ^
+../Middlewares/micropython/extmod/machine_signal.c(164): error: use of undeclared identifier 'MP_QSTR_off'
+  164 |     { MP_ROM_QSTR(MP_QSTR_off), MP_ROM_PTR(&signal_off_obj) },
+      |                   ^
+../Middlewares/micropython/extmod/machine_signal.c(167): error: invalid application of 'sizeof' to an incomplete type 'const mp_rom_map_elem_t[]' (aka 'const struct _mp_rom_map_elem_t[]')
+  167 | static MP_DEFINE_CONST_DICT(signal_locals_dict, signal_locals_dict_table);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Middlewares/micropython\py/obj.h(438): note: expanded from macro 'MP_DEFINE_CONST_DICT'
+  438 | #define MP_DEFINE_CONST_DICT(dict_name, table_name) MP_DEFINE_CONST_DICT_WITH_SIZE(dict_name, table_name, MP_ARRAY_SIZE(table_name))
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Middlewares/micropython\py/misc.h(152): note: expanded from macro 'MP_ARRAY_SIZE'
+  152 | #define MP_ARRAY_SIZE(a) (sizeof(a) / sizeof((a)[0]))
+      |                                 ^
+../Middlewares/micropython\py/obj.h(432): note: expanded from macro 'MP_DEFINE_CONST_DICT_WITH_SIZE'
+  432 |             .used = n, \
+      |                     ^
+../Middlewares/micropython/extmod/machine_signal.c(167): error: invalid application of 'sizeof' to an incomplete type 'const mp_rom_map_elem_t[]' (aka 'const struct _mp_rom_map_elem_t[]')
+  167 | static MP_DEFINE_CONST_DICT(signal_locals_dict, signal_locals_dict_table);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Middlewares/micropython\py/obj.h(438): note: expanded from macro 'MP_DEFINE_CONST_DICT'
+  438 | #define MP_DEFINE_CONST_DICT(dict_name, table_name) MP_DEFINE_CONST_DICT_WITH_SIZE(dict_name, table_name, MP_ARRAY_SIZE(table_name))
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Middlewares/micropython\py/misc.h(152): note: expanded from macro 'MP_ARRAY_SIZE'
+  152 | #define MP_ARRAY_SIZE(a) (sizeof(a) / sizeof((a)[0]))
+      |                                 ^
+../Middlewares/micropython\py/obj.h(433): note: expanded from macro 'MP_DEFINE_CONST_DICT_WITH_SIZE'
+  433 |             .alloc = n, \
+      |                      ^
+../Middlewares/micropython/extmod/machine_signal.c(175): error: use of undeclared identifier 'MP_QSTR_Signal'; did you mean 'MP_QSTR_isnan'?
+  175 |     MP_QSTR_Signal,
+      |     ^~~~~~~~~~~~~~
+      |     MP_QSTR_isnan
+../Middlewares/micropython\py/obj.h(825): note: expanded from macro 'MP_DEFINE_CONST_OBJ_TYPE'
+  825 | #define MP_DEFINE_CONST_OBJ_TYPE(...) MP_DEFINE_CONST_OBJ_TYPE_EXPAND(MP_DEFINE_CONST_OBJ_TYPE_NARGS(__VA_ARGS__, _INV, 12, _INV, 11, _INV, 10, _INV, 9, _INV, 8, _INV, 7, _INV, 6, _INV, 5, _INV, 4, _INV, 3, _INV, 2, _INV, 1, _INV, 0)(mp_obj_type_t, __VA_ARGS__))
+      |                                                                                                                                                                                                                                                          ^
+../Middlewares/micropython\py/obj.h(788): note: expanded from macro 'MP_DEFINE_CONST_OBJ_TYPE_NARGS_4'
+  788 | #define MP_DEFINE_CONST_OBJ_TYPE_NARGS_4(_struct_type, _typename, _name, _flags, f1, v1, f2, v2, f3, v3, f4, v4) const _struct_type _typename = { .base = { &mp_type_type }, .flags = _flags, .name = _name, .slot_index_##f1 = 1, .slot_index_##f2 = 2, .slot_index_##f3 = 3, .slot_index_##f4 = 4, .slots = { v1, v2, v3, v4, } }
+      |                                                                                                                                                                                                       ^
+../Middlewares/micropython\py/obj.h(812): note: expanded from macro 'MP_DEFINE_CONST_OBJ_TYPE_EXPAND'
+  812 | #define MP_DEFINE_CONST_OBJ_TYPE_EXPAND(x) x
+      |                                            ^
+../Middlewares/micropython\genhdr/qstrdefs.generated.h(490): note: 'MP_QSTR_isnan' declared here
+  490 | QDEF1(MP_QSTR_isnan, 926, 5, "isnan")
+      |       ^
+1 warning and 6 errors generated.
+compiling machine_signal.c...
+../Middlewares/micropython/extmod/machine_spi.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling machine_spi.c...
+../Middlewares/micropython/extmod/machine_uart.c(27): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling machine_uart.c...
+../Middlewares/micropython/extmod/machine_timer.c(27): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling machine_timer.c...
+../Middlewares/micropython/extmod/machine_wdt.c(27): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling machine_wdt.c...
+../Middlewares/micropython/extmod/modbinascii.c(31): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modbinascii.c...
+compiling machine_usb_device.c...
+../Middlewares/micropython/extmod/modbtree.c(27): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/extmod/modbtree.c(34): error: 'fcntl.h' file not found
+   34 | #include <fcntl.h>
+      |          ^~~~~~~~~
+1 warning and 1 error generated.
+compiling modbtree.c...
+../Middlewares/micropython/extmod/modasyncio.c(27): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modasyncio.c...
+../Middlewares/micropython/extmod/modhashlib.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modhashlib.c...
+../Middlewares/micropython/extmod/modjson.c(32): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modjson.c...
+../Middlewares/micropython/extmod/modcryptolib.c(35): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/extmod/modcryptolib.c(93): warning: unused parameter 'block_mode' [-Wunused-parameter]
+   93 | static inline bool is_ctr_mode(int block_mode) {
+      |                                    ^
+../Middlewares/micropython/extmod/modcryptolib.c(346): error: use of undeclared identifier 'MP_QSTR_encrypt'
+  346 |     { MP_ROM_QSTR(MP_QSTR_encrypt), MP_ROM_PTR(&cryptolib_aes_encrypt_obj) },
+      |                   ^
+../Middlewares/micropython/extmod/modcryptolib.c(347): error: use of undeclared identifier 'MP_QSTR_decrypt'
+  347 |     { MP_ROM_QSTR(MP_QSTR_decrypt), MP_ROM_PTR(&cryptolib_aes_decrypt_obj) },
+      |                   ^
+../Middlewares/micropython/extmod/modcryptolib.c(349): error: invalid application of 'sizeof' to an incomplete type 'const mp_rom_map_elem_t[]' (aka 'const struct _mp_rom_map_elem_t[]')
+  349 | static MP_DEFINE_CONST_DICT(cryptolib_aes_locals_dict, cryptolib_aes_locals_dict_table);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Middlewares/micropython\py/obj.h(438): note: expanded from macro 'MP_DEFINE_CONST_DICT'
+  438 | #define MP_DEFINE_CONST_DICT(dict_name, table_name) MP_DEFINE_CONST_DICT_WITH_SIZE(dict_name, table_name, MP_ARRAY_SIZE(table_name))
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Middlewares/micropython\py/misc.h(152): note: expanded from macro 'MP_ARRAY_SIZE'
+  152 | #define MP_ARRAY_SIZE(a) (sizeof(a) / sizeof((a)[0]))
+      |                                 ^
+../Middlewares/micropython\py/obj.h(432): note: expanded from macro 'MP_DEFINE_CONST_DICT_WITH_SIZE'
+  432 |             .used = n, \
+      |                     ^
+../Middlewares/micropython/extmod/modcryptolib.c(349): error: invalid application of 'sizeof' to an incomplete type 'const mp_rom_map_elem_t[]' (aka 'const struct _mp_rom_map_elem_t[]')
+  349 | static MP_DEFINE_CONST_DICT(cryptolib_aes_locals_dict, cryptolib_aes_locals_dict_table);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Middlewares/micropython\py/obj.h(438): note: expanded from macro 'MP_DEFINE_CONST_DICT'
+  438 | #define MP_DEFINE_CONST_DICT(dict_name, table_name) MP_DEFINE_CONST_DICT_WITH_SIZE(dict_name, table_name, MP_ARRAY_SIZE(table_name))
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Middlewares/micropython\py/misc.h(152): note: expanded from macro 'MP_ARRAY_SIZE'
+  152 | #define MP_ARRAY_SIZE(a) (sizeof(a) / sizeof((a)[0]))
+      |                                 ^
+../Middlewares/micropython\py/obj.h(433): note: expanded from macro 'MP_DEFINE_CONST_DICT_WITH_SIZE'
+  433 |             .alloc = n, \
+      |                      ^
+../Middlewares/micropython/extmod/modcryptolib.c(353): error: use of undeclared identifier 'MP_QSTR_aes'; did you mean 'MP_QSTR_abs'?
+  353 |     MP_QSTR_aes,
+      |     ^~~~~~~~~~~
+      |     MP_QSTR_abs
+../Middlewares/micropython\py/obj.h(825): note: expanded from macro 'MP_DEFINE_CONST_OBJ_TYPE'
+  825 | #define MP_DEFINE_CONST_OBJ_TYPE(...) MP_DEFINE_CONST_OBJ_TYPE_EXPAND(MP_DEFINE_CONST_OBJ_TYPE_NARGS(__VA_ARGS__, _INV, 12, _INV, 11, _INV, 10, _INV, 9, _INV, 8, _INV, 7, _INV, 6, _INV, 5, _INV, 4, _INV, 3, _INV, 2, _INV, 1, _INV, 0)(mp_obj_type_t, __VA_ARGS__))
+      |                                                                                                                                                                                                                                                          ^
+../Middlewares/micropython\py/obj.h(786): note: expanded from macro 'MP_DEFINE_CONST_OBJ_TYPE_NARGS_2'
+  786 | #define MP_DEFINE_CONST_OBJ_TYPE_NARGS_2(_struct_type, _typename, _name, _flags, f1, v1, f2, v2) const _struct_type _typename = { .base = { &mp_type_type }, .flags = _flags, .name = _name, .slot_index_##f1 = 1, .slot_index_##f2 = 2, .slots = { v1, v2, } }
+      |                                                                                                                                                                                       ^
+../Middlewares/micropython\py/obj.h(812): note: expanded from macro 'MP_DEFINE_CONST_OBJ_TYPE_EXPAND'
+  812 | #define MP_DEFINE_CONST_OBJ_TYPE_EXPAND(x) x
+      |                                            ^
+../Middlewares/micropython\genhdr/qstrdefs.generated.h(60): note: 'MP_QSTR_abs' declared here
+   60 | QDEF0(MP_QSTR_abs, 12949, 3, "abs")
+      |       ^
+../Middlewares/micropython/extmod/modcryptolib.c(360): error: use of undeclared identifier 'MP_QSTR_cryptolib'; did you mean 'MP_QSTR_rsplit'?
+  360 |     { MP_ROM_QSTR(MP_QSTR___name__), MP_ROM_QSTR(MP_QSTR_cryptolib) },
+      |                                                  ^~~~~~~~~~~~~~~~~
+      |                                                  MP_QSTR_rsplit
+../Middlewares/micropython\py/obj.h(366): note: expanded from macro 'MP_ROM_QSTR'
+  366 | #define MP_ROM_QSTR(q) MP_OBJ_NEW_QSTR(q)
+      |                                        ^
+../Middlewares/micropython\py/obj.h(96): note: expanded from macro 'MP_OBJ_NEW_QSTR'
+   96 | #define MP_OBJ_NEW_QSTR(qst) ((mp_obj_t)((((mp_uint_t)(qst)) << 3) | 2))
+      |                                                        ^
+../Middlewares/micropython\genhdr/qstrdefs.generated.h(138): note: 'MP_QSTR_rsplit' declared here
+  138 | QDEF0(MP_QSTR_rsplit, 165, 6, "rsplit")
+      |       ^
+../Middlewares/micropython/extmod/modcryptolib.c(361): error: use of undeclared identifier 'MP_QSTR_aes'; did you mean 'MP_QSTR_abs'?
+  361 |     { MP_ROM_QSTR(MP_QSTR_aes), MP_ROM_PTR(&cryptolib_aes_type) },
+      |                   ^~~~~~~~~~~
+      |                   MP_QSTR_abs
+../Middlewares/micropython\py/obj.h(366): note: expanded from macro 'MP_ROM_QSTR'
+  366 | #define MP_ROM_QSTR(q) MP_OBJ_NEW_QSTR(q)
+      |                                        ^
+../Middlewares/micropython\py/obj.h(96): note: expanded from macro 'MP_OBJ_NEW_QSTR'
+   96 | #define MP_OBJ_NEW_QSTR(qst) ((mp_obj_t)((((mp_uint_t)(qst)) << 3) | 2))
+      |                                                        ^
+../Middlewares/micropython\genhdr/qstrdefs.generated.h(60): note: 'MP_QSTR_abs' declared here
+   60 | QDEF0(MP_QSTR_abs, 12949, 3, "abs")
+      |       ^
+2 warnings and 7 errors generated.
+compiling modcryptolib.c...
+../Middlewares/micropython/extmod/modlwip.c(33): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modlwip.c...
+../Middlewares/micropython/extmod/modbluetooth.c(36): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modbluetooth.c...
+../Middlewares/micropython/extmod/modheapq.c(28): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modheapq.c...
+../Middlewares/micropython/extmod/modframebuf.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/extmod/modframebuf.c(339): warning: unused parameter 'type' [-Wunused-parameter]
+  339 | static mp_obj_t framebuf_make_new(const mp_obj_type_t *type, size_t n_args, size_t n_kw, const mp_obj_t *args_in) {
+      |                                                        ^
+../Middlewares/micropython/extmod/modframebuf.c(363): warning: unused parameter 'n_args' [-Wunused-parameter]
+  363 | static mp_obj_t framebuf_fill_rect(size_t n_args, const mp_obj_t *args_in) {
+      |                                           ^
+3 warnings generated.
+compiling modframebuf.c...
+../Middlewares/micropython/extmod/moddeflate.c(34): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/extmod/moddeflate.c(309): warning: unused parameter 'arg' [-Wunused-parameter]
+  309 | static mp_uint_t deflateio_ioctl(mp_obj_t self_in, mp_uint_t request, uintptr_t arg, int *errcode) {
+      |                                                                                 ^
+2 warnings generated.
+compiling moddeflate.c...
+../Middlewares/micropython/extmod/modmarshal.c(28): warning: In file included from...../Middlewares/micropython\py/objcode.h(29): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modmarshal.c...
+../Middlewares/micropython/extmod/modmachine.c(28): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/extmod/modmachine.c(144): error: use of undeclared identifier 'MP_QSTR_machine'; did you mean 'MP_QSTR__machine'?
+  144 |     { MP_ROM_QSTR(MP_QSTR___name__), MP_ROM_QSTR(MP_QSTR_machine) },
+      |                                                  ^~~~~~~~~~~~~~~
+      |                                                  MP_QSTR__machine
+../Middlewares/micropython\py/obj.h(366): note: expanded from macro 'MP_ROM_QSTR'
+  366 | #define MP_ROM_QSTR(q) MP_OBJ_NEW_QSTR(q)
+      |                                        ^
+../Middlewares/micropython\py/obj.h(96): note: expanded from macro 'MP_OBJ_NEW_QSTR'
+   96 | #define MP_OBJ_NEW_QSTR(qst) ((mp_obj_t)((((mp_uint_t)(qst)) << 3) | 2))
+      |                                                        ^
+../Middlewares/micropython\genhdr/qstrdefs.generated.h(356): note: 'MP_QSTR__machine' declared here
+  356 | QDEF1(MP_QSTR__machine, 19391, 8, "_machine")
+      |       ^
+../Middlewares/micropython/extmod/modmachine.c(148): error: use of undeclared identifier 'MP_QSTR_mem8'
+  148 |     { MP_ROM_QSTR(MP_QSTR_mem8), MP_ROM_PTR(&machine_mem8_obj) },
+      |                   ^
+../Middlewares/micropython/extmod/modmachine.c(149): error: use of undeclared identifier 'MP_QSTR_mem16'; did you mean 'MP_QSTR_INT16'?
+  149 |     { MP_ROM_QSTR(MP_QSTR_mem16), MP_ROM_PTR(&machine_mem16_obj) },
+      |                   ^~~~~~~~~~~~~
+      |                   MP_QSTR_INT16
+../Middlewares/micropython\py/obj.h(366): note: expanded from macro 'MP_ROM_QSTR'
+  366 | #define MP_ROM_QSTR(q) MP_OBJ_NEW_QSTR(q)
+      |                                        ^
+../Middlewares/micropython\py/obj.h(96): note: expanded from macro 'MP_OBJ_NEW_QSTR'
+   96 | #define MP_OBJ_NEW_QSTR(qst) ((mp_obj_t)((((mp_uint_t)(qst)) << 3) | 2))
+      |                                                        ^
+../Middlewares/micropython\genhdr/qstrdefs.generated.h(233): note: 'MP_QSTR_INT16' declared here
+  233 | QDEF1(MP_QSTR_INT16, 30353, 5, "INT16")
+      |       ^
+../Middlewares/micropython/extmod/modmachine.c(150): error: use of undeclared identifier 'MP_QSTR_mem32'
+  150 |     { MP_ROM_QSTR(MP_QSTR_mem32), MP_ROM_PTR(&machine_mem32_obj) },
+      |                   ^
+../Middlewares/micropython/extmod/modmachine.c(155): error: use of undeclared identifier 'MP_QSTR_unique_id'; did you mean 'MP_QSTR_client_id'?
+  155 |     { MP_ROM_QSTR(MP_QSTR_unique_id), MP_ROM_PTR(&machine_unique_id_obj) },
+      |                   ^~~~~~~~~~~~~~~~~
+      |                   MP_QSTR_client_id
+../Middlewares/micropython\py/obj.h(366): note: expanded from macro 'MP_ROM_QSTR'
+  366 | #define MP_ROM_QSTR(q) MP_OBJ_NEW_QSTR(q)
+      |                                        ^
+../Middlewares/micropython\py/obj.h(96): note: expanded from macro 'MP_OBJ_NEW_QSTR'
+   96 | #define MP_OBJ_NEW_QSTR(qst) ((mp_obj_t)((((mp_uint_t)(qst)) << 3) | 2))
+      |                                                        ^
+../Middlewares/micropython\genhdr/qstrdefs.generated.h(390): note: 'MP_QSTR_client_id' declared here
+  390 | QDEF1(MP_QSTR_client_id, 8302, 9, "client_id")
+      |       ^
+../Middlewares/micropython/extmod/modmachine.c(159): error: use of undeclared identifier 'MP_QSTR_soft_reset'; did you mean 'MP_QSTR_opt_level'?
+  159 |     { MP_ROM_QSTR(MP_QSTR_soft_reset), MP_ROM_PTR(&mp_sys_exit_obj) },
+      |                   ^~~~~~~~~~~~~~~~~~
+      |                   MP_QSTR_opt_level
+../Middlewares/micropython\py/obj.h(366): note: expanded from macro 'MP_ROM_QSTR'
+  366 | #define MP_ROM_QSTR(q) MP_OBJ_NEW_QSTR(q)
+      |                                        ^
+../Middlewares/micropython\py/obj.h(96): note: expanded from macro 'MP_OBJ_NEW_QSTR'
+   96 | #define MP_OBJ_NEW_QSTR(qst) ((mp_obj_t)((((mp_uint_t)(qst)) << 3) | 2))
+      |                                                        ^
+../Middlewares/micropython\genhdr/qstrdefs.generated.h(533): note: 'MP_QSTR_opt_level' declared here
+  533 | QDEF1(MP_QSTR_opt_level, 26503, 9, "opt_level")
+      |       ^
+../Middlewares/micropython/extmod/modmachine.c(164): error: use of undeclared identifier 'MP_QSTR_reset'
+  164 |     { MP_ROM_QSTR(MP_QSTR_reset), MP_ROM_PTR(&machine_reset_obj) },
+      |                   ^
+../Middlewares/micropython/extmod/modmachine.c(165): error: use of undeclared identifier 'MP_QSTR_reset_cause'
+  165 |     { MP_ROM_QSTR(MP_QSTR_reset_cause), MP_ROM_PTR(&machine_reset_cause_obj) },
+      |                   ^
+../Middlewares/micropython/extmod/modmachine.c(169): error: use of undeclared identifier 'MP_QSTR_idle'
+  169 |     { MP_ROM_QSTR(MP_QSTR_idle), MP_ROM_PTR(&machine_idle_obj) },
+      |                   ^
+../Middlewares/micropython/extmod/modmachine.c(171): error: use of undeclared identifier 'MP_QSTR_freq'
+  171 |     { MP_ROM_QSTR(MP_QSTR_freq), MP_ROM_PTR(&machine_freq_obj) },
+      |                   ^
+../Middlewares/micropython/extmod/modmachine.c(172): error: use of undeclared identifier 'MP_QSTR_lightsleep'
+  172 |     { MP_ROM_QSTR(MP_QSTR_lightsleep), MP_ROM_PTR(&machine_lightsleep_obj) },
+      |                   ^
+../Middlewares/micropython/extmod/modmachine.c(173): error: use of undeclared identifier 'MP_QSTR_deepsleep'; did you mean 'MP_QSTR_sleep'?
+  173 |     { MP_ROM_QSTR(MP_QSTR_deepsleep), MP_ROM_PTR(&machine_deepsleep_obj) },
+      |                   ^~~~~~~~~~~~~~~~~
+      |                   MP_QSTR_sleep
+../Middlewares/micropython\py/obj.h(366): note: expanded from macro 'MP_ROM_QSTR'
+  366 | #define MP_ROM_QSTR(q) MP_OBJ_NEW_QSTR(q)
+      |                                        ^
+../Middlewares/micropython\py/obj.h(96): note: expanded from macro 'MP_OBJ_NEW_QSTR'
+   96 | #define MP_OBJ_NEW_QSTR(qst) ((mp_obj_t)((((mp_uint_t)(qst)) << 3) | 2))
+      |                                                        ^
+../Middlewares/micropython\genhdr/qstrdefs.generated.h(596): note: 'MP_QSTR_sleep' declared here
+  596 | QDEF1(MP_QSTR_sleep, 10218, 5, "sleep")
+      |       ^
+../Middlewares/micropython/extmod/modmachine.c(198): error: use of undeclared identifier 'MP_QSTR_Signal'; did you mean 'MP_QSTR_isnan'?
+  198 |     { MP_ROM_QSTR(MP_QSTR_Signal), MP_ROM_PTR(&machine_signal_type) },
+      |                   ^~~~~~~~~~~~~~
+      |                   MP_QSTR_isnan
+../Middlewares/micropython\py/obj.h(366): note: expanded from macro 'MP_ROM_QSTR'
+  366 | #define MP_ROM_QSTR(q) MP_OBJ_NEW_QSTR(q)
+      |                                        ^
+../Middlewares/micropython\py/obj.h(96): note: expanded from macro 'MP_OBJ_NEW_QSTR'
+   96 | #define MP_OBJ_NEW_QSTR(qst) ((mp_obj_t)((((mp_uint_t)(qst)) << 3) | 2))
+      |                                                        ^
+../Middlewares/micropython\genhdr/qstrdefs.generated.h(490): note: 'MP_QSTR_isnan' declared here
+  490 | QDEF1(MP_QSTR_isnan, 926, 5, "isnan")
+      |       ^
+../Middlewares/micropython/extmod/modmachine.c(249): error: invalid application of 'sizeof' to an incomplete type 'const mp_rom_map_elem_t[]' (aka 'const struct _mp_rom_map_elem_t[]')
+  249 | static MP_DEFINE_CONST_DICT(machine_module_globals, machine_module_globals_table);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Middlewares/micropython\py/obj.h(438): note: expanded from macro 'MP_DEFINE_CONST_DICT'
+  438 | #define MP_DEFINE_CONST_DICT(dict_name, table_name) MP_DEFINE_CONST_DICT_WITH_SIZE(dict_name, table_name, MP_ARRAY_SIZE(table_name))
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Middlewares/micropython\py/misc.h(152): note: expanded from macro 'MP_ARRAY_SIZE'
+  152 | #define MP_ARRAY_SIZE(a) (sizeof(a) / sizeof((a)[0]))
+      |                                 ^
+../Middlewares/micropython\py/obj.h(432): note: expanded from macro 'MP_DEFINE_CONST_DICT_WITH_SIZE'
+  432 |             .used = n, \
+      |                     ^
+../Middlewares/micropython/extmod/modmachine.c(249): error: invalid application of 'sizeof' to an incomplete type 'const mp_rom_map_elem_t[]' (aka 'const struct _mp_rom_map_elem_t[]')
+  249 | static MP_DEFINE_CONST_DICT(machine_module_globals, machine_module_globals_table);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Middlewares/micropython\py/obj.h(438): note: expanded from macro 'MP_DEFINE_CONST_DICT'
+  438 | #define MP_DEFINE_CONST_DICT(dict_name, table_name) MP_DEFINE_CONST_DICT_WITH_SIZE(dict_name, table_name, MP_ARRAY_SIZE(table_name))
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Middlewares/micropython\py/misc.h(152): note: expanded from macro 'MP_ARRAY_SIZE'
+  152 | #define MP_ARRAY_SIZE(a) (sizeof(a) / sizeof((a)[0]))
+      |                                 ^
+../Middlewares/micropython\py/obj.h(433): note: expanded from macro 'MP_DEFINE_CONST_DICT_WITH_SIZE'
+  433 |             .alloc = n, \
+      |                      ^
+1 warning and 15 errors generated.
+compiling modmachine.c...
+../Middlewares/micropython/extmod/modnetwork.c(32): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/extmod/modnetwork.c(103): warning: unused parameter 'ip' [-Wunused-parameter]
+  103 | mp_obj_t mod_network_find_nic(const uint8_t *ip) {
+      |                                              ^
+2 warnings generated.
+compiling modnetwork.c...
+../Middlewares/micropython/extmod/modos.c(29): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/extmod/modos.c(33): warning: In file included from...../Middlewares/micropython\extmod/misc.h(45): warning: unused parameter 's' [-Wunused-parameter]
+   45 | static inline int mp_os_dupterm_tx_strn(const char *s, size_t l) {
+      |                                                     ^
+../Middlewares/micropython\extmod/misc.h(45): warning: unused parameter 'l' [-Wunused-parameter]
+   45 | static inline int mp_os_dupterm_tx_strn(const char *s, size_t l) {
+      |                                                               ^
+3 warnings generated.
+compiling modos.c...
+../Middlewares/micropython/shared/netutils/netutils.c(32): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling netutils.c...
+compiling base64.c...
+compiling modonewire.c...
+../Middlewares/micropython/extmod/modrandom.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modrandom.c...
+../Middlewares/micropython/extmod/modtime.c(29): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modtime.c...
+compiling asn1parse.c...
+../Middlewares/micropython/extmod/modtls_axtls.c(31): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modtls_axtls.c...
+compiling asn1write.c...
+../Middlewares/micropython/extmod/modsocket.c(32): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/extmod/modsocket.c(46): warning: unused parameter 'kind' [-Wunused-parameter]
+   46 | static void socket_print(const mp_print_t *print, mp_obj_t self_in, mp_print_kind_t kind) {
+      |                                                                                     ^
+../Middlewares/micropython/extmod/modsocket.c(53): warning: unused parameter 'type' [-Wunused-parameter]
+   53 | static mp_obj_t socket_make_new(const mp_obj_type_t *type, size_t n_args, size_t n_kw, const mp_obj_t *args) {
+      |                                                      ^
+../Middlewares/micropython/extmod/modsocket.c(238): warning: comparison of integers of different signs: 'mp_uint_t' (aka 'unsigned int') and 'int' [-Wsign-compare]
+  238 |     if (ret == -1) {
+      |         ~~~ ^  ~~
+../Middlewares/micropython/extmod/modsocket.c(258): warning: comparison of integers of different signs: 'mp_uint_t' (aka 'unsigned int') and 'int' [-Wsign-compare]
+  258 |         if (ret == -1) {
+      |             ~~~ ^  ~~
+../Middlewares/micropython/extmod/modsocket.c(268): warning: comparison of integers of different signs: 'mp_uint_t' (aka 'unsigned int') and 'int' [-Wsign-compare]
+  268 |             if (ret == -1) {
+      |                 ~~~ ^  ~~
+../Middlewares/micropython/extmod/modsocket.c(291): warning: comparison of integers of different signs: 'mp_uint_t' (aka 'unsigned int') and 'int' [-Wsign-compare]
+  291 |     if (ret == -1) {
+      |         ~~~ ^  ~~
+../Middlewares/micropython/extmod/modsocket.c(357): warning: unused parameter 'n_args' [-Wunused-parameter]
+  357 | static mp_obj_t socket_setsockopt(size_t n_args, const mp_obj_t *args) {
+      |                                          ^
+8 warnings generated.
+compiling modsocket.c...
+../Middlewares/micropython/extmod/modre.c(31): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modre.c...
+compiling aes.c...
+../Middlewares/micropython/extmod/modselect.c(29): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modselect.c...
+../Middlewares/micropython/extmod/modtls_mbedtls.c(36): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/extmod/modtls_mbedtls.c(208): warning: unused parameter 'ssl_context' [-Wunused-parameter]
+  208 | static inline void store_active_context(mp_obj_ssl_context_t *ssl_context) {
+      |                                                               ^
+../Middlewares/micropython/extmod/modtls_mbedtls.c(254): warning: unused parameter 'flags' [-Wunused-parameter]
+  254 | static int ssl_sock_cert_verify(void *ptr, mbedtls_x509_crt *crt, int depth, uint32_t *flags) {
+      |                                                                                        ^
+../Middlewares/micropython/extmod/modtls_mbedtls.c(401): warning: unused parameter 'self_in' [-Wunused-parameter]
+  401 | static mp_obj_t ssl_context_get_ciphers(mp_obj_t self_in) {
+      |                                                  ^
+4 warnings generated.
+compiling modtls_mbedtls.c...
+compiling cipher.c...
+compiling cipher_wrap.c...
+compiling bignum_core.c...
+compiling bignum.c...
+compiling constant_time.c...
+compiling debug.c...
+compiling ecdsa.c...
+compiling md.c...
+compiling ctr_drbg.c...
+compiling gcm.c...
+compiling entropy_poll.c...
+compiling ecp.c...
+compiling entropy.c...
+compiling ecdh.c...
+compiling error.c...
+compiling ecp_curves.c...
+compiling pem.c...
+compiling md5.c...
+compiling pk.c...
+compiling oid.c...
+compiling pk_wrap.c...
+compiling platform_util.c...
+compiling pk_ecc.c...
+compiling platform.c...
+compiling pkcs5.c...
+compiling pkparse.c...
+compiling rsa_alt_helpers.c...
+compiling sha256.c...
+compiling sha1.c...
+compiling rsa.c...
+compiling sha512.c...
+compiling ssl_ciphersuites.c...
+compiling ssl_cookie.c...
+compiling ssl_client.c...
+compiling ssl_msg.c...
+compiling ssl_tls12_client.c...
+compiling ssl_tls.c...
+compiling version.c...
+compiling mbedtls_port.c...
+compiling ssl_tls12_server.c...
+compiling mpbthci.c...
+compiling network_esp_hosted.c...
+compiling network_ninaw10.c...
+../Middlewares/micropython/extmod/network_cyw43.c(29): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling network_cyw43.c...
+../Middlewares/micropython/extmod/network_lwip.c(27): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling network_lwip.c...
+../Middlewares/micropython/extmod/modwebsocket.c(31): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modwebsocket.c...
+../Middlewares/micropython/extmod/modwebrepl.c(31): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modwebrepl.c...
+../Middlewares/micropython/extmod/modvfs.c(27): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modvfs.c...
+../Middlewares/micropython/extmod/moductypes.c(32): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling moductypes.c...
+compiling x509.c...
+compiling x509_crt.c...
+../Middlewares/micropython/extmod/os_dupterm.c(31): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/extmod/os_dupterm.c(35): warning: In file included from...../Middlewares/micropython\extmod/misc.h(45): warning: unused parameter 's' [-Wunused-parameter]
+   45 | static inline int mp_os_dupterm_tx_strn(const char *s, size_t l) {
+      |                                                     ^
+../Middlewares/micropython\extmod/misc.h(45): warning: unused parameter 'l' [-Wunused-parameter]
+   45 | static inline int mp_os_dupterm_tx_strn(const char *s, size_t l) {
+      |                                                               ^
+3 warnings generated.
+compiling os_dupterm.c...
+../Middlewares/micropython/extmod/network_wiznet5k.c(32): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling network_wiznet5k.c...
+../Middlewares/micropython/extmod/network_ppp_lwip.c(31): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling network_ppp_lwip.c...
+../Middlewares/micropython/extmod/vfs.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling vfs.c...
+../Middlewares/micropython/extmod/vfs_blockdev.c(27): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling vfs_blockdev.c...
+compiling vfs_fat_file.c...
+compiling vfs_fat_diskio.c...
+compiling vfs_fat.c...
+../Middlewares/micropython/extmod/vfs_posix.c(27): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling vfs_posix.c...
+../Middlewares/micropython/extmod/vfs_lfs.c(27): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling vfs_lfs.c...
+../Middlewares/micropython/extmod/vfs_rom_file.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling vfs_rom_file.c...
+../Middlewares/micropython/extmod/vfs_reader.c(31): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling vfs_reader.c...
+../Middlewares/micropython/shared/runtime/sys_stdio_mphal.c(55): warning: unused parameter 'kind' [-Wunused-parameter]
+   55 | static void stdio_obj_print(const mp_print_t *print, mp_obj_t self_in, mp_print_kind_t kind) {
+      |                                                                                        ^
+../Middlewares/micropython/shared/runtime/sys_stdio_mphal.c(137): warning: unused parameter 'self_in' [-Wunused-parameter]
+  137 | static mp_uint_t stdio_buffer_read(mp_obj_t self_in, void *buf, mp_uint_t size, int *errcode) {
+      |                                             ^
+../Middlewares/micropython/shared/runtime/sys_stdio_mphal.c(137): warning: unused parameter 'errcode' [-Wunused-parameter]
+  137 | static mp_uint_t stdio_buffer_read(mp_obj_t self_in, void *buf, mp_uint_t size, int *errcode) {
+      |                                                                                      ^
+../Middlewares/micropython/shared/runtime/sys_stdio_mphal.c(144): warning: unused parameter 'self_in' [-Wunused-parameter]
+  144 | static mp_uint_t stdio_buffer_write(mp_obj_t self_in, const void *buf, mp_uint_t size, int *errcode) {
+      |                                              ^
+../Middlewares/micropython/shared/runtime/sys_stdio_mphal.c(144): warning: unused parameter 'errcode' [-Wunused-parameter]
+  144 | static mp_uint_t stdio_buffer_write(mp_obj_t self_in, const void *buf, mp_uint_t size, int *errcode) {
+      |                                                                                             ^
+5 warnings generated.
+compiling sys_stdio_mphal.c...
+../Middlewares/micropython/extmod/vfs_posix_file.c(29): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling vfs_posix_file.c...
+../Middlewares/micropython/shared/runtime/pyexec.c(32): warning: In file included from...../Middlewares/micropython\py/compile.h(31): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling pyexec.c...
+../Middlewares/micropython/extmod/vfs_rom.c(74): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling vfs_rom.c...
+compiling asmthumb.c...
+compiling gchelper_generic.c...
+../Middlewares/micropython/py/asmbase.c(33): warning: In file included from...../Middlewares/micropython\py/persistentcode.h(31): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling asmbase.c...
+compiling readline.c...
+../Middlewares/micropython/py/argcheck.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling argcheck.c...
+../Middlewares/micropython/py/bc.c(33): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling bc.c...
+../Middlewares/micropython/py/builtinevex.c(29): warning: In file included from...../Middlewares/micropython\py/objcode.h(29): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling builtinevex.c...
+../Middlewares/micropython/py/binary.c(37): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling binary.c...
+compiling builtinhelp.c...
+../Middlewares/micropython/py/emitinlinethumb.c(33): warning: In file included from...../Middlewares/micropython\py/emit.h(30): warning: In file included from...../Middlewares/micropython\py/scope.h(30): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/py/emitinlinethumb.c(34): warning: In file included from...../Middlewares/micropython\py/asmthumb.h(83): warning: unused parameter 'as' [-Wunused-parameter]
+   83 | static inline bool asm_thumb_allow_armv7m(asm_thumb_t *as) {
+      |                                                        ^
+2 warnings generated.
+compiling emitinlinethumb.c...
+../Middlewares/micropython/py/emitglue.c(34): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling emitglue.c...
+compiling formatfloat.c...
+../Middlewares/micropython/py/emitcommon.c(30): warning: In file included from...../Middlewares/micropython\py/emit.h(30): warning: In file included from...../Middlewares/micropython\py/scope.h(30): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling emitcommon.c...
+../Middlewares/micropython/py/builtinimport.c(33): warning: In file included from...../Middlewares/micropython\py/compile.h(31): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/py/builtinimport.c(366): warning: unused parameter 'override_main' [-Wunused-parameter]
+  366 | static mp_obj_t process_import_at_level(qstr full_mod_name, qstr level_mod_name, mp_obj_t outer_module_obj, bool override_main) {
+      |                                                                                                                  ^
+2 warnings generated.
+compiling builtinimport.c...
+../Middlewares/micropython/py/frozenmod.c(58): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling frozenmod.c...
+../Middlewares/micropython/py/emitbc.c(36): warning: In file included from...../Middlewares/micropython\py/emit.h(30): warning: In file included from...../Middlewares/micropython\py/scope.h(30): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling emitbc.c...
+../Middlewares/micropython/py/gc.c(33): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling gc.c...
+../Middlewares/micropython/py/lexer.c(33): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling lexer.c...
+compiling malloc.c...
+../Middlewares/micropython/py/compile.c(33): warning: In file included from...../Middlewares/micropython\py/scope.h(30): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/py/compile.c(241): warning: unused parameter 'source_file' [-Wunused-parameter]
+  241 | static void mp_emit_common_populate_module_context(mp_emit_common_t *emit, qstr source_file, mp_module_context_t *context) {
+      |                                                                                 ^
+2 warnings generated.
+compiling compile.c...
+../Middlewares/micropython/py/map.c(34): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling map.c...
+compiling modarray.c...
+../Middlewares/micropython/py/modio.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modio.c...
+compiling modcollections.c...
+compiling modgc.c...
+compiling moderrno.c...
+../Middlewares/micropython/py/modthread.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modthread.c...
+../Middlewares/micropython/py/modstruct.c(31): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modstruct.c...
+compiling modcmath.c...
+../Middlewares/micropython/py/modmicropython.c(31): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modmicropython.c...
+../Middlewares/micropython/py/modbuiltins.c(34): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modbuiltins.c...
+../Middlewares/micropython/py/modsys.c(37): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/py/modsys.c(301): warning: unused parameter 'self_in' [-Wunused-parameter]
+  301 | void mp_module_sys_attr(mp_obj_t self_in, qstr attr, mp_obj_t *dest) {
+      |                                  ^
+2 warnings generated.
+compiling modsys.c...
+../Middlewares/micropython/py/modmath.c(28): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling modmath.c...
+../Middlewares/micropython/py/mpprint.c(37): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling mpprint.c...
+compiling mpstate.c...
+../Middlewares/micropython/py/nativeglue.c(33): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling nativeglue.c...
+compiling mpz.c...
+compiling nlraarch64.c...
+compiling nlr.c...
+compiling nlrx86.c...
+compiling nlrrv32.c...
+compiling nlrmips.c...
+compiling nlrpowerpc.c...
+compiling nlrsetjmp.c...
+compiling nlrxtensa.c...
+compiling nlrthumb.c...
+compiling nlrx64.c...
+compiling objattrtuple.c...
+compiling nlrrv64.c...
+../Middlewares/micropython/py/objboundmeth.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objboundmeth.c...
+../Middlewares/micropython/py/objbool.c(29): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objbool.c...
+../Middlewares/micropython/py/obj.c(36): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling obj.c...
+../Middlewares/micropython/py/objarray.c(32): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objarray.c...
+compiling objcell.c...
+../Middlewares/micropython/py/objclosure.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objclosure.c...
+../Middlewares/micropython/py/objcode.c(27): warning: In file included from...../Middlewares/micropython\py/objcode.h(29): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objcode.c...
+../Middlewares/micropython/py/objdeque.c(29): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objdeque.c...
+../Middlewares/micropython/py/objcomplex.c(32): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objcomplex.c...
+../Middlewares/micropython/py/objdict.c(31): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objdict.c...
+../Middlewares/micropython/py/objfilter.c(27): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objfilter.c...
+../Middlewares/micropython/py/objmap.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objmap.c...
+../Middlewares/micropython/py/objgetitemiter.c(29): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objgetitemiter.c...
+../Middlewares/micropython/py/objint.c(35): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objint.c...
+../Middlewares/micropython/py/objenumerate.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objenumerate.c...
+../Middlewares/micropython/py/objint_longlong.c(33): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objint_longlong.c...
+../Middlewares/micropython/py/objgenerator.c(31): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objgenerator.c...
+../Middlewares/micropython/py/objint_mpz.c(34): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objint_mpz.c...
+../Middlewares/micropython/py/objfloat.c(33): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/py/objfloat.c(67): warning: use of infinity via a macro is undefined behavior due to the currently enabled floating-point options [-Wnan-infinity-disabled]
+   67 | const mp_obj_float_t mp_const_float_inf_obj = {{&mp_type_float}, (mp_float_t)INFINITY};
+      |                                                                              ^
+../Middlewares/micropython/py/objfloat.c(67): warning: use of infinity is undefined behavior due to the currently enabled floating-point options [-Wnan-infinity-disabled]
+   67 | const mp_obj_float_t mp_const_float_inf_obj = {{&mp_type_float}, (mp_float_t)INFINITY};
+      |                                                                              ^~~~~~~~
+D:\Program Files\Keil_v5\ARM\ARMCLANG\bin\..\include\math.h(271): note: expanded from macro 'INFINITY'
+  271 | #   define INFINITY __builtin_inff()
+      |                     ^~~~~~~~~~~~~~~~
+../Middlewares/micropython/py/objfloat.c(68): warning: use of NaN via a macro is undefined behavior due to the currently enabled floating-point options [-Wnan-infinity-disabled]
+   68 | const mp_obj_float_t mp_const_float_nan_obj = {{&mp_type_float}, (mp_float_t)NAN};
+      |                                                                              ^
+../Middlewares/micropython/py/objfloat.c(68): warning: use of NaN is undefined behavior due to the currently enabled floating-point options [-Wnan-infinity-disabled]
+   68 | const mp_obj_float_t mp_const_float_nan_obj = {{&mp_type_float}, (mp_float_t)NAN};
+      |                                                                              ^~~
+D:\Program Files\Keil_v5\ARM\ARMCLANG\bin\..\include\math.h(272): note: expanded from macro 'NAN'
+  272 | #   define NAN __builtin_nanf("")
+      |                ^~~~~~~~~~~~~~~~~~
+5 warnings generated.
+compiling objfloat.c...
+../Middlewares/micropython/py/objfun.c(31): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objfun.c...
+../Middlewares/micropython/py/objexcept.c(37): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/py/objexcept.c(129): warning: unused parameter 'o' [-Wunused-parameter]
+  129 | static void decompress_error_text_maybe(mp_obj_exception_t *o) {
+      |                                                             ^
+2 warnings generated.
+compiling objexcept.c...
+../Middlewares/micropython/py/objlist.c(31): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objlist.c...
+../Middlewares/micropython/py/objmodule.c(32): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objmodule.c...
+compiling objnone.c...
+../Middlewares/micropython/py/objnamedtuple.c(31): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objnamedtuple.c...
+../Middlewares/micropython/py/objobject.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objobject.c...
+../Middlewares/micropython/py/objpolyiter.c(29): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objpolyiter.c...
+../Middlewares/micropython/py/objrange.c(29): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objrange.c...
+compiling objsingleton.c...
+../Middlewares/micropython/py/objreversed.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objreversed.c...
+../Middlewares/micropython/py/objringio.c(32): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objringio.c...
+../Middlewares/micropython/py/objproperty.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objproperty.c...
+../Middlewares/micropython/py/objslice.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/py/objslice.c(49): warning: unused parameter 'op' [-Wunused-parameter]
+   49 | static mp_obj_t slice_unary_op(mp_unary_op_t op, mp_obj_t o_in) {
+      |                                              ^
+../Middlewares/micropython/py/objslice.c(49): warning: unused parameter 'o_in' [-Wunused-parameter]
+   49 | static mp_obj_t slice_unary_op(mp_unary_op_t op, mp_obj_t o_in) {
+      |                                                           ^
+3 warnings generated.
+compiling objslice.c...
+../Middlewares/micropython/py/objstringio.c(33): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objstringio.c...
+../Middlewares/micropython/py/objstrunicode.c(33): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objstrunicode.c...
+../Middlewares/micropython/py/objtuple.c(32): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objtuple.c...
+../Middlewares/micropython/py/objset.c(31): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objset.c...
+../Middlewares/micropython/py/objzip.c(31): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objzip.c...
+../Middlewares/micropython/py/objtype.c(34): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling objtype.c...
+../Middlewares/micropython/py/objstr.c(34): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/py/objstr.c(67): warning: unused parameter 'self_in' [-Wunused-parameter]
+   67 | static void check_is_str_or_bytes(mp_obj_t self_in) {
+      |                                            ^
+2 warnings generated.
+compiling objstr.c...
+compiling opmethods.c...
+compiling pairheap.c...
+../Middlewares/micropython/py/parsenum.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/py/parsenum.c(422): warning: use of infinity via a macro is undefined behavior due to the currently enabled floating-point options [-Wnan-infinity-disabled]
+  422 |         dec_val = (mp_float_t)INFINITY;
+      |                               ^
+../Middlewares/micropython/py/parsenum.c(422): warning: use of infinity is undefined behavior due to the currently enabled floating-point options [-Wnan-infinity-disabled]
+  422 |         dec_val = (mp_float_t)INFINITY;
+      |                               ^~~~~~~~
+D:\Program Files\Keil_v5\ARM\ARMCLANG\bin\..\include\math.h(271): note: expanded from macro 'INFINITY'
+  271 | #   define INFINITY __builtin_inff()
+      |                     ^~~~~~~~~~~~~~~~
+3 warnings generated.
+compiling parsenum.c...
+../Middlewares/micropython/py/parse.c(37): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling parse.c...
+compiling parsenumbase.c...
+../Middlewares/micropython/py/scheduler.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+../Middlewares/micropython/py/scheduler.c(284): warning: unused parameter 'timeout_ms' [-Wunused-parameter]
+  284 | void mp_event_wait_ms(mp_uint_t timeout_ms) {
+      |                                 ^
+2 warnings generated.
+compiling scheduler.c...
+../Middlewares/micropython/py/scope.c(29): warning: In file included from...../Middlewares/micropython\py/scope.h(30): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling scope.c...
+../Middlewares/micropython/py/persistentcode.c(33): warning: In file included from...../Middlewares/micropython\py/nativeglue.h(31): warning: In file included from...../Middlewares/micropython\py/persistentcode.h(31): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling persistentcode.c...
+compiling ringbuf.c...
+../Middlewares/micropython/py/pystack.c(29): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling pystack.c...
+../Middlewares/micropython/py/profile.c(27): warning: In file included from...../Middlewares/micropython\py/profile.h(30): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling profile.c...
+../Middlewares/micropython/py/repl.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling repl.c...
+../Middlewares/micropython/py/reader.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling reader.c...
+../Middlewares/micropython/py/runtime_utils.c(28): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling runtime_utils.c...
+../Middlewares/micropython/py/sequence.c(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling sequence.c...
+../Middlewares/micropython/py/qstr.c(34): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling qstr.c...
+../Middlewares/micropython/py/showbc.c(31): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling showbc.c...
+../Middlewares/micropython/py/runtime.c(35): warning: In file included from...../Middlewares/micropython\py/compile.h(31): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling runtime.c...
+compiling smallint.c...
+compiling unicode.c...
+../Middlewares/micropython/py/stackctrl.c(29): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling stackctrl.c...
+../Middlewares/micropython/py/vstr.c(34): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling vstr.c...
+../Middlewares/micropython/py/stream.c(33): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling stream.c...
+../Middlewares/micropython/py/warning.c(31): warning: In file included from...../Middlewares/micropython\py/emit.h(30): warning: In file included from...../Middlewares/micropython\py/scope.h(30): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling warning.c...
+../Middlewares/micropython/py/vm.c(32): warning: In file included from...../Middlewares/micropython\py/emitglue.h(30): warning: In file included from...../Middlewares/micropython\py/bc.h(30): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling vm.c...
+../Middlewares/micropython/py/cstack.c(28): warning: In file included from...../Middlewares/micropython\py/runtime.h(30): warning: In file included from...../Middlewares/micropython\py/pystack.h(88): warning: unused parameter 'old_n_bytes' [-Wunused-parameter]
+   88 | static inline void *mp_nonlocal_realloc(void *ptr, size_t old_n_bytes, size_t new_n_bytes) {
+      |                                                           ^
+1 warning generated.
+compiling cstack.c...
+"mp_threadx\mp_threadx.axf" - 30 Error(s), 190 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:13

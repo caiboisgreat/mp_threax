@@ -416,6 +416,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(STA_IF)"
 
+"Q(Signal)"
+
+"Q(Signal)"
+
 "Q(StopAsyncIteration)"
 
 "Q(StopAsyncIteration)"
@@ -754,6 +758,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(__name__)"
 
+"Q(__name__)"
+
+"Q(__name__)"
+
 "Q(__ne__)"
 
 "Q(__neg__)"
@@ -944,6 +952,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(addressof)"
 
+"Q(aes)"
+
+"Q(aes)"
+
 "Q(all)"
 
 "Q(any)"
@@ -1122,6 +1134,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(crc32)"
 
+"Q(cryptolib)"
+
+"Q(cryptolib)"
+
 "Q(cur_task)"
 
 "Q(cur_task)"
@@ -1131,6 +1147,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(data)"
 
 "Q(decode)"
+
+"Q(decrypt)"
+
+"Q(deepsleep)"
 
 "Q(default)"
 
@@ -1195,6 +1215,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(enable)"
 
 "Q(encode)"
+
+"Q(encrypt)"
 
 "Q(end)"
 
@@ -1273,6 +1295,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(framebuf)"
 
 "Q(framebuf)"
+
+"Q(freq)"
 
 "Q(frexp)"
 
@@ -1712,6 +1736,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(id)"
 
+"Q(idle)"
+
 "Q(imag)"
 
 "Q(implementation)"
@@ -1739,6 +1765,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(intersection)"
 
 "Q(intersection_update)"
+
+"Q(invert)"
 
 "Q(io)"
 
@@ -1828,6 +1856,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(libc_ver)"
 
+"Q(lightsleep)"
+
 "Q(line)"
 
 "Q(list)"
@@ -1868,6 +1898,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(lstrip)"
 
+"Q(machine)"
+
+"Q(machine)"
+
 "Q(makefile)"
 
 "Q(map)"
@@ -1899,6 +1933,14 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(md5)"
 
 "Q(md5)"
+
+"Q(mem)"
+
+"Q(mem16)"
+
+"Q(mem32)"
+
+"Q(mem8)"
 
 "Q(mem_alloc)"
 
@@ -1951,6 +1993,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(object)"
 
 "Q(oct)"
+
+"Q(off)"
+
+"Q(on)"
 
 "Q(open)"
 
@@ -2134,6 +2180,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(repr)"
 
+"Q(reset)"
+
+"Q(reset_cause)"
+
 "Q(reverse)"
 
 "Q(reverse)"
@@ -2253,6 +2303,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(socket)"
 
 "Q(socket)"
+
+"Q(soft_reset)"
 
 "Q(sort)"
 
@@ -2402,6 +2454,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(union)"
 
+"Q(unique_id)"
+
 "Q(unpack)"
 
 "Q(unpack_from)"
@@ -2425,6 +2479,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(utf_hyphen_8)"
 
 "Q(utf_hyphen_8)"
+
+"Q(value)"
 
 "Q(value)"
 

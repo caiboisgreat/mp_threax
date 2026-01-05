@@ -114,10 +114,37 @@
 #define MICROPY_PY_RANDOM                 (1)
 #define MICROPY_PY_HEAPQ                  (1)
 #define MICROPY_PY_HASHLIB                (1)
-#define MICROPY_PY_CRYPTOLIB              (0)
+#define MICROPY_PY_CRYPTOLIB              (1)
 #define MICROPY_PY_MARSHAL                (1)
 #define MICROPY_PY_ZLIB                   (1)
 #define MICROPY_PY_ASYNCIO                (1)
+
+// micropython-specific libraries (incremental bring-up)
+// btree is the unix/posix Berkeley-DB binding and depends on POSIX headers
+// (eg fcntl.h) and a posix-style stream layer. Keep it off for this bare-metal
+// ThreadX port until VFS/storage is brought up with an embedded-friendly backend.
+#define MICROPY_PY_BTREE                  (0)
+
+// Provide a minimal `machine` module first (reset/unique_id/freq/idle).
+// Peripheral classes (Pin/UART/SPI/I2C/...) will be enabled in later steps.
+#define MICROPY_PY_MACHINE                (1)
+#define MICROPY_PY_MACHINE_INCLUDEFILE    "py_port/modmachine_port.c"
+#define MICROPY_PY_MACHINE_RESET          (1)
+#define MICROPY_PY_MACHINE_BARE_METAL_FUNCS (1)
+#define MICROPY_PY_MACHINE_BOOTLOADER     (0)
+// Keep all peripheral classes off for now to avoid needing pin/peripheral glue.
+#define MICROPY_PY_MACHINE_PIN            (0)
+#define MICROPY_PY_MACHINE_UART           (0)
+#define MICROPY_PY_MACHINE_I2C            (0)
+#define MICROPY_PY_MACHINE_SPI            (0)
+#define MICROPY_PY_MACHINE_ADC            (0)
+#define MICROPY_PY_MACHINE_PWM            (0)
+#define MICROPY_PY_MACHINE_TIMER          (0)
+#define MICROPY_PY_MACHINE_WDT            (0)
+
+// These are hardware/stack dependent and will be enabled later.
+#define MICROPY_PY_BLUETOOTH              (0)
+#define MICROPY_PY_OPENAMP                (0)
 
 // Temporarily disable `platform` until the build/genhdr setup is fully stable.
 // This module is not essential for the initial “standard modules” milestone.

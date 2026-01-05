@@ -901,10 +901,37 @@ typedef unsigned long long uintmax_t;
 #define MICROPY_PY_RANDOM (1)
 #define MICROPY_PY_HEAPQ (1)
 #define MICROPY_PY_HASHLIB (1)
-#define MICROPY_PY_CRYPTOLIB (0)
+#define MICROPY_PY_CRYPTOLIB (1)
 #define MICROPY_PY_MARSHAL (1)
 #define MICROPY_PY_ZLIB (1)
 #define MICROPY_PY_ASYNCIO (1)
+
+
+
+
+
+#define MICROPY_PY_BTREE (0)
+
+
+
+#define MICROPY_PY_MACHINE (1)
+#define MICROPY_PY_MACHINE_INCLUDEFILE "py_port/modmachine_port.c"
+#define MICROPY_PY_MACHINE_RESET (1)
+#define MICROPY_PY_MACHINE_BARE_METAL_FUNCS (1)
+#define MICROPY_PY_MACHINE_BOOTLOADER (0)
+
+#define MICROPY_PY_MACHINE_PIN (0)
+#define MICROPY_PY_MACHINE_UART (0)
+#define MICROPY_PY_MACHINE_I2C (0)
+#define MICROPY_PY_MACHINE_SPI (0)
+#define MICROPY_PY_MACHINE_ADC (0)
+#define MICROPY_PY_MACHINE_PWM (0)
+#define MICROPY_PY_MACHINE_TIMER (0)
+#define MICROPY_PY_MACHINE_WDT (0)
+
+
+#define MICROPY_PY_BLUETOOTH (0)
+#define MICROPY_PY_OPENAMP (0)
 
 
 
@@ -937,7 +964,7 @@ typedef long mp_off_t;
 
 #define MICROPY_HW_BOARD_NAME "PYBASE"
 #define MICROPY_HW_MCU_NAME "STM32F405RG6"
-# 165 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 192 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_MIN_USE_CORTEX_CPU (0)
 
 
@@ -2428,19 +2455,7 @@ typedef long long mp_timestamp_t;
 
 
 #define MICROPY_PY_RANDOM_EXTRA_FUNCS (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_EXTRA_FEATURES)
-
-
-
-#define MICROPY_PY_MACHINE (0)
-
-
-
-
-#define MICROPY_PY_MACHINE_RESET (0)
-
-
-
-
+# 2034 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_PY_MACHINE_FREQ_NUM_ARGS_MAX (1)
 
 
@@ -2465,7 +2480,7 @@ typedef long long mp_timestamp_t;
 
 
 
-#define MICROPY_PY_MACHINE_I2C (0)
+
 
 
 
@@ -2479,7 +2494,7 @@ typedef long long mp_timestamp_t;
 
 
 
-#define MICROPY_PY_MACHINE_SPI (0)
+
 
 
 
@@ -2491,15 +2506,7 @@ typedef long long mp_timestamp_t;
 
 #define MICROPY_PY_MACHINE_SPI_MSB (0)
 #define MICROPY_PY_MACHINE_SPI_LSB (1)
-
-
-
-
-#define MICROPY_PY_MACHINE_TIMER (0)
-
-
-
-
+# 2093 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_PY_SOCKET_LISTEN_BACKLOG_DEFAULT (2)
 
 
@@ -2536,7 +2543,7 @@ typedef long long mp_timestamp_t;
 
 
 
-#define MICROPY_PY_BTREE (0)
+
 
 
 
@@ -3082,6 +3089,10 @@ Q(SSLSocket)
 
 Q(STA_IF)
 
+Q(Signal)
+
+Q(Signal)
+
 Q(StopAsyncIteration)
 
 Q(StopAsyncIteration)
@@ -3420,6 +3431,10 @@ Q(__name__)
 
 Q(__name__)
 
+Q(__name__)
+
+Q(__name__)
+
 Q(__ne__)
 
 Q(__neg__)
@@ -3610,6 +3625,10 @@ Q(add)
 
 Q(addressof)
 
+Q(aes)
+
+Q(aes)
+
 Q(all)
 
 Q(any)
@@ -3788,6 +3807,10 @@ Q(country)
 
 Q(crc32)
 
+Q(cryptolib)
+
+Q(cryptolib)
+
 Q(cur_task)
 
 Q(cur_task)
@@ -3797,6 +3820,10 @@ Q(data)
 Q(data)
 
 Q(decode)
+
+Q(decrypt)
+
+Q(deepsleep)
 
 Q(default)
 
@@ -3861,6 +3888,8 @@ Q(ellipse)
 Q(enable)
 
 Q(encode)
+
+Q(encrypt)
 
 Q(end)
 
@@ -3939,6 +3968,8 @@ Q(format)
 Q(framebuf)
 
 Q(framebuf)
+
+Q(freq)
 
 Q(frexp)
 
@@ -4378,6 +4409,8 @@ Q(hostname)
 
 Q(id)
 
+Q(idle)
+
 Q(imag)
 
 Q(implementation)
@@ -4405,6 +4438,8 @@ Q(intersection)
 Q(intersection)
 
 Q(intersection_update)
+
+Q(invert)
 
 Q(io)
 
@@ -4494,6 +4529,8 @@ Q(lgamma)
 
 Q(libc_ver)
 
+Q(lightsleep)
+
 Q(line)
 
 Q(list)
@@ -4534,6 +4571,10 @@ Q(lower)
 
 Q(lstrip)
 
+Q(machine)
+
+Q(machine)
+
 Q(makefile)
 
 Q(map)
@@ -4565,6 +4606,14 @@ Q(maxsize)
 Q(md5)
 
 Q(md5)
+
+Q(mem)
+
+Q(mem16)
+
+Q(mem32)
+
+Q(mem8)
 
 Q(mem_alloc)
 
@@ -4617,6 +4666,10 @@ Q(object)
 Q(object)
 
 Q(oct)
+
+Q(off)
+
+Q(on)
 
 Q(open)
 
@@ -4800,6 +4853,10 @@ Q(replace)
 
 Q(repr)
 
+Q(reset)
+
+Q(reset_cause)
+
 Q(reverse)
 
 Q(reverse)
@@ -4919,6 +4976,8 @@ Q(socket)
 Q(socket)
 
 Q(socket)
+
+Q(soft_reset)
 
 Q(sort)
 
@@ -5068,6 +5127,8 @@ Q(union)
 
 Q(union)
 
+Q(unique_id)
+
 Q(unpack)
 
 Q(unpack_from)
@@ -5091,6 +5152,8 @@ Q(usys)
 Q(utf_hyphen_8)
 
 Q(utf_hyphen_8)
+
+Q(value)
 
 Q(value)
 

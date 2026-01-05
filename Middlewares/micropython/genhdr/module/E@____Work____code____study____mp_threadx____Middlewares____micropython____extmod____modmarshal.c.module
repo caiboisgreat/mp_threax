@@ -1,0 +1,1 @@
+MP_REGISTER_MODULE(MP_QSTR_marshal, mp_module_marshal);
