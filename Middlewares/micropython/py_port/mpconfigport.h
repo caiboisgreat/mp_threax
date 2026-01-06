@@ -48,6 +48,12 @@
 #define MICROPY_VFS_FAT                   (1)
 // Enable relative paths and getcwd/chdir support in ooFatFs.
 #define MICROPY_FATFS_RPATH               (2)
+
+// FAT sector size (used by ooFatFs and also as the TinyUSB MSC endpoint buffer size).
+// SD cards use 512-byte logical sectors.
+#ifndef MICROPY_FATFS_MAX_SS
+#define MICROPY_FATFS_MAX_SS              (512)
+#endif
 // LittleFS is not enabled yet (requires bringing in lib/littlefs sources and a
 // flash block device driver).
 #define MICROPY_VFS_LFS1                  (0)
@@ -133,6 +139,31 @@
 #define MICROPY_PY_MARSHAL                (1)
 #define MICROPY_PY_ZLIB                   (1)
 #define MICROPY_PY_ASYNCIO                (1)
+
+// --- USB Device (TinyUSB) ---------------------------------------------------
+// Expose the SD card as a USB Mass Storage device (MSC) so Windows can mount it
+// as a drive when the board is connected over USB.
+// Note: This is a minimal bring-up. Avoid simultaneous writes from both the MCU
+// and the host PC to prevent filesystem corruption.
+#define MICROPY_HW_ENABLE_USBDEV          (1)
+#define MICROPY_HW_ENABLE_USB_RUNTIME_DEVICE (0)
+#define MICROPY_HW_USB_CDC                (0)
+#define MICROPY_HW_USB_MSC                (1)
+
+// USB VID/PID: for real products you must use your own assigned VID/PID.
+// These placeholder values are intended for local development/testing only.
+#ifndef MICROPY_HW_USB_VID
+#define MICROPY_HW_USB_VID                (0xCafe)
+#endif
+#ifndef MICROPY_HW_USB_PID
+#define MICROPY_HW_USB_PID                (0x4010)
+#endif
+
+// TinyUSB target selection for STM32F405 (USB OTG FS uses Synopsys DWC2 core).
+#define CFG_TUSB_MCU                      (OPT_MCU_STM32F4)
+// DWC2 driver requires either slave or DMA mode; slave mode is simplest.
+#define CFG_TUD_DWC2_SLAVE_ENABLE         (1)
+#define CFG_TUD_DWC2_DMA_ENABLE           (0)
 
 // micropython-specific libraries (incremental bring-up)
 // btree is the unix/posix Berkeley-DB binding and depends on POSIX headers

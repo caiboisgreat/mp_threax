@@ -26,6 +26,10 @@
 #include "usart.h"
 #include "py_init.h"
 #include <string.h>
+#include <stdbool.h>
+
+// TinyUSB (USB MSC device)
+#include "tusb.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -36,6 +40,7 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 #define THREAD_LED_STACK_SIZE         1024
+#define THREAD_USB_STACK_SIZE         1024
 #define MICROPY_BYTE_POOL_SIZE        1024
 #define MICROPY_STACK_SIZE            (32*1024)
 /* USER CODE END PD */
@@ -49,8 +54,10 @@
 /* USER CODE BEGIN PV */
 TX_THREAD     thread_led;
 TX_THREAD     thread_mp;
+TX_THREAD     thread_usb;
 TX_BYTE_POOL  byte_pool_mp;
 __attribute__((aligned(8))) ULONG thread_led_stack[THREAD_LED_STACK_SIZE / sizeof(ULONG)];
+__attribute__((aligned(8))) ULONG thread_usb_stack[THREAD_USB_STACK_SIZE / sizeof(ULONG)];
 UCHAR         memory_area[MICROPY_BYTE_POOL_SIZE];
 __attribute__((aligned(8))) static ULONG micropy_stack[MICROPY_STACK_SIZE / sizeof(ULONG)];
 /* USER CODE END PV */
@@ -59,6 +66,7 @@ __attribute__((aligned(8))) static ULONG micropy_stack[MICROPY_STACK_SIZE / size
 /* USER CODE BEGIN PFP */
 void    thread_led_entry(ULONG thread_input);
 void    thread_micropy_entry(ULONG thread_input);
+void    thread_usb_entry(ULONG thread_input);
 /* USER CODE END PFP */
 
 /**
@@ -89,6 +97,15 @@ UINT App_ThreadX_Init(VOID *memory_ptr)
 	   char TxBuf[] = "error:threadx create thread microPython failed";
 	   HAL_UART_Transmit(&huart2,(uint8_t*)TxBuf,strlen(TxBuf),100);
    }
+
+  // USB device thread (TinyUSB MSC)
+  ret = tx_thread_create(&thread_usb, "thread usb", thread_usb_entry, 0,
+      thread_usb_stack, (ULONG)sizeof(thread_usb_stack),
+      3, 3, TX_NO_TIME_SLICE, TX_AUTO_START);
+  if(ret != TX_SUCCESS){
+    char TxBuf[] = "error:threadx create thread usb failed";
+    HAL_UART_Transmit(&huart2,(uint8_t*)TxBuf,strlen(TxBuf),100);
+  }
   /* USER CODE END App_ThreadX_Init */
 
   return ret;
@@ -147,5 +164,25 @@ void thread_micropy_entry(ULONG thread_input)
       for (;;) {
         tx_thread_sleep(1000);
     }
+}
+
+void thread_usb_entry(ULONG thread_input)
+{
+  UNUSED(thread_input);
+
+  // Bring up USB FS peripheral and TinyUSB device stack.
+  extern void mp_threadx_usb_fs_init(void);
+  mp_threadx_usb_fs_init();
+
+  // TinyUSB init: device-only build (MSC).
+  tusb_init();
+  // Connect to host.
+  tud_connect();
+
+  for (;;) {
+    // Process USB events.
+    tud_task_ext(0, false);
+    tx_thread_sleep(1);
+  }
 }
 /* USER CODE END 1 */

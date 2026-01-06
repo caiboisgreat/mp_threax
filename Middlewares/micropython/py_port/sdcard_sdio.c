@@ -4,6 +4,11 @@
 #include "py/mperrno.h"
 #include "extmod/vfs.h"
 
+#if MICROPY_HW_ENABLE_USBDEV && MICROPY_HW_USB_MSC
+#include "tusb.h"
+#include "class/msc/msc.h"
+#endif
+
 #include "stm32f4xx_hal.h"
 #include "stm32f4xx_hal_sd.h"
 
@@ -261,3 +266,107 @@ void mp_threadx_try_mount_sdcard(void) {
     }
 #endif
 }
+
+// ---- TinyUSB MSC callbacks -------------------------------------------------
+// Minimal LUN0 backend that exposes the same SDIO card as a block device.
+// Note: This does not coordinate filesystem caches with MicroPython's VfsFat.
+// Avoid using /sd from MicroPython while the host PC is writing.
+
+#if MICROPY_HW_ENABLE_USBDEV && MICROPY_HW_USB_MSC
+
+bool tud_msc_test_unit_ready_cb(uint8_t lun) {
+    (void)lun;
+    return sdcard_init_if_needed() == 0;
+}
+
+void tud_msc_inquiry_cb(uint8_t lun, uint8_t vendor_id[8], uint8_t product_id[16], uint8_t product_rev[4]) {
+    (void)lun;
+    const char vid[] = MICROPY_HW_USB_MSC_INQUIRY_VENDOR_STRING;
+    const char pid[] = MICROPY_HW_USB_MSC_INQUIRY_PRODUCT_STRING;
+    const char rev[] = MICROPY_HW_USB_MSC_INQUIRY_REVISION_STRING;
+
+    memset(vendor_id, ' ', 8);
+    memset(product_id, ' ', 16);
+    memset(product_rev, ' ', 4);
+    memcpy(vendor_id, vid, strlen(vid) > 8 ? 8 : strlen(vid));
+    memcpy(product_id, pid, strlen(pid) > 16 ? 16 : strlen(pid));
+    memcpy(product_rev, rev, strlen(rev) > 4 ? 4 : strlen(rev));
+}
+
+void tud_msc_capacity_cb(uint8_t lun, uint32_t *block_count, uint16_t *block_size) {
+    (void)lun;
+    if (sdcard_init_if_needed() != 0) {
+        *block_count = 0;
+        *block_size = (uint16_t)SDCARD_BLOCK_SIZE;
+        return;
+    }
+    *block_count = sd_num_blocks;
+    *block_size = (uint16_t)SDCARD_BLOCK_SIZE;
+}
+
+bool tud_msc_start_stop_cb(uint8_t lun, uint8_t power_condition, bool start, bool load_eject) {
+    (void)lun;
+    (void)power_condition;
+    (void)load_eject;
+    if (start) {
+        return sdcard_init_if_needed() == 0;
+    }
+    return true;
+}
+
+int32_t tud_msc_read10_cb(uint8_t lun, uint32_t lba, uint32_t offset, void *buffer, uint32_t bufsize) {
+    (void)lun;
+    if (offset != 0) {
+        return -1;
+    }
+    if (sdcard_init_if_needed() != 0) {
+        return -1;
+    }
+
+    if (bufsize == 0 || (bufsize % SDCARD_BLOCK_SIZE) != 0) {
+        return -1;
+    }
+    uint32_t num_blocks = bufsize / SDCARD_BLOCK_SIZE;
+
+    if (HAL_SD_ReadBlocks(&hsd, (uint8_t *)buffer, (uint32_t)lba, num_blocks, HAL_MAX_DELAY) != HAL_OK) {
+        return -1;
+    }
+    while (HAL_SD_GetCardState(&hsd) != HAL_SD_CARD_TRANSFER) {
+        // wait
+    }
+    return (int32_t)bufsize;
+}
+
+int32_t tud_msc_write10_cb(uint8_t lun, uint32_t lba, uint32_t offset, uint8_t *buffer, uint32_t bufsize) {
+    (void)lun;
+    if (offset != 0) {
+        return -1;
+    }
+    if (sdcard_init_if_needed() != 0) {
+        return -1;
+    }
+
+    if (bufsize == 0 || (bufsize % SDCARD_BLOCK_SIZE) != 0) {
+        return -1;
+    }
+    uint32_t num_blocks = bufsize / SDCARD_BLOCK_SIZE;
+
+    if (HAL_SD_WriteBlocks(&hsd, (uint8_t *)buffer, (uint32_t)lba, num_blocks, HAL_MAX_DELAY) != HAL_OK) {
+        return -1;
+    }
+    while (HAL_SD_GetCardState(&hsd) != HAL_SD_CARD_TRANSFER) {
+        // wait
+    }
+    return (int32_t)bufsize;
+}
+
+int32_t tud_msc_scsi_cb(uint8_t lun, uint8_t const scsi_cmd[16], void *buffer, uint16_t bufsize) {
+    (void)lun;
+    (void)buffer;
+    (void)bufsize;
+    // Let TinyUSB handle the standard SCSI commands; return -1 for unsupported.
+    (void)scsi_cmd;
+    return -1;
+}
+
+#endif // MICROPY_HW_ENABLE_USBDEV && MICROPY_HW_USB_MSC

@@ -247,6 +247,17 @@ void TIM1_UP_TIM10_IRQHandler(void)
   /* USER CODE END TIM1_UP_TIM10_IRQn 1 */
 }
 
+/**
+  * @brief This function handles USB OTG FS global interrupt.
+  */
+void OTG_FS_IRQHandler(void)
+{
+  // TinyUSB device controller driver (DCD) interrupt handler.
+  // rhport=0 for the single FS port.
+  extern void dcd_int_handler(uint8_t rhport);
+  dcd_int_handler(0);
+}
+
 /* USER CODE BEGIN 1 */
 
 /* USER CODE END 1 */

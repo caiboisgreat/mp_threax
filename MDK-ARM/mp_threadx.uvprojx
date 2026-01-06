@@ -340,7 +340,7 @@
               <MiscControls>-fgnu</MiscControls>
               <Define>USE_HAL_DRIVER,STM32F405xx,TX_INCLUDE_USER_DEFINE_FILE</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;../AZURE_RTOS/App;../Middlewares/ST/threadx/common/inc/;../Middlewares/ST/threadx/ports/cortex_m4/ac6/inc/;../Middlewares/micropython/py;../Middlewares/micropython/extmod;../Middlewares/micropython/shared/readline;../Middlewares/micropython/shared/runtime;../Middlewares/micropython/py_port;../Middlewares/micropython;../Middlewares/micropython/genhdr;../Middlewares/micropython/lib/mbedtls/include</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;../AZURE_RTOS/App;../Middlewares/ST/threadx/common/inc/;../Middlewares/ST/threadx/ports/cortex_m4/ac6/inc/;../Middlewares/micropython/py;../Middlewares/micropython/extmod;../Middlewares/micropython/shared/readline;../Middlewares/micropython/shared/runtime;../Middlewares/micropython/py_port;../Middlewares/micropython;../Middlewares/micropython/genhdr;../Middlewares/micropython/lib/mbedtls/include;../Middlewares/micropython/lib/tinyusb/src</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -774,6 +774,21 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>Core/USB</GroupName>
+          <Files>
+            <File>
+              <FileName>usb_tinyusb.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Core/Src/usb_tinyusb.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_tinyusb.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>../Core/Inc/usb_tinyusb.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>MicroPython/py_port</GroupName>
           <Files>
             <File>
@@ -830,6 +845,56 @@
               <FileName>unistd.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\Middlewares\micropython\py_port\unistd.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>MicroPython/tinyusb</GroupName>
+          <Files>
+            <File>
+              <FileName>mp_usbd_descriptor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\shared\tinyusb\mp_usbd_descriptor.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>TinyUSB</GroupName>
+          <Files>
+            <File>
+              <FileName>tusb.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\tinyusb\src\tusb.c</FilePath>
+            </File>
+            <File>
+              <FileName>tusb_fifo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\tinyusb\src\common\tusb_fifo.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\tinyusb\src\device\usbd.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_control.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\tinyusb\src\device\usbd_control.c</FilePath>
+            </File>
+            <File>
+              <FileName>msc_device.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\tinyusb\src\class\msc\msc_device.c</FilePath>
+            </File>
+            <File>
+              <FileName>dcd_dwc2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\tinyusb\src\portable\synopsys\dwc2\dcd_dwc2.c</FilePath>
+            </File>
+            <File>
+              <FileName>dwc2_common.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\tinyusb\src\portable\synopsys\dwc2\dwc2_common.c</FilePath>
             </File>
           </Files>
         </Group>
