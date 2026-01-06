@@ -343,6 +343,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(NameError)"
 
+"Q(NeoPixel)"
+
+"Q(NeoPixel)"
+
 "Q(NoneType)"
 
 "Q(NotImplemented)"
@@ -697,6 +701,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(__len__)"
 
+"Q(__len__)"
+
 "Q(__lshift__)"
 
 "Q(__lt__)"
@@ -712,6 +718,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(__module__)"
 
 "Q(__mul__)"
+
+"Q(__name__)"
 
 "Q(__name__)"
 
@@ -1053,11 +1061,15 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(bound_method)"
 
-"Q(btree)"
+"Q(bpp)"
 
 "Q(btree)"
 
 "Q(btree)"
+
+"Q(btree)"
+
+"Q(buf)"
 
 "Q(buffer)"
 
@@ -1343,6 +1355,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(fill)"
 
+"Q(fill)"
+
 "Q(fill_rect)"
 
 "Q(filter)"
@@ -1386,6 +1400,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(frozenset)"
 
 "Q(frozenset)"
+
+"Q(function)"
 
 "Q(function)"
 
@@ -2115,11 +2131,17 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(mount)"
 
+"Q(n)"
+
 "Q(name)"
 
 "Q(namedtuple)"
 
 "Q(nan)"
+
+"Q(neopixel)"
+
+"Q(neopixel)"
 
 "Q(network)"
 
@@ -2178,6 +2200,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(pi)"
 
 "Q(pi)"
+
+"Q(pin)"
 
 "Q(pixel)"
 
@@ -2633,6 +2657,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(time)"
 
+"Q(timing)"
+
 "Q(tls)"
 
 "Q(tls)"
@@ -2730,6 +2756,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(vline)"
 
 "Q(wrap_socket)"
+
+"Q(write)"
 
 "Q(write)"
 

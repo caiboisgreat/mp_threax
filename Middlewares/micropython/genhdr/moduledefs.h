@@ -116,6 +116,10 @@ extern const struct _mp_obj_module_t mp_module_micropython;
 #undef MODULE_DEF_MICROPYTHON
 #define MODULE_DEF_MICROPYTHON { MP_ROM_QSTR(MP_QSTR_micropython), MP_ROM_PTR(&mp_module_micropython) },
 
+extern const struct _mp_obj_module_t mp_module_neopixel;
+#undef MODULE_DEF_NEOPIXEL
+#define MODULE_DEF_NEOPIXEL { MP_ROM_QSTR(MP_QSTR_neopixel), MP_ROM_PTR(&mp_module_neopixel) },
+
 extern const struct _mp_obj_module_t mp_module_network;
 #undef MODULE_DEF_NETWORK
 #define MODULE_DEF_NETWORK { MP_ROM_QSTR(MP_QSTR_network), MP_ROM_PTR(&mp_module_network) },
@@ -147,6 +151,7 @@ extern const struct _mp_obj_module_t mp_module_vfs;
     MODULE_DEF_MARSHAL \
     MODULE_DEF_MATH \
     MODULE_DEF_MICROPYTHON \
+    MODULE_DEF_NEOPIXEL \
     MODULE_DEF_NETWORK \
     MODULE_DEF_SYS \
     MODULE_DEF_TLS \

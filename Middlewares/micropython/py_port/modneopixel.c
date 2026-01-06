@@ -268,7 +268,7 @@ static mp_obj_t neopixel_subscr(mp_obj_t self_in, mp_obj_t index_in, mp_obj_t va
 
     size_t idx = (size_t)mp_obj_get_int(index_in);
     if (idx >= self->n) {
-        mp_raise_IndexError(MP_ERROR_TEXT("index"));
+        mp_raise_msg(&mp_type_IndexError, MP_ERROR_TEXT("index"));
     }
 
     size_t off = idx * self->bpp;

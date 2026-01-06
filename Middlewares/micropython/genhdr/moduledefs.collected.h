@@ -56,6 +56,8 @@ MP_REGISTER_MODULE(MP_QSTR_math, mp_module_math);
 
 MP_REGISTER_MODULE(MP_QSTR_micropython, mp_module_micropython);
 
+MP_REGISTER_MODULE(MP_QSTR_neopixel, mp_module_neopixel);
+
 MP_REGISTER_MODULE(MP_QSTR_network, mp_module_network);
 
 MP_REGISTER_MODULE(MP_QSTR_sys, mp_module_sys);

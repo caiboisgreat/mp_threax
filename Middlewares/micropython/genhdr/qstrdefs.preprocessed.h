@@ -3050,6 +3050,10 @@ Q(NameError)
 
 Q(NameError)
 
+Q(NeoPixel)
+
+Q(NeoPixel)
+
 Q(NoneType)
 
 Q(NotImplemented)
@@ -3404,6 +3408,8 @@ Q(__le__)
 
 Q(__len__)
 
+Q(__len__)
+
 Q(__lshift__)
 
 Q(__lt__)
@@ -3419,6 +3425,8 @@ Q(__mod__)
 Q(__module__)
 
 Q(__mul__)
+
+Q(__name__)
 
 Q(__name__)
 
@@ -3760,11 +3768,15 @@ Q(bool)
 
 Q(bound_method)
 
-Q(btree)
+Q(bpp)
 
 Q(btree)
 
 Q(btree)
+
+Q(btree)
+
+Q(buf)
 
 Q(buffer)
 
@@ -4050,6 +4062,8 @@ Q(file)
 
 Q(fill)
 
+Q(fill)
+
 Q(fill_rect)
 
 Q(filter)
@@ -4093,6 +4107,8 @@ Q(fromkeys)
 Q(frozenset)
 
 Q(frozenset)
+
+Q(function)
 
 Q(function)
 
@@ -4822,11 +4838,17 @@ Q(mount)
 
 Q(mount)
 
+Q(n)
+
 Q(name)
 
 Q(namedtuple)
 
 Q(nan)
+
+Q(neopixel)
+
+Q(neopixel)
 
 Q(network)
 
@@ -4885,6 +4907,8 @@ Q(phase)
 Q(pi)
 
 Q(pi)
+
+Q(pin)
 
 Q(pixel)
 
@@ -5340,6 +5364,8 @@ Q(time)
 
 Q(time)
 
+Q(timing)
+
 Q(tls)
 
 Q(tls)
@@ -5437,6 +5463,8 @@ Q(vfs)
 Q(vline)
 
 Q(wrap_socket)
+
+Q(write)
 
 Q(write)
 
