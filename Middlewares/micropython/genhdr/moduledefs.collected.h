@@ -38,6 +38,8 @@ MP_REGISTER_MODULE(MP_QSTR___main__, mp_module___main__);
 
 MP_REGISTER_MODULE(MP_QSTR__asyncio, mp_module_asyncio);
 
+MP_REGISTER_MODULE(MP_QSTR_btree, mp_module_btree);
+
 MP_REGISTER_MODULE(MP_QSTR_builtins, mp_module_builtins);
 
 MP_REGISTER_MODULE(MP_QSTR_cmath, mp_module_cmath);

@@ -18,6 +18,7 @@
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port",
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython",
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\genhdr",
+                "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\lib\\berkeley-db-1.xx\\include",
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\lib\\mbedtls\\include",
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\lib\\tinyusb\\src",
                 "D:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\include",
@@ -35,6 +36,9 @@
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\shared\\netutils",
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\lib\\mbedtls\\library",
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\lib\\oofatfs",
+                "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\lib\\berkeley-db-1.xx\\btree",
+                "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\lib\\berkeley-db-1.xx\\mpool",
+                "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\shared\\libc",
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\shared\\timeutils",
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\ST\\threadx\\ports\\cortex_m4\\ac6\\src",
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\ST\\threadx\\common\\src"

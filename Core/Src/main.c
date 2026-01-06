@@ -190,18 +190,61 @@ void Error_Handler(void)
 
   __disable_irq();
 
+  // If USART2 wasn't initialised yet, try to enable it so we can print.
+  if ((RCC->APB1ENR & RCC_APB1ENR_USART2EN) == 0U || (USART2->CR1 & USART_CR1_UE) == 0U) {
+    // Enable clocks.
+    RCC->AHB1ENR |= RCC_AHB1ENR_GPIOAEN;
+    RCC->APB1ENR |= RCC_APB1ENR_USART2EN;
+    __DSB();
+    __ISB();
+
+    // Configure PA2/PA3 as AF7.
+    GPIOA->MODER = (GPIOA->MODER & ~((3U << (2U * 2U)) | (3U << (3U * 2U)))) |
+                   ((2U << (2U * 2U)) | (2U << (3U * 2U)));
+    GPIOA->AFR[0] = (GPIOA->AFR[0] & ~((0xFU << (2U * 4U)) | (0xFU << (3U * 4U)))) |
+                    ((7U << (2U * 4U)) | (7U << (3U * 4U)));
+    GPIOA->OSPEEDR |= (3U << (2U * 2U)) | (3U << (3U * 2U));
+    GPIOA->PUPDR &= ~((3U << (2U * 2U)) | (3U << (3U * 2U)));
+
+    // Set baudrate based on SystemCoreClock and APB1 prescaler.
+    uint32_t hclk = SystemCoreClock;
+    uint32_t ppre1 = (RCC->CFGR >> 10U) & 0x7U;
+    uint32_t div;
+    if (ppre1 < 4U) {
+      div = 1U;
+    } else {
+      static const uint8_t apb_div_table[8] = {1, 1, 1, 1, 2, 4, 8, 16};
+      div = apb_div_table[ppre1];
+    }
+    uint32_t pclk1 = (div == 0U) ? 16000000U : (hclk / div);
+    const uint32_t baud = 115200U;
+    USART2->CR1 = 0;
+    USART2->CR2 = 0;
+    USART2->CR3 = 0;
+    USART2->BRR = (pclk1 + (baud / 2U)) / baud;
+    USART2->CR1 = USART_CR1_TE | USART_CR1_RE | USART_CR1_UE;
+    __DSB();
+    __ISB();
+  }
+
   // Try to print a simple error banner over USART2 (polling, no HAL).
   // Safe even if ThreadX/MicroPython are not running yet, as long as
   // clocks and GPIO for USART2 were configured.
   const char *msg = "Error_Handler\r\n";
   while (*msg) {
+    // Don't block forever if USART2 still isn't ready.
+    if ((RCC->APB1ENR & RCC_APB1ENR_USART2EN) == 0U || (USART2->CR1 & USART_CR1_UE) == 0U) {
+      break;
+    }
     while ((USART2->SR & USART_SR_TXE) == 0U) {
       // spin
     }
     USART2->DR = (uint16_t)(uint8_t)(*msg++);
   }
-  while ((USART2->SR & USART_SR_TC) == 0U) {
-    // spin
+  if ((RCC->APB1ENR & RCC_APB1ENR_USART2EN) != 0U && (USART2->CR1 & USART_CR1_UE) != 0U) {
+    while ((USART2->SR & USART_SR_TC) == 0U) {
+      // spin
+    }
   }
 
   // Blink red LED so a hard error is visible even without UART.

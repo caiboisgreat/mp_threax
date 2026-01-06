@@ -2,7 +2,9 @@
 
 #define MICROPY_INCLUDED_UNISTD_H
 
-typedef int ssize_t;
+// For bare-metal ports we provide a minimal <sys/types.h> in py_port.
+// Use that for ssize_t to avoid conflicting typedefs.
+#include <sys/types.h>
 
 #define F_OK 0
 

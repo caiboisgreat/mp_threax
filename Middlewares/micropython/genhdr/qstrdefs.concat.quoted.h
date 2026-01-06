@@ -145,6 +145,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(CancelledError)"
 
+"Q(DESC)"
+
 "Q(DeflateIO)"
 
 "Q(DeflateIO)"
@@ -274,6 +276,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(GeneratorExit)"
 
 "Q(GeneratorExit)"
+
+"Q(INCL)"
 
 "Q(INT)"
 
@@ -789,6 +793,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(__name__)"
 
+"Q(__name__)"
+
 "Q(__ne__)"
 
 "Q(__neg__)"
@@ -1047,6 +1053,12 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(bound_method)"
 
+"Q(btree)"
+
+"Q(btree)"
+
+"Q(btree)"
+
 "Q(buffer)"
 
 "Q(buffering)"
@@ -1072,6 +1084,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(bytes)"
 
 "Q(bytes_at)"
+
+"Q(cachesize)"
 
 "Q(calcsize)"
 
@@ -1108,6 +1122,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(clear)"
 
 "Q(client_id)"
+
+"Q(close)"
 
 "Q(close)"
 
@@ -1335,11 +1351,15 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(find)"
 
+"Q(flags)"
+
 "Q(float)"
 
 "Q(float)"
 
 "Q(floor)"
+
+"Q(flush)"
 
 "Q(flush)"
 
@@ -1739,6 +1759,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(function)"
 
+"Q(function)"
+
+"Q(function)"
+
 "Q(gamma)"
 
 "Q(gc)"
@@ -1748,6 +1772,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(generator)"
 
 "Q(generator)"
+
+"Q(get)"
 
 "Q(get)"
 
@@ -1899,6 +1925,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(items)"
 
+"Q(items)"
+
 "Q(iter)"
 
 "Q(iterable)"
@@ -1928,6 +1956,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(key)"
 
 "Q(key)"
+
+"Q(keys)"
 
 "Q(keys)"
 
@@ -2051,6 +2081,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(min)"
 
+"Q(minkeypage)"
+
 "Q(mkdir)"
 
 "Q(mkdir)"
@@ -2115,6 +2147,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(open)"
 
+"Q(open)"
+
 "Q(opt_level)"
 
 "Q(ord)"
@@ -2126,6 +2160,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(pack)"
 
 "Q(pack_into)"
+
+"Q(pagesize)"
 
 "Q(partition)"
 
@@ -2194,6 +2230,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(ps2)"
 
 "Q(push)"
+
+"Q(put)"
 
 "Q(python_compiler)"
 
@@ -2394,6 +2432,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(sep)"
 
 "Q(separators)"
+
+"Q(seq)"
 
 "Q(server_hostname)"
 
@@ -2664,6 +2704,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(value)"
 
 "Q(value)"
+
+"Q(values)"
 
 "Q(values)"
 

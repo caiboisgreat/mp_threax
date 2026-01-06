@@ -81,7 +81,7 @@
           </BeforeMake>
           <AfterMake>
             <RunUserProg1>0</RunUserProg1>
-            <RunUserProg2>1</RunUserProg2>
+            <RunUserProg2>0</RunUserProg2>
             <UserProg1Name></UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
@@ -340,7 +340,7 @@
               <MiscControls>-fgnu</MiscControls>
               <Define>USE_HAL_DRIVER,STM32F405xx,TX_INCLUDE_USER_DEFINE_FILE</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;../AZURE_RTOS/App;../Middlewares/ST/threadx/common/inc/;../Middlewares/ST/threadx/ports/cortex_m4/ac6/inc/;../Middlewares/micropython/py;../Middlewares/micropython/extmod;../Middlewares/micropython/shared/readline;../Middlewares/micropython/shared/runtime;../Middlewares/micropython/py_port;../Middlewares/micropython;../Middlewares/micropython/genhdr;../Middlewares/micropython/lib/mbedtls/include;../Middlewares/micropython/lib/tinyusb/src</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;../AZURE_RTOS/App;../Middlewares/ST/threadx/common/inc/;../Middlewares/ST/threadx/ports/cortex_m4/ac6/inc/;../Middlewares/micropython/py;../Middlewares/micropython/extmod;../Middlewares/micropython/shared/readline;../Middlewares/micropython/shared/runtime;../Middlewares/micropython/py_port;../Middlewares/micropython;../Middlewares/micropython/genhdr;../Middlewares/micropython/lib/berkeley-db-1.xx/include;../Middlewares/micropython/lib/mbedtls/include;../Middlewares/micropython/lib/tinyusb/src</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1494,6 +1494,81 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>MicroPython/berkeley-db</GroupName>
+          <Files>
+            <File>
+              <FileName>bt_close.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\berkeley-db-1.xx\btree\bt_close.c</FilePath>
+            </File>
+            <File>
+              <FileName>bt_conv.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\berkeley-db-1.xx\btree\bt_conv.c</FilePath>
+            </File>
+            <File>
+              <FileName>bt_debug.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\berkeley-db-1.xx\btree\bt_debug.c</FilePath>
+            </File>
+            <File>
+              <FileName>bt_delete.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\berkeley-db-1.xx\btree\bt_delete.c</FilePath>
+            </File>
+            <File>
+              <FileName>bt_get.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\berkeley-db-1.xx\btree\bt_get.c</FilePath>
+            </File>
+            <File>
+              <FileName>bt_open.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\berkeley-db-1.xx\btree\bt_open.c</FilePath>
+            </File>
+            <File>
+              <FileName>bt_overflow.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\berkeley-db-1.xx\btree\bt_overflow.c</FilePath>
+            </File>
+            <File>
+              <FileName>bt_page.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\berkeley-db-1.xx\btree\bt_page.c</FilePath>
+            </File>
+            <File>
+              <FileName>bt_put.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\berkeley-db-1.xx\btree\bt_put.c</FilePath>
+            </File>
+            <File>
+              <FileName>bt_search.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\berkeley-db-1.xx\btree\bt_search.c</FilePath>
+            </File>
+            <File>
+              <FileName>bt_seq.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\berkeley-db-1.xx\btree\bt_seq.c</FilePath>
+            </File>
+            <File>
+              <FileName>bt_split.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\berkeley-db-1.xx\btree\bt_split.c</FilePath>
+            </File>
+            <File>
+              <FileName>bt_utils.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\berkeley-db-1.xx\btree\bt_utils.c</FilePath>
+            </File>
+            <File>
+              <FileName>mpool.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\lib\berkeley-db-1.xx\mpool\mpool.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>MicroPython/genhdr</GroupName>
           <Files>
             <File>
@@ -1546,6 +1621,11 @@
         <Group>
           <GroupName>MicroPython/shared</GroupName>
           <Files>
+            <File>
+              <FileName>abort_.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\shared\libc\abort_.c</FilePath>
+            </File>
             <File>
               <FileName>pyexec.c</FileName>
               <FileType>1</FileType>

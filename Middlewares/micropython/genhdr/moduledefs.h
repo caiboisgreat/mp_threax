@@ -80,6 +80,10 @@ extern const struct _mp_obj_module_t mp_module_asyncio;
 #undef MODULE_DEF__ASYNCIO
 #define MODULE_DEF__ASYNCIO { MP_ROM_QSTR(MP_QSTR__asyncio), MP_ROM_PTR(&mp_module_asyncio) },
 
+extern const struct _mp_obj_module_t mp_module_btree;
+#undef MODULE_DEF_BTREE
+#define MODULE_DEF_BTREE { MP_ROM_QSTR(MP_QSTR_btree), MP_ROM_PTR(&mp_module_btree) },
+
 extern const struct _mp_obj_module_t mp_module_builtins;
 #undef MODULE_DEF_BUILTINS
 #define MODULE_DEF_BUILTINS { MP_ROM_QSTR(MP_QSTR_builtins), MP_ROM_PTR(&mp_module_builtins) },
@@ -134,6 +138,7 @@ extern const struct _mp_obj_module_t mp_module_vfs;
 
 
 #define MICROPY_REGISTERED_MODULES \
+    MODULE_DEF_BTREE \
     MODULE_DEF_BUILTINS \
     MODULE_DEF_CMATH \
     MODULE_DEF_DEFLATE \

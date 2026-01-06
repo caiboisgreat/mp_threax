@@ -169,7 +169,11 @@
 // btree is the unix/posix Berkeley-DB binding and depends on POSIX headers
 // (eg fcntl.h) and a posix-style stream layer. Keep it off for this bare-metal
 // ThreadX port until VFS/storage is brought up with an embedded-friendly backend.
-#define MICROPY_PY_BTREE                  (0)
+// Enable `btree` module (Berkeley DB 1.xx) backed by MicroPython stream API.
+// Requires MICROPY_STREAMS_POSIX_API so the DB library can use the FILEVTABLE
+// wrappers (mp_stream_posix_*).
+#define MICROPY_STREAMS_POSIX_API         (1)
+#define MICROPY_PY_BTREE                  (1)
 
 // Provide a minimal `machine` module first (reset/unique_id/freq/idle).
 // Peripheral classes (Pin/UART/SPI/I2C/...) will be enabled in later steps.

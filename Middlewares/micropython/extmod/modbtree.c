@@ -26,12 +26,27 @@
 
 #include "py/runtime.h"
 #include "py/stream.h"
+#include "py/mperrno.h"
 
 #if MICROPY_PY_BTREE
 
 #include <stdio.h>
 #include <errno.h> // for declaration of global errno variable
-#include <fcntl.h>
+
+// modbtree expects POSIX open() flag constants from <fcntl.h>.
+// Bare-metal toolchains (eg Keil/armclang) may not provide it, so fall back to
+// the local shim if needed.
+#if defined(__has_include)
+    #if __has_include(<fcntl.h>)
+        #include <fcntl.h>
+    #elif __has_include("py_port/fcntl.h")
+        #include "py_port/fcntl.h"
+    #else
+        #error "btree: missing fcntl.h (provide a shim)"
+    #endif
+#else
+    #include <fcntl.h>
+#endif
 
 // Undefine queue macros that will be defined in berkeley-db-1.xx headers
 // below, in case they clash with system ones defined in headers above.
@@ -57,6 +72,13 @@
 #undef CIRCLEQ_INSERT_TAIL
 #undef CIRCLEQ_REMOVE
 
+#ifdef BERKELEY_DB_CONFIG_FILE
+// Some build systems/toolchains don't handle quotes in -D definitions
+// consistently. Ensure the macro expands to a valid include token.
+#undef BERKELEY_DB_CONFIG_FILE
+#endif
+#define BERKELEY_DB_CONFIG_FILE "extmod/berkeley-db/berkeley_db_config_port.h"
+
 #include "berkeley-db/db.h"
 #include "berkeley-db/btree.h"
 
@@ -80,9 +102,15 @@ typedef struct _mp_obj_btree_t {
 static const mp_obj_type_t btree_type;
 #endif
 
+static inline int btree_errno_or_eio(void) {
+    // Some embedded toolchains/layers don't reliably set errno.
+    // Avoid raising the nonsensical OSError(0).
+    return errno == 0 ? MP_EIO : errno;
+}
+
 #define CHECK_ERROR(res) \
     if (res == RET_ERROR) { \
-        mp_raise_OSError(errno); \
+        mp_raise_OSError(btree_errno_or_eio()); \
     }
 
 void __dbpanic(DB *db) {
@@ -415,7 +443,7 @@ static mp_obj_t mod_btree_open(size_t n_args, const mp_obj_t *pos_args, mp_map_t
 
     DB *db = __bt_open(MP_OBJ_TO_PTR(pos_args[0]), &btree_stream_fvtable, &openinfo, /*dflags*/ 0);
     if (db == NULL) {
-        mp_raise_OSError(errno);
+        mp_raise_OSError(btree_errno_or_eio());
     }
     return MP_OBJ_FROM_PTR(btree_new(db, pos_args[0]));
 }
