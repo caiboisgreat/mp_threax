@@ -69,6 +69,6 @@ int metal_condition_wait(struct metal_condition *cv, metal_mutex_t *m);
 }
 #endif
 
-#include <metal/system/@PROJECT_SYSTEM@/condition.h>
+#include <metal/system/micropython/condition.h>
 
 #endif /* __METAL_CONDITION__H__ */

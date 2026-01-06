@@ -60,6 +60,8 @@ MP_REGISTER_MODULE(MP_QSTR_neopixel, mp_module_neopixel);
 
 MP_REGISTER_MODULE(MP_QSTR_network, mp_module_network);
 
+MP_REGISTER_MODULE(MP_QSTR_openamp, openamp_module);
+
 MP_REGISTER_MODULE(MP_QSTR_sys, mp_module_sys);
 
 MP_REGISTER_MODULE(MP_QSTR_tls, mp_module_tls);

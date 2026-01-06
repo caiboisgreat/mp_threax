@@ -17,6 +17,9 @@
 #define MICROPY_ENABLE_GC                 (1)
 #define MICROPY_ENABLE_COMPILER           (1)
 
+// Needed by extmod/libmetal allocator hooks (m_tracked_calloc/m_tracked_free).
+#define MICROPY_TRACKED_ALLOC             (1)
+
 // Needed for `marshal.loads()` (mp_raw_code_load_mem).
 #define MICROPY_PERSISTENT_CODE_LOAD      (1)
 
@@ -194,7 +197,24 @@
 
 // These are hardware/stack dependent and will be enabled later.
 #define MICROPY_PY_BLUETOOTH              (0)
-#define MICROPY_PY_OPENAMP                (0)
+#ifndef MICROPY_PY_OPENAMP
+#define MICROPY_PY_OPENAMP                 (1)
+#endif
+
+// OpenAMP/libmetal configuration for this ThreadX STM32F405 port.
+// NOTE: STM32F405 is single-core; this enables building/importing the module.
+// Actual RPMsg communication requires a real remote endpoint and proper notify.
+#ifndef MICROPY_PY_OPENAMP_HOST
+#define MICROPY_PY_OPENAMP_HOST            (1)
+#endif
+
+#ifndef MICROPY_PY_OPENAMP_REMOTEPROC
+#define MICROPY_PY_OPENAMP_REMOTEPROC      (0)
+#endif
+
+#ifndef MICROPY_PY_OPENAMP_CONFIG_FILE
+#define MICROPY_PY_OPENAMP_CONFIG_FILE     "openamp_config_port.h"
+#endif
 
 // Temporarily disable `platform` until the build/genhdr setup is fully stable.
 // This module is not essential for the initial “standard modules” milestone.
@@ -205,6 +225,20 @@
 typedef intptr_t mp_int_t; // must be pointer size
 typedef uintptr_t mp_uint_t; // must be pointer size
 typedef long mp_off_t;
+
+// Some embedded toolchains may not provide a usable <assert.h>, and the libmetal
+// tree also contains an "assert.h" which can shadow the C library header in
+// -I search paths.  MicroPython uses assert() internally (mostly for sanity
+// checks), so provide a minimal fallback.
+#ifndef assert
+#if defined(NDEBUG)
+#define assert(cond) ((void)0)
+#else
+// Must be usable as an expression (MicroPython uses assert() in comma-operator
+// expressions inside macros).
+#define assert(cond) ((void)((cond) ? 0 : (__builtin_trap(), 0)))
+#endif
+#endif
 
 // Some bare-metal C libraries don't provide SSIZE_MAX (POSIX).  MicroPython's
 // core defaults MP_SSIZE_MAX to SSIZE_MAX, so define MP_SSIZE_MAX here.

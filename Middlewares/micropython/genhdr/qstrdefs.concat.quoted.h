@@ -207,6 +207,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(EISDIR)"
 
+"Q(ENDPOINT_ADDR_ANY)"
+
 "Q(ENOBUFS)"
 
 "Q(ENOBUFS)"
@@ -246,6 +248,12 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(Ellipsis)"
 
 "Q(Ellipsis)"
+
+"Q(Endpoint)"
+
+"Q(Endpoint)"
+
+"Q(Endpoint)"
 
 "Q(Exception)"
 
@@ -509,6 +517,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(VfsFat)"
 
+"Q(VirtIODev)"
+
+"Q(VirtIODev)"
+
 "Q(ZLIB)"
 
 "Q(ZeroDivisionError)"
@@ -570,6 +582,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(__contains__)"
 
 "Q(__contains__)"
+
+"Q(__del__)"
+
+"Q(__del__)"
 
 "Q(__del__)"
 
@@ -718,6 +734,12 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(__module__)"
 
 "Q(__mul__)"
+
+"Q(__name__)"
+
+"Q(__name__)"
+
+"Q(__name__)"
 
 "Q(__name__)"
 
@@ -1103,6 +1125,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(callable)"
 
+"Q(callback)"
+
 "Q(cancel)"
 
 "Q(ceil)"
@@ -1246,6 +1270,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(deque)"
 
 "Q(deque)"
+
+"Q(dest)"
+
+"Q(dest)"
 
 "Q(dict)"
 
@@ -1779,6 +1807,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(function)"
 
+"Q(function)"
+
 "Q(gamma)"
 
 "Q(gc)"
@@ -1902,6 +1932,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(ioctl)"
 
 "Q(ipoll)"
+
+"Q(is_ready)"
 
 "Q(isalpha)"
 
@@ -2135,6 +2167,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(name)"
 
+"Q(name)"
+
 "Q(namedtuple)"
 
 "Q(nan)"
@@ -2146,6 +2180,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(network)"
 
 "Q(network)"
+
+"Q(new_service_callback)"
 
 "Q(newline)"
 
@@ -2170,6 +2206,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(open)"
 
 "Q(open)"
+
+"Q(openamp)"
+
+"Q(openamp)"
 
 "Q(opt_level)"
 
@@ -2445,6 +2485,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(send)"
 
+"Q(send)"
+
 "Q(sendall)"
 
 "Q(sendall)"
@@ -2536,6 +2578,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(sqrt)"
 
 "Q(sqrt)"
+
+"Q(src)"
+
+"Q(src)"
 
 "Q(stack_use)"
 
@@ -2656,6 +2702,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(time)"
 
 "Q(time)"
+
+"Q(timeout)"
 
 "Q(timing)"
 

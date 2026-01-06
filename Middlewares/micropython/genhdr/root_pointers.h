@@ -7,3 +7,4 @@ mp_obj_t sys_mutable[MP_SYS_MUTABLE_NUM];
 mp_sched_item_t sched_queue[(4)];
 struct _mp_vfs_mount_t *vfs_cur;
 struct _mp_vfs_mount_t *vfs_mount_table;
+struct _virtio_dev_obj_t *virtio_device;

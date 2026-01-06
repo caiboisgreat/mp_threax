@@ -12,7 +12,7 @@
 #ifndef __METAL_SLEEP__H__
 #define __METAL_SLEEP__H__
 
-#include <metal/system/@PROJECT_SYSTEM@/sleep.h>
+#include <metal/system/micropython/sleep.h>
 
 #ifdef __cplusplus
 extern "C" {

@@ -11,3 +11,5 @@ MP_REGISTER_ROOT_POINTER(mp_sched_item_t sched_queue[(4)]);
 MP_REGISTER_ROOT_POINTER(struct _mp_vfs_mount_t *vfs_cur);
 
 MP_REGISTER_ROOT_POINTER(struct _mp_vfs_mount_t *vfs_mount_table);
+
+MP_REGISTER_ROOT_POINTER(struct _virtio_dev_obj_t *virtio_device);

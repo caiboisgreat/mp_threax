@@ -59,6 +59,13 @@ def parse_uvprojx(uvprojx_path: Path):
         # Including it in NO_QSTR preprocessing can cause duplicated registrations/QSTRs.
         if fp_norm_l.endswith("\\middlewares\\micropython\\py_port\\frozen_mpy.c"):
             continue
+
+        # Skip platform glue sources that don't contribute QSTRs and can pull in
+        # large/fragile MCU headers during preprocessing.
+        if fp_norm_l.endswith("\\middlewares\\micropython\\py_port\\mpmetalport.c"):
+            continue
+        if fp_norm_l.endswith("\\middlewares\\micropython\\py_port\\openamp_port.c"):
+            continue
         # Skip third-party/library code under MicroPython's tree.
         # genhdr is only interested in MP_QSTR*/MP_REGISTER_* usage from the
         # MicroPython runtime/modules; vendor libs (eg mbedTLS) can have

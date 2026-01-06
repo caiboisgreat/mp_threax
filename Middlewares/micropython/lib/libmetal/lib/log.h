@@ -111,6 +111,6 @@ extern void metal_default_log_handler(enum metal_log_level level,
 }
 #endif
 
-#include <metal/system/@PROJECT_SYSTEM@/log.h>
+#include <metal/system/micropython/log.h>
 
 #endif /* __METAL_METAL_LOG__H__ */

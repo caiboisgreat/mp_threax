@@ -415,6 +415,10 @@
 #define USE_HAL_DRIVER 1
 #define STM32F405xx 1
 #define TX_INCLUDE_USER_DEFINE_FILE 1
+#define METAL_INTERNAL 1
+#define MICROPY_PY_OPENAMP 1
+#define MICROPY_PY_OPENAMP_HOST 1
+#define MICROPY_PY_OPENAMP_REMOTEPROC 0
 #define _RTE_ 1
 # 1 "<built-in>" 2
 # 1 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\genhdr\\qstrdefs.concat.quoted.h" 2
@@ -805,6 +809,9 @@ typedef unsigned long long uintmax_t;
 #define MICROPY_ENABLE_COMPILER (1)
 
 
+#define MICROPY_TRACKED_ALLOC (1)
+
+
 #define MICROPY_PERSISTENT_CODE_LOAD (1)
 
 
@@ -981,7 +988,9 @@ typedef unsigned long long uintmax_t;
 
 
 #define MICROPY_PY_BLUETOOTH (0)
-#define MICROPY_PY_OPENAMP (0)
+# 216 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+#define MICROPY_PY_OPENAMP_CONFIG_FILE "openamp_config_port.h"
+
 
 
 
@@ -992,6 +1001,10 @@ typedef unsigned long long uintmax_t;
 typedef intptr_t mp_int_t;
 typedef uintptr_t mp_uint_t;
 typedef long mp_off_t;
+# 237 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+#define assert(cond) do { if (!(cond)) { __builtin_trap(); } } while (0)
+
+
 
 
 
@@ -1014,7 +1027,7 @@ typedef long mp_off_t;
 
 #define MICROPY_HW_BOARD_NAME "PYBASE"
 #define MICROPY_HW_MCU_NAME "STM32F405RG6"
-# 242 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 274 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_MIN_USE_CORTEX_CPU (0)
 
 
@@ -1523,15 +1536,7 @@ typedef uintptr_t mp_uint_t;
 
 
 #define MICROPY_GC_HOOK_LOOP(i) 
-
-
-
-
-#define MICROPY_TRACKED_ALLOC (0)
-
-
-
-
+# 788 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_ENABLE_FINALISER (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_EXTRA_FEATURES)
 
 
@@ -2914,6 +2919,8 @@ Q(EISDIR)
 
 Q(EISDIR)
 
+Q(ENDPOINT_ADDR_ANY)
+
 Q(ENOBUFS)
 
 Q(ENOBUFS)
@@ -2953,6 +2960,12 @@ Q(ETIMEDOUT)
 Q(Ellipsis)
 
 Q(Ellipsis)
+
+Q(Endpoint)
+
+Q(Endpoint)
+
+Q(Endpoint)
 
 Q(Exception)
 
@@ -3216,6 +3229,10 @@ Q(VfsFat)
 
 Q(VfsFat)
 
+Q(VirtIODev)
+
+Q(VirtIODev)
+
 Q(ZLIB)
 
 Q(ZeroDivisionError)
@@ -3277,6 +3294,10 @@ Q(__contains__)
 Q(__contains__)
 
 Q(__contains__)
+
+Q(__del__)
+
+Q(__del__)
 
 Q(__del__)
 
@@ -3425,6 +3446,12 @@ Q(__mod__)
 Q(__module__)
 
 Q(__mul__)
+
+Q(__name__)
+
+Q(__name__)
+
+Q(__name__)
 
 Q(__name__)
 
@@ -3810,6 +3837,8 @@ Q(calcsize)
 
 Q(callable)
 
+Q(callback)
+
 Q(cancel)
 
 Q(ceil)
@@ -3953,6 +3982,10 @@ Q(deleter)
 Q(deque)
 
 Q(deque)
+
+Q(dest)
+
+Q(dest)
 
 Q(dict)
 
@@ -4486,6 +4519,8 @@ Q(function)
 
 Q(function)
 
+Q(function)
+
 Q(gamma)
 
 Q(gc)
@@ -4609,6 +4644,8 @@ Q(ioctl)
 Q(ioctl)
 
 Q(ipoll)
+
+Q(is_ready)
 
 Q(isalpha)
 
@@ -4842,6 +4879,8 @@ Q(n)
 
 Q(name)
 
+Q(name)
+
 Q(namedtuple)
 
 Q(nan)
@@ -4853,6 +4892,8 @@ Q(neopixel)
 Q(network)
 
 Q(network)
+
+Q(new_service_callback)
 
 Q(newline)
 
@@ -4877,6 +4918,10 @@ Q(open)
 Q(open)
 
 Q(open)
+
+Q(openamp)
+
+Q(openamp)
 
 Q(opt_level)
 
@@ -5152,6 +5197,8 @@ Q(send)
 
 Q(send)
 
+Q(send)
+
 Q(sendall)
 
 Q(sendall)
@@ -5243,6 +5290,10 @@ Q(splitlines)
 Q(sqrt)
 
 Q(sqrt)
+
+Q(src)
+
+Q(src)
 
 Q(stack_use)
 
@@ -5363,6 +5414,8 @@ Q(ticks_us)
 Q(time)
 
 Q(time)
+
+Q(timeout)
 
 Q(timing)
 

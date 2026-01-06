@@ -124,6 +124,10 @@ extern const struct _mp_obj_module_t mp_module_network;
 #undef MODULE_DEF_NETWORK
 #define MODULE_DEF_NETWORK { MP_ROM_QSTR(MP_QSTR_network), MP_ROM_PTR(&mp_module_network) },
 
+extern const struct _mp_obj_module_t openamp_module;
+#undef MODULE_DEF_OPENAMP
+#define MODULE_DEF_OPENAMP { MP_ROM_QSTR(MP_QSTR_openamp), MP_ROM_PTR(&openamp_module) },
+
 extern const struct _mp_obj_module_t mp_module_sys;
 #undef MODULE_DEF_SYS
 #define MODULE_DEF_SYS { MP_ROM_QSTR(MP_QSTR_sys), MP_ROM_PTR(&mp_module_sys) },
@@ -153,6 +157,7 @@ extern const struct _mp_obj_module_t mp_module_vfs;
     MODULE_DEF_MICROPYTHON \
     MODULE_DEF_NEOPIXEL \
     MODULE_DEF_NETWORK \
+    MODULE_DEF_OPENAMP \
     MODULE_DEF_SYS \
     MODULE_DEF_TLS \
     MODULE_DEF_UCTYPES \

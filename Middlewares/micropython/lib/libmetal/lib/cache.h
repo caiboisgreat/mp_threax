@@ -12,7 +12,7 @@
 #ifndef __METAL_CACHE__H__
 #define __METAL_CACHE__H__
 
-#include <metal/system/@PROJECT_SYSTEM@/cache.h>
+#include <metal/system/micropython/cache.h>
 
 #ifdef __cplusplus
 extern "C" {

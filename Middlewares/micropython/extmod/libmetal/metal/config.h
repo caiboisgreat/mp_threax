@@ -30,6 +30,9 @@
 
 #include <stdlib.h>
 
+// m_tracked_calloc/m_tracked_free declarations.
+#include "py/misc.h"
+
 // Port-specific config.
 #include "mpmetalport.h"
 

@@ -11,6 +11,12 @@
 #if defined(__clang__) || defined(__GNUC__)
 // Use include_next to avoid recursive inclusion of this header.
 #include_next <errno.h>
+
+// Some bare-metal/newlib configurations don't provide a visible errno symbol.
+// MicroPython's POSIX stream shims take &errno, so ensure it's declared.
+#if !defined(errno)
+extern int errno;
+#endif
 #else
 // Fallback: provide a minimal set if include_next isn't available.
 // (Avoid including <errno.h> here to prevent recursion.)
@@ -27,6 +33,26 @@ extern int errno;
 
 #ifndef EINVAL
 #define EINVAL 22
+#endif
+
+#ifndef ENXIO
+#define ENXIO 6
+#endif
+
+#ifndef ENOMEM
+#define ENOMEM 12
+#endif
+
+#ifndef EEXIST
+#define EEXIST 17
+#endif
+
+#ifndef ENODEV
+#define ENODEV 19
+#endif
+
+#ifndef ERANGE
+#define ERANGE 34
 #endif
 
 #ifndef EFTYPE

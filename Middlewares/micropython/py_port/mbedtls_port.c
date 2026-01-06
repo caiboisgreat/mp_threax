@@ -14,4 +14,14 @@ mbedtls_ms_time_t mbedtls_ms_time(void) {
     return (mbedtls_ms_time_t)HAL_GetTick();
 }
 
+// Provide a coarse libc-style time() for mbedTLS.
+// This is based on the HAL tick and is suitable for relative timeouts.
+time_t time(time_t *t) {
+    time_t now = (time_t)(HAL_GetTick() / 1000);
+    if (t != NULL) {
+        *t = now;
+    }
+    return now;
+}
+
 #endif

@@ -33,8 +33,12 @@
 // #define MBEDTLS_DEBUG_C
 
 // Set mbedtls configuration.
-#define MBEDTLS_HAVE_TIME
-#define MBEDTLS_HAVE_TIME_DATE
+// This bare-metal ThreadX port doesn't provide a full libc time implementation
+// (time_t, time(), gmtime(), struct tm). Disable mbedtls time/date support to
+// avoid pulling those dependencies.
+// NOTE: This typically disables certificate date validation.
+// #define MBEDTLS_HAVE_TIME
+// #define MBEDTLS_HAVE_TIME_DATE
 #define MBEDTLS_DEPRECATED_REMOVED
 #define MBEDTLS_AES_ROM_TABLES
 #define MBEDTLS_CIPHER_MODE_CBC

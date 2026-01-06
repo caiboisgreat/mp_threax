@@ -207,6 +207,8 @@ Q(EISDIR)
 
 Q(EISDIR)
 
+Q(ENDPOINT_ADDR_ANY)
+
 Q(ENOBUFS)
 
 Q(ENOBUFS)
@@ -246,6 +248,12 @@ Q(ETIMEDOUT)
 Q(Ellipsis)
 
 Q(Ellipsis)
+
+Q(Endpoint)
+
+Q(Endpoint)
+
+Q(Endpoint)
 
 Q(Exception)
 
@@ -509,6 +517,10 @@ Q(VfsFat)
 
 Q(VfsFat)
 
+Q(VirtIODev)
+
+Q(VirtIODev)
+
 Q(ZLIB)
 
 Q(ZeroDivisionError)
@@ -570,6 +582,10 @@ Q(__contains__)
 Q(__contains__)
 
 Q(__contains__)
+
+Q(__del__)
+
+Q(__del__)
 
 Q(__del__)
 
@@ -718,6 +734,12 @@ Q(__mod__)
 Q(__module__)
 
 Q(__mul__)
+
+Q(__name__)
+
+Q(__name__)
+
+Q(__name__)
 
 Q(__name__)
 
@@ -1103,6 +1125,8 @@ Q(calcsize)
 
 Q(callable)
 
+Q(callback)
+
 Q(cancel)
 
 Q(ceil)
@@ -1246,6 +1270,10 @@ Q(deleter)
 Q(deque)
 
 Q(deque)
+
+Q(dest)
+
+Q(dest)
 
 Q(dict)
 
@@ -1779,6 +1807,8 @@ Q(function)
 
 Q(function)
 
+Q(function)
+
 Q(gamma)
 
 Q(gc)
@@ -1902,6 +1932,8 @@ Q(ioctl)
 Q(ioctl)
 
 Q(ipoll)
+
+Q(is_ready)
 
 Q(isalpha)
 
@@ -2135,6 +2167,8 @@ Q(n)
 
 Q(name)
 
+Q(name)
+
 Q(namedtuple)
 
 Q(nan)
@@ -2146,6 +2180,8 @@ Q(neopixel)
 Q(network)
 
 Q(network)
+
+Q(new_service_callback)
 
 Q(newline)
 
@@ -2170,6 +2206,10 @@ Q(open)
 Q(open)
 
 Q(open)
+
+Q(openamp)
+
+Q(openamp)
 
 Q(opt_level)
 
@@ -2445,6 +2485,8 @@ Q(send)
 
 Q(send)
 
+Q(send)
+
 Q(sendall)
 
 Q(sendall)
@@ -2536,6 +2578,10 @@ Q(splitlines)
 Q(sqrt)
 
 Q(sqrt)
+
+Q(src)
+
+Q(src)
 
 Q(stack_use)
 
@@ -2656,6 +2702,8 @@ Q(ticks_us)
 Q(time)
 
 Q(time)
+
+Q(timeout)
 
 Q(timing)
 

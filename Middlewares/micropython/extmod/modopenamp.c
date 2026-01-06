@@ -33,6 +33,7 @@
 #include "py/nlr.h"
 #include "py/runtime.h"
 #include "py/mpprint.h"
+#include "py/mphal.h"
 
 #include "metal/sys.h"
 #include "metal/alloc.h"
@@ -45,6 +46,9 @@
 #include "openamp/remoteproc.h"
 #include "openamp/remoteproc_loader.h"
 #include "modopenamp.h"
+
+// Provided by the port (py_port/openamp_port.c).
+int metal_rproc_notify(void *priv, uint32_t id);
 
 #if !MICROPY_ENABLE_FINALISER
 #error "MICROPY_PY_OPENAMP requires MICROPY_ENABLE_FINALISER"
