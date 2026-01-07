@@ -3,8 +3,11 @@
 const char *readline_hist[(8)];
 mp_obj_list_t mod_network_nic_list;
 mp_obj_list_t mp_sys_argv_obj;
+mp_obj_t bluetooth;
 mp_obj_t sys_mutable[MP_SYS_MUTABLE_NUM];
 mp_sched_item_t sched_queue[(4)];
+struct _mp_bluetooth_nimble_malloc_t *bluetooth_nimble_memory;
+struct _mp_bluetooth_nimble_root_pointers_t *bluetooth_nimble_root_pointers;
 struct _mp_vfs_mount_t *vfs_cur;
 struct _mp_vfs_mount_t *vfs_mount_table;
 struct _virtio_dev_obj_t *virtio_device;

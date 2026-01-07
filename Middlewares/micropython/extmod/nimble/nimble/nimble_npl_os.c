@@ -275,6 +275,52 @@ void ble_npl_eventq_put(struct ble_npl_eventq *evq, struct ble_npl_event *ev) {
     OS_EXIT_CRITICAL(sr);
 }
 
+struct ble_npl_event *ble_npl_eventq_get(struct ble_npl_eventq *evq, ble_npl_time_t tmo) {
+    DEBUG_EVENT_printf("ble_npl_eventq_get(%p, %u)\n", evq, (uint)tmo);
+
+    const mp_uint_t start_ms = mp_hal_ticks_ms();
+
+    for (;;) {
+        os_sr_t sr;
+        OS_ENTER_CRITICAL(sr);
+        struct ble_npl_event *ev = evq->head;
+        if (ev) {
+            // Dequeue from the head.
+            evq->head = ev->next;
+            if (ev->next) {
+                ev->next->prev = NULL;
+            }
+            ev->next = NULL;
+            ev->prev = NULL;
+            ev->pending = false;
+            OS_EXIT_CRITICAL(sr);
+            return ev;
+        }
+        OS_EXIT_CRITICAL(sr);
+
+        // No event available.
+        if (tmo == 0) {
+            return NULL;
+        }
+
+        if (tmo != BLE_NPL_TIME_FOREVER) {
+            mp_uint_t elapsed = mp_hal_ticks_ms() - start_ms;
+            if (elapsed >= (mp_uint_t)tmo) {
+                return NULL;
+            }
+        }
+
+        // Yield while we wait: keep HCI acks flowing and process callouts.
+        mp_bluetooth_nimble_hci_uart_wfi();
+        mp_bluetooth_nimble_os_callout_process();
+    }
+}
+
+void ble_npl_event_run(struct ble_npl_event *ev) {
+    DEBUG_EVENT_printf("ble_npl_event_run(%p)\n", ev);
+    ev->fn(ev);
+}
+
 void ble_npl_event_init(struct ble_npl_event *ev, ble_npl_event_fn *fn, void *arg) {
     DEBUG_EVENT_printf("ble_npl_event_init(%p, %p, %p)\n", ev, fn, arg);
     ev->fn = fn;

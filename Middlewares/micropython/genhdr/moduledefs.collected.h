@@ -2,6 +2,8 @@ MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_array, mp_module_array);
 
 MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_binascii, mp_module_binascii);
 
+MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_bluetooth, mp_module_bluetooth);
+
 MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_collections, mp_module_collections);
 
 MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_cryptolib, mp_module_cryptolib);

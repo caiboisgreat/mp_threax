@@ -40,6 +40,10 @@ Q(BF_POS)
 
 Q(BIG_ENDIAN)
 
+Q(BLE)
+
+Q(BLE)
+
 Q(BaseException)
 
 Q(BaseException)
@@ -171,6 +175,16 @@ Q(Endpoint)
 Q(Exception)
 
 Q(Exception)
+
+Q(FLAG_INDICATE)
+
+Q(FLAG_NOTIFY)
+
+Q(FLAG_READ)
+
+Q(FLAG_WRITE)
+
+Q(FLAG_WRITE_NO_RESPONSE)
 
 Q(FLOAT32)
 
@@ -413,6 +427,10 @@ Q(ULONG)
 Q(ULONGLONG)
 
 Q(USHORT)
+
+Q(UUID)
+
+Q(UUID)
 
 Q(UnicodeError)
 
@@ -738,6 +756,8 @@ Q(__name__)
 
 Q(__name__)
 
+Q(__name__)
+
 Q(__ne__)
 
 Q(__neg__)
@@ -934,9 +954,15 @@ Q(acos)
 
 Q(acosh)
 
+Q(active)
+
 Q(add)
 
+Q(addr_mode)
+
 Q(addressof)
+
+Q(adv_data)
 
 Q(aes)
 
@@ -989,6 +1015,10 @@ Q(binascii)
 Q(bind)
 
 Q(blit)
+
+Q(bluetooth)
+
+Q(bluetooth)
 
 Q(bool)
 
@@ -1114,7 +1144,11 @@ Q(complex)
 
 Q(complex)
 
+Q(config)
+
 Q(connect)
+
+Q(connectable)
 
 Q(const)
 
@@ -1722,7 +1756,35 @@ Q(function)
 
 Q(function)
 
+Q(function)
+
+Q(function)
+
+Q(function)
+
+Q(function)
+
 Q(gamma)
+
+Q(gap_advertise)
+
+Q(gap_disconnect)
+
+Q(gap_name)
+
+Q(gap_name)
+
+Q(gatts_indicate)
+
+Q(gatts_notify)
+
+Q(gatts_read)
+
+Q(gatts_register_services)
+
+Q(gatts_set_buffer)
+
+Q(gatts_write)
 
 Q(gc)
 
@@ -1832,6 +1894,8 @@ Q(intersection)
 
 Q(intersection_update)
 
+Q(interval_us)
+
 Q(invert)
 
 Q(io)
@@ -1845,6 +1909,8 @@ Q(ioctl)
 Q(ioctl)
 
 Q(ipoll)
+
+Q(irq)
 
 Q(is_ready)
 
@@ -1976,6 +2042,8 @@ Q(lower)
 
 Q(lstrip)
 
+Q(mac)
+
 Q(machine)
 
 Q(machine)
@@ -2075,6 +2143,10 @@ Q(mount)
 Q(mount)
 
 Q(mount)
+
+Q(mtu)
+
+Q(mtu)
 
 Q(n)
 
@@ -2341,6 +2413,8 @@ Q(repr)
 Q(reset)
 
 Q(reset_cause)
+
+Q(resp_data)
 
 Q(reverse)
 

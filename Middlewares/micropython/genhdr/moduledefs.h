@@ -8,6 +8,10 @@ extern const struct _mp_obj_module_t mp_module_binascii;
 #undef MODULE_DEF_BINASCII
 #define MODULE_DEF_BINASCII { MP_ROM_QSTR(MP_QSTR_binascii), MP_ROM_PTR(&mp_module_binascii) },
 
+extern const struct _mp_obj_module_t mp_module_bluetooth;
+#undef MODULE_DEF_BLUETOOTH
+#define MODULE_DEF_BLUETOOTH { MP_ROM_QSTR(MP_QSTR_bluetooth), MP_ROM_PTR(&mp_module_bluetooth) },
+
 extern const struct _mp_obj_module_t mp_module_collections;
 #undef MODULE_DEF_COLLECTIONS
 #define MODULE_DEF_COLLECTIONS { MP_ROM_QSTR(MP_QSTR_collections), MP_ROM_PTR(&mp_module_collections) },
@@ -166,11 +170,12 @@ extern const struct _mp_obj_module_t mp_module_vfs;
     MODULE_DEF___MAIN__ \
 // MICROPY_REGISTERED_MODULES
 
-#define MICROPY_HAVE_REGISTERED_EXTENSIBLE_MODULES  18
+#define MICROPY_HAVE_REGISTERED_EXTENSIBLE_MODULES  19
 
 #define MICROPY_REGISTERED_EXTENSIBLE_MODULES \
     MODULE_DEF_ARRAY \
     MODULE_DEF_BINASCII \
+    MODULE_DEF_BLUETOOTH \
     MODULE_DEF_COLLECTIONS \
     MODULE_DEF_CRYPTOLIB \
     MODULE_DEF_ERRNO \

@@ -987,8 +987,20 @@ typedef unsigned long long uintmax_t;
 #define MICROPY_PY_MACHINE_WDT (0)
 
 
-#define MICROPY_PY_BLUETOOTH (0)
-# 216 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+
+
+#define MICROPY_PY_BLUETOOTH (1)
+
+
+#define MICROPY_BLUETOOTH_NIMBLE (1)
+#define MICROPY_BLUETOOTH_BTSTACK (0)
+
+
+#define MICROPY_PY_BLUETOOTH_USE_SYNC_EVENTS (1)
+
+
+#define MICROPY_PY_BLUETOOTH_ENABLE_PAIRING_BONDING (0)
+# 228 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_PY_OPENAMP_CONFIG_FILE "openamp_config_port.h"
 
 
@@ -1001,8 +1013,8 @@ typedef unsigned long long uintmax_t;
 typedef intptr_t mp_int_t;
 typedef uintptr_t mp_uint_t;
 typedef long mp_off_t;
-# 237 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
-#define assert(cond) do { if (!(cond)) { __builtin_trap(); } } while (0)
+# 251 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+#define assert(cond) ((void)((cond) ? 0 : (__builtin_trap(), 0)))
 
 
 
@@ -1027,7 +1039,7 @@ typedef long mp_off_t;
 
 #define MICROPY_HW_BOARD_NAME "PYBASE"
 #define MICROPY_HW_MCU_NAME "STM32F405RG6"
-# 274 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 288 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_MIN_USE_CORTEX_CPU (0)
 
 
@@ -2839,6 +2851,10 @@ Q(BF_POS)
 
 Q(BIG_ENDIAN)
 
+Q(BLE)
+
+Q(BLE)
+
 Q(BaseException)
 
 Q(BaseException)
@@ -2970,6 +2986,16 @@ Q(Endpoint)
 Q(Exception)
 
 Q(Exception)
+
+Q(FLAG_INDICATE)
+
+Q(FLAG_NOTIFY)
+
+Q(FLAG_READ)
+
+Q(FLAG_WRITE)
+
+Q(FLAG_WRITE_NO_RESPONSE)
 
 Q(FLOAT32)
 
@@ -3212,6 +3238,10 @@ Q(ULONG)
 Q(ULONGLONG)
 
 Q(USHORT)
+
+Q(UUID)
+
+Q(UUID)
 
 Q(UnicodeError)
 
@@ -3537,6 +3567,8 @@ Q(__name__)
 
 Q(__name__)
 
+Q(__name__)
+
 Q(__ne__)
 
 Q(__neg__)
@@ -3733,9 +3765,15 @@ Q(acos)
 
 Q(acosh)
 
+Q(active)
+
 Q(add)
 
+Q(addr_mode)
+
 Q(addressof)
+
+Q(adv_data)
 
 Q(aes)
 
@@ -3788,6 +3826,10 @@ Q(binascii)
 Q(bind)
 
 Q(blit)
+
+Q(bluetooth)
+
+Q(bluetooth)
 
 Q(bool)
 
@@ -3913,7 +3955,11 @@ Q(complex)
 
 Q(complex)
 
+Q(config)
+
 Q(connect)
+
+Q(connectable)
 
 Q(const)
 
@@ -4521,7 +4567,35 @@ Q(function)
 
 Q(function)
 
+Q(function)
+
+Q(function)
+
+Q(function)
+
+Q(function)
+
 Q(gamma)
+
+Q(gap_advertise)
+
+Q(gap_disconnect)
+
+Q(gap_name)
+
+Q(gap_name)
+
+Q(gatts_indicate)
+
+Q(gatts_notify)
+
+Q(gatts_read)
+
+Q(gatts_register_services)
+
+Q(gatts_set_buffer)
+
+Q(gatts_write)
 
 Q(gc)
 
@@ -4631,6 +4705,8 @@ Q(intersection)
 
 Q(intersection_update)
 
+Q(interval_us)
+
 Q(invert)
 
 Q(io)
@@ -4644,6 +4720,8 @@ Q(ioctl)
 Q(ioctl)
 
 Q(ipoll)
+
+Q(irq)
 
 Q(is_ready)
 
@@ -4775,6 +4853,8 @@ Q(lower)
 
 Q(lstrip)
 
+Q(mac)
+
 Q(machine)
 
 Q(machine)
@@ -4874,6 +4954,10 @@ Q(mount)
 Q(mount)
 
 Q(mount)
+
+Q(mtu)
+
+Q(mtu)
 
 Q(n)
 
@@ -5140,6 +5224,8 @@ Q(repr)
 Q(reset)
 
 Q(reset_cause)
+
+Q(resp_data)
 
 Q(reverse)
 

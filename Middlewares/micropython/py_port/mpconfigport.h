@@ -1,4 +1,5 @@
 #include <stdint.h>
+#include <stdbool.h>
 
 // options to control how MicroPython is built
 
@@ -195,8 +196,32 @@
 #define MICROPY_PY_MACHINE_TIMER          (0)
 #define MICROPY_PY_MACHINE_WDT            (0)
 
-// These are hardware/stack dependent and will be enabled later.
-#define MICROPY_PY_BLUETOOTH              (0)
+// Bluetooth (low-level) via MicroPython's `bluetooth` module.
+// This port uses the NimBLE host stack over an external controller (HCI UART/H4).
+// Note: STM32F405 has no on-chip BLE radio, so you need a separate BLE controller.
+#define MICROPY_PY_BLUETOOTH              (1)
+
+// Select backend.
+#define MICROPY_BLUETOOTH_NIMBLE          (1)
+#define MICROPY_BLUETOOTH_BTSTACK         (0)
+
+// The NimBLE integration runs in scheduler context, so use synchronous events.
+#define MICROPY_PY_BLUETOOTH_USE_SYNC_EVENTS (1)
+
+// Keep these off initially (can be enabled once key storage is implemented).
+#define MICROPY_PY_BLUETOOTH_ENABLE_PAIRING_BONDING (0)
+
+// Ensure NimBLE continues to run while the VM is executing (process incoming HCI
+// bytes, run events, and process scheduled callouts).
+#if MICROPY_PY_BLUETOOTH && MICROPY_BLUETOOTH_NIMBLE
+extern void mp_bluetooth_nimble_hci_uart_process(bool run_events);
+extern void mp_bluetooth_nimble_os_callout_process(void);
+#define MICROPY_EVENT_POLL_HOOK \
+	do { \
+		mp_bluetooth_nimble_hci_uart_process(true); \
+		mp_bluetooth_nimble_os_callout_process(); \
+	} while (0);
+#endif
 #ifndef MICROPY_PY_OPENAMP
 #define MICROPY_PY_OPENAMP                 (1)
 #endif
