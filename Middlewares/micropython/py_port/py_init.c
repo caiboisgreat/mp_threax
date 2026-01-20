@@ -62,6 +62,12 @@ int micro_python_init(void *stack_top, uint32_t stack_len_bytes) {
     #endif
     mp_init();
 
+    // Best-effort internal flash auto-mount (VFS/FAT). Safe if flash unformatted.
+    #if MICROPY_VFS && MICROPY_VFS_FAT
+    extern void mp_threadx_try_mount_flash(void);
+    mp_threadx_try_mount_flash();
+    #endif
+    
     // Best-effort SD card auto-mount (VFS/FAT). Safe if no card present.
     #if MICROPY_VFS && MICROPY_VFS_FAT
     extern void mp_threadx_try_mount_sdcard(void);

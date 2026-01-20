@@ -790,6 +790,16 @@ typedef unsigned long long uintmax_t;
 
 # 1 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h" 1
 
+# 1 "D:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdbool.h" 1 3
+# 11 "D:\\Program Files\\Keil_v5\\ARM\\ARMCLANG\\bin\\..\\include\\stdbool.h" 3
+#define __bool_true_false_are_defined 1
+#define __ARMCLIB_VERSION 6240002
+
+
+#define bool _Bool
+#define true 1
+#define false 0
+# 3 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h" 2
 
 
 
@@ -1000,7 +1010,14 @@ typedef unsigned long long uintmax_t;
 
 
 #define MICROPY_PY_BLUETOOTH_ENABLE_PAIRING_BONDING (0)
-# 228 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+
+
+
+
+extern void mp_bluetooth_nimble_hci_uart_process(_Bool run_events);
+extern void mp_bluetooth_nimble_os_callout_process(void);
+#define MICROPY_EVENT_POLL_HOOK do { mp_bluetooth_nimble_hci_uart_process(true); mp_bluetooth_nimble_os_callout_process(); } while (0);
+# 241 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_PY_OPENAMP_CONFIG_FILE "openamp_config_port.h"
 
 
@@ -1013,7 +1030,7 @@ typedef unsigned long long uintmax_t;
 typedef intptr_t mp_int_t;
 typedef uintptr_t mp_uint_t;
 typedef long mp_off_t;
-# 251 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 264 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define assert(cond) ((void)((cond) ? 0 : (__builtin_trap(), 0)))
 
 
@@ -1039,7 +1056,7 @@ typedef long mp_off_t;
 
 #define MICROPY_HW_BOARD_NAME "PYBASE"
 #define MICROPY_HW_MCU_NAME "STM32F405RG6"
-# 288 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 301 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_MIN_USE_CORTEX_CPU (0)
 
 
@@ -2806,6 +2823,7 @@ Q(utf-8)
 Q(.frozen)
 # 84 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\genhdr\\qstrdefs.concat.quoted.h"
 Q(rb)
+Q(Flash)
 Q(SDCard)
 
 
@@ -3004,6 +3022,12 @@ Q(FLOAT64)
 Q(FileIO)
 
 Q(FileIO)
+
+Q(Flash)
+
+Q(Flash)
+
+Q(Flash)
 
 Q(FrameBuffer)
 
@@ -4575,6 +4599,10 @@ Q(function)
 
 Q(function)
 
+Q(function)
+
+Q(function)
+
 Q(gamma)
 
 Q(gap_advertise)
@@ -4712,6 +4740,8 @@ Q(invert)
 Q(io)
 
 Q(io)
+
+Q(ioctl)
 
 Q(ioctl)
 
@@ -5138,6 +5168,8 @@ Q(read)
 Q(read)
 
 Q(read)
+
+Q(readblocks)
 
 Q(readblocks)
 
@@ -5618,6 +5650,8 @@ Q(write)
 Q(write)
 
 Q(write)
+
+Q(writeblocks)
 
 Q(writeblocks)
 

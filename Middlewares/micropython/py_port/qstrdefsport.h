@@ -2,4 +2,5 @@
 // *FORMAT-OFF*
 
 Q(rb)
+Q(Flash)
 Q(SDCard)

@@ -194,6 +194,12 @@ Q(FileIO)
 
 Q(FileIO)
 
+Q(Flash)
+
+Q(Flash)
+
+Q(Flash)
+
 Q(FrameBuffer)
 
 Q(FrameBuffer)
@@ -1764,6 +1770,10 @@ Q(function)
 
 Q(function)
 
+Q(function)
+
+Q(function)
+
 Q(gamma)
 
 Q(gap_advertise)
@@ -1901,6 +1911,8 @@ Q(invert)
 Q(io)
 
 Q(io)
+
+Q(ioctl)
 
 Q(ioctl)
 
@@ -2327,6 +2339,8 @@ Q(read)
 Q(read)
 
 Q(read)
+
+Q(readblocks)
 
 Q(readblocks)
 
@@ -2807,6 +2821,8 @@ Q(write)
 Q(write)
 
 Q(write)
+
+Q(writeblocks)
 
 Q(writeblocks)
 

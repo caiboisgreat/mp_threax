@@ -6,10 +6,12 @@
 #include "stm32f4xx.h"
 
 extern const mp_obj_type_t machine_sdcard_type;
+extern const mp_obj_type_t pyb_flash_type;
 
 #ifndef MICROPY_PY_MACHINE_EXTRA_GLOBALS
 #define MICROPY_PY_MACHINE_EXTRA_GLOBALS \
-    { MP_ROM_QSTR(MP_QSTR_SDCard), MP_ROM_PTR(&machine_sdcard_type) },
+    { MP_ROM_QSTR(MP_QSTR_SDCard), MP_ROM_PTR(&machine_sdcard_type) }, \
+    { MP_ROM_QSTR(MP_QSTR_Flash), MP_ROM_PTR(&pyb_flash_type) },
 #endif
 
 // This file is text-included by extmod/modmachine.c via MICROPY_PY_MACHINE_INCLUDEFILE.

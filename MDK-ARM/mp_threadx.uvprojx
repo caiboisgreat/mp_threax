@@ -832,6 +832,11 @@
               <FilePath>..\Middlewares\micropython\py_port\sdcard_sdio.c</FilePath>
             </File>
             <File>
+              <FileName>storage.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\storage.c</FilePath>
+            </File>
+            <File>
               <FileName>mpconfigport.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\Middlewares\micropython\py_port\mpconfigport.h</FilePath>

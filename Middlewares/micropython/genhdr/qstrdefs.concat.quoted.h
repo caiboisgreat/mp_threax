@@ -82,6 +82,7 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 // *FORMAT-OFF*
 
 "Q(rb)"
+"Q(Flash)"
 "Q(SDCard)"
 
 
@@ -280,6 +281,12 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(FileIO)"
 
 "Q(FileIO)"
+
+"Q(Flash)"
+
+"Q(Flash)"
+
+"Q(Flash)"
 
 "Q(FrameBuffer)"
 
@@ -1851,6 +1858,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(function)"
 
+"Q(function)"
+
+"Q(function)"
+
 "Q(gamma)"
 
 "Q(gap_advertise)"
@@ -1988,6 +1999,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(io)"
 
 "Q(io)"
+
+"Q(ioctl)"
 
 "Q(ioctl)"
 
@@ -2414,6 +2427,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(read)"
 
 "Q(read)"
+
+"Q(readblocks)"
 
 "Q(readblocks)"
 
@@ -2894,6 +2909,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(write)"
 
 "Q(write)"
+
+"Q(writeblocks)"
 
 "Q(writeblocks)"
 
