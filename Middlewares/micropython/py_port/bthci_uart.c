@@ -10,10 +10,16 @@
 #include "extmod/mpbthci.h"
 #include "extmod/nimble/hal/hal_uart.h"
 
-// This port currently uses USART2 for the REPL (see uart_core.c).
-// For a real BLE setup you almost certainly want to dedicate a separate UART
-// to the BLE controller (HCI H4), and update this binding to use that UART.
+// This port uses USART2 for the REPL (see uart_core.c).
+// Bluetooth HCI must use a dedicated UART to avoid stealing REPL input bytes
+// (for example Thonny's Ctrl-A raw-REPL entry sequence).
 #include "usart.h"
+
+// Select which UART is used for the external BLE controller (HCI H4).
+// Default to USART3 (huart3), which is initialized in Core/Src/usart.c.
+#ifndef MICROPY_BTHCI_UART
+#define MICROPY_BTHCI_UART huart3
+#endif
 
 // Scratch buffer used by NimBLE hal_uart.c when sending HCI commands.
 uint8_t mp_bluetooth_hci_cmd_buf[4 + 256];
@@ -64,12 +70,12 @@ int mp_bluetooth_hci_uart_set_baudrate(uint32_t baudrate) {
 
 int mp_bluetooth_hci_uart_any(void) {
     // RXNE
-    return __HAL_UART_GET_FLAG(&huart2, UART_FLAG_RXNE) ? 1 : 0;
+    return __HAL_UART_GET_FLAG(&MICROPY_BTHCI_UART, UART_FLAG_RXNE) ? 1 : 0;
 }
 
 int mp_bluetooth_hci_uart_write(const uint8_t *buf, size_t len) {
     // Blocking transmit. For best performance this should be DMA.
-    if (HAL_UART_Transmit(&huart2, (uint8_t *)(void *)buf, (uint16_t)len, 1000) != HAL_OK) {
+    if (HAL_UART_Transmit(&MICROPY_BTHCI_UART, (uint8_t *)(void *)buf, (uint16_t)len, 1000) != HAL_OK) {
         return -1;
     }
     return (int)len;
@@ -79,7 +85,7 @@ int mp_bluetooth_hci_uart_readchar(void) {
     uint8_t c;
 
     // Non-blocking receive.
-    if (HAL_UART_Receive(&huart2, &c, 1, 0) == HAL_OK) {
+    if (HAL_UART_Receive(&MICROPY_BTHCI_UART, &c, 1, 0) == HAL_OK) {
         return (int)c;
     }
     return -1;

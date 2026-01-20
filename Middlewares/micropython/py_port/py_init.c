@@ -95,7 +95,12 @@ int micro_python_init(void *stack_top, uint32_t stack_len_bytes) {
     for (;;) {
         nlr_buf_t nlr;
         if (nlr_push(&nlr) == 0) {
-            int ret = pyexec_friendly_repl();
+            int ret;
+            if (pyexec_mode_kind == PYEXEC_MODE_RAW_REPL) {
+                ret = pyexec_raw_repl();
+            } else {
+                ret = pyexec_friendly_repl();
+            }
             nlr_pop();
             if (ret & PYEXEC_FORCED_EXIT) {
                 break;

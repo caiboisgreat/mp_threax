@@ -692,6 +692,11 @@
               </FileOption>
             </File>
             <File>
+              <FileName>usb_tinyusb.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>../Core/Inc/usb_tinyusb.h</FilePath>
+            </File>
+            <File>
               <FileName>stm32f4xx_hal_rcc.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c</FilePath>
@@ -780,11 +785,6 @@
               <FileName>usb_tinyusb.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/usb_tinyusb.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_tinyusb.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../Core/Inc/usb_tinyusb.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -2035,6 +2035,11 @@
               <FileName>abort_.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Middlewares\micropython\shared\libc\abort_.c</FilePath>
+            </File>
+            <File>
+              <FileName>interrupt_char.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\shared\runtime\interrupt_char.c</FilePath>
             </File>
             <File>
               <FileName>pyexec.c</FileName>

@@ -197,8 +197,8 @@
 #define MICROPY_PY_MACHINE_WDT            (0)
 
 // Bluetooth (low-level) via MicroPython's `bluetooth` module.
-// This port uses the NimBLE host stack over an external controller (HCI UART/H4).
-// Note: STM32F405 has no on-chip BLE radio, so you need a separate BLE controller.
+// This port runs the REPL on USART2; Bluetooth HCI must use a different UART
+// (see py_port/bthci_uart.c which is configured to use USART3).
 #define MICROPY_PY_BLUETOOTH              (1)
 
 // Select backend.

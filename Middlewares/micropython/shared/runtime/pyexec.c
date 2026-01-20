@@ -372,6 +372,22 @@ reset:
 }
 
 static int pyexec_friendly_repl_process_char(int c) {
+    // PATCH: Thonny/mpremote/pyboard tools expect Ctrl-A to enter raw REPL
+    // regardless of line state. The upstream check "if (!repl.cont_line)"
+    // only handles Ctrl-A when the line is NOT a continuation; but
+    // readline_process_char() only returns Ctrl-A when the line is empty
+    // (vstr_len == orig_line_len). This creates a narrow window where
+    // Ctrl-A works. Host tools often send Ctrl-C followed by Ctrl-A
+    // quickly, which can leave residual state. For robustness, always
+    // check for Ctrl-A first before delegating to readline.
+    if (c == CHAR_CTRL_A && !repl.paste_mode) {
+        // change to raw REPL
+        pyexec_mode_kind = PYEXEC_MODE_RAW_REPL;
+        mp_hal_stdout_tx_str("\r\n");
+        pyexec_raw_repl_process_char(CHAR_CTRL_A);
+        return 0;
+    }
+
     if (repl.paste_mode) {
         if (c == CHAR_CTRL_C) {
             // cancel everything
