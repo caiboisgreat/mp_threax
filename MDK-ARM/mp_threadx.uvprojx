@@ -807,6 +807,36 @@
               <FilePath>..\Middlewares\micropython\py_port\modneopixel.c</FilePath>
             </File>
             <File>
+              <FileName>modpyb.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\modpyb.c</FilePath>
+            </File>
+            <File>
+              <FileName>modstm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\modstm.c</FilePath>
+            </File>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>pin.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\pin.c</FilePath>
+            </File>
+            <File>
+              <FileName>pins.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\pins.c</FilePath>
+            </File>
+            <File>
+              <FileName>mphalport.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\mphalport.c</FilePath>
+            </File>
+            <File>
               <FileName>frozen_mpy.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Middlewares\micropython\py_port\frozen_mpy.c</FilePath>

@@ -62,6 +62,14 @@ int micro_python_init(void *stack_top, uint32_t stack_len_bytes) {
     #endif
     mp_init();
 
+    // Initialize pyb module peripherals
+    #if MICROPY_PY_PYB
+    extern void pin_init0(void);
+    extern void led_init(void);
+    pin_init0();
+    led_init();
+    #endif
+
     // Best-effort internal flash auto-mount (VFS/FAT). Safe if flash unformatted.
     #if MICROPY_VFS && MICROPY_VFS_FAT
     extern void mp_threadx_try_mount_flash(void);

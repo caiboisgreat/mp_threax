@@ -4,6 +4,8 @@ const char *readline_hist[(8)];
 mp_obj_list_t mod_network_nic_list;
 mp_obj_list_t mp_sys_argv_obj;
 mp_obj_t bluetooth;
+mp_obj_t pin_class_map_dict;
+mp_obj_t pin_class_mapper;
 mp_obj_t sys_mutable[MP_SYS_MUTABLE_NUM];
 mp_sched_item_t sched_queue[(4)];
 struct _mp_bluetooth_nimble_malloc_t *bluetooth_nimble_memory;

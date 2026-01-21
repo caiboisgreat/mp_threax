@@ -999,6 +999,17 @@ typedef unsigned long long uintmax_t;
 
 
 
+#define MICROPY_PY_PYB (1)
+
+
+
+
+#define MICROPY_PY_STM (1)
+
+
+
+
+
 #define MICROPY_PY_BLUETOOTH (1)
 
 
@@ -1017,7 +1028,7 @@ typedef unsigned long long uintmax_t;
 extern void mp_bluetooth_nimble_hci_uart_process(_Bool run_events);
 extern void mp_bluetooth_nimble_os_callout_process(void);
 #define MICROPY_EVENT_POLL_HOOK do { mp_bluetooth_nimble_hci_uart_process(true); mp_bluetooth_nimble_os_callout_process(); } while (0);
-# 241 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 252 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_PY_OPENAMP_CONFIG_FILE "openamp_config_port.h"
 
 
@@ -1030,7 +1041,7 @@ extern void mp_bluetooth_nimble_os_callout_process(void);
 typedef intptr_t mp_int_t;
 typedef uintptr_t mp_uint_t;
 typedef long mp_off_t;
-# 264 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 275 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define assert(cond) ((void)((cond) ? 0 : (__builtin_trap(), 0)))
 
 
@@ -1056,7 +1067,7 @@ typedef long mp_off_t;
 
 #define MICROPY_HW_BOARD_NAME "PYBASE"
 #define MICROPY_HW_MCU_NAME "STM32F405RG6"
-# 301 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 312 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_MIN_USE_CORTEX_CPU (0)
 
 
@@ -2827,9 +2838,282 @@ Q(Flash)
 Q(SDCard)
 
 
+Q(pyb)
+Q(info)
+Q(delay)
+Q(udelay)
+Q(millis)
+Q(micros)
+Q(elapsed_millis)
+Q(elapsed_micros)
+
+
+Q(LED)
+Q(on)
+Q(off)
+Q(toggle)
+Q(intensity)
+
+
+Q(Pin)
+Q(board)
+Q(cpu)
+Q(init)
+Q(value)
+Q(low)
+Q(high)
+Q(mode)
+Q(pull)
+Q(alt)
+Q(IN)
+Q(OUT)
+Q(OUT_PP)
+Q(OUT_OD)
+Q(OPEN_DRAIN)
+Q(ALT)
+Q(ALT_PP)
+Q(ALT_OD)
+Q(ALT_OPEN_DRAIN)
+Q(ANALOG)
+Q(PULL_NONE)
+Q(PULL_UP)
+Q(PULL_DOWN)
+Q(IRQ_RISING)
+Q(IRQ_FALLING)
+
+
+Q(LED_RED)
+Q(LED_GREEN)
+Q(LED_YELLOW)
+Q(LED_BLUE)
+
+
+Q(A0)
+Q(A1)
+Q(A2)
+Q(A3)
+Q(A4)
+Q(A5)
+Q(A6)
+Q(A7)
+Q(A8)
+Q(A9)
+Q(A10)
+Q(A11)
+Q(A12)
+Q(A13)
+Q(A14)
+Q(A15)
+Q(B0)
+Q(B1)
+Q(B2)
+Q(B3)
+Q(B4)
+Q(B5)
+Q(B6)
+Q(B7)
+Q(B8)
+Q(B9)
+Q(B10)
+Q(B11)
+Q(B12)
+Q(B13)
+Q(B14)
+Q(B15)
+Q(C0)
+Q(C1)
+Q(C2)
+Q(C3)
+Q(C4)
+Q(C5)
+Q(C6)
+Q(C7)
+Q(C8)
+Q(C9)
+Q(C10)
+Q(C11)
+Q(C12)
+Q(C13)
+Q(C14)
+Q(C15)
+Q(D0)
+Q(D1)
+Q(D2)
+Q(D3)
+Q(D4)
+Q(D5)
+Q(D6)
+Q(D7)
+Q(D8)
+Q(D9)
+Q(D10)
+Q(D11)
+Q(D12)
+Q(D13)
+Q(D14)
+Q(D15)
+Q(E0)
+Q(E1)
+Q(E2)
+Q(E3)
+Q(E4)
+Q(E5)
+Q(E6)
+Q(E7)
+Q(E8)
+Q(E9)
+Q(E10)
+Q(E11)
+Q(E12)
+Q(E13)
+Q(E14)
+Q(E15)
+Q(H0)
+Q(H1)
+
+
+Q(stm)
+Q(mem8)
+Q(mem16)
+Q(mem32)
+Q(GPIOA)
+Q(GPIOB)
+Q(GPIOC)
+Q(GPIOD)
+Q(GPIOE)
+Q(GPIOF)
+Q(GPIOG)
+Q(GPIOH)
+Q(RCC)
+Q(SYSCFG)
+Q(TIM1)
+Q(TIM2)
+Q(TIM3)
+Q(TIM4)
+Q(TIM5)
+Q(USART1)
+Q(USART2)
+Q(USART3)
+Q(SPI1)
+Q(SPI2)
+Q(SPI3)
+Q(I2C1)
+Q(I2C2)
+Q(I2C3)
+Q(ADC1)
+Q(ADC2)
+Q(ADC3)
+Q(DAC)
+
+
+Q(lcd160cr)
+Q(LCD160CR)
+Q(rgb)
+Q(set_power)
+Q(set_orient)
+Q(set_brightness)
+Q(set_pen)
+Q(erase)
+Q(dot)
+Q(rect)
+Q(line)
+Q(set_text_color)
+Q(set_font)
+Q(set_pos)
+Q(write)
+Q(is_touched)
+Q(get_touch)
+Q(PORTRAIT)
+Q(LANDSCAPE)
+
+
+Q(A0)
+
+Q(A0)
+
+Q(A1)
+
+Q(A1)
+
+Q(A10)
+
+Q(A10)
+
+Q(A11)
+
+Q(A11)
+
+Q(A12)
+
+Q(A12)
+
+Q(A13)
+
+Q(A13)
+
+Q(A14)
+
+Q(A14)
+
+Q(A15)
+
+Q(A15)
+
+Q(A2)
+
+Q(A2)
+
+Q(A3)
+
+Q(A3)
+
+Q(A4)
+
+Q(A4)
+
+Q(A5)
+
+Q(A5)
+
+Q(A6)
+
+Q(A6)
+
+Q(A7)
+
+Q(A7)
+
+Q(A8)
+
+Q(A8)
+
+Q(A9)
+
+Q(A9)
+
+Q(ADC1)
+
+Q(ADC2)
+
+Q(ADC3)
+
 Q(AF_INET)
 
 Q(AF_INET6)
+
+Q(ALT)
+
+Q(ALT)
+
+Q(ALT_OD)
+
+Q(ALT_OPEN_DRAIN)
+
+Q(ALT_OPEN_DRAIN)
+
+Q(ALT_PP)
+
+Q(ANALOG)
 
 Q(AP_IF)
 
@@ -2850,6 +3134,70 @@ Q(AssertionError)
 Q(AttributeError)
 
 Q(AttributeError)
+
+Q(B0)
+
+Q(B0)
+
+Q(B1)
+
+Q(B1)
+
+Q(B10)
+
+Q(B10)
+
+Q(B11)
+
+Q(B11)
+
+Q(B12)
+
+Q(B12)
+
+Q(B13)
+
+Q(B13)
+
+Q(B14)
+
+Q(B14)
+
+Q(B15)
+
+Q(B15)
+
+Q(B2)
+
+Q(B2)
+
+Q(B3)
+
+Q(B3)
+
+Q(B4)
+
+Q(B4)
+
+Q(B5)
+
+Q(B5)
+
+Q(B6)
+
+Q(B6)
+
+Q(B7)
+
+Q(B7)
+
+Q(B8)
+
+Q(B8)
+
+Q(B9)
+
+Q(B9)
 
 Q(BFINT16)
 
@@ -2883,6 +3231,74 @@ Q(BytesIO)
 
 Q(BytesIO)
 
+Q(C0)
+
+Q(C0)
+
+Q(C1)
+
+Q(C1)
+
+Q(C10)
+
+Q(C10)
+
+Q(C11)
+
+Q(C11)
+
+Q(C12)
+
+Q(C12)
+
+Q(C13)
+
+Q(C13)
+
+Q(C14)
+
+Q(C14)
+
+Q(C15)
+
+Q(C15)
+
+Q(C2)
+
+Q(C2)
+
+Q(C3)
+
+Q(C3)
+
+Q(C4)
+
+Q(C4)
+
+Q(C5)
+
+Q(C5)
+
+Q(C6)
+
+Q(C6)
+
+Q(C7)
+
+Q(C7)
+
+Q(C8)
+
+Q(C8)
+
+Q(C9)
+
+Q(C9)
+
+Q(CAN1)
+
+Q(CAN2)
+
 Q(CERT_NONE)
 
 Q(CERT_OPTIONAL)
@@ -2891,11 +3307,145 @@ Q(CERT_REQUIRED)
 
 Q(CancelledError)
 
+Q(D0)
+
+Q(D0)
+
+Q(D1)
+
+Q(D1)
+
+Q(D10)
+
+Q(D10)
+
+Q(D11)
+
+Q(D11)
+
+Q(D12)
+
+Q(D12)
+
+Q(D13)
+
+Q(D13)
+
+Q(D14)
+
+Q(D14)
+
+Q(D15)
+
+Q(D15)
+
+Q(D2)
+
+Q(D2)
+
+Q(D3)
+
+Q(D3)
+
+Q(D4)
+
+Q(D4)
+
+Q(D5)
+
+Q(D5)
+
+Q(D6)
+
+Q(D6)
+
+Q(D7)
+
+Q(D7)
+
+Q(D8)
+
+Q(D8)
+
+Q(D9)
+
+Q(D9)
+
+Q(DAC)
+
 Q(DESC)
 
+Q(DMA1)
+
+Q(DMA2)
+
 Q(DeflateIO)
 
 Q(DeflateIO)
+
+Q(E0)
+
+Q(E0)
+
+Q(E1)
+
+Q(E1)
+
+Q(E10)
+
+Q(E10)
+
+Q(E11)
+
+Q(E11)
+
+Q(E12)
+
+Q(E12)
+
+Q(E13)
+
+Q(E13)
+
+Q(E14)
+
+Q(E14)
+
+Q(E15)
+
+Q(E15)
+
+Q(E2)
+
+Q(E2)
+
+Q(E3)
+
+Q(E3)
+
+Q(E4)
+
+Q(E4)
+
+Q(E5)
+
+Q(E5)
+
+Q(E6)
+
+Q(E6)
+
+Q(E7)
+
+Q(E7)
+
+Q(E8)
+
+Q(E8)
+
+Q(E9)
+
+Q(E9)
 
 Q(EACCES)
 
@@ -3035,6 +3585,22 @@ Q(FrameBuffer)
 
 Q(FrameBuffer1)
 
+Q(GPIOA)
+
+Q(GPIOB)
+
+Q(GPIOC)
+
+Q(GPIOD)
+
+Q(GPIOE)
+
+Q(GPIOF)
+
+Q(GPIOG)
+
+Q(GPIOH)
+
 Q(GS2_HMSB)
 
 Q(GS4_HMSB)
@@ -3046,6 +3612,24 @@ Q(GZIP)
 Q(GeneratorExit)
 
 Q(GeneratorExit)
+
+Q(H0)
+
+Q(H0)
+
+Q(H1)
+
+Q(H1)
+
+Q(I2C1)
+
+Q(I2C2)
+
+Q(I2C3)
+
+Q(IN)
+
+Q(IN)
 
 Q(INCL)
 
@@ -3063,6 +3647,12 @@ Q(IOBase)
 
 Q(IOBase)
 
+Q(IRQ_FALLING)
+
+Q(IRQ_RISING)
+
+Q(IWDG)
+
 Q(ImportError)
 
 Q(ImportError)
@@ -3082,6 +3672,18 @@ Q(KeyError)
 Q(KeyboardInterrupt)
 
 Q(KeyboardInterrupt)
+
+Q(LED)
+
+Q(LED)
+
+Q(LED_BLUE)
+
+Q(LED_GREEN)
+
+Q(LED_RED)
+
+Q(LED_YELLOW)
 
 Q(LITTLE_ENDIAN)
 
@@ -3127,9 +3729,21 @@ Q(NotImplementedError)
 
 Q(NotImplementedError)
 
+Q(OPEN_DRAIN)
+
+Q(OPEN_DRAIN)
+
 Q(OSError)
 
 Q(OSError)
+
+Q(OUT)
+
+Q(OUT)
+
+Q(OUT_OD)
+
+Q(OUT_PP)
 
 Q(OrderedDict)
 
@@ -3159,10 +3773,26 @@ Q(PROTOCOL_TLS_SERVER)
 
 Q(PTR)
 
+Q(PULL_DOWN)
+
+Q(PULL_NONE)
+
+Q(PULL_UP)
+
+Q(PWR)
+
+Q(Pin)
+
+Q(Pin)
+
 Q(RAW)
+
+Q(RCC)
 
 Q(RGB565)
 
+Q(RTC)
+
 Q(RingIO)
 
 Q(RingIO)
@@ -3176,6 +3806,8 @@ Q(SDCard)
 Q(SDCard)
 
 Q(SDCard)
+
+Q(SDIO)
 
 Q(SHORT)
 
@@ -3197,6 +3829,12 @@ Q(SO_REUSEADDR)
 
 Q(SO_SNDTIMEO)
 
+Q(SPI1)
+
+Q(SPI2)
+
+Q(SPI3)
+
 Q(SSLContext)
 
 Q(SSLContext)
@@ -3205,6 +3843,8 @@ Q(SSLSocket)
 
 Q(STA_IF)
 
+Q(SYSCFG)
+
 Q(Signal)
 
 Q(Signal)
@@ -3231,6 +3871,34 @@ Q(SystemExit)
 
 Q(SystemExit)
 
+Q(TIM1)
+
+Q(TIM10)
+
+Q(TIM11)
+
+Q(TIM12)
+
+Q(TIM13)
+
+Q(TIM14)
+
+Q(TIM2)
+
+Q(TIM3)
+
+Q(TIM4)
+
+Q(TIM5)
+
+Q(TIM6)
+
+Q(TIM7)
+
+Q(TIM8)
+
+Q(TIM9)
+
 Q(Task)
 
 Q(Task)
@@ -3246,6 +3914,10 @@ Q(TextIOWrapper)
 Q(TypeError)
 
 Q(TypeError)
+
+Q(UART4)
+
+Q(UART5)
 
 Q(UINT)
 
@@ -3260,6 +3932,18 @@ Q(UINT8)
 Q(ULONG)
 
 Q(ULONGLONG)
+
+Q(USART1)
+
+Q(USART2)
+
+Q(USART3)
+
+Q(USART6)
+
+Q(USB_OTG_FS)
+
+Q(USB_OTG_HS)
 
 Q(USHORT)
 
@@ -3286,6 +3970,8 @@ Q(VfsFat)
 Q(VirtIODev)
 
 Q(VirtIODev)
+
+Q(WWDG)
 
 Q(ZLIB)
 
@@ -3593,6 +4279,10 @@ Q(__name__)
 
 Q(__name__)
 
+Q(__name__)
+
+Q(__name__)
+
 Q(__ne__)
 
 Q(__neg__)
@@ -3805,6 +4495,8 @@ Q(aes)
 
 Q(all)
 
+Q(alt)
+
 Q(any)
 
 Q(any)
@@ -3854,6 +4546,10 @@ Q(blit)
 Q(bluetooth)
 
 Q(bluetooth)
+
+Q(board)
+
+Q(board)
 
 Q(bool)
 
@@ -4017,6 +4713,10 @@ Q(count)
 
 Q(country)
 
+Q(cpu)
+
+Q(cpu)
+
 Q(crc32)
 
 Q(cryptolib)
@@ -4046,6 +4746,8 @@ Q(deflate)
 Q(degrees)
 
 Q(delattr)
+
+Q(delay)
 
 Q(deleter)
 
@@ -4098,6 +4800,10 @@ Q(dumps)
 Q(e)
 
 Q(e)
+
+Q(elapsed_micros)
+
+Q(elapsed_millis)
 
 Q(ellipse)
 
@@ -4603,6 +5309,18 @@ Q(function)
 
 Q(function)
 
+Q(function)
+
+Q(function)
+
+Q(function)
+
+Q(function)
+
+Q(function)
+
+Q(function)
+
 Q(gamma)
 
 Q(gap_advertise)
@@ -4689,6 +5407,8 @@ Q(hex)
 
 Q(hexlify)
 
+Q(high)
+
 Q(hline)
 
 Q(hostname)
@@ -4719,6 +5439,10 @@ Q(indices)
 
 Q(inf)
 
+Q(info)
+
+Q(init)
+
 Q(input)
 
 Q(insert)
@@ -4726,6 +5450,8 @@ Q(insert)
 Q(int)
 
 Q(int)
+
+Q(intensity)
 
 Q(intersection)
 
@@ -4879,6 +5605,8 @@ Q(log10)
 
 Q(log2)
 
+Q(low)
+
 Q(lower)
 
 Q(lstrip)
@@ -4923,9 +5651,17 @@ Q(md5)
 
 Q(mem)
 
+Q(mem)
+
+Q(mem16)
+
 Q(mem16)
 
 Q(mem32)
+
+Q(mem32)
+
+Q(mem8)
 
 Q(mem8)
 
@@ -4949,6 +5685,10 @@ Q(micropython)
 
 Q(micropython)
 
+Q(micros)
+
+Q(millis)
+
 Q(min)
 
 Q(minkeypage)
@@ -4962,6 +5702,10 @@ Q(mkdir)
 Q(mkfs)
 
 Q(mkfs)
+
+Q(mode)
+
+Q(mode)
 
 Q(mode)
 
@@ -5020,6 +5764,14 @@ Q(object)
 Q(oct)
 
 Q(off)
+
+Q(off)
+
+Q(off)
+
+Q(on)
+
+Q(on)
 
 Q(on)
 
@@ -5119,9 +5871,17 @@ Q(ps1)
 
 Q(ps2)
 
+Q(pull)
+
+Q(pull)
+
 Q(push)
 
 Q(put)
+
+Q(pyb)
+
+Q(pyb)
 
 Q(python_compiler)
 
@@ -5455,6 +6215,10 @@ Q(step)
 
 Q(step)
 
+Q(stm)
+
+Q(stm)
+
 Q(stop)
 
 Q(stop)
@@ -5543,6 +6307,8 @@ Q(tls)
 
 Q(to_bytes)
 
+Q(toggle)
+
 Q(trunc)
 
 Q(tuple)
@@ -5560,6 +6326,8 @@ Q(uctypes)
 Q(uctypes)
 
 Q(uctypes)
+
+Q(udelay)
 
 Q(umount)
 
@@ -5604,6 +6372,10 @@ Q(usys)
 Q(utf_hyphen_8)
 
 Q(utf_hyphen_8)
+
+Q(value)
+
+Q(value)
 
 Q(value)
 

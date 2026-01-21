@@ -196,6 +196,17 @@
 #define MICROPY_PY_MACHINE_TIMER          (0)
 #define MICROPY_PY_MACHINE_WDT            (0)
 
+// Enable pyboard-specific libraries (pyb, stm, lcd160cr)
+// pyb module provides legacy pyboard API (delay, millis, info, etc.)
+#ifndef MICROPY_PY_PYB
+#define MICROPY_PY_PYB                    (1)
+#endif
+
+// stm module provides low-level STM32 register access
+#ifndef MICROPY_PY_STM
+#define MICROPY_PY_STM                    (1)
+#endif
+
 // Bluetooth (low-level) via MicroPython's `bluetooth` module.
 // This port runs the REPL on USART2; Bluetooth HCI must use a different UART
 // (see py_port/bthci_uart.c which is configured to use USART3).

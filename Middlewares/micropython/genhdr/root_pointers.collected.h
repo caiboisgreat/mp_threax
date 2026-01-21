@@ -6,6 +6,10 @@ MP_REGISTER_ROOT_POINTER(mp_obj_list_t mp_sys_argv_obj);
 
 MP_REGISTER_ROOT_POINTER(mp_obj_t bluetooth);
 
+MP_REGISTER_ROOT_POINTER(mp_obj_t pin_class_map_dict);
+
+MP_REGISTER_ROOT_POINTER(mp_obj_t pin_class_mapper);
+
 MP_REGISTER_ROOT_POINTER(mp_obj_t sys_mutable[MP_SYS_MUTABLE_NUM]);
 
 MP_REGISTER_ROOT_POINTER(mp_sched_item_t sched_queue[(4)]);
