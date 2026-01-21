@@ -76,9 +76,4 @@ void mp_hal_pin_high(const machine_pin_obj_t *pin);
 #define MP_HAL_PIN_PULL_UP              (1)
 #define MP_HAL_PIN_PULL_DOWN            (2)
 
-// LED macros
-#define MICROPY_HW_LED_INVERTED (0)
-#define MICROPY_HW_LED_ON(pin)  do { (pin)->gpio->BSRR = (pin)->pin_mask; } while (0)
-#define MICROPY_HW_LED_OFF(pin) do { (pin)->gpio->BSRR = (pin)->pin_mask << 16; } while (0)
-
 #endif // MICROPY_INCLUDED_PY_PORT_PIN_H

@@ -1,6 +1,9 @@
 #include <stdint.h>
 #include <stdbool.h>
 
+// Board-specific configuration
+#include "mpconfigboard.h"
+
 // options to control how MicroPython is built
 
 // ooFatFs (MicroPython's bundled FatFs fork) requires FFCONF_H to point at the
