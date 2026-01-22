@@ -213,10 +213,60 @@ MP_DEFINE_CONST_DICT(machine_pin_cpu_pins_locals_dict, pin_cpu_pins_locals_dict_
 
 // Board pins dict (user-friendly names)
 static const mp_rom_map_elem_t pin_board_pins_locals_dict_table[] = {
+    // Pyboard v1.1 X header
+    { MP_ROM_QSTR(MP_QSTR_X1), MP_ROM_PTR(&pin_A0) },
+    { MP_ROM_QSTR(MP_QSTR_X2), MP_ROM_PTR(&pin_A1) },
+    { MP_ROM_QSTR(MP_QSTR_X3), MP_ROM_PTR(&pin_A2) },
+    { MP_ROM_QSTR(MP_QSTR_X4), MP_ROM_PTR(&pin_A3) },
+    { MP_ROM_QSTR(MP_QSTR_X5), MP_ROM_PTR(&pin_A4) },
+    { MP_ROM_QSTR(MP_QSTR_X6), MP_ROM_PTR(&pin_A5) },
+    { MP_ROM_QSTR(MP_QSTR_X7), MP_ROM_PTR(&pin_A6) },
+    { MP_ROM_QSTR(MP_QSTR_X8), MP_ROM_PTR(&pin_A7) },
+    { MP_ROM_QSTR(MP_QSTR_X9), MP_ROM_PTR(&pin_B6) },
+    { MP_ROM_QSTR(MP_QSTR_X10), MP_ROM_PTR(&pin_B7) },
+    { MP_ROM_QSTR(MP_QSTR_X11), MP_ROM_PTR(&pin_C4) },
+    { MP_ROM_QSTR(MP_QSTR_X12), MP_ROM_PTR(&pin_C5) },
+    { MP_ROM_QSTR(MP_QSTR_X17), MP_ROM_PTR(&pin_B3) },
+    { MP_ROM_QSTR(MP_QSTR_X18), MP_ROM_PTR(&pin_C13) },
+    { MP_ROM_QSTR(MP_QSTR_X19), MP_ROM_PTR(&pin_C0) },
+    { MP_ROM_QSTR(MP_QSTR_X20), MP_ROM_PTR(&pin_C1) },
+    { MP_ROM_QSTR(MP_QSTR_X21), MP_ROM_PTR(&pin_C2) },
+    { MP_ROM_QSTR(MP_QSTR_X22), MP_ROM_PTR(&pin_C3) },
+
+    // Pyboard v1.1 Y header
+    { MP_ROM_QSTR(MP_QSTR_Y1), MP_ROM_PTR(&pin_C6) },
+    { MP_ROM_QSTR(MP_QSTR_Y2), MP_ROM_PTR(&pin_C7) },
+    { MP_ROM_QSTR(MP_QSTR_Y3), MP_ROM_PTR(&pin_B8) },
+    { MP_ROM_QSTR(MP_QSTR_Y4), MP_ROM_PTR(&pin_B9) },
+    { MP_ROM_QSTR(MP_QSTR_Y5), MP_ROM_PTR(&pin_B12) },
+    { MP_ROM_QSTR(MP_QSTR_Y6), MP_ROM_PTR(&pin_B13) },
+    { MP_ROM_QSTR(MP_QSTR_Y7), MP_ROM_PTR(&pin_B14) },
+    { MP_ROM_QSTR(MP_QSTR_Y8), MP_ROM_PTR(&pin_B15) },
+    { MP_ROM_QSTR(MP_QSTR_Y9), MP_ROM_PTR(&pin_B10) },
+    { MP_ROM_QSTR(MP_QSTR_Y10), MP_ROM_PTR(&pin_B11) },
+    { MP_ROM_QSTR(MP_QSTR_Y11), MP_ROM_PTR(&pin_B0) },
+    { MP_ROM_QSTR(MP_QSTR_Y12), MP_ROM_PTR(&pin_B1) },
+
+    // Other Pyboard v1.1 board pins
+    { MP_ROM_QSTR(MP_QSTR_SW), MP_ROM_PTR(&pin_B3) },
     { MP_ROM_QSTR(MP_QSTR_LED_RED), MP_ROM_PTR(&pin_A13) },
     { MP_ROM_QSTR(MP_QSTR_LED_GREEN), MP_ROM_PTR(&pin_A14) },
     { MP_ROM_QSTR(MP_QSTR_LED_YELLOW), MP_ROM_PTR(&pin_A15) },
     { MP_ROM_QSTR(MP_QSTR_LED_BLUE), MP_ROM_PTR(&pin_B4) },
+    { MP_ROM_QSTR(MP_QSTR_MMA_INT), MP_ROM_PTR(&pin_B2) },
+    { MP_ROM_QSTR(MP_QSTR_MMA_AVDD), MP_ROM_PTR(&pin_B5) },
+    { MP_ROM_QSTR(MP_QSTR_SD_D0), MP_ROM_PTR(&pin_C8) },
+    { MP_ROM_QSTR(MP_QSTR_SD_D1), MP_ROM_PTR(&pin_C9) },
+    { MP_ROM_QSTR(MP_QSTR_SD_D2), MP_ROM_PTR(&pin_C10) },
+    { MP_ROM_QSTR(MP_QSTR_SD_D3), MP_ROM_PTR(&pin_C11) },
+    { MP_ROM_QSTR(MP_QSTR_SD_CMD), MP_ROM_PTR(&pin_D2) },
+    { MP_ROM_QSTR(MP_QSTR_SD_CK), MP_ROM_PTR(&pin_C12) },
+    { MP_ROM_QSTR(MP_QSTR_SD), MP_ROM_PTR(&pin_A8) },
+    { MP_ROM_QSTR(MP_QSTR_SD_SW), MP_ROM_PTR(&pin_A8) },
+    { MP_ROM_QSTR(MP_QSTR_USB_VBUS), MP_ROM_PTR(&pin_A9) },
+    { MP_ROM_QSTR(MP_QSTR_USB_ID), MP_ROM_PTR(&pin_A10) },
+    { MP_ROM_QSTR(MP_QSTR_USB_DM), MP_ROM_PTR(&pin_A11) },
+    { MP_ROM_QSTR(MP_QSTR_USB_DP), MP_ROM_PTR(&pin_A12) },
 };
 MP_DEFINE_CONST_DICT(machine_pin_board_pins_locals_dict, pin_board_pins_locals_dict_table);
 

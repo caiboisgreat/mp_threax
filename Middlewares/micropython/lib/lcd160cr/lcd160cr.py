@@ -7,7 +7,26 @@ MIT license; Copyright (c) 2017-2023 Damien P. George
 
 from micropython import const
 from time import sleep_ms
-from machine import Pin, I2C, SPI
+import machine
+
+try:
+    Pin = machine.Pin
+    I2C = machine.I2C
+    SPI = machine.SPI
+except AttributeError:
+    Pin = None
+    I2C = None
+    SPI = None
+
+try:
+    SoftI2C = machine.SoftI2C
+except AttributeError:
+    SoftI2C = None
+
+try:
+    SoftSPI = machine.SoftSPI
+except AttributeError:
+    SoftSPI = None
 
 # Constants for orientation
 PORTRAIT = const(0x00)
@@ -41,23 +60,89 @@ class LCD160CR:
             i2c_addr: I2C address of the display (default 0x62/98)
         """
         if connect is not None:
+            if Pin is None:
+                raise ImportError('machine.Pin not available in this port')
             # Auto-configure based on position
             if connect == 'X':
                 self.pwr = Pin('X4', Pin.OUT) if pwr is None else pwr
-                self.i2c = I2C('X') if i2c is None else i2c
-                self.spi = SPI('X') if spi is None else spi
+                if i2c is None:
+                    if I2C is not None:
+                        self.i2c = I2C('X')
+                    elif SoftI2C is not None:
+                        self.i2c = SoftI2C(scl=Pin('X9'), sda=Pin('X10'))
+                    else:
+                        raise ImportError('machine.I2C/SoftI2C not available in this port')
+                else:
+                    self.i2c = i2c
+                if spi is None:
+                    if SPI is not None:
+                        self.spi = SPI('X')
+                    elif SoftSPI is not None:
+                        self.spi = SoftSPI(sck=Pin('X6'), mosi=Pin('X8'), miso=Pin('X7'))
+                    else:
+                        raise ImportError('machine.SPI/SoftSPI not available in this port')
+                else:
+                    self.spi = spi
             elif connect == 'Y':
                 self.pwr = Pin('Y4', Pin.OUT) if pwr is None else pwr
-                self.i2c = I2C('Y') if i2c is None else i2c
-                self.spi = SPI('Y') if spi is None else spi
+                if i2c is None:
+                    if I2C is not None:
+                        self.i2c = I2C('Y')
+                    elif SoftI2C is not None:
+                        self.i2c = SoftI2C(scl=Pin('Y9'), sda=Pin('Y10'))
+                    else:
+                        raise ImportError('machine.I2C/SoftI2C not available in this port')
+                else:
+                    self.i2c = i2c
+                if spi is None:
+                    if SPI is not None:
+                        self.spi = SPI('Y')
+                    elif SoftSPI is not None:
+                        self.spi = SoftSPI(sck=Pin('Y6'), mosi=Pin('Y8'), miso=Pin('Y7'))
+                    else:
+                        raise ImportError('machine.SPI/SoftSPI not available in this port')
+                else:
+                    self.spi = spi
             elif connect == 'XY':
                 self.pwr = Pin('X4', Pin.OUT) if pwr is None else pwr
-                self.i2c = I2C('Y') if i2c is None else i2c
-                self.spi = SPI('X') if spi is None else spi
+                if i2c is None:
+                    if I2C is not None:
+                        self.i2c = I2C('Y')
+                    elif SoftI2C is not None:
+                        self.i2c = SoftI2C(scl=Pin('Y9'), sda=Pin('Y10'))
+                    else:
+                        raise ImportError('machine.I2C/SoftI2C not available in this port')
+                else:
+                    self.i2c = i2c
+                if spi is None:
+                    if SPI is not None:
+                        self.spi = SPI('X')
+                    elif SoftSPI is not None:
+                        self.spi = SoftSPI(sck=Pin('X6'), mosi=Pin('X8'), miso=Pin('X7'))
+                    else:
+                        raise ImportError('machine.SPI/SoftSPI not available in this port')
+                else:
+                    self.spi = spi
             elif connect == 'YX':
                 self.pwr = Pin('Y4', Pin.OUT) if pwr is None else pwr
-                self.i2c = I2C('X') if i2c is None else i2c
-                self.spi = SPI('Y') if spi is None else spi
+                if i2c is None:
+                    if I2C is not None:
+                        self.i2c = I2C('X')
+                    elif SoftI2C is not None:
+                        self.i2c = SoftI2C(scl=Pin('X9'), sda=Pin('X10'))
+                    else:
+                        raise ImportError('machine.I2C/SoftI2C not available in this port')
+                else:
+                    self.i2c = i2c
+                if spi is None:
+                    if SPI is not None:
+                        self.spi = SPI('Y')
+                    elif SoftSPI is not None:
+                        self.spi = SoftSPI(sck=Pin('Y6'), mosi=Pin('Y8'), miso=Pin('Y7'))
+                    else:
+                        raise ImportError('machine.SPI/SoftSPI not available in this port')
+                else:
+                    self.spi = spi
             else:
                 raise ValueError('unknown connect value')
         else:

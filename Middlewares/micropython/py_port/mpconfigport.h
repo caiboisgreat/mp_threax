@@ -189,15 +189,25 @@
 #define MICROPY_PY_MACHINE_RESET          (1)
 #define MICROPY_PY_MACHINE_BARE_METAL_FUNCS (1)
 #define MICROPY_PY_MACHINE_BOOTLOADER     (0)
-// Keep all peripheral classes off for now to avoid needing pin/peripheral glue.
-#define MICROPY_PY_MACHINE_PIN            (0)
+// Keep hardware peripherals minimal, but enable Pin and I2C/SPI buses.
+#define MICROPY_PY_MACHINE_PIN            (1)
+#define MICROPY_PY_MACHINE_SOFTI2C        (1)
+#define MICROPY_PY_MACHINE_SOFTSPI        (1)
 #define MICROPY_PY_MACHINE_UART           (0)
-#define MICROPY_PY_MACHINE_I2C            (0)
-#define MICROPY_PY_MACHINE_SPI            (0)
+#define MICROPY_PY_MACHINE_I2C            (1)
+#define MICROPY_PY_MACHINE_SPI            (1)
 #define MICROPY_PY_MACHINE_ADC            (0)
 #define MICROPY_PY_MACHINE_PWM            (0)
 #define MICROPY_PY_MACHINE_TIMER          (0)
 #define MICROPY_PY_MACHINE_WDT            (0)
+
+// Hardware I2C/SPI support (STM32F405)
+#define MICROPY_HW_ENABLE_HW_I2C          (1)
+#define MICROPY_HW_MAX_I2C                (2)
+
+// SPI bit order constants (avoid HAL headers in config)
+#define MICROPY_PY_MACHINE_SPI_MSB        (0x00000000U)
+#define MICROPY_PY_MACHINE_SPI_LSB        (0x00000080U)
 
 // Enable pyboard-specific libraries (pyb, stm, lcd160cr)
 // pyb module provides legacy pyboard API (delay, millis, info, etc.)
@@ -298,8 +308,7 @@ typedef long mp_off_t;
 	#include <alloca.h>
 #endif
 
-#define MICROPY_HW_BOARD_NAME "PYBASE"
-#define MICROPY_HW_MCU_NAME "STM32F405RG6"
+// Board/MCU names are defined in mpconfigboard.h
 
 #if defined(__linux__) || defined(__APPLE__)
 #define MICROPY_MIN_USE_STDOUT (1)

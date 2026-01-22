@@ -43,6 +43,95 @@ extern const mp_obj_type_t pin_type;
 extern const mp_obj_type_t pin_board_pins_obj_type;
 extern const mp_obj_type_t pin_cpu_pins_obj_type;
 
+// CPU pin objects (defined in pins.c)
+extern const machine_pin_obj_t pin_A0;
+extern const machine_pin_obj_t pin_A1;
+extern const machine_pin_obj_t pin_A2;
+extern const machine_pin_obj_t pin_A3;
+extern const machine_pin_obj_t pin_A4;
+extern const machine_pin_obj_t pin_A5;
+extern const machine_pin_obj_t pin_A6;
+extern const machine_pin_obj_t pin_A7;
+extern const machine_pin_obj_t pin_A8;
+extern const machine_pin_obj_t pin_A9;
+extern const machine_pin_obj_t pin_A10;
+extern const machine_pin_obj_t pin_A11;
+extern const machine_pin_obj_t pin_A12;
+extern const machine_pin_obj_t pin_A13;
+extern const machine_pin_obj_t pin_A14;
+extern const machine_pin_obj_t pin_A15;
+
+extern const machine_pin_obj_t pin_B0;
+extern const machine_pin_obj_t pin_B1;
+extern const machine_pin_obj_t pin_B2;
+extern const machine_pin_obj_t pin_B3;
+extern const machine_pin_obj_t pin_B4;
+extern const machine_pin_obj_t pin_B5;
+extern const machine_pin_obj_t pin_B6;
+extern const machine_pin_obj_t pin_B7;
+extern const machine_pin_obj_t pin_B8;
+extern const machine_pin_obj_t pin_B9;
+extern const machine_pin_obj_t pin_B10;
+extern const machine_pin_obj_t pin_B11;
+extern const machine_pin_obj_t pin_B12;
+extern const machine_pin_obj_t pin_B13;
+extern const machine_pin_obj_t pin_B14;
+extern const machine_pin_obj_t pin_B15;
+
+extern const machine_pin_obj_t pin_C0;
+extern const machine_pin_obj_t pin_C1;
+extern const machine_pin_obj_t pin_C2;
+extern const machine_pin_obj_t pin_C3;
+extern const machine_pin_obj_t pin_C4;
+extern const machine_pin_obj_t pin_C5;
+extern const machine_pin_obj_t pin_C6;
+extern const machine_pin_obj_t pin_C7;
+extern const machine_pin_obj_t pin_C8;
+extern const machine_pin_obj_t pin_C9;
+extern const machine_pin_obj_t pin_C10;
+extern const machine_pin_obj_t pin_C11;
+extern const machine_pin_obj_t pin_C12;
+extern const machine_pin_obj_t pin_C13;
+extern const machine_pin_obj_t pin_C14;
+extern const machine_pin_obj_t pin_C15;
+
+extern const machine_pin_obj_t pin_D0;
+extern const machine_pin_obj_t pin_D1;
+extern const machine_pin_obj_t pin_D2;
+extern const machine_pin_obj_t pin_D3;
+extern const machine_pin_obj_t pin_D4;
+extern const machine_pin_obj_t pin_D5;
+extern const machine_pin_obj_t pin_D6;
+extern const machine_pin_obj_t pin_D7;
+extern const machine_pin_obj_t pin_D8;
+extern const machine_pin_obj_t pin_D9;
+extern const machine_pin_obj_t pin_D10;
+extern const machine_pin_obj_t pin_D11;
+extern const machine_pin_obj_t pin_D12;
+extern const machine_pin_obj_t pin_D13;
+extern const machine_pin_obj_t pin_D14;
+extern const machine_pin_obj_t pin_D15;
+
+extern const machine_pin_obj_t pin_E0;
+extern const machine_pin_obj_t pin_E1;
+extern const machine_pin_obj_t pin_E2;
+extern const machine_pin_obj_t pin_E3;
+extern const machine_pin_obj_t pin_E4;
+extern const machine_pin_obj_t pin_E5;
+extern const machine_pin_obj_t pin_E6;
+extern const machine_pin_obj_t pin_E7;
+extern const machine_pin_obj_t pin_E8;
+extern const machine_pin_obj_t pin_E9;
+extern const machine_pin_obj_t pin_E10;
+extern const machine_pin_obj_t pin_E11;
+extern const machine_pin_obj_t pin_E12;
+extern const machine_pin_obj_t pin_E13;
+extern const machine_pin_obj_t pin_E14;
+extern const machine_pin_obj_t pin_E15;
+
+extern const machine_pin_obj_t pin_H0;
+extern const machine_pin_obj_t pin_H1;
+
 // Board pin definitions
 extern const mp_obj_dict_t machine_pin_board_pins_locals_dict;
 extern const mp_obj_dict_t machine_pin_cpu_pins_locals_dict;
@@ -75,5 +164,9 @@ void mp_hal_pin_high(const machine_pin_obj_t *pin);
 #define MP_HAL_PIN_PULL_NONE            (0)
 #define MP_HAL_PIN_PULL_UP              (1)
 #define MP_HAL_PIN_PULL_DOWN            (2)
+
+// Alternate-function identifiers (minimal set for this port)
+#define AF_FN_I2C                        (1)
+#define AF_FN_SPI                        (2)
 
 #endif // MICROPY_INCLUDED_PY_PORT_PIN_H

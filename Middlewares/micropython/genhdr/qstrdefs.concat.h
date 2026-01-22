@@ -939,17 +939,25 @@ Q(LONG)
 
 Q(LONGLONG)
 
+Q(LSB)
+
 Q(LookupError)
 
 Q(LookupError)
 
 Q(MBEDTLS_VERSION)
 
+Q(MMA_AVDD)
+
+Q(MMA_INT)
+
 Q(MONO_HLSB)
 
 Q(MONO_HMSB)
 
 Q(MONO_VLSB)
+
+Q(MSB)
 
 Q(MVLSB)
 
@@ -1033,6 +1041,10 @@ Q(Pin)
 
 Q(Pin)
 
+Q(Pin)
+
+Q(Pin)
+
 Q(RAW)
 
 Q(RCC)
@@ -1049,6 +1061,8 @@ Q(RuntimeError)
 
 Q(RuntimeError)
 
+Q(SD)
+
 Q(SDCard)
 
 Q(SDCard)
@@ -1056,6 +1070,20 @@ Q(SDCard)
 Q(SDCard)
 
 Q(SDIO)
+
+Q(SD_CK)
+
+Q(SD_CMD)
+
+Q(SD_D0)
+
+Q(SD_D1)
+
+Q(SD_D2)
+
+Q(SD_D3)
+
+Q(SD_SW)
 
 Q(SHORT)
 
@@ -1091,11 +1119,21 @@ Q(SSLSocket)
 
 Q(STA_IF)
 
+Q(SW)
+
 Q(SYSCFG)
 
 Q(Signal)
 
 Q(Signal)
+
+Q(SoftI2C)
+
+Q(SoftI2C)
+
+Q(SoftSPI)
+
+Q(SoftSPI)
 
 Q(StopAsyncIteration)
 
@@ -1189,9 +1227,17 @@ Q(USART3)
 
 Q(USART6)
 
+Q(USB_DM)
+
+Q(USB_DP)
+
+Q(USB_ID)
+
 Q(USB_OTG_FS)
 
 Q(USB_OTG_HS)
+
+Q(USB_VBUS)
 
 Q(USHORT)
 
@@ -1220,6 +1266,66 @@ Q(VirtIODev)
 Q(VirtIODev)
 
 Q(WWDG)
+
+Q(X1)
+
+Q(X10)
+
+Q(X11)
+
+Q(X12)
+
+Q(X17)
+
+Q(X18)
+
+Q(X19)
+
+Q(X2)
+
+Q(X20)
+
+Q(X21)
+
+Q(X22)
+
+Q(X3)
+
+Q(X4)
+
+Q(X5)
+
+Q(X6)
+
+Q(X7)
+
+Q(X8)
+
+Q(X9)
+
+Q(Y1)
+
+Q(Y10)
+
+Q(Y11)
+
+Q(Y12)
+
+Q(Y2)
+
+Q(Y3)
+
+Q(Y4)
+
+Q(Y5)
+
+Q(Y6)
+
+Q(Y7)
+
+Q(Y8)
+
+Q(Y9)
 
 Q(ZLIB)
 
@@ -1731,9 +1837,13 @@ Q(active)
 
 Q(add)
 
+Q(addr)
+
 Q(addr_mode)
 
 Q(addressof)
+
+Q(addrsize)
 
 Q(adv_data)
 
@@ -1756,6 +1866,8 @@ Q(append)
 Q(append)
 
 Q(appendleft)
+
+Q(arg)
 
 Q(args)
 
@@ -1781,6 +1893,10 @@ Q(atanh)
 
 Q(b2a_base64)
 
+Q(baudrate)
+
+Q(baudrate)
+
 Q(bin)
 
 Q(binascii)
@@ -1788,6 +1904,8 @@ Q(binascii)
 Q(binascii)
 
 Q(bind)
+
+Q(bits)
 
 Q(blit)
 
@@ -1993,6 +2111,8 @@ Q(deflate)
 
 Q(degrees)
 
+Q(deinit)
+
 Q(delattr)
 
 Q(delay)
@@ -2129,6 +2249,10 @@ Q(filter)
 
 Q(find)
 
+Q(firstbit)
+
+Q(firstbit)
+
 Q(flags)
 
 Q(float)
@@ -2150,6 +2274,8 @@ Q(format)
 Q(framebuf)
 
 Q(framebuf)
+
+Q(freq)
 
 Q(freq)
 
@@ -2691,6 +2817,10 @@ Q(info)
 
 Q(init)
 
+Q(init)
+
+Q(init)
+
 Q(input)
 
 Q(insert)
@@ -2919,6 +3049,8 @@ Q(mem_free)
 
 Q(mem_info)
 
+Q(memaddr)
+
 Q(memoryview)
 
 Q(memoryview)
@@ -2940,6 +3072,10 @@ Q(millis)
 Q(min)
 
 Q(minkeypage)
+
+Q(miso)
+
+Q(miso)
 
 Q(mkdir)
 
@@ -2966,6 +3102,10 @@ Q(module)
 Q(modules)
 
 Q(modules)
+
+Q(mosi)
+
+Q(mosi)
 
 Q(mount)
 
@@ -3063,6 +3203,10 @@ Q(ph_key)
 
 Q(phase)
 
+Q(phase)
+
+Q(phase)
+
 Q(pi)
 
 Q(pi)
@@ -3078,6 +3222,10 @@ Q(platform)
 Q(platform)
 
 Q(polar)
+
+Q(polarity)
+
+Q(polarity)
 
 Q(poll)
 
@@ -3177,11 +3325,25 @@ Q(read)
 
 Q(read)
 
-Q(readblocks)
+Q(read)
 
 Q(readblocks)
 
 Q(readblocks)
+
+Q(readblocks)
+
+Q(readfrom)
+
+Q(readfrom_into)
+
+Q(readfrom_mem)
+
+Q(readfrom_mem_into)
+
+Q(readinto)
+
+Q(readinto)
 
 Q(readinto)
 
@@ -3295,9 +3457,19 @@ Q(rsplit)
 
 Q(rstrip)
 
+Q(scan)
+
 Q(schedule)
 
+Q(sck)
+
+Q(sck)
+
+Q(scl)
+
 Q(scroll)
+
+Q(sda)
 
 Q(search)
 
@@ -3429,6 +3601,8 @@ Q(start)
 
 Q(start)
 
+Q(start)
+
 Q(startswith)
 
 Q(stat)
@@ -3466,6 +3640,8 @@ Q(step)
 Q(stm)
 
 Q(stm)
+
+Q(stop)
 
 Q(stop)
 
@@ -3544,6 +3720,8 @@ Q(ticks_us)
 Q(time)
 
 Q(time)
+
+Q(timeout)
 
 Q(timeout)
 
@@ -3671,11 +3849,23 @@ Q(write)
 
 Q(write)
 
-Q(writeblocks)
+Q(write)
+
+Q(write)
+
+Q(write_readinto)
 
 Q(writeblocks)
 
 Q(writeblocks)
+
+Q(writeblocks)
+
+Q(writeto)
+
+Q(writeto_mem)
+
+Q(writevto)
 
 Q(zip)
 

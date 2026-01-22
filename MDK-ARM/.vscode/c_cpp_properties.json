@@ -42,6 +42,7 @@
                 "e:\\Work\\code\\study\\mp_threadx\\MDK-ARM",
                 "e:\\Work\\code\\study\\mp_threadx\\Core\\Src",
                 "e:\\Work\\code\\study\\mp_threadx\\Drivers\\STM32F4xx_HAL_Driver\\Src",
+                "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\drivers\\bus",
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\shared\\tinyusb",
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\lib\\tinyusb\\src\\common",
                 "e:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\lib\\tinyusb\\src\\device",

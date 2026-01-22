@@ -766,6 +766,21 @@
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c</FilePath>
             </File>
+            <File>
+              <FileName>stm32f4xx_hal_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_i2c_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -822,6 +837,11 @@
               <FilePath>..\Middlewares\micropython\py_port\led.c</FilePath>
             </File>
             <File>
+              <FileName>softspi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\drivers\bus\softspi.c</FilePath>
+            </File>
+            <File>
               <FileName>pin.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Middlewares\micropython\py_port\pin.c</FilePath>
@@ -835,6 +855,26 @@
               <FileName>mphalport.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Middlewares\micropython\py_port\mphalport.c</FilePath>
+            </File>
+            <File>
+              <FileName>i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>machine_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\machine_i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>machine_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\machine_spi.c</FilePath>
             </File>
             <File>
               <FileName>frozen_mpy.c</FileName>
@@ -875,6 +915,16 @@
               <FileName>mphalport.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\Middlewares\micropython\py_port\mphalport.h</FilePath>
+            </File>
+            <File>
+              <FileName>i2c.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\i2c.h</FilePath>
+            </File>
+            <File>
+              <FileName>spi.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\spi.h</FilePath>
             </File>
             <File>
               <FileName>qstrdefsport.h</FileName>

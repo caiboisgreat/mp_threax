@@ -1,3 +1,19 @@
+In file included from E:\Work\code\study\mp_threadx\Middlewares\micropython\genhdr\qstrdefs.concat.quoted.h:29:
+In file included from E:\Work\code\study\mp_threadx\Middlewares\micropython\py/mpconfig.h:100:
+E:\Work\code\study\mp_threadx\Middlewares\micropython\py_port\mpconfigport.h:303:9: warning: 'MICROPY_HW_BOARD_NAME' macro redefined [-Wmacro-redefined]
+  303 | #define MICROPY_HW_BOARD_NAME "PYBASE"
+      |         ^
+E:\Work\code\study\mp_threadx\Middlewares\micropython\py_port\mpconfigboard.h:10:9: note: previous definition is here
+   10 | #define MICROPY_HW_BOARD_NAME       "pyBaseV1.1"
+      |         ^
+In file included from E:\Work\code\study\mp_threadx\Middlewares\micropython\genhdr\qstrdefs.concat.quoted.h:29:
+In file included from E:\Work\code\study\mp_threadx\Middlewares\micropython\py/mpconfig.h:100:
+E:\Work\code\study\mp_threadx\Middlewares\micropython\py_port\mpconfigport.h:304:9: warning: 'MICROPY_HW_MCU_NAME' macro redefined [-Wmacro-redefined]
+  304 | #define MICROPY_HW_MCU_NAME "STM32F405RG6"
+      |         ^
+E:\Work\code\study\mp_threadx\Middlewares\micropython\py_port\mpconfigboard.h:11:9: note: previous definition is here
+   11 | #define MICROPY_HW_MCU_NAME         "STM32F405RG"
+      |         ^
 # 1 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\genhdr\\qstrdefs.concat.quoted.h"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
@@ -802,6 +818,55 @@ typedef unsigned long long uintmax_t;
 # 3 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h" 2
 
 
+# 1 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigboard.h" 1
+
+
+
+
+
+
+#define MICROPY_INCLUDED_MPCONFIGBOARD_H 
+
+
+#define MICROPY_HW_BOARD_NAME "pyBaseV1.1"
+#define MICROPY_HW_MCU_NAME "STM32F405RG"
+
+
+#define MICROPY_HW_LED1 (&pin_A13)
+#define MICROPY_HW_LED2 (&pin_A14)
+#define MICROPY_HW_LED3 (&pin_A15)
+#define MICROPY_HW_LED4 (&pin_B4)
+
+
+#define MICROPY_HW_LED3_PWM { TIM2, 2, TIM_CHANNEL_1, GPIO_AF1_TIM2 }
+#define MICROPY_HW_LED4_PWM { TIM3, 3, TIM_CHANNEL_1, GPIO_AF2_TIM3 }
+
+
+#define MICROPY_HW_LED_ON(pin) (mp_hal_pin_high(pin))
+#define MICROPY_HW_LED_OFF(pin) (mp_hal_pin_low(pin))
+
+
+#define MICROPY_HW_I2C1_NAME "X"
+#define MICROPY_HW_I2C1_SCL (pin_B6)
+#define MICROPY_HW_I2C1_SDA (pin_B7)
+#define MICROPY_HW_I2C2_NAME "Y"
+#define MICROPY_HW_I2C2_SCL (pin_B10)
+#define MICROPY_HW_I2C2_SDA (pin_B11)
+
+
+#define MICROPY_HW_SPI1_NAME "X"
+#define MICROPY_HW_SPI1_NSS (pin_A4)
+#define MICROPY_HW_SPI1_SCK (pin_A5)
+#define MICROPY_HW_SPI1_MISO (pin_A6)
+#define MICROPY_HW_SPI1_MOSI (pin_A7)
+#define MICROPY_HW_SPI2_NAME "Y"
+#define MICROPY_HW_SPI2_NSS (pin_B12)
+#define MICROPY_HW_SPI2_SCK (pin_B13)
+#define MICROPY_HW_SPI2_MISO (pin_B14)
+#define MICROPY_HW_SPI2_MOSI (pin_B15)
+# 6 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h" 2
+
+
 
 
 
@@ -987,7 +1052,9 @@ typedef unsigned long long uintmax_t;
 #define MICROPY_PY_MACHINE_BARE_METAL_FUNCS (1)
 #define MICROPY_PY_MACHINE_BOOTLOADER (0)
 
-#define MICROPY_PY_MACHINE_PIN (0)
+#define MICROPY_PY_MACHINE_PIN (1)
+#define MICROPY_PY_MACHINE_SOFTI2C (1)
+#define MICROPY_PY_MACHINE_SOFTSPI (1)
 #define MICROPY_PY_MACHINE_UART (0)
 #define MICROPY_PY_MACHINE_I2C (0)
 #define MICROPY_PY_MACHINE_SPI (0)
@@ -1028,7 +1095,7 @@ typedef unsigned long long uintmax_t;
 extern void mp_bluetooth_nimble_hci_uart_process(_Bool run_events);
 extern void mp_bluetooth_nimble_os_callout_process(void);
 #define MICROPY_EVENT_POLL_HOOK do { mp_bluetooth_nimble_hci_uart_process(true); mp_bluetooth_nimble_os_callout_process(); } while (0);
-# 252 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 257 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_PY_OPENAMP_CONFIG_FILE "openamp_config_port.h"
 
 
@@ -1041,7 +1108,7 @@ extern void mp_bluetooth_nimble_os_callout_process(void);
 typedef intptr_t mp_int_t;
 typedef uintptr_t mp_uint_t;
 typedef long mp_off_t;
-# 275 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 280 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define assert(cond) ((void)((cond) ? 0 : (__builtin_trap(), 0)))
 
 
@@ -1067,7 +1134,7 @@ typedef long mp_off_t;
 
 #define MICROPY_HW_BOARD_NAME "PYBASE"
 #define MICROPY_HW_MCU_NAME "STM32F405RG6"
-# 312 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 317 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_MIN_USE_CORTEX_CPU (0)
 
 
@@ -2564,24 +2631,7 @@ typedef long long mp_timestamp_t;
 
 
 #define MICROPY_PY_MACHINE_I2C_TRANSFER_WRITE1 (0)
-
-
-
-
-#define MICROPY_PY_MACHINE_SOFTI2C (0)
-
-
-
-
-
-
-
-
-#define MICROPY_PY_MACHINE_SOFTSPI (0)
-
-
-
-
+# 2082 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_PY_MACHINE_SPI_MSB (0)
 #define MICROPY_PY_MACHINE_SPI_LSB (1)
 # 2093 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
@@ -3691,17 +3741,25 @@ Q(LONG)
 
 Q(LONGLONG)
 
+Q(LSB)
+
 Q(LookupError)
 
 Q(LookupError)
 
 Q(MBEDTLS_VERSION)
 
+Q(MMA_AVDD)
+
+Q(MMA_INT)
+
 Q(MONO_HLSB)
 
 Q(MONO_HMSB)
 
 Q(MONO_VLSB)
+
+Q(MSB)
 
 Q(MVLSB)
 
@@ -3785,6 +3843,10 @@ Q(Pin)
 
 Q(Pin)
 
+Q(Pin)
+
+Q(Pin)
+
 Q(RAW)
 
 Q(RCC)
@@ -3801,6 +3863,8 @@ Q(RuntimeError)
 
 Q(RuntimeError)
 
+Q(SD)
+
 Q(SDCard)
 
 Q(SDCard)
@@ -3808,6 +3872,20 @@ Q(SDCard)
 Q(SDCard)
 
 Q(SDIO)
+
+Q(SD_CK)
+
+Q(SD_CMD)
+
+Q(SD_D0)
+
+Q(SD_D1)
+
+Q(SD_D2)
+
+Q(SD_D3)
+
+Q(SD_SW)
 
 Q(SHORT)
 
@@ -3843,11 +3921,21 @@ Q(SSLSocket)
 
 Q(STA_IF)
 
+Q(SW)
+
 Q(SYSCFG)
 
 Q(Signal)
 
 Q(Signal)
+
+Q(SoftI2C)
+
+Q(SoftI2C)
+
+Q(SoftSPI)
+
+Q(SoftSPI)
 
 Q(StopAsyncIteration)
 
@@ -3941,9 +4029,17 @@ Q(USART3)
 
 Q(USART6)
 
+Q(USB_DM)
+
+Q(USB_DP)
+
+Q(USB_ID)
+
 Q(USB_OTG_FS)
 
 Q(USB_OTG_HS)
+
+Q(USB_VBUS)
 
 Q(USHORT)
 
@@ -3972,6 +4068,66 @@ Q(VirtIODev)
 Q(VirtIODev)
 
 Q(WWDG)
+
+Q(X1)
+
+Q(X10)
+
+Q(X11)
+
+Q(X12)
+
+Q(X17)
+
+Q(X18)
+
+Q(X19)
+
+Q(X2)
+
+Q(X20)
+
+Q(X21)
+
+Q(X22)
+
+Q(X3)
+
+Q(X4)
+
+Q(X5)
+
+Q(X6)
+
+Q(X7)
+
+Q(X8)
+
+Q(X9)
+
+Q(Y1)
+
+Q(Y10)
+
+Q(Y11)
+
+Q(Y12)
+
+Q(Y2)
+
+Q(Y3)
+
+Q(Y4)
+
+Q(Y5)
+
+Q(Y6)
+
+Q(Y7)
+
+Q(Y8)
+
+Q(Y9)
 
 Q(ZLIB)
 
@@ -4483,9 +4639,13 @@ Q(active)
 
 Q(add)
 
+Q(addr)
+
 Q(addr_mode)
 
 Q(addressof)
+
+Q(addrsize)
 
 Q(adv_data)
 
@@ -4508,6 +4668,8 @@ Q(append)
 Q(append)
 
 Q(appendleft)
+
+Q(arg)
 
 Q(args)
 
@@ -4533,6 +4695,10 @@ Q(atanh)
 
 Q(b2a_base64)
 
+Q(baudrate)
+
+Q(baudrate)
+
 Q(bin)
 
 Q(binascii)
@@ -4540,6 +4706,8 @@ Q(binascii)
 Q(binascii)
 
 Q(bind)
+
+Q(bits)
 
 Q(blit)
 
@@ -4745,6 +4913,8 @@ Q(deflate)
 
 Q(degrees)
 
+Q(deinit)
+
 Q(delattr)
 
 Q(delay)
@@ -4881,6 +5051,10 @@ Q(filter)
 
 Q(find)
 
+Q(firstbit)
+
+Q(firstbit)
+
 Q(flags)
 
 Q(float)
@@ -4902,6 +5076,8 @@ Q(format)
 Q(framebuf)
 
 Q(framebuf)
+
+Q(freq)
 
 Q(freq)
 
@@ -5443,6 +5619,10 @@ Q(info)
 
 Q(init)
 
+Q(init)
+
+Q(init)
+
 Q(input)
 
 Q(insert)
@@ -5671,6 +5851,8 @@ Q(mem_free)
 
 Q(mem_info)
 
+Q(memaddr)
+
 Q(memoryview)
 
 Q(memoryview)
@@ -5692,6 +5874,10 @@ Q(millis)
 Q(min)
 
 Q(minkeypage)
+
+Q(miso)
+
+Q(miso)
 
 Q(mkdir)
 
@@ -5718,6 +5904,10 @@ Q(module)
 Q(modules)
 
 Q(modules)
+
+Q(mosi)
+
+Q(mosi)
 
 Q(mount)
 
@@ -5815,6 +6005,10 @@ Q(ph_key)
 
 Q(phase)
 
+Q(phase)
+
+Q(phase)
+
 Q(pi)
 
 Q(pi)
@@ -5830,6 +6024,10 @@ Q(platform)
 Q(platform)
 
 Q(polar)
+
+Q(polarity)
+
+Q(polarity)
 
 Q(poll)
 
@@ -5929,11 +6127,25 @@ Q(read)
 
 Q(read)
 
-Q(readblocks)
+Q(read)
 
 Q(readblocks)
 
 Q(readblocks)
+
+Q(readblocks)
+
+Q(readfrom)
+
+Q(readfrom_into)
+
+Q(readfrom_mem)
+
+Q(readfrom_mem_into)
+
+Q(readinto)
+
+Q(readinto)
 
 Q(readinto)
 
@@ -6047,9 +6259,19 @@ Q(rsplit)
 
 Q(rstrip)
 
+Q(scan)
+
 Q(schedule)
 
+Q(sck)
+
+Q(sck)
+
+Q(scl)
+
 Q(scroll)
+
+Q(sda)
 
 Q(search)
 
@@ -6181,6 +6403,8 @@ Q(start)
 
 Q(start)
 
+Q(start)
+
 Q(startswith)
 
 Q(stat)
@@ -6218,6 +6442,8 @@ Q(step)
 Q(stm)
 
 Q(stm)
+
+Q(stop)
 
 Q(stop)
 
@@ -6296,6 +6522,8 @@ Q(ticks_us)
 Q(time)
 
 Q(time)
+
+Q(timeout)
 
 Q(timeout)
 
@@ -6423,16 +6651,29 @@ Q(write)
 
 Q(write)
 
-Q(writeblocks)
+Q(write)
+
+Q(write)
+
+Q(write_readinto)
 
 Q(writeblocks)
 
 Q(writeblocks)
 
-Q(zip)
+Q(writeblocks)
+
+Q(writeto)
+
+Q(writeto_mem)
+
+Q(writevto)
 
 Q(zip)
 
 Q(zip)
 
 Q(zip)
+
+Q(zip)
+2 warnings generated.

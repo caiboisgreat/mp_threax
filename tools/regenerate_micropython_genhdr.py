@@ -307,6 +307,7 @@ def main():
         "gzip.mpy",
         "_thread.mpy",
         "ssl.mpy",
+        "lcd160cr.mpy",
     ]
 
     mpy_files: list[Path] = []
