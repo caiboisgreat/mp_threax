@@ -44,4 +44,13 @@
 #define MICROPY_HW_SPI2_MISO        (&pin_B14) // Y7
 #define MICROPY_HW_SPI2_MOSI        (&pin_B15) // Y8
 
+// SPI TFT LCD (01Studio-style LCD24/ILI9341)
+#define MICROPY_ENABLE_TFTLCD       (1)
+#define MICROPY_ENABLE_SPILCD       (1)
+#define MICROPY_HW_LCD32            (1)
+#define MICROPY_HW_LCD_SPI_ID       (2)
+#define LCD_PIN_DC                  (&pin_B8)
+#define LCD_PIN_RST                 (&pin_B9)
+#define LCD_PIN_CS                  (&pin_B12)
+
 #endif // MICROPY_INCLUDED_MPCONFIGBOARD_H

@@ -274,6 +274,16 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(PORTRAIT)"
 "Q(LANDSCAPE)"
 
+// tftlcd module (SPI LCD)
+"Q(tftlcd)"
+"Q(LCD24)"
+"Q(LCD32)"
+"Q(drawPixel)"
+"Q(write_buf)"
+"Q(fill)"
+"Q(deinit)"
+"Q(portrait)"
+
 
 "Q(A0)"
 
@@ -869,6 +879,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(H1)"
 
+"Q(I2C)"
+
+"Q(I2C)"
+
 "Q(I2C1)"
 
 "Q(I2C2)"
@@ -920,6 +934,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(KeyboardInterrupt)"
 
 "Q(KeyboardInterrupt)"
+
+"Q(LCD24)"
+
+"Q(LCD24)"
 
 "Q(LED)"
 
@@ -1104,6 +1122,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(SO_REUSEADDR)"
 
 "Q(SO_SNDTIMEO)"
+
+"Q(SPI)"
+
+"Q(SPI)"
 
 "Q(SPI1)"
 
@@ -1533,6 +1555,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(__main__)"
 
+"Q(__main__)"
+
+"Q(__main__)"
+
 "Q(__matmul__)"
 
 "Q(__mod__)"
@@ -1540,6 +1566,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(__module__)"
 
 "Q(__mul__)"
+
+"Q(__name__)"
 
 "Q(__name__)"
 
@@ -1745,6 +1773,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(_asyncio)"
 
+"Q(_asyncio)"
+
+"Q(_asyncio)"
+
 "Q(_brace_open__colon__hash_b_brace_close_)"
 
 "Q(_dot__dot__dot__space_)"
@@ -1881,6 +1913,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(array)"
 
+"Q(array)"
+
+"Q(array)"
+
 "Q(asin)"
 
 "Q(asinh)"
@@ -1893,6 +1929,12 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(b2a_base64)"
 
+"Q(backcolor)"
+
+"Q(baudrate)"
+
+"Q(baudrate)"
+
 "Q(baudrate)"
 
 "Q(baudrate)"
@@ -1903,7 +1945,15 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(binascii)"
 
+"Q(binascii)"
+
+"Q(binascii)"
+
 "Q(bind)"
+
+"Q(bits)"
+
+"Q(bits)"
 
 "Q(bits)"
 
@@ -1913,6 +1963,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(bluetooth)"
 
+"Q(bluetooth)"
+
+"Q(bluetooth)"
+
 "Q(board)"
 
 "Q(board)"
@@ -1920,10 +1974,18 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(bool)"
 
 "Q(bool)"
+
+"Q(border)"
+
+"Q(border)"
 
 "Q(bound_method)"
 
 "Q(bpp)"
+
+"Q(btree)"
+
+"Q(btree)"
 
 "Q(btree)"
 
@@ -1936,6 +1998,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(buffer)"
 
 "Q(buffering)"
+
+"Q(builtins)"
+
+"Q(builtins)"
 
 "Q(builtins)"
 
@@ -2025,6 +2091,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(cmath)"
 
+"Q(cmath)"
+
+"Q(cmath)"
+
 "Q(code)"
 
 "Q(collect)"
@@ -2032,6 +2102,20 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(collections)"
 
 "Q(collections)"
+
+"Q(collections)"
+
+"Q(collections)"
+
+"Q(color)"
+
+"Q(color)"
+
+"Q(color)"
+
+"Q(color)"
+
+"Q(color)"
 
 "Q(compile)"
 
@@ -2089,6 +2173,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(cryptolib)"
 
+"Q(cryptolib)"
+
+"Q(cryptolib)"
+
 "Q(cur_task)"
 
 "Q(cur_task)"
@@ -2104,6 +2192,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(deepsleep)"
 
 "Q(default)"
+
+"Q(deflate)"
+
+"Q(deflate)"
 
 "Q(deflate)"
 
@@ -2159,6 +2251,14 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(done)"
 
+"Q(drawCircle)"
+
+"Q(drawLine)"
+
+"Q(drawPixel)"
+
+"Q(drawRect)"
+
 "Q(dump)"
 
 "Q(dumps)"
@@ -2194,6 +2294,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(erf)"
 
 "Q(erfc)"
+
+"Q(errno)"
+
+"Q(errno)"
 
 "Q(errno)"
 
@@ -2241,13 +2345,25 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(fill)"
 
+"Q(fill)"
+
 "Q(fill_rect)"
+
+"Q(fillcolor)"
+
+"Q(fillcolor)"
+
+"Q(fillcolor)"
 
 "Q(filter)"
 
 "Q(filter)"
 
 "Q(find)"
+
+"Q(firstbit)"
+
+"Q(firstbit)"
 
 "Q(firstbit)"
 
@@ -2275,6 +2391,12 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(framebuf)"
 
+"Q(framebuf)"
+
+"Q(framebuf)"
+
+"Q(freq)"
+
 "Q(freq)"
 
 "Q(freq)"
@@ -2290,6 +2412,18 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(frozenset)"
 
 "Q(frozenset)"
+
+"Q(function)"
+
+"Q(function)"
+
+"Q(function)"
+
+"Q(function)"
+
+"Q(function)"
+
+"Q(function)"
 
 "Q(function)"
 
@@ -2721,6 +2855,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(gc)"
 
+"Q(gc)"
+
+"Q(gc)"
+
 "Q(generator)"
 
 "Q(generator)"
@@ -2759,6 +2897,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(hashlib)"
 
+"Q(hashlib)"
+
+"Q(hashlib)"
+
 "Q(heap_lock)"
 
 "Q(heap_unlock)"
@@ -2773,6 +2915,12 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(heapq)"
 
+"Q(heapq)"
+
+"Q(heapq)"
+
+"Q(height)"
+
 "Q(help)"
 
 "Q(hex)"
@@ -2786,6 +2934,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(hline)"
 
 "Q(hostname)"
+
+"Q(id)"
+
+"Q(id)"
 
 "Q(id)"
 
@@ -2840,6 +2992,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(interval_us)"
 
 "Q(invert)"
+
+"Q(io)"
+
+"Q(io)"
 
 "Q(io)"
 
@@ -2921,6 +3077,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(json)"
 
+"Q(json)"
+
+"Q(json)"
+
 "Q(kbd_intr)"
 
 "Q(keepends)"
@@ -2995,6 +3155,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(machine)"
 
+"Q(machine)"
+
+"Q(machine)"
+
 "Q(makefile)"
 
 "Q(map)"
@@ -3005,11 +3169,19 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(marshal)"
 
-"Q(match)"
+"Q(marshal)"
+
+"Q(marshal)"
 
 "Q(match)"
 
 "Q(match)"
+
+"Q(match)"
+
+"Q(math)"
+
+"Q(math)"
 
 "Q(math)"
 
@@ -3065,6 +3237,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(micropython)"
 
+"Q(micropython)"
+
+"Q(micropython)"
+
 "Q(micros)"
 
 "Q(millis)"
@@ -3072,6 +3248,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(min)"
 
 "Q(minkeypage)"
+
+"Q(miso)"
 
 "Q(miso)"
 
@@ -3107,6 +3285,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(mosi)"
 
+"Q(mosi)"
+
 "Q(mount)"
 
 "Q(mount)"
@@ -3134,6 +3314,14 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(neopixel)"
 
 "Q(neopixel)"
+
+"Q(neopixel)"
+
+"Q(neopixel)"
+
+"Q(network)"
+
+"Q(network)"
 
 "Q(network)"
 
@@ -3177,9 +3365,17 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(openamp)"
 
+"Q(openamp)"
+
+"Q(openamp)"
+
 "Q(opt_level)"
 
 "Q(ord)"
+
+"Q(os)"
+
+"Q(os)"
 
 "Q(os)"
 
@@ -3207,6 +3403,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(phase)"
 
+"Q(phase)"
+
+"Q(phase)"
+
 "Q(pi)"
 
 "Q(pi)"
@@ -3221,7 +3421,15 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(platform)"
 
+"Q(platform)"
+
+"Q(platform)"
+
 "Q(polar)"
+
+"Q(polarity)"
+
+"Q(polarity)"
 
 "Q(polarity)"
 
@@ -3249,6 +3457,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(popleft)"
 
+"Q(portrait)"
+
 "Q(pow)"
 
 "Q(pow)"
@@ -3256,6 +3466,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(preview)"
 
 "Q(print)"
+
+"Q(printStr)"
 
 "Q(print_exception)"
 
@@ -3279,6 +3491,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(pyb)"
 
+"Q(pyb)"
+
+"Q(pyb)"
+
 "Q(python_compiler)"
 
 "Q(qstr_info)"
@@ -3287,7 +3503,13 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(radians)"
 
+"Q(radius)"
+
 "Q(randint)"
+
+"Q(random)"
+
+"Q(random)"
 
 "Q(random)"
 
@@ -3304,6 +3526,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(range)"
 
 "Q(rb)"
+
+"Q(re)"
+
+"Q(re)"
 
 "Q(re)"
 
@@ -3465,9 +3691,15 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(sck)"
 
+"Q(sck)"
+
+"Q(scl)"
+
 "Q(scl)"
 
 "Q(scroll)"
+
+"Q(sda)"
 
 "Q(sda)"
 
@@ -3480,6 +3712,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(seek)"
 
 "Q(seek)"
+
+"Q(select)"
+
+"Q(select)"
 
 "Q(select)"
 
@@ -3553,6 +3789,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(sinh)"
 
+"Q(size)"
+
 "Q(sizeof)"
 
 "Q(sleep)"
@@ -3564,6 +3802,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(slice)"
 
 "Q(slice)"
+
+"Q(socket)"
+
+"Q(socket)"
 
 "Q(socket)"
 
@@ -3641,6 +3883,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(stm)"
 
+"Q(stm)"
+
+"Q(stm)"
+
 "Q(stop)"
 
 "Q(stop)"
@@ -3656,6 +3902,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(str)"
 
 "Q(strip)"
+
+"Q(struct)"
+
+"Q(struct)"
 
 "Q(struct)"
 
@@ -3689,6 +3939,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(sys)"
 
+"Q(sys)"
+
+"Q(sys)"
+
 "Q(tan)"
 
 "Q(tanh)"
@@ -3700,6 +3954,16 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(tell)"
 
 "Q(text)"
+
+"Q(text)"
+
+"Q(tftlcd)"
+
+"Q(tftlcd)"
+
+"Q(tftlcd)"
+
+"Q(tftlcd)"
 
 "Q(threshold)"
 
@@ -3721,11 +3985,21 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(time)"
 
+"Q(time)"
+
+"Q(time)"
+
+"Q(timeout)"
+
 "Q(timeout)"
 
 "Q(timeout)"
 
 "Q(timing)"
+
+"Q(tls)"
+
+"Q(tls)"
 
 "Q(tls)"
 
@@ -3746,6 +4020,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(type)"
 
 "Q(type)"
+
+"Q(uctypes)"
+
+"Q(uctypes)"
 
 "Q(uctypes)"
 
@@ -3829,7 +4107,13 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(vfs)"
 
+"Q(vfs)"
+
+"Q(vfs)"
+
 "Q(vline)"
+
+"Q(width)"
 
 "Q(wrap_socket)"
 
@@ -3866,6 +4150,30 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(writeto_mem)"
 
 "Q(writevto)"
+
+"Q(x)"
+
+"Q(x)"
+
+"Q(x)"
+
+"Q(x)"
+
+"Q(x0)"
+
+"Q(x1)"
+
+"Q(y)"
+
+"Q(y)"
+
+"Q(y)"
+
+"Q(y)"
+
+"Q(y0)"
+
+"Q(y1)"
 
 "Q(zip)"
 

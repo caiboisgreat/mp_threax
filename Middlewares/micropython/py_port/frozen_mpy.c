@@ -54,7 +54,6 @@ enum {
     MP_QSTR_c,
     MP_QSTR_calib,
     MP_QSTR_cmd,
-    MP_QSTR_color,
     MP_QSTR_compress,
     MP_QSTR_create_default_context,
     MP_QSTR_decompress,
@@ -123,11 +122,7 @@ enum {
     MP_QSTR_waitflag,
     MP_QSTR_wbits,
     MP_QSTR_win,
-    MP_QSTR_x,
-    MP_QSTR_x1,
     MP_QSTR_x2,
-    MP_QSTR_y,
-    MP_QSTR_y1,
     MP_QSTR_y2,
     MP_QSTR_zlib_dot_py,
 };
@@ -159,7 +154,6 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     46534,
     60864,
     19503,
-    1752,
     31395,
     1333,
     64354,
@@ -228,11 +222,7 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     2338,
     27294,
     32693,
-    46557,
-    29004,
     29007,
-    46556,
-    29037,
     29038,
     20191,
 };
@@ -264,7 +254,6 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     1,
     5,
     3,
-    5,
     8,
     22,
     10,
@@ -333,10 +322,6 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     8,
     5,
     3,
-    1,
-    2,
-    2,
-    1,
     2,
     2,
     7,
@@ -348,7 +333,7 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
     MP_QSTRnumber_of, // previous pool size
     true, // is_sorted
     10, // allocated entries
-    102, // used entries
+    97, // used entries
     (qstr_hash_t *)mp_qstr_frozen_const_hashes,
     (qstr_len_t *)mp_qstr_frozen_const_lengths,
     {
@@ -378,7 +363,6 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "c",
         "calib",
         "cmd",
-        "color",
         "compress",
         "create_default_context",
         "decompress",
@@ -447,11 +431,7 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "waitflag",
         "wbits",
         "win",
-        "x",
-        "x1",
         "x2",
-        "y",
-        "y1",
         "y2",
         "zlib.py",
     },
@@ -6046,7 +6026,7 @@ MICROPY_FROZEN_LIST_ITEM("lcd160cr", "lcd160cr.py")
 
 /*
 byte sizes:
-qstr content: 104 unique, 1254 bytes
+qstr content: 97 unique, 1209 bytes
 bc content: 4112
 const str content: 173
 const int content: 4
@@ -6056,5 +6036,5 @@ const table ptr content: 12 entries, 48 bytes
 raw code content: 74 * 4 = 1184
 mp_frozen_mpy_names_content: 47
 mp_frozen_mpy_content_size: 20
-total: 6938
+total: 6893
 */

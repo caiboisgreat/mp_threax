@@ -936,6 +936,11 @@
               <FileType>5</FileType>
               <FilePath>..\Middlewares\micropython\py_port\unistd.h</FilePath>
             </File>
+            <File>
+              <FileName>modtftlcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\modtftlcd.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

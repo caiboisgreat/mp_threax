@@ -1,19 +1,3 @@
-In file included from E:\Work\code\study\mp_threadx\Middlewares\micropython\genhdr\qstrdefs.concat.quoted.h:29:
-In file included from E:\Work\code\study\mp_threadx\Middlewares\micropython\py/mpconfig.h:100:
-E:\Work\code\study\mp_threadx\Middlewares\micropython\py_port\mpconfigport.h:303:9: warning: 'MICROPY_HW_BOARD_NAME' macro redefined [-Wmacro-redefined]
-  303 | #define MICROPY_HW_BOARD_NAME "PYBASE"
-      |         ^
-E:\Work\code\study\mp_threadx\Middlewares\micropython\py_port\mpconfigboard.h:10:9: note: previous definition is here
-   10 | #define MICROPY_HW_BOARD_NAME       "pyBaseV1.1"
-      |         ^
-In file included from E:\Work\code\study\mp_threadx\Middlewares\micropython\genhdr\qstrdefs.concat.quoted.h:29:
-In file included from E:\Work\code\study\mp_threadx\Middlewares\micropython\py/mpconfig.h:100:
-E:\Work\code\study\mp_threadx\Middlewares\micropython\py_port\mpconfigport.h:304:9: warning: 'MICROPY_HW_MCU_NAME' macro redefined [-Wmacro-redefined]
-  304 | #define MICROPY_HW_MCU_NAME "STM32F405RG6"
-      |         ^
-E:\Work\code\study\mp_threadx\Middlewares\micropython\py_port\mpconfigboard.h:11:9: note: previous definition is here
-   11 | #define MICROPY_HW_MCU_NAME         "STM32F405RG"
-      |         ^
 # 1 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\genhdr\\qstrdefs.concat.quoted.h"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
@@ -847,23 +831,32 @@ typedef unsigned long long uintmax_t;
 
 
 #define MICROPY_HW_I2C1_NAME "X"
-#define MICROPY_HW_I2C1_SCL (pin_B6)
-#define MICROPY_HW_I2C1_SDA (pin_B7)
+#define MICROPY_HW_I2C1_SCL (&pin_B6)
+#define MICROPY_HW_I2C1_SDA (&pin_B7)
 #define MICROPY_HW_I2C2_NAME "Y"
-#define MICROPY_HW_I2C2_SCL (pin_B10)
-#define MICROPY_HW_I2C2_SDA (pin_B11)
+#define MICROPY_HW_I2C2_SCL (&pin_B10)
+#define MICROPY_HW_I2C2_SDA (&pin_B11)
 
 
 #define MICROPY_HW_SPI1_NAME "X"
-#define MICROPY_HW_SPI1_NSS (pin_A4)
-#define MICROPY_HW_SPI1_SCK (pin_A5)
-#define MICROPY_HW_SPI1_MISO (pin_A6)
-#define MICROPY_HW_SPI1_MOSI (pin_A7)
+#define MICROPY_HW_SPI1_NSS (&pin_A4)
+#define MICROPY_HW_SPI1_SCK (&pin_A5)
+#define MICROPY_HW_SPI1_MISO (&pin_A6)
+#define MICROPY_HW_SPI1_MOSI (&pin_A7)
 #define MICROPY_HW_SPI2_NAME "Y"
-#define MICROPY_HW_SPI2_NSS (pin_B12)
-#define MICROPY_HW_SPI2_SCK (pin_B13)
-#define MICROPY_HW_SPI2_MISO (pin_B14)
-#define MICROPY_HW_SPI2_MOSI (pin_B15)
+#define MICROPY_HW_SPI2_NSS (&pin_B12)
+#define MICROPY_HW_SPI2_SCK (&pin_B13)
+#define MICROPY_HW_SPI2_MISO (&pin_B14)
+#define MICROPY_HW_SPI2_MOSI (&pin_B15)
+
+
+#define MICROPY_ENABLE_TFTLCD (1)
+#define MICROPY_ENABLE_SPILCD (1)
+#define MICROPY_HW_LCD32 (1)
+#define MICROPY_HW_LCD_SPI_ID (2)
+#define LCD_PIN_DC (&pin_B8)
+#define LCD_PIN_RST (&pin_B9)
+#define LCD_PIN_CS (&pin_B12)
 # 6 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h" 2
 
 
@@ -1056,12 +1049,20 @@ typedef unsigned long long uintmax_t;
 #define MICROPY_PY_MACHINE_SOFTI2C (1)
 #define MICROPY_PY_MACHINE_SOFTSPI (1)
 #define MICROPY_PY_MACHINE_UART (0)
-#define MICROPY_PY_MACHINE_I2C (0)
-#define MICROPY_PY_MACHINE_SPI (0)
+#define MICROPY_PY_MACHINE_I2C (1)
+#define MICROPY_PY_MACHINE_SPI (1)
 #define MICROPY_PY_MACHINE_ADC (0)
 #define MICROPY_PY_MACHINE_PWM (0)
 #define MICROPY_PY_MACHINE_TIMER (0)
 #define MICROPY_PY_MACHINE_WDT (0)
+
+
+#define MICROPY_HW_ENABLE_HW_I2C (1)
+#define MICROPY_HW_MAX_I2C (2)
+
+
+#define MICROPY_PY_MACHINE_SPI_MSB (0x00000000U)
+#define MICROPY_PY_MACHINE_SPI_LSB (0x00000080U)
 
 
 
@@ -1095,7 +1096,7 @@ typedef unsigned long long uintmax_t;
 extern void mp_bluetooth_nimble_hci_uart_process(_Bool run_events);
 extern void mp_bluetooth_nimble_os_callout_process(void);
 #define MICROPY_EVENT_POLL_HOOK do { mp_bluetooth_nimble_hci_uart_process(true); mp_bluetooth_nimble_os_callout_process(); } while (0);
-# 257 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 265 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_PY_OPENAMP_CONFIG_FILE "openamp_config_port.h"
 
 
@@ -1108,7 +1109,7 @@ extern void mp_bluetooth_nimble_os_callout_process(void);
 typedef intptr_t mp_int_t;
 typedef uintptr_t mp_uint_t;
 typedef long mp_off_t;
-# 280 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 288 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define assert(cond) ((void)((cond) ? 0 : (__builtin_trap(), 0)))
 
 
@@ -1128,13 +1129,7 @@ typedef long mp_off_t;
 
 
 #define alloca __builtin_alloca
-
-
-
-
-#define MICROPY_HW_BOARD_NAME "PYBASE"
-#define MICROPY_HW_MCU_NAME "STM32F405RG6"
-# 317 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 324 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_MIN_USE_CORTEX_CPU (0)
 
 
@@ -2631,9 +2626,6 @@ typedef long long mp_timestamp_t;
 
 
 #define MICROPY_PY_MACHINE_I2C_TRANSFER_WRITE1 (0)
-# 2082 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
-#define MICROPY_PY_MACHINE_SPI_MSB (0)
-#define MICROPY_PY_MACHINE_SPI_LSB (1)
 # 2093 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_PY_SOCKET_LISTEN_BACKLOG_DEFAULT (2)
 
@@ -3075,6 +3067,16 @@ Q(is_touched)
 Q(get_touch)
 Q(PORTRAIT)
 Q(LANDSCAPE)
+
+
+Q(tftlcd)
+Q(LCD24)
+Q(LCD32)
+Q(drawPixel)
+Q(write_buf)
+Q(fill)
+Q(deinit)
+Q(portrait)
 
 
 Q(A0)
@@ -3671,6 +3673,10 @@ Q(H1)
 
 Q(H1)
 
+Q(I2C)
+
+Q(I2C)
+
 Q(I2C1)
 
 Q(I2C2)
@@ -3722,6 +3728,10 @@ Q(KeyError)
 Q(KeyboardInterrupt)
 
 Q(KeyboardInterrupt)
+
+Q(LCD24)
+
+Q(LCD24)
 
 Q(LED)
 
@@ -3906,6 +3916,10 @@ Q(SO_RCVTIMEO)
 Q(SO_REUSEADDR)
 
 Q(SO_SNDTIMEO)
+
+Q(SPI)
+
+Q(SPI)
 
 Q(SPI1)
 
@@ -4335,6 +4349,10 @@ Q(__main__)
 
 Q(__main__)
 
+Q(__main__)
+
+Q(__main__)
+
 Q(__matmul__)
 
 Q(__mod__)
@@ -4342,6 +4360,8 @@ Q(__mod__)
 Q(__module__)
 
 Q(__mul__)
+
+Q(__name__)
 
 Q(__name__)
 
@@ -4547,6 +4567,10 @@ Q(_asyncio)
 
 Q(_asyncio)
 
+Q(_asyncio)
+
+Q(_asyncio)
+
 Q(_brace_open__colon__hash_b_brace_close_)
 
 Q(_dot__dot__dot__space_)
@@ -4683,6 +4707,10 @@ Q(array)
 
 Q(array)
 
+Q(array)
+
+Q(array)
+
 Q(asin)
 
 Q(asinh)
@@ -4695,6 +4723,12 @@ Q(atanh)
 
 Q(b2a_base64)
 
+Q(backcolor)
+
+Q(baudrate)
+
+Q(baudrate)
+
 Q(baudrate)
 
 Q(baudrate)
@@ -4705,7 +4739,15 @@ Q(binascii)
 
 Q(binascii)
 
+Q(binascii)
+
+Q(binascii)
+
 Q(bind)
+
+Q(bits)
+
+Q(bits)
 
 Q(bits)
 
@@ -4715,6 +4757,10 @@ Q(bluetooth)
 
 Q(bluetooth)
 
+Q(bluetooth)
+
+Q(bluetooth)
+
 Q(board)
 
 Q(board)
@@ -4722,10 +4768,18 @@ Q(board)
 Q(bool)
 
 Q(bool)
+
+Q(border)
+
+Q(border)
 
 Q(bound_method)
 
 Q(bpp)
+
+Q(btree)
+
+Q(btree)
 
 Q(btree)
 
@@ -4738,6 +4792,10 @@ Q(buf)
 Q(buffer)
 
 Q(buffering)
+
+Q(builtins)
+
+Q(builtins)
 
 Q(builtins)
 
@@ -4827,6 +4885,10 @@ Q(cmath)
 
 Q(cmath)
 
+Q(cmath)
+
+Q(cmath)
+
 Q(code)
 
 Q(collect)
@@ -4834,6 +4896,20 @@ Q(collect)
 Q(collections)
 
 Q(collections)
+
+Q(collections)
+
+Q(collections)
+
+Q(color)
+
+Q(color)
+
+Q(color)
+
+Q(color)
+
+Q(color)
 
 Q(compile)
 
@@ -4891,6 +4967,10 @@ Q(cryptolib)
 
 Q(cryptolib)
 
+Q(cryptolib)
+
+Q(cryptolib)
+
 Q(cur_task)
 
 Q(cur_task)
@@ -4906,6 +4986,10 @@ Q(decrypt)
 Q(deepsleep)
 
 Q(default)
+
+Q(deflate)
+
+Q(deflate)
 
 Q(deflate)
 
@@ -4961,6 +5045,14 @@ Q(doc)
 
 Q(done)
 
+Q(drawCircle)
+
+Q(drawLine)
+
+Q(drawPixel)
+
+Q(drawRect)
+
 Q(dump)
 
 Q(dumps)
@@ -4996,6 +5088,10 @@ Q(enumerate)
 Q(erf)
 
 Q(erfc)
+
+Q(errno)
+
+Q(errno)
 
 Q(errno)
 
@@ -5043,13 +5139,25 @@ Q(fill)
 
 Q(fill)
 
+Q(fill)
+
 Q(fill_rect)
+
+Q(fillcolor)
+
+Q(fillcolor)
+
+Q(fillcolor)
 
 Q(filter)
 
 Q(filter)
 
 Q(find)
+
+Q(firstbit)
+
+Q(firstbit)
 
 Q(firstbit)
 
@@ -5077,6 +5185,12 @@ Q(framebuf)
 
 Q(framebuf)
 
+Q(framebuf)
+
+Q(framebuf)
+
+Q(freq)
+
 Q(freq)
 
 Q(freq)
@@ -5092,6 +5206,18 @@ Q(fromkeys)
 Q(frozenset)
 
 Q(frozenset)
+
+Q(function)
+
+Q(function)
+
+Q(function)
+
+Q(function)
+
+Q(function)
+
+Q(function)
 
 Q(function)
 
@@ -5523,6 +5649,10 @@ Q(gc)
 
 Q(gc)
 
+Q(gc)
+
+Q(gc)
+
 Q(generator)
 
 Q(generator)
@@ -5561,6 +5691,10 @@ Q(hashlib)
 
 Q(hashlib)
 
+Q(hashlib)
+
+Q(hashlib)
+
 Q(heap_lock)
 
 Q(heap_unlock)
@@ -5575,6 +5709,12 @@ Q(heapq)
 
 Q(heapq)
 
+Q(heapq)
+
+Q(heapq)
+
+Q(height)
+
 Q(help)
 
 Q(hex)
@@ -5588,6 +5728,10 @@ Q(high)
 Q(hline)
 
 Q(hostname)
+
+Q(id)
+
+Q(id)
 
 Q(id)
 
@@ -5642,6 +5786,10 @@ Q(intersection_update)
 Q(interval_us)
 
 Q(invert)
+
+Q(io)
+
+Q(io)
 
 Q(io)
 
@@ -5723,6 +5871,10 @@ Q(json)
 
 Q(json)
 
+Q(json)
+
+Q(json)
+
 Q(kbd_intr)
 
 Q(keepends)
@@ -5797,6 +5949,10 @@ Q(machine)
 
 Q(machine)
 
+Q(machine)
+
+Q(machine)
+
 Q(makefile)
 
 Q(map)
@@ -5807,11 +5963,19 @@ Q(marshal)
 
 Q(marshal)
 
-Q(match)
+Q(marshal)
+
+Q(marshal)
 
 Q(match)
 
 Q(match)
+
+Q(match)
+
+Q(math)
+
+Q(math)
 
 Q(math)
 
@@ -5867,6 +6031,10 @@ Q(micropython)
 
 Q(micropython)
 
+Q(micropython)
+
+Q(micropython)
+
 Q(micros)
 
 Q(millis)
@@ -5874,6 +6042,8 @@ Q(millis)
 Q(min)
 
 Q(minkeypage)
+
+Q(miso)
 
 Q(miso)
 
@@ -5909,6 +6079,8 @@ Q(mosi)
 
 Q(mosi)
 
+Q(mosi)
+
 Q(mount)
 
 Q(mount)
@@ -5936,6 +6108,14 @@ Q(nan)
 Q(neopixel)
 
 Q(neopixel)
+
+Q(neopixel)
+
+Q(neopixel)
+
+Q(network)
+
+Q(network)
 
 Q(network)
 
@@ -5979,9 +6159,17 @@ Q(openamp)
 
 Q(openamp)
 
+Q(openamp)
+
+Q(openamp)
+
 Q(opt_level)
 
 Q(ord)
+
+Q(os)
+
+Q(os)
 
 Q(os)
 
@@ -6009,6 +6197,10 @@ Q(phase)
 
 Q(phase)
 
+Q(phase)
+
+Q(phase)
+
 Q(pi)
 
 Q(pi)
@@ -6023,7 +6215,15 @@ Q(platform)
 
 Q(platform)
 
+Q(platform)
+
+Q(platform)
+
 Q(polar)
+
+Q(polarity)
+
+Q(polarity)
 
 Q(polarity)
 
@@ -6051,6 +6251,8 @@ Q(popitem)
 
 Q(popleft)
 
+Q(portrait)
+
 Q(pow)
 
 Q(pow)
@@ -6058,6 +6260,8 @@ Q(pow)
 Q(preview)
 
 Q(print)
+
+Q(printStr)
 
 Q(print_exception)
 
@@ -6081,6 +6285,10 @@ Q(pyb)
 
 Q(pyb)
 
+Q(pyb)
+
+Q(pyb)
+
 Q(python_compiler)
 
 Q(qstr_info)
@@ -6089,7 +6297,13 @@ Q(r)
 
 Q(radians)
 
+Q(radius)
+
 Q(randint)
+
+Q(random)
+
+Q(random)
 
 Q(random)
 
@@ -6106,6 +6320,10 @@ Q(range)
 Q(range)
 
 Q(rb)
+
+Q(re)
+
+Q(re)
 
 Q(re)
 
@@ -6267,9 +6485,15 @@ Q(sck)
 
 Q(sck)
 
+Q(sck)
+
+Q(scl)
+
 Q(scl)
 
 Q(scroll)
+
+Q(sda)
 
 Q(sda)
 
@@ -6282,6 +6506,10 @@ Q(seed)
 Q(seek)
 
 Q(seek)
+
+Q(select)
+
+Q(select)
 
 Q(select)
 
@@ -6355,6 +6583,8 @@ Q(single)
 
 Q(sinh)
 
+Q(size)
+
 Q(sizeof)
 
 Q(sleep)
@@ -6366,6 +6596,10 @@ Q(sleep_us)
 Q(slice)
 
 Q(slice)
+
+Q(socket)
+
+Q(socket)
 
 Q(socket)
 
@@ -6443,6 +6677,10 @@ Q(stm)
 
 Q(stm)
 
+Q(stm)
+
+Q(stm)
+
 Q(stop)
 
 Q(stop)
@@ -6458,6 +6696,10 @@ Q(str)
 Q(str)
 
 Q(strip)
+
+Q(struct)
+
+Q(struct)
 
 Q(struct)
 
@@ -6491,6 +6733,10 @@ Q(sys)
 
 Q(sys)
 
+Q(sys)
+
+Q(sys)
+
 Q(tan)
 
 Q(tanh)
@@ -6502,6 +6748,16 @@ Q(tell)
 Q(tell)
 
 Q(text)
+
+Q(text)
+
+Q(tftlcd)
+
+Q(tftlcd)
+
+Q(tftlcd)
+
+Q(tftlcd)
 
 Q(threshold)
 
@@ -6523,11 +6779,21 @@ Q(time)
 
 Q(time)
 
+Q(time)
+
+Q(time)
+
+Q(timeout)
+
 Q(timeout)
 
 Q(timeout)
 
 Q(timing)
+
+Q(tls)
+
+Q(tls)
 
 Q(tls)
 
@@ -6548,6 +6814,10 @@ Q(tuple)
 Q(type)
 
 Q(type)
+
+Q(uctypes)
+
+Q(uctypes)
 
 Q(uctypes)
 
@@ -6631,7 +6901,13 @@ Q(vfs)
 
 Q(vfs)
 
+Q(vfs)
+
+Q(vfs)
+
 Q(vline)
+
+Q(width)
 
 Q(wrap_socket)
 
@@ -6669,11 +6945,34 @@ Q(writeto_mem)
 
 Q(writevto)
 
-Q(zip)
+Q(x)
+
+Q(x)
+
+Q(x)
+
+Q(x)
+
+Q(x0)
+
+Q(x1)
+
+Q(y)
+
+Q(y)
+
+Q(y)
+
+Q(y)
+
+Q(y0)
+
+Q(y1)
 
 Q(zip)
 
 Q(zip)
 
 Q(zip)
-2 warnings generated.
+
+Q(zip)
