@@ -140,6 +140,10 @@ extern const struct _mp_obj_module_t mp_module_stm;
 #undef MODULE_DEF_STM
 #define MODULE_DEF_STM { MP_ROM_QSTR(MP_QSTR_stm), MP_ROM_PTR(&mp_module_stm) },
 
+extern const struct _mp_obj_module_t mp_module_subsystem;
+#undef MODULE_DEF_SUBSYSTEM
+#define MODULE_DEF_SUBSYSTEM { MP_ROM_QSTR(MP_QSTR_subsystem), MP_ROM_PTR(&mp_module_subsystem) },
+
 extern const struct _mp_obj_module_t mp_module_sys;
 #undef MODULE_DEF_SYS
 #define MODULE_DEF_SYS { MP_ROM_QSTR(MP_QSTR_sys), MP_ROM_PTR(&mp_module_sys) },
@@ -176,6 +180,7 @@ extern const struct _mp_obj_module_t mp_module_vfs;
     MODULE_DEF_OPENAMP \
     MODULE_DEF_PYB \
     MODULE_DEF_STM \
+    MODULE_DEF_SUBSYSTEM \
     MODULE_DEF_SYS \
     MODULE_DEF_TFTLCD \
     MODULE_DEF_TLS \

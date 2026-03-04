@@ -1002,6 +1002,8 @@ typedef unsigned long long uintmax_t;
 #define MICROPY_PY_ZLIB (1)
 #define MICROPY_PY_ASYNCIO (1)
 
+#define MICROPY_PY_SUBSYSTEM (1)
+
 
 
 
@@ -1096,7 +1098,7 @@ typedef unsigned long long uintmax_t;
 extern void mp_bluetooth_nimble_hci_uart_process(_Bool run_events);
 extern void mp_bluetooth_nimble_os_callout_process(void);
 #define MICROPY_EVENT_POLL_HOOK do { mp_bluetooth_nimble_hci_uart_process(true); mp_bluetooth_nimble_os_callout_process(); } while (0);
-# 265 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 267 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_PY_OPENAMP_CONFIG_FILE "openamp_config_port.h"
 
 
@@ -1109,7 +1111,7 @@ extern void mp_bluetooth_nimble_os_callout_process(void);
 typedef intptr_t mp_int_t;
 typedef uintptr_t mp_uint_t;
 typedef long mp_off_t;
-# 288 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 290 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define assert(cond) ((void)((cond) ? 0 : (__builtin_trap(), 0)))
 
 
@@ -1129,7 +1131,7 @@ typedef long mp_off_t;
 
 
 #define alloca __builtin_alloca
-# 324 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 326 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_MIN_USE_CORTEX_CPU (0)
 
 
@@ -4459,6 +4461,8 @@ Q(__name__)
 
 Q(__name__)
 
+Q(__name__)
+
 Q(__ne__)
 
 Q(__neg__)
@@ -5623,6 +5627,8 @@ Q(function)
 
 Q(function)
 
+Q(function)
+
 Q(gamma)
 
 Q(gap_advertise)
@@ -5715,6 +5721,8 @@ Q(heapq)
 
 Q(height)
 
+Q(hello)
+
 Q(help)
 
 Q(hex)
@@ -5758,6 +5766,8 @@ Q(index)
 Q(indices)
 
 Q(inf)
+
+Q(info)
 
 Q(info)
 
@@ -6712,6 +6722,14 @@ Q(struct)
 Q(sub)
 
 Q(sub)
+
+Q(subsystem)
+
+Q(subsystem)
+
+Q(subsystem)
+
+Q(subsystem)
 
 Q(sum)
 

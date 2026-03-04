@@ -308,6 +308,8 @@ def main():
         "_thread.mpy",
         "ssl.mpy",
         "lcd160cr.mpy",
+        "myutils.mpy",      # 自定义工具模块示例
+        "ymodem.mpy",       # Ymodem 协议传输模块
     ]
 
     mpy_files: list[Path] = []

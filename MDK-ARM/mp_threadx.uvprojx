@@ -1991,6 +1991,11 @@
               <FileType>1</FileType>
               <FilePath>..\Middlewares\micropython\extmod\vfs_rom_file.c</FilePath>
             </File>
+            <File>
+              <FileName>modsubsystem.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\extmod\modsubsystem.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

@@ -68,6 +68,8 @@ MP_REGISTER_MODULE(MP_QSTR_pyb, mp_module_pyb);
 
 MP_REGISTER_MODULE(MP_QSTR_stm, mp_module_stm);
 
+MP_REGISTER_MODULE(MP_QSTR_subsystem, mp_module_subsystem);
+
 MP_REGISTER_MODULE(MP_QSTR_sys, mp_module_sys);
 
 MP_REGISTER_MODULE(MP_QSTR_tftlcd, mp_module_tftlcd);

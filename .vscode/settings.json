@@ -1,17 +1,35 @@
 {
-    "C_Cpp.default.includePath": [
-    "${workspaceFolder}/Core/Inc",
-    "${workspaceFolder}/Drivers/**",
-    "${workspaceFolder}/Middlewares/**",
-    "${workspaceFolder}/AZURE_RTOS/**",
-    "${workspaceFolder}/RTE/**"
-    ],
-    "C_Cpp.default.defines": [
-        "USE_HAL_DRIVER",
-    ],
-  "C_Cpp.default.intelliSenseMode": "gcc-arm",
-  "C_Cpp.default.cStandard": "c11",
-  "C_Cpp.default.cppStandard": "c++17",
-  "C_Cpp.default.configurationProvider": "cl.keil-assistant",
-  "cmake.sourceDirectory": "E:/Work/code/study/mp_threadx/Drivers/CMSIS/NN"
+    // C/C++ IntelliSense 配置
+    "C_Cpp.errorSquiggles": "enabled",
+    "C_Cpp.intelliSenseEngine": "default",
+    "C_Cpp.default.configurationProvider": "candycium.keil-assistant-new",
+    
+    // 文件关联
+    "files.associations": {
+        "*.h": "c",
+        "*.c": "c",
+        "stm32f4xx_hal_conf.h": "c",
+        "tx_user.h": "c"
+    },
+    
+    // 排除不必要的文件索引以提高性能
+    "files.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "MDK-ARM/mp_threadx/*.d": true,
+        "MDK-ARM/mp_threadx/*.o": true,
+        "MDK-ARM/mp_threadx/*.crf": true,
+        "MDK-ARM/mp_threadx/*.lst": true,
+        "MDK-ARM/DebugConfig": true
+    },
+    
+    // 搜索排除
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/*.d": true,
+        "**/*.o": true,
+        "**/*.crf": true,
+        "**/*.lst": true,
+        "MDK-ARM/RTE": true
+    }
 }

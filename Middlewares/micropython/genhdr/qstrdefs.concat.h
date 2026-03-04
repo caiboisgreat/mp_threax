@@ -1665,6 +1665,8 @@ Q(__name__)
 
 Q(__name__)
 
+Q(__name__)
+
 Q(__ne__)
 
 Q(__neg__)
@@ -2829,6 +2831,8 @@ Q(function)
 
 Q(function)
 
+Q(function)
+
 Q(gamma)
 
 Q(gap_advertise)
@@ -2921,6 +2925,8 @@ Q(heapq)
 
 Q(height)
 
+Q(hello)
+
 Q(help)
 
 Q(hex)
@@ -2964,6 +2970,8 @@ Q(index)
 Q(indices)
 
 Q(inf)
+
+Q(info)
 
 Q(info)
 
@@ -3918,6 +3926,14 @@ Q(struct)
 Q(sub)
 
 Q(sub)
+
+Q(subsystem)
+
+Q(subsystem)
+
+Q(subsystem)
+
+Q(subsystem)
 
 Q(sum)
 

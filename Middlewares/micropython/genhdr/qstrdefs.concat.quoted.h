@@ -1665,6 +1665,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(__name__)"
 
+"Q(__name__)"
+
 "Q(__ne__)"
 
 "Q(__neg__)"
@@ -2829,6 +2831,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(function)"
 
+"Q(function)"
+
 "Q(gamma)"
 
 "Q(gap_advertise)"
@@ -2921,6 +2925,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(height)"
 
+"Q(hello)"
+
 "Q(help)"
 
 "Q(hex)"
@@ -2964,6 +2970,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(indices)"
 
 "Q(inf)"
+
+"Q(info)"
 
 "Q(info)"
 
@@ -3918,6 +3926,14 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(sub)"
 
 "Q(sub)"
+
+"Q(subsystem)"
+
+"Q(subsystem)"
+
+"Q(subsystem)"
+
+"Q(subsystem)"
 
 "Q(sum)"
 

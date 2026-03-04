@@ -146,6 +146,8 @@
 #define MICROPY_PY_MARSHAL                (1)
 #define MICROPY_PY_ZLIB                   (1)
 #define MICROPY_PY_ASYNCIO                (1)
+// 扩展试验 by caibo  2026-01-27 15:18
+#define MICROPY_PY_SUBSYSTEM							(1)
 
 // --- USB Device (TinyUSB) ---------------------------------------------------
 // Expose the SD card as a USB Mass Storage device (MSC) so Windows can mount it
@@ -194,12 +196,16 @@
 #define MICROPY_PY_MACHINE_SOFTI2C        (1)
 #define MICROPY_PY_MACHINE_SOFTSPI        (1)
 #define MICROPY_PY_MACHINE_UART           (0)
+#define MICROPY_PY_MACHINE_UART_INCLUDEFILE "py_port/machine_uart.c"
 #define MICROPY_PY_MACHINE_I2C            (1)
 #define MICROPY_PY_MACHINE_SPI            (1)
 #define MICROPY_PY_MACHINE_ADC            (0)
 #define MICROPY_PY_MACHINE_PWM            (0)
 #define MICROPY_PY_MACHINE_TIMER          (0)
 #define MICROPY_PY_MACHINE_WDT            (0)
+
+// UART hardware configuration
+#define MICROPY_HW_MAX_UART               (6)  // STM32F405 has USART1-6
 
 // Hardware I2C/SPI support (STM32F405)
 #define MICROPY_HW_ENABLE_HW_I2C          (1)
@@ -331,6 +337,18 @@ typedef long mp_off_t;
 #endif
 
 #define MP_STATE_PORT MP_STATE_VM
+
+// Port-specific root pointers for GC
+#define MICROPY_PORT_ROOT_POINTERS \
+    struct _machine_uart_obj_t *machine_uart_obj_all[MICROPY_HW_MAX_UART + 2]; \
+
+// Fatal error handling
+#ifndef MICROPY_BOARD_FATAL_ERROR
+#define MICROPY_BOARD_FATAL_ERROR(msg) do { \
+    printf("FATAL ERROR: %s\n", msg); \
+    for (;;); \
+} while (0)
+#endif
 
 #define MP_ENDIANNESS_LITTLE (1)
 // Use native ARM Thumb NLR implementation (see py/nlrthumb.c).
