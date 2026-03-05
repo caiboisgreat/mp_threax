@@ -64,6 +64,9 @@ include("$(MPY_DIR)/lib/lcd160cr/manifest.py")
 # 现在: 直接声明冻结
 freeze("$(PORT_DIR)/frozen_build", "myutils.py")
 
+# uart - 兼容模块（让第三方库可用 import uart）
+freeze("$(PORT_DIR)/frozen_build", "uart.py")
+
 # 如果有更多自定义模块，在这里添加
 # freeze("$(PORT_DIR)/frozen_build", [
 #     "myutils.py",

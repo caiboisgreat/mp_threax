@@ -83,7 +83,8 @@ def check_file():
 
 class Serial(object):
     def __init__(self, uart, buadrate=57600, databits=8, parity=0, stopbits=1, flowctl=0):
-        self._uart = UART(uart, buadrate, databits, parity, stopbits, flowctl)
+        # flow is keyword-only in this port's UART constructor
+        self._uart = UART(uart, buadrate, databits, parity, stopbits, flow=flowctl)
         self._uart.set_callback(self._uart_cb)
         self._queue = Queue(maxsize=1)
         self._timer = osTimer()

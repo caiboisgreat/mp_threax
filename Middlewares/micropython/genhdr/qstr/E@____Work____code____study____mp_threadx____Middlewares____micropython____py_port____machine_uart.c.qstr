@@ -1,5 +1,8 @@
 Q(osTimer)
 Q(function)
+Q(UART2)
+Q(REPL_UART)
+Q(UART3)
 Q(RTS)
 Q(CTS)
 Q(IRQ_RXIDLE)

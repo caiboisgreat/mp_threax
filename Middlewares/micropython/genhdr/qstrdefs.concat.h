@@ -286,6 +286,9 @@ Q(portrait)
 
 // machine.UART class
 Q(UART)
+Q(UART2)
+Q(UART3)
+Q(REPL_UART)
 Q(baudrate)
 Q(bits)
 Q(parity)
@@ -310,6 +313,9 @@ Q(osTimer)
 Q(start)
 Q(stop)
 Q(delete_timer)
+Q(test_attr)
+Q(test_value)
+
 
 Q(A0)
 
@@ -1111,6 +1117,12 @@ Q(RAW)
 
 Q(RCC)
 
+Q(REPL_UART)
+
+Q(REPL_UART)
+
+Q(REPL_UART)
+
 Q(RGB565)
 
 Q(RTC)
@@ -1276,6 +1288,18 @@ Q(TypeError)
 Q(UART)
 
 Q(UART)
+
+Q(UART2)
+
+Q(UART2)
+
+Q(UART2)
+
+Q(UART3)
+
+Q(UART3)
+
+Q(UART3)
 
 Q(UART4)
 
@@ -1457,6 +1481,10 @@ Q(__class__)
 
 Q(__class__)
 
+Q(__class__)
+
+Q(__class__)
+
 Q(__complex__)
 
 Q(__contains__)
@@ -1622,8 +1650,6 @@ Q(__mod__)
 Q(__module__)
 
 Q(__mul__)
-
-Q(__name__)
 
 Q(__name__)
 
@@ -3484,10 +3510,6 @@ Q(os)
 Q(os)
 
 Q(os)
-
-Q(osTimer)
-
-Q(osTimer)
 
 Q(osTimer)
 

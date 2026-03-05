@@ -206,6 +206,9 @@ Q(portrait)
 
 // machine.UART class
 Q(UART)
+Q(UART2)
+Q(UART3)
+Q(REPL_UART)
 Q(baudrate)
 Q(bits)
 Q(parity)

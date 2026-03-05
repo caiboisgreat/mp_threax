@@ -54,6 +54,7 @@ enum {
     MP_QSTR_DEFAULT_CONFIG,
     MP_QSTR_DataBuffer,
     MP_QSTR_EOT,
+    MP_QSTR_File_space__bracket_open__brace_open__brace_close__bracket_close__space_is_space_not_space_exists_dot_,
     MP_QSTR_FileNotFoundError,
     MP_QSTR_GzipFile,
     MP_QSTR_Hello,
@@ -95,6 +96,7 @@ enum {
     MP_QSTR__bracket_open_Sender_bracket_close__colon__space_Received_space__percent_r,
     MP_QSTR__bracket_open_Sender_bracket_close__colon__space_data_colon__space__brace_open__brace_close_,
     MP_QSTR__bracket_open__bracket_close_,
+    MP_QSTR__MAIN_UART_,
     MP_QSTR___author__,
     MP_QSTR___date__,
     MP_QSTR___deque,
@@ -116,6 +118,7 @@ enum {
     MP_QSTR__make_send_checksum,
     MP_QSTR__make_send_header,
     MP_QSTR__print,
+    MP_QSTR__queue,
     MP_QSTR__recv_cmd,
     MP_QSTR__recv_file_mtime,
     MP_QSTR__recv_file_name,
@@ -126,6 +129,7 @@ enum {
     MP_QSTR__send_end_packet,
     MP_QSTR__thread,
     MP_QSTR__thread_dot_py,
+    MP_QSTR__timer,
     MP_QSTR__timer_cb,
     MP_QSTR__tls,
     MP_QSTR__uart,
@@ -211,11 +215,13 @@ enum {
     MP_QSTR_length,
     MP_QSTR_line_no_clip,
     MP_QSTR_ljust,
+    MP_QSTR_localtime,
     MP_QSTR_locked,
     MP_QSTR_map_range,
     MP_QSTR_max_val,
     MP_QSTR_min_val,
     MP_QSTR_mkdirs,
+    MP_QSTR_mktime,
     MP_QSTR_mtime,
     MP_QSTR_myutils_space__0x6a21__0x5757__0x81ea__0x6d4b__0x8bd5_,
     MP_QSTR_myutils_dot_py,
@@ -237,7 +243,9 @@ enum {
     MP_QSTR_program_features,
     MP_QSTR_pwr,
     MP_QSTR_pyam,
+    MP_QSTR_ql_fs,
     MP_QSTR_ql_fs_dot_py,
+    MP_QSTR_queue,
     MP_QSTR_queue_dot_py,
     MP_QSTR_rbsb,
     MP_QSTR_read_json,
@@ -251,6 +259,7 @@ enum {
     MP_QSTR_release_space_unlocked_space_lock,
     MP_QSTR_retry,
     MP_QSTR_rmdirs,
+    MP_QSTR_rtos,
     MP_QSTR_rzsz,
     MP_QSTR_s,
     MP_QSTR_save,
@@ -349,6 +358,7 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     10683,
     17653,
     42971,
+    546,
     35192,
     48391,
     11783,
@@ -390,6 +400,7 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     38346,
     35230,
     30179,
+    8227,
     26448,
     50641,
     26021,
@@ -411,6 +422,7 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     27177,
     61179,
     43979,
+    40843,
     25261,
     42150,
     4697,
@@ -421,6 +433,7 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     44097,
     724,
     42611,
+    45725,
     10883,
     3025,
     14472,
@@ -506,11 +519,13 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     34649,
     20060,
     13745,
+    18045,
     47631,
     4857,
     40213,
     59275,
     26991,
+    11158,
     9213,
     25321,
     13633,
@@ -532,7 +547,9 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     62089,
     28720,
     45024,
+    59442,
     61269,
+    4756,
     36147,
     60324,
     11248,
@@ -546,6 +563,7 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     51606,
     685,
     36758,
+    45759,
     52644,
     46550,
     33700,
@@ -644,6 +662,7 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     14,
     10,
     3,
+    24,
     17,
     8,
     5,
@@ -685,6 +704,7 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     21,
     18,
     2,
+    11,
     10,
     8,
     7,
@@ -705,6 +725,7 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     22,
     19,
     17,
+    6,
     6,
     9,
     16,
@@ -716,6 +737,7 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     16,
     7,
     10,
+    6,
     9,
     4,
     5,
@@ -801,10 +823,12 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     6,
     12,
     5,
+    9,
     6,
     9,
     7,
     7,
+    6,
     6,
     5,
     23,
@@ -827,7 +851,9 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     16,
     3,
     4,
+    5,
     8,
+    5,
     8,
     4,
     9,
@@ -841,6 +867,7 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     21,
     5,
     6,
+    4,
     4,
     1,
     4,
@@ -918,7 +945,7 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
     MP_QSTRnumber_of, // previous pool size
     true, // is_sorted
     10, // allocated entries
-    292, // used entries
+    301, // used entries
     (qstr_hash_t *)mp_qstr_frozen_const_hashes,
     (qstr_len_t *)mp_qstr_frozen_const_lengths,
     {
@@ -948,6 +975,7 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "DEFAULT_CONFIG",
         "DataBuffer",
         "EOT",
+        "File [{}] is not exists.",
         "FileNotFoundError",
         "GzipFile",
         "Hello",
@@ -989,6 +1017,7 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "[Sender]: Received %r",
         "[Sender]: data: {}",
         "[]",
+        "_MAIN_UART_",
         "__author__",
         "__date__",
         "__deque",
@@ -1010,6 +1039,7 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "_make_send_checksum",
         "_make_send_header",
         "_print",
+        "_queue",
         "_recv_cmd",
         "_recv_file_mtime",
         "_recv_file_name",
@@ -1020,6 +1050,7 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "_send_end_packet",
         "_thread",
         "_thread.py",
+        "_timer",
         "_timer_cb",
         "_tls",
         "_uart",
@@ -1105,11 +1136,13 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "length",
         "line_no_clip",
         "ljust",
+        "localtime",
         "locked",
         "map_range",
         "max_val",
         "min_val",
         "mkdirs",
+        "mktime",
         "mtime",
         "\x6d\x79\x75\x74\x69\x6c\x73\x20\xe6\xa8\xa1\xe5\x9d\x97\xe8\x87\xaa\xe6\xb5\x8b\xe8\xaf\x95",
         "myutils.py",
@@ -1131,7 +1164,9 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "program_features",
         "pwr",
         "pyam",
+        "ql_fs",
         "ql_fs.py",
+        "queue",
         "queue.py",
         "rbsb",
         "read_json",
@@ -1145,6 +1180,7 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "release unlocked lock",
         "retry",
         "rmdirs",
+        "rtos",
         "rzsz",
         "s",
         "save",
@@ -9435,10 +9471,10 @@ static const mp_frozen_module_t frozen_module_myutils = {
 // - .mpy header: 4d:06:00:1f
 
 // frozen bytecode for file ymodem.py, scope ymodem__lt_module_gt_
-static const byte fun_data_ymodem__lt_module_gt_[167] = {
-    0x18,0x48, // prelude
+static const byte fun_data_ymodem__lt_module_gt_[247] = {
+    0x30,0x4e, // prelude
     0x01, // names: <module>
-    0x80,0x11,0x26,0x26,0x66,0x66,0x20,0x24,0x24,0x24,0x24,0x24,0x24,0x44,0x23,0x23,0x23,0x23,0x23,0x43,0x63,0x40,0x84,0x0b,0x84,0x1b,0x8b,0x2b,0xab,0x04,0x88,0x08,0x84,0x0b,0x27, // code info
+    0x80,0x11,0x26,0x26,0x26,0x26,0x26,0x26,0x2c,0x4c,0x24,0x24,0x24,0x25,0x25,0x25,0x45,0x24,0x24,0x24,0x24,0x24,0x44,0x44,0x7b,0x84,0x0a,0x84,0x1b,0x8c,0x27,0xac,0x02,0x88,0x07,0x84,0x0a,0x28, // code info
     0x80, // LOAD_CONST_SMALL_INT 0
     0x51, // LOAD_CONST_NONE
     0x1b,0x02, // IMPORT_NAME 'gc'
@@ -9453,64 +9489,100 @@ static const byte fun_data_ymodem__lt_module_gt_[167] = {
     0x16,0x04, // STORE_NAME 'sys'
     0x80, // LOAD_CONST_SMALL_INT 0
     0x51, // LOAD_CONST_NONE
-    0x1b,0x05, // IMPORT_NAME 'utime'
-    0x16,0x60, // STORE_NAME 'time'
+    0x1b,0x05, // IMPORT_NAME 'ql_fs'
+    0x16,0x05, // STORE_NAME 'ql_fs'
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0x51, // LOAD_CONST_NONE
+    0x1b,0x06, // IMPORT_NAME 'osTimer'
+    0x16,0x06, // STORE_NAME 'osTimer'
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0x51, // LOAD_CONST_NONE
+    0x1b,0x07, // IMPORT_NAME 'utime'
+    0x16,0x7c, // STORE_NAME 'time'
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0x10,0x08, // LOAD_CONST_STRING 'Queue'
+    0x2a,0x01, // BUILD_TUPLE 1
+    0x1b,0x09, // IMPORT_NAME 'queue'
+    0x1c,0x08, // IMPORT_FROM 'Queue'
+    0x16,0x08, // STORE_NAME 'Queue'
+    0x59, // POP_TOP
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0x10,0x0a, // LOAD_CONST_STRING 'UART'
+    0x2a,0x01, // BUILD_TUPLE 1
+    0x1b,0x0b, // IMPORT_NAME 'machine'
+    0x1c,0x0a, // IMPORT_FROM 'UART'
+    0x16,0x0a, // STORE_NAME 'UART'
+    0x59, // POP_TOP
     0x23,0x00, // LOAD_CONST_OBJ 0
-    0x16,0x61, // STORE_NAME 'SOH'
+    0x16,0x7d, // STORE_NAME 'SOH'
     0x23,0x01, // LOAD_CONST_OBJ 1
-    0x16,0x62, // STORE_NAME 'STX'
+    0x16,0x7e, // STORE_NAME 'STX'
     0x23,0x02, // LOAD_CONST_OBJ 2
-    0x16,0x63, // STORE_NAME 'EOT'
+    0x16,0x7f, // STORE_NAME 'EOT'
     0x23,0x03, // LOAD_CONST_OBJ 3
-    0x16,0x64, // STORE_NAME 'ACK'
+    0x16,0x81,0x00, // STORE_NAME 'ACK'
     0x23,0x04, // LOAD_CONST_OBJ 4
-    0x16,0x65, // STORE_NAME 'NAK'
+    0x16,0x81,0x01, // STORE_NAME 'NAK'
     0x23,0x05, // LOAD_CONST_OBJ 5
-    0x16,0x66, // STORE_NAME 'CAN'
+    0x16,0x81,0x02, // STORE_NAME 'CAN'
     0x23,0x06, // LOAD_CONST_OBJ 6
-    0x16,0x67, // STORE_NAME 'CRC'
+    0x16,0x81,0x03, // STORE_NAME 'CRC'
     0xa0, // LOAD_CONST_SMALL_INT 32
-    0x16,0x68, // STORE_NAME 'USE_LENGTH_FIELD'
+    0x16,0x81,0x04, // STORE_NAME 'USE_LENGTH_FIELD'
     0x90, // LOAD_CONST_SMALL_INT 16
-    0x16,0x69, // STORE_NAME 'USE_DATE_FIELD'
+    0x16,0x81,0x05, // STORE_NAME 'USE_DATE_FIELD'
     0x88, // LOAD_CONST_SMALL_INT 8
-    0x16,0x6a, // STORE_NAME 'USE_MODE_FIELD'
+    0x16,0x81,0x06, // STORE_NAME 'USE_MODE_FIELD'
     0x84, // LOAD_CONST_SMALL_INT 4
-    0x16,0x6b, // STORE_NAME 'USE_SN_FIELD'
+    0x16,0x81,0x07, // STORE_NAME 'USE_SN_FIELD'
     0x82, // LOAD_CONST_SMALL_INT 2
-    0x16,0x6c, // STORE_NAME 'ALLOW_1K_BLOCK'
+    0x16,0x81,0x08, // STORE_NAME 'ALLOW_1K_BLOCK'
     0x81, // LOAD_CONST_SMALL_INT 1
-    0x16,0x6d, // STORE_NAME 'ALLOW_YMODEM_G'
+    0x16,0x81,0x09, // STORE_NAME 'ALLOW_YMODEM_G'
     0x50, // LOAD_CONST_FALSE
-    0x17,0x6e, // STORE_GLOBAL 'DEBUG'
+    0x17,0x81,0x0a, // STORE_GLOBAL 'DEBUG'
+    0x12,0x81,0x0a, // LOAD_GLOBAL 'DEBUG'
+    0x44,0x52, // POP_JUMP_IF_FALSE 18
+    0x11,0x0a, // LOAD_NAME 'UART'
+    0x11,0x0a, // LOAD_NAME 'UART'
+    0x13,0x0c, // LOAD_ATTR 'UART2'
+    0x22,0x87,0x84,0x00, // LOAD_CONST_SMALL_INT 115200
+    0x88, // LOAD_CONST_SMALL_INT 8
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0x81, // LOAD_CONST_SMALL_INT 1
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0x34,0x06, // CALL_FUNCTION 6
+    0x42,0x41, // JUMP 1
+    0x51, // LOAD_CONST_NONE
+    0x17,0x81,0x0b, // STORE_GLOBAL '_MAIN_UART_'
     0x32,0x00, // MAKE_FUNCTION 0
-    0x16,0x09, // STORE_NAME '_print'
+    0x16,0x10, // STORE_NAME '_print'
     0x32,0x01, // MAKE_FUNCTION 1
-    0x16,0x0c, // STORE_NAME 'check_file'
+    0x16,0x14, // STORE_NAME 'check_file'
     0x54, // LOAD_BUILD_CLASS
     0x32,0x02, // MAKE_FUNCTION 2
-    0x10,0x06, // LOAD_CONST_STRING 'Serial'
-    0x11,0x6f, // LOAD_NAME 'object'
+    0x10,0x0d, // LOAD_CONST_STRING 'Serial'
+    0x11,0x81,0x0c, // LOAD_NAME 'object'
     0x34,0x03, // CALL_FUNCTION 3
-    0x16,0x06, // STORE_NAME 'Serial'
+    0x16,0x0d, // STORE_NAME 'Serial'
     0x54, // LOAD_BUILD_CLASS
     0x32,0x03, // MAKE_FUNCTION 3
-    0x10,0x07, // LOAD_CONST_STRING 'Modem'
-    0x11,0x6f, // LOAD_NAME 'object'
+    0x10,0x0e, // LOAD_CONST_STRING 'Modem'
+    0x11,0x81,0x0c, // LOAD_NAME 'object'
     0x34,0x03, // CALL_FUNCTION 3
-    0x16,0x07, // STORE_NAME 'Modem'
+    0x16,0x0e, // STORE_NAME 'Modem'
     0x51, // LOAD_CONST_NONE
     0x2a,0x01, // BUILD_TUPLE 1
     0x53, // LOAD_NULL
     0x33,0x04, // MAKE_FUNCTION_DEFARGS 4
-    0x16,0x10, // STORE_NAME 'enter_ymodem'
+    0x16,0x18, // STORE_NAME 'enter_ymodem'
     0x32,0x05, // MAKE_FUNCTION 5
-    0x16,0x11, // STORE_NAME 'send_file'
-    0x11,0x70, // LOAD_NAME '__name__'
-    0x10,0x08, // LOAD_CONST_STRING '__main__'
+    0x16,0x1f, // STORE_NAME 'send_file'
+    0x11,0x81,0x0d, // LOAD_NAME '__name__'
+    0x10,0x0f, // LOAD_CONST_STRING '__main__'
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x45, // POP_JUMP_IF_FALSE 5
-    0x11,0x10, // LOAD_NAME 'enter_ymodem'
+    0x11,0x18, // LOAD_NAME 'enter_ymodem'
     0x34,0x00, // CALL_FUNCTION 0
     0x59, // POP_TOP
     0x51, // LOAD_CONST_NONE
@@ -9518,37 +9590,37 @@ static const byte fun_data_ymodem__lt_module_gt_[167] = {
 };
 // child of ymodem__lt_module_gt_
 // frozen bytecode for file ymodem.py, scope ymodem__print
-static const byte fun_data_ymodem__print[82] = {
-    0x29,0x12, // prelude
-    0x09,0x71, // names: _print, data
-    0x80,0x30,0x20,0x24,0x1f,0x27,0x74, // code info
-    0x12,0x6e, // LOAD_GLOBAL 'DEBUG'
-    0x44,0x7a, // POP_JUMP_IF_FALSE 58
-    0x12,0x72, // LOAD_GLOBAL 'isinstance'
+static const byte fun_data_ymodem__print[102] = {
+    0x29,0x16, // prelude
+    0x10,0x81,0x0e, // names: _print, data
+    0x80,0x2f,0x20,0x26,0x1f,0x2c,0x32,0x4b, // code info
+    0x12,0x81,0x0a, // LOAD_GLOBAL 'DEBUG'
+    0x44,0xc8,0x80, // POP_JUMP_IF_FALSE 72
+    0x12,0x81,0x0f, // LOAD_GLOBAL 'isinstance'
     0xb0, // LOAD_FAST 0
-    0x12,0x73, // LOAD_GLOBAL 'bytes'
+    0x12,0x81,0x10, // LOAD_GLOBAL 'bytes'
     0x34,0x02, // CALL_FUNCTION 2
     0x44,0x43, // POP_JUMP_IF_FALSE 3
     0xb0, // LOAD_FAST 0
-    0x42,0x59, // JUMP 25
-    0x12,0x72, // LOAD_GLOBAL 'isinstance'
+    0x42,0x5c, // JUMP 28
+    0x12,0x81,0x0f, // LOAD_GLOBAL 'isinstance'
     0xb0, // LOAD_FAST 0
-    0x12,0x74, // LOAD_GLOBAL 'str'
+    0x12,0x81,0x11, // LOAD_GLOBAL 'str'
     0x34,0x02, // CALL_FUNCTION 2
     0x44,0x47, // POP_JUMP_IF_FALSE 7
     0xb0, // LOAD_FAST 0
-    0x14,0x0a, // LOAD_METHOD 'encode'
+    0x14,0x11, // LOAD_METHOD 'encode'
     0x36,0x00, // CALL_METHOD 0
-    0x42,0x49, // JUMP 9
-    0x12,0x74, // LOAD_GLOBAL 'str'
+    0x42,0x4a, // JUMP 10
+    0x12,0x81,0x11, // LOAD_GLOBAL 'str'
     0xb0, // LOAD_FAST 0
     0x34,0x01, // CALL_FUNCTION 1
-    0x14,0x0a, // LOAD_METHOD 'encode'
+    0x14,0x11, // LOAD_METHOD 'encode'
     0x36,0x00, // CALL_METHOD 0
     0xc1, // STORE_FAST 1
     0xb1, // LOAD_FAST 1
     0xb1, // LOAD_FAST 1
-    0x14,0x0b, // LOAD_METHOD 'endswith'
+    0x14,0x12, // LOAD_METHOD 'endswith'
     0x23,0x07, // LOAD_CONST_OBJ 7
     0x36,0x01, // CALL_METHOD 1
     0x44,0x44, // POP_JUMP_IF_FALSE 4
@@ -9557,9 +9629,14 @@ static const byte fun_data_ymodem__print[82] = {
     0x23,0x07, // LOAD_CONST_OBJ 7
     0xe5, // BINARY_OP 14 __iadd__
     0xc1, // STORE_FAST 1
-    0x42,0x47, // JUMP 7
-    0x12,0x75, // LOAD_GLOBAL 'print'
-    0x12,0x6e, // LOAD_GLOBAL 'DEBUG'
+    0x12,0x81,0x0b, // LOAD_GLOBAL '_MAIN_UART_'
+    0x14,0x13, // LOAD_METHOD 'write'
+    0xb1, // LOAD_FAST 1
+    0x36,0x01, // CALL_METHOD 1
+    0x59, // POP_TOP
+    0x42,0x49, // JUMP 9
+    0x12,0x81,0x12, // LOAD_GLOBAL 'print'
+    0x12,0x81,0x0a, // LOAD_GLOBAL 'DEBUG'
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0x51, // LOAD_CONST_NONE
@@ -9574,7 +9651,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem__print = {
     .fun_data = fun_data_ymodem__print,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 82,
+    .fun_data_len = 102,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -9588,10 +9665,10 @@ static const mp_raw_code_truncated_t proto_fun_ymodem__print = {
         .n_pos_args = 1,
         .n_kwonly_args = 0,
         .n_def_pos_args = 0,
-        .qstr_block_name_idx = 9,
-        .line_info = fun_data_ymodem__print + 4,
-        .line_info_top = fun_data_ymodem__print + 11,
-        .opcodes = fun_data_ymodem__print + 11,
+        .qstr_block_name_idx = 16,
+        .line_info = fun_data_ymodem__print + 5,
+        .line_info_top = fun_data_ymodem__print + 13,
+        .opcodes = fun_data_ymodem__print + 13,
     },
     #endif
     #endif
@@ -9604,8 +9681,8 @@ static const mp_raw_code_truncated_t proto_fun_ymodem__print = {
 // frozen bytecode for file ymodem.py, scope ymodem_check_file
 static const byte fun_data_ymodem_check_file[12] = {
     0x08,0x0a, // prelude
-    0x0c, // names: check_file
-    0x80,0x3a,0x83,0x17, // code info
+    0x14, // names: check_file
+    0x80,0x39,0x83,0x17, // code info
     0x32,0x00, // MAKE_FUNCTION 0
     0xc0, // STORE_FAST 0
     0xb0, // LOAD_FAST 0
@@ -9613,10 +9690,10 @@ static const byte fun_data_ymodem_check_file[12] = {
 };
 // child of ymodem_check_file
 // frozen bytecode for file ymodem.py, scope ymodem_check_file_wrapper
-static const byte fun_data_ymodem_check_file_wrapper[16] = {
-    0x11,0x0d, // prelude
-    0x12,0x7b, // names: wrapper, func
-    0x80,0x3b,0x85,0x15,0x00, // code info
+static const byte fun_data_ymodem_check_file_wrapper[17] = {
+    0x11,0x0f, // prelude
+    0x21,0x81,0x19, // names: wrapper, func
+    0x80,0x3a,0x85,0x15,0x00, // code info
     0xb0, // LOAD_FAST 0
     0x20,0x00,0x01, // MAKE_CLOSURE 0
     0xc1, // STORE_FAST 1
@@ -9625,15 +9702,15 @@ static const byte fun_data_ymodem_check_file_wrapper[16] = {
 };
 // child of ymodem_check_file_wrapper
 // frozen bytecode for file ymodem.py, scope ymodem_check_file_wrapper__wrapper
-static const byte fun_data_ymodem_check_file_wrapper__wrapper[99] = {
-    0x81,0x90,0xc0,0x40,0x1c, // prelude
-    0x5b,0x81,0x22, // names: _wrapper, *
-    0x80,0x3c,0x26,0x29,0x24,0x23,0x25,0x31,0x8e,0x0c,0x27, // code info
-    0x12,0x81,0x23, // LOAD_GLOBAL 'list'
+static const byte fun_data_ymodem_check_file_wrapper__wrapper[185] = {
+    0x91,0x90,0xc0,0x40,0x2c, // prelude
+    0x73,0x81,0x3f, // names: _wrapper, *
+    0x80,0x3b,0x26,0x29,0x24,0x23,0x25,0x31,0x2c,0x29,0x22,0x24,0x2a,0x2a,0x2f,0x46,0x49,0x2f,0x27, // code info
+    0x12,0x81,0x40, // LOAD_GLOBAL 'list'
     0x34,0x00, // CALL_FUNCTION 0
     0xc3, // STORE_FAST 3
     0xb3, // LOAD_FAST 3
-    0x14,0x59, // LOAD_METHOD 'append'
+    0x14,0x71, // LOAD_METHOD 'append'
     0xb1, // LOAD_FAST 1
     0x80, // LOAD_CONST_SMALL_INT 0
     0x55, // LOAD_SUBSCR
@@ -9647,19 +9724,19 @@ static const byte fun_data_ymodem_check_file_wrapper__wrapper[99] = {
     0xc5, // STORE_FAST 5
     0xb4, // LOAD_FAST 4
     0x5f, // GET_ITER_STACK
-    0x4b,0x20, // FOR_ITER 32
+    0x4b,0x6e, // FOR_ITER 110
     0xc6, // STORE_FAST 6
     0xb6, // LOAD_FAST 6
-    0x14,0x5c, // LOAD_METHOD 'strip'
-    0x10,0x5d, // LOAD_CONST_STRING '[]'
+    0x14,0x74, // LOAD_METHOD 'strip'
+    0x10,0x75, // LOAD_CONST_STRING '[]'
     0x36,0x01, // CALL_METHOD 1
-    0x14,0x37, // LOAD_METHOD 'split'
-    0x10,0x5e, // LOAD_CONST_STRING ','
+    0x14,0x4c, // LOAD_METHOD 'split'
+    0x10,0x76, // LOAD_CONST_STRING ','
     0x36,0x01, // CALL_METHOD 1
     0x30,0x02, // UNPACK_SEQUENCE 2
     0xc7, // STORE_FAST 7
     0xc8, // STORE_FAST 8
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x2e, // LOAD_CONST_OBJ 46
     0xb7, // LOAD_FAST 7
     0xb8, // LOAD_FAST 8
@@ -9667,14 +9744,60 @@ static const byte fun_data_ymodem_check_file_wrapper__wrapper[99] = {
     0xf8, // BINARY_OP 33 __mod__
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
-    0x42,0x1e, // JUMP -34
+    0x12,0x05, // LOAD_GLOBAL 'ql_fs'
+    0x14,0x52, // LOAD_METHOD 'path_exists'
+    0xb7, // LOAD_FAST 7
+    0x36,0x01, // CALL_METHOD 1
+    0x44,0x78, // POP_JUMP_IF_FALSE 56
+    0x2c,0x05, // BUILD_MAP 5
+    0xb7, // LOAD_FAST 7
+    0x10,0x5c, // LOAD_CONST_STRING 'filepath'
+    0x62, // STORE_MAP
+    0xb8, // LOAD_FAST 8
+    0x14,0x74, // LOAD_METHOD 'strip'
+    0x10,0x51, // LOAD_CONST_STRING ' '
+    0x36,0x01, // CALL_METHOD 1
+    0x10,0x64, // LOAD_CONST_STRING 'name'
+    0x62, // STORE_MAP
+    0x12,0x05, // LOAD_GLOBAL 'ql_fs'
+    0x14,0x77, // LOAD_METHOD 'path_getsize'
+    0xb7, // LOAD_FAST 7
+    0x36,0x01, // CALL_METHOD 1
+    0x10,0x69, // LOAD_CONST_STRING 'length'
+    0x62, // STORE_MAP
+    0x12,0x7c, // LOAD_GLOBAL 'time'
+    0x14,0x78, // LOAD_METHOD 'mktime'
+    0x12,0x7c, // LOAD_GLOBAL 'time'
+    0x14,0x79, // LOAD_METHOD 'localtime'
+    0x36,0x00, // CALL_METHOD 0
+    0x36,0x01, // CALL_METHOD 1
+    0x10,0x6a, // LOAD_CONST_STRING 'mtime'
+    0x62, // STORE_MAP
+    0x10,0x7a, // LOAD_CONST_STRING 'rtos'
+    0x10,0x6d, // LOAD_CONST_STRING 'source'
+    0x62, // STORE_MAP
+    0xc9, // STORE_FAST 9
+    0xb5, // LOAD_FAST 5
+    0x14,0x71, // LOAD_METHOD 'append'
+    0xb9, // LOAD_FAST 9
+    0x36,0x01, // CALL_METHOD 1
+    0x59, // POP_TOP
+    0x42,0x4c, // JUMP 12
+    0x12,0x10, // LOAD_GLOBAL '_print'
+    0x23,0x2f, // LOAD_CONST_OBJ 47
+    0x14,0x67, // LOAD_METHOD 'format'
+    0xb7, // LOAD_FAST 7
+    0x36,0x01, // CALL_METHOD 1
+    0x34,0x01, // CALL_FUNCTION 1
+    0x59, // POP_TOP
+    0x42,0x90,0x7f, // JUMP -112
     0xb3, // LOAD_FAST 3
-    0x14,0x59, // LOAD_METHOD 'append'
+    0x14,0x71, // LOAD_METHOD 'append'
     0xb5, // LOAD_FAST 5
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
     0x25,0x00, // LOAD_DEREF 0
-    0x12,0x81,0x24, // LOAD_GLOBAL 'tuple'
+    0x12,0x81,0x41, // LOAD_GLOBAL 'tuple'
     0xb3, // LOAD_FAST 3
     0x34,0x01, // CALL_FUNCTION 1
     0x53, // LOAD_NULL
@@ -9692,7 +9815,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_check_file_wrapper__wrappe
     .fun_data = fun_data_ymodem_check_file_wrapper__wrapper,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 99,
+    .fun_data_len = 185,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -9700,16 +9823,16 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_check_file_wrapper__wrappe
     #if MICROPY_PY_SYS_SETTRACE
     .line_of_definition = 0,
     .prelude = {
-        .n_state = 17,
+        .n_state = 19,
         .n_exc_stack = 0,
         .scope_flags = 6,
         .n_pos_args = 1,
         .n_kwonly_args = 0,
         .n_def_pos_args = 0,
-        .qstr_block_name_idx = 91,
+        .qstr_block_name_idx = 115,
         .line_info = fun_data_ymodem_check_file_wrapper__wrapper + 8,
-        .line_info_top = fun_data_ymodem_check_file_wrapper__wrapper + 19,
-        .opcodes = fun_data_ymodem_check_file_wrapper__wrapper + 19,
+        .line_info_top = fun_data_ymodem_check_file_wrapper__wrapper + 27,
+        .opcodes = fun_data_ymodem_check_file_wrapper__wrapper + 27,
     },
     #endif
     #endif
@@ -9730,7 +9853,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_check_file_wrapper = {
     .fun_data = fun_data_ymodem_check_file_wrapper,
     .children = (void *)&children_ymodem_check_file_wrapper,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 16,
+    .fun_data_len = 17,
     .n_children = 1,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -9744,10 +9867,10 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_check_file_wrapper = {
         .n_pos_args = 1,
         .n_kwonly_args = 0,
         .n_def_pos_args = 0,
-        .qstr_block_name_idx = 18,
-        .line_info = fun_data_ymodem_check_file_wrapper + 4,
-        .line_info_top = fun_data_ymodem_check_file_wrapper + 8,
-        .opcodes = fun_data_ymodem_check_file_wrapper + 9,
+        .qstr_block_name_idx = 33,
+        .line_info = fun_data_ymodem_check_file_wrapper + 5,
+        .line_info_top = fun_data_ymodem_check_file_wrapper + 9,
+        .opcodes = fun_data_ymodem_check_file_wrapper + 10,
     },
     #endif
     #endif
@@ -9779,7 +9902,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_check_file = {
         .n_pos_args = 0,
         .n_kwonly_args = 0,
         .n_def_pos_args = 0,
-        .qstr_block_name_idx = 12,
+        .qstr_block_name_idx = 20,
         .line_info = fun_data_ymodem_check_file + 3,
         .line_info_top = fun_data_ymodem_check_file + 7,
         .opcodes = fun_data_ymodem_check_file + 7,
@@ -9790,14 +9913,14 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_check_file = {
 
 // child of ymodem__lt_module_gt_
 // frozen bytecode for file ymodem.py, scope ymodem_Serial
-static const byte fun_data_ymodem_Serial[64] = {
-    0x20,0x1a, // prelude
-    0x06, // names: Serial
-    0x88,0x55,0x6f,0x60,0x64,0x40,0x64,0x40,0x64,0x20,0x88,0x11, // code info
-    0x11,0x70, // LOAD_NAME '__name__'
-    0x16,0x76, // STORE_NAME '__module__'
-    0x10,0x06, // LOAD_CONST_STRING 'Serial'
-    0x16,0x77, // STORE_NAME '__qualname__'
+static const byte fun_data_ymodem_Serial[66] = {
+    0x20,0x18, // prelude
+    0x0d, // names: Serial
+    0x8b,0x54,0x8f,0x07,0x64,0x20,0x64,0x20,0x64,0x88,0x10, // code info
+    0x11,0x81,0x0d, // LOAD_NAME '__name__'
+    0x16,0x81,0x13, // STORE_NAME '__module__'
+    0x10,0x0d, // LOAD_CONST_STRING 'Serial'
+    0x16,0x81,0x14, // STORE_NAME '__qualname__'
     0x22,0x83,0xc2,0x00, // LOAD_CONST_SMALL_INT 57600
     0x88, // LOAD_CONST_SMALL_INT 8
     0x80, // LOAD_CONST_SMALL_INT 0
@@ -9806,36 +9929,57 @@ static const byte fun_data_ymodem_Serial[64] = {
     0x2a,0x05, // BUILD_TUPLE 5
     0x53, // LOAD_NULL
     0x33,0x00, // MAKE_FUNCTION_DEFARGS 0
-    0x16,0x13, // STORE_NAME '__init__'
+    0x16,0x22, // STORE_NAME '__init__'
     0x32,0x01, // MAKE_FUNCTION 1
-    0x16,0x16, // STORE_NAME '_uart_cb'
+    0x16,0x26, // STORE_NAME '_uart_cb'
     0x32,0x02, // MAKE_FUNCTION 2
-    0x16,0x17, // STORE_NAME '_timer_cb'
+    0x16,0x2c, // STORE_NAME '_timer_cb'
     0x32,0x03, // MAKE_FUNCTION 3
-    0x16,0x18, // STORE_NAME 'write'
+    0x16,0x13, // STORE_NAME 'write'
     0x80, // LOAD_CONST_SMALL_INT 0
     0x2a,0x01, // BUILD_TUPLE 1
     0x53, // LOAD_NULL
     0x33,0x04, // MAKE_FUNCTION_DEFARGS 4
-    0x16,0x19, // STORE_NAME 'read'
+    0x16,0x1b, // STORE_NAME 'read'
     0x32,0x05, // MAKE_FUNCTION 5
-    0x16,0x1a, // STORE_NAME 'close'
+    0x16,0x1e, // STORE_NAME 'close'
     0x51, // LOAD_CONST_NONE
     0x63, // RETURN_VALUE
 };
 // child of ymodem_Serial
 // frozen bytecode for file ymodem.py, scope ymodem_Serial___init__
-static const byte fun_data_ymodem_Serial___init__[31] = {
-    0xcb,0x85,0x80,0x01,0x1a, // prelude
-    0x13,0x7c,0x7d,0x7e,0x7f,0x81,0x00,0x81,0x01,0x81,0x02, // names: __init__, self, uart, buadrate, databits, parity, stopbits, flowctl
-    0x80,0x57, // code info
+static const byte fun_data_ymodem_Serial___init__[72] = {
+    0xf3,0x85,0x80,0x01,0x28, // prelude
+    0x22,0x81,0x1a,0x81,0x1b,0x81,0x1c,0x81,0x1d,0x81,0x1e,0x81,0x1f,0x81,0x20, // names: __init__, self, uart, buadrate, databits, parity, stopbits, flowctl
+    0x80,0x56,0x30,0x2b,0x2b, // code info
+    0x12,0x0a, // LOAD_GLOBAL 'UART'
+    0xb1, // LOAD_FAST 1
+    0xb2, // LOAD_FAST 2
+    0xb3, // LOAD_FAST 3
+    0xb4, // LOAD_FAST 4
+    0xb5, // LOAD_FAST 5
+    0x10,0x23, // LOAD_CONST_STRING 'flow'
+    0xb6, // LOAD_FAST 6
+    0x34,0x82,0x05, // CALL_FUNCTION 261
     0xb0, // LOAD_FAST 0
-    0x13,0x14, // LOAD_ATTR '_uart'
-    0x14,0x15, // LOAD_METHOD 'set_callback'
+    0x18,0x24, // STORE_ATTR '_uart'
     0xb0, // LOAD_FAST 0
-    0x13,0x16, // LOAD_ATTR '_uart_cb'
+    0x13,0x24, // LOAD_ATTR '_uart'
+    0x14,0x25, // LOAD_METHOD 'set_callback'
+    0xb0, // LOAD_FAST 0
+    0x13,0x26, // LOAD_ATTR '_uart_cb'
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
+    0x12,0x08, // LOAD_GLOBAL 'Queue'
+    0x10,0x27, // LOAD_CONST_STRING 'maxsize'
+    0x81, // LOAD_CONST_SMALL_INT 1
+    0x34,0x82,0x00, // CALL_FUNCTION 256
+    0xb0, // LOAD_FAST 0
+    0x18,0x28, // STORE_ATTR '_queue'
+    0x12,0x06, // LOAD_GLOBAL 'osTimer'
+    0x34,0x00, // CALL_FUNCTION 0
+    0xb0, // LOAD_FAST 0
+    0x18,0x29, // STORE_ATTR '_timer'
     0x51, // LOAD_CONST_NONE
     0x63, // RETURN_VALUE
 };
@@ -9848,7 +9992,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Serial___init__ = {
     .fun_data = fun_data_ymodem_Serial___init__,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 31,
+    .fun_data_len = 72,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -9856,16 +10000,16 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Serial___init__ = {
     #if MICROPY_PY_SYS_SETTRACE
     .line_of_definition = 0,
     .prelude = {
-        .n_state = 10,
+        .n_state = 15,
         .n_exc_stack = 0,
         .scope_flags = 0,
         .n_pos_args = 7,
         .n_kwonly_args = 0,
         .n_def_pos_args = 5,
-        .qstr_block_name_idx = 19,
-        .line_info = fun_data_ymodem_Serial___init__ + 16,
-        .line_info_top = fun_data_ymodem_Serial___init__ + 18,
-        .opcodes = fun_data_ymodem_Serial___init__ + 18,
+        .qstr_block_name_idx = 34,
+        .line_info = fun_data_ymodem_Serial___init__ + 20,
+        .line_info_top = fun_data_ymodem_Serial___init__ + 25,
+        .opcodes = fun_data_ymodem_Serial___init__ + 25,
     },
     #endif
     #endif
@@ -9876,10 +10020,23 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Serial___init__ = {
 
 // child of ymodem_Serial
 // frozen bytecode for file ymodem.py, scope ymodem_Serial__uart_cb
-static const byte fun_data_ymodem_Serial__uart_cb[11] = {
-    0x91,0x80,0x80,0x40,0x08, // prelude
-    0x16,0x7c, // names: _uart_cb, self
-    0x80,0x5e, // code info
+static const byte fun_data_ymodem_Serial__uart_cb[33] = {
+    0xa1,0x80,0x80,0x40,0x0c, // prelude
+    0x26,0x81,0x1a, // names: _uart_cb, self
+    0x80,0x5c,0x2b, // code info
+    0xb0, // LOAD_FAST 0
+    0x13,0x28, // LOAD_ATTR '_queue'
+    0x14,0x2a, // LOAD_METHOD 'size'
+    0x36,0x00, // CALL_METHOD 0
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0xd9, // BINARY_OP 2 __eq__
+    0x44,0x49, // POP_JUMP_IF_FALSE 9
+    0xb0, // LOAD_FAST 0
+    0x13,0x28, // LOAD_ATTR '_queue'
+    0x14,0x2b, // LOAD_METHOD 'put'
+    0x51, // LOAD_CONST_NONE
+    0x36,0x01, // CALL_METHOD 1
+    0x59, // POP_TOP
     0x51, // LOAD_CONST_NONE
     0x63, // RETURN_VALUE
 };
@@ -9892,7 +10049,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Serial__uart_cb = {
     .fun_data = fun_data_ymodem_Serial__uart_cb,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 11,
+    .fun_data_len = 33,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -9900,16 +10057,16 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Serial__uart_cb = {
     #if MICROPY_PY_SYS_SETTRACE
     .line_of_definition = 0,
     .prelude = {
-        .n_state = 3,
+        .n_state = 5,
         .n_exc_stack = 0,
         .scope_flags = 4,
         .n_pos_args = 1,
         .n_kwonly_args = 0,
         .n_def_pos_args = 0,
-        .qstr_block_name_idx = 22,
-        .line_info = fun_data_ymodem_Serial__uart_cb + 7,
-        .line_info_top = fun_data_ymodem_Serial__uart_cb + 9,
-        .opcodes = fun_data_ymodem_Serial__uart_cb + 9,
+        .qstr_block_name_idx = 38,
+        .line_info = fun_data_ymodem_Serial__uart_cb + 8,
+        .line_info_top = fun_data_ymodem_Serial__uart_cb + 11,
+        .opcodes = fun_data_ymodem_Serial__uart_cb + 11,
     },
     #endif
     #endif
@@ -9920,10 +10077,23 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Serial__uart_cb = {
 
 // child of ymodem_Serial
 // frozen bytecode for file ymodem.py, scope ymodem_Serial__timer_cb
-static const byte fun_data_ymodem_Serial__timer_cb[11] = {
-    0x91,0x80,0x80,0x40,0x08, // prelude
-    0x17,0x7c, // names: _timer_cb, self
-    0x80,0x63, // code info
+static const byte fun_data_ymodem_Serial__timer_cb[33] = {
+    0xa1,0x80,0x80,0x40,0x0c, // prelude
+    0x2c,0x81,0x1a, // names: _timer_cb, self
+    0x80,0x60,0x2b, // code info
+    0xb0, // LOAD_FAST 0
+    0x13,0x28, // LOAD_ATTR '_queue'
+    0x14,0x2a, // LOAD_METHOD 'size'
+    0x36,0x00, // CALL_METHOD 0
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0xd9, // BINARY_OP 2 __eq__
+    0x44,0x49, // POP_JUMP_IF_FALSE 9
+    0xb0, // LOAD_FAST 0
+    0x13,0x28, // LOAD_ATTR '_queue'
+    0x14,0x2b, // LOAD_METHOD 'put'
+    0x51, // LOAD_CONST_NONE
+    0x36,0x01, // CALL_METHOD 1
+    0x59, // POP_TOP
     0x51, // LOAD_CONST_NONE
     0x63, // RETURN_VALUE
 };
@@ -9936,7 +10106,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Serial__timer_cb = {
     .fun_data = fun_data_ymodem_Serial__timer_cb,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 11,
+    .fun_data_len = 33,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -9944,16 +10114,16 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Serial__timer_cb = {
     #if MICROPY_PY_SYS_SETTRACE
     .line_of_definition = 0,
     .prelude = {
-        .n_state = 3,
+        .n_state = 5,
         .n_exc_stack = 0,
         .scope_flags = 4,
         .n_pos_args = 1,
         .n_kwonly_args = 0,
         .n_def_pos_args = 0,
-        .qstr_block_name_idx = 23,
-        .line_info = fun_data_ymodem_Serial__timer_cb + 7,
-        .line_info_top = fun_data_ymodem_Serial__timer_cb + 9,
-        .opcodes = fun_data_ymodem_Serial__timer_cb + 9,
+        .qstr_block_name_idx = 44,
+        .line_info = fun_data_ymodem_Serial__timer_cb + 8,
+        .line_info_top = fun_data_ymodem_Serial__timer_cb + 11,
+        .opcodes = fun_data_ymodem_Serial__timer_cb + 11,
     },
     #endif
     #endif
@@ -9964,11 +10134,15 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Serial__timer_cb = {
 
 // child of ymodem_Serial
 // frozen bytecode for file ymodem.py, scope ymodem_Serial_write
-static const byte fun_data_ymodem_Serial_write[9] = {
-    0x12,0x0a, // prelude
-    0x18,0x7c,0x71, // names: write, self, data
-    0x80,0x67, // code info
-    0x52, // LOAD_CONST_TRUE
+static const byte fun_data_ymodem_Serial_write[18] = {
+    0x22,0x0e, // prelude
+    0x13,0x81,0x1a,0x81,0x0e, // names: write, self, data
+    0x80,0x64, // code info
+    0xb0, // LOAD_FAST 0
+    0x13,0x24, // LOAD_ATTR '_uart'
+    0x14,0x13, // LOAD_METHOD 'write'
+    0xb1, // LOAD_FAST 1
+    0x36,0x01, // CALL_METHOD 1
     0x63, // RETURN_VALUE
 };
 #if MICROPY_PERSISTENT_CODE_SAVE
@@ -9980,7 +10154,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Serial_write = {
     .fun_data = fun_data_ymodem_Serial_write,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 9,
+    .fun_data_len = 18,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -9988,16 +10162,16 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Serial_write = {
     #if MICROPY_PY_SYS_SETTRACE
     .line_of_definition = 0,
     .prelude = {
-        .n_state = 3,
+        .n_state = 5,
         .n_exc_stack = 0,
         .scope_flags = 0,
         .n_pos_args = 2,
         .n_kwonly_args = 0,
         .n_def_pos_args = 0,
-        .qstr_block_name_idx = 24,
-        .line_info = fun_data_ymodem_Serial_write + 5,
-        .line_info_top = fun_data_ymodem_Serial_write + 7,
-        .opcodes = fun_data_ymodem_Serial_write + 7,
+        .qstr_block_name_idx = 19,
+        .line_info = fun_data_ymodem_Serial_write + 7,
+        .line_info_top = fun_data_ymodem_Serial_write + 9,
+        .opcodes = fun_data_ymodem_Serial_write + 9,
     },
     #endif
     #endif
@@ -10008,11 +10182,79 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Serial_write = {
 
 // child of ymodem_Serial
 // frozen bytecode for file ymodem.py, scope ymodem_Serial_read
-static const byte fun_data_ymodem_Serial_read[13] = {
-    0x9b,0x01,0x0e, // prelude
-    0x19,0x7c,0x81,0x03,0x47, // names: read, self, nbytes, timeout
-    0x80,0x78, // code info
+static const byte fun_data_ymodem_Serial_read[129] = {
+    0xd3,0x01,0x2a, // prelude
+    0x1b,0x81,0x1a,0x81,0x21,0x5f, // names: read, self, nbytes, timeout
+    0x80,0x67,0x25,0x23,0x30,0x22,0x25,0x2d,0x22,0x28,0x23,0x28,0x35,0x29,0x28, // code info
+    0xb1, // LOAD_FAST 1
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0xd9, // BINARY_OP 2 __eq__
+    0x44,0x43, // POP_JUMP_IF_FALSE 3
     0x23,0x08, // LOAD_CONST_OBJ 8
+    0x63, // RETURN_VALUE
+    0xb0, // LOAD_FAST 0
+    0x13,0x24, // LOAD_ATTR '_uart'
+    0x14,0x2d, // LOAD_METHOD 'any'
+    0x36,0x00, // CALL_METHOD 0
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0xd9, // BINARY_OP 2 __eq__
+    0x44,0x6e, // POP_JUMP_IF_FALSE 46
+    0xb2, // LOAD_FAST 2
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0xdc, // BINARY_OP 5 __ne__
+    0x44,0x69, // POP_JUMP_IF_FALSE 41
+    0x50, // LOAD_CONST_FALSE
+    0xc3, // STORE_FAST 3
+    0xb2, // LOAD_FAST 2
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0xd8, // BINARY_OP 1 __gt__
+    0x44,0x4f, // POP_JUMP_IF_FALSE 15
+    0xb0, // LOAD_FAST 0
+    0x13,0x29, // LOAD_ATTR '_timer'
+    0x14,0x2e, // LOAD_METHOD 'start'
+    0xb2, // LOAD_FAST 2
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0xb0, // LOAD_FAST 0
+    0x13,0x2c, // LOAD_ATTR '_timer_cb'
+    0x36,0x03, // CALL_METHOD 3
+    0x59, // POP_TOP
+    0x52, // LOAD_CONST_TRUE
+    0xc3, // STORE_FAST 3
+    0xb0, // LOAD_FAST 0
+    0x13,0x28, // LOAD_ATTR '_queue'
+    0x14,0x2f, // LOAD_METHOD 'get'
+    0x36,0x00, // CALL_METHOD 0
+    0x59, // POP_TOP
+    0xb3, // LOAD_FAST 3
+    0x44,0x48, // POP_JUMP_IF_FALSE 8
+    0xb0, // LOAD_FAST 0
+    0x13,0x29, // LOAD_ATTR '_timer'
+    0x14,0x30, // LOAD_METHOD 'stop'
+    0x36,0x00, // CALL_METHOD 0
+    0x59, // POP_TOP
+    0xb0, // LOAD_FAST 0
+    0x13,0x24, // LOAD_ATTR '_uart'
+    0x14,0x1b, // LOAD_METHOD 'read'
+    0x12,0x81,0x22, // LOAD_GLOBAL 'min'
+    0xb1, // LOAD_FAST 1
+    0xb0, // LOAD_FAST 0
+    0x13,0x24, // LOAD_ATTR '_uart'
+    0x14,0x2d, // LOAD_METHOD 'any'
+    0x36,0x00, // CALL_METHOD 0
+    0x34,0x02, // CALL_FUNCTION 2
+    0x36,0x01, // CALL_METHOD 1
+    0xc4, // STORE_FAST 4
+    0xb0, // LOAD_FAST 0
+    0x13,0x28, // LOAD_ATTR '_queue'
+    0x14,0x2a, // LOAD_METHOD 'size'
+    0x36,0x00, // CALL_METHOD 0
+    0x44,0x48, // POP_JUMP_IF_FALSE 8
+    0xb0, // LOAD_FAST 0
+    0x13,0x28, // LOAD_ATTR '_queue'
+    0x14,0x2f, // LOAD_METHOD 'get'
+    0x36,0x00, // CALL_METHOD 0
+    0x59, // POP_TOP
+    0xb4, // LOAD_FAST 4
     0x63, // RETURN_VALUE
 };
 #if MICROPY_PERSISTENT_CODE_SAVE
@@ -10024,7 +10266,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Serial_read = {
     .fun_data = fun_data_ymodem_Serial_read,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 13,
+    .fun_data_len = 129,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -10032,16 +10274,16 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Serial_read = {
     #if MICROPY_PY_SYS_SETTRACE
     .line_of_definition = 0,
     .prelude = {
-        .n_state = 4,
+        .n_state = 11,
         .n_exc_stack = 0,
         .scope_flags = 0,
         .n_pos_args = 3,
         .n_kwonly_args = 0,
         .n_def_pos_args = 1,
-        .qstr_block_name_idx = 25,
-        .line_info = fun_data_ymodem_Serial_read + 8,
-        .line_info_top = fun_data_ymodem_Serial_read + 10,
-        .opcodes = fun_data_ymodem_Serial_read + 10,
+        .qstr_block_name_idx = 27,
+        .line_info = fun_data_ymodem_Serial_read + 9,
+        .line_info_top = fun_data_ymodem_Serial_read + 24,
+        .opcodes = fun_data_ymodem_Serial_read + 24,
     },
     #endif
     #endif
@@ -10052,11 +10294,16 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Serial_read = {
 
 // child of ymodem_Serial
 // frozen bytecode for file ymodem.py, scope ymodem_Serial_close
-static const byte fun_data_ymodem_Serial_close[8] = {
-    0x09,0x08, // prelude
-    0x1a,0x7c, // names: close, self
-    0x80,0x7c, // code info
-    0x81, // LOAD_CONST_SMALL_INT 1
+static const byte fun_data_ymodem_Serial_close[17] = {
+    0x11,0x0a, // prelude
+    0x1e,0x81,0x1a, // names: close, self
+    0x80,0x77, // code info
+    0xb0, // LOAD_FAST 0
+    0x13,0x24, // LOAD_ATTR '_uart'
+    0x14,0x1e, // LOAD_METHOD 'close'
+    0x36,0x00, // CALL_METHOD 0
+    0x59, // POP_TOP
+    0x51, // LOAD_CONST_NONE
     0x63, // RETURN_VALUE
 };
 #if MICROPY_PERSISTENT_CODE_SAVE
@@ -10068,7 +10315,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Serial_close = {
     .fun_data = fun_data_ymodem_Serial_close,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 8,
+    .fun_data_len = 17,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -10076,16 +10323,16 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Serial_close = {
     #if MICROPY_PY_SYS_SETTRACE
     .line_of_definition = 0,
     .prelude = {
-        .n_state = 2,
+        .n_state = 3,
         .n_exc_stack = 0,
         .scope_flags = 0,
         .n_pos_args = 1,
         .n_kwonly_args = 0,
         .n_def_pos_args = 0,
-        .qstr_block_name_idx = 26,
-        .line_info = fun_data_ymodem_Serial_close + 4,
-        .line_info_top = fun_data_ymodem_Serial_close + 6,
-        .opcodes = fun_data_ymodem_Serial_close + 6,
+        .qstr_block_name_idx = 30,
+        .line_info = fun_data_ymodem_Serial_close + 5,
+        .line_info_top = fun_data_ymodem_Serial_close + 7,
+        .opcodes = fun_data_ymodem_Serial_close + 7,
     },
     #endif
     #endif
@@ -10111,7 +10358,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Serial = {
     .fun_data = fun_data_ymodem_Serial,
     .children = (void *)&children_ymodem_Serial,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 64,
+    .fun_data_len = 66,
     .n_children = 6,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -10125,10 +10372,10 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Serial = {
         .n_pos_args = 0,
         .n_kwonly_args = 0,
         .n_def_pos_args = 0,
-        .qstr_block_name_idx = 6,
+        .qstr_block_name_idx = 13,
         .line_info = fun_data_ymodem_Serial + 3,
-        .line_info_top = fun_data_ymodem_Serial + 15,
-        .opcodes = fun_data_ymodem_Serial + 15,
+        .line_info_top = fun_data_ymodem_Serial + 14,
+        .opcodes = fun_data_ymodem_Serial + 14,
     },
     #endif
     #endif
@@ -10136,14 +10383,14 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Serial = {
 
 // child of ymodem__lt_module_gt_
 // frozen bytecode for file ymodem.py, scope ymodem_Modem
-static const byte fun_data_ymodem_Modem[1289] = {
+static const byte fun_data_ymodem_Modem[1296] = {
     0xf8,0xb0,0x30,0x98,0x02, // prelude
-    0x07, // names: Modem
-    0x88,0x80,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x83,0x23,0x8b,0x16,0x68,0x40,0x8e,0x62,0x8c,0x20,0x8e,0x47,0x68,0x60,0x6d,0x60,0x8b,0x0b,0x84,0x0d,0x6c,0x20,0x68,0x60,0x72,0x80,0x3c,0x8d,0x22,0x88,0x1e,0x88,0x0c,0x84,0x0b,0x8d,0x16,0x84,0x0b,0x8c,0x0f, // code info
-    0x11,0x70, // LOAD_NAME '__name__'
-    0x16,0x76, // STORE_NAME '__module__'
-    0x10,0x07, // LOAD_CONST_STRING 'Modem'
-    0x16,0x77, // STORE_NAME '__qualname__'
+    0x0e, // names: Modem
+    0x8b,0x7b,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x1f,0x83,0x23,0x8b,0x16,0x68,0x40,0x8e,0x62,0x8c,0x20,0x8e,0x47,0x69,0x40,0x6e,0x40,0x8b,0x0b,0x84,0x0d,0x6d,0x20,0x68,0x60,0x72,0x80,0x3c,0x8d,0x22,0x88,0x1e,0x89,0x0c,0x84,0x0b,0x8d,0x16,0x84,0x0b,0x8c,0x0f, // code info
+    0x11,0x81,0x0d, // LOAD_NAME '__name__'
+    0x16,0x81,0x13, // STORE_NAME '__module__'
+    0x10,0x0e, // LOAD_CONST_STRING 'Modem'
+    0x16,0x81,0x14, // STORE_NAME '__qualname__'
     0x80, // LOAD_CONST_SMALL_INT 0
     0x22,0xa0,0x21, // LOAD_CONST_SMALL_INT 4129
     0x22,0x80,0xc0,0x42, // LOAD_CONST_SMALL_INT 8258
@@ -10401,18 +10648,18 @@ static const byte fun_data_ymodem_Modem[1289] = {
     0x22,0x9d,0x51, // LOAD_CONST_SMALL_INT 3793
     0x22,0xbd,0x70, // LOAD_CONST_SMALL_INT 7920
     0x2b,0x82,0x00, // BUILD_LIST 256
-    0x16,0x3f, // STORE_NAME 'crc_table'
-    0x10,0x0d, // LOAD_CONST_STRING 'ymodem1k'
-    0x10,0x0e, // LOAD_CONST_STRING 'rzsz'
+    0x16,0x58, // STORE_NAME 'crc_table'
+    0x10,0x15, // LOAD_CONST_STRING 'ymodem1k'
+    0x10,0x16, // LOAD_CONST_STRING 'rzsz'
     0x2a,0x02, // BUILD_TUPLE 2
     0x53, // LOAD_NULL
     0x33,0x00, // MAKE_FUNCTION_DEFARGS 0
-    0x16,0x13, // STORE_NAME '__init__'
+    0x16,0x22, // STORE_NAME '__init__'
     0x82, // LOAD_CONST_SMALL_INT 2
     0x2a,0x01, // BUILD_TUPLE 1
     0x53, // LOAD_NULL
     0x33,0x01, // MAKE_FUNCTION_DEFARGS 1
-    0x16,0x2a, // STORE_NAME 'abort'
+    0x16,0x40, // STORE_NAME 'abort'
     0x81, // LOAD_CONST_SMALL_INT 1
     0x8a, // LOAD_CONST_SMALL_INT 10
     0x22,0x87,0x68, // LOAD_CONST_SMALL_INT 1000
@@ -10421,53 +10668,53 @@ static const byte fun_data_ymodem_Modem[1289] = {
     0x2a,0x05, // BUILD_TUPLE 5
     0x53, // LOAD_NULL
     0x33,0x02, // MAKE_FUNCTION_DEFARGS 2
-    0x16,0x2c, // STORE_NAME 'recv'
+    0x16,0x1c, // STORE_NAME 'recv'
     0x22,0x87,0x68, // LOAD_CONST_SMALL_INT 1000
     0x80, // LOAD_CONST_SMALL_INT 0
     0x80, // LOAD_CONST_SMALL_INT 0
     0x2a,0x03, // BUILD_TUPLE 3
     0x53, // LOAD_NULL
     0x33,0x03, // MAKE_FUNCTION_DEFARGS 3
-    0x16,0x2d, // STORE_NAME '_in_transfer_mode'
+    0x16,0x42, // STORE_NAME '_in_transfer_mode'
     0x22,0x87,0x68, // LOAD_CONST_SMALL_INT 1000
     0x8a, // LOAD_CONST_SMALL_INT 10
     0x22,0x81,0x00, // LOAD_CONST_SMALL_INT 128
     0x2a,0x03, // BUILD_TUPLE 3
     0x53, // LOAD_NULL
     0x33,0x04, // MAKE_FUNCTION_DEFARGS 4
-    0x16,0x2e, // STORE_NAME '_get_file_header'
-    0x11,0x78, // LOAD_NAME 'staticmethod'
+    0x16,0x43, // STORE_NAME '_get_file_header'
+    0x11,0x81,0x15, // LOAD_NAME 'staticmethod'
     0x32,0x05, // MAKE_FUNCTION 5
     0x34,0x01, // CALL_FUNCTION 1
-    0x16,0x39, // STORE_NAME '_check_path'
-    0x11,0x78, // LOAD_NAME 'staticmethod'
-    0x10,0x0f, // LOAD_CONST_STRING ''
+    0x16,0x4e, // STORE_NAME '_check_path'
+    0x11,0x81,0x15, // LOAD_NAME 'staticmethod'
+    0x10,0x17, // LOAD_CONST_STRING ''
     0x2a,0x01, // BUILD_TUPLE 1
     0x53, // LOAD_NULL
     0x33,0x06, // MAKE_FUNCTION_DEFARGS 6
     0x34,0x01, // CALL_FUNCTION 1
-    0x16,0x2b, // STORE_NAME '_delete_failed_file'
+    0x16,0x41, // STORE_NAME '_delete_failed_file'
     0x22,0x87,0x68, // LOAD_CONST_SMALL_INT 1000
     0x80, // LOAD_CONST_SMALL_INT 0
     0x2a,0x02, // BUILD_TUPLE 2
     0x53, // LOAD_NULL
     0x33,0x07, // MAKE_FUNCTION_DEFARGS 7
-    0x16,0x2f, // STORE_NAME '_verify_complement'
+    0x16,0x44, // STORE_NAME '_verify_complement'
     0x32,0x08, // MAKE_FUNCTION 8
-    0x16,0x30, // STORE_NAME '_verify_recv_checksum'
-    0x11,0x78, // LOAD_NAME 'staticmethod'
+    0x16,0x45, // STORE_NAME '_verify_recv_checksum'
+    0x11,0x81,0x15, // LOAD_NAME 'staticmethod'
     0x80, // LOAD_CONST_SMALL_INT 0
     0x2a,0x01, // BUILD_TUPLE 1
     0x53, // LOAD_NULL
     0x33,0x09, // MAKE_FUNCTION_DEFARGS 9
     0x34,0x01, // CALL_FUNCTION 1
-    0x16,0x3e, // STORE_NAME '_calc_checksum'
+    0x16,0x57, // STORE_NAME '_calc_checksum'
     0x80, // LOAD_CONST_SMALL_INT 0
     0x2a,0x01, // BUILD_TUPLE 1
     0x53, // LOAD_NULL
     0x33,0x0a, // MAKE_FUNCTION_DEFARGS 10
-    0x16,0x3d, // STORE_NAME '_calc_crc'
-    0x11,0x0c, // LOAD_NAME 'check_file'
+    0x16,0x56, // STORE_NAME '_calc_crc'
+    0x11,0x14, // LOAD_NAME 'check_file'
     0x34,0x00, // CALL_FUNCTION 0
     0x8a, // LOAD_CONST_SMALL_INT 10
     0x22,0x87,0x68, // LOAD_CONST_SMALL_INT 1000
@@ -10476,25 +10723,25 @@ static const byte fun_data_ymodem_Modem[1289] = {
     0x53, // LOAD_NULL
     0x33,0x0b, // MAKE_FUNCTION_DEFARGS 11
     0x34,0x01, // CALL_FUNCTION 1
-    0x16,0x40, // STORE_NAME 'send'
+    0x16,0x20, // STORE_NAME 'send'
     0x80, // LOAD_CONST_SMALL_INT 0
     0x22,0x80,0xce,0x10, // LOAD_CONST_SMALL_INT 10000
     0x8a, // LOAD_CONST_SMALL_INT 10
     0x2a,0x03, // BUILD_TUPLE 3
     0x53, // LOAD_NULL
     0x33,0x0c, // MAKE_FUNCTION_DEFARGS 12
-    0x16,0x46, // STORE_NAME '_wait_c'
+    0x16,0x5e, // STORE_NAME '_wait_c'
     0x51, // LOAD_CONST_NONE
     0x2a,0x01, // BUILD_TUPLE 1
     0x53, // LOAD_NULL
     0x33,0x0d, // MAKE_FUNCTION_DEFARGS 13
-    0x16,0x4a, // STORE_NAME '_make_file_header_info'
-    0x11,0x78, // LOAD_NAME 'staticmethod'
+    0x16,0x62, // STORE_NAME '_make_file_header_info'
+    0x11,0x81,0x15, // LOAD_NAME 'staticmethod'
     0x32,0x0e, // MAKE_FUNCTION 14
     0x34,0x01, // CALL_FUNCTION 1
-    0x16,0x50, // STORE_NAME '_make_send_header'
+    0x16,0x68, // STORE_NAME '_make_send_header'
     0x32,0x0f, // MAKE_FUNCTION 15
-    0x16,0x58, // STORE_NAME '_make_send_checksum'
+    0x16,0x70, // STORE_NAME '_make_send_checksum'
     0x22,0x87,0x68, // LOAD_CONST_SMALL_INT 1000
     0x8a, // LOAD_CONST_SMALL_INT 10
     0x81, // LOAD_CONST_SMALL_INT 1
@@ -10502,34 +10749,34 @@ static const byte fun_data_ymodem_Modem[1289] = {
     0x2a,0x04, // BUILD_TUPLE 4
     0x53, // LOAD_NULL
     0x33,0x10, // MAKE_FUNCTION_DEFARGS 16
-    0x16,0x49, // STORE_NAME 'serial_trans'
+    0x16,0x61, // STORE_NAME 'serial_trans'
     0x32,0x11, // MAKE_FUNCTION 17
-    0x16,0x4b, // STORE_NAME '_make_file_body_info'
+    0x16,0x63, // STORE_NAME '_make_file_body_info'
     0x22,0x80,0xce,0x10, // LOAD_CONST_SMALL_INT 10000
     0x8a, // LOAD_CONST_SMALL_INT 10
     0x2a,0x02, // BUILD_TUPLE 2
     0x53, // LOAD_NULL
     0x33,0x12, // MAKE_FUNCTION_DEFARGS 18
-    0x16,0x4d, // STORE_NAME '_wait_nak_ack'
+    0x16,0x65, // STORE_NAME '_wait_nak_ack'
     0x81, // LOAD_CONST_SMALL_INT 1
     0x2a,0x01, // BUILD_TUPLE 1
     0x53, // LOAD_NULL
     0x33,0x13, // MAKE_FUNCTION_DEFARGS 19
-    0x16,0x4e, // STORE_NAME '_send_end_packet'
+    0x16,0x66, // STORE_NAME '_send_end_packet'
     0x51, // LOAD_CONST_NONE
     0x63, // RETURN_VALUE
 };
 // child of ymodem_Modem
 // frozen bytecode for file ymodem.py, scope ymodem_Modem___init__
-static const byte fun_data_ymodem_Modem___init__[152] = {
-    0xf9,0x84,0x01,0x30, // prelude
-    0x13,0x7c,0x1c,0x1d,0x1e,0x81,0x04, // names: __init__, self, reader, writer, mode, program
-    0x80,0xa5,0x2f,0x4f,0x24,0x24,0x24,0x25,0x2d,0x27,0x79,0x25,0x25,0x24,0x24,0x24,0x24, // code info
+static const byte fun_data_ymodem_Modem___init__[167] = {
+    0xf9,0x84,0x01,0x34, // prelude
+    0x22,0x81,0x1a,0x32,0x33,0x34,0x81,0x23, // names: __init__, self, reader, writer, mode, program
+    0x80,0xa0,0x2f,0x4f,0x24,0x24,0x24,0x25,0x31,0x29,0x1f,0x61,0x25,0x25,0x24,0x24,0x24,0x24, // code info
     0xb3, // LOAD_FAST 3
-    0x10,0x0d, // LOAD_CONST_STRING 'ymodem1k'
+    0x10,0x15, // LOAD_CONST_STRING 'ymodem1k'
     0xd9, // BINARY_OP 2 __eq__
     0x43,0x49, // POP_JUMP_IF_TRUE 9
-    0x12,0x1b, // LOAD_GLOBAL 'AssertionError'
+    0x12,0x31, // LOAD_GLOBAL 'AssertionError'
     0x23,0x09, // LOAD_CONST_OBJ 9
     0xb3, // LOAD_FAST 3
     0xf8, // BINARY_OP 33 __mod__
@@ -10539,7 +10786,7 @@ static const byte fun_data_ymodem_Modem___init__[152] = {
     0x23,0x0a, // LOAD_CONST_OBJ 10
     0xdd, // BINARY_OP 6 <in>
     0x43,0x49, // POP_JUMP_IF_TRUE 9
-    0x12,0x1b, // LOAD_GLOBAL 'AssertionError'
+    0x12,0x31, // LOAD_GLOBAL 'AssertionError'
     0x23,0x0b, // LOAD_CONST_OBJ 11
     0xb4, // LOAD_FAST 4
     0xf8, // BINARY_OP 33 __mod__
@@ -10547,63 +10794,63 @@ static const byte fun_data_ymodem_Modem___init__[152] = {
     0x65, // RAISE_OBJ
     0xb1, // LOAD_FAST 1
     0xb0, // LOAD_FAST 0
-    0x18,0x1c, // STORE_ATTR 'reader'
+    0x18,0x32, // STORE_ATTR 'reader'
     0xb2, // LOAD_FAST 2
     0xb0, // LOAD_FAST 0
-    0x18,0x1d, // STORE_ATTR 'writer'
+    0x18,0x33, // STORE_ATTR 'writer'
     0xb3, // LOAD_FAST 3
     0xb0, // LOAD_FAST 0
-    0x18,0x1e, // STORE_ATTR 'mode'
-    0x12,0x81,0x05, // LOAD_GLOBAL 'dict'
-    0x10,0x0e, // LOAD_CONST_STRING 'rzsz'
-    0x12,0x68, // LOAD_GLOBAL 'USE_LENGTH_FIELD'
-    0x12,0x69, // LOAD_GLOBAL 'USE_DATE_FIELD'
+    0x18,0x34, // STORE_ATTR 'mode'
+    0x12,0x81,0x24, // LOAD_GLOBAL 'dict'
+    0x10,0x16, // LOAD_CONST_STRING 'rzsz'
+    0x12,0x81,0x04, // LOAD_GLOBAL 'USE_LENGTH_FIELD'
+    0x12,0x81,0x05, // LOAD_GLOBAL 'USE_DATE_FIELD'
     0xed, // BINARY_OP 22 __or__
-    0x12,0x6a, // LOAD_GLOBAL 'USE_MODE_FIELD'
+    0x12,0x81,0x06, // LOAD_GLOBAL 'USE_MODE_FIELD'
     0xed, // BINARY_OP 22 __or__
-    0x12,0x6c, // LOAD_GLOBAL 'ALLOW_1K_BLOCK'
+    0x12,0x81,0x08, // LOAD_GLOBAL 'ALLOW_1K_BLOCK'
     0xed, // BINARY_OP 22 __or__
-    0x10,0x1f, // LOAD_CONST_STRING 'rbsb'
-    0x12,0x68, // LOAD_GLOBAL 'USE_LENGTH_FIELD'
-    0x12,0x6c, // LOAD_GLOBAL 'ALLOW_1K_BLOCK'
+    0x10,0x35, // LOAD_CONST_STRING 'rbsb'
+    0x12,0x81,0x04, // LOAD_GLOBAL 'USE_LENGTH_FIELD'
+    0x12,0x81,0x08, // LOAD_GLOBAL 'ALLOW_1K_BLOCK'
     0xed, // BINARY_OP 22 __or__
-    0x10,0x20, // LOAD_CONST_STRING 'pyam'
-    0x12,0x68, // LOAD_GLOBAL 'USE_LENGTH_FIELD'
-    0x12,0x69, // LOAD_GLOBAL 'USE_DATE_FIELD'
+    0x10,0x36, // LOAD_CONST_STRING 'pyam'
+    0x12,0x81,0x04, // LOAD_GLOBAL 'USE_LENGTH_FIELD'
+    0x12,0x81,0x05, // LOAD_GLOBAL 'USE_DATE_FIELD'
     0xed, // BINARY_OP 22 __or__
-    0x12,0x6b, // LOAD_GLOBAL 'USE_SN_FIELD'
+    0x12,0x81,0x07, // LOAD_GLOBAL 'USE_SN_FIELD'
     0xed, // BINARY_OP 22 __or__
-    0x12,0x6c, // LOAD_GLOBAL 'ALLOW_1K_BLOCK'
+    0x12,0x81,0x08, // LOAD_GLOBAL 'ALLOW_1K_BLOCK'
     0xed, // BINARY_OP 22 __or__
-    0x12,0x6d, // LOAD_GLOBAL 'ALLOW_YMODEM_G'
+    0x12,0x81,0x09, // LOAD_GLOBAL 'ALLOW_YMODEM_G'
     0xed, // BINARY_OP 22 __or__
-    0x10,0x21, // LOAD_CONST_STRING 'cyam'
-    0x12,0x6c, // LOAD_GLOBAL 'ALLOW_1K_BLOCK'
-    0x10,0x22, // LOAD_CONST_STRING 'kimp'
-    0x12,0x6c, // LOAD_GLOBAL 'ALLOW_1K_BLOCK'
+    0x10,0x37, // LOAD_CONST_STRING 'cyam'
+    0x12,0x81,0x08, // LOAD_GLOBAL 'ALLOW_1K_BLOCK'
+    0x10,0x38, // LOAD_CONST_STRING 'kimp'
+    0x12,0x81,0x08, // LOAD_GLOBAL 'ALLOW_1K_BLOCK'
     0x34,0x8a,0x00, // CALL_FUNCTION 1280
     0xb4, // LOAD_FAST 4
     0x55, // LOAD_SUBSCR
     0xb0, // LOAD_FAST 0
-    0x18,0x23, // STORE_ATTR 'program_features'
-    0x10,0x0f, // LOAD_CONST_STRING ''
+    0x18,0x39, // STORE_ATTR 'program_features'
+    0x10,0x17, // LOAD_CONST_STRING ''
     0xb0, // LOAD_FAST 0
-    0x18,0x24, // STORE_ATTR '_recv_file_name'
+    0x18,0x3a, // STORE_ATTR '_recv_file_name'
     0x80, // LOAD_CONST_SMALL_INT 0
     0xb0, // LOAD_FAST 0
-    0x18,0x25, // STORE_ATTR '_remaining_data_length'
+    0x18,0x3b, // STORE_ATTR '_remaining_data_length'
     0x80, // LOAD_CONST_SMALL_INT 0
     0xb0, // LOAD_FAST 0
-    0x18,0x26, // STORE_ATTR '_recv_file_mtime'
+    0x18,0x3c, // STORE_ATTR '_recv_file_mtime'
     0x80, // LOAD_CONST_SMALL_INT 0
     0xb0, // LOAD_FAST 0
-    0x18,0x27, // STORE_ATTR '_recv_mode'
+    0x18,0x3d, // STORE_ATTR '_recv_mode'
     0x80, // LOAD_CONST_SMALL_INT 0
     0xb0, // LOAD_FAST 0
-    0x18,0x28, // STORE_ATTR '_recv_sn'
+    0x18,0x3e, // STORE_ATTR '_recv_sn'
     0x80, // LOAD_CONST_SMALL_INT 0
     0xb0, // LOAD_FAST 0
-    0x18,0x29, // STORE_ATTR 'total_size'
+    0x18,0x3f, // STORE_ATTR 'total_size'
     0x51, // LOAD_CONST_NONE
     0x63, // RETURN_VALUE
 };
@@ -10616,7 +10863,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem___init__ = {
     .fun_data = fun_data_ymodem_Modem___init__,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 152,
+    .fun_data_len = 167,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -10630,10 +10877,10 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem___init__ = {
         .n_pos_args = 5,
         .n_kwonly_args = 0,
         .n_def_pos_args = 2,
-        .qstr_block_name_idx = 19,
-        .line_info = fun_data_ymodem_Modem___init__ + 11,
-        .line_info_top = fun_data_ymodem_Modem___init__ + 28,
-        .opcodes = fun_data_ymodem_Modem___init__ + 28,
+        .qstr_block_name_idx = 34,
+        .line_info = fun_data_ymodem_Modem___init__ + 12,
+        .line_info_top = fun_data_ymodem_Modem___init__ + 30,
+        .opcodes = fun_data_ymodem_Modem___init__ + 30,
     },
     #endif
     #endif
@@ -10644,21 +10891,21 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem___init__ = {
 
 // child of ymodem_Modem
 // frozen bytecode for file ymodem.py, scope ymodem_Modem_abort
-static const byte fun_data_ymodem_Modem_abort[37] = {
-    0xa2,0x01,0x0f, // prelude
-    0x2a,0x7c,0x81,0x06, // names: abort, self, count
-    0x80,0xba,0x2d,0x00, // code info
+static const byte fun_data_ymodem_Modem_abort[38] = {
+    0xa2,0x01,0x11, // prelude
+    0x40,0x81,0x1a,0x81,0x25, // names: abort, self, count
+    0x80,0xb5,0x2d,0x00, // code info
     0xb0, // LOAD_FAST 0
     0x20,0x00,0x01, // MAKE_CLOSURE 0
-    0x12,0x81,0x07, // LOAD_GLOBAL 'range'
+    0x12,0x81,0x26, // LOAD_GLOBAL 'range'
     0xb1, // LOAD_FAST 1
     0x34,0x01, // CALL_FUNCTION 1
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0x25,0x00, // LOAD_DEREF 0
-    0x14,0x2b, // LOAD_METHOD '_delete_failed_file'
+    0x14,0x41, // LOAD_METHOD '_delete_failed_file'
     0x25,0x00, // LOAD_DEREF 0
-    0x13,0x24, // LOAD_ATTR '_recv_file_name'
+    0x13,0x3a, // LOAD_ATTR '_recv_file_name'
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
     0x51, // LOAD_CONST_NONE
@@ -10666,21 +10913,21 @@ static const byte fun_data_ymodem_Modem_abort[37] = {
 };
 // child of ymodem_Modem_abort
 // frozen bytecode for file ymodem.py, scope ymodem_Modem_abort__lt_listcomp_gt_
-static const byte fun_data_ymodem_Modem_abort__lt_listcomp_gt_[29] = {
+static const byte fun_data_ymodem_Modem_abort__lt_listcomp_gt_[30] = {
     0x52,0x0e, // prelude
-    0x5f,0x81,0x22,0x81,0x22, // names: <listcomp>, *, *
-    0x80,0xba, // code info
+    0x7b,0x81,0x3f,0x81,0x3f, // names: <listcomp>, *, *
+    0x80,0xb5, // code info
     0x2b,0x00, // BUILD_LIST 0
     0xb1, // LOAD_FAST 1
     0x5f, // GET_ITER_STACK
-    0x4b,0x0d, // FOR_ITER 13
+    0x4b,0x0e, // FOR_ITER 14
     0xc2, // STORE_FAST 2
     0x25,0x00, // LOAD_DEREF 0
-    0x14,0x1d, // LOAD_METHOD 'writer'
-    0x12,0x66, // LOAD_GLOBAL 'CAN'
+    0x14,0x33, // LOAD_METHOD 'writer'
+    0x12,0x81,0x02, // LOAD_GLOBAL 'CAN'
     0x36,0x01, // CALL_METHOD 1
     0x2f,0x14, // STORE_COMP 20
-    0x42,0x31, // JUMP -15
+    0x42,0x30, // JUMP -16
     0x63, // RETURN_VALUE
 };
 #if MICROPY_PERSISTENT_CODE_SAVE
@@ -10692,7 +10939,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem_abort__lt_listcomp_g
     .fun_data = fun_data_ymodem_Modem_abort__lt_listcomp_gt_,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 29,
+    .fun_data_len = 30,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -10706,7 +10953,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem_abort__lt_listcomp_g
         .n_pos_args = 2,
         .n_kwonly_args = 0,
         .n_def_pos_args = 0,
-        .qstr_block_name_idx = 95,
+        .qstr_block_name_idx = 123,
         .line_info = fun_data_ymodem_Modem_abort__lt_listcomp_gt_ + 7,
         .line_info_top = fun_data_ymodem_Modem_abort__lt_listcomp_gt_ + 9,
         .opcodes = fun_data_ymodem_Modem_abort__lt_listcomp_gt_ + 9,
@@ -10730,7 +10977,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem_abort = {
     .fun_data = fun_data_ymodem_Modem_abort,
     .children = (void *)&children_ymodem_Modem_abort,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 37,
+    .fun_data_len = 38,
     .n_children = 1,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -10744,10 +10991,10 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem_abort = {
         .n_pos_args = 2,
         .n_kwonly_args = 0,
         .n_def_pos_args = 1,
-        .qstr_block_name_idx = 42,
-        .line_info = fun_data_ymodem_Modem_abort + 7,
-        .line_info_top = fun_data_ymodem_Modem_abort + 10,
-        .opcodes = fun_data_ymodem_Modem_abort + 11,
+        .qstr_block_name_idx = 64,
+        .line_info = fun_data_ymodem_Modem_abort + 8,
+        .line_info_top = fun_data_ymodem_Modem_abort + 11,
+        .opcodes = fun_data_ymodem_Modem_abort + 12,
     },
     #endif
     #endif
@@ -10755,15 +11002,15 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem_abort = {
 
 // child of ymodem_Modem
 // frozen bytecode for file ymodem.py, scope ymodem_Modem_recv
-static const byte fun_data_ymodem_Modem_recv[602] = {
-    0xc2,0x97,0x80,0x01,0xbc,0x02, // prelude
-    0x2c,0x7c,0x81,0x08,0x48,0x47,0x81,0x09,0x79, // names: recv, self, crc_mode, retry, timeout, delay, callback
-    0x80,0xbf,0x60,0x23,0x22,0x29,0x26,0x28,0x26,0x4b,0x22,0x22,0x22,0x24,0x22,0x22,0x23,0x20,0x22,0x20,0x26,0x27,0x24,0x23,0x26,0x27,0x24,0x23,0x26,0x23,0x28,0x26,0x28,0x28,0x26,0x42,0x22,0x28,0x2a,0x26,0x23,0x29,0x42,0x22,0x4a,0x24,0x28,0x25,0x26,0x25,0x29,0x43,0x2b,0x33,0x4c,0x25,0x24,0x23,0x27,0x2c,0x2a,0x27,0x2a,0x29,0x2c,0x27,0x45,0x27,0x27,0x23,0x28,0x28,0x28,0x28,0x42,0x42,0x20,0x20,0x28,0x25,0x24,0x28,0x28,0x52,0x29, // code info
-    0x48,0xd2,0x03, // SETUP_EXCEPT 466
+static const byte fun_data_ymodem_Modem_recv[609] = {
+    0xc2,0x97,0x80,0x01,0xbe,0x02, // prelude
+    0x1c,0x81,0x1a,0x81,0x27,0x60,0x5f,0x81,0x28,0x1d, // names: recv, self, crc_mode, retry, timeout, delay, callback
+    0x80,0xba,0x60,0x23,0x22,0x29,0x26,0x28,0x26,0x4b,0x22,0x22,0x22,0x24,0x22,0x22,0x23,0x20,0x22,0x20,0x26,0x27,0x24,0x23,0x26,0x27,0x24,0x23,0x27,0x23,0x29,0x26,0x28,0x28,0x26,0x42,0x22,0x29,0x2a,0x27,0x23,0x29,0x42,0x22,0x4a,0x24,0x28,0x25,0x26,0x25,0x29,0x43,0x2b,0x33,0x4c,0x25,0x24,0x23,0x27,0x2c,0x2a,0x27,0x2a,0x29,0x2c,0x27,0x45,0x27,0x27,0x23,0x29,0x28,0x28,0x28,0x42,0x42,0x20,0x20,0x28,0x25,0x24,0x29,0x28,0x52,0x29, // code info
+    0x48,0xd8,0x03, // SETUP_EXCEPT 472
     0x51, // LOAD_CONST_NONE
     0xc6, // STORE_FAST 6
     0xb0, // LOAD_FAST 0
-    0x14,0x2d, // LOAD_METHOD '_in_transfer_mode'
+    0x14,0x42, // LOAD_METHOD '_in_transfer_mode'
     0xb1, // LOAD_FAST 1
     0xb2, // LOAD_FAST 2
     0xb4, // LOAD_FAST 4
@@ -10775,7 +11022,7 @@ static const byte fun_data_ymodem_Modem_recv[602] = {
     0xd3, // UNARY_OP 3 <not>
     0x44,0x48, // POP_JUMP_IF_FALSE 8
     0xb0, // LOAD_FAST 0
-    0x14,0x2e, // LOAD_METHOD '_get_file_header'
+    0x14,0x43, // LOAD_METHOD '_get_file_header'
     0xb7, // LOAD_FAST 7
     0xb1, // LOAD_FAST 1
     0x36,0x02, // CALL_METHOD 2
@@ -10786,7 +11033,7 @@ static const byte fun_data_ymodem_Modem_recv[602] = {
     0xd3, // UNARY_OP 3 <not>
     0x44,0x4b, // POP_JUMP_IF_FALSE 11
     0xb0, // LOAD_FAST 0
-    0x14,0x2d, // LOAD_METHOD '_in_transfer_mode'
+    0x14,0x42, // LOAD_METHOD '_in_transfer_mode'
     0xb1, // LOAD_FAST 1
     0xb2, // LOAD_FAST 2
     0xb4, // LOAD_FAST 4
@@ -10810,7 +11057,7 @@ static const byte fun_data_ymodem_Modem_recv[602] = {
     0x80, // LOAD_CONST_SMALL_INT 0
     0xce, // STORE_FAST 14
     0xb7, // LOAD_FAST 7
-    0x12,0x61, // LOAD_GLOBAL 'SOH'
+    0x12,0x7d, // LOAD_GLOBAL 'SOH'
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x4e, // POP_JUMP_IF_FALSE 14
     0xba, // LOAD_FAST 10
@@ -10819,9 +11066,9 @@ static const byte fun_data_ymodem_Modem_recv[602] = {
     0x44,0x44, // POP_JUMP_IF_FALSE 4
     0x22,0x81,0x00, // LOAD_CONST_SMALL_INT 128
     0xca, // STORE_FAST 10
-    0x42,0x93,0x81, // JUMP 147
+    0x42,0x97,0x81, // JUMP 151
     0xb7, // LOAD_FAST 7
-    0x12,0x62, // LOAD_GLOBAL 'STX'
+    0x12,0x7e, // LOAD_GLOBAL 'STX'
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x4e, // POP_JUMP_IF_FALSE 14
     0xba, // LOAD_FAST 10
@@ -10830,34 +11077,34 @@ static const byte fun_data_ymodem_Modem_recv[602] = {
     0x44,0x44, // POP_JUMP_IF_FALSE 4
     0x22,0x88,0x00, // LOAD_CONST_SMALL_INT 1024
     0xca, // STORE_FAST 10
-    0x42,0xff,0x80, // JUMP 127
+    0x42,0x83,0x81, // JUMP 131
     0xb7, // LOAD_FAST 7
-    0x12,0x63, // LOAD_GLOBAL 'EOT'
+    0x12,0x7f, // LOAD_GLOBAL 'EOT'
     0xd9, // BINARY_OP 2 __eq__
-    0x44,0x7d, // POP_JUMP_IF_FALSE 61
+    0x44,0xbf,0x80, // POP_JUMP_IF_FALSE 63
     0xbc, // LOAD_FAST 12
-    0x44,0x66, // POP_JUMP_IF_FALSE 38
+    0x44,0x67, // POP_JUMP_IF_FALSE 39
     0xb0, // LOAD_FAST 0
-    0x14,0x1d, // LOAD_METHOD 'writer'
-    0x12,0x64, // LOAD_GLOBAL 'ACK'
+    0x14,0x33, // LOAD_METHOD 'writer'
+    0x12,0x81,0x00, // LOAD_GLOBAL 'ACK'
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
     0xb6, // LOAD_FAST 6
-    0x14,0x1a, // LOAD_METHOD 'close'
+    0x14,0x1e, // LOAD_METHOD 'close'
     0x36,0x00, // CALL_METHOD 0
     0x59, // POP_TOP
-    0x12,0x81,0x0a, // LOAD_GLOBAL 'callable'
+    0x12,0x81,0x29, // LOAD_GLOBAL 'callable'
     0xb5, // LOAD_FAST 5
     0x34,0x01, // CALL_FUNCTION 1
     0x44,0x48, // POP_JUMP_IF_FALSE 8
     0xb5, // LOAD_FAST 5
     0xb0, // LOAD_FAST 0
-    0x13,0x24, // LOAD_ATTR '_recv_file_name'
+    0x13,0x3a, // LOAD_ATTR '_recv_file_name'
     0xb9, // LOAD_FAST 9
     0x34,0x02, // CALL_FUNCTION 2
     0x59, // POP_TOP
     0xb0, // LOAD_FAST 0
-    0x14,0x2c, // LOAD_METHOD 'recv'
+    0x14,0x1c, // LOAD_METHOD 'recv'
     0x36,0x00, // CALL_METHOD 0
     0x59, // POP_TOP
     0x52, // LOAD_CONST_TRUE
@@ -10865,27 +11112,27 @@ static const byte fun_data_ymodem_Modem_recv[602] = {
     0x81, // LOAD_CONST_SMALL_INT 1
     0xcc, // STORE_FAST 12
     0xb0, // LOAD_FAST 0
-    0x14,0x1d, // LOAD_METHOD 'writer'
-    0x12,0x65, // LOAD_GLOBAL 'NAK'
+    0x14,0x33, // LOAD_METHOD 'writer'
+    0x12,0x81,0x01, // LOAD_GLOBAL 'NAK'
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
     0xb0, // LOAD_FAST 0
-    0x14,0x1c, // LOAD_METHOD 'reader'
+    0x14,0x32, // LOAD_METHOD 'reader'
     0x81, // LOAD_CONST_SMALL_INT 1
     0xb3, // LOAD_FAST 3
     0x36,0x02, // CALL_METHOD 2
     0xc7, // STORE_FAST 7
-    0x42,0x79, // JUMP 57
+    0x42,0x7a, // JUMP 58
     0xb7, // LOAD_FAST 7
-    0x12,0x66, // LOAD_GLOBAL 'CAN'
+    0x12,0x81,0x02, // LOAD_GLOBAL 'CAN'
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x5a, // POP_JUMP_IF_FALSE 26
     0xbc, // LOAD_FAST 12
     0x44,0x4b, // POP_JUMP_IF_FALSE 11
     0xb0, // LOAD_FAST 0
-    0x14,0x2b, // LOAD_METHOD '_delete_failed_file'
+    0x14,0x41, // LOAD_METHOD '_delete_failed_file'
     0xb0, // LOAD_FAST 0
-    0x13,0x24, // LOAD_ATTR '_recv_file_name'
+    0x13,0x3a, // LOAD_ATTR '_recv_file_name'
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
     0x51, // LOAD_CONST_NONE
@@ -10893,7 +11140,7 @@ static const byte fun_data_ymodem_Modem_recv[602] = {
     0x81, // LOAD_CONST_SMALL_INT 1
     0xcc, // STORE_FAST 12
     0xb0, // LOAD_FAST 0
-    0x14,0x1c, // LOAD_METHOD 'reader'
+    0x14,0x32, // LOAD_METHOD 'reader'
     0x81, // LOAD_CONST_SMALL_INT 1
     0xb3, // LOAD_FAST 3
     0x36,0x02, // CALL_METHOD 2
@@ -10904,7 +11151,7 @@ static const byte fun_data_ymodem_Modem_recv[602] = {
     0xe5, // BINARY_OP 14 __iadd__
     0xce, // STORE_FAST 14
     0xb0, // LOAD_FAST 0
-    0x14,0x1c, // LOAD_METHOD 'reader'
+    0x14,0x32, // LOAD_METHOD 'reader'
     0x81, // LOAD_CONST_SMALL_INT 1
     0xb3, // LOAD_FAST 3
     0x36,0x02, // CALL_METHOD 2
@@ -10914,21 +11161,21 @@ static const byte fun_data_ymodem_Modem_recv[602] = {
     0xd8, // BINARY_OP 1 __gt__
     0x44,0x48, // POP_JUMP_IF_FALSE 8
     0xb0, // LOAD_FAST 0
-    0x14,0x2a, // LOAD_METHOD 'abort'
+    0x14,0x40, // LOAD_METHOD 'abort'
     0x36,0x00, // CALL_METHOD 0
     0x59, // POP_TOP
     0x51, // LOAD_CONST_NONE
     0x63, // RETURN_VALUE
-    0x42,0xd9,0x7e, // JUMP -167
+    0x42,0xd5,0x7e, // JUMP -171
     0xb0, // LOAD_FAST 0
-    0x14,0x2f, // LOAD_METHOD '_verify_complement'
+    0x14,0x44, // LOAD_METHOD '_verify_complement'
     0xb3, // LOAD_FAST 3
     0xbb, // LOAD_FAST 11
     0x36,0x02, // CALL_METHOD 2
     0x43,0x43, // POP_JUMP_IF_TRUE 3
-    0x42,0xba,0x81, // JUMP 186
+    0x42,0xbb,0x81, // JUMP 187
     0xb0, // LOAD_FAST 0
-    0x14,0x1c, // LOAD_METHOD 'reader'
+    0x14,0x32, // LOAD_METHOD 'reader'
     0xba, // LOAD_FAST 10
     0x81, // LOAD_CONST_SMALL_INT 1
     0xf2, // BINARY_OP 27 __add__
@@ -10937,8 +11184,8 @@ static const byte fun_data_ymodem_Modem_recv[602] = {
     0x36,0x01, // CALL_METHOD 1
     0xcf, // STORE_FAST 15
     0xbf, // LOAD_FAST 15
-    0x44,0xab,0x81, // POP_JUMP_IF_FALSE 171
-    0x12,0x81,0x0b, // LOAD_GLOBAL 'len'
+    0x44,0xac,0x81, // POP_JUMP_IF_FALSE 172
+    0x12,0x81,0x2a, // LOAD_GLOBAL 'len'
     0xbf, // LOAD_FAST 15
     0x34,0x01, // CALL_FUNCTION 1
     0xba, // LOAD_FAST 10
@@ -10947,9 +11194,9 @@ static const byte fun_data_ymodem_Modem_recv[602] = {
     0xb1, // LOAD_FAST 1
     0xf2, // BINARY_OP 27 __add__
     0xd9, // BINARY_OP 2 __eq__
-    0x44,0x9c,0x81, // POP_JUMP_IF_FALSE 156
+    0x44,0x9d,0x81, // POP_JUMP_IF_FALSE 157
     0xb0, // LOAD_FAST 0
-    0x14,0x30, // LOAD_METHOD '_verify_recv_checksum'
+    0x14,0x45, // LOAD_METHOD '_verify_recv_checksum'
     0xb1, // LOAD_FAST 1
     0xbf, // LOAD_FAST 15
     0x36,0x02, // CALL_METHOD 2
@@ -10957,7 +11204,7 @@ static const byte fun_data_ymodem_Modem_recv[602] = {
     0x26,0x10, // STORE_FAST_N 16
     0xcf, // STORE_FAST 15
     0x24,0x10, // LOAD_FAST_N 16
-    0x44,0x89,0x81, // POP_JUMP_IF_FALSE 137
+    0x44,0x8a,0x81, // POP_JUMP_IF_FALSE 138
     0xb8, // LOAD_FAST 8
     0x81, // LOAD_CONST_SMALL_INT 1
     0xe5, // BINARY_OP 14 __iadd__
@@ -10965,25 +11212,25 @@ static const byte fun_data_ymodem_Modem_recv[602] = {
     0xba, // LOAD_FAST 10
     0x26,0x11, // STORE_FAST_N 17
     0xb0, // LOAD_FAST 0
-    0x13,0x25, // LOAD_ATTR '_remaining_data_length'
+    0x13,0x3b, // LOAD_ATTR '_remaining_data_length'
     0x80, // LOAD_CONST_SMALL_INT 0
     0xd8, // BINARY_OP 1 __gt__
     0x44,0x56, // POP_JUMP_IF_FALSE 22
-    0x12,0x81,0x0c, // LOAD_GLOBAL 'min'
+    0x12,0x81,0x22, // LOAD_GLOBAL 'min'
     0x24,0x11, // LOAD_FAST_N 17
     0xb0, // LOAD_FAST 0
-    0x13,0x25, // LOAD_ATTR '_remaining_data_length'
+    0x13,0x3b, // LOAD_ATTR '_remaining_data_length'
     0x34,0x02, // CALL_FUNCTION 2
     0x26,0x11, // STORE_FAST_N 17
     0xb0, // LOAD_FAST 0
     0x57, // DUP_TOP
-    0x13,0x25, // LOAD_ATTR '_remaining_data_length'
+    0x13,0x3b, // LOAD_ATTR '_remaining_data_length'
     0x24,0x11, // LOAD_FAST_N 17
     0xe6, // BINARY_OP 15 __isub__
     0x5a, // ROT_TWO
-    0x18,0x25, // STORE_ATTR '_remaining_data_length'
+    0x18,0x3b, // STORE_ATTR '_remaining_data_length'
     0x12,0x02, // LOAD_GLOBAL 'gc'
-    0x14,0x31, // LOAD_METHOD 'collect'
+    0x14,0x46, // LOAD_METHOD 'collect'
     0x36,0x00, // CALL_METHOD 0
     0x59, // POP_TOP
     0xbd, // LOAD_FAST 13
@@ -10995,12 +11242,12 @@ static const byte fun_data_ymodem_Modem_recv[602] = {
     0xe5, // BINARY_OP 14 __iadd__
     0xcd, // STORE_FAST 13
     0xb9, // LOAD_FAST 9
-    0x12,0x81,0x0b, // LOAD_GLOBAL 'len'
+    0x12,0x81,0x2a, // LOAD_GLOBAL 'len'
     0xbf, // LOAD_FAST 15
     0x34,0x01, // CALL_FUNCTION 1
     0xe5, // BINARY_OP 14 __iadd__
     0xc9, // STORE_FAST 9
-    0x12,0x81,0x0b, // LOAD_GLOBAL 'len'
+    0x12,0x81,0x2a, // LOAD_GLOBAL 'len'
     0xbd, // LOAD_FAST 13
     0x34,0x01, // CALL_FUNCTION 1
     0x23,0x0c, // LOAD_CONST_OBJ 12
@@ -11008,7 +11255,7 @@ static const byte fun_data_ymodem_Modem_recv[602] = {
     0xd3, // UNARY_OP 3 <not>
     0x44,0x4c, // POP_JUMP_IF_FALSE 12
     0xb6, // LOAD_FAST 6
-    0x14,0x18, // LOAD_METHOD 'write'
+    0x14,0x13, // LOAD_METHOD 'write'
     0xbd, // LOAD_FAST 13
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
@@ -11016,24 +11263,24 @@ static const byte fun_data_ymodem_Modem_recv[602] = {
     0xcd, // STORE_FAST 13
     0x42,0x51, // JUMP 17
     0xb0, // LOAD_FAST 0
-    0x13,0x25, // LOAD_ATTR '_remaining_data_length'
+    0x13,0x3b, // LOAD_ATTR '_remaining_data_length'
     0x80, // LOAD_CONST_SMALL_INT 0
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x4a, // POP_JUMP_IF_FALSE 10
     0xb6, // LOAD_FAST 6
-    0x14,0x18, // LOAD_METHOD 'write'
+    0x14,0x13, // LOAD_METHOD 'write'
     0xbd, // LOAD_FAST 13
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
     0x23,0x08, // LOAD_CONST_OBJ 8
     0xcd, // STORE_FAST 13
     0xb0, // LOAD_FAST 0
-    0x14,0x1d, // LOAD_METHOD 'writer'
-    0x12,0x64, // LOAD_GLOBAL 'ACK'
+    0x14,0x33, // LOAD_METHOD 'writer'
+    0x12,0x81,0x00, // LOAD_GLOBAL 'ACK'
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
-    0x12,0x60, // LOAD_GLOBAL 'time'
-    0x14,0x32, // LOAD_METHOD 'sleep_ms'
+    0x12,0x7c, // LOAD_GLOBAL 'time'
+    0x14,0x47, // LOAD_METHOD 'sleep_ms'
     0x85, // LOAD_CONST_SMALL_INT 5
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
@@ -11044,15 +11291,15 @@ static const byte fun_data_ymodem_Modem_recv[602] = {
     0xf8, // BINARY_OP 33 __mod__
     0xcb, // STORE_FAST 11
     0xb0, // LOAD_FAST 0
-    0x14,0x1c, // LOAD_METHOD 'reader'
+    0x14,0x32, // LOAD_METHOD 'reader'
     0x81, // LOAD_CONST_SMALL_INT 1
     0xb3, // LOAD_FAST 3
     0x36,0x02, // CALL_METHOD 2
     0xc7, // STORE_FAST 7
-    0x42,0x65, // JUMP 37
+    0x42,0x66, // JUMP 38
     0x42,0x40, // JUMP 0
     0xb0, // LOAD_FAST 0
-    0x14,0x1c, // LOAD_METHOD 'reader'
+    0x14,0x32, // LOAD_METHOD 'reader'
     0x81, // LOAD_CONST_SMALL_INT 1
     0xb3, // LOAD_FAST 3
     0x36,0x02, // CALL_METHOD 2
@@ -11064,27 +11311,27 @@ static const byte fun_data_ymodem_Modem_recv[602] = {
     0x42,0x42, // JUMP 2
     0x42,0x2f, // JUMP -17
     0xb0, // LOAD_FAST 0
-    0x14,0x1d, // LOAD_METHOD 'writer'
-    0x12,0x65, // LOAD_GLOBAL 'NAK'
+    0x14,0x33, // LOAD_METHOD 'writer'
+    0x12,0x81,0x01, // LOAD_GLOBAL 'NAK'
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
     0xb0, // LOAD_FAST 0
-    0x14,0x1c, // LOAD_METHOD 'reader'
+    0x14,0x32, // LOAD_METHOD 'reader'
     0x81, // LOAD_CONST_SMALL_INT 1
     0xb3, // LOAD_FAST 3
     0x36,0x02, // CALL_METHOD 2
     0xc7, // STORE_FAST 7
     0x42,0x40, // JUMP 0
-    0x42,0xeb,0x7c, // JUMP -405
+    0x42,0xe5,0x7c, // JUMP -411
     0x4a,0x1f, // POP_EXCEPT_JUMP 31
     0x57, // DUP_TOP
-    0x12,0x81,0x0d, // LOAD_GLOBAL 'Exception'
+    0x12,0x81,0x18, // LOAD_GLOBAL 'Exception'
     0xdf, // BINARY_OP 8 <exception match>
     0x44,0x57, // POP_JUMP_IF_FALSE 23
     0x26,0x12, // STORE_FAST_N 18
     0x49,0x0b, // SETUP_FINALLY 11
     0x12,0x04, // LOAD_GLOBAL 'sys'
-    0x14,0x33, // LOAD_METHOD 'print_exception'
+    0x14,0x48, // LOAD_METHOD 'print_exception'
     0x24,0x12, // LOAD_FAST_N 18
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
@@ -11108,7 +11355,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem_recv = {
     .fun_data = fun_data_ymodem_Modem_recv,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 602,
+    .fun_data_len = 609,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -11122,10 +11369,10 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem_recv = {
         .n_pos_args = 6,
         .n_kwonly_args = 0,
         .n_def_pos_args = 5,
-        .qstr_block_name_idx = 44,
-        .line_info = fun_data_ymodem_Modem_recv + 15,
-        .line_info_top = fun_data_ymodem_Modem_recv + 100,
-        .opcodes = fun_data_ymodem_Modem_recv + 100,
+        .qstr_block_name_idx = 28,
+        .line_info = fun_data_ymodem_Modem_recv + 16,
+        .line_info_top = fun_data_ymodem_Modem_recv + 101,
+        .opcodes = fun_data_ymodem_Modem_recv + 101,
     },
     #endif
     #endif
@@ -11136,35 +11383,35 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem_recv = {
 
 // child of ymodem_Modem
 // frozen bytecode for file ymodem.py, scope ymodem_Modem__in_transfer_mode
-static const byte fun_data_ymodem_Modem__in_transfer_mode[183] = {
-    0xdb,0x85,0x01,0x50, // prelude
-    0x2d,0x7c,0x81,0x08,0x48,0x81,0x09,0x47,0x81,0x0e,0x81,0x0f, // names: _in_transfer_mode, self, crc_mode, retry, delay, timeout, cancel, error_count
-    0x90,0x21,0x20,0x25,0x26,0x25,0x27,0x29,0x28,0x46,0x22,0x29,0x28,0x24,0x28,0x28,0x24,0x22,0x26,0x22,0x26,0x22,0x26,0x22,0x26,0x23,0x42,0x44, // code info
+static const byte fun_data_ymodem_Modem__in_transfer_mode[187] = {
+    0xdb,0x85,0x01,0x52, // prelude
+    0x42,0x81,0x1a,0x81,0x27,0x60,0x81,0x28,0x5f,0x81,0x2b,0x81,0x2c, // names: _in_transfer_mode, self, crc_mode, retry, delay, timeout, cancel, error_count
+    0x90,0x1c,0x20,0x25,0x26,0x25,0x27,0x2a,0x28,0x46,0x22,0x2a,0x28,0x24,0x28,0x28,0x24,0x22,0x26,0x22,0x26,0x22,0x26,0x22,0x27,0x23,0x42,0x44, // code info
     0xb6, // LOAD_FAST 6
     0xb2, // LOAD_FAST 2
     0xdb, // BINARY_OP 4 __ge__
     0x44,0x48, // POP_JUMP_IF_FALSE 8
     0xb0, // LOAD_FAST 0
-    0x14,0x2a, // LOAD_METHOD 'abort'
+    0x14,0x40, // LOAD_METHOD 'abort'
     0x36,0x00, // CALL_METHOD 0
     0x59, // POP_TOP
     0x51, // LOAD_CONST_NONE
     0x63, // RETURN_VALUE
     0xb1, // LOAD_FAST 1
-    0x44,0x5e, // POP_JUMP_IF_FALSE 30
+    0x44,0x5f, // POP_JUMP_IF_FALSE 31
     0xb6, // LOAD_FAST 6
     0xb2, // LOAD_FAST 2
     0x82, // LOAD_CONST_SMALL_INT 2
     0xf6, // BINARY_OP 31 __floordiv__
     0xd7, // BINARY_OP 0 __lt__
-    0x44,0x57, // POP_JUMP_IF_FALSE 23
+    0x44,0x58, // POP_JUMP_IF_FALSE 24
     0xb0, // LOAD_FAST 0
-    0x14,0x1d, // LOAD_METHOD 'writer'
-    0x12,0x67, // LOAD_GLOBAL 'CRC'
+    0x14,0x33, // LOAD_METHOD 'writer'
+    0x12,0x81,0x03, // LOAD_GLOBAL 'CRC'
     0x36,0x01, // CALL_METHOD 1
     0x43,0x4c, // POP_JUMP_IF_TRUE 12
-    0x12,0x60, // LOAD_GLOBAL 'time'
-    0x14,0x34, // LOAD_METHOD 'sleep'
+    0x12,0x7c, // LOAD_GLOBAL 'time'
+    0x14,0x49, // LOAD_METHOD 'sleep'
     0xb3, // LOAD_FAST 3
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
@@ -11172,16 +11419,16 @@ static const byte fun_data_ymodem_Modem__in_transfer_mode[183] = {
     0x81, // LOAD_CONST_SMALL_INT 1
     0xe5, // BINARY_OP 14 __iadd__
     0xc6, // STORE_FAST 6
-    0x42,0x57, // JUMP 23
+    0x42,0x58, // JUMP 24
     0x80, // LOAD_CONST_SMALL_INT 0
     0xc1, // STORE_FAST 1
     0xb0, // LOAD_FAST 0
-    0x14,0x1d, // LOAD_METHOD 'writer'
-    0x12,0x65, // LOAD_GLOBAL 'NAK'
+    0x14,0x33, // LOAD_METHOD 'writer'
+    0x12,0x81,0x01, // LOAD_GLOBAL 'NAK'
     0x36,0x01, // CALL_METHOD 1
     0x43,0x4c, // POP_JUMP_IF_TRUE 12
-    0x12,0x60, // LOAD_GLOBAL 'time'
-    0x14,0x34, // LOAD_METHOD 'sleep'
+    0x12,0x7c, // LOAD_GLOBAL 'time'
+    0x14,0x49, // LOAD_METHOD 'sleep'
     0xb3, // LOAD_FAST 3
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
@@ -11190,12 +11437,12 @@ static const byte fun_data_ymodem_Modem__in_transfer_mode[183] = {
     0xe5, // BINARY_OP 14 __iadd__
     0xc6, // STORE_FAST 6
     0xb0, // LOAD_FAST 0
-    0x14,0x1c, // LOAD_METHOD 'reader'
+    0x14,0x32, // LOAD_METHOD 'reader'
     0x81, // LOAD_CONST_SMALL_INT 1
     0xb4, // LOAD_FAST 4
     0x36,0x02, // CALL_METHOD 2
     0xc7, // STORE_FAST 7
-    0x12,0x81,0x0b, // LOAD_GLOBAL 'len'
+    0x12,0x81,0x2a, // LOAD_GLOBAL 'len'
     0xb7, // LOAD_FAST 7
     0x34,0x01, // CALL_FUNCTION 1
     0x43,0x46, // POP_JUMP_IF_TRUE 6
@@ -11203,27 +11450,27 @@ static const byte fun_data_ymodem_Modem__in_transfer_mode[183] = {
     0x81, // LOAD_CONST_SMALL_INT 1
     0xe5, // BINARY_OP 14 __iadd__
     0xc6, // STORE_FAST 6
-    0x42,0x6b, // JUMP 43
+    0x42,0x6c, // JUMP 44
     0xb7, // LOAD_FAST 7
-    0x12,0x61, // LOAD_GLOBAL 'SOH'
+    0x12,0x7d, // LOAD_GLOBAL 'SOH'
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x42, // POP_JUMP_IF_FALSE 2
     0xb7, // LOAD_FAST 7
     0x63, // RETURN_VALUE
     0xb7, // LOAD_FAST 7
-    0x12,0x62, // LOAD_GLOBAL 'STX'
+    0x12,0x7e, // LOAD_GLOBAL 'STX'
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x42, // POP_JUMP_IF_FALSE 2
     0xb7, // LOAD_FAST 7
     0x63, // RETURN_VALUE
     0xb7, // LOAD_FAST 7
-    0x12,0x63, // LOAD_GLOBAL 'EOT'
+    0x12,0x7f, // LOAD_GLOBAL 'EOT'
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x42, // POP_JUMP_IF_FALSE 2
     0xb7, // LOAD_FAST 7
     0x63, // RETURN_VALUE
     0xb7, // LOAD_FAST 7
-    0x12,0x66, // LOAD_GLOBAL 'CAN'
+    0x12,0x81,0x02, // LOAD_GLOBAL 'CAN'
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x49, // POP_JUMP_IF_FALSE 9
     0xb5, // LOAD_FAST 5
@@ -11237,7 +11484,7 @@ static const byte fun_data_ymodem_Modem__in_transfer_mode[183] = {
     0x81, // LOAD_CONST_SMALL_INT 1
     0xe5, // BINARY_OP 14 __iadd__
     0xc6, // STORE_FAST 6
-    0x42,0xf7,0x7e, // JUMP -137
+    0x42,0xf4,0x7e, // JUMP -140
     0x51, // LOAD_CONST_NONE
     0x63, // RETURN_VALUE
 };
@@ -11250,7 +11497,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__in_transfer_mode = 
     .fun_data = fun_data_ymodem_Modem__in_transfer_mode,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 183,
+    .fun_data_len = 187,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -11264,10 +11511,10 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__in_transfer_mode = 
         .n_pos_args = 7,
         .n_kwonly_args = 0,
         .n_def_pos_args = 3,
-        .qstr_block_name_idx = 45,
-        .line_info = fun_data_ymodem_Modem__in_transfer_mode + 16,
-        .line_info_top = fun_data_ymodem_Modem__in_transfer_mode + 44,
-        .opcodes = fun_data_ymodem_Modem__in_transfer_mode + 44,
+        .qstr_block_name_idx = 66,
+        .line_info = fun_data_ymodem_Modem__in_transfer_mode + 17,
+        .line_info_top = fun_data_ymodem_Modem__in_transfer_mode + 45,
+        .opcodes = fun_data_ymodem_Modem__in_transfer_mode + 45,
     },
     #endif
     #endif
@@ -11278,16 +11525,16 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__in_transfer_mode = 
 
 // child of ymodem_Modem
 // frozen bytecode for file ymodem.py, scope ymodem_Modem__get_file_header
-static const byte fun_data_ymodem_Modem__get_file_header[550] = {
-    0x8e,0x95,0x01,0x94,0x02, // prelude
-    0x2e,0x7c,0x81,0x10,0x81,0x08,0x47,0x48,0x81,0x11, // names: _get_file_header, self, char, crc_mode, timeout, retry, packet_size
-    0x90,0x41,0x22,0x22,0x20,0x20,0x26,0x27,0x24,0x22,0x26,0x27,0x24,0x22,0x26,0x23,0x42,0x44,0x24,0x25,0x26,0x25,0x28,0x43,0x2b,0x33,0x2b,0x24,0x28,0x28,0x28,0x22,0x27,0x34,0x29,0x22,0x55,0x23,0x32,0x28,0x28,0x36,0x29,0x28,0x28,0x37,0x29,0x28,0x28,0x36,0x29,0x28,0x28,0x36,0x28,0x42,0x42,0x20,0x20,0x28,0x25,0x24,0x28,0x28, // code info
+static const byte fun_data_ymodem_Modem__get_file_header[561] = {
+    0x8e,0x95,0x01,0x96,0x02, // prelude
+    0x43,0x81,0x1a,0x81,0x2d,0x81,0x27,0x5f,0x60,0x81,0x2e, // names: _get_file_header, self, char, crc_mode, timeout, retry, packet_size
+    0x90,0x3c,0x22,0x22,0x20,0x20,0x26,0x27,0x24,0x22,0x26,0x27,0x24,0x22,0x27,0x23,0x42,0x44,0x24,0x25,0x26,0x25,0x28,0x43,0x2b,0x33,0x2b,0x24,0x28,0x28,0x29,0x22,0x27,0x35,0x29,0x22,0x55,0x23,0x33,0x29,0x28,0x36,0x29,0x29,0x28,0x37,0x29,0x29,0x28,0x36,0x29,0x29,0x28,0x36,0x29,0x42,0x42,0x20,0x20,0x28,0x25,0x24,0x29,0x28, // code info
     0x80, // LOAD_CONST_SMALL_INT 0
     0xc6, // STORE_FAST 6
     0x80, // LOAD_CONST_SMALL_INT 0
     0xc7, // STORE_FAST 7
     0xb1, // LOAD_FAST 1
-    0x12,0x61, // LOAD_GLOBAL 'SOH'
+    0x12,0x7d, // LOAD_GLOBAL 'SOH'
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x4d, // POP_JUMP_IF_FALSE 13
     0xb5, // LOAD_FAST 5
@@ -11296,9 +11543,9 @@ static const byte fun_data_ymodem_Modem__get_file_header[550] = {
     0x44,0x44, // POP_JUMP_IF_FALSE 4
     0x22,0x81,0x00, // LOAD_CONST_SMALL_INT 128
     0xc5, // STORE_FAST 5
-    0x42,0x76, // JUMP 54
+    0x42,0x77, // JUMP 55
     0xb1, // LOAD_FAST 1
-    0x12,0x62, // LOAD_GLOBAL 'STX'
+    0x12,0x7e, // LOAD_GLOBAL 'STX'
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x4d, // POP_JUMP_IF_FALSE 13
     0xb5, // LOAD_FAST 5
@@ -11307,9 +11554,9 @@ static const byte fun_data_ymodem_Modem__get_file_header[550] = {
     0x44,0x44, // POP_JUMP_IF_FALSE 4
     0x22,0x88,0x00, // LOAD_CONST_SMALL_INT 1024
     0xc5, // STORE_FAST 5
-    0x42,0x63, // JUMP 35
+    0x42,0x64, // JUMP 36
     0xb1, // LOAD_FAST 1
-    0x12,0x66, // LOAD_GLOBAL 'CAN'
+    0x12,0x81,0x02, // LOAD_GLOBAL 'CAN'
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x49, // POP_JUMP_IF_FALSE 9
     0xb7, // LOAD_FAST 7
@@ -11328,20 +11575,20 @@ static const byte fun_data_ymodem_Modem__get_file_header[550] = {
     0xd8, // BINARY_OP 1 __gt__
     0x44,0x48, // POP_JUMP_IF_FALSE 8
     0xb0, // LOAD_FAST 0
-    0x14,0x2a, // LOAD_METHOD 'abort'
+    0x14,0x40, // LOAD_METHOD 'abort'
     0x36,0x00, // CALL_METHOD 0
     0x59, // POP_TOP
     0x51, // LOAD_CONST_NONE
     0x63, // RETURN_VALUE
-    0x42,0xb7,0x7f, // JUMP -73
+    0x42,0xb6,0x7f, // JUMP -74
     0xb0, // LOAD_FAST 0
-    0x14,0x2f, // LOAD_METHOD '_verify_complement'
+    0x14,0x44, // LOAD_METHOD '_verify_complement'
     0xb3, // LOAD_FAST 3
     0x36,0x01, // CALL_METHOD 1
     0x43,0x43, // POP_JUMP_IF_TRUE 3
-    0x42,0xd7,0x82, // JUMP 343
+    0x42,0xdf,0x82, // JUMP 351
     0xb0, // LOAD_FAST 0
-    0x14,0x1c, // LOAD_METHOD 'reader'
+    0x14,0x32, // LOAD_METHOD 'reader'
     0xb5, // LOAD_FAST 5
     0x81, // LOAD_CONST_SMALL_INT 1
     0xf2, // BINARY_OP 27 __add__
@@ -11350,8 +11597,8 @@ static const byte fun_data_ymodem_Modem__get_file_header[550] = {
     0x36,0x01, // CALL_METHOD 1
     0xc8, // STORE_FAST 8
     0xb8, // LOAD_FAST 8
-    0x44,0xc8,0x82, // POP_JUMP_IF_FALSE 328
-    0x12,0x81,0x0b, // LOAD_GLOBAL 'len'
+    0x44,0xd0,0x82, // POP_JUMP_IF_FALSE 336
+    0x12,0x81,0x2a, // LOAD_GLOBAL 'len'
     0xb8, // LOAD_FAST 8
     0x34,0x01, // CALL_FUNCTION 1
     0xb5, // LOAD_FAST 5
@@ -11360,9 +11607,9 @@ static const byte fun_data_ymodem_Modem__get_file_header[550] = {
     0xb2, // LOAD_FAST 2
     0xf2, // BINARY_OP 27 __add__
     0xd9, // BINARY_OP 2 __eq__
-    0x44,0xb9,0x82, // POP_JUMP_IF_FALSE 313
+    0x44,0xc1,0x82, // POP_JUMP_IF_FALSE 321
     0xb0, // LOAD_FAST 0
-    0x14,0x30, // LOAD_METHOD '_verify_recv_checksum'
+    0x14,0x45, // LOAD_METHOD '_verify_recv_checksum'
     0xb2, // LOAD_FAST 2
     0xb8, // LOAD_FAST 8
     0x36,0x02, // CALL_METHOD 2
@@ -11370,83 +11617,83 @@ static const byte fun_data_ymodem_Modem__get_file_header[550] = {
     0xc9, // STORE_FAST 9
     0xc8, // STORE_FAST 8
     0xb9, // LOAD_FAST 9
-    0x44,0xa8,0x82, // POP_JUMP_IF_FALSE 296
+    0x44,0xb0,0x82, // POP_JUMP_IF_FALSE 304
     0xb8, // LOAD_FAST 8
-    0x14,0x35, // LOAD_METHOD 'lstrip'
+    0x14,0x4a, // LOAD_METHOD 'lstrip'
     0x23,0x0d, // LOAD_CONST_OBJ 13
     0x36,0x01, // CALL_METHOD 1
     0xc8, // STORE_FAST 8
-    0x12,0x81,0x0b, // LOAD_GLOBAL 'len'
+    0x12,0x81,0x2a, // LOAD_GLOBAL 'len'
     0xb8, // LOAD_FAST 8
     0x34,0x01, // CALL_FUNCTION 1
-    0x43,0x4a, // POP_JUMP_IF_TRUE 10
+    0x43,0x4b, // POP_JUMP_IF_TRUE 11
     0xb0, // LOAD_FAST 0
-    0x14,0x1d, // LOAD_METHOD 'writer'
-    0x12,0x64, // LOAD_GLOBAL 'ACK'
+    0x14,0x33, // LOAD_METHOD 'writer'
+    0x12,0x81,0x00, // LOAD_GLOBAL 'ACK'
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
     0x51, // LOAD_CONST_NONE
     0x63, // RETURN_VALUE
     0x12,0x02, // LOAD_GLOBAL 'gc'
-    0x14,0x31, // LOAD_METHOD 'collect'
+    0x14,0x46, // LOAD_METHOD 'collect'
     0x36,0x00, // CALL_METHOD 0
     0x59, // POP_TOP
-    0x12,0x73, // LOAD_GLOBAL 'bytes'
-    0x14,0x36, // LOAD_METHOD 'decode'
+    0x12,0x81,0x10, // LOAD_GLOBAL 'bytes'
+    0x14,0x4b, // LOAD_METHOD 'decode'
     0xb8, // LOAD_FAST 8
-    0x14,0x37, // LOAD_METHOD 'split'
+    0x14,0x4c, // LOAD_METHOD 'split'
     0x23,0x0d, // LOAD_CONST_OBJ 13
     0x36,0x01, // CALL_METHOD 1
     0x80, // LOAD_CONST_SMALL_INT 0
     0x55, // LOAD_SUBSCR
-    0x10,0x38, // LOAD_CONST_STRING 'utf-8'
+    0x10,0x4d, // LOAD_CONST_STRING 'utf-8'
     0x36,0x02, // CALL_METHOD 2
     0xb0, // LOAD_FAST 0
-    0x18,0x24, // STORE_ATTR '_recv_file_name'
+    0x18,0x3a, // STORE_ATTR '_recv_file_name'
     0xb0, // LOAD_FAST 0
-    0x14,0x39, // LOAD_METHOD '_check_path'
+    0x14,0x4e, // LOAD_METHOD '_check_path'
     0xb0, // LOAD_FAST 0
-    0x13,0x24, // LOAD_ATTR '_recv_file_name'
+    0x13,0x3a, // LOAD_ATTR '_recv_file_name'
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
     0x48,0x0d, // SETUP_EXCEPT 13
-    0x12,0x81,0x12, // LOAD_GLOBAL 'open'
+    0x12,0x81,0x2f, // LOAD_GLOBAL 'open'
     0xb0, // LOAD_FAST 0
-    0x13,0x24, // LOAD_ATTR '_recv_file_name'
-    0x10,0x3a, // LOAD_CONST_STRING 'wb+'
+    0x13,0x3a, // LOAD_ATTR '_recv_file_name'
+    0x10,0x4f, // LOAD_CONST_STRING 'wb+'
     0x34,0x02, // CALL_FUNCTION 2
     0xca, // STORE_FAST 10
     0x4a,0x0b, // POP_EXCEPT_JUMP 11
     0x57, // DUP_TOP
-    0x12,0x81,0x13, // LOAD_GLOBAL 'IOError'
+    0x12,0x81,0x30, // LOAD_GLOBAL 'IOError'
     0xdf, // BINARY_OP 8 <exception match>
     0x44,0x43, // POP_JUMP_IF_FALSE 3
     0x59, // POP_TOP
     0x51, // LOAD_CONST_NONE
     0x63, // RETURN_VALUE
     0x5d, // END_FINALLY
-    0x12,0x73, // LOAD_GLOBAL 'bytes'
-    0x14,0x36, // LOAD_METHOD 'decode'
+    0x12,0x81,0x10, // LOAD_GLOBAL 'bytes'
+    0x14,0x4b, // LOAD_METHOD 'decode'
     0xb8, // LOAD_FAST 8
-    0x14,0x37, // LOAD_METHOD 'split'
+    0x14,0x4c, // LOAD_METHOD 'split'
     0x23,0x0d, // LOAD_CONST_OBJ 13
     0x36,0x01, // CALL_METHOD 1
     0x81, // LOAD_CONST_SMALL_INT 1
     0x55, // LOAD_SUBSCR
-    0x10,0x38, // LOAD_CONST_STRING 'utf-8'
+    0x10,0x4d, // LOAD_CONST_STRING 'utf-8'
     0x36,0x02, // CALL_METHOD 2
     0xc8, // STORE_FAST 8
     0xb0, // LOAD_FAST 0
-    0x13,0x23, // LOAD_ATTR 'program_features'
-    0x12,0x68, // LOAD_GLOBAL 'USE_LENGTH_FIELD'
+    0x13,0x39, // LOAD_ATTR 'program_features'
+    0x12,0x81,0x04, // LOAD_GLOBAL 'USE_LENGTH_FIELD'
     0xef, // BINARY_OP 24 __and__
     0x44,0x67, // POP_JUMP_IF_FALSE 39
     0xb8, // LOAD_FAST 8
-    0x14,0x3b, // LOAD_METHOD 'find'
-    0x10,0x3c, // LOAD_CONST_STRING ' '
+    0x14,0x50, // LOAD_METHOD 'find'
+    0x10,0x51, // LOAD_CONST_STRING ' '
     0x36,0x01, // CALL_METHOD 1
     0xcb, // STORE_FAST 11
-    0x12,0x81,0x14, // LOAD_GLOBAL 'int'
+    0x12,0x81,0x31, // LOAD_GLOBAL 'int'
     0xbb, // LOAD_FAST 11
     0x7f, // LOAD_CONST_SMALL_INT -1
     0xd9, // BINARY_OP 2 __eq__
@@ -11460,7 +11707,7 @@ static const byte fun_data_ymodem_Modem__get_file_header[550] = {
     0x55, // LOAD_SUBSCR
     0x34,0x01, // CALL_FUNCTION 1
     0xb0, // LOAD_FAST 0
-    0x18,0x25, // STORE_ATTR '_remaining_data_length'
+    0x18,0x3b, // STORE_ATTR '_remaining_data_length'
     0xb8, // LOAD_FAST 8
     0xbb, // LOAD_FAST 11
     0x81, // LOAD_CONST_SMALL_INT 1
@@ -11470,16 +11717,16 @@ static const byte fun_data_ymodem_Modem__get_file_header[550] = {
     0x55, // LOAD_SUBSCR
     0xc8, // STORE_FAST 8
     0xb0, // LOAD_FAST 0
-    0x13,0x23, // LOAD_ATTR 'program_features'
-    0x12,0x69, // LOAD_GLOBAL 'USE_DATE_FIELD'
+    0x13,0x39, // LOAD_ATTR 'program_features'
+    0x12,0x81,0x05, // LOAD_GLOBAL 'USE_DATE_FIELD'
     0xef, // BINARY_OP 24 __and__
     0x44,0x68, // POP_JUMP_IF_FALSE 40
     0xb8, // LOAD_FAST 8
-    0x14,0x3b, // LOAD_METHOD 'find'
-    0x10,0x3c, // LOAD_CONST_STRING ' '
+    0x14,0x50, // LOAD_METHOD 'find'
+    0x10,0x51, // LOAD_CONST_STRING ' '
     0x36,0x01, // CALL_METHOD 1
     0xcb, // STORE_FAST 11
-    0x12,0x81,0x14, // LOAD_GLOBAL 'int'
+    0x12,0x81,0x31, // LOAD_GLOBAL 'int'
     0xbb, // LOAD_FAST 11
     0x7f, // LOAD_CONST_SMALL_INT -1
     0xd9, // BINARY_OP 2 __eq__
@@ -11494,7 +11741,7 @@ static const byte fun_data_ymodem_Modem__get_file_header[550] = {
     0x88, // LOAD_CONST_SMALL_INT 8
     0x34,0x02, // CALL_FUNCTION 2
     0xb0, // LOAD_FAST 0
-    0x18,0x26, // STORE_ATTR '_recv_file_mtime'
+    0x18,0x3c, // STORE_ATTR '_recv_file_mtime'
     0xb8, // LOAD_FAST 8
     0xbb, // LOAD_FAST 11
     0x81, // LOAD_CONST_SMALL_INT 1
@@ -11504,16 +11751,16 @@ static const byte fun_data_ymodem_Modem__get_file_header[550] = {
     0x55, // LOAD_SUBSCR
     0xc8, // STORE_FAST 8
     0xb0, // LOAD_FAST 0
-    0x13,0x23, // LOAD_ATTR 'program_features'
-    0x12,0x6a, // LOAD_GLOBAL 'USE_MODE_FIELD'
+    0x13,0x39, // LOAD_ATTR 'program_features'
+    0x12,0x81,0x06, // LOAD_GLOBAL 'USE_MODE_FIELD'
     0xef, // BINARY_OP 24 __and__
     0x44,0x67, // POP_JUMP_IF_FALSE 39
     0xb8, // LOAD_FAST 8
-    0x14,0x3b, // LOAD_METHOD 'find'
-    0x10,0x3c, // LOAD_CONST_STRING ' '
+    0x14,0x50, // LOAD_METHOD 'find'
+    0x10,0x51, // LOAD_CONST_STRING ' '
     0x36,0x01, // CALL_METHOD 1
     0xcb, // STORE_FAST 11
-    0x12,0x81,0x14, // LOAD_GLOBAL 'int'
+    0x12,0x81,0x31, // LOAD_GLOBAL 'int'
     0xbb, // LOAD_FAST 11
     0x7f, // LOAD_CONST_SMALL_INT -1
     0xd9, // BINARY_OP 2 __eq__
@@ -11527,7 +11774,7 @@ static const byte fun_data_ymodem_Modem__get_file_header[550] = {
     0x55, // LOAD_SUBSCR
     0x34,0x01, // CALL_FUNCTION 1
     0xb0, // LOAD_FAST 0
-    0x18,0x27, // STORE_ATTR '_recv_mode'
+    0x18,0x3d, // STORE_ATTR '_recv_mode'
     0xb8, // LOAD_FAST 8
     0xbb, // LOAD_FAST 11
     0x81, // LOAD_CONST_SMALL_INT 1
@@ -11537,16 +11784,16 @@ static const byte fun_data_ymodem_Modem__get_file_header[550] = {
     0x55, // LOAD_SUBSCR
     0xc8, // STORE_FAST 8
     0xb0, // LOAD_FAST 0
-    0x13,0x23, // LOAD_ATTR 'program_features'
-    0x12,0x6b, // LOAD_GLOBAL 'USE_SN_FIELD'
+    0x13,0x39, // LOAD_ATTR 'program_features'
+    0x12,0x81,0x07, // LOAD_GLOBAL 'USE_SN_FIELD'
     0xef, // BINARY_OP 24 __and__
     0x44,0x5e, // POP_JUMP_IF_FALSE 30
     0xb8, // LOAD_FAST 8
-    0x14,0x3b, // LOAD_METHOD 'find'
-    0x10,0x3c, // LOAD_CONST_STRING ' '
+    0x14,0x50, // LOAD_METHOD 'find'
+    0x10,0x51, // LOAD_CONST_STRING ' '
     0x36,0x01, // CALL_METHOD 1
     0xcb, // STORE_FAST 11
-    0x12,0x81,0x14, // LOAD_GLOBAL 'int'
+    0x12,0x81,0x31, // LOAD_GLOBAL 'int'
     0xbb, // LOAD_FAST 11
     0x7f, // LOAD_CONST_SMALL_INT -1
     0xd9, // BINARY_OP 2 __eq__
@@ -11560,17 +11807,17 @@ static const byte fun_data_ymodem_Modem__get_file_header[550] = {
     0x55, // LOAD_SUBSCR
     0x34,0x01, // CALL_FUNCTION 1
     0xb0, // LOAD_FAST 0
-    0x18,0x28, // STORE_ATTR '_recv_sn'
+    0x18,0x3e, // STORE_ATTR '_recv_sn'
     0xb0, // LOAD_FAST 0
-    0x14,0x1d, // LOAD_METHOD 'writer'
-    0x12,0x64, // LOAD_GLOBAL 'ACK'
+    0x14,0x33, // LOAD_METHOD 'writer'
+    0x12,0x81,0x00, // LOAD_GLOBAL 'ACK'
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
     0xba, // LOAD_FAST 10
     0x63, // RETURN_VALUE
     0x42,0x40, // JUMP 0
     0xb0, // LOAD_FAST 0
-    0x14,0x1c, // LOAD_METHOD 'reader'
+    0x14,0x32, // LOAD_METHOD 'reader'
     0x81, // LOAD_CONST_SMALL_INT 1
     0xb3, // LOAD_FAST 3
     0x36,0x02, // CALL_METHOD 2
@@ -11582,18 +11829,18 @@ static const byte fun_data_ymodem_Modem__get_file_header[550] = {
     0x42,0x42, // JUMP 2
     0x42,0x2f, // JUMP -17
     0xb0, // LOAD_FAST 0
-    0x14,0x1d, // LOAD_METHOD 'writer'
-    0x12,0x65, // LOAD_GLOBAL 'NAK'
+    0x14,0x33, // LOAD_METHOD 'writer'
+    0x12,0x81,0x01, // LOAD_GLOBAL 'NAK'
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
     0xb0, // LOAD_FAST 0
-    0x14,0x1c, // LOAD_METHOD 'reader'
+    0x14,0x32, // LOAD_METHOD 'reader'
     0x81, // LOAD_CONST_SMALL_INT 1
     0xb3, // LOAD_FAST 3
     0x36,0x02, // CALL_METHOD 2
     0xc1, // STORE_FAST 1
     0x42,0x40, // JUMP 0
-    0x42,0xaf,0x7c, // JUMP -465
+    0x42,0xa5,0x7c, // JUMP -475
     0x51, // LOAD_CONST_NONE
     0x63, // RETURN_VALUE
 };
@@ -11606,7 +11853,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__get_file_header = {
     .fun_data = fun_data_ymodem_Modem__get_file_header,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 550,
+    .fun_data_len = 561,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -11620,10 +11867,10 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__get_file_header = {
         .n_pos_args = 6,
         .n_kwonly_args = 0,
         .n_def_pos_args = 3,
-        .qstr_block_name_idx = 46,
-        .line_info = fun_data_ymodem_Modem__get_file_header + 15,
-        .line_info_top = fun_data_ymodem_Modem__get_file_header + 79,
-        .opcodes = fun_data_ymodem_Modem__get_file_header + 79,
+        .qstr_block_name_idx = 67,
+        .line_info = fun_data_ymodem_Modem__get_file_header + 16,
+        .line_info_top = fun_data_ymodem_Modem__get_file_header + 80,
+        .opcodes = fun_data_ymodem_Modem__get_file_header + 80,
     },
     #endif
     #endif
@@ -11634,11 +11881,27 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__get_file_header = {
 
 // child of ymodem_Modem
 // frozen bytecode for file ymodem.py, scope ymodem_Modem__check_path
-static const byte fun_data_ymodem_Modem__check_path[9] = {
-    0x09,0x0a, // prelude
-    0x39,0x81,0x15, // names: _check_path, path
-    0x90,0x8b, // code info
-    0x52, // LOAD_CONST_TRUE
+static const byte fun_data_ymodem_Modem__check_path[39] = {
+    0x29,0x0c, // prelude
+    0x4e,0x81,0x32, // names: _check_path, path
+    0x90,0x84,0x2f, // code info
+    0x12,0x05, // LOAD_GLOBAL 'ql_fs'
+    0x14,0x52, // LOAD_METHOD 'path_exists'
+    0x12,0x05, // LOAD_GLOBAL 'ql_fs'
+    0x14,0x53, // LOAD_METHOD 'path_dirname'
+    0xb0, // LOAD_FAST 0
+    0x36,0x01, // CALL_METHOD 1
+    0x36,0x01, // CALL_METHOD 1
+    0x43,0x4e, // POP_JUMP_IF_TRUE 14
+    0x12,0x05, // LOAD_GLOBAL 'ql_fs'
+    0x14,0x54, // LOAD_METHOD 'mkdirs'
+    0x12,0x05, // LOAD_GLOBAL 'ql_fs'
+    0x14,0x53, // LOAD_METHOD 'path_dirname'
+    0xb0, // LOAD_FAST 0
+    0x36,0x01, // CALL_METHOD 1
+    0x36,0x01, // CALL_METHOD 1
+    0x59, // POP_TOP
+    0x51, // LOAD_CONST_NONE
     0x63, // RETURN_VALUE
 };
 #if MICROPY_PERSISTENT_CODE_SAVE
@@ -11650,7 +11913,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__check_path = {
     .fun_data = fun_data_ymodem_Modem__check_path,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 9,
+    .fun_data_len = 39,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -11658,16 +11921,16 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__check_path = {
     #if MICROPY_PY_SYS_SETTRACE
     .line_of_definition = 0,
     .prelude = {
-        .n_state = 2,
+        .n_state = 6,
         .n_exc_stack = 0,
         .scope_flags = 0,
         .n_pos_args = 1,
         .n_kwonly_args = 0,
         .n_def_pos_args = 0,
-        .qstr_block_name_idx = 57,
+        .qstr_block_name_idx = 78,
         .line_info = fun_data_ymodem_Modem__check_path + 5,
-        .line_info_top = fun_data_ymodem_Modem__check_path + 7,
-        .opcodes = fun_data_ymodem_Modem__check_path + 7,
+        .line_info_top = fun_data_ymodem_Modem__check_path + 8,
+        .opcodes = fun_data_ymodem_Modem__check_path + 8,
     },
     #endif
     #endif
@@ -11678,11 +11941,23 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__check_path = {
 
 // child of ymodem_Modem
 // frozen bytecode for file ymodem.py, scope ymodem_Modem__delete_failed_file
-static const byte fun_data_ymodem_Modem__delete_failed_file[10] = {
-    0x89,0x01,0x0a, // prelude
-    0x2b,0x81,0x15, // names: _delete_failed_file, path
-    0x90,0x91, // code info
-    0x52, // LOAD_CONST_TRUE
+static const byte fun_data_ymodem_Modem__delete_failed_file[31] = {
+    0x99,0x01,0x0c, // prelude
+    0x41,0x81,0x32, // names: _delete_failed_file, path
+    0x90,0x89,0x2c, // code info
+    0xb0, // LOAD_FAST 0
+    0x44,0x51, // POP_JUMP_IF_FALSE 17
+    0x12,0x05, // LOAD_GLOBAL 'ql_fs'
+    0x14,0x52, // LOAD_METHOD 'path_exists'
+    0xb0, // LOAD_FAST 0
+    0x36,0x01, // CALL_METHOD 1
+    0x44,0x48, // POP_JUMP_IF_FALSE 8
+    0x12,0x03, // LOAD_GLOBAL 'uos'
+    0x14,0x55, // LOAD_METHOD 'remove'
+    0xb0, // LOAD_FAST 0
+    0x36,0x01, // CALL_METHOD 1
+    0x59, // POP_TOP
+    0x51, // LOAD_CONST_NONE
     0x63, // RETURN_VALUE
 };
 #if MICROPY_PERSISTENT_CODE_SAVE
@@ -11694,7 +11969,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__delete_failed_file 
     .fun_data = fun_data_ymodem_Modem__delete_failed_file,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 10,
+    .fun_data_len = 31,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -11702,16 +11977,16 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__delete_failed_file 
     #if MICROPY_PY_SYS_SETTRACE
     .line_of_definition = 0,
     .prelude = {
-        .n_state = 2,
+        .n_state = 4,
         .n_exc_stack = 0,
         .scope_flags = 0,
         .n_pos_args = 1,
         .n_kwonly_args = 0,
         .n_def_pos_args = 1,
-        .qstr_block_name_idx = 43,
+        .qstr_block_name_idx = 65,
         .line_info = fun_data_ymodem_Modem__delete_failed_file + 6,
-        .line_info_top = fun_data_ymodem_Modem__delete_failed_file + 8,
-        .opcodes = fun_data_ymodem_Modem__delete_failed_file + 8,
+        .line_info_top = fun_data_ymodem_Modem__delete_failed_file + 9,
+        .opcodes = fun_data_ymodem_Modem__delete_failed_file + 9,
     },
     #endif
     #endif
@@ -11722,12 +11997,12 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__delete_failed_file 
 
 // child of ymodem_Modem
 // frozen bytecode for file ymodem.py, scope ymodem_Modem__verify_complement
-static const byte fun_data_ymodem_Modem__verify_complement[81] = {
-    0xc3,0x80,0x01,0x1c, // prelude
-    0x2f,0x7c,0x47,0x81,0x16, // names: _verify_complement, self, timeout, sequence
-    0x90,0x94,0x28,0x25,0x44,0x27,0x28,0x26,0x2b, // code info
+static const byte fun_data_ymodem_Modem__verify_complement[82] = {
+    0xc3,0x80,0x01,0x1e, // prelude
+    0x44,0x81,0x1a,0x5f,0x81,0x33, // names: _verify_complement, self, timeout, sequence
+    0x90,0x8d,0x28,0x25,0x44,0x27,0x28,0x26,0x2b, // code info
     0xb0, // LOAD_FAST 0
-    0x14,0x1c, // LOAD_METHOD 'reader'
+    0x14,0x32, // LOAD_METHOD 'reader'
     0x81, // LOAD_CONST_SMALL_INT 1
     0xb1, // LOAD_FAST 1
     0x36,0x02, // CALL_METHOD 2
@@ -11739,12 +12014,12 @@ static const byte fun_data_ymodem_Modem__verify_complement[81] = {
     0x51, // LOAD_CONST_NONE
     0xc4, // STORE_FAST 4
     0x42,0x60, // JUMP 32
-    0x12,0x81,0x17, // LOAD_GLOBAL 'ord'
+    0x12,0x81,0x34, // LOAD_GLOBAL 'ord'
     0xb3, // LOAD_FAST 3
     0x34,0x01, // CALL_FUNCTION 1
     0xc3, // STORE_FAST 3
     0xb0, // LOAD_FAST 0
-    0x14,0x1c, // LOAD_METHOD 'reader'
+    0x14,0x32, // LOAD_METHOD 'reader'
     0x81, // LOAD_CONST_SMALL_INT 1
     0xb1, // LOAD_FAST 1
     0x36,0x02, // CALL_METHOD 2
@@ -11755,7 +12030,7 @@ static const byte fun_data_ymodem_Modem__verify_complement[81] = {
     0xd3, // UNARY_OP 3 <not>
     0x44,0x4b, // POP_JUMP_IF_FALSE 11
     0x22,0x81,0x7f, // LOAD_CONST_SMALL_INT 255
-    0x12,0x81,0x17, // LOAD_GLOBAL 'ord'
+    0x12,0x81,0x34, // LOAD_GLOBAL 'ord'
     0xb4, // LOAD_FAST 4
     0x34,0x01, // CALL_FUNCTION 1
     0xf3, // BINARY_OP 28 __sub__
@@ -11782,7 +12057,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__verify_complement =
     .fun_data = fun_data_ymodem_Modem__verify_complement,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 81,
+    .fun_data_len = 82,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -11796,10 +12071,10 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__verify_complement =
         .n_pos_args = 3,
         .n_kwonly_args = 0,
         .n_def_pos_args = 2,
-        .qstr_block_name_idx = 47,
-        .line_info = fun_data_ymodem_Modem__verify_complement + 9,
-        .line_info_top = fun_data_ymodem_Modem__verify_complement + 18,
-        .opcodes = fun_data_ymodem_Modem__verify_complement + 18,
+        .qstr_block_name_idx = 68,
+        .line_info = fun_data_ymodem_Modem__verify_complement + 10,
+        .line_info_top = fun_data_ymodem_Modem__verify_complement + 19,
+        .opcodes = fun_data_ymodem_Modem__verify_complement + 19,
     },
     #endif
     #endif
@@ -11810,13 +12085,13 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__verify_complement =
 
 // child of ymodem_Modem
 // frozen bytecode for file ymodem.py, scope ymodem_Modem__verify_recv_checksum
-static const byte fun_data_ymodem_Modem__verify_recv_checksum[102] = {
-    0x5b,0x20, // prelude
-    0x30,0x7c,0x81,0x08,0x71, // names: _verify_recv_checksum, self, crc_mode, data
-    0x90,0x9f,0x23,0x2c,0x2a,0x2c,0x4b,0x2b,0x24,0x2c,0x24, // code info
+static const byte fun_data_ymodem_Modem__verify_recv_checksum[104] = {
+    0x5b,0x24, // prelude
+    0x45,0x81,0x1a,0x81,0x27,0x81,0x0e, // names: _verify_recv_checksum, self, crc_mode, data
+    0x90,0x98,0x23,0x2c,0x2a,0x2c,0x4b,0x2b,0x24,0x2c,0x24, // code info
     0xb1, // LOAD_FAST 1
     0x44,0x6d, // POP_JUMP_IF_FALSE 45
-    0x12,0x81,0x18, // LOAD_GLOBAL 'bytearray'
+    0x12,0x81,0x35, // LOAD_GLOBAL 'bytearray'
     0xb2, // LOAD_FAST 2
     0x7e, // LOAD_CONST_SMALL_INT -2
     0x51, // LOAD_CONST_NONE
@@ -11835,7 +12110,7 @@ static const byte fun_data_ymodem_Modem__verify_recv_checksum[102] = {
     0xf2, // BINARY_OP 27 __add__
     0xc4, // STORE_FAST 4
     0xb0, // LOAD_FAST 0
-    0x14,0x3d, // LOAD_METHOD '_calc_crc'
+    0x14,0x56, // LOAD_METHOD '_calc_crc'
     0xb2, // LOAD_FAST 2
     0x51, // LOAD_CONST_NONE
     0x7e, // LOAD_CONST_SMALL_INT -2
@@ -11843,14 +12118,14 @@ static const byte fun_data_ymodem_Modem__verify_recv_checksum[102] = {
     0x55, // LOAD_SUBSCR
     0x36,0x01, // CALL_METHOD 1
     0xc5, // STORE_FAST 5
-    0x12,0x81,0x19, // LOAD_GLOBAL 'bool'
+    0x12,0x81,0x36, // LOAD_GLOBAL 'bool'
     0xb4, // LOAD_FAST 4
     0xb5, // LOAD_FAST 5
     0xd9, // BINARY_OP 2 __eq__
     0x34,0x01, // CALL_FUNCTION 1
     0xc6, // STORE_FAST 6
     0x42,0x5f, // JUMP 31
-    0x12,0x81,0x18, // LOAD_GLOBAL 'bytearray'
+    0x12,0x81,0x35, // LOAD_GLOBAL 'bytearray'
     0xb2, // LOAD_FAST 2
     0x7f, // LOAD_CONST_SMALL_INT -1
     0x55, // LOAD_SUBSCR
@@ -11862,7 +12137,7 @@ static const byte fun_data_ymodem_Modem__verify_recv_checksum[102] = {
     0x55, // LOAD_SUBSCR
     0xc4, // STORE_FAST 4
     0xb0, // LOAD_FAST 0
-    0x14,0x3e, // LOAD_METHOD '_calc_checksum'
+    0x14,0x57, // LOAD_METHOD '_calc_checksum'
     0xb2, // LOAD_FAST 2
     0x51, // LOAD_CONST_NONE
     0x7f, // LOAD_CONST_SMALL_INT -1
@@ -11888,7 +12163,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__verify_recv_checksu
     .fun_data = fun_data_ymodem_Modem__verify_recv_checksum,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 102,
+    .fun_data_len = 104,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -11902,10 +12177,10 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__verify_recv_checksu
         .n_pos_args = 3,
         .n_kwonly_args = 0,
         .n_def_pos_args = 0,
-        .qstr_block_name_idx = 48,
-        .line_info = fun_data_ymodem_Modem__verify_recv_checksum + 7,
-        .line_info_top = fun_data_ymodem_Modem__verify_recv_checksum + 18,
-        .opcodes = fun_data_ymodem_Modem__verify_recv_checksum + 18,
+        .qstr_block_name_idx = 69,
+        .line_info = fun_data_ymodem_Modem__verify_recv_checksum + 9,
+        .line_info_top = fun_data_ymodem_Modem__verify_recv_checksum + 20,
+        .opcodes = fun_data_ymodem_Modem__verify_recv_checksum + 20,
     },
     #endif
     #endif
@@ -11916,11 +12191,11 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__verify_recv_checksu
 
 // child of ymodem_Modem
 // frozen bytecode for file ymodem.py, scope ymodem_Modem__calc_checksum
-static const byte fun_data_ymodem_Modem__calc_checksum[22] = {
-    0x9a,0x01,0x0c, // prelude
-    0x3e,0x71,0x81,0x1a, // names: _calc_checksum, data, checksum
-    0x90,0xad, // code info
-    0x12,0x81,0x1b, // LOAD_GLOBAL 'sum'
+static const byte fun_data_ymodem_Modem__calc_checksum[23] = {
+    0x9a,0x01,0x0e, // prelude
+    0x57,0x81,0x0e,0x81,0x37, // names: _calc_checksum, data, checksum
+    0x90,0xa6, // code info
+    0x12,0x81,0x38, // LOAD_GLOBAL 'sum'
     0xb0, // LOAD_FAST 0
     0x34,0x01, // CALL_FUNCTION 1
     0xb1, // LOAD_FAST 1
@@ -11938,7 +12213,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__calc_checksum = {
     .fun_data = fun_data_ymodem_Modem__calc_checksum,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 22,
+    .fun_data_len = 23,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -11952,10 +12227,10 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__calc_checksum = {
         .n_pos_args = 2,
         .n_kwonly_args = 0,
         .n_def_pos_args = 1,
-        .qstr_block_name_idx = 62,
-        .line_info = fun_data_ymodem_Modem__calc_checksum + 7,
-        .line_info_top = fun_data_ymodem_Modem__calc_checksum + 9,
-        .opcodes = fun_data_ymodem_Modem__calc_checksum + 9,
+        .qstr_block_name_idx = 87,
+        .line_info = fun_data_ymodem_Modem__calc_checksum + 8,
+        .line_info_top = fun_data_ymodem_Modem__calc_checksum + 10,
+        .opcodes = fun_data_ymodem_Modem__calc_checksum + 10,
     },
     #endif
     #endif
@@ -11966,11 +12241,11 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__calc_checksum = {
 
 // child of ymodem_Modem
 // frozen bytecode for file ymodem.py, scope ymodem_Modem__calc_crc
-static const byte fun_data_ymodem_Modem__calc_crc[57] = {
-    0xdb,0x01,0x14, // prelude
-    0x3d,0x7c,0x71,0x81,0x1c, // names: _calc_crc, self, data, crc
-    0x90,0xb0,0x2a,0x2a,0x31, // code info
-    0x12,0x81,0x18, // LOAD_GLOBAL 'bytearray'
+static const byte fun_data_ymodem_Modem__calc_crc[59] = {
+    0xdb,0x01,0x18, // prelude
+    0x56,0x81,0x1a,0x81,0x0e,0x81,0x39, // names: _calc_crc, self, data, crc
+    0x90,0xa9,0x2a,0x2a,0x31, // code info
+    0x12,0x81,0x35, // LOAD_GLOBAL 'bytearray'
     0xb1, // LOAD_FAST 1
     0x34,0x01, // CALL_FUNCTION 1
     0x5f, // GET_ITER_STACK
@@ -11988,7 +12263,7 @@ static const byte fun_data_ymodem_Modem__calc_crc[57] = {
     0x88, // LOAD_CONST_SMALL_INT 8
     0xf0, // BINARY_OP 25 __lshift__
     0xb0, // LOAD_FAST 0
-    0x13,0x3f, // LOAD_ATTR 'crc_table'
+    0x13,0x58, // LOAD_ATTR 'crc_table'
     0xb4, // LOAD_FAST 4
     0x55, // LOAD_SUBSCR
     0xee, // BINARY_OP 23 __xor__
@@ -12010,7 +12285,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__calc_crc = {
     .fun_data = fun_data_ymodem_Modem__calc_crc,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 57,
+    .fun_data_len = 59,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -12024,10 +12299,10 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__calc_crc = {
         .n_pos_args = 3,
         .n_kwonly_args = 0,
         .n_def_pos_args = 1,
-        .qstr_block_name_idx = 61,
-        .line_info = fun_data_ymodem_Modem__calc_crc + 8,
-        .line_info_top = fun_data_ymodem_Modem__calc_crc + 13,
-        .opcodes = fun_data_ymodem_Modem__calc_crc + 13,
+        .qstr_block_name_idx = 86,
+        .line_info = fun_data_ymodem_Modem__calc_crc + 10,
+        .line_info_top = fun_data_ymodem_Modem__calc_crc + 15,
+        .opcodes = fun_data_ymodem_Modem__calc_crc + 15,
     },
     #endif
     #endif
@@ -12038,68 +12313,68 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__calc_crc = {
 
 // child of ymodem_Modem
 // frozen bytecode for file ymodem.py, scope ymodem_Modem_send
-static const byte fun_data_ymodem_Modem_send[407] = {
-    0xb9,0x95,0x01,0x6c, // prelude
-    0x40,0x7c,0x7a,0x48,0x47,0x79, // names: send, self, trans_file, retry, timeout, callback
-    0x90,0xb7,0x74,0x40,0x2e,0x25,0x2d,0x22,0x26,0x2d,0x27,0x4c,0x2d,0x23,0x42,0x27,0x33,0x42,0x47,0x2d,0x23,0x42,0x22,0x20,0x27,0x2d,0x27,0x23,0x2c,0x42,0x24,0x28,0x4e,0x22,0x4b,0x28,0x27,0x29,0x42,0x28,0x27,0x29,0x42,0x27,0x29,0x29,0x2e,0x28, // code info
-    0x12,0x81,0x05, // LOAD_GLOBAL 'dict'
-    0x10,0x41, // LOAD_CONST_STRING 'xmodem'
+static const byte fun_data_ymodem_Modem_send[413] = {
+    0xb9,0x95,0x01,0x70, // prelude
+    0x20,0x81,0x1a,0x81,0x17,0x60,0x5f,0x1d, // names: send, self, trans_file, retry, timeout, callback
+    0x90,0xb0,0x74,0x40,0x2f,0x25,0x2d,0x22,0x26,0x2e,0x27,0x4c,0x2d,0x23,0x42,0x27,0x33,0x42,0x47,0x2d,0x23,0x42,0x22,0x20,0x27,0x2d,0x27,0x23,0x2c,0x42,0x24,0x28,0x4e,0x22,0x4b,0x28,0x27,0x2a,0x42,0x28,0x27,0x2a,0x42,0x27,0x29,0x29,0x2e,0x28, // code info
+    0x12,0x81,0x24, // LOAD_GLOBAL 'dict'
+    0x10,0x59, // LOAD_CONST_STRING 'xmodem'
     0x22,0x81,0x00, // LOAD_CONST_SMALL_INT 128
-    0x10,0x42, // LOAD_CONST_STRING 'xmodem1k'
+    0x10,0x5a, // LOAD_CONST_STRING 'xmodem1k'
     0x22,0x88,0x00, // LOAD_CONST_SMALL_INT 1024
-    0x10,0x43, // LOAD_CONST_STRING 'ymodem'
+    0x10,0x5b, // LOAD_CONST_STRING 'ymodem'
     0x22,0x81,0x00, // LOAD_CONST_SMALL_INT 128
-    0x10,0x0d, // LOAD_CONST_STRING 'ymodem1k'
+    0x10,0x15, // LOAD_CONST_STRING 'ymodem1k'
     0x23,0x0e, // LOAD_CONST_OBJ 14
     0xb0, // LOAD_FAST 0
-    0x13,0x23, // LOAD_ATTR 'program_features'
-    0x12,0x6c, // LOAD_GLOBAL 'ALLOW_1K_BLOCK'
+    0x13,0x39, // LOAD_ATTR 'program_features'
+    0x12,0x81,0x08, // LOAD_GLOBAL 'ALLOW_1K_BLOCK'
     0xef, // BINARY_OP 24 __and__
     0x80, // LOAD_CONST_SMALL_INT 0
     0xdc, // BINARY_OP 5 __ne__
     0x55, // LOAD_SUBSCR
     0x34,0x88,0x00, // CALL_FUNCTION 1024
     0xb0, // LOAD_FAST 0
-    0x13,0x1e, // LOAD_ATTR 'mode'
+    0x13,0x34, // LOAD_ATTR 'mode'
     0x55, // LOAD_SUBSCR
     0xc5, // STORE_FAST 5
-    0x12,0x81,0x1b, // LOAD_GLOBAL 'sum'
+    0x12,0x81,0x38, // LOAD_GLOBAL 'sum'
     0x32,0x00, // MAKE_FUNCTION 0
     0xb1, // LOAD_FAST 1
     0x34,0x01, // CALL_FUNCTION 1
     0x34,0x01, // CALL_FUNCTION 1
     0xb0, // LOAD_FAST 0
-    0x18,0x29, // STORE_ATTR 'total_size'
+    0x18,0x3f, // STORE_ATTR 'total_size'
     0x80, // LOAD_CONST_SMALL_INT 0
     0xc6, // STORE_FAST 6
     0xb1, // LOAD_FAST 1
     0x5f, // GET_ITER_STACK
-    0x4b,0x81,0x02, // FOR_ITER 257
+    0x4b,0x84,0x02, // FOR_ITER 260
     0xc7, // STORE_FAST 7
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x0f, // LOAD_CONST_OBJ 15
-    0x12,0x74, // LOAD_GLOBAL 'str'
+    0x12,0x81,0x11, // LOAD_GLOBAL 'str'
     0xb7, // LOAD_FAST 7
     0x34,0x01, // CALL_FUNCTION 1
     0xf8, // BINARY_OP 33 __mod__
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x10, // LOAD_CONST_OBJ 16
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
-    0x12,0x81,0x12, // LOAD_GLOBAL 'open'
+    0x12,0x81,0x2f, // LOAD_GLOBAL 'open'
     0xb7, // LOAD_FAST 7
-    0x10,0x44, // LOAD_CONST_STRING 'filepath'
+    0x10,0x5c, // LOAD_CONST_STRING 'filepath'
     0x55, // LOAD_SUBSCR
-    0x10,0x45, // LOAD_CONST_STRING 'rb'
+    0x10,0x5d, // LOAD_CONST_STRING 'rb'
     0x34,0x02, // CALL_FUNCTION 2
     0xc8, // STORE_FAST 8
     0xb0, // LOAD_FAST 0
-    0x14,0x46, // LOAD_METHOD '_wait_c'
-    0x10,0x47, // LOAD_CONST_STRING 'timeout'
+    0x14,0x5e, // LOAD_METHOD '_wait_c'
+    0x10,0x5f, // LOAD_CONST_STRING 'timeout'
     0xb3, // LOAD_FAST 3
-    0x10,0x48, // LOAD_CONST_STRING 'retry'
+    0x10,0x60, // LOAD_CONST_STRING 'retry'
     0xb2, // LOAD_FAST 2
     0x36,0x84,0x00, // CALL_METHOD 512
     0xc9, // STORE_FAST 9
@@ -12107,14 +12382,14 @@ static const byte fun_data_ymodem_Modem_send[407] = {
     0x43,0x42, // POP_JUMP_IF_TRUE 2
     0x50, // LOAD_CONST_FALSE
     0x63, // RETURN_VALUE
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x11, // LOAD_CONST_OBJ 17
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0xb0, // LOAD_FAST 0
-    0x14,0x49, // LOAD_METHOD 'serial_trans'
+    0x14,0x61, // LOAD_METHOD 'serial_trans'
     0xb0, // LOAD_FAST 0
-    0x14,0x4a, // LOAD_METHOD '_make_file_header_info'
+    0x14,0x62, // LOAD_METHOD '_make_file_header_info'
     0x22,0x81,0x00, // LOAD_CONST_SMALL_INT 128
     0xb9, // LOAD_FAST 9
     0xb7, // LOAD_FAST 7
@@ -12125,15 +12400,15 @@ static const byte fun_data_ymodem_Modem_send[407] = {
     0x43,0x42, // POP_JUMP_IF_TRUE 2
     0x50, // LOAD_CONST_FALSE
     0x63, // RETURN_VALUE
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x12, // LOAD_CONST_OBJ 18
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0xb0, // LOAD_FAST 0
-    0x14,0x46, // LOAD_METHOD '_wait_c'
-    0x10,0x47, // LOAD_CONST_STRING 'timeout'
+    0x14,0x5e, // LOAD_METHOD '_wait_c'
+    0x10,0x5f, // LOAD_CONST_STRING 'timeout'
     0xb3, // LOAD_FAST 3
-    0x10,0x48, // LOAD_CONST_STRING 'retry'
+    0x10,0x60, // LOAD_CONST_STRING 'retry'
     0xb2, // LOAD_FAST 2
     0x36,0x84,0x00, // CALL_METHOD 512
     0xc9, // STORE_FAST 9
@@ -12143,12 +12418,12 @@ static const byte fun_data_ymodem_Modem_send[407] = {
     0x63, // RETURN_VALUE
     0x81, // LOAD_CONST_SMALL_INT 1
     0xca, // STORE_FAST 10
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x13, // LOAD_CONST_OBJ 19
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0xb0, // LOAD_FAST 0
-    0x14,0x4b, // LOAD_METHOD '_make_file_body_info'
+    0x14,0x63, // LOAD_METHOD '_make_file_body_info'
     0xb8, // LOAD_FAST 8
     0xb5, // LOAD_FAST 5
     0xb9, // LOAD_FAST 9
@@ -12157,14 +12432,14 @@ static const byte fun_data_ymodem_Modem_send[407] = {
     0x30,0x02, // UNPACK_SEQUENCE 2
     0xcb, // STORE_FAST 11
     0xcc, // STORE_FAST 12
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x14, // LOAD_CONST_OBJ 20
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0xbb, // LOAD_FAST 11
     0x44,0x68, // POP_JUMP_IF_FALSE 40
     0xb0, // LOAD_FAST 0
-    0x14,0x49, // LOAD_METHOD 'serial_trans'
+    0x14,0x61, // LOAD_METHOD 'serial_trans'
     0xbb, // LOAD_FAST 11
     0xb3, // LOAD_FAST 3
     0xb2, // LOAD_FAST 2
@@ -12178,16 +12453,16 @@ static const byte fun_data_ymodem_Modem_send[407] = {
     0xbc, // LOAD_FAST 12
     0xe5, // BINARY_OP 14 __iadd__
     0xc6, // STORE_FAST 6
-    0x12,0x81,0x0a, // LOAD_GLOBAL 'callable'
+    0x12,0x81,0x29, // LOAD_GLOBAL 'callable'
     0xb4, // LOAD_FAST 4
     0x34,0x01, // CALL_FUNCTION 1
     0x44,0x4c, // POP_JUMP_IF_FALSE 12
     0xb4, // LOAD_FAST 4
     0xb0, // LOAD_FAST 0
-    0x13,0x29, // LOAD_ATTR 'total_size'
+    0x13,0x3f, // LOAD_ATTR 'total_size'
     0xb6, // LOAD_FAST 6
     0xb7, // LOAD_FAST 7
-    0x10,0x4c, // LOAD_CONST_STRING 'name'
+    0x10,0x64, // LOAD_CONST_STRING 'name'
     0x55, // LOAD_SUBSCR
     0x34,0x03, // CALL_FUNCTION 3
     0x59, // POP_TOP
@@ -12201,62 +12476,62 @@ static const byte fun_data_ymodem_Modem_send[407] = {
     0xca, // STORE_FAST 10
     0x42,0xad,0x7f, // JUMP -83
     0xb0, // LOAD_FAST 0
-    0x14,0x1d, // LOAD_METHOD 'writer'
-    0x12,0x63, // LOAD_GLOBAL 'EOT'
+    0x14,0x33, // LOAD_METHOD 'writer'
+    0x12,0x7f, // LOAD_GLOBAL 'EOT'
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x15, // LOAD_CONST_OBJ 21
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0xb0, // LOAD_FAST 0
-    0x14,0x4d, // LOAD_METHOD '_wait_nak_ack'
-    0x12,0x65, // LOAD_GLOBAL 'NAK'
+    0x14,0x65, // LOAD_METHOD '_wait_nak_ack'
+    0x12,0x81,0x01, // LOAD_GLOBAL 'NAK'
     0x36,0x01, // CALL_METHOD 1
     0x43,0x42, // POP_JUMP_IF_TRUE 2
     0x50, // LOAD_CONST_FALSE
     0x63, // RETURN_VALUE
     0xb0, // LOAD_FAST 0
-    0x14,0x1d, // LOAD_METHOD 'writer'
-    0x12,0x63, // LOAD_GLOBAL 'EOT'
+    0x14,0x33, // LOAD_METHOD 'writer'
+    0x12,0x7f, // LOAD_GLOBAL 'EOT'
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x16, // LOAD_CONST_OBJ 22
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0xb0, // LOAD_FAST 0
-    0x14,0x4d, // LOAD_METHOD '_wait_nak_ack'
-    0x12,0x64, // LOAD_GLOBAL 'ACK'
+    0x14,0x65, // LOAD_METHOD '_wait_nak_ack'
+    0x12,0x81,0x00, // LOAD_GLOBAL 'ACK'
     0x36,0x01, // CALL_METHOD 1
     0x43,0x42, // POP_JUMP_IF_TRUE 2
     0x50, // LOAD_CONST_FALSE
     0x63, // RETURN_VALUE
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x17, // LOAD_CONST_OBJ 23
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0xb8, // LOAD_FAST 8
-    0x14,0x1a, // LOAD_METHOD 'close'
+    0x14,0x1e, // LOAD_METHOD 'close'
     0x36,0x00, // CALL_METHOD 0
     0x59, // POP_TOP
-    0x42,0xfc,0x7d, // JUMP -260
+    0x42,0xf9,0x7d, // JUMP -263
     0xb0, // LOAD_FAST 0
-    0x14,0x4e, // LOAD_METHOD '_send_end_packet'
+    0x14,0x66, // LOAD_METHOD '_send_end_packet'
     0x22,0x81,0x00, // LOAD_CONST_SMALL_INT 128
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x18, // LOAD_CONST_OBJ 24
     0xb0, // LOAD_FAST 0
-    0x14,0x1c, // LOAD_METHOD 'reader'
+    0x14,0x32, // LOAD_METHOD 'reader'
     0x81, // LOAD_CONST_SMALL_INT 1
     0x36,0x01, // CALL_METHOD 1
     0xf8, // BINARY_OP 33 __mod__
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
-    0x12,0x60, // LOAD_GLOBAL 'time'
-    0x14,0x34, // LOAD_METHOD 'sleep'
+    0x12,0x7c, // LOAD_GLOBAL 'time'
+    0x14,0x49, // LOAD_METHOD 'sleep'
     0x81, // LOAD_CONST_SMALL_INT 1
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
@@ -12267,15 +12542,15 @@ static const byte fun_data_ymodem_Modem_send[407] = {
 // frozen bytecode for file ymodem.py, scope ymodem_Modem_send__lt_listcomp_gt_
 static const byte fun_data_ymodem_Modem_send__lt_listcomp_gt_[23] = {
     0x41,0x0a, // prelude
-    0x5f,0x81,0x22, // names: <listcomp>, *
-    0x90,0xbe, // code info
+    0x7b,0x81,0x3f, // names: <listcomp>, *
+    0x90,0xb7, // code info
     0x2b,0x00, // BUILD_LIST 0
     0xb0, // LOAD_FAST 0
     0x5f, // GET_ITER_STACK
     0x4b,0x09, // FOR_ITER 9
     0xc1, // STORE_FAST 1
     0xb1, // LOAD_FAST 1
-    0x10,0x51, // LOAD_CONST_STRING 'length'
+    0x10,0x69, // LOAD_CONST_STRING 'length'
     0x55, // LOAD_SUBSCR
     0x2f,0x14, // STORE_COMP 20
     0x42,0x35, // JUMP -11
@@ -12304,7 +12579,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem_send__lt_listcomp_gt
         .n_pos_args = 1,
         .n_kwonly_args = 0,
         .n_def_pos_args = 0,
-        .qstr_block_name_idx = 95,
+        .qstr_block_name_idx = 123,
         .line_info = fun_data_ymodem_Modem_send__lt_listcomp_gt_ + 5,
         .line_info_top = fun_data_ymodem_Modem_send__lt_listcomp_gt_ + 7,
         .opcodes = fun_data_ymodem_Modem_send__lt_listcomp_gt_ + 7,
@@ -12328,7 +12603,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem_send = {
     .fun_data = fun_data_ymodem_Modem_send,
     .children = (void *)&children_ymodem_Modem_send,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 407,
+    .fun_data_len = 413,
     .n_children = 1,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -12342,10 +12617,10 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem_send = {
         .n_pos_args = 5,
         .n_kwonly_args = 0,
         .n_def_pos_args = 3,
-        .qstr_block_name_idx = 64,
-        .line_info = fun_data_ymodem_Modem_send + 10,
-        .line_info_top = fun_data_ymodem_Modem_send + 58,
-        .opcodes = fun_data_ymodem_Modem_send + 58,
+        .qstr_block_name_idx = 32,
+        .line_info = fun_data_ymodem_Modem_send + 12,
+        .line_info_top = fun_data_ymodem_Modem_send + 60,
+        .opcodes = fun_data_ymodem_Modem_send + 60,
     },
     #endif
     #endif
@@ -12353,53 +12628,53 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem_send = {
 
 // child of ymodem_Modem
 // frozen bytecode for file ymodem.py, scope ymodem_Modem__wait_c
-static const byte fun_data_ymodem_Modem__wait_c[187] = {
-    0xd0,0x85,0x01,0x46, // prelude
-    0x46,0x7c,0x81,0x0e,0x47,0x48, // names: _wait_c, self, cancel, timeout, retry
-    0x90,0xf5,0x26,0x40,0x28,0x24,0x26,0x22,0x27,0x22,0x26,0x22,0x27,0x22,0x26,0x23,0x27,0x42,0x22,0x29,0x26,0x27,0x42,0x4b,0x27,0x24,0x25,0x2c,0x26, // code info
+static const byte fun_data_ymodem_Modem__wait_c[191] = {
+    0xd0,0x85,0x01,0x48, // prelude
+    0x5e,0x81,0x1a,0x81,0x2b,0x5f,0x60, // names: _wait_c, self, cancel, timeout, retry
+    0x90,0xee,0x26,0x40,0x28,0x24,0x27,0x22,0x27,0x22,0x27,0x22,0x27,0x22,0x27,0x23,0x27,0x42,0x22,0x29,0x26,0x27,0x42,0x4b,0x27,0x24,0x25,0x2c,0x26, // code info
     0x23,0x19, // LOAD_CONST_OBJ 25
     0x30,0x02, // UNPACK_SEQUENCE 2
     0xc4, // STORE_FAST 4
     0xc5, // STORE_FAST 5
     0xb0, // LOAD_FAST 0
-    0x14,0x1c, // LOAD_METHOD 'reader'
+    0x14,0x32, // LOAD_METHOD 'reader'
     0x81, // LOAD_CONST_SMALL_INT 1
     0xb2, // LOAD_FAST 2
     0x36,0x02, // CALL_METHOD 2
     0xc6, // STORE_FAST 6
     0xb6, // LOAD_FAST 6
-    0x44,0xd9,0x80, // POP_JUMP_IF_FALSE 89
+    0x44,0xdc,0x80, // POP_JUMP_IF_FALSE 92
     0xb6, // LOAD_FAST 6
-    0x12,0x65, // LOAD_GLOBAL 'NAK'
+    0x12,0x81,0x01, // LOAD_GLOBAL 'NAK'
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x4b, // POP_JUMP_IF_FALSE 11
     0x80, // LOAD_CONST_SMALL_INT 0
     0xc5, // STORE_FAST 5
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x1a, // LOAD_CONST_OBJ 26
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0xb5, // LOAD_FAST 5
     0x63, // RETURN_VALUE
     0xb6, // LOAD_FAST 6
-    0x12,0x67, // LOAD_GLOBAL 'CRC'
+    0x12,0x81,0x03, // LOAD_GLOBAL 'CRC'
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x4b, // POP_JUMP_IF_FALSE 11
     0x81, // LOAD_CONST_SMALL_INT 1
     0xc5, // STORE_FAST 5
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x1b, // LOAD_CONST_OBJ 27
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0xb5, // LOAD_FAST 5
     0x63, // RETURN_VALUE
     0xb6, // LOAD_FAST 6
-    0x12,0x66, // LOAD_GLOBAL 'CAN'
+    0x12,0x81,0x02, // LOAD_GLOBAL 'CAN'
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x57, // POP_JUMP_IF_FALSE 23
     0xb1, // LOAD_FAST 1
     0x44,0x49, // POP_JUMP_IF_FALSE 9
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x1c, // LOAD_CONST_OBJ 28
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
@@ -12407,29 +12682,29 @@ static const byte fun_data_ymodem_Modem__wait_c[187] = {
     0x63, // RETURN_VALUE
     0x81, // LOAD_CONST_SMALL_INT 1
     0xc1, // STORE_FAST 1
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x1d, // LOAD_CONST_OBJ 29
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0x42,0x58, // JUMP 24
     0xb6, // LOAD_FAST 6
-    0x12,0x63, // LOAD_GLOBAL 'EOT'
+    0x12,0x7f, // LOAD_GLOBAL 'EOT'
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x49, // POP_JUMP_IF_FALSE 9
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x1e, // LOAD_CONST_OBJ 30
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0x50, // LOAD_CONST_FALSE
     0x63, // RETURN_VALUE
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x1f, // LOAD_CONST_OBJ 31
     0xb6, // LOAD_FAST 6
     0xf8, // BINARY_OP 33 __mod__
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0x42,0x47, // JUMP 7
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x20, // LOAD_CONST_OBJ 32
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
@@ -12441,20 +12716,20 @@ static const byte fun_data_ymodem_Modem__wait_c[187] = {
     0xb3, // LOAD_FAST 3
     0xd8, // BINARY_OP 1 __gt__
     0x44,0x54, // POP_JUMP_IF_FALSE 20
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x21, // LOAD_CONST_OBJ 33
-    0x14,0x4f, // LOAD_METHOD 'format'
+    0x14,0x67, // LOAD_METHOD 'format'
     0xb3, // LOAD_FAST 3
     0x36,0x01, // CALL_METHOD 1
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0xb0, // LOAD_FAST 0
-    0x14,0x2a, // LOAD_METHOD 'abort'
+    0x14,0x40, // LOAD_METHOD 'abort'
     0x36,0x00, // CALL_METHOD 0
     0x59, // POP_TOP
     0x50, // LOAD_CONST_FALSE
     0x63, // RETURN_VALUE
-    0x42,0xf4,0x7e, // JUMP -140
+    0x42,0xf1,0x7e, // JUMP -143
     0x51, // LOAD_CONST_NONE
     0x63, // RETURN_VALUE
 };
@@ -12467,7 +12742,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__wait_c = {
     .fun_data = fun_data_ymodem_Modem__wait_c,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 187,
+    .fun_data_len = 191,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -12481,10 +12756,10 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__wait_c = {
         .n_pos_args = 4,
         .n_kwonly_args = 0,
         .n_def_pos_args = 3,
-        .qstr_block_name_idx = 70,
-        .line_info = fun_data_ymodem_Modem__wait_c + 10,
-        .line_info_top = fun_data_ymodem_Modem__wait_c + 39,
-        .opcodes = fun_data_ymodem_Modem__wait_c + 39,
+        .qstr_block_name_idx = 94,
+        .line_info = fun_data_ymodem_Modem__wait_c + 11,
+        .line_info_top = fun_data_ymodem_Modem__wait_c + 40,
+        .opcodes = fun_data_ymodem_Modem__wait_c + 40,
     },
     #endif
     #endif
@@ -12495,160 +12770,160 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__wait_c = {
 
 // child of ymodem_Modem
 // frozen bytecode for file ymodem.py, scope ymodem_Modem__make_file_header_info
-static const byte fun_data_ymodem_Modem__make_file_header_info[295] = {
-    0xe0,0x05,0x3e, // prelude
-    0x4a,0x7c,0x81,0x11,0x81,0x08,0x81,0x1d, // names: _make_file_header_info, self, packet_size, crc_mode, info
-    0xa0,0x17,0x47,0x28,0x2c,0x2b,0x49,0x28,0x28,0x31,0x28,0x2f,0x29,0x54,0x52,0x28,0x29,0x57,0x4b,0x28,0x2b,0x3b,0x28, // code info
-    0x12,0x09, // LOAD_GLOBAL '_print'
-    0x10,0x4a, // LOAD_CONST_STRING '_make_file_header_info'
+static const byte fun_data_ymodem_Modem__make_file_header_info[302] = {
+    0xe0,0x05,0x40, // prelude
+    0x62,0x81,0x1a,0x81,0x2e,0x81,0x27,0x81,0x3a, // names: _make_file_header_info, self, packet_size, crc_mode, info
+    0xa0,0x10,0x47,0x28,0x2c,0x2b,0x49,0x29,0x29,0x32,0x29,0x2f,0x29,0x54,0x52,0x29,0x29,0x57,0x4b,0x29,0x2b,0x3b,0x28, // code info
+    0x12,0x10, // LOAD_GLOBAL '_print'
+    0x10,0x62, // LOAD_CONST_STRING '_make_file_header_info'
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0xb0, // LOAD_FAST 0
-    0x14,0x50, // LOAD_METHOD '_make_send_header'
+    0x14,0x68, // LOAD_METHOD '_make_send_header'
     0xb1, // LOAD_FAST 1
     0x80, // LOAD_CONST_SMALL_INT 0
     0x36,0x02, // CALL_METHOD 2
     0xc4, // STORE_FAST 4
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x22, // LOAD_CONST_OBJ 34
     0xb3, // LOAD_FAST 3
-    0x10,0x4c, // LOAD_CONST_STRING 'name'
+    0x10,0x64, // LOAD_CONST_STRING 'name'
     0x55, // LOAD_SUBSCR
     0xf8, // BINARY_OP 33 __mod__
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0xb3, // LOAD_FAST 3
-    0x10,0x4c, // LOAD_CONST_STRING 'name'
+    0x10,0x64, // LOAD_CONST_STRING 'name'
     0x55, // LOAD_SUBSCR
-    0x14,0x0a, // LOAD_METHOD 'encode'
-    0x10,0x38, // LOAD_CONST_STRING 'utf-8'
+    0x14,0x11, // LOAD_METHOD 'encode'
+    0x10,0x4d, // LOAD_CONST_STRING 'utf-8'
     0x36,0x01, // CALL_METHOD 1
     0xc5, // STORE_FAST 5
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x23, // LOAD_CONST_OBJ 35
     0xb5, // LOAD_FAST 5
     0xf8, // BINARY_OP 33 __mod__
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0xb0, // LOAD_FAST 0
-    0x13,0x23, // LOAD_ATTR 'program_features'
-    0x12,0x68, // LOAD_GLOBAL 'USE_LENGTH_FIELD'
+    0x13,0x39, // LOAD_ATTR 'program_features'
+    0x12,0x81,0x04, // LOAD_GLOBAL 'USE_LENGTH_FIELD'
     0xef, // BINARY_OP 24 __and__
-    0x44,0x59, // POP_JUMP_IF_FALSE 25
+    0x44,0x5b, // POP_JUMP_IF_FALSE 27
     0xb5, // LOAD_FAST 5
-    0x12,0x73, // LOAD_GLOBAL 'bytes'
+    0x12,0x81,0x10, // LOAD_GLOBAL 'bytes'
     0x81, // LOAD_CONST_SMALL_INT 1
     0x34,0x01, // CALL_FUNCTION 1
     0xe5, // BINARY_OP 14 __iadd__
     0xc5, // STORE_FAST 5
     0xb5, // LOAD_FAST 5
-    0x12,0x74, // LOAD_GLOBAL 'str'
+    0x12,0x81,0x11, // LOAD_GLOBAL 'str'
     0xb3, // LOAD_FAST 3
-    0x10,0x51, // LOAD_CONST_STRING 'length'
+    0x10,0x69, // LOAD_CONST_STRING 'length'
     0x55, // LOAD_SUBSCR
     0x34,0x01, // CALL_FUNCTION 1
-    0x14,0x0a, // LOAD_METHOD 'encode'
-    0x10,0x38, // LOAD_CONST_STRING 'utf-8'
+    0x14,0x11, // LOAD_METHOD 'encode'
+    0x10,0x4d, // LOAD_CONST_STRING 'utf-8'
     0x36,0x01, // CALL_METHOD 1
     0xe5, // BINARY_OP 14 __iadd__
     0xc5, // STORE_FAST 5
     0xb0, // LOAD_FAST 0
-    0x13,0x23, // LOAD_ATTR 'program_features'
-    0x12,0x69, // LOAD_GLOBAL 'USE_DATE_FIELD'
+    0x13,0x39, // LOAD_ATTR 'program_features'
+    0x12,0x81,0x05, // LOAD_GLOBAL 'USE_DATE_FIELD'
     0xef, // BINARY_OP 24 __and__
     0x44,0x7e, // POP_JUMP_IF_FALSE 62
-    0x12,0x81,0x1e, // LOAD_GLOBAL 'oct'
-    0x12,0x81,0x14, // LOAD_GLOBAL 'int'
+    0x12,0x81,0x3b, // LOAD_GLOBAL 'oct'
+    0x12,0x81,0x31, // LOAD_GLOBAL 'int'
     0xb3, // LOAD_FAST 3
-    0x10,0x52, // LOAD_CONST_STRING 'mtime'
+    0x10,0x6a, // LOAD_CONST_STRING 'mtime'
     0x55, // LOAD_SUBSCR
     0x34,0x01, // CALL_FUNCTION 1
     0x34,0x01, // CALL_FUNCTION 1
     0xc6, // STORE_FAST 6
     0xb6, // LOAD_FAST 6
-    0x14,0x53, // LOAD_METHOD 'startswith'
-    0x10,0x54, // LOAD_CONST_STRING '0o'
+    0x14,0x6b, // LOAD_METHOD 'startswith'
+    0x10,0x6c, // LOAD_CONST_STRING '0o'
     0x36,0x01, // CALL_METHOD 1
     0x44,0x54, // POP_JUMP_IF_FALSE 20
     0xb5, // LOAD_FAST 5
-    0x10,0x3c, // LOAD_CONST_STRING ' '
+    0x10,0x51, // LOAD_CONST_STRING ' '
     0xb6, // LOAD_FAST 6
     0x82, // LOAD_CONST_SMALL_INT 2
     0x51, // LOAD_CONST_NONE
     0x2e,0x02, // BUILD_SLICE 2
     0x55, // LOAD_SUBSCR
     0xf2, // BINARY_OP 27 __add__
-    0x14,0x0a, // LOAD_METHOD 'encode'
-    0x10,0x38, // LOAD_CONST_STRING 'utf-8'
+    0x14,0x11, // LOAD_METHOD 'encode'
+    0x10,0x4d, // LOAD_CONST_STRING 'utf-8'
     0x36,0x01, // CALL_METHOD 1
     0xe5, // BINARY_OP 14 __iadd__
     0xc5, // STORE_FAST 5
     0x42,0x52, // JUMP 18
     0xb5, // LOAD_FAST 5
-    0x10,0x3c, // LOAD_CONST_STRING ' '
+    0x10,0x51, // LOAD_CONST_STRING ' '
     0xb6, // LOAD_FAST 6
     0x81, // LOAD_CONST_SMALL_INT 1
     0x51, // LOAD_CONST_NONE
     0x2e,0x02, // BUILD_SLICE 2
     0x55, // LOAD_SUBSCR
     0xf2, // BINARY_OP 27 __add__
-    0x14,0x0a, // LOAD_METHOD 'encode'
-    0x10,0x38, // LOAD_CONST_STRING 'utf-8'
+    0x14,0x11, // LOAD_METHOD 'encode'
+    0x10,0x4d, // LOAD_CONST_STRING 'utf-8'
     0x36,0x01, // CALL_METHOD 1
     0xe5, // BINARY_OP 14 __iadd__
     0xc5, // STORE_FAST 5
     0xb0, // LOAD_FAST 0
-    0x13,0x23, // LOAD_ATTR 'program_features'
-    0x12,0x6a, // LOAD_GLOBAL 'USE_MODE_FIELD'
+    0x13,0x39, // LOAD_ATTR 'program_features'
+    0x12,0x81,0x06, // LOAD_GLOBAL 'USE_MODE_FIELD'
     0xef, // BINARY_OP 24 __and__
     0x44,0x6b, // POP_JUMP_IF_FALSE 43
     0xb3, // LOAD_FAST 3
-    0x10,0x55, // LOAD_CONST_STRING 'source'
+    0x10,0x6d, // LOAD_CONST_STRING 'source'
     0x55, // LOAD_SUBSCR
-    0x10,0x56, // LOAD_CONST_STRING 'Unix'
+    0x10,0x6e, // LOAD_CONST_STRING 'Unix'
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x57, // POP_JUMP_IF_FALSE 23
     0xb5, // LOAD_FAST 5
-    0x10,0x3c, // LOAD_CONST_STRING ' '
-    0x12,0x81,0x1e, // LOAD_GLOBAL 'oct'
+    0x10,0x51, // LOAD_CONST_STRING ' '
+    0x12,0x81,0x3b, // LOAD_GLOBAL 'oct'
     0x22,0x82,0x80,0x00, // LOAD_CONST_SMALL_INT 32768
     0x34,0x01, // CALL_FUNCTION 1
     0xf2, // BINARY_OP 27 __add__
-    0x14,0x0a, // LOAD_METHOD 'encode'
-    0x10,0x38, // LOAD_CONST_STRING 'utf-8'
+    0x14,0x11, // LOAD_METHOD 'encode'
+    0x10,0x4d, // LOAD_CONST_STRING 'utf-8'
     0x36,0x01, // CALL_METHOD 1
     0xe5, // BINARY_OP 14 __iadd__
     0xc5, // STORE_FAST 5
     0x42,0x4b, // JUMP 11
     0xb5, // LOAD_FAST 5
-    0x10,0x57, // LOAD_CONST_STRING ' 0'
-    0x14,0x0a, // LOAD_METHOD 'encode'
-    0x10,0x38, // LOAD_CONST_STRING 'utf-8'
+    0x10,0x6f, // LOAD_CONST_STRING ' 0'
+    0x14,0x11, // LOAD_METHOD 'encode'
+    0x10,0x4d, // LOAD_CONST_STRING 'utf-8'
     0x36,0x01, // CALL_METHOD 1
     0xe5, // BINARY_OP 14 __iadd__
     0xc5, // STORE_FAST 5
     0xb0, // LOAD_FAST 0
-    0x13,0x23, // LOAD_ATTR 'program_features'
-    0x12,0x6a, // LOAD_GLOBAL 'USE_MODE_FIELD'
+    0x13,0x39, // LOAD_ATTR 'program_features'
+    0x12,0x81,0x06, // LOAD_GLOBAL 'USE_MODE_FIELD'
     0xef, // BINARY_OP 24 __and__
     0x44,0x4b, // POP_JUMP_IF_FALSE 11
     0xb5, // LOAD_FAST 5
-    0x10,0x57, // LOAD_CONST_STRING ' 0'
-    0x14,0x0a, // LOAD_METHOD 'encode'
-    0x10,0x38, // LOAD_CONST_STRING 'utf-8'
+    0x10,0x6f, // LOAD_CONST_STRING ' 0'
+    0x14,0x11, // LOAD_METHOD 'encode'
+    0x10,0x4d, // LOAD_CONST_STRING 'utf-8'
     0x36,0x01, // CALL_METHOD 1
     0xe5, // BINARY_OP 14 __iadd__
     0xc5, // STORE_FAST 5
     0xb5, // LOAD_FAST 5
     0x23,0x0d, // LOAD_CONST_OBJ 13
     0xb1, // LOAD_FAST 1
-    0x12,0x81,0x0b, // LOAD_GLOBAL 'len'
+    0x12,0x81,0x2a, // LOAD_GLOBAL 'len'
     0xb5, // LOAD_FAST 5
     0x34,0x01, // CALL_FUNCTION 1
     0xd8, // BINARY_OP 1 __gt__
     0x44,0x4a, // POP_JUMP_IF_FALSE 10
     0xb1, // LOAD_FAST 1
-    0x12,0x81,0x0b, // LOAD_GLOBAL 'len'
+    0x12,0x81,0x2a, // LOAD_GLOBAL 'len'
     0xb5, // LOAD_FAST 5
     0x34,0x01, // CALL_FUNCTION 1
     0xf3, // BINARY_OP 28 __sub__
@@ -12658,7 +12933,7 @@ static const byte fun_data_ymodem_Modem__make_file_header_info[295] = {
     0xe5, // BINARY_OP 14 __iadd__
     0xc5, // STORE_FAST 5
     0xb0, // LOAD_FAST 0
-    0x14,0x58, // LOAD_METHOD '_make_send_checksum'
+    0x14,0x70, // LOAD_METHOD '_make_send_checksum'
     0xb2, // LOAD_FAST 2
     0xb5, // LOAD_FAST 5
     0x36,0x02, // CALL_METHOD 2
@@ -12679,7 +12954,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__make_file_header_in
     .fun_data = fun_data_ymodem_Modem__make_file_header_info,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 295,
+    .fun_data_len = 302,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -12693,10 +12968,10 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__make_file_header_in
         .n_pos_args = 4,
         .n_kwonly_args = 0,
         .n_def_pos_args = 1,
-        .qstr_block_name_idx = 74,
-        .line_info = fun_data_ymodem_Modem__make_file_header_info + 11,
-        .line_info_top = fun_data_ymodem_Modem__make_file_header_info + 34,
-        .opcodes = fun_data_ymodem_Modem__make_file_header_info + 34,
+        .qstr_block_name_idx = 98,
+        .line_info = fun_data_ymodem_Modem__make_file_header_info + 12,
+        .line_info_top = fun_data_ymodem_Modem__make_file_header_info + 35,
+        .opcodes = fun_data_ymodem_Modem__make_file_header_info + 35,
     },
     #endif
     #endif
@@ -12709,17 +12984,17 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__make_file_header_in
 // frozen bytecode for file ymodem.py, scope ymodem_Modem__make_send_header
 static const byte fun_data_ymodem_Modem__make_send_header[104] = {
     0x3a,0x1e, // prelude
-    0x50,0x81,0x11,0x81,0x16, // names: _make_send_header, packet_size, sequence
-    0xa0,0x36,0x27,0x2c,0x23,0x27,0x2f,0x27,0x2f,0x2e, // code info
-    0x12,0x09, // LOAD_GLOBAL '_print'
-    0x10,0x50, // LOAD_CONST_STRING '_make_send_header'
+    0x68,0x81,0x2e,0x81,0x33, // names: _make_send_header, packet_size, sequence
+    0xa0,0x2f,0x27,0x2c,0x23,0x27,0x2f,0x27,0x2f,0x2e, // code info
+    0x12,0x10, // LOAD_GLOBAL '_print'
+    0x10,0x68, // LOAD_CONST_STRING '_make_send_header'
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0xb0, // LOAD_FAST 0
     0x23,0x0e, // LOAD_CONST_OBJ 14
     0xdd, // BINARY_OP 6 <in>
     0x43,0x46, // POP_JUMP_IF_TRUE 6
-    0x12,0x1b, // LOAD_GLOBAL 'AssertionError'
+    0x12,0x31, // LOAD_GLOBAL 'AssertionError'
     0xb0, // LOAD_FAST 0
     0x34,0x01, // CALL_FUNCTION 1
     0x65, // RAISE_OBJ
@@ -12730,9 +13005,9 @@ static const byte fun_data_ymodem_Modem__make_send_header[104] = {
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x4f, // POP_JUMP_IF_FALSE 15
     0xb2, // LOAD_FAST 2
-    0x14,0x59, // LOAD_METHOD 'append'
-    0x12,0x81,0x17, // LOAD_GLOBAL 'ord'
-    0x12,0x61, // LOAD_GLOBAL 'SOH'
+    0x14,0x71, // LOAD_METHOD 'append'
+    0x12,0x81,0x34, // LOAD_GLOBAL 'ord'
+    0x12,0x7d, // LOAD_GLOBAL 'SOH'
     0x34,0x01, // CALL_FUNCTION 1
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
@@ -12742,15 +13017,15 @@ static const byte fun_data_ymodem_Modem__make_send_header[104] = {
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x4f, // POP_JUMP_IF_FALSE 15
     0xb2, // LOAD_FAST 2
-    0x14,0x59, // LOAD_METHOD 'append'
-    0x12,0x81,0x17, // LOAD_GLOBAL 'ord'
-    0x12,0x62, // LOAD_GLOBAL 'STX'
+    0x14,0x71, // LOAD_METHOD 'append'
+    0x12,0x81,0x34, // LOAD_GLOBAL 'ord'
+    0x12,0x7e, // LOAD_GLOBAL 'STX'
     0x34,0x01, // CALL_FUNCTION 1
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
     0x42,0x40, // JUMP 0
     0xb2, // LOAD_FAST 2
-    0x14,0x5a, // LOAD_METHOD 'extend'
+    0x14,0x72, // LOAD_METHOD 'extend'
     0xb1, // LOAD_FAST 1
     0x22,0x81,0x7f, // LOAD_CONST_SMALL_INT 255
     0xb1, // LOAD_FAST 1
@@ -12758,7 +13033,7 @@ static const byte fun_data_ymodem_Modem__make_send_header[104] = {
     0x2b,0x02, // BUILD_LIST 2
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
-    0x12,0x81,0x18, // LOAD_GLOBAL 'bytearray'
+    0x12,0x81,0x35, // LOAD_GLOBAL 'bytearray'
     0xb2, // LOAD_FAST 2
     0x34,0x01, // CALL_FUNCTION 1
     0x63, // RETURN_VALUE
@@ -12786,7 +13061,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__make_send_header = 
         .n_pos_args = 2,
         .n_kwonly_args = 0,
         .n_def_pos_args = 0,
-        .qstr_block_name_idx = 80,
+        .qstr_block_name_idx = 104,
         .line_info = fun_data_ymodem_Modem__make_send_header + 7,
         .line_info_top = fun_data_ymodem_Modem__make_send_header + 17,
         .opcodes = fun_data_ymodem_Modem__make_send_header + 17,
@@ -12800,12 +13075,12 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__make_send_header = 
 
 // child of ymodem_Modem
 // frozen bytecode for file ymodem.py, scope ymodem_Modem__make_send_checksum
-static const byte fun_data_ymodem_Modem__make_send_checksum[75] = {
-    0x4b,0x1c, // prelude
-    0x58,0x7c,0x81,0x08,0x71, // names: _make_send_checksum, self, crc_mode, data
-    0xa0,0x41,0x27,0x23,0x23,0x27,0x52,0x27,0x27, // code info
-    0x12,0x09, // LOAD_GLOBAL '_print'
-    0x10,0x58, // LOAD_CONST_STRING '_make_send_checksum'
+static const byte fun_data_ymodem_Modem__make_send_checksum[77] = {
+    0x4b,0x20, // prelude
+    0x70,0x81,0x1a,0x81,0x27,0x81,0x0e, // names: _make_send_checksum, self, crc_mode, data
+    0xa0,0x3a,0x27,0x23,0x23,0x27,0x52,0x27,0x27, // code info
+    0x12,0x10, // LOAD_GLOBAL '_print'
+    0x10,0x70, // LOAD_CONST_STRING '_make_send_checksum'
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0x2b,0x00, // BUILD_LIST 0
@@ -12813,12 +13088,12 @@ static const byte fun_data_ymodem_Modem__make_send_checksum[75] = {
     0xb1, // LOAD_FAST 1
     0x44,0x59, // POP_JUMP_IF_FALSE 25
     0xb0, // LOAD_FAST 0
-    0x14,0x3d, // LOAD_METHOD '_calc_crc'
+    0x14,0x56, // LOAD_METHOD '_calc_crc'
     0xb2, // LOAD_FAST 2
     0x36,0x01, // CALL_METHOD 1
     0xc4, // STORE_FAST 4
     0xb3, // LOAD_FAST 3
-    0x14,0x5a, // LOAD_METHOD 'extend'
+    0x14,0x72, // LOAD_METHOD 'extend'
     0xb4, // LOAD_FAST 4
     0x88, // LOAD_CONST_SMALL_INT 8
     0xf1, // BINARY_OP 26 __rshift__
@@ -12830,16 +13105,16 @@ static const byte fun_data_ymodem_Modem__make_send_checksum[75] = {
     0x59, // POP_TOP
     0x42,0x4e, // JUMP 14
     0xb0, // LOAD_FAST 0
-    0x14,0x3e, // LOAD_METHOD '_calc_checksum'
+    0x14,0x57, // LOAD_METHOD '_calc_checksum'
     0xb2, // LOAD_FAST 2
     0x36,0x01, // CALL_METHOD 1
     0xc4, // STORE_FAST 4
     0xb3, // LOAD_FAST 3
-    0x14,0x59, // LOAD_METHOD 'append'
+    0x14,0x71, // LOAD_METHOD 'append'
     0xb4, // LOAD_FAST 4
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
-    0x12,0x81,0x18, // LOAD_GLOBAL 'bytearray'
+    0x12,0x81,0x35, // LOAD_GLOBAL 'bytearray'
     0xb3, // LOAD_FAST 3
     0x34,0x01, // CALL_FUNCTION 1
     0x63, // RETURN_VALUE
@@ -12853,7 +13128,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__make_send_checksum 
     .fun_data = fun_data_ymodem_Modem__make_send_checksum,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 75,
+    .fun_data_len = 77,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -12867,10 +13142,10 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__make_send_checksum 
         .n_pos_args = 3,
         .n_kwonly_args = 0,
         .n_def_pos_args = 0,
-        .qstr_block_name_idx = 88,
-        .line_info = fun_data_ymodem_Modem__make_send_checksum + 7,
-        .line_info_top = fun_data_ymodem_Modem__make_send_checksum + 16,
-        .opcodes = fun_data_ymodem_Modem__make_send_checksum + 16,
+        .qstr_block_name_idx = 112,
+        .line_info = fun_data_ymodem_Modem__make_send_checksum + 9,
+        .line_info_top = fun_data_ymodem_Modem__make_send_checksum + 18,
+        .opcodes = fun_data_ymodem_Modem__make_send_checksum + 18,
     },
     #endif
     #endif
@@ -12881,64 +13156,64 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__make_send_checksum 
 
 // child of ymodem_Modem
 // frozen bytecode for file ymodem.py, scope ymodem_Modem_serial_trans
-static const byte fun_data_ymodem_Modem_serial_trans[167] = {
-    0xea,0x84,0x80,0x01,0x3a, // prelude
-    0x49,0x7c,0x81,0x1d,0x47,0x48,0x81,0x1f,0x81,0x16, // names: serial_trans, self, info, timeout, retry, success_count, sequence
-    0xa0,0x4c,0x42,0x2c,0x27,0x31,0x20,0x28,0x2c,0x26,0x22,0x26,0x42,0x31,0x24,0x28,0x25,0x2c,0x26, // code info
+static const byte fun_data_ymodem_Modem_serial_trans[172] = {
+    0xea,0x84,0x80,0x01,0x3c, // prelude
+    0x61,0x81,0x1a,0x81,0x3a,0x5f,0x60,0x81,0x3c,0x81,0x33, // names: serial_trans, self, info, timeout, retry, success_count, sequence
+    0xa0,0x45,0x42,0x2c,0x27,0x32,0x20,0x28,0x2c,0x27,0x22,0x27,0x42,0x32,0x24,0x28,0x25,0x2c,0x26, // code info
     0x80, // LOAD_CONST_SMALL_INT 0
     0xc6, // STORE_FAST 6
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x24, // LOAD_CONST_OBJ 36
-    0x14,0x4f, // LOAD_METHOD 'format'
+    0x14,0x67, // LOAD_METHOD 'format'
     0xb1, // LOAD_FAST 1
     0x36,0x01, // CALL_METHOD 1
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0xb0, // LOAD_FAST 0
-    0x14,0x1d, // LOAD_METHOD 'writer'
+    0x14,0x33, // LOAD_METHOD 'writer'
     0xb1, // LOAD_FAST 1
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x25, // LOAD_CONST_OBJ 37
-    0x14,0x4f, // LOAD_METHOD 'format'
+    0x14,0x67, // LOAD_METHOD 'format'
     0xb4, // LOAD_FAST 4
-    0x12,0x74, // LOAD_GLOBAL 'str'
+    0x12,0x81,0x11, // LOAD_GLOBAL 'str'
     0xb5, // LOAD_FAST 5
     0x34,0x01, // CALL_FUNCTION 1
     0x36,0x02, // CALL_METHOD 2
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0xb0, // LOAD_FAST 0
-    0x14,0x1c, // LOAD_METHOD 'reader'
+    0x14,0x32, // LOAD_METHOD 'reader'
     0x81, // LOAD_CONST_SMALL_INT 1
     0xb2, // LOAD_FAST 2
     0x36,0x02, // CALL_METHOD 2
     0xc7, // STORE_FAST 7
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x26, // LOAD_CONST_OBJ 38
-    0x14,0x4f, // LOAD_METHOD 'format'
+    0x14,0x67, // LOAD_METHOD 'format'
     0xb7, // LOAD_FAST 7
     0x36,0x01, // CALL_METHOD 1
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0xb7, // LOAD_FAST 7
-    0x12,0x64, // LOAD_GLOBAL 'ACK'
+    0x12,0x81,0x00, // LOAD_GLOBAL 'ACK'
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x42, // POP_JUMP_IF_FALSE 2
     0x52, // LOAD_CONST_TRUE
     0x63, // RETURN_VALUE
     0xb7, // LOAD_FAST 7
-    0x12,0x65, // LOAD_GLOBAL 'NAK'
+    0x12,0x81,0x01, // LOAD_GLOBAL 'NAK'
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x42, // POP_JUMP_IF_FALSE 2
     0x50, // LOAD_CONST_FALSE
     0x63, // RETURN_VALUE
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x27, // LOAD_CONST_OBJ 39
-    0x14,0x4f, // LOAD_METHOD 'format'
+    0x14,0x67, // LOAD_METHOD 'format'
     0xb7, // LOAD_FAST 7
-    0x12,0x74, // LOAD_GLOBAL 'str'
+    0x12,0x81,0x11, // LOAD_GLOBAL 'str'
     0xb5, // LOAD_FAST 5
     0x34,0x01, // CALL_FUNCTION 1
     0x36,0x02, // CALL_METHOD 2
@@ -12948,8 +13223,8 @@ static const byte fun_data_ymodem_Modem_serial_trans[167] = {
     0x81, // LOAD_CONST_SMALL_INT 1
     0xe5, // BINARY_OP 14 __iadd__
     0xc6, // STORE_FAST 6
-    0x12,0x60, // LOAD_GLOBAL 'time'
-    0x14,0x32, // LOAD_METHOD 'sleep_ms'
+    0x12,0x7c, // LOAD_GLOBAL 'time'
+    0x14,0x47, // LOAD_METHOD 'sleep_ms'
     0xb2, // LOAD_FAST 2
     0x36,0x01, // CALL_METHOD 1
     0x59, // POP_TOP
@@ -12957,20 +13232,20 @@ static const byte fun_data_ymodem_Modem_serial_trans[167] = {
     0xb3, // LOAD_FAST 3
     0xd8, // BINARY_OP 1 __gt__
     0x44,0x54, // POP_JUMP_IF_FALSE 20
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x28, // LOAD_CONST_OBJ 40
-    0x14,0x4f, // LOAD_METHOD 'format'
+    0x14,0x67, // LOAD_METHOD 'format'
     0xb6, // LOAD_FAST 6
     0x36,0x01, // CALL_METHOD 1
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0xb0, // LOAD_FAST 0
-    0x14,0x2a, // LOAD_METHOD 'abort'
+    0x14,0x40, // LOAD_METHOD 'abort'
     0x36,0x00, // CALL_METHOD 0
     0x59, // POP_TOP
     0x50, // LOAD_CONST_FALSE
     0x63, // RETURN_VALUE
-    0x42,0xa3,0x7f, // JUMP -93
+    0x42,0xa0,0x7f, // JUMP -96
     0x51, // LOAD_CONST_NONE
     0x63, // RETURN_VALUE
 };
@@ -12983,7 +13258,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem_serial_trans = {
     .fun_data = fun_data_ymodem_Modem_serial_trans,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 167,
+    .fun_data_len = 172,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -12997,10 +13272,10 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem_serial_trans = {
         .n_pos_args = 6,
         .n_kwonly_args = 0,
         .n_def_pos_args = 4,
-        .qstr_block_name_idx = 73,
-        .line_info = fun_data_ymodem_Modem_serial_trans + 15,
-        .line_info_top = fun_data_ymodem_Modem_serial_trans + 34,
-        .opcodes = fun_data_ymodem_Modem_serial_trans + 34,
+        .qstr_block_name_idx = 97,
+        .line_info = fun_data_ymodem_Modem_serial_trans + 16,
+        .line_info_top = fun_data_ymodem_Modem_serial_trans + 35,
+        .opcodes = fun_data_ymodem_Modem_serial_trans + 35,
     },
     #endif
     #endif
@@ -13011,29 +13286,29 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem_serial_trans = {
 
 // child of ymodem_Modem
 // frozen bytecode for file ymodem.py, scope ymodem_Modem__make_file_body_info
-static const byte fun_data_ymodem_Modem__make_file_body_info[92] = {
-    0xe1,0x04,0x28, // prelude
-    0x4b,0x7c,0x81,0x20,0x81,0x11,0x81,0x08,0x81,0x16, // names: _make_file_body_info, self, stream, packet_size, crc_mode, sequence
-    0xa0,0x62,0x27,0x23,0x27,0x23,0x27,0x28,0x31,0x28, // code info
+static const byte fun_data_ymodem_Modem__make_file_body_info[93] = {
+    0xe1,0x04,0x2a, // prelude
+    0x63,0x81,0x1a,0x81,0x3d,0x81,0x2e,0x81,0x27,0x81,0x33, // names: _make_file_body_info, self, stream, packet_size, crc_mode, sequence
+    0xa0,0x5b,0x27,0x23,0x27,0x23,0x27,0x28,0x31,0x28, // code info
     0xb1, // LOAD_FAST 1
-    0x14,0x19, // LOAD_METHOD 'read'
+    0x14,0x1b, // LOAD_METHOD 'read'
     0xb2, // LOAD_FAST 2
     0x36,0x01, // CALL_METHOD 1
     0xc5, // STORE_FAST 5
     0xb5, // LOAD_FAST 5
     0x43,0x4a, // POP_JUMP_IF_TRUE 10
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x29, // LOAD_CONST_OBJ 41
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0x23,0x2a, // LOAD_CONST_OBJ 42
     0x63, // RETURN_VALUE
-    0x12,0x81,0x0b, // LOAD_GLOBAL 'len'
+    0x12,0x81,0x2a, // LOAD_GLOBAL 'len'
     0xb5, // LOAD_FAST 5
     0x34,0x01, // CALL_FUNCTION 1
     0xc6, // STORE_FAST 6
     0xb0, // LOAD_FAST 0
-    0x14,0x50, // LOAD_METHOD '_make_send_header'
+    0x14,0x68, // LOAD_METHOD '_make_send_header'
     0xb2, // LOAD_FAST 2
     0xb4, // LOAD_FAST 4
     0x36,0x02, // CALL_METHOD 2
@@ -13053,7 +13328,7 @@ static const byte fun_data_ymodem_Modem__make_file_body_info[92] = {
     0xe5, // BINARY_OP 14 __iadd__
     0xc5, // STORE_FAST 5
     0xb0, // LOAD_FAST 0
-    0x14,0x58, // LOAD_METHOD '_make_send_checksum'
+    0x14,0x70, // LOAD_METHOD '_make_send_checksum'
     0xb3, // LOAD_FAST 3
     0xb5, // LOAD_FAST 5
     0x36,0x02, // CALL_METHOD 2
@@ -13076,7 +13351,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__make_file_body_info
     .fun_data = fun_data_ymodem_Modem__make_file_body_info,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 92,
+    .fun_data_len = 93,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -13090,10 +13365,10 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__make_file_body_info
         .n_pos_args = 5,
         .n_kwonly_args = 0,
         .n_def_pos_args = 0,
-        .qstr_block_name_idx = 75,
-        .line_info = fun_data_ymodem_Modem__make_file_body_info + 13,
-        .line_info_top = fun_data_ymodem_Modem__make_file_body_info + 23,
-        .opcodes = fun_data_ymodem_Modem__make_file_body_info + 23,
+        .qstr_block_name_idx = 99,
+        .line_info = fun_data_ymodem_Modem__make_file_body_info + 14,
+        .line_info_top = fun_data_ymodem_Modem__make_file_body_info + 24,
+        .opcodes = fun_data_ymodem_Modem__make_file_body_info + 24,
     },
     #endif
     #endif
@@ -13104,14 +13379,14 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__make_file_body_info
 
 // child of ymodem_Modem
 // frozen bytecode for file ymodem.py, scope ymodem_Modem__wait_nak_ack
-static const byte fun_data_ymodem_Modem__wait_nak_ack[91] = {
-    0xc8,0x84,0x01,0x26, // prelude
-    0x4d,0x7c,0x81,0x21,0x47,0x48, // names: _wait_nak_ack, self, flags, timeout, retry
-    0xa0,0x6d,0x22,0x20,0x28,0x25,0x29,0x42,0x2c,0x24,0x25,0x29,0x26, // code info
+static const byte fun_data_ymodem_Modem__wait_nak_ack[92] = {
+    0xc8,0x84,0x01,0x28, // prelude
+    0x65,0x81,0x1a,0x81,0x3e,0x5f,0x60, // names: _wait_nak_ack, self, flags, timeout, retry
+    0xa0,0x66,0x22,0x20,0x28,0x25,0x29,0x42,0x2c,0x24,0x25,0x29,0x26, // code info
     0x80, // LOAD_CONST_SMALL_INT 0
     0xc4, // STORE_FAST 4
     0xb0, // LOAD_FAST 0
-    0x14,0x1c, // LOAD_METHOD 'reader'
+    0x14,0x32, // LOAD_METHOD 'reader'
     0x81, // LOAD_CONST_SMALL_INT 1
     0xb2, // LOAD_FAST 2
     0x36,0x02, // CALL_METHOD 2
@@ -13120,7 +13395,7 @@ static const byte fun_data_ymodem_Modem__wait_nak_ack[91] = {
     0xb1, // LOAD_FAST 1
     0xd9, // BINARY_OP 2 __eq__
     0x44,0x4b, // POP_JUMP_IF_FALSE 11
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x18, // LOAD_CONST_OBJ 24
     0xb1, // LOAD_FAST 1
     0xf8, // BINARY_OP 33 __mod__
@@ -13128,7 +13403,7 @@ static const byte fun_data_ymodem_Modem__wait_nak_ack[91] = {
     0x59, // POP_TOP
     0x52, // LOAD_CONST_TRUE
     0x63, // RETURN_VALUE
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x2c, // LOAD_CONST_OBJ 44
     0xb1, // LOAD_FAST 1
     0xb5, // LOAD_FAST 5
@@ -13144,14 +13419,14 @@ static const byte fun_data_ymodem_Modem__wait_nak_ack[91] = {
     0xb3, // LOAD_FAST 3
     0xd8, // BINARY_OP 1 __gt__
     0x44,0x51, // POP_JUMP_IF_FALSE 17
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0x23,0x2d, // LOAD_CONST_OBJ 45
     0xb1, // LOAD_FAST 1
     0xf8, // BINARY_OP 33 __mod__
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0xb0, // LOAD_FAST 0
-    0x14,0x2a, // LOAD_METHOD 'abort'
+    0x14,0x40, // LOAD_METHOD 'abort'
     0x36,0x00, // CALL_METHOD 0
     0x59, // POP_TOP
     0x50, // LOAD_CONST_FALSE
@@ -13169,7 +13444,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__wait_nak_ack = {
     .fun_data = fun_data_ymodem_Modem__wait_nak_ack,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 91,
+    .fun_data_len = 92,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -13183,10 +13458,10 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__wait_nak_ack = {
         .n_pos_args = 4,
         .n_kwonly_args = 0,
         .n_def_pos_args = 2,
-        .qstr_block_name_idx = 77,
-        .line_info = fun_data_ymodem_Modem__wait_nak_ack + 10,
-        .line_info_top = fun_data_ymodem_Modem__wait_nak_ack + 23,
-        .opcodes = fun_data_ymodem_Modem__wait_nak_ack + 23,
+        .qstr_block_name_idx = 101,
+        .line_info = fun_data_ymodem_Modem__wait_nak_ack + 11,
+        .line_info_top = fun_data_ymodem_Modem__wait_nak_ack + 24,
+        .opcodes = fun_data_ymodem_Modem__wait_nak_ack + 24,
     },
     #endif
     #endif
@@ -13197,12 +13472,12 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__wait_nak_ack = {
 
 // child of ymodem_Modem
 // frozen bytecode for file ymodem.py, scope ymodem_Modem__send_end_packet
-static const byte fun_data_ymodem_Modem__send_end_packet[59] = {
-    0xcb,0x01,0x18, // prelude
-    0x4e,0x7c,0x81,0x11,0x81,0x08, // names: _send_end_packet, self, packet_size, crc_mode
-    0xa0,0x7c,0x28,0x25,0x28,0x2a, // code info
+static const byte fun_data_ymodem_Modem__send_end_packet[60] = {
+    0xcb,0x01,0x1a, // prelude
+    0x66,0x81,0x1a,0x81,0x2e,0x81,0x27, // names: _send_end_packet, self, packet_size, crc_mode
+    0xa0,0x75,0x28,0x25,0x28,0x2a, // code info
     0xb0, // LOAD_FAST 0
-    0x14,0x50, // LOAD_METHOD '_make_send_header'
+    0x14,0x68, // LOAD_METHOD '_make_send_header'
     0xb1, // LOAD_FAST 1
     0x80, // LOAD_CONST_SMALL_INT 0
     0x36,0x02, // CALL_METHOD 2
@@ -13212,12 +13487,12 @@ static const byte fun_data_ymodem_Modem__send_end_packet[59] = {
     0xf4, // BINARY_OP 29 __mul__
     0xc4, // STORE_FAST 4
     0xb0, // LOAD_FAST 0
-    0x14,0x58, // LOAD_METHOD '_make_send_checksum'
+    0x14,0x70, // LOAD_METHOD '_make_send_checksum'
     0xb2, // LOAD_FAST 2
     0xb4, // LOAD_FAST 4
     0x36,0x02, // CALL_METHOD 2
     0xc5, // STORE_FAST 5
-    0x12,0x09, // LOAD_GLOBAL '_print'
+    0x12,0x10, // LOAD_GLOBAL '_print'
     0xb3, // LOAD_FAST 3
     0xb4, // LOAD_FAST 4
     0xf2, // BINARY_OP 27 __add__
@@ -13226,7 +13501,7 @@ static const byte fun_data_ymodem_Modem__send_end_packet[59] = {
     0x34,0x01, // CALL_FUNCTION 1
     0x59, // POP_TOP
     0xb0, // LOAD_FAST 0
-    0x14,0x1d, // LOAD_METHOD 'writer'
+    0x14,0x33, // LOAD_METHOD 'writer'
     0xb3, // LOAD_FAST 3
     0xb4, // LOAD_FAST 4
     0xf2, // BINARY_OP 27 __add__
@@ -13246,7 +13521,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__send_end_packet = {
     .fun_data = fun_data_ymodem_Modem__send_end_packet,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 59,
+    .fun_data_len = 60,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -13260,10 +13535,10 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem__send_end_packet = {
         .n_pos_args = 3,
         .n_kwonly_args = 0,
         .n_def_pos_args = 1,
-        .qstr_block_name_idx = 78,
-        .line_info = fun_data_ymodem_Modem__send_end_packet + 9,
-        .line_info_top = fun_data_ymodem_Modem__send_end_packet + 15,
-        .opcodes = fun_data_ymodem_Modem__send_end_packet + 15,
+        .qstr_block_name_idx = 102,
+        .line_info = fun_data_ymodem_Modem__send_end_packet + 10,
+        .line_info_top = fun_data_ymodem_Modem__send_end_packet + 16,
+        .opcodes = fun_data_ymodem_Modem__send_end_packet + 16,
     },
     #endif
     #endif
@@ -13303,7 +13578,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem = {
     .fun_data = fun_data_ymodem_Modem,
     .children = (void *)&children_ymodem_Modem,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 1289,
+    .fun_data_len = 1296,
     .n_children = 20,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -13317,7 +13592,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem = {
         .n_pos_args = 0,
         .n_kwonly_args = 0,
         .n_def_pos_args = 0,
-        .qstr_block_name_idx = 7,
+        .qstr_block_name_idx = 14,
         .line_info = fun_data_ymodem_Modem + 6,
         .line_info_top = fun_data_ymodem_Modem + 81,
         .opcodes = fun_data_ymodem_Modem + 81,
@@ -13328,11 +13603,41 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_Modem = {
 
 // child of ymodem__lt_module_gt_
 // frozen bytecode for file ymodem.py, scope ymodem_enter_ymodem
-static const byte fun_data_ymodem_enter_ymodem[9] = {
-    0x89,0x01,0x08, // prelude
-    0x10,0x79, // names: enter_ymodem, callback
-    0xa0,0x88, // code info
-    0x52, // LOAD_CONST_TRUE
+static const byte fun_data_ymodem_enter_ymodem[65] = {
+    0xb1,0x01,0x0e, // prelude
+    0x18,0x1d, // names: enter_ymodem, callback
+    0xa0,0x7d,0x3a,0x2b,0x2a, // code info
+    0x12,0x0d, // LOAD_GLOBAL 'Serial'
+    0x12,0x81,0x16, // LOAD_GLOBAL 'hasattr'
+    0x12,0x0a, // LOAD_GLOBAL 'UART'
+    0x10,0x19, // LOAD_CONST_STRING 'REPL_UART'
+    0x34,0x02, // CALL_FUNCTION 2
+    0x44,0x46, // POP_JUMP_IF_FALSE 6
+    0x12,0x0a, // LOAD_GLOBAL 'UART'
+    0x13,0x19, // LOAD_ATTR 'REPL_UART'
+    0x42,0x44, // JUMP 4
+    0x12,0x0a, // LOAD_GLOBAL 'UART'
+    0x13,0x1a, // LOAD_ATTR 'UART3'
+    0x34,0x01, // CALL_FUNCTION 1
+    0xc1, // STORE_FAST 1
+    0x12,0x0e, // LOAD_GLOBAL 'Modem'
+    0xb1, // LOAD_FAST 1
+    0x13,0x1b, // LOAD_ATTR 'read'
+    0xb1, // LOAD_FAST 1
+    0x13,0x13, // LOAD_ATTR 'write'
+    0x34,0x02, // CALL_FUNCTION 2
+    0xc2, // STORE_FAST 2
+    0xb2, // LOAD_FAST 2
+    0x14,0x1c, // LOAD_METHOD 'recv'
+    0x10,0x1d, // LOAD_CONST_STRING 'callback'
+    0xb0, // LOAD_FAST 0
+    0x36,0x82,0x00, // CALL_METHOD 256
+    0x59, // POP_TOP
+    0xb1, // LOAD_FAST 1
+    0x14,0x1e, // LOAD_METHOD 'close'
+    0x36,0x00, // CALL_METHOD 0
+    0x59, // POP_TOP
+    0x51, // LOAD_CONST_NONE
     0x63, // RETURN_VALUE
 };
 #if MICROPY_PERSISTENT_CODE_SAVE
@@ -13344,7 +13649,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_enter_ymodem = {
     .fun_data = fun_data_ymodem_enter_ymodem,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 9,
+    .fun_data_len = 65,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -13352,16 +13657,16 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_enter_ymodem = {
     #if MICROPY_PY_SYS_SETTRACE
     .line_of_definition = 0,
     .prelude = {
-        .n_state = 2,
+        .n_state = 7,
         .n_exc_stack = 0,
         .scope_flags = 0,
         .n_pos_args = 1,
         .n_kwonly_args = 0,
         .n_def_pos_args = 1,
-        .qstr_block_name_idx = 16,
+        .qstr_block_name_idx = 24,
         .line_info = fun_data_ymodem_enter_ymodem + 5,
-        .line_info_top = fun_data_ymodem_enter_ymodem + 7,
-        .opcodes = fun_data_ymodem_enter_ymodem + 7,
+        .line_info_top = fun_data_ymodem_enter_ymodem + 10,
+        .opcodes = fun_data_ymodem_enter_ymodem + 10,
     },
     #endif
     #endif
@@ -13372,11 +13677,61 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_enter_ymodem = {
 
 // child of ymodem__lt_module_gt_
 // frozen bytecode for file ymodem.py, scope ymodem_send_file
-static const byte fun_data_ymodem_send_file[8] = {
-    0x09,0x08, // prelude
-    0x11,0x7a, // names: send_file, trans_file
-    0xa0,0x93, // code info
-    0x52, // LOAD_CONST_TRUE
+static const byte fun_data_ymodem_send_file[99] = {
+    0xc9,0x02,0x14, // prelude
+    0x1f,0x81,0x17, // names: send_file, trans_file
+    0xa0,0x84,0x3a,0x2b,0x22,0x53,0x34, // code info
+    0x12,0x0d, // LOAD_GLOBAL 'Serial'
+    0x12,0x81,0x16, // LOAD_GLOBAL 'hasattr'
+    0x12,0x0a, // LOAD_GLOBAL 'UART'
+    0x10,0x19, // LOAD_CONST_STRING 'REPL_UART'
+    0x34,0x02, // CALL_FUNCTION 2
+    0x44,0x46, // POP_JUMP_IF_FALSE 6
+    0x12,0x0a, // LOAD_GLOBAL 'UART'
+    0x13,0x19, // LOAD_ATTR 'REPL_UART'
+    0x42,0x44, // JUMP 4
+    0x12,0x0a, // LOAD_GLOBAL 'UART'
+    0x13,0x1a, // LOAD_ATTR 'UART3'
+    0x34,0x01, // CALL_FUNCTION 1
+    0xc1, // STORE_FAST 1
+    0x12,0x0e, // LOAD_GLOBAL 'Modem'
+    0xb1, // LOAD_FAST 1
+    0x13,0x1b, // LOAD_ATTR 'read'
+    0xb1, // LOAD_FAST 1
+    0x13,0x13, // LOAD_ATTR 'write'
+    0x34,0x02, // CALL_FUNCTION 2
+    0xc2, // STORE_FAST 2
+    0x48,0x09, // SETUP_EXCEPT 9
+    0xb2, // LOAD_FAST 2
+    0x14,0x20, // LOAD_METHOD 'send'
+    0xb0, // LOAD_FAST 0
+    0x36,0x01, // CALL_METHOD 1
+    0x59, // POP_TOP
+    0x4a,0x1e, // POP_EXCEPT_JUMP 30
+    0x57, // DUP_TOP
+    0x12,0x81,0x18, // LOAD_GLOBAL 'Exception'
+    0xdf, // BINARY_OP 8 <exception match>
+    0x44,0x56, // POP_JUMP_IF_FALSE 22
+    0xc3, // STORE_FAST 3
+    0x49,0x0c, // SETUP_FINALLY 12
+    0x12,0x10, // LOAD_GLOBAL '_print'
+    0x12,0x81,0x11, // LOAD_GLOBAL 'str'
+    0xb3, // LOAD_FAST 3
+    0x34,0x01, // CALL_FUNCTION 1
+    0x34,0x01, // CALL_FUNCTION 1
+    0x59, // POP_TOP
+    0x51, // LOAD_CONST_NONE
+    0x51, // LOAD_CONST_NONE
+    0xc3, // STORE_FAST 3
+    0x28,0x03, // DELETE_FAST 3
+    0x5d, // END_FINALLY
+    0x4a,0x01, // POP_EXCEPT_JUMP 1
+    0x5d, // END_FINALLY
+    0xb1, // LOAD_FAST 1
+    0x14,0x1e, // LOAD_METHOD 'close'
+    0x36,0x00, // CALL_METHOD 0
+    0x59, // POP_TOP
+    0x51, // LOAD_CONST_NONE
     0x63, // RETURN_VALUE
 };
 #if MICROPY_PERSISTENT_CODE_SAVE
@@ -13388,7 +13743,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_send_file = {
     .fun_data = fun_data_ymodem_send_file,
     .children = NULL,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 8,
+    .fun_data_len = 99,
     .n_children = 0,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -13396,16 +13751,16 @@ static const mp_raw_code_truncated_t proto_fun_ymodem_send_file = {
     #if MICROPY_PY_SYS_SETTRACE
     .line_of_definition = 0,
     .prelude = {
-        .n_state = 2,
-        .n_exc_stack = 0,
+        .n_state = 10,
+        .n_exc_stack = 2,
         .scope_flags = 0,
         .n_pos_args = 1,
         .n_kwonly_args = 0,
         .n_def_pos_args = 0,
-        .qstr_block_name_idx = 17,
-        .line_info = fun_data_ymodem_send_file + 4,
-        .line_info_top = fun_data_ymodem_send_file + 6,
-        .opcodes = fun_data_ymodem_send_file + 6,
+        .qstr_block_name_idx = 31,
+        .line_info = fun_data_ymodem_send_file + 6,
+        .line_info_top = fun_data_ymodem_send_file + 13,
+        .opcodes = fun_data_ymodem_send_file + 13,
     },
     #endif
     #endif
@@ -13431,7 +13786,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem__lt_module_gt_ = {
     .fun_data = fun_data_ymodem__lt_module_gt_,
     .children = (void *)&children_ymodem__lt_module_gt_,
     #if MICROPY_PERSISTENT_CODE_SAVE
-    .fun_data_len = 167,
+    .fun_data_len = 247,
     .n_children = 6,
     #if MICROPY_EMIT_MACHINE_CODE
     .prelude_offset = 0,
@@ -13439,7 +13794,7 @@ static const mp_raw_code_truncated_t proto_fun_ymodem__lt_module_gt_ = {
     #if MICROPY_PY_SYS_SETTRACE
     .line_of_definition = 0,
     .prelude = {
-        .n_state = 4,
+        .n_state = 7,
         .n_exc_stack = 0,
         .scope_flags = 0,
         .n_pos_args = 0,
@@ -13447,41 +13802,63 @@ static const mp_raw_code_truncated_t proto_fun_ymodem__lt_module_gt_ = {
         .n_def_pos_args = 0,
         .qstr_block_name_idx = 1,
         .line_info = fun_data_ymodem__lt_module_gt_ + 3,
-        .line_info_top = fun_data_ymodem__lt_module_gt_ + 38,
-        .opcodes = fun_data_ymodem__lt_module_gt_ + 38,
+        .line_info_top = fun_data_ymodem__lt_module_gt_ + 41,
+        .opcodes = fun_data_ymodem__lt_module_gt_ + 41,
     },
     #endif
     #endif
 };
 
-static const qstr_short_t const_qstr_table_data_ymodem[165] = {
+static const qstr_short_t const_qstr_table_data_ymodem[194] = {
     MP_QSTR_ymodem_dot_py,
     MP_QSTR__lt_module_gt_,
     MP_QSTR_gc,
     MP_QSTR_uos,
     MP_QSTR_sys,
+    MP_QSTR_ql_fs,
+    MP_QSTR_osTimer,
     MP_QSTR_utime,
+    MP_QSTR_Queue,
+    MP_QSTR_queue,
+    MP_QSTR_UART,
+    MP_QSTR_machine,
+    MP_QSTR_UART2,
     MP_QSTR_Serial,
     MP_QSTR_Modem,
     MP_QSTR___main__,
     MP_QSTR__print,
     MP_QSTR_encode,
     MP_QSTR_endswith,
+    MP_QSTR_write,
     MP_QSTR_check_file,
     MP_QSTR_ymodem1k,
     MP_QSTR_rzsz,
     MP_QSTR_,
     MP_QSTR_enter_ymodem,
+    MP_QSTR_REPL_UART,
+    MP_QSTR_UART3,
+    MP_QSTR_read,
+    MP_QSTR_recv,
+    MP_QSTR_callback,
+    MP_QSTR_close,
     MP_QSTR_send_file,
+    MP_QSTR_send,
     MP_QSTR_wrapper,
     MP_QSTR___init__,
+    MP_QSTR_flow,
     MP_QSTR__uart,
     MP_QSTR_set_callback,
     MP_QSTR__uart_cb,
+    MP_QSTR_maxsize,
+    MP_QSTR__queue,
+    MP_QSTR__timer,
+    MP_QSTR_size,
+    MP_QSTR_put,
     MP_QSTR__timer_cb,
-    MP_QSTR_write,
-    MP_QSTR_read,
-    MP_QSTR_close,
+    MP_QSTR_any,
+    MP_QSTR_start,
+    MP_QSTR_get,
+    MP_QSTR_stop,
     MP_QSTR_AssertionError,
     MP_QSTR_reader,
     MP_QSTR_writer,
@@ -13499,7 +13876,6 @@ static const qstr_short_t const_qstr_table_data_ymodem[165] = {
     MP_QSTR_total_size,
     MP_QSTR_abort,
     MP_QSTR__delete_failed_file,
-    MP_QSTR_recv,
     MP_QSTR__in_transfer_mode,
     MP_QSTR__get_file_header,
     MP_QSTR__verify_complement,
@@ -13516,10 +13892,13 @@ static const qstr_short_t const_qstr_table_data_ymodem[165] = {
     MP_QSTR_wb_plus_,
     MP_QSTR_find,
     MP_QSTR__space_,
+    MP_QSTR_path_exists,
+    MP_QSTR_path_dirname,
+    MP_QSTR_mkdirs,
+    MP_QSTR_remove,
     MP_QSTR__calc_crc,
     MP_QSTR__calc_checksum,
     MP_QSTR_crc_table,
-    MP_QSTR_send,
     MP_QSTR_xmodem,
     MP_QSTR_xmodem1k,
     MP_QSTR_ymodem,
@@ -13550,6 +13929,10 @@ static const qstr_short_t const_qstr_table_data_ymodem[165] = {
     MP_QSTR_strip,
     MP_QSTR__bracket_open__bracket_close_,
     MP_QSTR__comma_,
+    MP_QSTR_path_getsize,
+    MP_QSTR_mktime,
+    MP_QSTR_localtime,
+    MP_QSTR_rtos,
     MP_QSTR__lt_listcomp_gt_,
     MP_QSTR_time,
     MP_QSTR_SOH,
@@ -13566,6 +13949,7 @@ static const qstr_short_t const_qstr_table_data_ymodem[165] = {
     MP_QSTR_ALLOW_1K_BLOCK,
     MP_QSTR_ALLOW_YMODEM_G,
     MP_QSTR_DEBUG,
+    MP_QSTR__MAIN_UART_,
     MP_QSTR_object,
     MP_QSTR___name__,
     MP_QSTR_data,
@@ -13576,8 +13960,9 @@ static const qstr_short_t const_qstr_table_data_ymodem[165] = {
     MP_QSTR___module__,
     MP_QSTR___qualname__,
     MP_QSTR_staticmethod,
-    MP_QSTR_callback,
+    MP_QSTR_hasattr,
     MP_QSTR_trans_file,
+    MP_QSTR_Exception,
     MP_QSTR_func,
     MP_QSTR_self,
     MP_QSTR_uart,
@@ -13587,6 +13972,7 @@ static const qstr_short_t const_qstr_table_data_ymodem[165] = {
     MP_QSTR_stopbits,
     MP_QSTR_flowctl,
     MP_QSTR_nbytes,
+    MP_QSTR_min,
     MP_QSTR_program,
     MP_QSTR_dict,
     MP_QSTR_count,
@@ -13595,8 +13981,6 @@ static const qstr_short_t const_qstr_table_data_ymodem[165] = {
     MP_QSTR_delay,
     MP_QSTR_callable,
     MP_QSTR_len,
-    MP_QSTR_min,
-    MP_QSTR_Exception,
     MP_QSTR_cancel,
     MP_QSTR_error_count,
     MP_QSTR_char,
@@ -13684,7 +14068,7 @@ static const mp_obj_str_t const_obj_ymodem_44 = {{&mp_type_str}, 57319, 39, (con
 static const mp_obj_str_t const_obj_ymodem_45 = {{&mp_type_str}, 52718, 55, (const byte*)"\x5b\x53\x65\x6e\x64\x65\x72\x5d\x3a\x20\x57\x61\x72\x6e\x69\x6e\x67\x2c\x20\x45\x4f\x54\x20\x77\x61\x73\x20\x6e\x6f\x74\x20\x25\x72\x2c\x20\x61\x62\x6f\x72\x74\x69\x6e\x67\x20\x74\x72\x61\x6e\x73\x66\x65\x72\x2e\x2e\x2e"};
 
 // constant table
-static const mp_rom_obj_t const_obj_table_data_ymodem[47] = {
+static const mp_rom_obj_t const_obj_table_data_ymodem[48] = {
     MP_ROM_PTR(&const_obj_ymodem_0),
     MP_ROM_PTR(&const_obj_ymodem_1),
     MP_ROM_PTR(&const_obj_ymodem_2),
@@ -13732,6 +14116,7 @@ static const mp_rom_obj_t const_obj_table_data_ymodem[47] = {
     MP_ROM_PTR(&const_obj_ymodem_44),
     MP_ROM_PTR(&const_obj_ymodem_45),
     MP_ROM_QSTR(MP_QSTR_source_colon__space__percent_s_comma__space_target_colon__space__percent_s),
+    MP_ROM_QSTR(MP_QSTR_File_space__bracket_open__brace_open__brace_close__bracket_close__space_is_space_not_space_exists_dot_),
 };
 
 static const mp_frozen_module_t frozen_module_ymodem = {
@@ -15457,15 +15842,15 @@ MICROPY_FROZEN_LIST_ITEM("queue", "queue.py")
 
 /*
 byte sizes:
-qstr content: 292 unique, 3752 bytes
-bc content: 12422
+qstr content: 301 unique, 3864 bytes
+bc content: 13107
 const str content: 1187
 const int content: 4
 const obj content: 744
 const table qstr content: 0 entries, 0 bytes
-const table ptr content: 78 entries, 312 bytes
+const table ptr content: 79 entries, 316 bytes
 raw code content: 167 * 4 = 2672
 mp_frozen_mpy_names_content: 86
 mp_frozen_mpy_content_size: 36
-total: 21215
+total: 22016
 */

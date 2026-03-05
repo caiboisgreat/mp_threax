@@ -18,11 +18,11 @@
 import gc
 import uos
 import sys
-#import ql_fs
-#import osTimer
+import ql_fs
+import osTimer
 import utime as time
-#from queue import Queue
-#from machine import UART
+from queue import Queue
+from machine import UART
 
 SOH = b"\x01"
 STX = b"\x02"
@@ -41,16 +41,15 @@ ALLOW_YMODEM_G = 0b000001
 
 DEBUG = False
 
-#_MAIN_UART_ = UART(UART.UART2, 115200, 8, 0, 1, 0) if DEBUG else None
+_MAIN_UART_ = UART(UART.UART2, 115200, 8, 0, 1, 0) if DEBUG else None
 
 
 def _print(data):
-    #global DEBUG, _MAIN_UART_
-    global DEBUG
+    global DEBUG, _MAIN_UART_
     if DEBUG:
         _data = data if isinstance(data, bytes) else (data.encode() if isinstance(data, str) else str(data).encode())
         _data += b"" if _data.endswith(b"\r\n") else b"\r\n"
-        #_MAIN_UART_.write(_data)
+        _MAIN_UART_.write(_data)
     else:
         print(DEBUG)
 
@@ -65,17 +64,17 @@ def check_file():
             for _file in trans_file:
                 source, target = _file.strip("[]").split(",")
                 _print("source: %s, target: %s" % (source, target))
-                # if ql_fs.path_exists(source):
-                #     file_info = {
-                #         "filepath": source,
-                #         "name": target.strip(" "),
-                #         "length": ql_fs.path_getsize(source),
-                #         "mtime": time.mktime(time.localtime()),
-                #         "source": "rtos"
-                #     }
-                #     _files.append(file_info)
-                # else:
-                #     _print("File [{}] is not exists.".format(source))
+                if ql_fs.path_exists(source):
+                    file_info = {
+                        "filepath": source,
+                        "name": target.strip(" "),
+                        "length": ql_fs.path_getsize(source),
+                        "mtime": time.mktime(time.localtime()),
+                        "source": "rtos"
+                    }
+                    _files.append(file_info)
+                else:
+                    _print("File [{}] is not exists.".format(source))
             new_args.append(_files)
             return func(*tuple(new_args), **kwargs)
         return _wrapper
@@ -84,45 +83,41 @@ def check_file():
 
 class Serial(object):
     def __init__(self, uart, buadrate=57600, databits=8, parity=0, stopbits=1, flowctl=0):
-        #self._uart = UART(uart, buadrate, databits, parity, stopbits, flowctl)
+        # flow is keyword-only in this port's UART constructor
+        self._uart = UART(uart, buadrate, databits, parity, stopbits, flow=flowctl)
         self._uart.set_callback(self._uart_cb)
-        #self._queue = Queue(maxsize=1)
-        #self._timer = osTimer()
+        self._queue = Queue(maxsize=1)
+        self._timer = osTimer()
 
     def _uart_cb(self, *args):
-        # if self._queue.size() == 0:
-        #     self._queue.put(None)
-        return
+        if self._queue.size() == 0:
+            self._queue.put(None)
 
     def _timer_cb(self, *args):
-        # if self._queue.size() == 0:
-        #     self._queue.put(None)
-        return
+        if self._queue.size() == 0:
+            self._queue.put(None)
 
     def write(self, data):
-        # return self._uart.write(data)
-        return True
+        return self._uart.write(data)
 
     def read(self, nbytes, timeout=0):
-        # if nbytes == 0:
-        #     return b""
-        # if self._uart.any() == 0 and timeout != 0:
-        #     timer_started = False
-        #     if timeout > 0:  # < 0 for wait forever
-        #         self._timer.start(timeout, 0, self._timer_cb)
-        #         timer_started = True
-        #     self._queue.get()
-        #     if timer_started:
-        #         self._timer.stop()
-        # r_data = self._uart.read(min(nbytes, self._uart.any()))
-        # if self._queue.size():
-        #     self._queue.get()
-        # return r_data
-        return b""
+        if nbytes == 0:
+            return b""
+        if self._uart.any() == 0 and timeout != 0:
+            timer_started = False
+            if timeout > 0:  # < 0 for wait forever
+                self._timer.start(timeout, 0, self._timer_cb)
+                timer_started = True
+            self._queue.get()
+            if timer_started:
+                self._timer.stop()
+        r_data = self._uart.read(min(nbytes, self._uart.any()))
+        if self._queue.size():
+            self._queue.get()
+        return r_data
 
     def close(self):
-        #self._uart.close()
-        return 1
+        self._uart.close()
 
 
 class Modem(object):
@@ -391,15 +386,13 @@ class Modem(object):
 
     @staticmethod
     def _check_path(path):
-        # if not ql_fs.path_exists(ql_fs.path_dirname(path)):
-        #     ql_fs.mkdirs(ql_fs.path_dirname(path))
-        return True
+        if not ql_fs.path_exists(ql_fs.path_dirname(path)):
+            ql_fs.mkdirs(ql_fs.path_dirname(path))
 
     @staticmethod
     def _delete_failed_file(path=""):
-        # if path and ql_fs.path_exists(path):
-        #     uos.remove(path)
-        return True
+        if path and ql_fs.path_exists(path):
+            uos.remove(path)
 
     def _verify_complement(self, timeout=1000, sequence=0):
         seq1 = self.reader(1, timeout)
@@ -642,22 +635,20 @@ class Modem(object):
 
 
 def enter_ymodem(callback=None):
-    # serial_io = Serial(UART.REPL_UART if hasattr(UART, "REPL_UART") else UART.UART3)
-    # receiver = Modem(serial_io.read, serial_io.write)
-    # receiver.recv(callback=callback)
-    # serial_io.close()
-    return True
+    serial_io = Serial(UART.REPL_UART if hasattr(UART, "REPL_UART") else UART.UART3)
+    receiver = Modem(serial_io.read, serial_io.write)
+    receiver.recv(callback=callback)
+    serial_io.close()
 
 
 def send_file(trans_file):
-    # serial_io = Serial(UART.REPL_UART if hasattr(UART, "REPL_UART") else UART.UART3)
-    # sender = Modem(serial_io.read, serial_io.write)
-    # try:
-    #     sender.send(trans_file)
-    # except Exception as e:
-    #     _print(str(e))
-    # serial_io.close()
-    return True
+    serial_io = Serial(UART.REPL_UART if hasattr(UART, "REPL_UART") else UART.UART3)
+    sender = Modem(serial_io.read, serial_io.write)
+    try:
+        sender.send(trans_file)
+    except Exception as e:
+        _print(str(e))
+    serial_io.close()
 
 
 if __name__ == "__main__":

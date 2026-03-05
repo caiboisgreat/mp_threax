@@ -883,6 +883,9 @@ typedef unsigned long long uintmax_t;
 
 
 
+#define MICROPY_CPYTHON_COMPAT (1)
+
+
 
 
 
@@ -1124,7 +1127,7 @@ typedef unsigned long long uintmax_t;
 extern void mp_bluetooth_nimble_hci_uart_process(_Bool run_events);
 extern void mp_bluetooth_nimble_os_callout_process(void);
 #define MICROPY_EVENT_POLL_HOOK do { mp_bluetooth_nimble_hci_uart_process(true); mp_bluetooth_nimble_os_callout_process(); } while (0);
-# 272 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 275 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_PY_OPENAMP_CONFIG_FILE "openamp_config_port.h"
 
 
@@ -1137,7 +1140,7 @@ extern void mp_bluetooth_nimble_os_callout_process(void);
 typedef intptr_t mp_int_t;
 typedef uintptr_t mp_uint_t;
 typedef long mp_off_t;
-# 295 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 298 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define assert(cond) ((void)((cond) ? 0 : (__builtin_trap(), 0)))
 
 
@@ -1157,7 +1160,7 @@ typedef long mp_off_t;
 
 
 #define alloca __builtin_alloca
-# 331 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 334 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_MIN_USE_CORTEX_CPU (0)
 
 
@@ -1856,22 +1859,7 @@ typedef float mp_float_t;
 
 
 #define MICROPY_FLOAT_HIGH_QUALITY_HASH (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_EVERYTHING)
-
-
-
-
-
-
-
-#define MICROPY_CPYTHON_COMPAT (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_CORE_FEATURES)
-
-
-
-
-
-
-
-
+# 1028 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_FULL_CHECKS (MICROPY_CONFIG_ROM_LEVEL_AT_LEAST_CORE_FEATURES)
 
 
@@ -3122,6 +3110,9 @@ Q(portrait)
 
 
 Q(UART)
+Q(UART2)
+Q(UART3)
+Q(REPL_UART)
 Q(baudrate)
 Q(bits)
 Q(parity)
@@ -3146,6 +3137,9 @@ Q(osTimer)
 Q(start)
 Q(stop)
 Q(delete_timer)
+Q(test_attr)
+Q(test_value)
+
 
 Q(A0)
 
@@ -3947,6 +3941,12 @@ Q(RAW)
 
 Q(RCC)
 
+Q(REPL_UART)
+
+Q(REPL_UART)
+
+Q(REPL_UART)
+
 Q(RGB565)
 
 Q(RTC)
@@ -4112,6 +4112,18 @@ Q(TypeError)
 Q(UART)
 
 Q(UART)
+
+Q(UART2)
+
+Q(UART2)
+
+Q(UART2)
+
+Q(UART3)
+
+Q(UART3)
+
+Q(UART3)
 
 Q(UART4)
 
@@ -4293,6 +4305,10 @@ Q(__class__)
 
 Q(__class__)
 
+Q(__class__)
+
+Q(__class__)
+
 Q(__complex__)
 
 Q(__contains__)
@@ -4458,8 +4474,6 @@ Q(__mod__)
 Q(__module__)
 
 Q(__mul__)
-
-Q(__name__)
 
 Q(__name__)
 
@@ -6320,10 +6334,6 @@ Q(os)
 Q(os)
 
 Q(os)
-
-Q(osTimer)
-
-Q(osTimer)
 
 Q(osTimer)
 
