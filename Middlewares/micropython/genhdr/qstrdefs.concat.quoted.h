@@ -284,6 +284,26 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(deinit)"
 "Q(portrait)"
 
+// machine.UART class
+"Q(UART)"
+"Q(baudrate)"
+"Q(bits)"
+"Q(parity)"
+"Q(stop)"
+"Q(flow)"
+"Q(timeout)"
+"Q(timeout_char)"
+"Q(rxbuf)"
+"Q(read_buf_len)"
+"Q(txdone)"
+"Q(RTS)"
+"Q(CTS)"
+"Q(IRQ_RXIDLE)"
+"Q(IRQ_RX)"
+// IRQ related (for mpirq.c)
+"Q(handler)"
+"Q(trigger)"
+"Q(hard)"
 
 "Q(A0)"
 
@@ -562,6 +582,12 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(CERT_OPTIONAL)"
 
 "Q(CERT_REQUIRED)"
+
+"Q(CTS)"
+
+"Q(CTS)"
+
+"Q(CTS)"
 
 "Q(CancelledError)"
 
@@ -913,6 +939,18 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(IRQ_RISING)"
 
+"Q(IRQ_RX)"
+
+"Q(IRQ_RX)"
+
+"Q(IRQ_RX)"
+
+"Q(IRQ_RXIDLE)"
+
+"Q(IRQ_RXIDLE)"
+
+"Q(IRQ_RXIDLE)"
+
 "Q(IWDG)"
 
 "Q(ImportError)"
@@ -1071,6 +1109,12 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(RTC)"
 
+"Q(RTS)"
+
+"Q(RTS)"
+
+"Q(RTS)"
+
 "Q(RingIO)"
 
 "Q(RingIO)"
@@ -1222,6 +1266,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(TypeError)"
 
 "Q(TypeError)"
+
+"Q(UART)"
+
+"Q(UART)"
 
 "Q(UART4)"
 
@@ -1893,6 +1941,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(any)"
 
+"Q(any)"
+
 "Q(append)"
 
 "Q(append)"
@@ -1941,6 +1991,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(baudrate)"
 
+"Q(baudrate)"
+
+"Q(baudrate)"
+
 "Q(bin)"
 
 "Q(binascii)"
@@ -1952,6 +2006,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(binascii)"
 
 "Q(bind)"
+
+"Q(bits)"
+
+"Q(bits)"
 
 "Q(bits)"
 
@@ -2207,6 +2265,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(deinit)"
 
+"Q(deinit)"
+
 "Q(delattr)"
 
 "Q(delay)"
@@ -2373,11 +2433,19 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(flags)"
 
+"Q(flags)"
+
 "Q(float)"
 
 "Q(float)"
 
 "Q(floor)"
+
+"Q(flow)"
+
+"Q(flow)"
+
+"Q(flush)"
 
 "Q(flush)"
 
@@ -2414,6 +2482,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(frozenset)"
 
 "Q(frozenset)"
+
+"Q(function)"
+
+"Q(function)"
 
 "Q(function)"
 
@@ -2893,6 +2965,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(group)"
 
+"Q(handler)"
+
+"Q(hard)"
+
 "Q(hasattr)"
 
 "Q(hash)"
@@ -2981,6 +3057,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(init)"
 
+"Q(init)"
+
 "Q(input)"
 
 "Q(insert)"
@@ -3018,6 +3096,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(ioctl)"
 
 "Q(ipoll)"
+
+"Q(irq)"
 
 "Q(irq)"
 
@@ -3395,6 +3475,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(pagesize)"
 
+"Q(parity)"
+
+"Q(parity)"
+
 "Q(partition)"
 
 "Q(path)"
@@ -3561,6 +3645,12 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(read)"
 
+"Q(read)"
+
+"Q(read_buf_len)"
+
+"Q(read_buf_len)"
+
 "Q(readblocks)"
 
 "Q(readblocks)"
@@ -3594,6 +3684,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(readinto)"
 
 "Q(readinto)"
+
+"Q(readinto)"
+
+"Q(readline)"
 
 "Q(readline)"
 
@@ -3690,6 +3784,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(rsplit)"
 
 "Q(rstrip)"
+
+"Q(rxbuf)"
+
+"Q(rxbuf)"
 
 "Q(scan)"
 
@@ -3901,6 +3999,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(stop)"
 
+"Q(stop)"
+
+"Q(stop)"
+
 "Q(str)"
 
 "Q(str)"
@@ -4011,6 +4113,14 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(timeout)"
 
+"Q(timeout)"
+
+"Q(timeout)"
+
+"Q(timeout_char)"
+
+"Q(timeout_char)"
+
 "Q(timing)"
 
 "Q(tls)"
@@ -4025,6 +4135,10 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(toggle)"
 
+"Q(trigger)"
+
+"Q(trigger)"
+
 "Q(trunc)"
 
 "Q(tuple)"
@@ -4032,6 +4146,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(tuple)"
 
 "Q(tuple)"
+
+"Q(txdone)"
 
 "Q(type)"
 
@@ -4132,6 +4248,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(width)"
 
 "Q(wrap_socket)"
+
+"Q(write)"
 
 "Q(write)"
 

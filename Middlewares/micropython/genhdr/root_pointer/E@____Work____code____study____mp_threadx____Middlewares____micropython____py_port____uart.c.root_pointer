@@ -1,0 +1,1 @@
+MP_REGISTER_ROOT_POINTER(struct _machine_uart_obj_t *machine_uart_obj_all[(6) + (0)]);

@@ -168,5 +168,7 @@ void mp_hal_pin_high(const machine_pin_obj_t *pin);
 // Alternate-function identifiers (minimal set for this port)
 #define AF_FN_I2C                        (1)
 #define AF_FN_SPI                        (2)
+#define AF_FN_UART                       (7)  // STM32F4 UART uses AF7
+#define AF_FN_LPUART                     (8)  // STM32F405 has no LPUART, but defined for compatibility
 
 #endif // MICROPY_INCLUDED_PY_PORT_PIN_H

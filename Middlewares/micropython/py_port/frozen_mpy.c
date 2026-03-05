@@ -54,6 +54,7 @@ enum {
     MP_QSTR_DEFAULT_CONFIG,
     MP_QSTR_DataBuffer,
     MP_QSTR_EOT,
+    MP_QSTR_FileNotFoundError,
     MP_QSTR_GzipFile,
     MP_QSTR_Hello,
     MP_QSTR_Hello_comma__space_Test_bang_,
@@ -65,6 +66,7 @@ enum {
     MP_QSTR_MovingAverage,
     MP_QSTR_NAK,
     MP_QSTR_PORTRAIT_UPSIDEDOWN,
+    MP_QSTR_Queue,
     MP_QSTR_RingBuffer,
     MP_QSTR_SOH,
     MP_QSTR_SSLError,
@@ -95,6 +97,11 @@ enum {
     MP_QSTR__bracket_open__bracket_close_,
     MP_QSTR___author__,
     MP_QSTR___date__,
+    MP_QSTR___deque,
+    MP_QSTR___lock_queue,
+    MP_QSTR___lock_signal,
+    MP_QSTR___pop,
+    MP_QSTR___put,
     MP_QSTR___version__,
     MP_QSTR__calc_checksum,
     MP_QSTR__calc_crc,
@@ -117,6 +124,7 @@ enum {
     MP_QSTR__remaining_data_length,
     MP_QSTR__send_cmd,
     MP_QSTR__send_end_packet,
+    MP_QSTR__thread,
     MP_QSTR__thread_dot_py,
     MP_QSTR__timer_cb,
     MP_QSTR__tls,
@@ -140,6 +148,7 @@ enum {
     MP_QSTR_c,
     MP_QSTR_calculate_checksum,
     MP_QSTR_calib,
+    MP_QSTR_can_space_not_space_find_colon__space__squot__percent_s_squot_,
     MP_QSTR_char,
     MP_QSTR_check_file,
     MP_QSTR_checksum,
@@ -156,6 +165,8 @@ enum {
     MP_QSTR_debug,
     MP_QSTR_decompress,
     MP_QSTR_dot_no_clip,
+    MP_QSTR_dstFile,
+    MP_QSTR_empty,
     MP_QSTR_enter_ymodem,
     MP_QSTR_error_count,
     MP_QSTR_exc,
@@ -163,6 +174,8 @@ enum {
     MP_QSTR_fast_spi,
     MP_QSTR_feed_wdt,
     MP_QSTR_fg,
+    MP_QSTR_file_copy,
+    MP_QSTR_file_type,
     MP_QSTR_filename,
     MP_QSTR_fileobj,
     MP_QSTR_filepath,
@@ -181,6 +194,7 @@ enum {
     MP_QSTR_h,
     MP_QSTR_head,
     MP_QSTR_hex_dump,
+    MP_QSTR_i,
     MP_QSTR_i2c,
     MP_QSTR_i2c_addr,
     MP_QSTR_in_max,
@@ -188,6 +202,7 @@ enum {
     MP_QSTR_indent,
     MP_QSTR_is_empty,
     MP_QSTR_is_full,
+    MP_QSTR_item,
     MP_QSTR_jpeg,
     MP_QSTR_jpeg_data,
     MP_QSTR_jpeg_start,
@@ -200,6 +215,7 @@ enum {
     MP_QSTR_map_range,
     MP_QSTR_max_val,
     MP_QSTR_min_val,
+    MP_QSTR_mkdirs,
     MP_QSTR_mtime,
     MP_QSTR_myutils_space__0x6a21__0x5757__0x81ea__0x6d4b__0x8bd5_,
     MP_QSTR_myutils_dot_py,
@@ -211,15 +227,20 @@ enum {
     MP_QSTR_out_max,
     MP_QSTR_out_min,
     MP_QSTR_packet_size,
-    MP_QSTR_parity,
     MP_QSTR_pat,
+    MP_QSTR_path_dirname,
+    MP_QSTR_path_exists,
+    MP_QSTR_path_getsize,
     MP_QSTR_pos,
     MP_QSTR_print_dict,
     MP_QSTR_program,
     MP_QSTR_program_features,
     MP_QSTR_pwr,
     MP_QSTR_pyam,
+    MP_QSTR_ql_fs_dot_py,
+    MP_QSTR_queue_dot_py,
     MP_QSTR_rbsb,
+    MP_QSTR_read_json,
     MP_QSTR_reader,
     MP_QSTR_rect_interior,
     MP_QSTR_rect_interior_no_clip,
@@ -229,6 +250,7 @@ enum {
     MP_QSTR_release,
     MP_QSTR_release_space_unlocked_space_lock,
     MP_QSTR_retry,
+    MP_QSTR_rmdirs,
     MP_QSTR_rzsz,
     MP_QSTR_s,
     MP_QSTR_save,
@@ -254,6 +276,7 @@ enum {
     MP_QSTR_source,
     MP_QSTR_source_colon__space__percent_s_comma__space_target_colon__space__percent_s,
     MP_QSTR_spi,
+    MP_QSTR_srcFile,
     MP_QSTR_ssl_dot_py,
     MP_QSTR_ssl_context,
     MP_QSTR_stack_size,
@@ -265,11 +288,13 @@ enum {
     MP_QSTR_tb,
     MP_QSTR_total_len,
     MP_QSTR_total_size,
+    MP_QSTR_touch,
     MP_QSTR_touch_config,
     MP_QSTR_trans,
     MP_QSTR_trans_file,
     MP_QSTR_trans_file_colon__space__percent_s,
     MP_QSTR_uart,
+    MP_QSTR_ujson,
     MP_QSTR_unknown_space_connect_space_value,
     MP_QSTR_uos,
     MP_QSTR_utime,
@@ -282,6 +307,7 @@ enum {
     MP_QSTR_window,
     MP_QSTR_window_size,
     MP_QSTR_wrapper,
+    MP_QSTR_write_json,
     MP_QSTR_writer,
     MP_QSTR_x2,
     MP_QSTR_xmodem,
@@ -323,6 +349,7 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     10683,
     17653,
     42971,
+    35192,
     48391,
     11783,
     27932,
@@ -334,6 +361,7 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     19090,
     54273,
     46337,
+    4788,
     63863,
     5201,
     27025,
@@ -364,6 +392,11 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     30179,
     26448,
     50641,
+    26021,
+    13696,
+    47407,
+    41162,
+    40212,
     38975,
     11237,
     52634,
@@ -386,6 +419,7 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     5930,
     31347,
     44097,
+    724,
     42611,
     10883,
     3025,
@@ -409,6 +443,7 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     46534,
     7219,
     60864,
+    44085,
     59101,
     48026,
     16968,
@@ -425,6 +460,8 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     21972,
     64354,
     30189,
+    49600,
+    57264,
     46181,
     14401,
     9435,
@@ -432,6 +469,8 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     15088,
     26431,
     28228,
+    24089,
+    22756,
     21732,
     19460,
     48974,
@@ -450,6 +489,7 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     46541,
     24045,
     2819,
+    46540,
     24413,
     7953,
     10889,
@@ -457,6 +497,7 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     13945,
     10581,
     18707,
+    8592,
     59261,
     4178,
     59938,
@@ -469,6 +510,7 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     4857,
     40213,
     59275,
+    26991,
     9213,
     25321,
     13633,
@@ -480,15 +522,20 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     36160,
     35934,
     11223,
-    1346,
     29408,
+    41167,
+    2519,
+    30788,
     29481,
     43057,
     40657,
     62089,
     28720,
     45024,
+    61269,
+    36147,
     60324,
+    11248,
     20288,
     5322,
     32413,
@@ -498,6 +545,7 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     36844,
     51606,
     685,
+    36758,
     52644,
     46550,
     33700,
@@ -523,6 +571,7 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     30904,
     30661,
     36303,
+    61217,
     48942,
     36681,
     15153,
@@ -534,11 +583,13 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     28563,
     41279,
     57757,
+    58752,
     39189,
     17759,
     61478,
     39562,
     6775,
+    12520,
     1144,
     26604,
     40421,
@@ -551,6 +602,7 @@ const qstr_hash_t mp_qstr_frozen_const_hashes[] = {
     50057,
     36051,
     3766,
+    51135,
     48106,
     29007,
     51923,
@@ -592,6 +644,7 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     14,
     10,
     3,
+    17,
     8,
     5,
     12,
@@ -603,6 +656,7 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     13,
     3,
     19,
+    5,
     10,
     3,
     8,
@@ -633,6 +687,11 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     2,
     10,
     8,
+    7,
+    12,
+    13,
+    5,
+    5,
     11,
     14,
     9,
@@ -655,6 +714,7 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     22,
     9,
     16,
+    7,
     10,
     9,
     4,
@@ -678,6 +738,7 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     1,
     18,
     5,
+    18,
     4,
     10,
     8,
@@ -694,6 +755,8 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     5,
     10,
     11,
+    7,
+    5,
     12,
     11,
     3,
@@ -701,6 +764,8 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     8,
     8,
     2,
+    9,
+    9,
     8,
     7,
     8,
@@ -719,6 +784,7 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     1,
     4,
     8,
+    1,
     3,
     8,
     6,
@@ -726,6 +792,7 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     6,
     8,
     7,
+    4,
     4,
     9,
     10,
@@ -738,6 +805,7 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     9,
     7,
     7,
+    6,
     5,
     23,
     10,
@@ -749,15 +817,20 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     7,
     7,
     11,
-    6,
     3,
+    12,
+    11,
+    12,
     3,
     10,
     7,
     16,
     3,
     4,
+    8,
+    8,
     4,
+    9,
     6,
     13,
     21,
@@ -767,6 +840,7 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     7,
     21,
     5,
+    6,
     4,
     1,
     4,
@@ -792,6 +866,7 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     6,
     22,
     3,
+    7,
     6,
     11,
     10,
@@ -803,11 +878,13 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     2,
     9,
     10,
+    5,
     12,
     5,
     10,
     14,
     4,
+    5,
     21,
     3,
     5,
@@ -820,6 +897,7 @@ const qstr_len_t mp_qstr_frozen_const_lengths[] = {
     6,
     11,
     7,
+    10,
     6,
     2,
     6,
@@ -840,7 +918,7 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
     MP_QSTRnumber_of, // previous pool size
     true, // is_sorted
     10, // allocated entries
-    266, // used entries
+    292, // used entries
     (qstr_hash_t *)mp_qstr_frozen_const_hashes,
     (qstr_len_t *)mp_qstr_frozen_const_lengths,
     {
@@ -870,6 +948,7 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "DEFAULT_CONFIG",
         "DataBuffer",
         "EOT",
+        "FileNotFoundError",
         "GzipFile",
         "Hello",
         "Hello, Test!",
@@ -881,6 +960,7 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "MovingAverage",
         "NAK",
         "PORTRAIT_UPSIDEDOWN",
+        "Queue",
         "RingBuffer",
         "SOH",
         "SSLError",
@@ -911,6 +991,11 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "[]",
         "__author__",
         "__date__",
+        "__deque",
+        "__lock_queue",
+        "__lock_signal",
+        "__pop",
+        "__put",
         "__version__",
         "_calc_checksum",
         "_calc_crc",
@@ -933,6 +1018,7 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "_remaining_data_length",
         "_send_cmd",
         "_send_end_packet",
+        "_thread",
         "_thread.py",
         "_timer_cb",
         "_tls",
@@ -956,6 +1042,7 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "c",
         "calculate_checksum",
         "calib",
+        "can not find: '%s'",
         "char",
         "check_file",
         "checksum",
@@ -972,6 +1059,8 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "debug",
         "decompress",
         "dot_no_clip",
+        "dstFile",
+        "empty",
         "enter_ymodem",
         "error_count",
         "exc",
@@ -979,6 +1068,8 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "fast_spi",
         "feed_wdt",
         "fg",
+        "file_copy",
+        "file_type",
         "filename",
         "fileobj",
         "filepath",
@@ -997,6 +1088,7 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "h",
         "head",
         "hex_dump",
+        "i",
         "i2c",
         "i2c_addr",
         "in_max",
@@ -1004,6 +1096,7 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "indent",
         "is_empty",
         "is_full",
+        "item",
         "jpeg",
         "jpeg_data",
         "jpeg_start",
@@ -1016,6 +1109,7 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "map_range",
         "max_val",
         "min_val",
+        "mkdirs",
         "mtime",
         "\x6d\x79\x75\x74\x69\x6c\x73\x20\xe6\xa8\xa1\xe5\x9d\x97\xe8\x87\xaa\xe6\xb5\x8b\xe8\xaf\x95",
         "myutils.py",
@@ -1027,15 +1121,20 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "out_max",
         "out_min",
         "packet_size",
-        "parity",
         "pat",
+        "path_dirname",
+        "path_exists",
+        "path_getsize",
         "pos",
         "print_dict",
         "program",
         "program_features",
         "pwr",
         "pyam",
+        "ql_fs.py",
+        "queue.py",
         "rbsb",
+        "read_json",
         "reader",
         "rect_interior",
         "rect_interior_no_clip",
@@ -1045,6 +1144,7 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "release",
         "release unlocked lock",
         "retry",
+        "rmdirs",
         "rzsz",
         "s",
         "save",
@@ -1070,6 +1170,7 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "source",
         "source: %s, target: %s",
         "spi",
+        "srcFile",
         "ssl.py",
         "ssl_context",
         "stack_size",
@@ -1081,11 +1182,13 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "tb",
         "total_len",
         "total_size",
+        "touch",
         "touch_config",
         "trans",
         "trans_file",
         "trans_file: %s",
         "uart",
+        "ujson",
         "unknown connect value",
         "uos",
         "utime",
@@ -1098,6 +1201,7 @@ const qstr_pool_t mp_qstr_frozen_const_pool = {
         "window",
         "window_size",
         "wrapper",
+        "write_json",
         "writer",
         "x2",
         "xmodem",
@@ -13639,6 +13743,1676 @@ static const mp_frozen_module_t frozen_module_ymodem = {
 };
 
 ////////////////////////////////////////////////////////////////////////////////
+// frozen module ql_fs
+// - original source file: E:\Work\code\study\mp_threadx\Middlewares\micropython\py_port\frozen_build\ql_fs.mpy
+// - frozen file name: ql_fs.py
+// - .mpy header: 4d:06:00:1f
+
+// frozen bytecode for file ql_fs.py, scope ql_fs__lt_module_gt_
+static const byte fun_data_ql_fs__lt_module_gt_[92] = {
+    0x18,0x2e, // prelude
+    0x01, // names: <module>
+    0x80,0x11,0x26,0x66,0x8b,0x08,0x84,0x0d,0x84,0x0f,0x84,0x12,0x84,0x07,0x84,0x0b,0x84,0x0e,0x8a,0x13,0x64,0x20, // code info
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0x51, // LOAD_CONST_NONE
+    0x1b,0x02, // IMPORT_NAME 'uos'
+    0x16,0x02, // STORE_NAME 'uos'
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0x51, // LOAD_CONST_NONE
+    0x1b,0x03, // IMPORT_NAME 'ujson'
+    0x16,0x03, // STORE_NAME 'ujson'
+    0x54, // LOAD_BUILD_CLASS
+    0x32,0x00, // MAKE_FUNCTION 0
+    0x10,0x04, // LOAD_CONST_STRING 'FileNotFoundError'
+    0x11,0x26, // LOAD_NAME 'Exception'
+    0x34,0x03, // CALL_FUNCTION 3
+    0x16,0x04, // STORE_NAME 'FileNotFoundError'
+    0x32,0x01, // MAKE_FUNCTION 1
+    0x16,0x06, // STORE_NAME 'path_exists'
+    0x32,0x02, // MAKE_FUNCTION 2
+    0x16,0x08, // STORE_NAME 'file_copy'
+    0x32,0x03, // MAKE_FUNCTION 3
+    0x16,0x0e, // STORE_NAME 'path_dirname'
+    0x32,0x04, // MAKE_FUNCTION 4
+    0x16,0x12, // STORE_NAME 'path_getsize'
+    0x32,0x05, // MAKE_FUNCTION 5
+    0x16,0x13, // STORE_NAME 'mkdirs'
+    0x32,0x06, // MAKE_FUNCTION 6
+    0x16,0x16, // STORE_NAME 'rmdirs'
+    0x81, // LOAD_CONST_SMALL_INT 1
+    0x10,0x05, // LOAD_CONST_STRING 'json'
+    0x2a,0x02, // BUILD_TUPLE 2
+    0x53, // LOAD_NULL
+    0x33,0x07, // MAKE_FUNCTION_DEFARGS 7
+    0x16,0x19, // STORE_NAME 'touch'
+    0x32,0x08, // MAKE_FUNCTION 8
+    0x16,0x1f, // STORE_NAME 'write_json'
+    0x32,0x09, // MAKE_FUNCTION 9
+    0x16,0x20, // STORE_NAME 'read_json'
+    0x51, // LOAD_CONST_NONE
+    0x63, // RETURN_VALUE
+};
+// child of ql_fs__lt_module_gt_
+// frozen bytecode for file ql_fs.py, scope ql_fs_FileNotFoundError
+static const byte fun_data_ql_fs_FileNotFoundError[24] = {
+    0x00,0x08, // prelude
+    0x04, // names: FileNotFoundError
+    0x88,0x16,0x64, // code info
+    0x11,0x27, // LOAD_NAME '__name__'
+    0x16,0x28, // STORE_NAME '__module__'
+    0x10,0x04, // LOAD_CONST_STRING 'FileNotFoundError'
+    0x16,0x29, // STORE_NAME '__qualname__'
+    0x32,0x00, // MAKE_FUNCTION 0
+    0x16,0x23, // STORE_NAME '__init__'
+    0x32,0x01, // MAKE_FUNCTION 1
+    0x16,0x25, // STORE_NAME '__str__'
+    0x51, // LOAD_CONST_NONE
+    0x63, // RETURN_VALUE
+};
+// child of ql_fs_FileNotFoundError
+// frozen bytecode for file ql_fs.py, scope ql_fs_FileNotFoundError___init__
+static const byte fun_data_ql_fs_FileNotFoundError___init__[13] = {
+    0x1a,0x0a, // prelude
+    0x23,0x34,0x24, // names: __init__, self, value
+    0x80,0x17, // code info
+    0xb1, // LOAD_FAST 1
+    0xb0, // LOAD_FAST 0
+    0x18,0x24, // STORE_ATTR 'value'
+    0x51, // LOAD_CONST_NONE
+    0x63, // RETURN_VALUE
+};
+#if MICROPY_PERSISTENT_CODE_SAVE
+static const mp_raw_code_truncated_t proto_fun_ql_fs_FileNotFoundError___init__ = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_ql_fs_FileNotFoundError___init__,
+    .children = NULL,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 13,
+    .n_children = 0,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 4,
+        .n_exc_stack = 0,
+        .scope_flags = 0,
+        .n_pos_args = 2,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name_idx = 35,
+        .line_info = fun_data_ql_fs_FileNotFoundError___init__ + 5,
+        .line_info_top = fun_data_ql_fs_FileNotFoundError___init__ + 7,
+        .opcodes = fun_data_ql_fs_FileNotFoundError___init__ + 7,
+    },
+    #endif
+    #endif
+};
+#else
+#define proto_fun_ql_fs_FileNotFoundError___init__ fun_data_ql_fs_FileNotFoundError___init__[0]
+#endif
+
+// child of ql_fs_FileNotFoundError
+// frozen bytecode for file ql_fs.py, scope ql_fs_FileNotFoundError___str__
+static const byte fun_data_ql_fs_FileNotFoundError___str__[14] = {
+    0x11,0x08, // prelude
+    0x25,0x34, // names: __str__, self
+    0x80,0x1a, // code info
+    0x12,0x35, // LOAD_GLOBAL 'repr'
+    0xb0, // LOAD_FAST 0
+    0x13,0x24, // LOAD_ATTR 'value'
+    0x34,0x01, // CALL_FUNCTION 1
+    0x63, // RETURN_VALUE
+};
+#if MICROPY_PERSISTENT_CODE_SAVE
+static const mp_raw_code_truncated_t proto_fun_ql_fs_FileNotFoundError___str__ = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_ql_fs_FileNotFoundError___str__,
+    .children = NULL,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 14,
+    .n_children = 0,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 3,
+        .n_exc_stack = 0,
+        .scope_flags = 0,
+        .n_pos_args = 1,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name_idx = 37,
+        .line_info = fun_data_ql_fs_FileNotFoundError___str__ + 4,
+        .line_info_top = fun_data_ql_fs_FileNotFoundError___str__ + 6,
+        .opcodes = fun_data_ql_fs_FileNotFoundError___str__ + 6,
+    },
+    #endif
+    #endif
+};
+#else
+#define proto_fun_ql_fs_FileNotFoundError___str__ fun_data_ql_fs_FileNotFoundError___str__[0]
+#endif
+
+static const mp_raw_code_t *const children_ql_fs_FileNotFoundError[] = {
+    (const mp_raw_code_t *)&proto_fun_ql_fs_FileNotFoundError___init__,
+    (const mp_raw_code_t *)&proto_fun_ql_fs_FileNotFoundError___str__,
+};
+
+static const mp_raw_code_truncated_t proto_fun_ql_fs_FileNotFoundError = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_ql_fs_FileNotFoundError,
+    .children = (void *)&children_ql_fs_FileNotFoundError,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 24,
+    .n_children = 2,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 1,
+        .n_exc_stack = 0,
+        .scope_flags = 0,
+        .n_pos_args = 0,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name_idx = 4,
+        .line_info = fun_data_ql_fs_FileNotFoundError + 3,
+        .line_info_top = fun_data_ql_fs_FileNotFoundError + 6,
+        .opcodes = fun_data_ql_fs_FileNotFoundError + 6,
+    },
+    #endif
+    #endif
+};
+
+// child of ql_fs__lt_module_gt_
+// frozen bytecode for file ql_fs.py, scope ql_fs_path_exists
+static const byte fun_data_ql_fs_path_exists[56] = {
+    0xb9,0x02,0x14, // prelude
+    0x06,0x2a, // names: path_exists, path
+    0x80,0x1e,0x23,0x42,0x22,0x29,0x42,0x4d, // code info
+    0xb0, // LOAD_FAST 0
+    0x43,0x42, // POP_JUMP_IF_TRUE 2
+    0x50, // LOAD_CONST_FALSE
+    0x63, // RETURN_VALUE
+    0x48,0x0f, // SETUP_EXCEPT 15
+    0x12,0x02, // LOAD_GLOBAL 'uos'
+    0x14,0x07, // LOAD_METHOD 'stat'
+    0xb0, // LOAD_FAST 0
+    0x36,0x01, // CALL_METHOD 1
+    0x44,0x42, // POP_JUMP_IF_FALSE 2
+    0x52, // LOAD_CONST_TRUE
+    0x63, // RETURN_VALUE
+    0x50, // LOAD_CONST_FALSE
+    0x63, // RETURN_VALUE
+    0x4a,0x13, // POP_EXCEPT_JUMP 19
+    0x57, // DUP_TOP
+    0x12,0x26, // LOAD_GLOBAL 'Exception'
+    0xdf, // BINARY_OP 8 <exception match>
+    0x44,0x4c, // POP_JUMP_IF_FALSE 12
+    0xc1, // STORE_FAST 1
+    0x49,0x02, // SETUP_FINALLY 2
+    0x50, // LOAD_CONST_FALSE
+    0x63, // RETURN_VALUE
+    0x51, // LOAD_CONST_NONE
+    0xc1, // STORE_FAST 1
+    0x28,0x01, // DELETE_FAST 1
+    0x5d, // END_FINALLY
+    0x4a,0x01, // POP_EXCEPT_JUMP 1
+    0x5d, // END_FINALLY
+    0x51, // LOAD_CONST_NONE
+    0x63, // RETURN_VALUE
+};
+#if MICROPY_PERSISTENT_CODE_SAVE
+static const mp_raw_code_truncated_t proto_fun_ql_fs_path_exists = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_ql_fs_path_exists,
+    .children = NULL,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 56,
+    .n_children = 0,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 8,
+        .n_exc_stack = 2,
+        .scope_flags = 0,
+        .n_pos_args = 1,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name_idx = 6,
+        .line_info = fun_data_ql_fs_path_exists + 5,
+        .line_info_top = fun_data_ql_fs_path_exists + 13,
+        .opcodes = fun_data_ql_fs_path_exists + 13,
+    },
+    #endif
+    #endif
+};
+#else
+#define proto_fun_ql_fs_path_exists fun_data_ql_fs_path_exists[0]
+#endif
+
+// child of ql_fs__lt_module_gt_
+// frozen bytecode for file ql_fs.py, scope ql_fs_file_copy
+static const byte fun_data_ql_fs_file_copy[86] = {
+    0x3a,0x1e, // prelude
+    0x08,0x2b,0x2c, // names: file_copy, dstFile, srcFile
+    0x80,0x2b,0x27,0x42,0x28,0x28,0x29,0x22,0x27,0x2c,0x26,0x26, // code info
+    0x12,0x06, // LOAD_GLOBAL 'path_exists'
+    0xb1, // LOAD_FAST 1
+    0x34,0x01, // CALL_FUNCTION 1
+    0x43,0x42, // POP_JUMP_IF_TRUE 2
+    0x50, // LOAD_CONST_FALSE
+    0x63, // RETURN_VALUE
+    0x12,0x2d, // LOAD_GLOBAL 'open'
+    0xb0, // LOAD_FAST 0
+    0x10,0x09, // LOAD_CONST_STRING 'wb+'
+    0x34,0x02, // CALL_FUNCTION 2
+    0xc2, // STORE_FAST 2
+    0x12,0x2d, // LOAD_GLOBAL 'open'
+    0xb1, // LOAD_FAST 1
+    0x10,0x0a, // LOAD_CONST_STRING 'rb'
+    0x34,0x02, // CALL_FUNCTION 2
+    0xc3, // STORE_FAST 3
+    0xb3, // LOAD_FAST 3
+    0x14,0x0b, // LOAD_METHOD 'read'
+    0x22,0xa0,0x00, // LOAD_CONST_SMALL_INT 4096
+    0x36,0x01, // CALL_METHOD 1
+    0xc4, // STORE_FAST 4
+    0x42,0x50, // JUMP 16
+    0xb2, // LOAD_FAST 2
+    0x14,0x0c, // LOAD_METHOD 'write'
+    0xb4, // LOAD_FAST 4
+    0x36,0x01, // CALL_METHOD 1
+    0x59, // POP_TOP
+    0xb3, // LOAD_FAST 3
+    0x14,0x0b, // LOAD_METHOD 'read'
+    0x22,0xa0,0x00, // LOAD_CONST_SMALL_INT 4096
+    0x36,0x01, // CALL_METHOD 1
+    0xc4, // STORE_FAST 4
+    0xb4, // LOAD_FAST 4
+    0x43,0x2d, // POP_JUMP_IF_TRUE -19
+    0xb2, // LOAD_FAST 2
+    0x14,0x0d, // LOAD_METHOD 'close'
+    0x36,0x00, // CALL_METHOD 0
+    0x59, // POP_TOP
+    0xb3, // LOAD_FAST 3
+    0x14,0x0d, // LOAD_METHOD 'close'
+    0x36,0x00, // CALL_METHOD 0
+    0x59, // POP_TOP
+    0x52, // LOAD_CONST_TRUE
+    0x63, // RETURN_VALUE
+};
+#if MICROPY_PERSISTENT_CODE_SAVE
+static const mp_raw_code_truncated_t proto_fun_ql_fs_file_copy = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_ql_fs_file_copy,
+    .children = NULL,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 86,
+    .n_children = 0,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 8,
+        .n_exc_stack = 0,
+        .scope_flags = 0,
+        .n_pos_args = 2,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name_idx = 8,
+        .line_info = fun_data_ql_fs_file_copy + 5,
+        .line_info_top = fun_data_ql_fs_file_copy + 17,
+        .opcodes = fun_data_ql_fs_file_copy + 17,
+    },
+    #endif
+    #endif
+};
+#else
+#define proto_fun_ql_fs_file_copy fun_data_ql_fs_file_copy[0]
+#endif
+
+// child of ql_fs__lt_module_gt_
+// frozen bytecode for file ql_fs.py, scope ql_fs_path_dirname
+static const byte fun_data_ql_fs_path_dirname[85] = {
+    0x41,0x20, // prelude
+    0x0e,0x2a, // names: path_dirname, path
+    0x80,0x3a,0x23,0x43,0x28,0x25,0x23,0x25,0x43,0x23,0x2a,0x25,0x22,0x2f, // code info
+    0xb0, // LOAD_FAST 0
+    0x43,0x43, // POP_JUMP_IF_TRUE 3
+    0x10,0x0f, // LOAD_CONST_STRING ''
+    0x63, // RETURN_VALUE
+    0xb0, // LOAD_FAST 0
+    0x14,0x10, // LOAD_METHOD 'rfind'
+    0x10,0x11, // LOAD_CONST_STRING '/'
+    0x36,0x01, // CALL_METHOD 1
+    0xc1, // STORE_FAST 1
+    0xb1, // LOAD_FAST 1
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0xd7, // BINARY_OP 0 __lt__
+    0x44,0x43, // POP_JUMP_IF_FALSE 3
+    0x10,0x0f, // LOAD_CONST_STRING ''
+    0x63, // RETURN_VALUE
+    0xb1, // LOAD_FAST 1
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0xd9, // BINARY_OP 2 __eq__
+    0x44,0x43, // POP_JUMP_IF_FALSE 3
+    0x10,0x11, // LOAD_CONST_STRING '/'
+    0x63, // RETURN_VALUE
+    0x10,0x0f, // LOAD_CONST_STRING ''
+    0xc2, // STORE_FAST 2
+    0x12,0x2e, // LOAD_GLOBAL 'len'
+    0xb0, // LOAD_FAST 0
+    0x34,0x01, // CALL_FUNCTION 1
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0x42,0x51, // JUMP 17
+    0x57, // DUP_TOP
+    0xc3, // STORE_FAST 3
+    0xb3, // LOAD_FAST 3
+    0xb1, // LOAD_FAST 1
+    0xd9, // BINARY_OP 2 __eq__
+    0x44,0x42, // POP_JUMP_IF_FALSE 2
+    0x42,0x4d, // JUMP 13
+    0xb2, // LOAD_FAST 2
+    0xb0, // LOAD_FAST 0
+    0xb3, // LOAD_FAST 3
+    0x55, // LOAD_SUBSCR
+    0xf2, // BINARY_OP 27 __add__
+    0xc2, // STORE_FAST 2
+    0x81, // LOAD_CONST_SMALL_INT 1
+    0xe5, // BINARY_OP 14 __iadd__
+    0x58, // DUP_TOP_TWO
+    0x5a, // ROT_TWO
+    0xd7, // BINARY_OP 0 __lt__
+    0x43,0x2a, // POP_JUMP_IF_TRUE -22
+    0x59, // POP_TOP
+    0x59, // POP_TOP
+    0xb2, // LOAD_FAST 2
+    0x63, // RETURN_VALUE
+};
+#if MICROPY_PERSISTENT_CODE_SAVE
+static const mp_raw_code_truncated_t proto_fun_ql_fs_path_dirname = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_ql_fs_path_dirname,
+    .children = NULL,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 85,
+    .n_children = 0,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 9,
+        .n_exc_stack = 0,
+        .scope_flags = 0,
+        .n_pos_args = 1,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name_idx = 14,
+        .line_info = fun_data_ql_fs_path_dirname + 4,
+        .line_info_top = fun_data_ql_fs_path_dirname + 18,
+        .opcodes = fun_data_ql_fs_path_dirname + 18,
+    },
+    #endif
+    #endif
+};
+#else
+#define proto_fun_ql_fs_path_dirname fun_data_ql_fs_path_dirname[0]
+#endif
+
+// child of ql_fs__lt_module_gt_
+// frozen bytecode for file ql_fs.py, scope ql_fs_path_getsize
+static const byte fun_data_ql_fs_path_getsize[36] = {
+    0x19,0x0c, // prelude
+    0x12,0x2a, // names: path_getsize, path
+    0x80,0x4c,0x27,0x4a, // code info
+    0x12,0x06, // LOAD_GLOBAL 'path_exists'
+    0xb0, // LOAD_FAST 0
+    0x34,0x01, // CALL_FUNCTION 1
+    0x44,0x4a, // POP_JUMP_IF_FALSE 10
+    0x12,0x02, // LOAD_GLOBAL 'uos'
+    0x14,0x07, // LOAD_METHOD 'stat'
+    0xb0, // LOAD_FAST 0
+    0x36,0x01, // CALL_METHOD 1
+    0x7c, // LOAD_CONST_SMALL_INT -4
+    0x55, // LOAD_SUBSCR
+    0x63, // RETURN_VALUE
+    0x12,0x04, // LOAD_GLOBAL 'FileNotFoundError'
+    0x23,0x00, // LOAD_CONST_OBJ 0
+    0xb0, // LOAD_FAST 0
+    0xf8, // BINARY_OP 33 __mod__
+    0x34,0x01, // CALL_FUNCTION 1
+    0x65, // RAISE_OBJ
+    0x51, // LOAD_CONST_NONE
+    0x63, // RETURN_VALUE
+};
+#if MICROPY_PERSISTENT_CODE_SAVE
+static const mp_raw_code_truncated_t proto_fun_ql_fs_path_getsize = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_ql_fs_path_getsize,
+    .children = NULL,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 36,
+    .n_children = 0,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 4,
+        .n_exc_stack = 0,
+        .scope_flags = 0,
+        .n_pos_args = 1,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name_idx = 18,
+        .line_info = fun_data_ql_fs_path_getsize + 4,
+        .line_info_top = fun_data_ql_fs_path_getsize + 8,
+        .opcodes = fun_data_ql_fs_path_getsize + 8,
+    },
+    #endif
+    #endif
+};
+#else
+#define proto_fun_ql_fs_path_getsize fun_data_ql_fs_path_getsize[0]
+#endif
+
+// child of ql_fs__lt_module_gt_
+// frozen bytecode for file ql_fs.py, scope ql_fs_mkdirs
+static const byte fun_data_ql_fs_mkdirs[88] = {
+    0x59,0x16, // prelude
+    0x13,0x2f, // names: mkdirs, dir
+    0x80,0x53,0x28,0x24,0x29,0x2a,0x28,0x2d,0x26, // code info
+    0xb0, // LOAD_FAST 0
+    0x14,0x14, // LOAD_METHOD 'split'
+    0x10,0x11, // LOAD_CONST_STRING '/'
+    0x36,0x01, // CALL_METHOD 1
+    0xc1, // STORE_FAST 1
+    0xb1, // LOAD_FAST 1
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0x55, // LOAD_SUBSCR
+    0xc2, // STORE_FAST 2
+    0x12,0x30, // LOAD_GLOBAL 'enumerate'
+    0xb1, // LOAD_FAST 1
+    0x34,0x01, // CALL_FUNCTION 1
+    0x5f, // GET_ITER_STACK
+    0x4b,0x35, // FOR_ITER 53
+    0xc3, // STORE_FAST 3
+    0xb2, // LOAD_FAST 2
+    0x44,0x4f, // POP_JUMP_IF_FALSE 15
+    0x12,0x06, // LOAD_GLOBAL 'path_exists'
+    0xb2, // LOAD_FAST 2
+    0x34,0x01, // CALL_FUNCTION 1
+    0x43,0x48, // POP_JUMP_IF_TRUE 8
+    0x12,0x02, // LOAD_GLOBAL 'uos'
+    0x14,0x15, // LOAD_METHOD 'mkdir'
+    0xb2, // LOAD_FAST 2
+    0x36,0x01, // CALL_METHOD 1
+    0x59, // POP_TOP
+    0xb3, // LOAD_FAST 3
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0x55, // LOAD_SUBSCR
+    0x12,0x2e, // LOAD_GLOBAL 'len'
+    0xb1, // LOAD_FAST 1
+    0x34,0x01, // CALL_FUNCTION 1
+    0x81, // LOAD_CONST_SMALL_INT 1
+    0xf3, // BINARY_OP 28 __sub__
+    0xd9, // BINARY_OP 2 __eq__
+    0x44,0x46, // POP_JUMP_IF_FALSE 6
+    0x59, // POP_TOP
+    0x59, // POP_TOP
+    0x59, // POP_TOP
+    0x59, // POP_TOP
+    0x42,0x4f, // JUMP 15
+    0xb2, // LOAD_FAST 2
+    0x10,0x11, // LOAD_CONST_STRING '/'
+    0xf2, // BINARY_OP 27 __add__
+    0xb1, // LOAD_FAST 1
+    0xb3, // LOAD_FAST 3
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0x55, // LOAD_SUBSCR
+    0x81, // LOAD_CONST_SMALL_INT 1
+    0xf2, // BINARY_OP 27 __add__
+    0x55, // LOAD_SUBSCR
+    0xf2, // BINARY_OP 27 __add__
+    0xc2, // STORE_FAST 2
+    0x42,0x09, // JUMP -55
+    0x51, // LOAD_CONST_NONE
+    0x63, // RETURN_VALUE
+};
+#if MICROPY_PERSISTENT_CODE_SAVE
+static const mp_raw_code_truncated_t proto_fun_ql_fs_mkdirs = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_ql_fs_mkdirs,
+    .children = NULL,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 88,
+    .n_children = 0,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 12,
+        .n_exc_stack = 0,
+        .scope_flags = 0,
+        .n_pos_args = 1,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name_idx = 19,
+        .line_info = fun_data_ql_fs_mkdirs + 4,
+        .line_info_top = fun_data_ql_fs_mkdirs + 13,
+        .opcodes = fun_data_ql_fs_mkdirs + 13,
+    },
+    #endif
+    #endif
+};
+#else
+#define proto_fun_ql_fs_mkdirs fun_data_ql_fs_mkdirs[0]
+#endif
+
+// child of ql_fs__lt_module_gt_
+// frozen bytecode for file ql_fs.py, scope ql_fs_rmdirs
+static const byte fun_data_ql_fs_rmdirs[93] = {
+    0x51,0x18, // prelude
+    0x16,0x2f, // names: rmdirs, dir
+    0x80,0x5e,0x28,0x23,0x4a,0x25,0x27,0x34,0x48,0x2a, // code info
+    0x12,0x02, // LOAD_GLOBAL 'uos'
+    0x14,0x17, // LOAD_METHOD 'listdir'
+    0xb0, // LOAD_FAST 0
+    0x36,0x01, // CALL_METHOD 1
+    0xc1, // STORE_FAST 1
+    0xb1, // LOAD_FAST 1
+    0x43,0x4a, // POP_JUMP_IF_TRUE 10
+    0x12,0x02, // LOAD_GLOBAL 'uos'
+    0x14,0x18, // LOAD_METHOD 'remove'
+    0xb0, // LOAD_FAST 0
+    0x36,0x01, // CALL_METHOD 1
+    0x59, // POP_TOP
+    0x42,0x78, // JUMP 56
+    0xb1, // LOAD_FAST 1
+    0x5f, // GET_ITER_STACK
+    0x4b,0x2e, // FOR_ITER 46
+    0xc2, // STORE_FAST 2
+    0xb0, // LOAD_FAST 0
+    0x10,0x11, // LOAD_CONST_STRING '/'
+    0xf2, // BINARY_OP 27 __add__
+    0xb2, // LOAD_FAST 2
+    0xf2, // BINARY_OP 27 __add__
+    0xc2, // STORE_FAST 2
+    0x12,0x31, // LOAD_GLOBAL 'int'
+    0x12,0x02, // LOAD_GLOBAL 'uos'
+    0x14,0x07, // LOAD_METHOD 'stat'
+    0xb2, // LOAD_FAST 2
+    0x36,0x01, // CALL_METHOD 1
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0x55, // LOAD_SUBSCR
+    0x34,0x01, // CALL_FUNCTION 1
+    0x22,0x81,0x80,0x00, // LOAD_CONST_SMALL_INT 16384
+    0xef, // BINARY_OP 24 __and__
+    0x44,0x48, // POP_JUMP_IF_FALSE 8
+    0x12,0x16, // LOAD_GLOBAL 'rmdirs'
+    0xb2, // LOAD_FAST 2
+    0x34,0x01, // CALL_FUNCTION 1
+    0x59, // POP_TOP
+    0x42,0x48, // JUMP 8
+    0x12,0x02, // LOAD_GLOBAL 'uos'
+    0x14,0x18, // LOAD_METHOD 'remove'
+    0xb2, // LOAD_FAST 2
+    0x36,0x01, // CALL_METHOD 1
+    0x59, // POP_TOP
+    0x42,0x10, // JUMP -48
+    0x12,0x16, // LOAD_GLOBAL 'rmdirs'
+    0xb0, // LOAD_FAST 0
+    0x34,0x01, // CALL_FUNCTION 1
+    0x59, // POP_TOP
+    0x51, // LOAD_CONST_NONE
+    0x63, // RETURN_VALUE
+};
+#if MICROPY_PERSISTENT_CODE_SAVE
+static const mp_raw_code_truncated_t proto_fun_ql_fs_rmdirs = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_ql_fs_rmdirs,
+    .children = NULL,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 93,
+    .n_children = 0,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 11,
+        .n_exc_stack = 0,
+        .scope_flags = 0,
+        .n_pos_args = 1,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name_idx = 22,
+        .line_info = fun_data_ql_fs_rmdirs + 4,
+        .line_info_top = fun_data_ql_fs_rmdirs + 14,
+        .opcodes = fun_data_ql_fs_rmdirs + 14,
+    },
+    #endif
+    #endif
+};
+#else
+#define proto_fun_ql_fs_rmdirs fun_data_ql_fs_rmdirs[0]
+#endif
+
+// child of ql_fs__lt_module_gt_
+// frozen bytecode for file ql_fs.py, scope ql_fs_touch
+static const byte fun_data_ql_fs_touch[145] = {
+    0xe0,0x86,0x01,0x24, // prelude
+    0x19,0x32,0x33,0x1b,0x1c, // names: touch, file, data, i, file_type
+    0x80,0x6c,0x29,0x25,0x2c,0x2d,0x50,0x22,0x2a,0x26,0x4f,0x55,0x4a, // code info
+    0xb0, // LOAD_FAST 0
+    0x14,0x1a, // LOAD_METHOD 'find'
+    0x10,0x11, // LOAD_CONST_STRING '/'
+    0xb2, // LOAD_FAST 2
+    0x36,0x02, // CALL_METHOD 2
+    0xc2, // STORE_FAST 2
+    0xb2, // LOAD_FAST 2
+    0x7f, // LOAD_CONST_SMALL_INT -1
+    0xdc, // BINARY_OP 5 __ne__
+    0x44,0x69, // POP_JUMP_IF_FALSE 41
+    0x12,0x06, // LOAD_GLOBAL 'path_exists'
+    0xb0, // LOAD_FAST 0
+    0x51, // LOAD_CONST_NONE
+    0xb2, // LOAD_FAST 2
+    0x2e,0x02, // BUILD_SLICE 2
+    0x55, // LOAD_SUBSCR
+    0x34,0x01, // CALL_FUNCTION 1
+    0x43,0x4d, // POP_JUMP_IF_TRUE 13
+    0x12,0x02, // LOAD_GLOBAL 'uos'
+    0x14,0x15, // LOAD_METHOD 'mkdir'
+    0xb0, // LOAD_FAST 0
+    0x51, // LOAD_CONST_NONE
+    0xb2, // LOAD_FAST 2
+    0x2e,0x02, // BUILD_SLICE 2
+    0x55, // LOAD_SUBSCR
+    0x36,0x01, // CALL_METHOD 1
+    0x59, // POP_TOP
+    0x12,0x19, // LOAD_GLOBAL 'touch'
+    0xb0, // LOAD_FAST 0
+    0xb1, // LOAD_FAST 1
+    0x10,0x1b, // LOAD_CONST_STRING 'i'
+    0xb2, // LOAD_FAST 2
+    0x81, // LOAD_CONST_SMALL_INT 1
+    0xf2, // BINARY_OP 27 __add__
+    0x10,0x1c, // LOAD_CONST_STRING 'file_type'
+    0xb3, // LOAD_FAST 3
+    0x34,0x84,0x02, // CALL_FUNCTION 514
+    0x63, // RETURN_VALUE
+    0x48,0x2b, // SETUP_EXCEPT 43
+    0x12,0x2d, // LOAD_GLOBAL 'open'
+    0xb0, // LOAD_FAST 0
+    0x10,0x1d, // LOAD_CONST_STRING 'w'
+    0x34,0x02, // CALL_FUNCTION 2
+    0x47,0x1e, // SETUP_WITH 30
+    0xc4, // STORE_FAST 4
+    0xb3, // LOAD_FAST 3
+    0x10,0x05, // LOAD_CONST_STRING 'json'
+    0xd9, // BINARY_OP 2 __eq__
+    0x44,0x4f, // POP_JUMP_IF_FALSE 15
+    0xb4, // LOAD_FAST 4
+    0x14,0x0c, // LOAD_METHOD 'write'
+    0x12,0x03, // LOAD_GLOBAL 'ujson'
+    0x14,0x1e, // LOAD_METHOD 'dumps'
+    0xb1, // LOAD_FAST 1
+    0x36,0x01, // CALL_METHOD 1
+    0x36,0x01, // CALL_METHOD 1
+    0x59, // POP_TOP
+    0x42,0x47, // JUMP 7
+    0xb4, // LOAD_FAST 4
+    0x14,0x0c, // LOAD_METHOD 'write'
+    0xb1, // LOAD_FAST 1
+    0x36,0x01, // CALL_METHOD 1
+    0x59, // POP_TOP
+    0x51, // LOAD_CONST_NONE
+    0x5c, // WITH_CLEANUP
+    0x5d, // END_FINALLY
+    0x4a,0x13, // POP_EXCEPT_JUMP 19
+    0x57, // DUP_TOP
+    0x12,0x26, // LOAD_GLOBAL 'Exception'
+    0xdf, // BINARY_OP 8 <exception match>
+    0x44,0x4c, // POP_JUMP_IF_FALSE 12
+    0xc5, // STORE_FAST 5
+    0x49,0x02, // SETUP_FINALLY 2
+    0x7f, // LOAD_CONST_SMALL_INT -1
+    0x63, // RETURN_VALUE
+    0x51, // LOAD_CONST_NONE
+    0xc5, // STORE_FAST 5
+    0x28,0x05, // DELETE_FAST 5
+    0x5d, // END_FINALLY
+    0x4a,0x03, // POP_EXCEPT_JUMP 3
+    0x5d, // END_FINALLY
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0x63, // RETURN_VALUE
+    0x51, // LOAD_CONST_NONE
+    0x63, // RETURN_VALUE
+};
+#if MICROPY_PERSISTENT_CODE_SAVE
+static const mp_raw_code_truncated_t proto_fun_ql_fs_touch = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_ql_fs_touch,
+    .children = NULL,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 145,
+    .n_children = 0,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 13,
+        .n_exc_stack = 2,
+        .scope_flags = 0,
+        .n_pos_args = 4,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 2,
+        .qstr_block_name_idx = 25,
+        .line_info = fun_data_ql_fs_touch + 9,
+        .line_info_top = fun_data_ql_fs_touch + 22,
+        .opcodes = fun_data_ql_fs_touch + 22,
+    },
+    #endif
+    #endif
+};
+#else
+#define proto_fun_ql_fs_touch fun_data_ql_fs_touch[0]
+#endif
+
+// child of ql_fs__lt_module_gt_
+// frozen bytecode for file ql_fs.py, scope ql_fs_write_json
+static const byte fun_data_ql_fs_write_json[14] = {
+    0x22,0x0a, // prelude
+    0x1f,0x32,0x33, // names: write_json, file, data
+    0x80,0x7f, // code info
+    0x12,0x19, // LOAD_GLOBAL 'touch'
+    0xb0, // LOAD_FAST 0
+    0xb1, // LOAD_FAST 1
+    0x34,0x02, // CALL_FUNCTION 2
+    0x63, // RETURN_VALUE
+};
+#if MICROPY_PERSISTENT_CODE_SAVE
+static const mp_raw_code_truncated_t proto_fun_ql_fs_write_json = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_ql_fs_write_json,
+    .children = NULL,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 14,
+    .n_children = 0,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 5,
+        .n_exc_stack = 0,
+        .scope_flags = 0,
+        .n_pos_args = 2,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name_idx = 31,
+        .line_info = fun_data_ql_fs_write_json + 5,
+        .line_info_top = fun_data_ql_fs_write_json + 7,
+        .opcodes = fun_data_ql_fs_write_json + 7,
+    },
+    #endif
+    #endif
+};
+#else
+#define proto_fun_ql_fs_write_json fun_data_ql_fs_write_json[0]
+#endif
+
+// child of ql_fs__lt_module_gt_
+// frozen bytecode for file ql_fs.py, scope ql_fs_read_json
+static const byte fun_data_ql_fs_read_json[42] = {
+    0x35,0x0e, // prelude
+    0x20,0x32, // names: read_json, file
+    0x80,0x83,0x27,0x2a,0x4c, // code info
+    0x12,0x06, // LOAD_GLOBAL 'path_exists'
+    0xb0, // LOAD_FAST 0
+    0x34,0x01, // CALL_FUNCTION 1
+    0x44,0x56, // POP_JUMP_IF_FALSE 22
+    0x12,0x2d, // LOAD_GLOBAL 'open'
+    0xb0, // LOAD_FAST 0
+    0x10,0x21, // LOAD_CONST_STRING 'r'
+    0x34,0x02, // CALL_FUNCTION 2
+    0x47,0x09, // SETUP_WITH 9
+    0xc1, // STORE_FAST 1
+    0x12,0x03, // LOAD_GLOBAL 'ujson'
+    0x14,0x22, // LOAD_METHOD 'load'
+    0xb1, // LOAD_FAST 1
+    0x36,0x01, // CALL_METHOD 1
+    0x63, // RETURN_VALUE
+    0x5c, // WITH_CLEANUP
+    0x5d, // END_FINALLY
+    0x42,0x42, // JUMP 2
+    0x51, // LOAD_CONST_NONE
+    0x63, // RETURN_VALUE
+    0x51, // LOAD_CONST_NONE
+    0x63, // RETURN_VALUE
+};
+#if MICROPY_PERSISTENT_CODE_SAVE
+static const mp_raw_code_truncated_t proto_fun_ql_fs_read_json = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_ql_fs_read_json,
+    .children = NULL,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 42,
+    .n_children = 0,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 7,
+        .n_exc_stack = 1,
+        .scope_flags = 0,
+        .n_pos_args = 1,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name_idx = 32,
+        .line_info = fun_data_ql_fs_read_json + 4,
+        .line_info_top = fun_data_ql_fs_read_json + 9,
+        .opcodes = fun_data_ql_fs_read_json + 9,
+    },
+    #endif
+    #endif
+};
+#else
+#define proto_fun_ql_fs_read_json fun_data_ql_fs_read_json[0]
+#endif
+
+static const mp_raw_code_t *const children_ql_fs__lt_module_gt_[] = {
+    (const mp_raw_code_t *)&proto_fun_ql_fs_FileNotFoundError,
+    (const mp_raw_code_t *)&proto_fun_ql_fs_path_exists,
+    (const mp_raw_code_t *)&proto_fun_ql_fs_file_copy,
+    (const mp_raw_code_t *)&proto_fun_ql_fs_path_dirname,
+    (const mp_raw_code_t *)&proto_fun_ql_fs_path_getsize,
+    (const mp_raw_code_t *)&proto_fun_ql_fs_mkdirs,
+    (const mp_raw_code_t *)&proto_fun_ql_fs_rmdirs,
+    (const mp_raw_code_t *)&proto_fun_ql_fs_touch,
+    (const mp_raw_code_t *)&proto_fun_ql_fs_write_json,
+    (const mp_raw_code_t *)&proto_fun_ql_fs_read_json,
+};
+
+static const mp_raw_code_truncated_t proto_fun_ql_fs__lt_module_gt_ = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_ql_fs__lt_module_gt_,
+    .children = (void *)&children_ql_fs__lt_module_gt_,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 92,
+    .n_children = 10,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 4,
+        .n_exc_stack = 0,
+        .scope_flags = 0,
+        .n_pos_args = 0,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name_idx = 1,
+        .line_info = fun_data_ql_fs__lt_module_gt_ + 3,
+        .line_info_top = fun_data_ql_fs__lt_module_gt_ + 25,
+        .opcodes = fun_data_ql_fs__lt_module_gt_ + 25,
+    },
+    #endif
+    #endif
+};
+
+static const qstr_short_t const_qstr_table_data_ql_fs[54] = {
+    MP_QSTR_ql_fs_dot_py,
+    MP_QSTR__lt_module_gt_,
+    MP_QSTR_uos,
+    MP_QSTR_ujson,
+    MP_QSTR_FileNotFoundError,
+    MP_QSTR_json,
+    MP_QSTR_path_exists,
+    MP_QSTR_stat,
+    MP_QSTR_file_copy,
+    MP_QSTR_wb_plus_,
+    MP_QSTR_rb,
+    MP_QSTR_read,
+    MP_QSTR_write,
+    MP_QSTR_close,
+    MP_QSTR_path_dirname,
+    MP_QSTR_,
+    MP_QSTR_rfind,
+    MP_QSTR__slash_,
+    MP_QSTR_path_getsize,
+    MP_QSTR_mkdirs,
+    MP_QSTR_split,
+    MP_QSTR_mkdir,
+    MP_QSTR_rmdirs,
+    MP_QSTR_listdir,
+    MP_QSTR_remove,
+    MP_QSTR_touch,
+    MP_QSTR_find,
+    MP_QSTR_i,
+    MP_QSTR_file_type,
+    MP_QSTR_w,
+    MP_QSTR_dumps,
+    MP_QSTR_write_json,
+    MP_QSTR_read_json,
+    MP_QSTR_r,
+    MP_QSTR_load,
+    MP_QSTR___init__,
+    MP_QSTR_value,
+    MP_QSTR___str__,
+    MP_QSTR_Exception,
+    MP_QSTR___name__,
+    MP_QSTR___module__,
+    MP_QSTR___qualname__,
+    MP_QSTR_path,
+    MP_QSTR_dstFile,
+    MP_QSTR_srcFile,
+    MP_QSTR_open,
+    MP_QSTR_len,
+    MP_QSTR_dir,
+    MP_QSTR_enumerate,
+    MP_QSTR_int,
+    MP_QSTR_file,
+    MP_QSTR_data,
+    MP_QSTR_self,
+    MP_QSTR_repr,
+};
+
+// constants
+
+// constant table
+static const mp_rom_obj_t const_obj_table_data_ql_fs[1] = {
+    MP_ROM_QSTR(MP_QSTR_can_space_not_space_find_colon__space__squot__percent_s_squot_),
+};
+
+static const mp_frozen_module_t frozen_module_ql_fs = {
+    .constants = {
+        .qstr_table = (qstr_short_t *)&const_qstr_table_data_ql_fs,
+        .obj_table = (mp_obj_t *)&const_obj_table_data_ql_fs,
+    },
+    .proto_fun = &proto_fun_ql_fs__lt_module_gt_,
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// frozen module queue
+// - original source file: E:\Work\code\study\mp_threadx\Middlewares\micropython\py_port\frozen_build\queue.mpy
+// - frozen file name: queue.py
+// - .mpy header: 4d:06:00:1f
+
+// frozen bytecode for file queue.py, scope queue__lt_module_gt_
+static const byte fun_data_queue__lt_module_gt_[23] = {
+    0x18,0x04, // prelude
+    0x01, // names: <module>
+    0x66, // code info
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0x51, // LOAD_CONST_NONE
+    0x1b,0x02, // IMPORT_NAME '_thread'
+    0x16,0x02, // STORE_NAME '_thread'
+    0x54, // LOAD_BUILD_CLASS
+    0x32,0x00, // MAKE_FUNCTION 0
+    0x10,0x03, // LOAD_CONST_STRING 'Queue'
+    0x11,0x15, // LOAD_NAME 'object'
+    0x34,0x03, // CALL_FUNCTION 3
+    0x16,0x03, // STORE_NAME 'Queue'
+    0x51, // LOAD_CONST_NONE
+    0x63, // RETURN_VALUE
+};
+// child of queue__lt_module_gt_
+// frozen bytecode for file queue.py, scope queue_Queue
+static const byte fun_data_queue_Queue[64] = {
+    0x08,0x1c, // prelude
+    0x03, // names: Queue
+    0x68,0x20,0x8a,0x07,0x88,0x08,0x84,0x0b,0x84,0x08,0x84,0x07,0x64, // code info
+    0x11,0x16, // LOAD_NAME '__name__'
+    0x16,0x17, // STORE_NAME '__module__'
+    0x10,0x03, // LOAD_CONST_STRING 'Queue'
+    0x16,0x18, // STORE_NAME '__qualname__'
+    0x22,0x80,0x64, // LOAD_CONST_SMALL_INT 100
+    0x2a,0x01, // BUILD_TUPLE 1
+    0x53, // LOAD_NULL
+    0x33,0x00, // MAKE_FUNCTION_DEFARGS 0
+    0x16,0x04, // STORE_NAME '__init__'
+    0x51, // LOAD_CONST_NONE
+    0x2a,0x01, // BUILD_TUPLE 1
+    0x53, // LOAD_NULL
+    0x33,0x01, // MAKE_FUNCTION_DEFARGS 1
+    0x16,0x0b, // STORE_NAME 'put'
+    0x32,0x02, // MAKE_FUNCTION 2
+    0x16,0x0f, // STORE_NAME '__pop'
+    0x32,0x03, // MAKE_FUNCTION 3
+    0x16,0x11, // STORE_NAME 'get'
+    0x32,0x04, // MAKE_FUNCTION 4
+    0x16,0x0c, // STORE_NAME '__put'
+    0x32,0x05, // MAKE_FUNCTION 5
+    0x16,0x14, // STORE_NAME 'empty'
+    0x32,0x06, // MAKE_FUNCTION 6
+    0x16,0x12, // STORE_NAME 'size'
+    0x51, // LOAD_CONST_NONE
+    0x63, // RETURN_VALUE
+};
+// child of queue_Queue
+// frozen bytecode for file queue.py, scope queue_Queue___init__
+static const byte fun_data_queue_Queue___init__[49] = {
+    0x9a,0x01,0x12, // prelude
+    0x04,0x19,0x05, // names: __init__, self, maxsize
+    0x60,0x40,0x24,0x25,0x29,0x29, // code info
+    0xb1, // LOAD_FAST 1
+    0xb0, // LOAD_FAST 0
+    0x18,0x05, // STORE_ATTR 'maxsize'
+    0x2b,0x00, // BUILD_LIST 0
+    0xb0, // LOAD_FAST 0
+    0x18,0x06, // STORE_ATTR '__deque'
+    0x12,0x02, // LOAD_GLOBAL '_thread'
+    0x14,0x07, // LOAD_METHOD 'allocate_lock'
+    0x36,0x00, // CALL_METHOD 0
+    0xb0, // LOAD_FAST 0
+    0x18,0x08, // STORE_ATTR '__lock_queue'
+    0x12,0x02, // LOAD_GLOBAL '_thread'
+    0x14,0x07, // LOAD_METHOD 'allocate_lock'
+    0x36,0x00, // CALL_METHOD 0
+    0xb0, // LOAD_FAST 0
+    0x18,0x09, // STORE_ATTR '__lock_signal'
+    0xb0, // LOAD_FAST 0
+    0x13,0x09, // LOAD_ATTR '__lock_signal'
+    0x14,0x0a, // LOAD_METHOD 'acquire'
+    0x36,0x00, // CALL_METHOD 0
+    0x59, // POP_TOP
+    0x51, // LOAD_CONST_NONE
+    0x63, // RETURN_VALUE
+};
+#if MICROPY_PERSISTENT_CODE_SAVE
+static const mp_raw_code_truncated_t proto_fun_queue_Queue___init__ = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_queue_Queue___init__,
+    .children = NULL,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 49,
+    .n_children = 0,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 4,
+        .n_exc_stack = 0,
+        .scope_flags = 0,
+        .n_pos_args = 2,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 1,
+        .qstr_block_name_idx = 4,
+        .line_info = fun_data_queue_Queue___init__ + 6,
+        .line_info_top = fun_data_queue_Queue___init__ + 12,
+        .opcodes = fun_data_queue_Queue___init__ + 12,
+    },
+    #endif
+    #endif
+};
+#else
+#define proto_fun_queue_Queue___init__ fun_data_queue_Queue___init__[0]
+#endif
+
+// child of queue_Queue
+// frozen bytecode for file queue.py, scope queue_Queue_put
+static const byte fun_data_queue_Queue_put[55] = {
+    0xaa,0x01,0x14, // prelude
+    0x0b,0x19,0x1a, // names: put, self, item
+    0x80,0x0c,0x28,0x27,0x28,0x29,0x28, // code info
+    0xb0, // LOAD_FAST 0
+    0x13,0x08, // LOAD_ATTR '__lock_queue'
+    0x14,0x0a, // LOAD_METHOD 'acquire'
+    0x36,0x00, // CALL_METHOD 0
+    0x59, // POP_TOP
+    0xb0, // LOAD_FAST 0
+    0x14,0x0c, // LOAD_METHOD '__put'
+    0xb1, // LOAD_FAST 1
+    0x36,0x01, // CALL_METHOD 1
+    0xc2, // STORE_FAST 2
+    0xb0, // LOAD_FAST 0
+    0x13,0x08, // LOAD_ATTR '__lock_queue'
+    0x14,0x0d, // LOAD_METHOD 'release'
+    0x36,0x00, // CALL_METHOD 0
+    0x59, // POP_TOP
+    0xb0, // LOAD_FAST 0
+    0x13,0x09, // LOAD_ATTR '__lock_signal'
+    0x14,0x0e, // LOAD_METHOD 'locked'
+    0x36,0x00, // CALL_METHOD 0
+    0x44,0x48, // POP_JUMP_IF_FALSE 8
+    0xb0, // LOAD_FAST 0
+    0x13,0x09, // LOAD_ATTR '__lock_signal'
+    0x14,0x0d, // LOAD_METHOD 'release'
+    0x36,0x00, // CALL_METHOD 0
+    0x59, // POP_TOP
+    0xb2, // LOAD_FAST 2
+    0x63, // RETURN_VALUE
+};
+#if MICROPY_PERSISTENT_CODE_SAVE
+static const mp_raw_code_truncated_t proto_fun_queue_Queue_put = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_queue_Queue_put,
+    .children = NULL,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 55,
+    .n_children = 0,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 6,
+        .n_exc_stack = 0,
+        .scope_flags = 0,
+        .n_pos_args = 2,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 1,
+        .qstr_block_name_idx = 11,
+        .line_info = fun_data_queue_Queue_put + 6,
+        .line_info_top = fun_data_queue_Queue_put + 13,
+        .opcodes = fun_data_queue_Queue_put + 13,
+    },
+    #endif
+    #endif
+};
+#else
+#define proto_fun_queue_Queue_put fun_data_queue_Queue_put[0]
+#endif
+
+// child of queue_Queue
+// frozen bytecode for file queue.py, scope queue_Queue___pop
+static const byte fun_data_queue_Queue___pop[63] = {
+    0xb9,0x02,0x12, // prelude
+    0x0f,0x19, // names: __pop, self
+    0x80,0x14,0x28,0x24,0x52,0x44,0x46, // code info
+    0xb0, // LOAD_FAST 0
+    0x13,0x08, // LOAD_ATTR '__lock_queue'
+    0x14,0x0a, // LOAD_METHOD 'acquire'
+    0x36,0x00, // CALL_METHOD 0
+    0x59, // POP_TOP
+    0x49,0x1e, // SETUP_FINALLY 30
+    0x48,0x0b, // SETUP_EXCEPT 11
+    0xb0, // LOAD_FAST 0
+    0x13,0x06, // LOAD_ATTR '__deque'
+    0x14,0x10, // LOAD_METHOD 'pop'
+    0x80, // LOAD_CONST_SMALL_INT 0
+    0x36,0x01, // CALL_METHOD 1
+    0xc1, // STORE_FAST 1
+    0x4a,0x0b, // POP_EXCEPT_JUMP 11
+    0x57, // DUP_TOP
+    0x12,0x1b, // LOAD_GLOBAL 'Exception'
+    0xdf, // BINARY_OP 8 <exception match>
+    0x44,0x44, // POP_JUMP_IF_FALSE 4
+    0x59, // POP_TOP
+    0x23,0x00, // LOAD_CONST_OBJ 0
+    0x63, // RETURN_VALUE
+    0x5d, // END_FINALLY
+    0x81, // LOAD_CONST_SMALL_INT 1
+    0xb1, // LOAD_FAST 1
+    0x2a,0x02, // BUILD_TUPLE 2
+    0x63, // RETURN_VALUE
+    0x51, // LOAD_CONST_NONE
+    0xb0, // LOAD_FAST 0
+    0x13,0x08, // LOAD_ATTR '__lock_queue'
+    0x14,0x0d, // LOAD_METHOD 'release'
+    0x36,0x00, // CALL_METHOD 0
+    0x59, // POP_TOP
+    0x5d, // END_FINALLY
+    0x51, // LOAD_CONST_NONE
+    0x63, // RETURN_VALUE
+};
+#if MICROPY_PERSISTENT_CODE_SAVE
+static const mp_raw_code_truncated_t proto_fun_queue_Queue___pop = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_queue_Queue___pop,
+    .children = NULL,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 63,
+    .n_children = 0,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 8,
+        .n_exc_stack = 2,
+        .scope_flags = 0,
+        .n_pos_args = 1,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name_idx = 15,
+        .line_info = fun_data_queue_Queue___pop + 5,
+        .line_info_top = fun_data_queue_Queue___pop + 12,
+        .opcodes = fun_data_queue_Queue___pop + 12,
+    },
+    #endif
+    #endif
+};
+#else
+#define proto_fun_queue_Queue___pop fun_data_queue_Queue___pop[0]
+#endif
+
+// child of queue_Queue
+// frozen bytecode for file queue.py, scope queue_Queue_get
+static const byte fun_data_queue_Queue_get[46] = {
+    0x21,0x12, // prelude
+    0x11,0x19, // names: get, self
+    0x80,0x1f,0x27,0x28,0x29,0x23,0x26, // code info
+    0xb0, // LOAD_FAST 0
+    0x14,0x12, // LOAD_METHOD 'size'
+    0x36,0x00, // CALL_METHOD 0
+    0x43,0x48, // POP_JUMP_IF_TRUE 8
+    0xb0, // LOAD_FAST 0
+    0x13,0x09, // LOAD_ATTR '__lock_signal'
+    0x14,0x0a, // LOAD_METHOD 'acquire'
+    0x36,0x00, // CALL_METHOD 0
+    0x59, // POP_TOP
+    0xb0, // LOAD_FAST 0
+    0x14,0x0f, // LOAD_METHOD '__pop'
+    0x36,0x00, // CALL_METHOD 0
+    0x30,0x02, // UNPACK_SEQUENCE 2
+    0xc1, // STORE_FAST 1
+    0xc2, // STORE_FAST 2
+    0xb1, // LOAD_FAST 1
+    0x43,0x46, // POP_JUMP_IF_TRUE 6
+    0xb0, // LOAD_FAST 0
+    0x14,0x11, // LOAD_METHOD 'get'
+    0x36,0x00, // CALL_METHOD 0
+    0x63, // RETURN_VALUE
+    0xb2, // LOAD_FAST 2
+    0x63, // RETURN_VALUE
+};
+#if MICROPY_PERSISTENT_CODE_SAVE
+static const mp_raw_code_truncated_t proto_fun_queue_Queue_get = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_queue_Queue_get,
+    .children = NULL,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 46,
+    .n_children = 0,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 5,
+        .n_exc_stack = 0,
+        .scope_flags = 0,
+        .n_pos_args = 1,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name_idx = 17,
+        .line_info = fun_data_queue_Queue_get + 4,
+        .line_info_top = fun_data_queue_Queue_get + 11,
+        .opcodes = fun_data_queue_Queue_get + 11,
+    },
+    #endif
+    #endif
+};
+#else
+#define proto_fun_queue_Queue_get fun_data_queue_Queue_get[0]
+#endif
+
+// child of queue_Queue
+// frozen bytecode for file queue.py, scope queue_Queue___put
+static const byte fun_data_queue_Queue___put[36] = {
+    0x22,0x10, // prelude
+    0x0c,0x19,0x1a, // names: __put, self, item
+    0x80,0x27,0x2b,0x42,0x29, // code info
+    0xb0, // LOAD_FAST 0
+    0x14,0x12, // LOAD_METHOD 'size'
+    0x36,0x00, // CALL_METHOD 0
+    0xb0, // LOAD_FAST 0
+    0x13,0x05, // LOAD_ATTR 'maxsize'
+    0xd8, // BINARY_OP 1 __gt__
+    0x44,0x42, // POP_JUMP_IF_FALSE 2
+    0x50, // LOAD_CONST_FALSE
+    0x63, // RETURN_VALUE
+    0xb0, // LOAD_FAST 0
+    0x13,0x06, // LOAD_ATTR '__deque'
+    0x14,0x13, // LOAD_METHOD 'append'
+    0xb1, // LOAD_FAST 1
+    0x36,0x01, // CALL_METHOD 1
+    0x59, // POP_TOP
+    0x52, // LOAD_CONST_TRUE
+    0x63, // RETURN_VALUE
+    0x51, // LOAD_CONST_NONE
+    0x63, // RETURN_VALUE
+};
+#if MICROPY_PERSISTENT_CODE_SAVE
+static const mp_raw_code_truncated_t proto_fun_queue_Queue___put = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_queue_Queue___put,
+    .children = NULL,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 36,
+    .n_children = 0,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 5,
+        .n_exc_stack = 0,
+        .scope_flags = 0,
+        .n_pos_args = 2,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name_idx = 12,
+        .line_info = fun_data_queue_Queue___put + 5,
+        .line_info_top = fun_data_queue_Queue___put + 10,
+        .opcodes = fun_data_queue_Queue___put + 10,
+    },
+    #endif
+    #endif
+};
+#else
+#define proto_fun_queue_Queue___put fun_data_queue_Queue___put[0]
+#endif
+
+// child of queue_Queue
+// frozen bytecode for file queue.py, scope queue_Queue_empty
+static const byte fun_data_queue_Queue_empty[13] = {
+    0x11,0x08, // prelude
+    0x14,0x19, // names: empty, self
+    0x80,0x2e, // code info
+    0xb0, // LOAD_FAST 0
+    0x14,0x12, // LOAD_METHOD 'size'
+    0x36,0x00, // CALL_METHOD 0
+    0xd3, // UNARY_OP 3 <not>
+    0x63, // RETURN_VALUE
+};
+#if MICROPY_PERSISTENT_CODE_SAVE
+static const mp_raw_code_truncated_t proto_fun_queue_Queue_empty = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_queue_Queue_empty,
+    .children = NULL,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 13,
+    .n_children = 0,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 3,
+        .n_exc_stack = 0,
+        .scope_flags = 0,
+        .n_pos_args = 1,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name_idx = 20,
+        .line_info = fun_data_queue_Queue_empty + 4,
+        .line_info_top = fun_data_queue_Queue_empty + 6,
+        .opcodes = fun_data_queue_Queue_empty + 6,
+    },
+    #endif
+    #endif
+};
+#else
+#define proto_fun_queue_Queue_empty fun_data_queue_Queue_empty[0]
+#endif
+
+// child of queue_Queue
+// frozen bytecode for file queue.py, scope queue_Queue_size
+static const byte fun_data_queue_Queue_size[14] = {
+    0x11,0x08, // prelude
+    0x12,0x19, // names: size, self
+    0x80,0x31, // code info
+    0x12,0x1c, // LOAD_GLOBAL 'len'
+    0xb0, // LOAD_FAST 0
+    0x13,0x06, // LOAD_ATTR '__deque'
+    0x34,0x01, // CALL_FUNCTION 1
+    0x63, // RETURN_VALUE
+};
+#if MICROPY_PERSISTENT_CODE_SAVE
+static const mp_raw_code_truncated_t proto_fun_queue_Queue_size = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_queue_Queue_size,
+    .children = NULL,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 14,
+    .n_children = 0,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 3,
+        .n_exc_stack = 0,
+        .scope_flags = 0,
+        .n_pos_args = 1,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name_idx = 18,
+        .line_info = fun_data_queue_Queue_size + 4,
+        .line_info_top = fun_data_queue_Queue_size + 6,
+        .opcodes = fun_data_queue_Queue_size + 6,
+    },
+    #endif
+    #endif
+};
+#else
+#define proto_fun_queue_Queue_size fun_data_queue_Queue_size[0]
+#endif
+
+static const mp_raw_code_t *const children_queue_Queue[] = {
+    (const mp_raw_code_t *)&proto_fun_queue_Queue___init__,
+    (const mp_raw_code_t *)&proto_fun_queue_Queue_put,
+    (const mp_raw_code_t *)&proto_fun_queue_Queue___pop,
+    (const mp_raw_code_t *)&proto_fun_queue_Queue_get,
+    (const mp_raw_code_t *)&proto_fun_queue_Queue___put,
+    (const mp_raw_code_t *)&proto_fun_queue_Queue_empty,
+    (const mp_raw_code_t *)&proto_fun_queue_Queue_size,
+};
+
+static const mp_raw_code_truncated_t proto_fun_queue_Queue = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_queue_Queue,
+    .children = (void *)&children_queue_Queue,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 64,
+    .n_children = 7,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 2,
+        .n_exc_stack = 0,
+        .scope_flags = 0,
+        .n_pos_args = 0,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name_idx = 3,
+        .line_info = fun_data_queue_Queue + 3,
+        .line_info_top = fun_data_queue_Queue + 16,
+        .opcodes = fun_data_queue_Queue + 16,
+    },
+    #endif
+    #endif
+};
+
+static const mp_raw_code_t *const children_queue__lt_module_gt_[] = {
+    (const mp_raw_code_t *)&proto_fun_queue_Queue,
+};
+
+static const mp_raw_code_truncated_t proto_fun_queue__lt_module_gt_ = {
+    .proto_fun_indicator[0] = MP_PROTO_FUN_INDICATOR_RAW_CODE_0,
+    .proto_fun_indicator[1] = MP_PROTO_FUN_INDICATOR_RAW_CODE_1,
+    .kind = MP_CODE_BYTECODE,
+    .is_generator = 0,
+    .fun_data = fun_data_queue__lt_module_gt_,
+    .children = (void *)&children_queue__lt_module_gt_,
+    #if MICROPY_PERSISTENT_CODE_SAVE
+    .fun_data_len = 23,
+    .n_children = 1,
+    #if MICROPY_EMIT_MACHINE_CODE
+    .prelude_offset = 0,
+    #endif
+    #if MICROPY_PY_SYS_SETTRACE
+    .line_of_definition = 0,
+    .prelude = {
+        .n_state = 4,
+        .n_exc_stack = 0,
+        .scope_flags = 0,
+        .n_pos_args = 0,
+        .n_kwonly_args = 0,
+        .n_def_pos_args = 0,
+        .qstr_block_name_idx = 1,
+        .line_info = fun_data_queue__lt_module_gt_ + 3,
+        .line_info_top = fun_data_queue__lt_module_gt_ + 4,
+        .opcodes = fun_data_queue__lt_module_gt_ + 4,
+    },
+    #endif
+    #endif
+};
+
+static const qstr_short_t const_qstr_table_data_queue[29] = {
+    MP_QSTR_queue_dot_py,
+    MP_QSTR__lt_module_gt_,
+    MP_QSTR__thread,
+    MP_QSTR_Queue,
+    MP_QSTR___init__,
+    MP_QSTR_maxsize,
+    MP_QSTR___deque,
+    MP_QSTR_allocate_lock,
+    MP_QSTR___lock_queue,
+    MP_QSTR___lock_signal,
+    MP_QSTR_acquire,
+    MP_QSTR_put,
+    MP_QSTR___put,
+    MP_QSTR_release,
+    MP_QSTR_locked,
+    MP_QSTR___pop,
+    MP_QSTR_pop,
+    MP_QSTR_get,
+    MP_QSTR_size,
+    MP_QSTR_append,
+    MP_QSTR_empty,
+    MP_QSTR_object,
+    MP_QSTR___name__,
+    MP_QSTR___module__,
+    MP_QSTR___qualname__,
+    MP_QSTR_self,
+    MP_QSTR_item,
+    MP_QSTR_Exception,
+    MP_QSTR_len,
+};
+
+// constants
+static const mp_rom_obj_tuple_t const_obj_queue_0 = {{&mp_type_tuple}, 2, {
+    MP_ROM_INT(0),
+    MP_ROM_NONE,
+}};
+
+// constant table
+static const mp_rom_obj_t const_obj_table_data_queue[1] = {
+    MP_ROM_PTR(&const_obj_queue_0),
+};
+
+static const mp_frozen_module_t frozen_module_queue = {
+    .constants = {
+        .qstr_table = (qstr_short_t *)&const_qstr_table_data_queue,
+        .obj_table = (mp_obj_t *)&const_obj_table_data_queue,
+    },
+    .proto_fun = &proto_fun_queue__lt_module_gt_,
+};
+
+////////////////////////////////////////////////////////////////////////////////
 // collection of all frozen modules
 
 const char mp_frozen_names[] = {
@@ -13652,6 +15426,8 @@ const char mp_frozen_names[] = {
     "lcd160cr.py\0"
     "myutils.py\0"
     "ymodem.py\0"
+    "ql_fs.py\0"
+    "queue.py\0"
     "\0"
 };
 
@@ -13663,6 +15439,8 @@ const mp_frozen_module_t *const mp_frozen_mpy_content[] = {
     &frozen_module_lcd160cr,
     &frozen_module_myutils,
     &frozen_module_ymodem,
+    &frozen_module_ql_fs,
+    &frozen_module_queue,
 };
 
 #ifdef MICROPY_FROZEN_LIST_ITEM
@@ -13673,19 +15451,21 @@ MICROPY_FROZEN_LIST_ITEM("ssl", "ssl.py")
 MICROPY_FROZEN_LIST_ITEM("lcd160cr", "lcd160cr.py")
 MICROPY_FROZEN_LIST_ITEM("myutils", "myutils.py")
 MICROPY_FROZEN_LIST_ITEM("ymodem", "ymodem.py")
+MICROPY_FROZEN_LIST_ITEM("ql_fs", "ql_fs.py")
+MICROPY_FROZEN_LIST_ITEM("queue", "queue.py")
 #endif
 
 /*
 byte sizes:
-qstr content: 266 unique, 3431 bytes
-bc content: 11271
+qstr content: 292 unique, 3752 bytes
+bc content: 12422
 const str content: 1187
 const int content: 4
 const obj content: 744
 const table qstr content: 0 entries, 0 bytes
-const table ptr content: 76 entries, 304 bytes
-raw code content: 145 * 4 = 2320
-mp_frozen_mpy_names_content: 68
-mp_frozen_mpy_content_size: 28
-total: 19357
+const table ptr content: 78 entries, 312 bytes
+raw code content: 167 * 4 = 2672
+mp_frozen_mpy_names_content: 86
+mp_frozen_mpy_content_size: 36
+total: 21215
 */

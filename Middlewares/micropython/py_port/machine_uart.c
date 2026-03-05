@@ -31,11 +31,15 @@
 
 #include "py/mperrno.h"
 #include "py/mphal.h"
+#include "py/stream.h"
 #include "shared/runtime/interrupt_char.h"
 #include "shared/runtime/mpirq.h"
 #include "uart.h"
 #include "irq.h"
 #include "pendsv.h"
+
+// Forward declaration of machine_uart_type (defined later in extmod/machine_uart.c)
+extern const mp_obj_type_t machine_uart_type;
 
 #if defined(STM32H7)
 #define MICROPY_PY_MACHINE_UART_INV_ENTRY \

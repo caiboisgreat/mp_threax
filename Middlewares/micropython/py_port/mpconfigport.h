@@ -195,7 +195,7 @@
 #define MICROPY_PY_MACHINE_PIN            (1)
 #define MICROPY_PY_MACHINE_SOFTI2C        (1)
 #define MICROPY_PY_MACHINE_SOFTSPI        (1)
-#define MICROPY_PY_MACHINE_UART           (0)
+#define MICROPY_PY_MACHINE_UART           (1)
 #define MICROPY_PY_MACHINE_UART_INCLUDEFILE "py_port/machine_uart.c"
 #define MICROPY_PY_MACHINE_I2C            (1)
 #define MICROPY_PY_MACHINE_SPI            (1)
@@ -336,11 +336,12 @@ typedef long mp_off_t;
 #define MICROPY_HEAP_SIZE      (32768) // heap size 32 kilobytes
 #endif
 
+// Port state access - use VM state
 #define MP_STATE_PORT MP_STATE_VM
 
-// Port-specific root pointers for GC
-#define MICROPY_PORT_ROOT_POINTERS \
-    struct _machine_uart_obj_t *machine_uart_obj_all[MICROPY_HW_MAX_UART + 2]; \
+// UART hardware configuration helpers
+#define MICROPY_HW_MAX_LPUART (0)  // STM32F405 has no LP UARTs
+#define MICROPY_HW_UART_IS_RESERVED(id) (0)  // No UARTs are reserved by default
 
 // Fatal error handling
 #ifndef MICROPY_BOARD_FATAL_ERROR

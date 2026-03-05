@@ -8,6 +8,7 @@ mp_obj_t pin_class_map_dict;
 mp_obj_t pin_class_mapper;
 mp_obj_t sys_mutable[MP_SYS_MUTABLE_NUM];
 mp_sched_item_t sched_queue[(4)];
+struct _machine_uart_obj_t *machine_uart_obj_all[(6) + (0)];
 struct _mp_bluetooth_nimble_malloc_t *bluetooth_nimble_memory;
 struct _mp_bluetooth_nimble_root_pointers_t *bluetooth_nimble_root_pointers;
 struct _mp_vfs_mount_t *vfs_cur;

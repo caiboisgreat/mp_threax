@@ -941,6 +941,21 @@
               <FileType>1</FileType>
               <FilePath>..\Middlewares\micropython\py_port\modtftlcd.c</FilePath>
             </File>
+            <File>
+              <FileName>machine_uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\machine_uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>mpirq.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\shared\runtime\mpirq.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

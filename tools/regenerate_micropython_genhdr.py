@@ -310,6 +310,8 @@ def main():
         "lcd160cr.mpy",
         "myutils.mpy",      # 自定义工具模块示例
         "ymodem.mpy",       # Ymodem 协议传输模块
+        "ql_fs.mpy",        # modem 协议传输模块依赖
+        "queue.mpy",        # modem 协议传输模块依赖
     ]
 
     mpy_files: list[Path] = []

@@ -122,6 +122,24 @@ bool mp_hal_pin_config_alt(mp_hal_pin_obj_t pin, uint32_t mode, uint32_t pull, u
                 af = GPIO_AF5_SPI2;
             }
         }
+    } else if (af_fn == AF_FN_UART) {
+        // STM32F4: USART1-3 use AF7, UART4-5 and USART6 use AF8
+        if (unit == 1) {
+            af = GPIO_AF7_USART1;
+        } else if (unit == 2) {
+            af = GPIO_AF7_USART2;
+        } else if (unit == 3) {
+            af = GPIO_AF7_USART3;
+        } else if (unit == 4) {
+            af = GPIO_AF8_UART4;
+        } else if (unit == 5) {
+            af = GPIO_AF8_UART5;
+        } else if (unit == 6) {
+            af = GPIO_AF8_USART6;
+        }
+    } else if (af_fn == AF_FN_LPUART) {
+        // STM32F405 has no LPUART, return failure
+        return false;
     }
 
     if (af == 0xFFFFFFFFu) {

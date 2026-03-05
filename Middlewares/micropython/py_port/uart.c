@@ -37,6 +37,7 @@
 #include "uart.h"
 #include "irq.h"
 #include "pendsv.h"
+#include "stm32f4xx_ll_usart.h"
 
 #if defined(STM32F4) || defined(STM32L1)
 #define UART_RXNE_IS_SET(uart) ((uart)->SR & USART_SR_RXNE)

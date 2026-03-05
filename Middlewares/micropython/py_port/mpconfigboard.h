@@ -53,4 +53,25 @@
 #define LCD_PIN_RST                 (&pin_B9)
 #define LCD_PIN_CS                  (&pin_B12)
 
+// UART buses (STM32F405RG has USART1-6)
+// USART1 - Primary debug/REPL interface
+#define MICROPY_HW_UART1_NAME       "UART1"
+#define MICROPY_HW_UART1_TX         (&pin_A9)   // PA9 - USART1_TX (AF7)
+#define MICROPY_HW_UART1_RX         (&pin_A10)  // PA10 - USART1_RX (AF7)
+
+// USART2 - Communication interface (suitable for ymodem)
+#define MICROPY_HW_UART2_NAME       "UART2"
+#define MICROPY_HW_UART2_TX         (&pin_A2)   // PA2 - USART2_TX (AF7)
+#define MICROPY_HW_UART2_RX         (&pin_A3)   // PA3 - USART2_RX (AF7)
+
+// USART3 - Additional UART (optional)
+#define MICROPY_HW_UART3_NAME       "UART3"
+#define MICROPY_HW_UART3_TX         (&pin_C10)  // PC10 - USART3_TX (AF7)
+#define MICROPY_HW_UART3_RX         (&pin_C11)  // PC11 - USART3_RX (AF7)
+
+// USART6 - Additional UART (optional)
+#define MICROPY_HW_UART6_NAME       "UART6"
+#define MICROPY_HW_UART6_TX         (&pin_C6)   // PC6 - USART6_TX (AF8)
+#define MICROPY_HW_UART6_RX         (&pin_C7)   // PC7 - USART6_RX (AF8)
+
 #endif // MICROPY_INCLUDED_MPCONFIGBOARD_H

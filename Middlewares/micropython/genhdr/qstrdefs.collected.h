@@ -276,6 +276,12 @@ Q(CERT_OPTIONAL)
 
 Q(CERT_REQUIRED)
 
+Q(CTS)
+
+Q(CTS)
+
+Q(CTS)
+
 Q(CancelledError)
 
 Q(D0)
@@ -626,6 +632,18 @@ Q(IRQ_FALLING)
 
 Q(IRQ_RISING)
 
+Q(IRQ_RX)
+
+Q(IRQ_RX)
+
+Q(IRQ_RX)
+
+Q(IRQ_RXIDLE)
+
+Q(IRQ_RXIDLE)
+
+Q(IRQ_RXIDLE)
+
 Q(IWDG)
 
 Q(ImportError)
@@ -784,6 +802,12 @@ Q(RGB565)
 
 Q(RTC)
 
+Q(RTS)
+
+Q(RTS)
+
+Q(RTS)
+
 Q(RingIO)
 
 Q(RingIO)
@@ -935,6 +959,10 @@ Q(TextIOWrapper)
 Q(TypeError)
 
 Q(TypeError)
+
+Q(UART)
+
+Q(UART)
 
 Q(UART4)
 
@@ -1606,6 +1634,8 @@ Q(any)
 
 Q(any)
 
+Q(any)
+
 Q(append)
 
 Q(append)
@@ -1654,6 +1684,10 @@ Q(baudrate)
 
 Q(baudrate)
 
+Q(baudrate)
+
+Q(baudrate)
+
 Q(bin)
 
 Q(binascii)
@@ -1665,6 +1699,10 @@ Q(binascii)
 Q(binascii)
 
 Q(bind)
+
+Q(bits)
+
+Q(bits)
 
 Q(bits)
 
@@ -1920,6 +1958,8 @@ Q(degrees)
 
 Q(deinit)
 
+Q(deinit)
+
 Q(delattr)
 
 Q(delay)
@@ -2086,11 +2126,19 @@ Q(firstbit)
 
 Q(flags)
 
+Q(flags)
+
 Q(float)
 
 Q(float)
 
 Q(floor)
+
+Q(flow)
+
+Q(flow)
+
+Q(flush)
 
 Q(flush)
 
@@ -2127,6 +2175,10 @@ Q(fromkeys)
 Q(frozenset)
 
 Q(frozenset)
+
+Q(function)
+
+Q(function)
 
 Q(function)
 
@@ -2606,6 +2658,10 @@ Q(globals)
 
 Q(group)
 
+Q(handler)
+
+Q(hard)
+
 Q(hasattr)
 
 Q(hash)
@@ -2694,6 +2750,8 @@ Q(init)
 
 Q(init)
 
+Q(init)
+
 Q(input)
 
 Q(insert)
@@ -2731,6 +2789,8 @@ Q(ioctl)
 Q(ioctl)
 
 Q(ipoll)
+
+Q(irq)
 
 Q(irq)
 
@@ -3108,6 +3168,10 @@ Q(pack_into)
 
 Q(pagesize)
 
+Q(parity)
+
+Q(parity)
+
 Q(partition)
 
 Q(path)
@@ -3274,6 +3338,12 @@ Q(read)
 
 Q(read)
 
+Q(read)
+
+Q(read_buf_len)
+
+Q(read_buf_len)
+
 Q(readblocks)
 
 Q(readblocks)
@@ -3307,6 +3377,10 @@ Q(readinto)
 Q(readinto)
 
 Q(readinto)
+
+Q(readinto)
+
+Q(readline)
 
 Q(readline)
 
@@ -3403,6 +3477,10 @@ Q(rpartition)
 Q(rsplit)
 
 Q(rstrip)
+
+Q(rxbuf)
+
+Q(rxbuf)
 
 Q(scan)
 
@@ -3614,6 +3692,10 @@ Q(stop)
 
 Q(stop)
 
+Q(stop)
+
+Q(stop)
+
 Q(str)
 
 Q(str)
@@ -3724,6 +3806,14 @@ Q(timeout)
 
 Q(timeout)
 
+Q(timeout)
+
+Q(timeout)
+
+Q(timeout_char)
+
+Q(timeout_char)
+
 Q(timing)
 
 Q(tls)
@@ -3738,6 +3828,10 @@ Q(to_bytes)
 
 Q(toggle)
 
+Q(trigger)
+
+Q(trigger)
+
 Q(trunc)
 
 Q(tuple)
@@ -3745,6 +3839,8 @@ Q(tuple)
 Q(tuple)
 
 Q(tuple)
+
+Q(txdone)
 
 Q(type)
 
@@ -3845,6 +3941,8 @@ Q(vline)
 Q(width)
 
 Q(wrap_socket)
+
+Q(write)
 
 Q(write)
 

@@ -857,6 +857,27 @@ typedef unsigned long long uintmax_t;
 #define LCD_PIN_DC (&pin_B8)
 #define LCD_PIN_RST (&pin_B9)
 #define LCD_PIN_CS (&pin_B12)
+
+
+
+#define MICROPY_HW_UART1_NAME "UART1"
+#define MICROPY_HW_UART1_TX (&pin_A9)
+#define MICROPY_HW_UART1_RX (&pin_A10)
+
+
+#define MICROPY_HW_UART2_NAME "UART2"
+#define MICROPY_HW_UART2_TX (&pin_A2)
+#define MICROPY_HW_UART2_RX (&pin_A3)
+
+
+#define MICROPY_HW_UART3_NAME "UART3"
+#define MICROPY_HW_UART3_TX (&pin_C10)
+#define MICROPY_HW_UART3_RX (&pin_C11)
+
+
+#define MICROPY_HW_UART6_NAME "UART6"
+#define MICROPY_HW_UART6_TX (&pin_C6)
+#define MICROPY_HW_UART6_RX (&pin_C7)
 # 6 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h" 2
 
 
@@ -1050,13 +1071,17 @@ typedef unsigned long long uintmax_t;
 #define MICROPY_PY_MACHINE_PIN (1)
 #define MICROPY_PY_MACHINE_SOFTI2C (1)
 #define MICROPY_PY_MACHINE_SOFTSPI (1)
-#define MICROPY_PY_MACHINE_UART (0)
+#define MICROPY_PY_MACHINE_UART (1)
+#define MICROPY_PY_MACHINE_UART_INCLUDEFILE "py_port/machine_uart.c"
 #define MICROPY_PY_MACHINE_I2C (1)
 #define MICROPY_PY_MACHINE_SPI (1)
 #define MICROPY_PY_MACHINE_ADC (0)
 #define MICROPY_PY_MACHINE_PWM (0)
 #define MICROPY_PY_MACHINE_TIMER (0)
 #define MICROPY_PY_MACHINE_WDT (0)
+
+
+#define MICROPY_HW_MAX_UART (6)
 
 
 #define MICROPY_HW_ENABLE_HW_I2C (1)
@@ -1098,7 +1123,7 @@ typedef unsigned long long uintmax_t;
 extern void mp_bluetooth_nimble_hci_uart_process(_Bool run_events);
 extern void mp_bluetooth_nimble_os_callout_process(void);
 #define MICROPY_EVENT_POLL_HOOK do { mp_bluetooth_nimble_hci_uart_process(true); mp_bluetooth_nimble_os_callout_process(); } while (0);
-# 267 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 271 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_PY_OPENAMP_CONFIG_FILE "openamp_config_port.h"
 
 
@@ -1111,7 +1136,7 @@ extern void mp_bluetooth_nimble_os_callout_process(void);
 typedef intptr_t mp_int_t;
 typedef uintptr_t mp_uint_t;
 typedef long mp_off_t;
-# 290 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 294 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define assert(cond) ((void)((cond) ? 0 : (__builtin_trap(), 0)))
 
 
@@ -1131,7 +1156,7 @@ typedef long mp_off_t;
 
 
 #define alloca __builtin_alloca
-# 326 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 330 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_MIN_USE_CORTEX_CPU (0)
 
 
@@ -1141,7 +1166,20 @@ typedef long mp_off_t;
 #define MICROPY_HEAP_SIZE (32768)
 
 
+
 #define MP_STATE_PORT MP_STATE_VM
+
+
+#define MICROPY_HW_MAX_LPUART (0)
+#define MICROPY_HW_UART_IS_RESERVED(id) (0)
+
+
+
+#define MICROPY_BOARD_FATAL_ERROR(msg) do { printf("FATAL ERROR: %s\n", msg); for (;;); } while (0)
+
+
+
+
 
 #define MP_ENDIANNESS_LITTLE (1)
 
@@ -3081,6 +3119,26 @@ Q(deinit)
 Q(portrait)
 
 
+Q(UART)
+Q(baudrate)
+Q(bits)
+Q(parity)
+Q(stop)
+Q(flow)
+Q(timeout)
+Q(timeout_char)
+Q(rxbuf)
+Q(read_buf_len)
+Q(txdone)
+Q(RTS)
+Q(CTS)
+Q(IRQ_RXIDLE)
+Q(IRQ_RX)
+
+Q(handler)
+Q(trigger)
+Q(hard)
+
 Q(A0)
 
 Q(A0)
@@ -3358,6 +3416,12 @@ Q(CERT_NONE)
 Q(CERT_OPTIONAL)
 
 Q(CERT_REQUIRED)
+
+Q(CTS)
+
+Q(CTS)
+
+Q(CTS)
 
 Q(CancelledError)
 
@@ -3709,6 +3773,18 @@ Q(IRQ_FALLING)
 
 Q(IRQ_RISING)
 
+Q(IRQ_RX)
+
+Q(IRQ_RX)
+
+Q(IRQ_RX)
+
+Q(IRQ_RXIDLE)
+
+Q(IRQ_RXIDLE)
+
+Q(IRQ_RXIDLE)
+
 Q(IWDG)
 
 Q(ImportError)
@@ -3867,6 +3943,12 @@ Q(RGB565)
 
 Q(RTC)
 
+Q(RTS)
+
+Q(RTS)
+
+Q(RTS)
+
 Q(RingIO)
 
 Q(RingIO)
@@ -4018,6 +4100,10 @@ Q(TextIOWrapper)
 Q(TypeError)
 
 Q(TypeError)
+
+Q(UART)
+
+Q(UART)
 
 Q(UART4)
 
@@ -4689,6 +4775,8 @@ Q(any)
 
 Q(any)
 
+Q(any)
+
 Q(append)
 
 Q(append)
@@ -4737,6 +4825,10 @@ Q(baudrate)
 
 Q(baudrate)
 
+Q(baudrate)
+
+Q(baudrate)
+
 Q(bin)
 
 Q(binascii)
@@ -4748,6 +4840,10 @@ Q(binascii)
 Q(binascii)
 
 Q(bind)
+
+Q(bits)
+
+Q(bits)
 
 Q(bits)
 
@@ -5003,6 +5099,8 @@ Q(degrees)
 
 Q(deinit)
 
+Q(deinit)
+
 Q(delattr)
 
 Q(delay)
@@ -5169,11 +5267,19 @@ Q(firstbit)
 
 Q(flags)
 
+Q(flags)
+
 Q(float)
 
 Q(float)
 
 Q(floor)
+
+Q(flow)
+
+Q(flow)
+
+Q(flush)
 
 Q(flush)
 
@@ -5210,6 +5316,10 @@ Q(fromkeys)
 Q(frozenset)
 
 Q(frozenset)
+
+Q(function)
+
+Q(function)
 
 Q(function)
 
@@ -5689,6 +5799,10 @@ Q(globals)
 
 Q(group)
 
+Q(handler)
+
+Q(hard)
+
 Q(hasattr)
 
 Q(hash)
@@ -5777,6 +5891,8 @@ Q(init)
 
 Q(init)
 
+Q(init)
+
 Q(input)
 
 Q(insert)
@@ -5814,6 +5930,8 @@ Q(ioctl)
 Q(ioctl)
 
 Q(ipoll)
+
+Q(irq)
 
 Q(irq)
 
@@ -6191,6 +6309,10 @@ Q(pack_into)
 
 Q(pagesize)
 
+Q(parity)
+
+Q(parity)
+
 Q(partition)
 
 Q(path)
@@ -6357,6 +6479,12 @@ Q(read)
 
 Q(read)
 
+Q(read)
+
+Q(read_buf_len)
+
+Q(read_buf_len)
+
 Q(readblocks)
 
 Q(readblocks)
@@ -6390,6 +6518,10 @@ Q(readinto)
 Q(readinto)
 
 Q(readinto)
+
+Q(readinto)
+
+Q(readline)
 
 Q(readline)
 
@@ -6486,6 +6618,10 @@ Q(rpartition)
 Q(rsplit)
 
 Q(rstrip)
+
+Q(rxbuf)
+
+Q(rxbuf)
 
 Q(scan)
 
@@ -6697,6 +6833,10 @@ Q(stop)
 
 Q(stop)
 
+Q(stop)
+
+Q(stop)
+
 Q(str)
 
 Q(str)
@@ -6807,6 +6947,14 @@ Q(timeout)
 
 Q(timeout)
 
+Q(timeout)
+
+Q(timeout)
+
+Q(timeout_char)
+
+Q(timeout_char)
+
 Q(timing)
 
 Q(tls)
@@ -6821,6 +6969,10 @@ Q(to_bytes)
 
 Q(toggle)
 
+Q(trigger)
+
+Q(trigger)
+
 Q(trunc)
 
 Q(tuple)
@@ -6828,6 +6980,8 @@ Q(tuple)
 Q(tuple)
 
 Q(tuple)
+
+Q(txdone)
 
 Q(type)
 
@@ -6928,6 +7082,8 @@ Q(vline)
 Q(width)
 
 Q(wrap_socket)
+
+Q(write)
 
 Q(write)
 
