@@ -6,6 +6,9 @@
 
 // options to control how MicroPython is built
 
+// Enable CPython compatibility helpers (exposes __name__, __dict__, __bases__, etc. for types).
+#define MICROPY_CPYTHON_COMPAT           (1)
+
 // ooFatFs (MicroPython's bundled FatFs fork) requires FFCONF_H to point at the
 // correct configuration header. Without this, builds may accidentally pick up a
 // different ffconf.h from other middleware (eg TinyUSB), causing:
@@ -147,7 +150,8 @@
 #define MICROPY_PY_ZLIB                   (1)
 #define MICROPY_PY_ASYNCIO                (1)
 // 扩展试验 by caibo  2026-01-27 15:18
-#define MICROPY_PY_SUBSYSTEM							(1)
+#define MICROPY_PY_SUBSYSTEM		      (1)
+#define MICROPY_QPY_MODULE_OSTIMER        (1)
 
 // --- USB Device (TinyUSB) ---------------------------------------------------
 // Expose the SD card as a USB Mass Storage device (MSC) so Windows can mount it
@@ -361,3 +365,13 @@ typedef long mp_off_t;
 #define MP_UNREACHABLE for (;;);
 #define MICROPY_USE_INTERNAL_ERRNO (1)
 
+// Port-specific builtin types (registered in builtins module)  
+// Forward declarations (will be resolved during linking)
+#if MICROPY_QPY_MODULE_OSTIMER
+struct _mp_obj_type_t;
+extern const struct _mp_obj_type_t mp_ostimer_type;
+#define MICROPY_PORT_BUILTINS \
+    { MP_ROM_QSTR(MP_QSTR_osTimer), MP_ROM_PTR(&mp_ostimer_type) },
+#else
+#define MICROPY_PORT_BUILTINS
+#endif

@@ -180,11 +180,7 @@ static const char *find_completions(const char *s_start, size_t s_len,
     for (qstr q = MP_QSTR_ + 1; q < nqstr; ++q) {
         size_t d_len;
         const char *d_str = (const char *)qstr_data(q, &d_len);
-        // special case; filter out words that begin with underscore
-        // unless there's already a partial match
-        if (s_len == 0 && d_str[0] == '_') {
-            continue;
-        }
+        // Do not filter underscore-prefixed names; show full attribute list.
         if (s_len <= d_len && strncmp(s_start, d_str, s_len) == 0) {
             if (test_qstr(obj, q)) {
                 if (match_str == NULL) {
@@ -221,10 +217,7 @@ static void print_completions(const mp_print_t *print,
     for (qstr q = q_first; q <= q_last; ++q) {
         size_t d_len;
         const char *d_str = (const char *)qstr_data(q, &d_len);
-        // filter out words that begin with underscore unless there's already a partial match
-        if (s_len == 0 && d_str[0] == '_') {
-            continue;
-        }
+        // Do not filter underscore-prefixed names; show full attribute list in autocomplete.
         if (s_len <= d_len && strncmp(s_start, d_str, s_len) == 0) {
             if (test_qstr(obj, q)) {
                 int gap = (line_len + WORD_SLOT_LEN - 1) / WORD_SLOT_LEN * WORD_SLOT_LEN - line_len;

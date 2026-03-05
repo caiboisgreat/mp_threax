@@ -1024,6 +1024,7 @@ typedef unsigned long long uintmax_t;
 #define MICROPY_PY_ASYNCIO (1)
 
 #define MICROPY_PY_SUBSYSTEM (1)
+#define MICROPY_QPY_MODULE_OSTIMER (1)
 
 
 
@@ -1123,7 +1124,7 @@ typedef unsigned long long uintmax_t;
 extern void mp_bluetooth_nimble_hci_uart_process(_Bool run_events);
 extern void mp_bluetooth_nimble_os_callout_process(void);
 #define MICROPY_EVENT_POLL_HOOK do { mp_bluetooth_nimble_hci_uart_process(true); mp_bluetooth_nimble_os_callout_process(); } while (0);
-# 271 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 272 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_PY_OPENAMP_CONFIG_FILE "openamp_config_port.h"
 
 
@@ -1136,7 +1137,7 @@ extern void mp_bluetooth_nimble_os_callout_process(void);
 typedef intptr_t mp_int_t;
 typedef uintptr_t mp_uint_t;
 typedef long mp_off_t;
-# 294 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 295 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define assert(cond) ((void)((cond) ? 0 : (__builtin_trap(), 0)))
 
 
@@ -1156,7 +1157,7 @@ typedef long mp_off_t;
 
 
 #define alloca __builtin_alloca
-# 330 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 331 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_MIN_USE_CORTEX_CPU (0)
 
 
@@ -1190,6 +1191,13 @@ typedef long mp_off_t;
 #define MICROPY_GCREGS_SETJMP (0)
 #define MP_UNREACHABLE for (;;);
 #define MICROPY_USE_INTERNAL_ERRNO (1)
+
+
+
+
+struct _mp_obj_type_t;
+extern const struct _mp_obj_type_t mp_ostimer_type;
+#define MICROPY_PORT_BUILTINS { MP_ROM_QSTR(MP_QSTR_osTimer), MP_ROM_PTR(&mp_ostimer_type) },
 # 101 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h" 2
 
 
@@ -2709,13 +2717,7 @@ typedef long long mp_timestamp_t;
 
 
 #define MICROPY_PY_ONEWIRE (0)
-# 2147 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
-#define MICROPY_PORT_BUILTINS 
-
-
-
-
-
+# 2153 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py/mpconfig.h"
 #define MICROPY_PORT_EXTRA_BUILTINS 
 
 
@@ -3138,6 +3140,12 @@ Q(IRQ_RX)
 Q(handler)
 Q(trigger)
 Q(hard)
+
+
+Q(osTimer)
+Q(start)
+Q(stop)
+Q(delete_timer)
 
 Q(A0)
 
@@ -4309,6 +4317,8 @@ Q(__del__)
 
 Q(__del__)
 
+Q(__del__)
+
 Q(__delattr__)
 
 Q(__delattr__)
@@ -4448,6 +4458,10 @@ Q(__mod__)
 Q(__module__)
 
 Q(__mul__)
+
+Q(__name__)
+
+Q(__name__)
 
 Q(__name__)
 
@@ -5105,6 +5119,8 @@ Q(delattr)
 
 Q(delay)
 
+Q(delete_timer)
+
 Q(deleter)
 
 Q(deque)
@@ -5316,6 +5332,8 @@ Q(fromkeys)
 Q(frozenset)
 
 Q(frozenset)
+
+Q(function)
 
 Q(function)
 
@@ -6303,6 +6321,450 @@ Q(os)
 
 Q(os)
 
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
+Q(osTimer)
+
 Q(pack)
 
 Q(pack_into)
@@ -6785,6 +7247,8 @@ Q(start)
 
 Q(start)
 
+Q(start)
+
 Q(startswith)
 
 Q(stat)
@@ -6826,6 +7290,8 @@ Q(stm)
 Q(stm)
 
 Q(stm)
+
+Q(stop)
 
 Q(stop)
 

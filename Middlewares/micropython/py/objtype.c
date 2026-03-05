@@ -1070,6 +1070,10 @@ static void type_attr(mp_obj_t self_in, qstr attr, mp_obj_t *dest) {
     if (dest[0] == MP_OBJ_NULL) {
         // load attribute
         #if MICROPY_CPYTHON_COMPAT
+        if (attr == MP_QSTR___class__) {
+            dest[0] = MP_OBJ_FROM_PTR(&mp_type_type);
+            return;
+        }
         if (attr == MP_QSTR___name__) {
             dest[0] = MP_OBJ_NEW_QSTR(self->name);
             return;

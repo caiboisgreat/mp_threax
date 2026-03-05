@@ -956,6 +956,11 @@
               <FileType>1</FileType>
               <FilePath>..\Middlewares\micropython\shared\runtime\mpirq.c</FilePath>
             </File>
+            <File>
+              <FileName>modostimer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\micropython\py_port\modostimer.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

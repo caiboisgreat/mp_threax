@@ -64,6 +64,8 @@ MP_REGISTER_MODULE(MP_QSTR_network, mp_module_network);
 
 MP_REGISTER_MODULE(MP_QSTR_openamp, openamp_module);
 
+MP_REGISTER_MODULE(MP_QSTR_osTimer, mp_module_osTimer);
+
 MP_REGISTER_MODULE(MP_QSTR_pyb, mp_module_pyb);
 
 MP_REGISTER_MODULE(MP_QSTR_stm, mp_module_stm);

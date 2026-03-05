@@ -132,6 +132,10 @@ extern const struct _mp_obj_module_t openamp_module;
 #undef MODULE_DEF_OPENAMP
 #define MODULE_DEF_OPENAMP { MP_ROM_QSTR(MP_QSTR_openamp), MP_ROM_PTR(&openamp_module) },
 
+extern const struct _mp_obj_module_t mp_module_osTimer;
+#undef MODULE_DEF_OSTIMER
+#define MODULE_DEF_OSTIMER { MP_ROM_QSTR(MP_QSTR_osTimer), MP_ROM_PTR(&mp_module_osTimer) },
+
 extern const struct _mp_obj_module_t mp_module_pyb;
 #undef MODULE_DEF_PYB
 #define MODULE_DEF_PYB { MP_ROM_QSTR(MP_QSTR_pyb), MP_ROM_PTR(&mp_module_pyb) },
@@ -178,6 +182,7 @@ extern const struct _mp_obj_module_t mp_module_vfs;
     MODULE_DEF_NEOPIXEL \
     MODULE_DEF_NETWORK \
     MODULE_DEF_OPENAMP \
+    MODULE_DEF_OSTIMER \
     MODULE_DEF_PYB \
     MODULE_DEF_STM \
     MODULE_DEF_SUBSYSTEM \
