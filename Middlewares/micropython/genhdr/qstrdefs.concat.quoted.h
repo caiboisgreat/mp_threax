@@ -298,6 +298,7 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(timeout_char)"
 "Q(rxbuf)"
 "Q(read_buf_len)"
+"Q(set_callback)"
 "Q(txdone)"
 "Q(RTS)"
 "Q(CTS)"
@@ -2183,6 +2184,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 
 "Q(close)"
 
+"Q(close)"
+
 "Q(closure)"
 
 "Q(cmath)"
@@ -3138,6 +3141,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(ioctl)"
 
 "Q(ipoll)"
+
+"Q(irq)"
 
 "Q(irq)"
 
@@ -4342,6 +4347,8 @@ QCFG(BYTES_IN_HASH, MICROPY_QSTR_BYTES_IN_HASH)
 "Q(set)"
 
 "Q(set)"
+
+"Q(set_callback)"
 
 "Q(set_ciphers)"
 

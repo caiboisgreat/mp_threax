@@ -1,6 +1,9 @@
 #include "py/mpconfig.h"
 #include "py/mphal.h"
 #include "py/stream.h"
+#include "py/runtime.h"
+
+#include "tx_api.h"
 
 #if defined(STM32F405xx) || defined(STM32F4xx)
 #include "stm32f4xx_hal.h"
@@ -60,11 +63,11 @@ uintptr_t mp_hal_stdio_poll(uintptr_t poll_flags) {
 }
 
 mp_uint_t mp_hal_ticks_ms(void) {
-	#if defined(HAL_GetTick)
-	return (mp_uint_t)HAL_GetTick();
-	#else
-	return 0;
+	ULONG ticks = tx_time_get();
+	#ifndef TX_TIMER_TICKS_PER_SECOND
+	#define TX_TIMER_TICKS_PER_SECOND 100
 	#endif
+	return (mp_uint_t)((ticks * 1000u) / TX_TIMER_TICKS_PER_SECOND);
 }
 
 mp_uint_t mp_hal_ticks_us(void) {
@@ -78,15 +81,25 @@ mp_uint_t mp_hal_ticks_us(void) {
 }
 
 void mp_hal_delay_ms(mp_uint_t ms) {
-	#if defined(HAL_Delay)
-	HAL_Delay((uint32_t)ms);
-	#else
-	// Fallback: crude delay.
-	volatile mp_uint_t n = ms * 1000u;
-	while (n--) {
-		__NOP();
+	if (ms == 0) {
+		return;
 	}
+	#ifndef TX_TIMER_TICKS_PER_SECOND
+	#define TX_TIMER_TICKS_PER_SECOND 100
 	#endif
+	ULONG ticks = (ms * TX_TIMER_TICKS_PER_SECOND + 999u) / 1000u;
+	if (ticks == 0) {
+		ticks = 1;
+	}
+	while (ticks--) {
+		#if defined(MICROPY_EVENT_POLL_HOOK)
+		MICROPY_EVENT_POLL_HOOK;
+		#endif
+		#if MICROPY_ENABLE_SCHEDULER
+		mp_handle_pending(false);
+		#endif
+		tx_thread_sleep(1);
+	}
 }
 
 void mp_hal_delay_us(mp_uint_t us) {

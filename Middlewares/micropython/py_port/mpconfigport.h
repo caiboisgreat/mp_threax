@@ -153,6 +153,9 @@
 #define MICROPY_PY_SUBSYSTEM		      (1)
 #define MICROPY_QPY_MODULE_OSTIMER        (1)
 
+// Enable scheduler so osTimer can schedule Python callbacks.
+#define MICROPY_ENABLE_SCHEDULER          (1)
+
 // --- USB Device (TinyUSB) ---------------------------------------------------
 // Expose the SD card as a USB Mass Storage device (MSC) so Windows can mount it
 // as a drive when the board is connected over USB.
@@ -201,6 +204,7 @@
 #define MICROPY_PY_MACHINE_SOFTSPI        (1)
 #define MICROPY_PY_MACHINE_UART           (1)
 #define MICROPY_PY_MACHINE_UART_INCLUDEFILE "py_port/machine_uart.c"
+#define MICROPY_PY_MACHINE_UART_IRQ       (1)
 #define MICROPY_PY_MACHINE_I2C            (1)
 #define MICROPY_PY_MACHINE_SPI            (1)
 #define MICROPY_PY_MACHINE_ADC            (0)

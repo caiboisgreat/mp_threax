@@ -7,6 +7,8 @@ The goal is to satisfy `import _thread` for libraries that optionally use it.
 Thread creation is not supported yet.
 """
 
+import utime as time
+
 class LockType:
     def __init__(self):
         self._locked = False
@@ -15,11 +17,12 @@ class LockType:
         return self._locked
 
     def acquire(self, waitflag=True):
-        # Single-thread stub: non-blocking acquire fails if already locked.
+        # Single-thread stub: emulate blocking by polling until unlocked.
         if self._locked:
-            if waitflag:
-                raise NotImplementedError
-            return False
+            if not waitflag:
+                return False
+            while self._locked:
+                time.sleep_ms(1)
         self._locked = True
         return True
 

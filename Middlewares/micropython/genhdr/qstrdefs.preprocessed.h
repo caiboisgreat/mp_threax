@@ -1077,6 +1077,7 @@ typedef unsigned long long uintmax_t;
 #define MICROPY_PY_MACHINE_SOFTSPI (1)
 #define MICROPY_PY_MACHINE_UART (1)
 #define MICROPY_PY_MACHINE_UART_INCLUDEFILE "py_port/machine_uart.c"
+#define MICROPY_PY_MACHINE_UART_IRQ (1)
 #define MICROPY_PY_MACHINE_I2C (1)
 #define MICROPY_PY_MACHINE_SPI (1)
 #define MICROPY_PY_MACHINE_ADC (0)
@@ -1127,7 +1128,7 @@ typedef unsigned long long uintmax_t;
 extern void mp_bluetooth_nimble_hci_uart_process(_Bool run_events);
 extern void mp_bluetooth_nimble_os_callout_process(void);
 #define MICROPY_EVENT_POLL_HOOK do { mp_bluetooth_nimble_hci_uart_process(true); mp_bluetooth_nimble_os_callout_process(); } while (0);
-# 275 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 276 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_PY_OPENAMP_CONFIG_FILE "openamp_config_port.h"
 
 
@@ -1140,7 +1141,7 @@ extern void mp_bluetooth_nimble_os_callout_process(void);
 typedef intptr_t mp_int_t;
 typedef uintptr_t mp_uint_t;
 typedef long mp_off_t;
-# 298 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 299 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define assert(cond) ((void)((cond) ? 0 : (__builtin_trap(), 0)))
 
 
@@ -1160,7 +1161,7 @@ typedef long mp_off_t;
 
 
 #define alloca __builtin_alloca
-# 334 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
+# 335 "E:\\Work\\code\\study\\mp_threadx\\Middlewares\\micropython\\py_port\\mpconfigport.h"
 #define MICROPY_MIN_USE_CORTEX_CPU (0)
 
 
@@ -3122,6 +3123,7 @@ Q(timeout)
 Q(timeout_char)
 Q(rxbuf)
 Q(read_buf_len)
+Q(set_callback)
 Q(txdone)
 Q(RTS)
 Q(CTS)
@@ -5007,6 +5009,8 @@ Q(close)
 
 Q(close)
 
+Q(close)
+
 Q(closure)
 
 Q(cmath)
@@ -5962,6 +5966,8 @@ Q(ioctl)
 Q(ioctl)
 
 Q(ipoll)
+
+Q(irq)
 
 Q(irq)
 
@@ -7166,6 +7172,8 @@ Q(server_side)
 Q(set)
 
 Q(set)
+
+Q(set_callback)
 
 Q(set_ciphers)
 

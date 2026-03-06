@@ -82,7 +82,7 @@ def check_file():
 
 
 class Serial(object):
-    def __init__(self, uart, buadrate=57600, databits=8, parity=0, stopbits=1, flowctl=0):
+    def __init__(self, uart, buadrate=115200, databits=8, parity=0, stopbits=1, flowctl=0):
         # flow is keyword-only in this port's UART constructor
         self._uart = UART(uart, buadrate, databits, parity, stopbits, flow=flowctl)
         self._uart.set_callback(self._uart_cb)
@@ -634,15 +634,15 @@ class Modem(object):
         self.writer(header + data + checksum)
 
 
-def enter_ymodem(callback=None):
-    serial_io = Serial(UART.REPL_UART if hasattr(UART, "REPL_UART") else UART.UART3)
+def enter_ymodem(callback=None, buadrate=115200):
+    serial_io = Serial(UART.REPL_UART if hasattr(UART, "REPL_UART") else UART.UART3, buadrate=buadrate)
     receiver = Modem(serial_io.read, serial_io.write)
     receiver.recv(callback=callback)
     serial_io.close()
 
 
-def send_file(trans_file):
-    serial_io = Serial(UART.REPL_UART if hasattr(UART, "REPL_UART") else UART.UART3)
+def send_file(trans_file, buadrate=115200):
+    serial_io = Serial(UART.REPL_UART if hasattr(UART, "REPL_UART") else UART.UART3, buadrate=buadrate)
     sender = Modem(serial_io.read, serial_io.write)
     try:
         sender.send(trans_file)

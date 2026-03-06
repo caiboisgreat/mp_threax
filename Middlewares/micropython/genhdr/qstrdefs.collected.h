@@ -1864,6 +1864,8 @@ Q(close)
 
 Q(close)
 
+Q(close)
+
 Q(closure)
 
 Q(cmath)
@@ -2819,6 +2821,8 @@ Q(ioctl)
 Q(ioctl)
 
 Q(ipoll)
+
+Q(irq)
 
 Q(irq)
 
@@ -4023,6 +4027,8 @@ Q(server_side)
 Q(set)
 
 Q(set)
+
+Q(set_callback)
 
 Q(set_ciphers)
 

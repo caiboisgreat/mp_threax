@@ -76,6 +76,20 @@ static mp_obj_t machine_uart_deinit(mp_obj_t self_in) {
 }
 static MP_DEFINE_CONST_FUN_OBJ_1(machine_uart_deinit_obj, machine_uart_deinit);
 
+// UART.close()
+static mp_obj_t machine_uart_close(mp_obj_t self_in) {
+    machine_uart_obj_t *self = MP_OBJ_TO_PTR(self_in);
+    #if defined(USART2)
+    if (self->uart_id == PYB_UART_2) {
+        // Keep REPL UART alive; close() should not tear it down.
+        return mp_const_none;
+    }
+    #endif
+    mp_machine_uart_deinit(self);
+    return mp_const_none;
+}
+static MP_DEFINE_CONST_FUN_OBJ_1(machine_uart_close_obj, machine_uart_close);
+
 // UART.any()
 static mp_obj_t machine_uart_any(mp_obj_t self_in) {
     machine_uart_obj_t *self = MP_OBJ_TO_PTR(self_in);
@@ -133,11 +147,23 @@ static mp_obj_t machine_uart_irq(size_t n_args, const mp_obj_t *pos_args, mp_map
 }
 static MP_DEFINE_CONST_FUN_OBJ_KW(machine_uart_irq_obj, 1, machine_uart_irq);
 
+// UART.set_callback(handler)
+static mp_obj_t machine_uart_set_callback(mp_obj_t self_in, mp_obj_t handler_in) {
+    machine_uart_obj_t *self = MP_OBJ_TO_PTR(self_in);
+    mp_arg_val_t args[MP_IRQ_ARG_INIT_NUM_ARGS] = {0};
+    args[MP_IRQ_ARG_INIT_handler].u_obj = handler_in;
+    args[MP_IRQ_ARG_INIT_trigger].u_int = UART_FLAG_RXNE;
+    args[MP_IRQ_ARG_INIT_hard].u_bool = false;
+    return MP_OBJ_FROM_PTR(mp_machine_uart_irq(self, true, args));
+}
+static MP_DEFINE_CONST_FUN_OBJ_2(machine_uart_set_callback_obj, machine_uart_set_callback);
+
 #endif
 
 static const mp_rom_map_elem_t machine_uart_locals_dict_table[] = {
     { MP_ROM_QSTR(MP_QSTR_init), MP_ROM_PTR(&machine_uart_init_obj) },
     { MP_ROM_QSTR(MP_QSTR_deinit), MP_ROM_PTR(&machine_uart_deinit_obj) },
+    { MP_ROM_QSTR(MP_QSTR_close), MP_ROM_PTR(&machine_uart_close_obj) },
 
     { MP_ROM_QSTR(MP_QSTR_flush), MP_ROM_PTR(&mp_stream_flush_obj) },
     { MP_ROM_QSTR(MP_QSTR_read), MP_ROM_PTR(&mp_stream_read1_obj) },
@@ -159,6 +185,7 @@ static const mp_rom_map_elem_t machine_uart_locals_dict_table[] = {
 
     #if MICROPY_PY_MACHINE_UART_IRQ
     { MP_ROM_QSTR(MP_QSTR_irq), MP_ROM_PTR(&machine_uart_irq_obj) },
+    { MP_ROM_QSTR(MP_QSTR_set_callback), MP_ROM_PTR(&machine_uart_set_callback_obj) },
     #endif
 
     // A port must add UART class constants defining the following macro.
